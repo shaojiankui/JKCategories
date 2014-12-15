@@ -1,0 +1,16 @@
+//
+//  UIImage+Color.h
+//  categories
+//
+//  Created by Jakey on 14/12/15.
+//  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIImage (Color)
++ (UIImage *)imageWithColor:(UIColor *)color;
+- (UIColor *)colorAtPoint:(CGPoint )point;
+//返回该图片是否有透明度通道
+- (BOOL)hasAlphaChannel;
+@end
