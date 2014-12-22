@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A218D8D41A479CD400AB83CA /* UIWebView+HTML5.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8D31A479CD400AB83CA /* UIWebView+HTML5.m */; };
+		A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8D61A479E9C00AB83CA /* UIColor+Web.m */; };
 		A22725D41A3E72D50061605B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A22725D31A3E72D50061605B /* main.m */; };
 		A22725D71A3E72D50061605B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A22725D61A3E72D50061605B /* AppDelegate.m */; };
 		A22725D91A3E72D50061605B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22725D81A3E72D50061605B /* Images.xcassets */; };
@@ -64,6 +66,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A218D8D21A479CD400AB83CA /* UIWebView+HTML5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+HTML5.h"; sourceTree = "<group>"; };
+		A218D8D31A479CD400AB83CA /* UIWebView+HTML5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+HTML5.m"; sourceTree = "<group>"; };
+		A218D8D51A479E9C00AB83CA /* UIColor+Web.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Web.h"; sourceTree = "<group>"; };
+		A218D8D61A479E9C00AB83CA /* UIColor+Web.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Web.m"; sourceTree = "<group>"; };
 		A22725CE1A3E72D50061605B /* categories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = categories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22725D21A3E72D50061605B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22725D31A3E72D50061605B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -340,6 +346,8 @@
 				A28BE3411A3EA20B005C4AC6 /* UIColor+Random.m */,
 				A28BE3651A3EAF2E005C4AC6 /* UIColor+Gradient.h */,
 				A28BE3661A3EAF2E005C4AC6 /* UIColor+Gradient.m */,
+				A218D8D51A479E9C00AB83CA /* UIColor+Web.h */,
+				A218D8D61A479E9C00AB83CA /* UIColor+Web.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -446,6 +454,8 @@
 				A28BE3281A3E9FDC005C4AC6 /* UIWebView+Style.m */,
 				A28BE37D1A3EC561005C4AC6 /* UIWebView+Load.h */,
 				A28BE37E1A3EC561005C4AC6 /* UIWebView+Load.m */,
+				A218D8D21A479CD400AB83CA /* UIWebView+HTML5.h */,
+				A218D8D31A479CD400AB83CA /* UIWebView+HTML5.m */,
 			);
 			path = UIWebView;
 			sourceTree = "<group>";
@@ -567,8 +577,10 @@
 			files = (
 				A28BE2E71A3E9F48005C4AC6 /* NSBundle+AppIcon.m in Sources */,
 				A28BE3391A3E9FDC005C4AC6 /* UIView+Frame.m in Sources */,
+				A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */,
 				A28BE3671A3EAF2E005C4AC6 /* UIColor+Gradient.m in Sources */,
 				A28BE2E81A3E9F48005C4AC6 /* NSData+Encrypt.m in Sources */,
+				A218D8D41A479CD400AB83CA /* UIWebView+HTML5.m in Sources */,
 				A28BE3861A3ECF49005C4AC6 /* NSObject+GCD.m in Sources */,
 				A28BE2EE1A3E9F48005C4AC6 /* NSString+Helpers.m in Sources */,
 				A28BE3521A3EA91B005C4AC6 /* NSArray+Block.m in Sources */,
