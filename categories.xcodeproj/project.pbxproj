@@ -13,6 +13,7 @@
 		A22725D71A3E72D50061605B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A22725D61A3E72D50061605B /* AppDelegate.m */; };
 		A22725D91A3E72D50061605B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22725D81A3E72D50061605B /* Images.xcassets */; };
 		A22725DC1A3E72D50061605B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22725DA1A3E72D50061605B /* LaunchScreen.xib */; };
+		A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A238E0571A4555F400383A97 /* NSObject+Property.m */; };
 		A28BE2C81A3E9D8D005C4AC6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2C61A3E9D8D005C4AC6 /* RootViewController.m */; };
 		A28BE2C91A3E9D8D005C4AC6 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A28BE2C71A3E9D8D005C4AC6 /* RootViewController.xib */; };
 		A28BE2E71A3E9F48005C4AC6 /* NSBundle+AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2CC1A3E9F48005C4AC6 /* NSBundle+AppIcon.m */; };
@@ -77,6 +78,8 @@
 		A22725D61A3E72D50061605B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A22725D81A3E72D50061605B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A22725DB1A3E72D50061605B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A238E0561A4555F400383A97 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		A238E0571A4555F400383A97 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		A28BE2C51A3E9D8D005C4AC6 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A28BE2C61A3E9D8D005C4AC6 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A28BE2C71A3E9D8D005C4AC6 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				A28BE3771A3EC1C6005C4AC6 /* NSObject+AddProperty.m */,
 				A28BE3841A3ECF49005C4AC6 /* NSObject+GCD.h */,
 				A28BE3851A3ECF49005C4AC6 /* NSObject+GCD.m */,
+				A238E0561A4555F400383A97 /* NSObject+Property.h */,
+				A238E0571A4555F400383A97 /* NSObject+Property.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -619,6 +624,7 @@
 				A28BE3301A3E9FDC005C4AC6 /* UIImage+RoundedCorner.m in Sources */,
 				A22725D71A3E72D50061605B /* AppDelegate.m in Sources */,
 				A28BE3721A3EB31D005C4AC6 /* UIImageView+Addition.m in Sources */,
+				A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */,
 				A28BE2EF1A3E9F48005C4AC6 /* NSString+MD5.m in Sources */,
 				A28BE3421A3EA20B005C4AC6 /* UIColor+Random.m in Sources */,
 				A28BE2C81A3E9D8D005C4AC6 /* RootViewController.m in Sources */,
