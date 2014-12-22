@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A218D8D41A479CD400AB83CA /* UIWebView+HTML5.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8D31A479CD400AB83CA /* UIWebView+HTML5.m */; };
 		A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8D61A479E9C00AB83CA /* UIColor+Web.m */; };
+		A218D8DF1A47A25100AB83CA /* UIWebView+Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DC1A47A25100AB83CA /* UIWebView+Canvas.m */; };
+		A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DE1A47A25100AB83CA /* UIWebView+JS.m */; };
 		A22725D41A3E72D50061605B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A22725D31A3E72D50061605B /* main.m */; };
 		A22725D71A3E72D50061605B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A22725D61A3E72D50061605B /* AppDelegate.m */; };
 		A22725D91A3E72D50061605B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22725D81A3E72D50061605B /* Images.xcassets */; };
@@ -66,10 +67,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A218D8D21A479CD400AB83CA /* UIWebView+HTML5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+HTML5.h"; sourceTree = "<group>"; };
-		A218D8D31A479CD400AB83CA /* UIWebView+HTML5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+HTML5.m"; sourceTree = "<group>"; };
 		A218D8D51A479E9C00AB83CA /* UIColor+Web.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Web.h"; sourceTree = "<group>"; };
 		A218D8D61A479E9C00AB83CA /* UIColor+Web.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Web.m"; sourceTree = "<group>"; };
+		A218D8DB1A47A25100AB83CA /* UIWebView+Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Canvas.h"; sourceTree = "<group>"; };
+		A218D8DC1A47A25100AB83CA /* UIWebView+Canvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Canvas.m"; sourceTree = "<group>"; };
+		A218D8DD1A47A25100AB83CA /* UIWebView+JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JS.h"; sourceTree = "<group>"; };
+		A218D8DE1A47A25100AB83CA /* UIWebView+JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JS.m"; sourceTree = "<group>"; };
 		A22725CE1A3E72D50061605B /* categories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = categories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22725D21A3E72D50061605B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22725D31A3E72D50061605B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -454,8 +457,10 @@
 				A28BE3281A3E9FDC005C4AC6 /* UIWebView+Style.m */,
 				A28BE37D1A3EC561005C4AC6 /* UIWebView+Load.h */,
 				A28BE37E1A3EC561005C4AC6 /* UIWebView+Load.m */,
-				A218D8D21A479CD400AB83CA /* UIWebView+HTML5.h */,
-				A218D8D31A479CD400AB83CA /* UIWebView+HTML5.m */,
+				A218D8DB1A47A25100AB83CA /* UIWebView+Canvas.h */,
+				A218D8DC1A47A25100AB83CA /* UIWebView+Canvas.m */,
+				A218D8DD1A47A25100AB83CA /* UIWebView+JS.h */,
+				A218D8DE1A47A25100AB83CA /* UIWebView+JS.m */,
 			);
 			path = UIWebView;
 			sourceTree = "<group>";
@@ -580,8 +585,8 @@
 				A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */,
 				A28BE3671A3EAF2E005C4AC6 /* UIColor+Gradient.m in Sources */,
 				A28BE2E81A3E9F48005C4AC6 /* NSData+Encrypt.m in Sources */,
-				A218D8D41A479CD400AB83CA /* UIWebView+HTML5.m in Sources */,
 				A28BE3861A3ECF49005C4AC6 /* NSObject+GCD.m in Sources */,
+				A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */,
 				A28BE2EE1A3E9F48005C4AC6 /* NSString+Helpers.m in Sources */,
 				A28BE3521A3EA91B005C4AC6 /* NSArray+Block.m in Sources */,
 				A28BE33B1A3E9FDC005C4AC6 /* UIView+RecursiveDescription.m in Sources */,
@@ -611,6 +616,7 @@
 				A28BE3591A3EAA52005C4AC6 /* NSSet+Block.m in Sources */,
 				A28BE2F11A3E9F48005C4AC6 /* NSTimer+Addition.m in Sources */,
 				A28BE2ED1A3E9F48005C4AC6 /* NSString+DictionaryValue.m in Sources */,
+				A218D8DF1A47A25100AB83CA /* UIWebView+Canvas.m in Sources */,
 				A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */,
 				A28BE32D1A3E9FDC005C4AC6 /* UIImage+Color.m in Sources */,
 				A28BE3291A3E9FDC005C4AC6 /* UIColor+HEX.m in Sources */,

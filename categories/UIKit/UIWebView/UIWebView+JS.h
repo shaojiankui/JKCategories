@@ -1,14 +1,14 @@
 //
-//  UIWebView+HTML5.h
+//  UIWebView+JS.h
 //  categories
 //
 //  Created by Jakey on 14/12/22.
-//  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
+//  Copyright (c) 2014年 duzixi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIWebView (HTML5)
+@interface UIWebView (JS)
 
 #pragma mark -
 #pragma mark 获取网页中的数据
