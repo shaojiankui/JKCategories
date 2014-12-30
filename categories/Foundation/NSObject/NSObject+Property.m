@@ -28,4 +28,20 @@
     free(props);
     return dict;
 }
+
++ (NSArray *)classPropertyList {
+    NSMutableArray *allProperties = [[NSMutableArray alloc] init];
+    NSUInteger outCount, i;
+    objc_property_t *properties = class_copyPropertyList(self, &outCount);
+    for (i = 0; i < outCount; i++) {
+        objc_property_t property = properties[i];
+        const char *propName = property_getName(property);
+        if (propName) {
+            NSString *propertyName = [NSString stringWithUTF8String:propName];
+            [allProperties addObject:propertyName];
+        }
+    }
+    free(properties);
+    return [NSArray arrayWithArray:allProperties];
+}
 @end

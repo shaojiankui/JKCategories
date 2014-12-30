@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (Property)
--(NSDictionary *)propertyDictionary;  
+-(NSDictionary *)propertyDictionary;
+
++ (NSArray *)classPropertyList;
 @end

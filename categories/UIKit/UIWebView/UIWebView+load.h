@@ -11,4 +11,5 @@
 @interface UIWebView (Load)
 - (void)loadURL:(NSString*)URLString;
 - (void)loadHtml:(NSString*)htmlName;
+- (void)clearCookies;
 @end

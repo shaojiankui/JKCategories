@@ -21,4 +21,14 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self loadRequest:request];
 }
+
+- (void)clearCookies
+{
+    NSHTTPCookieStorage *storage = NSHTTPCookieStorage.sharedHTTPCookieStorage;
+    
+    for (NSHTTPCookie *cookie in storage.cookies)
+        [storage deleteCookie:cookie];
+    
+    [NSUserDefaults.standardUserDefaults synchronize];
+}
 @end

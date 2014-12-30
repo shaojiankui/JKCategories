@@ -17,4 +17,6 @@
 - (NSString *)urlDecode;
 - (NSString *)urlDecodeUsingEncoding:(NSStringEncoding)encoding;
 
+- (NSDictionary *)dictionaryFromURLParameters;
+
 @end
