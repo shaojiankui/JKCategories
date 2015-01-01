@@ -31,17 +31,19 @@
 
 + (NSArray *)classPropertyList {
     NSMutableArray *allProperties = [[NSMutableArray alloc] init];
-    NSUInteger outCount, i;
-    objc_property_t *properties = class_copyPropertyList(self, &outCount);
-    for (i = 0; i < outCount; i++) {
-        objc_property_t property = properties[i];
-        const char *propName = property_getName(property);
+    
+    unsigned int outCount;
+    objc_property_t *props = class_copyPropertyList(self, &outCount);
+    for (int i = 0; i < outCount; i++) {
+        objc_property_t prop = props[i];
+        
+        NSString *propName = [[NSString alloc]initWithCString:property_getName(prop) encoding:NSUTF8StringEncoding];
+
         if (propName) {
-            NSString *propertyName = [NSString stringWithUTF8String:propName];
-            [allProperties addObject:propertyName];
+            [allProperties addObject:propName];
         }
     }
-    free(properties);
+    free(props);
     return [NSArray arrayWithArray:allProperties];
 }
 @end
