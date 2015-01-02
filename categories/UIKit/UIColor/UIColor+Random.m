@@ -9,7 +9,7 @@
 #import "UIColor+Random.h"
 
 @implementation UIColor (Random)
-+ (UIColor *)getRandomColor {
++ (UIColor *)RandomColor {
     NSInteger aRedValue = arc4random() % 255;
     NSInteger aGreenValue = arc4random() % 255;
     NSInteger aBlueValue = arc4random() % 255;

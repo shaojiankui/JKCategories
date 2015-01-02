@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (HEX)
-+ (UIColor *)colorWithHex:(int)hex;
++ (UIColor *)colorWithHex:(UInt32)hex;
++ (UIColor *)colorWithHex:(UInt32)hex andAlpha:(CGFloat)alpha;
 + (UIColor *)colorWithHexString:(NSString *)hexString;
+- (NSString *)HEXString;
 @end

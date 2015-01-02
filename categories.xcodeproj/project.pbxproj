@@ -73,6 +73,8 @@
 		A28BE3861A3ECF49005C4AC6 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3851A3ECF49005C4AC6 /* NSObject+GCD.m */; };
 		A28BE38A1A3ED364005C4AC6 /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3891A3ED364005C4AC6 /* UITextView+PlaceHolder.m */; };
 		A28BE38E1A3ED5A4005C4AC6 /* UITextField+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE38D1A3ED5A4005C4AC6 /* UITextField+Blocks.m */; };
+		A2CFAEF51A56BD050004A282 /* NSString+Score.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF41A56BD050004A282 /* NSString+Score.m */; };
+		A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF71A56D15C0004A282 /* UIColor+Modify.m */; };
 		A2FD5B321A52574C00555EA2 /* UIImage+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B311A52574C00555EA2 /* UIImage+Merge.m */; };
 		A2FD5B351A52599C00555EA2 /* UIScrollView+Pages.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B341A52599C00555EA2 /* UIScrollView+Pages.m */; };
 		A2FD5B431A52634600555EA2 /* UIBezierPath+SVG.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B421A52634600555EA2 /* UIBezierPath+SVG.m */; };
@@ -218,6 +220,10 @@
 		A28BE3891A3ED364005C4AC6 /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
 		A28BE38C1A3ED5A4005C4AC6 /* UITextField+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Blocks.h"; sourceTree = "<group>"; };
 		A28BE38D1A3ED5A4005C4AC6 /* UITextField+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Blocks.m"; sourceTree = "<group>"; };
+		A2CFAEF31A56BD050004A282 /* NSString+Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Score.h"; sourceTree = "<group>"; };
+		A2CFAEF41A56BD050004A282 /* NSString+Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Score.m"; sourceTree = "<group>"; };
+		A2CFAEF61A56D15C0004A282 /* UIColor+Modify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Modify.h"; sourceTree = "<group>"; };
+		A2CFAEF71A56D15C0004A282 /* UIColor+Modify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Modify.m"; sourceTree = "<group>"; };
 		A2FD5B301A52574C00555EA2 /* UIImage+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Merge.h"; sourceTree = "<group>"; };
 		A2FD5B311A52574C00555EA2 /* UIImage+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Merge.m"; sourceTree = "<group>"; };
 		A2FD5B331A52599C00555EA2 /* UIScrollView+Pages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Pages.h"; sourceTree = "<group>"; };
@@ -449,6 +455,8 @@
 				A28BE3441A3EA292005C4AC6 /* NSString+Hash.m */,
 				A2FD5B531A526AC900555EA2 /* NSString+UUID.h */,
 				A2FD5B541A526AC900555EA2 /* NSString+UUID.m */,
+				A2CFAEF31A56BD050004A282 /* NSString+Score.h */,
+				A2CFAEF41A56BD050004A282 /* NSString+Score.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -475,6 +483,8 @@
 				A28BE3661A3EAF2E005C4AC6 /* UIColor+Gradient.m */,
 				A218D8D51A479E9C00AB83CA /* UIColor+Web.h */,
 				A218D8D61A479E9C00AB83CA /* UIColor+Web.m */,
+				A2CFAEF61A56D15C0004A282 /* UIColor+Modify.h */,
+				A2CFAEF71A56D15C0004A282 /* UIColor+Modify.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -569,9 +579,9 @@
 			isa = PBXGroup;
 			children = (
 				A28BE3201A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.h */,
+				A28BE3211A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m */,
 				A28BE3681A3EB043005C4AC6 /* UIViewController+Visible.h */,
 				A28BE3691A3EB043005C4AC6 /* UIViewController+Visible.m */,
-				A28BE3211A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -778,6 +788,7 @@
 				A28BE3671A3EAF2E005C4AC6 /* UIColor+Gradient.m in Sources */,
 				A28BE2E81A3E9F48005C4AC6 /* NSData+Encrypt.m in Sources */,
 				A28BE3861A3ECF49005C4AC6 /* NSObject+GCD.m in Sources */,
+				A2CFAEF51A56BD050004A282 /* NSString+Score.m in Sources */,
 				A280E5481A52480300E6ACA2 /* UIBezierPath+SVG.m in Sources */,
 				A2FD5B321A52574C00555EA2 /* UIImage+Merge.m in Sources */,
 				A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */,
@@ -798,6 +809,7 @@
 				A28BE32E1A3E9FDC005C4AC6 /* UIImage+FX.m in Sources */,
 				A28BE3321A3E9FDC005C4AC6 /* UILabel+ESAdjustableLabel.m in Sources */,
 				A28BE3371A3E9FDC005C4AC6 /* UIView+Animation.m in Sources */,
+				A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */,
 				A28BE3751A3EBA7E005C4AC6 /* UIImage+FileName.m in Sources */,
 				A28BE3341A3E9FDC005C4AC6 /* UINavigationController+BATransitions.m in Sources */,
 				A28BE37F1A3EC561005C4AC6 /* UIWebView+Load.m in Sources */,
