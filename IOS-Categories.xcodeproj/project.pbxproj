@@ -104,7 +104,7 @@
 		A219B8B81A615E3800135327 /* UIImage+Capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Capture.h"; sourceTree = "<group>"; };
 		A219B8B91A615E3800135327 /* UIImage+Capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Capture.m"; sourceTree = "<group>"; };
 		A219B8BB1A615F8D00135327 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
-		A22725CE1A3E72D50061605B /* categories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = categories.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22725CE1A3E72D50061605B /* IOS-Categories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Categories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22725D21A3E72D50061605B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22725D31A3E72D50061605B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A22725D51A3E72D50061605B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -281,7 +281,7 @@
 		A22725CF1A3E72D50061605B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A22725CE1A3E72D50061605B /* categories.app */,
+				A22725CE1A3E72D50061605B /* IOS-Categories.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -728,9 +728,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A22725CD1A3E72D50061605B /* categories */ = {
+		A22725CD1A3E72D50061605B /* IOS-Categories */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A22725EB1A3E72D50061605B /* Build configuration list for PBXNativeTarget "categories" */;
+			buildConfigurationList = A22725EB1A3E72D50061605B /* Build configuration list for PBXNativeTarget "IOS-Categories" */;
 			buildPhases = (
 				A22725CA1A3E72D50061605B /* Sources */,
 				A22725CB1A3E72D50061605B /* Frameworks */,
@@ -740,9 +740,9 @@
 			);
 			dependencies = (
 			);
-			name = categories;
+			name = "IOS-Categories";
 			productName = categories;
-			productReference = A22725CE1A3E72D50061605B /* categories.app */;
+			productReference = A22725CE1A3E72D50061605B /* IOS-Categories.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -759,7 +759,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A22725C91A3E72D50061605B /* Build configuration list for PBXProject "categories" */;
+			buildConfigurationList = A22725C91A3E72D50061605B /* Build configuration list for PBXProject "IOS-Categories" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -772,7 +772,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A22725CD1A3E72D50061605B /* categories */,
+				A22725CD1A3E72D50061605B /* IOS-Categories */,
 			);
 		};
 /* End PBXProject section */
@@ -974,7 +974,7 @@
 				INFOPLIST_FILE = categories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "IOS-Categories";
 			};
 			name = Debug;
 		};
@@ -985,14 +985,14 @@
 				INFOPLIST_FILE = categories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "IOS-Categories";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A22725C91A3E72D50061605B /* Build configuration list for PBXProject "categories" */ = {
+		A22725C91A3E72D50061605B /* Build configuration list for PBXProject "IOS-Categories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A22725E91A3E72D50061605B /* Debug */,
@@ -1001,7 +1001,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A22725EB1A3E72D50061605B /* Build configuration list for PBXNativeTarget "categories" */ = {
+		A22725EB1A3E72D50061605B /* Build configuration list for PBXNativeTarget "IOS-Categories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A22725EC1A3E72D50061605B /* Debug */,
