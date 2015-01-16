@@ -18,6 +18,7 @@
 		A22725D91A3E72D50061605B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22725D81A3E72D50061605B /* Images.xcassets */; };
 		A22725DC1A3E72D50061605B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22725DA1A3E72D50061605B /* LaunchScreen.xib */; };
 		A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A238E0571A4555F400383A97 /* NSObject+Property.m */; };
+		A253E7971A695E7F0079FEBF /* UIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = A253E7961A695E7F0079FEBF /* UIWindow+Hierarchy.m */; };
 		A2768FD31A5518C400E03C90 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A2768FD21A5518C400E03C90 /* UIView+Toast.m */; };
 		A280E5251A5233A700E6ACA2 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5241A5233A700E6ACA2 /* UIButton+Block.m */; };
 		A280E5321A523AD700E6ACA2 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5311A523AD700E6ACA2 /* UIView+BlockGesture.m */; };
@@ -113,6 +114,8 @@
 		A22725DB1A3E72D50061605B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A238E0561A4555F400383A97 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
 		A238E0571A4555F400383A97 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		A253E7951A695E7F0079FEBF /* UIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		A253E7961A695E7F0079FEBF /* UIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Hierarchy.m"; sourceTree = "<group>"; };
 		A2768FD11A5518C400E03C90 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		A2768FD21A5518C400E03C90 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		A280E5231A5233A700E6ACA2 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
@@ -335,6 +338,7 @@
 		A22725F21A3E736D0061605B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A253E7941A695E7F0079FEBF /* UIWindow */,
 				A2FD5B561A526C6800555EA2 /* UISearchBar */,
 				A2FD5B441A52635900555EA2 /* UIResponder */,
 				A2FD5B401A52634600555EA2 /* UIBezierPath */,
@@ -355,6 +359,16 @@
 				A28BE3221A3E9FDC005C4AC6 /* UIWebView */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A253E7941A695E7F0079FEBF /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				A253E7951A695E7F0079FEBF /* UIWindow+Hierarchy.h */,
+				A253E7961A695E7F0079FEBF /* UIWindow+Hierarchy.m */,
+			);
+			name = UIWindow;
+			path = "../../../../Project/IOS-Categories/categories/UIKit/UIWindow";
 			sourceTree = "<group>";
 		};
 		A280E5221A52339800E6ACA2 /* UIButton */ = {
@@ -818,6 +832,7 @@
 				A28BE2EA1A3E9F48005C4AC6 /* NSDictionary+jsonString.m in Sources */,
 				A28BE32B1A3E9FDC005C4AC6 /* UIImage+Alpha.m in Sources */,
 				A28BE3361A3E9FDC005C4AC6 /* UITableViewCell+NIB.m in Sources */,
+				A253E7971A695E7F0079FEBF /* UIWindow+Hierarchy.m in Sources */,
 				A2FD5B4F1A52693600555EA2 /* NSFileManager+Paths.m in Sources */,
 				A280E5441A5246C200E6ACA2 /* NSObject+Additions.m in Sources */,
 				A28BE32E1A3E9FDC005C4AC6 /* UIImage+FX.m in Sources */,
