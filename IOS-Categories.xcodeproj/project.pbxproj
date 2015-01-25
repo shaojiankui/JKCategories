@@ -31,7 +31,7 @@
 		A28BE2C91A3E9D8D005C4AC6 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A28BE2C71A3E9D8D005C4AC6 /* RootViewController.xib */; };
 		A28BE2E71A3E9F48005C4AC6 /* NSBundle+AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2CC1A3E9F48005C4AC6 /* NSBundle+AppIcon.m */; };
 		A28BE2E81A3E9F48005C4AC6 /* NSData+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2CF1A3E9F48005C4AC6 /* NSData+Encrypt.m */; };
-		A28BE2EA1A3E9F48005C4AC6 /* NSDictionary+jsonString.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2D51A3E9F48005C4AC6 /* NSDictionary+jsonString.m */; };
+		A28BE2EA1A3E9F48005C4AC6 /* NSDictionary+JsonString.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2D51A3E9F48005C4AC6 /* NSDictionary+JsonString.m */; };
 		A28BE2EB1A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2D71A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m */; };
 		A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2DA1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m */; };
 		A28BE2ED1A3E9F48005C4AC6 /* NSString+DictionaryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2DD1A3E9F48005C4AC6 /* NSString+DictionaryValue.m */; };
@@ -76,6 +76,8 @@
 		A28BE3861A3ECF49005C4AC6 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3851A3ECF49005C4AC6 /* NSObject+GCD.m */; };
 		A28BE38A1A3ED364005C4AC6 /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3891A3ED364005C4AC6 /* UITextView+PlaceHolder.m */; };
 		A28BE38E1A3ED5A4005C4AC6 /* UITextField+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE38D1A3ED5A4005C4AC6 /* UITextField+Blocks.m */; };
+		A2AF02A41A74BACB003FEC8D /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */; };
+		A2AF02AA1A74C096003FEC8D /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A91A74C096003FEC8D /* NSDictionary+Merge.m */; };
 		A2C1ADCE1A58F35400E3BAFF /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1ADCD1A58F35400E3BAFF /* UIImage+Orientation.m */; };
 		A2CFAEF51A56BD050004A282 /* NSString+Score.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF41A56BD050004A282 /* NSString+Score.m */; };
 		A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF71A56D15C0004A282 /* UIColor+Modify.m */; };
@@ -140,7 +142,7 @@
 		A28BE2CE1A3E9F48005C4AC6 /* NSData+Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encrypt.h"; sourceTree = "<group>"; };
 		A28BE2CF1A3E9F48005C4AC6 /* NSData+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encrypt.m"; sourceTree = "<group>"; };
 		A28BE2D41A3E9F48005C4AC6 /* NSDictionary+JsonString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JsonString.h"; sourceTree = "<group>"; };
-		A28BE2D51A3E9F48005C4AC6 /* NSDictionary+jsonString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+jsonString.m"; sourceTree = "<group>"; };
+		A28BE2D51A3E9F48005C4AC6 /* NSDictionary+JsonString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JsonString.m"; sourceTree = "<group>"; };
 		A28BE2D61A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+IFNil.h"; sourceTree = "<group>"; };
 		A28BE2D71A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+IFNil.m"; sourceTree = "<group>"; };
 		A28BE2D91A3E9F48005C4AC6 /* NSObject+AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedObject.h"; sourceTree = "<group>"; };
@@ -229,6 +231,10 @@
 		A28BE3891A3ED364005C4AC6 /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
 		A28BE38C1A3ED5A4005C4AC6 /* UITextField+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Blocks.h"; sourceTree = "<group>"; };
 		A28BE38D1A3ED5A4005C4AC6 /* UITextField+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Blocks.m"; sourceTree = "<group>"; };
+		A2AF02A21A74BACB003FEC8D /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
+		A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeAccess.m"; sourceTree = "<group>"; };
+		A2AF02A81A74C096003FEC8D /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
+		A2AF02A91A74C096003FEC8D /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
 		A2C1ADCC1A58F35400E3BAFF /* UIImage+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Orientation.h"; sourceTree = "<group>"; };
 		A2C1ADCD1A58F35400E3BAFF /* UIImage+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Orientation.m"; sourceTree = "<group>"; };
 		A2CFAEF31A56BD050004A282 /* NSString+Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Score.h"; sourceTree = "<group>"; };
@@ -435,9 +441,13 @@
 			isa = PBXGroup;
 			children = (
 				A28BE2D41A3E9F48005C4AC6 /* NSDictionary+JsonString.h */,
-				A28BE2D51A3E9F48005C4AC6 /* NSDictionary+jsonString.m */,
+				A28BE2D51A3E9F48005C4AC6 /* NSDictionary+JsonString.m */,
 				A28BE2D61A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.h */,
 				A28BE2D71A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m */,
+				A2AF02A21A74BACB003FEC8D /* NSDictionary+SafeAccess.h */,
+				A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */,
+				A2AF02A81A74C096003FEC8D /* NSDictionary+Merge.h */,
+				A2AF02A91A74C096003FEC8D /* NSDictionary+Merge.m */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
@@ -829,11 +839,12 @@
 				A28BE35C1A3EAA97005C4AC6 /* NSTimer+Blocks.m in Sources */,
 				A2FD5B521A5269D400555EA2 /* NSObject+Runtime.m in Sources */,
 				A28BE33A1A3E9FDC005C4AC6 /* UIView+Nib.m in Sources */,
-				A28BE2EA1A3E9F48005C4AC6 /* NSDictionary+jsonString.m in Sources */,
+				A28BE2EA1A3E9F48005C4AC6 /* NSDictionary+JsonString.m in Sources */,
 				A28BE32B1A3E9FDC005C4AC6 /* UIImage+Alpha.m in Sources */,
 				A28BE3361A3E9FDC005C4AC6 /* UITableViewCell+NIB.m in Sources */,
 				A253E7971A695E7F0079FEBF /* UIWindow+Hierarchy.m in Sources */,
 				A2FD5B4F1A52693600555EA2 /* NSFileManager+Paths.m in Sources */,
+				A2AF02AA1A74C096003FEC8D /* NSDictionary+Merge.m in Sources */,
 				A280E5441A5246C200E6ACA2 /* NSObject+Additions.m in Sources */,
 				A28BE32E1A3E9FDC005C4AC6 /* UIImage+FX.m in Sources */,
 				A28BE3321A3E9FDC005C4AC6 /* UILabel+ESAdjustableLabel.m in Sources */,
@@ -865,6 +876,7 @@
 				A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */,
 				A280E53A1A52405A00E6ACA2 /* UIScrollView+Addition.m in Sources */,
 				A28BE32D1A3E9FDC005C4AC6 /* UIImage+Color.m in Sources */,
+				A2AF02A41A74BACB003FEC8D /* NSDictionary+SafeAccess.m in Sources */,
 				A28BE3291A3E9FDC005C4AC6 /* UIColor+HEX.m in Sources */,
 				A2FD5B431A52634600555EA2 /* UIBezierPath+SVG.m in Sources */,
 				A28BE32C1A3E9FDC005C4AC6 /* UIImage+animatedGIF.m in Sources */,
