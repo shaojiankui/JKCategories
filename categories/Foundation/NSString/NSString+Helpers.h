@@ -11,7 +11,6 @@
 
 // helper functions
 - (NSString *) stringByUrlEncoding;
-- (NSString *) md5;
 - (NSMutableDictionary *)dictionaryFromQueryString;
 - (NSString *)stringByReplacingHTMLEmoticonsWithEmoji;
 - (NSString *)stringByStrippingHTML;

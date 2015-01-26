@@ -19,6 +19,8 @@
 		A22725DC1A3E72D50061605B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22725DA1A3E72D50061605B /* LaunchScreen.xib */; };
 		A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A238E0571A4555F400383A97 /* NSObject+Property.m */; };
 		A253E7971A695E7F0079FEBF /* UIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = A253E7961A695E7F0079FEBF /* UIWindow+Hierarchy.m */; };
+		A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A401A75C788009BA7EE /* NSData+Base64.m */; };
+		A2681A441A75C7C8009BA7EE /* NSString+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A431A75C7C8009BA7EE /* NSString+Encrypt.m */; };
 		A2768FD31A5518C400E03C90 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A2768FD21A5518C400E03C90 /* UIView+Toast.m */; };
 		A280E5251A5233A700E6ACA2 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5241A5233A700E6ACA2 /* UIButton+Block.m */; };
 		A280E5321A523AD700E6ACA2 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5311A523AD700E6ACA2 /* UIView+BlockGesture.m */; };
@@ -36,7 +38,6 @@
 		A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2DA1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m */; };
 		A28BE2ED1A3E9F48005C4AC6 /* NSString+DictionaryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2DD1A3E9F48005C4AC6 /* NSString+DictionaryValue.m */; };
 		A28BE2EE1A3E9F48005C4AC6 /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2DF1A3E9F48005C4AC6 /* NSString+Helpers.m */; };
-		A28BE2EF1A3E9F48005C4AC6 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2E11A3E9F48005C4AC6 /* NSString+MD5.m */; };
 		A28BE2F01A3E9F48005C4AC6 /* NSString+UrlEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2E31A3E9F48005C4AC6 /* NSString+UrlEncode.m */; };
 		A28BE2F11A3E9F48005C4AC6 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2E61A3E9F48005C4AC6 /* NSTimer+Addition.m */; };
 		A28BE3291A3E9FDC005C4AC6 /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2F41A3E9FDC005C4AC6 /* UIColor+HEX.m */; };
@@ -118,6 +119,10 @@
 		A238E0571A4555F400383A97 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		A253E7951A695E7F0079FEBF /* UIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Hierarchy.h"; sourceTree = "<group>"; };
 		A253E7961A695E7F0079FEBF /* UIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		A2681A3F1A75C788009BA7EE /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		A2681A401A75C788009BA7EE /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		A2681A421A75C7C8009BA7EE /* NSString+Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encrypt.h"; sourceTree = "<group>"; };
+		A2681A431A75C7C8009BA7EE /* NSString+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encrypt.m"; sourceTree = "<group>"; };
 		A2768FD11A5518C400E03C90 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		A2768FD21A5518C400E03C90 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		A280E5231A5233A700E6ACA2 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
@@ -151,8 +156,6 @@
 		A28BE2DD1A3E9F48005C4AC6 /* NSString+DictionaryValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DictionaryValue.m"; sourceTree = "<group>"; };
 		A28BE2DE1A3E9F48005C4AC6 /* NSString+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helpers.h"; sourceTree = "<group>"; };
 		A28BE2DF1A3E9F48005C4AC6 /* NSString+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helpers.m"; sourceTree = "<group>"; };
-		A28BE2E01A3E9F48005C4AC6 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
-		A28BE2E11A3E9F48005C4AC6 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		A28BE2E21A3E9F48005C4AC6 /* NSString+UrlEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UrlEncode.h"; sourceTree = "<group>"; };
 		A28BE2E31A3E9F48005C4AC6 /* NSString+UrlEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UrlEncode.m"; sourceTree = "<group>"; };
 		A28BE2E51A3E9F48005C4AC6 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
@@ -429,6 +432,8 @@
 		A28BE2CD1A3E9F48005C4AC6 /* NSData */ = {
 			isa = PBXGroup;
 			children = (
+				A2681A3F1A75C788009BA7EE /* NSData+Base64.h */,
+				A2681A401A75C788009BA7EE /* NSData+Base64.m */,
 				A28BE2CE1A3E9F48005C4AC6 /* NSData+Encrypt.h */,
 				A28BE2CF1A3E9F48005C4AC6 /* NSData+Encrypt.m */,
 				A280E53B1A52433200E6ACA2 /* NSData+Gzip.h */,
@@ -480,8 +485,6 @@
 				A28BE2DD1A3E9F48005C4AC6 /* NSString+DictionaryValue.m */,
 				A28BE2DE1A3E9F48005C4AC6 /* NSString+Helpers.h */,
 				A28BE2DF1A3E9F48005C4AC6 /* NSString+Helpers.m */,
-				A28BE2E01A3E9F48005C4AC6 /* NSString+MD5.h */,
-				A28BE2E11A3E9F48005C4AC6 /* NSString+MD5.m */,
 				A28BE2E21A3E9F48005C4AC6 /* NSString+UrlEncode.h */,
 				A28BE2E31A3E9F48005C4AC6 /* NSString+UrlEncode.m */,
 				A28BE3431A3EA292005C4AC6 /* NSString+Hash.h */,
@@ -490,6 +493,8 @@
 				A2FD5B541A526AC900555EA2 /* NSString+UUID.m */,
 				A2CFAEF31A56BD050004A282 /* NSString+Score.h */,
 				A2CFAEF41A56BD050004A282 /* NSString+Score.m */,
+				A2681A421A75C7C8009BA7EE /* NSString+Encrypt.h */,
+				A2681A431A75C7C8009BA7EE /* NSString+Encrypt.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -864,8 +869,10 @@
 				A280E5411A5244EC00E6ACA2 /* NSDate+Addition.m in Sources */,
 				A28BE32A1A3E9FDC005C4AC6 /* UIDevice+Hardware.m in Sources */,
 				A2768FD31A5518C400E03C90 /* UIView+Toast.m in Sources */,
+				A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */,
 				A28BE2EB1A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m in Sources */,
 				A28BE3551A3EAA21005C4AC6 /* NSObject+Blocks.m in Sources */,
+				A2681A441A75C7C8009BA7EE /* NSString+Encrypt.m in Sources */,
 				A28BE38E1A3ED5A4005C4AC6 /* UITextField+Blocks.m in Sources */,
 				A28BE3591A3EAA52005C4AC6 /* NSSet+Block.m in Sources */,
 				A28BE2F11A3E9F48005C4AC6 /* NSTimer+Addition.m in Sources */,
@@ -886,7 +893,6 @@
 				A22725D71A3E72D50061605B /* AppDelegate.m in Sources */,
 				A28BE3721A3EB31D005C4AC6 /* UIImageView+Addition.m in Sources */,
 				A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */,
-				A28BE2EF1A3E9F48005C4AC6 /* NSString+MD5.m in Sources */,
 				A219B8B71A615CA100135327 /* UIView+Screenshot.m in Sources */,
 				A28BE3421A3EA20B005C4AC6 /* UIColor+Random.m in Sources */,
 				A2FD5B631A52718200555EA2 /* NSDate+Utilities.m in Sources */,

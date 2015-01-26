@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface NSData (Encrypt)
-- (NSData *)AES256EncryptWithKey:(NSString *)key;   // Encrypt
-- (NSData *)AES256DecryptWithKey:(NSString *)key;   // Decrypt
+- (NSData *)encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv;
+- (NSData *)decryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv;
 
-- (NSString *)stringByBase64EncodingData;
-- (NSString *)stringByBase64DecodingData;
+- (NSData *)encryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv;
+- (NSData *)decryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv;
 
 - (NSString *)UTF8String;
 @end

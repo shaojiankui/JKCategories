@@ -17,10 +17,8 @@
 
 - (NSString *)urlEncodeUsingEncoding:(NSStringEncoding)encoding {
     return (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
-                                                                                 (__bridge CFStringRef)self,
-                                                                                 NULL,
-                                                                                 (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ",
-                                                                                 CFStringConvertNSStringEncodingToEncoding(encoding));
+                (__bridge CFStringRef)self,NULL,(CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ",
+                 CFStringConvertNSStringEncodingToEncoding(encoding));
 }
 
 - (NSString *)urlDecode {
@@ -29,9 +27,7 @@
 
 - (NSString *)urlDecodeUsingEncoding:(NSStringEncoding)encoding {
 	return (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
-                                                                                                 (__bridge CFStringRef)self,
-                                                                                                 CFSTR(""),
-                                                                                                 CFStringConvertNSStringEncodingToEncoding(encoding));
+             (__bridge CFStringRef)self,CFSTR(""),CFStringConvertNSStringEncodingToEncoding(encoding));
 }
 
 - (NSDictionary *)dictionaryFromURLParameters
