@@ -82,6 +82,7 @@
 		A2C1ADCE1A58F35400E3BAFF /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1ADCD1A58F35400E3BAFF /* UIImage+Orientation.m */; };
 		A2CFAEF51A56BD050004A282 /* NSString+Score.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF41A56BD050004A282 /* NSString+Score.m */; };
 		A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF71A56D15C0004A282 /* UIColor+Modify.m */; };
+		A2E538EC1A775A9900A5D921 /* UIImage+RemoteSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E538EB1A775A9900A5D921 /* UIImage+RemoteSize.m */; };
 		A2FD5B321A52574C00555EA2 /* UIImage+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B311A52574C00555EA2 /* UIImage+Merge.m */; };
 		A2FD5B351A52599C00555EA2 /* UIScrollView+Pages.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B341A52599C00555EA2 /* UIScrollView+Pages.m */; };
 		A2FD5B431A52634600555EA2 /* UIBezierPath+SVG.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B421A52634600555EA2 /* UIBezierPath+SVG.m */; };
@@ -244,6 +245,8 @@
 		A2CFAEF41A56BD050004A282 /* NSString+Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Score.m"; sourceTree = "<group>"; };
 		A2CFAEF61A56D15C0004A282 /* UIColor+Modify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Modify.h"; sourceTree = "<group>"; };
 		A2CFAEF71A56D15C0004A282 /* UIColor+Modify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Modify.m"; sourceTree = "<group>"; };
+		A2E538EA1A775A9900A5D921 /* UIImage+RemoteSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RemoteSize.h"; sourceTree = "<group>"; };
+		A2E538EB1A775A9900A5D921 /* UIImage+RemoteSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RemoteSize.m"; sourceTree = "<group>"; };
 		A2FD5B301A52574C00555EA2 /* UIImage+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Merge.h"; sourceTree = "<group>"; };
 		A2FD5B311A52574C00555EA2 /* UIImage+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Merge.m"; sourceTree = "<group>"; };
 		A2FD5B331A52599C00555EA2 /* UIScrollView+Pages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Pages.h"; sourceTree = "<group>"; };
@@ -559,6 +562,8 @@
 				A2C1ADCD1A58F35400E3BAFF /* UIImage+Orientation.m */,
 				A219B8B81A615E3800135327 /* UIImage+Capture.h */,
 				A219B8B91A615E3800135327 /* UIImage+Capture.m */,
+				A2E538EA1A775A9900A5D921 /* UIImage+RemoteSize.h */,
+				A2E538EB1A775A9900A5D921 /* UIImage+RemoteSize.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -852,6 +857,7 @@
 				A2AF02AA1A74C096003FEC8D /* NSDictionary+Merge.m in Sources */,
 				A280E5441A5246C200E6ACA2 /* NSObject+Additions.m in Sources */,
 				A28BE32E1A3E9FDC005C4AC6 /* UIImage+FX.m in Sources */,
+				A2E538EC1A775A9900A5D921 /* UIImage+RemoteSize.m in Sources */,
 				A28BE3321A3E9FDC005C4AC6 /* UILabel+ESAdjustableLabel.m in Sources */,
 				A28BE3371A3E9FDC005C4AC6 /* UIView+Animation.m in Sources */,
 				A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */,
