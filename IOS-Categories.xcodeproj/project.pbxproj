@@ -77,6 +77,7 @@
 		A28BE3861A3ECF49005C4AC6 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3851A3ECF49005C4AC6 /* NSObject+GCD.m */; };
 		A28BE38A1A3ED364005C4AC6 /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3891A3ED364005C4AC6 /* UITextView+PlaceHolder.m */; };
 		A28BE38E1A3ED5A4005C4AC6 /* UITextField+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE38D1A3ED5A4005C4AC6 /* UITextField+Blocks.m */; };
+		A29266521A78976B00D01EDA /* UIResponder+UIAdapt.m in Sources */ = {isa = PBXBuildFile; fileRef = A29266511A78976B00D01EDA /* UIResponder+UIAdapt.m */; };
 		A2AF02A41A74BACB003FEC8D /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */; };
 		A2AF02AA1A74C096003FEC8D /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A91A74C096003FEC8D /* NSDictionary+Merge.m */; };
 		A2C1ADCE1A58F35400E3BAFF /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1ADCD1A58F35400E3BAFF /* UIImage+Orientation.m */; };
@@ -235,6 +236,8 @@
 		A28BE3891A3ED364005C4AC6 /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
 		A28BE38C1A3ED5A4005C4AC6 /* UITextField+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Blocks.h"; sourceTree = "<group>"; };
 		A28BE38D1A3ED5A4005C4AC6 /* UITextField+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Blocks.m"; sourceTree = "<group>"; };
+		A29266501A78976B00D01EDA /* UIResponder+UIAdapt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+UIAdapt.h"; sourceTree = "<group>"; };
+		A29266511A78976B00D01EDA /* UIResponder+UIAdapt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+UIAdapt.m"; sourceTree = "<group>"; };
 		A2AF02A21A74BACB003FEC8D /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
 		A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeAccess.m"; sourceTree = "<group>"; };
 		A2AF02A81A74C096003FEC8D /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
@@ -711,6 +714,8 @@
 			children = (
 				A2FD5B451A52636100555EA2 /* UIResponder+Chain.h */,
 				A2FD5B461A52636100555EA2 /* UIResponder+Chain.m */,
+				A29266501A78976B00D01EDA /* UIResponder+UIAdapt.h */,
+				A29266511A78976B00D01EDA /* UIResponder+UIAdapt.m */,
 			);
 			path = UIResponder;
 			sourceTree = "<group>";
@@ -877,6 +882,7 @@
 				A2768FD31A5518C400E03C90 /* UIView+Toast.m in Sources */,
 				A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */,
 				A28BE2EB1A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m in Sources */,
+				A29266521A78976B00D01EDA /* UIResponder+UIAdapt.m in Sources */,
 				A28BE3551A3EAA21005C4AC6 /* NSObject+Blocks.m in Sources */,
 				A2681A441A75C7C8009BA7EE /* NSString+Encrypt.m in Sources */,
 				A28BE38E1A3ED5A4005C4AC6 /* UITextField+Blocks.m in Sources */,
