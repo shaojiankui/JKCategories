@@ -8,7 +8,7 @@
 
 #import "NSDictionary+SafeAccess.h"
 
-@implementation NSDictionary (DoNil)
+@implementation NSDictionary (SafeAccess)
 
 - (NSString*)stringForKey:(NSString*)key
 {

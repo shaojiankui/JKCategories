@@ -13,7 +13,7 @@
 @implementation NSString (Encrypt)
 -(NSString*)encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv {
     NSData *encrypted = [[self dataUsingEncoding:NSUTF8StringEncoding] encryptedWithAESUsingKey:key andIV:iv];
-    NSString *encryptedString = [encrypted base64Encoding];
+    NSString *encryptedString = [encrypted base64EncodedString];
     
     return encryptedString;
 }
@@ -27,7 +27,7 @@
 
 - (NSString*)encryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv {
     NSData *encrypted = [[self dataUsingEncoding:NSUTF8StringEncoding] encryptedWith3DESUsingKey:key andIV:iv];
-    NSString *encryptedString = [encrypted base64Encoding];
+    NSString *encryptedString = [encrypted base64EncodedString];
     
     return encryptedString;
 }
