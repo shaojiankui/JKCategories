@@ -28,6 +28,7 @@
 		A280E5411A5244EC00E6ACA2 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5401A5244EC00E6ACA2 /* NSDate+Addition.m */; };
 		A280E5441A5246C200E6ACA2 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5431A5246C200E6ACA2 /* NSObject+Additions.m */; };
 		A280E5481A52480300E6ACA2 /* UIBezierPath+SVG.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5471A52480300E6ACA2 /* UIBezierPath+SVG.m */; };
+		A2893D941AC3D42400EFA90A /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = A2893D931AC3D42400EFA90A /* UIButton+CountDown.m */; };
 		A28BE2C81A3E9D8D005C4AC6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2C61A3E9D8D005C4AC6 /* RootViewController.m */; };
 		A28BE2C91A3E9D8D005C4AC6 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A28BE2C71A3E9D8D005C4AC6 /* RootViewController.xib */; };
 		A28BE2E71A3E9F48005C4AC6 /* NSBundle+AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2CC1A3E9F48005C4AC6 /* NSBundle+AppIcon.m */; };
@@ -140,6 +141,8 @@
 		A280E5431A5246C200E6ACA2 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
 		A280E5461A52480300E6ACA2 /* UIBezierPath+SVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+SVG.h"; sourceTree = "<group>"; };
 		A280E5471A52480300E6ACA2 /* UIBezierPath+SVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+SVG.m"; sourceTree = "<group>"; };
+		A2893D921AC3D42400EFA90A /* UIButton+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDown.h"; sourceTree = "<group>"; };
+		A2893D931AC3D42400EFA90A /* UIButton+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CountDown.m"; sourceTree = "<group>"; };
 		A28BE2C51A3E9D8D005C4AC6 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A28BE2C61A3E9D8D005C4AC6 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A28BE2C71A3E9D8D005C4AC6 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -381,6 +384,8 @@
 		A280E5221A52339800E6ACA2 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				A2893D921AC3D42400EFA90A /* UIButton+CountDown.h */,
+				A2893D931AC3D42400EFA90A /* UIButton+CountDown.m */,
 				A280E5231A5233A700E6ACA2 /* UIButton+Block.h */,
 				A280E5241A5233A700E6ACA2 /* UIButton+Block.m */,
 			);
@@ -914,6 +919,7 @@
 				A2FD5B601A52708900555EA2 /* NSURL+Param.m in Sources */,
 				A219B8BA1A615E3800135327 /* UIImage+Capture.m in Sources */,
 				A28BE33E1A3E9FDC005C4AC6 /* UIWebView+Blocks.m in Sources */,
+				A2893D941AC3D42400EFA90A /* UIButton+CountDown.m in Sources */,
 				A28BE33C1A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m in Sources */,
 				A28BE32F1A3E9FDC005C4AC6 /* UIImage+Resize.m in Sources */,
 			);
