@@ -1,6 +1,6 @@
 //
 //  UIWebView+JS.m
-//  categories
+//  IOS-Categories
 //
 //  Created by Jakey on 14/12/22.
 //  Copyright (c) 2014年 duzixi. All rights reserved.

@@ -1,18 +1,18 @@
 //
-//  RootViewController.m
-//  categories
+//  NSDateDemoViewController.m
+//  IOS-Categories
 //
-//  Created by Jakey on 14/12/15.
-//  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
+//  Created by Jakey on 15/3/29.
+//  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
-#import "RootViewController.h"
+#import "NSDateDemoViewController.h"
 
-@interface RootViewController ()
+@interface NSDateDemoViewController ()
 
 @end
 
-@implementation RootViewController
+@implementation NSDateDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

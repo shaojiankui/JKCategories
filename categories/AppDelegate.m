@@ -1,10 +1,11 @@
 //
 //  AppDelegate.m
-//  categories
+//  IOS-Categories
 //
 //  Created by Jakey on 14/12/15.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
 //
+
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
@@ -13,13 +14,18 @@
 @end
 
 @implementation AppDelegate
++(AppDelegate*)APP{
+    return (AppDelegate*)[[UIApplication sharedApplication] delegate];
+}
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[RootViewController alloc]init];
+    self.rooViewController = [[RootViewController alloc] init];
+    self.navgationController = [[UINavigationController alloc]initWithRootViewController:self.rooViewController];
+    self.window.rootViewController = self.navgationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
