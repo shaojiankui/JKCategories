@@ -28,6 +28,8 @@
 		A280E5411A5244EC00E6ACA2 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5401A5244EC00E6ACA2 /* NSDate+Addition.m */; };
 		A280E5441A5246C200E6ACA2 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5431A5246C200E6ACA2 /* NSObject+Additions.m */; };
 		A280E5481A52480300E6ACA2 /* UIBezierPath+SVG.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5471A52480300E6ACA2 /* UIBezierPath+SVG.m */; };
+		A281FB3F1AC80001009040DA /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB3E1AC80001009040DA /* NSString+Emoji.m */; };
+		A281FB421AC800F2009040DA /* NSString+Trims.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB411AC800F2009040DA /* NSString+Trims.m */; };
 		A2893D941AC3D42400EFA90A /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = A2893D931AC3D42400EFA90A /* UIButton+CountDown.m */; };
 		A2893D971AC3E5FE00EFA90A /* UIButton+Indicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A2893D961AC3E5FE00EFA90A /* UIButton+Indicator.m */; };
 		A28BE2C81A3E9D8D005C4AC6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2C61A3E9D8D005C4AC6 /* RootViewController.m */; };
@@ -38,7 +40,6 @@
 		A28BE2EB1A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2D71A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m */; };
 		A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2DA1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m */; };
 		A28BE2ED1A3E9F48005C4AC6 /* NSString+DictionaryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2DD1A3E9F48005C4AC6 /* NSString+DictionaryValue.m */; };
-		A28BE2EE1A3E9F48005C4AC6 /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2DF1A3E9F48005C4AC6 /* NSString+Helpers.m */; };
 		A28BE2F01A3E9F48005C4AC6 /* NSString+UrlEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2E31A3E9F48005C4AC6 /* NSString+UrlEncode.m */; };
 		A28BE2F11A3E9F48005C4AC6 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2E61A3E9F48005C4AC6 /* NSTimer+Addition.m */; };
 		A28BE3291A3E9FDC005C4AC6 /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2F41A3E9FDC005C4AC6 /* UIColor+HEX.m */; };
@@ -142,6 +143,10 @@
 		A280E5431A5246C200E6ACA2 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
 		A280E5461A52480300E6ACA2 /* UIBezierPath+SVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+SVG.h"; sourceTree = "<group>"; };
 		A280E5471A52480300E6ACA2 /* UIBezierPath+SVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+SVG.m"; sourceTree = "<group>"; };
+		A281FB3D1AC80001009040DA /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		A281FB3E1AC80001009040DA /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		A281FB401AC800F2009040DA /* NSString+Trims.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trims.h"; sourceTree = "<group>"; };
+		A281FB411AC800F2009040DA /* NSString+Trims.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trims.m"; sourceTree = "<group>"; };
 		A2893D921AC3D42400EFA90A /* UIButton+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDown.h"; sourceTree = "<group>"; };
 		A2893D931AC3D42400EFA90A /* UIButton+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CountDown.m"; sourceTree = "<group>"; };
 		A2893D951AC3E5FE00EFA90A /* UIButton+Indicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Indicator.h"; sourceTree = "<group>"; };
@@ -161,8 +166,6 @@
 		A28BE2DA1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedObject.m"; sourceTree = "<group>"; };
 		A28BE2DC1A3E9F48005C4AC6 /* NSString+DictionaryValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DictionaryValue.h"; sourceTree = "<group>"; };
 		A28BE2DD1A3E9F48005C4AC6 /* NSString+DictionaryValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DictionaryValue.m"; sourceTree = "<group>"; };
-		A28BE2DE1A3E9F48005C4AC6 /* NSString+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helpers.h"; sourceTree = "<group>"; };
-		A28BE2DF1A3E9F48005C4AC6 /* NSString+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helpers.m"; sourceTree = "<group>"; };
 		A28BE2E21A3E9F48005C4AC6 /* NSString+UrlEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UrlEncode.h"; sourceTree = "<group>"; };
 		A28BE2E31A3E9F48005C4AC6 /* NSString+UrlEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UrlEncode.m"; sourceTree = "<group>"; };
 		A28BE2E51A3E9F48005C4AC6 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
@@ -489,10 +492,12 @@
 		A28BE2DB1A3E9F48005C4AC6 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				A281FB401AC800F2009040DA /* NSString+Trims.h */,
+				A281FB411AC800F2009040DA /* NSString+Trims.m */,
+				A281FB3D1AC80001009040DA /* NSString+Emoji.h */,
+				A281FB3E1AC80001009040DA /* NSString+Emoji.m */,
 				A28BE2DC1A3E9F48005C4AC6 /* NSString+DictionaryValue.h */,
 				A28BE2DD1A3E9F48005C4AC6 /* NSString+DictionaryValue.m */,
-				A28BE2DE1A3E9F48005C4AC6 /* NSString+Helpers.h */,
-				A28BE2DF1A3E9F48005C4AC6 /* NSString+Helpers.m */,
 				A28BE2E21A3E9F48005C4AC6 /* NSString+UrlEncode.h */,
 				A28BE2E31A3E9F48005C4AC6 /* NSString+UrlEncode.m */,
 				A28BE3431A3EA292005C4AC6 /* NSString+Hash.h */,
@@ -851,7 +856,6 @@
 				A280E5481A52480300E6ACA2 /* UIBezierPath+SVG.m in Sources */,
 				A2FD5B321A52574C00555EA2 /* UIImage+Merge.m in Sources */,
 				A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */,
-				A28BE2EE1A3E9F48005C4AC6 /* NSString+Helpers.m in Sources */,
 				A28BE3521A3EA91B005C4AC6 /* NSArray+Block.m in Sources */,
 				A28BE33B1A3E9FDC005C4AC6 /* UIView+RecursiveDescription.m in Sources */,
 				A28BE3781A3EC1C6005C4AC6 /* NSObject+AddProperty.m in Sources */,
@@ -899,6 +903,7 @@
 				A2FD5B551A526AC900555EA2 /* NSString+UUID.m in Sources */,
 				A28BE2ED1A3E9F48005C4AC6 /* NSString+DictionaryValue.m in Sources */,
 				A218D8DF1A47A25100AB83CA /* UIWebView+Canvas.m in Sources */,
+				A281FB3F1AC80001009040DA /* NSString+Emoji.m in Sources */,
 				A2FD5B4B1A52687000555EA2 /* NSException+Trace.m in Sources */,
 				A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */,
 				A280E53A1A52405A00E6ACA2 /* UIScrollView+Addition.m in Sources */,
@@ -927,6 +932,7 @@
 				A28BE33E1A3E9FDC005C4AC6 /* UIWebView+Blocks.m in Sources */,
 				A2893D941AC3D42400EFA90A /* UIButton+CountDown.m in Sources */,
 				A28BE33C1A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m in Sources */,
+				A281FB421AC800F2009040DA /* NSString+Trims.m in Sources */,
 				A28BE32F1A3E9FDC005C4AC6 /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
