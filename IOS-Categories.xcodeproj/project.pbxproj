@@ -101,7 +101,6 @@
 		A28BE2E71A3E9F48005C4AC6 /* NSBundle+AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2CC1A3E9F48005C4AC6 /* NSBundle+AppIcon.m */; };
 		A28BE2E81A3E9F48005C4AC6 /* NSData+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2CF1A3E9F48005C4AC6 /* NSData+Encrypt.m */; };
 		A28BE2EA1A3E9F48005C4AC6 /* NSDictionary+JsonString.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2D51A3E9F48005C4AC6 /* NSDictionary+JsonString.m */; };
-		A28BE2EB1A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2D71A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m */; };
 		A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2DA1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m */; };
 		A28BE2ED1A3E9F48005C4AC6 /* NSString+DictionaryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2DD1A3E9F48005C4AC6 /* NSString+DictionaryValue.m */; };
 		A28BE2F01A3E9F48005C4AC6 /* NSString+UrlEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2E31A3E9F48005C4AC6 /* NSString+UrlEncode.m */; };
@@ -321,8 +320,6 @@
 		A28BE2CF1A3E9F48005C4AC6 /* NSData+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encrypt.m"; sourceTree = "<group>"; };
 		A28BE2D41A3E9F48005C4AC6 /* NSDictionary+JsonString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JsonString.h"; sourceTree = "<group>"; };
 		A28BE2D51A3E9F48005C4AC6 /* NSDictionary+JsonString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JsonString.m"; sourceTree = "<group>"; };
-		A28BE2D61A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+IFNil.h"; sourceTree = "<group>"; };
-		A28BE2D71A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+IFNil.m"; sourceTree = "<group>"; };
 		A28BE2D91A3E9F48005C4AC6 /* NSObject+AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedObject.h"; sourceTree = "<group>"; };
 		A28BE2DA1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedObject.m"; sourceTree = "<group>"; };
 		A28BE2DC1A3E9F48005C4AC6 /* NSString+DictionaryValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DictionaryValue.h"; sourceTree = "<group>"; };
@@ -491,7 +488,7 @@
 				A22725D11A3E72D50061605B /* Supporting Files */,
 			);
 			name = Categories;
-			path = categories;
+			path = "IOS-Categories";
 			sourceTree = "<group>";
 		};
 		A22725D11A3E72D50061605B /* Supporting Files */ = {
@@ -995,8 +992,6 @@
 			children = (
 				A28BE2D41A3E9F48005C4AC6 /* NSDictionary+JsonString.h */,
 				A28BE2D51A3E9F48005C4AC6 /* NSDictionary+JsonString.m */,
-				A28BE2D61A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.h */,
-				A28BE2D71A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m */,
 				A2AF02A21A74BACB003FEC8D /* NSDictionary+SafeAccess.h */,
 				A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */,
 				A2AF02A81A74C096003FEC8D /* NSDictionary+Merge.h */,
@@ -1330,7 +1325,7 @@
 			dependencies = (
 			);
 			name = "IOS-Categories";
-			productName = categories;
+			productName = "IOS-Categories";
 			productReference = A22725CE1A3E72D50061605B /* IOS-Categories.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -1487,7 +1482,6 @@
 				A2768FD31A5518C400E03C90 /* UIView+Toast.m in Sources */,
 				A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */,
 				A281FBF91AC813B8009040DA /* UITextViewDemoViewController.m in Sources */,
-				A28BE2EB1A3E9F48005C4AC6 /* NSMutableDictionary+IFNil.m in Sources */,
 				A29266521A78976B00D01EDA /* UIResponder+UIAdapt.m in Sources */,
 				A28BE3551A3EAA21005C4AC6 /* NSObject+Blocks.m in Sources */,
 				A2681A441A75C7C8009BA7EE /* NSString+Encrypt.m in Sources */,
@@ -1634,7 +1628,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = categories/Info.plist;
+				INFOPLIST_FILE = "IOS-Categories/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "IOS-Categories";
@@ -1645,7 +1639,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = categories/Info.plist;
+				INFOPLIST_FILE = "IOS-Categories/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "IOS-Categories";

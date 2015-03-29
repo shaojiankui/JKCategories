@@ -26,7 +26,7 @@
                        @"UIImage",
                        @"UIImageView",
                        @"UILable",
-                       @"UINavigationControlle",
+                       @"UINavigationController",
                        @"UIResponder",
                        @"UIScrollView",
                        @"UISearchBar",

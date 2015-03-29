@@ -7,6 +7,8 @@
 //
 
 #import "BaseViewController.h"
+#import "NSArray+Block.h"
+#import "NSArray+SafeAccess.h"
 
 @interface NSArrayDemoViewController : BaseViewController
 

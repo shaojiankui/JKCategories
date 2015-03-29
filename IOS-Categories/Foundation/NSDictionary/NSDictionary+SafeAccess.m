@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (SafeAccess)
 
-- (NSString*)stringForKey:(NSString*)key
+- (NSString*)stringForKey:(id)key
 {
     id value = [self objectForKey:key];
     if (value == nil || value == [NSNull null])
@@ -27,8 +27,7 @@
     return nil;
 }
 
-
-- (NSNumber*)numberForKey:(NSString*)key
+- (NSNumber*)numberForKey:(id)key
 {
     id value = [self objectForKey:key];
     if ([value isKindOfClass:[NSNumber class]]) {
@@ -42,7 +41,7 @@
     return nil;
 }
 
-- (NSArray*)arrayForKey:(NSString*)key
+- (NSArray*)arrayForKey:(id)key
 {
     id value = [self objectForKey:key];
     if (value == nil || value == [NSNull null])
@@ -56,8 +55,7 @@
     return nil;
 }
 
-
-- (NSDictionary*)dictionaryForKey:(NSString*)key
+- (NSDictionary*)dictionaryForKey:(id)key
 {
     id value = [self objectForKey:key];
     if (value == nil || value == [NSNull null])
@@ -81,6 +79,18 @@
     if ([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]])
     {
         return [value integerValue];
+    }
+    return 0;
+}
+- (NSUInteger)unsignedIntegerForKey:(id)key{
+    id value = [self objectForKey:key];
+    if (value == nil || value == [NSNull null])
+    {
+        return 0;
+    }
+    if ([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]])
+    {
+        return [value unsignedIntegerValue];
     }
     return 0;
 }
@@ -148,6 +158,19 @@
     }
     return 0;
 }
+- (char)charForKey:(id)key{
+    id value = [self objectForKey:key];
+    
+    if (value == nil || value == [NSNull null])
+    {
+        return 0;
+    }
+    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]])
+    {
+        return [value charValue];
+    }
+    return 0;
+}
 - (short)shortForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -194,5 +217,79 @@
     }
     return 0;
 }
+//CG
+- (CGFloat)CGFloatForKey:(id)key
+{
+    CGFloat f = [self[key] doubleValue];
+    return f;
+}
 
+- (CGPoint)pointForKey:(id)key
+{
+    CGPoint point = CGPointFromString(self[key]);
+    return point;
+}
+- (CGSize)sizeForKey:(id)key
+{
+    CGSize size = CGSizeFromString(self[key]);
+    return size;
+}
+- (CGRect)rectForKey:(id)key
+{
+    CGRect rect = CGRectFromString(self[key]);
+    return rect;
+}
+@end
+
+#pragma --mark NSMutableDictionary setter
+@implementation NSMutableDictionary (SafeAccess)
+-(void)setObj:(id)i forKey:(NSString*)key{
+    if (i!=nil) {
+        self[key] = i;
+    }
+}
+-(void)setString:(NSString*)i forKey:(NSString*)key;
+{
+    [self setValue:i forKey:key];
+}
+-(void)setBool:(BOOL)i forKey:(NSString *)key
+{
+    self[key] = @(i);
+}
+-(void)setInt:(int)i forKey:(NSString *)key
+{
+    self[key] = @(i);
+}
+-(void)setInteger:(NSInteger)i forKey:(NSString *)key
+{
+    self[key] = @(i);
+}
+-(void)setUnsignedInteger:(NSUInteger)i forKey:(NSString *)key
+{
+    self[key] = @(i);
+}
+-(void)setCGFloat:(CGFloat)f forKey:(NSString *)key
+{
+    self[key] = @(f);
+}
+-(void)setChar:(char)c forKey:(NSString *)key
+{
+    self[key] = @(c);
+}
+-(void)setFloat:(float)i forKey:(NSString *)key
+{
+    self[key] = @(i);
+}
+-(void)setPoint:(CGPoint)o forKey:(NSString *)key
+{
+    self[key] = NSStringFromCGPoint(o);
+}
+-(void)setSize:(CGSize)o forKey:(NSString *)key
+{
+    self[key] = NSStringFromCGSize(o);
+}
+-(void)setRect:(CGRect)o forKey:(NSString *)key
+{
+    self[key] = NSStringFromCGRect(o);
+}
 @end
