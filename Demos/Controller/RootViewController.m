@@ -36,7 +36,8 @@
                        @"UIView",
                        @"UIViewController",
                        @"UIWebView",
-                       @"UIWindow"
+                       @"UIWindow",
+                       @"MKMapView"
                        ],
             @"Foundation":@[@"NSArray",
                             @"NSBundle",

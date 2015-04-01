@@ -18,6 +18,11 @@
 		A22725D91A3E72D50061605B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22725D81A3E72D50061605B /* Images.xcassets */; };
 		A22725DC1A3E72D50061605B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22725DA1A3E72D50061605B /* LaunchScreen.xib */; };
 		A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A238E0571A4555F400383A97 /* NSObject+Property.m */; };
+		A24377231ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */; };
+		A24377271ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = A24377261ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.m */; };
+		A243772C1ACBF10E00FFFEA1 /* MKMapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A243772A1ACBF10E00FFFEA1 /* MKMapViewViewController.m */; };
+		A243772D1ACBF10E00FFFEA1 /* MKMapViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A243772B1ACBF10E00FFFEA1 /* MKMapViewViewController.xib */; };
+		A24377301ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */; };
 		A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A401A75C788009BA7EE /* NSData+Base64.m */; };
 		A2681A441A75C7C8009BA7EE /* NSString+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A431A75C7C8009BA7EE /* NSString+Encrypt.m */; };
 		A2768FD31A5518C400E03C90 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A2768FD21A5518C400E03C90 /* UIView+Toast.m */; };
@@ -186,6 +191,15 @@
 		A22725DB1A3E72D50061605B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A238E0561A4555F400383A97 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
 		A238E0571A4555F400383A97 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		A24377211ACBE9CF00FFFEA1 /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
+		A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoCoding.m"; sourceTree = "<group>"; };
+		A24377251ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		A24377261ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+		A24377291ACBF10E00FFFEA1 /* MKMapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapViewViewController.h; sourceTree = "<group>"; };
+		A243772A1ACBF10E00FFFEA1 /* MKMapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapViewViewController.m; sourceTree = "<group>"; };
+		A243772B1ACBF10E00FFFEA1 /* MKMapViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKMapViewViewController.xib; sourceTree = "<group>"; };
+		A243772E1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
+		A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
 		A2681A3F1A75C788009BA7EE /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		A2681A401A75C788009BA7EE /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		A2681A421A75C7C8009BA7EE /* NSString+Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encrypt.h"; sourceTree = "<group>"; };
@@ -522,6 +536,7 @@
 		A22725F21A3E736D0061605B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A24377241ACBF03800FFFEA1 /* MKMapView */,
 				A2FD0CBB1AB1618D00EDEA4C /* UIWindow */,
 				A2FD5B561A526C6800555EA2 /* UISearchBar */,
 				A2FD5B441A52635900555EA2 /* UIResponder */,
@@ -542,6 +557,25 @@
 				A28BE3221A3E9FDC005C4AC6 /* UIWebView */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A24377241ACBF03800FFFEA1 /* MKMapView */ = {
+			isa = PBXGroup;
+			children = (
+				A24377251ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.h */,
+				A24377261ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.m */,
+			);
+			path = MKMapView;
+			sourceTree = "<group>";
+		};
+		A24377281ACBF0F600FFFEA1 /* MKMapView */ = {
+			isa = PBXGroup;
+			children = (
+				A24377291ACBF10E00FFFEA1 /* MKMapViewViewController.h */,
+				A243772A1ACBF10E00FFFEA1 /* MKMapViewViewController.m */,
+				A243772B1ACBF10E00FFFEA1 /* MKMapViewViewController.xib */,
+			);
+			path = MKMapView;
 			sourceTree = "<group>";
 		};
 		A280E5221A52339800E6ACA2 /* UIButton */ = {
@@ -751,6 +785,7 @@
 		A281FB5B1AC8101F009040DA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A24377281ACBF0F600FFFEA1 /* MKMapView */,
 				A281FB5C1AC8101F009040DA /* UIBezierPath */,
 				A281FB5D1AC8101F009040DA /* UIButton */,
 				A281FB5E1AC8101F009040DA /* UIColor */,
@@ -1017,6 +1052,8 @@
 				A280E5431A5246C200E6ACA2 /* NSObject+Additions.m */,
 				A2FD5B501A5269D400555EA2 /* NSObject+Runtime.h */,
 				A2FD5B511A5269D400555EA2 /* NSObject+Runtime.m */,
+				A24377211ACBE9CF00FFFEA1 /* NSObject+AutoCoding.h */,
+				A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -1173,6 +1210,8 @@
 				A28BE3211A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m */,
 				A28BE3681A3EB043005C4AC6 /* UIViewController+Visible.h */,
 				A28BE3691A3EB043005C4AC6 /* UIViewController+Visible.m */,
+				A243772E1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.h */,
+				A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1398,6 +1437,7 @@
 				A281FBFF1AC813C6009040DA /* UIViewDemoViewController.xib in Resources */,
 				A281FBD11AC81324009040DA /* UIImageDemoViewController.xib in Resources */,
 				A281FBA91AC81299009040DA /* NSSetDemoViewController.xib in Resources */,
+				A243772D1ACBF10E00FFFEA1 /* MKMapViewViewController.xib in Resources */,
 				A281FB791AC811AD009040DA /* RootViewController.xib in Resources */,
 				A219B8BC1A615F8D00135327 /* bg.jpg in Resources */,
 				A281FBC71AC81303009040DA /* UIColorDemoViewController.xib in Resources */,
@@ -1412,6 +1452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A28BE2E71A3E9F48005C4AC6 /* NSBundle+AppIcon.m in Sources */,
+				A24377301ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m in Sources */,
 				A28BE3391A3E9FDC005C4AC6 /* UIView+Frame.m in Sources */,
 				A281FBF41AC813AA009040DA /* UITextFieldDemoViewController.m in Sources */,
 				A281FB781AC811AD009040DA /* RootViewController.m in Sources */,
@@ -1433,6 +1474,7 @@
 				A28BE33B1A3E9FDC005C4AC6 /* UIView+RecursiveDescription.m in Sources */,
 				A281FBA31AC8127E009040DA /* NSObjectDemoViewController.m in Sources */,
 				A28BE3781A3EC1C6005C4AC6 /* NSObject+AddProperty.m in Sources */,
+				A243772C1ACBF10E00FFFEA1 /* MKMapViewViewController.m in Sources */,
 				A280E5251A5233A700E6ACA2 /* UIButton+Block.m in Sources */,
 				A281FBA81AC81299009040DA /* NSSetDemoViewController.m in Sources */,
 				A28BE36A1A3EB043005C4AC6 /* UIViewController+Visible.m in Sources */,
@@ -1498,6 +1540,7 @@
 				A281FB7C1AC811C2009040DA /* BaseViewController.m in Sources */,
 				A2FD5B4B1A52687000555EA2 /* NSException+Trace.m in Sources */,
 				A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */,
+				A24377271ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.m in Sources */,
 				A280E53A1A52405A00E6ACA2 /* UIScrollView+Addition.m in Sources */,
 				A28BE32D1A3E9FDC005C4AC6 /* UIImage+Color.m in Sources */,
 				A2AF02A41A74BACB003FEC8D /* NSDictionary+SafeAccess.m in Sources */,
@@ -1530,6 +1573,7 @@
 				A28BE33C1A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m in Sources */,
 				A281FB421AC800F2009040DA /* NSString+Trims.m in Sources */,
 				A28BE32F1A3E9FDC005C4AC6 /* UIImage+Resize.m in Sources */,
+				A24377231ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m in Sources */,
 				A281FB851AC81206009040DA /* NSBundleDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
