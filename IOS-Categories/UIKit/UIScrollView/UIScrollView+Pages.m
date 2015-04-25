@@ -9,6 +9,22 @@
 #import "UIScrollView+Pages.h"
 
 @implementation UIScrollView (Pages)
+- (NSInteger)pages{
+    NSInteger pages = self.contentSize.width/self.frame.size.width;
+    return pages;
+}
+- (NSInteger)currentPage{
+    NSInteger pages = self.contentSize.width/self.frame.size.width;
+    CGFloat scrollPercent = [self scrollPercent];
+    NSInteger currentPage = (NSInteger)roundf((pages-1)*scrollPercent);
+    return currentPage;
+}
+- (CGFloat)scrollPercent{
+    CGFloat width = self.contentSize.width-self.frame.size.width;
+    CGFloat scrollPercent = self.contentOffset.x/width;
+    return scrollPercent;
+}
+
 - (CGFloat) pagesY {
     CGFloat pageHeight = self.frame.size.height;
     CGFloat contentHeight = self.contentSize.height;

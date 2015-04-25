@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 
 @interface NSDictionary (SafeAccess)
+- (BOOL)hasKey:(NSString *)key;
+
 - (NSString*)stringForKey:(id)key;
 
 - (NSNumber*)numberForKey:(id)key;
@@ -37,6 +39,10 @@
 - (float)floatForKey:(id)key;
 
 - (double)doubleForKey:(id)key;
+
+- (long long)longLongForKey:(id)key;
+
+- (unsigned long long)unsignedLongLongForKey:(id)key;
 
 //CG
 - (CGFloat)CGFloatForKey:(id)key;
@@ -69,6 +75,10 @@
 -(void)setChar:(char)c forKey:(NSString*)key;
 
 -(void)setFloat:(float)i forKey:(NSString*)key;
+
+-(void)setDouble:(double)i forKey:(NSString*)key;
+
+-(void)setLongLong:(long long)i forKey:(NSString*)key;
 
 -(void)setPoint:(CGPoint)o forKey:(NSString*)key;
 

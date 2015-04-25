@@ -1,18 +1,18 @@
 //
-//  MKMapViewViewController.m
+//  NSIndexPathDemoViewController.m
 //  IOS-Categories
 //
-//  Created by Jakey on 15/4/1.
+//  Created by Jakey on 15/4/25.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
-#import "MKMapViewViewController.h"
+#import "NSIndexPathDemoViewController.h"
 
-@interface MKMapViewViewController ()
+@interface NSIndexPathDemoViewController ()
 
 @end
 
-@implementation MKMapViewViewController
+@implementation NSIndexPathDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

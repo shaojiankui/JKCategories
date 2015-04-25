@@ -1,16 +1,15 @@
 //
-//  NSDictionary+Json.m
-//  vw-service
+//  NSDictionary+JSONString.m
+//  IOS-Categories
 //
-//  Created by Jakey on 14-6-13.
-//  Copyright (c) 2014年 jakey. All rights reserved.
+//  Created by Jakey on 15/4/25.
+//  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
-#import "NSDictionary+JsonString.h"
+#import "NSDictionary+JSONString.h"
 
-@implementation NSDictionary (JsonString)
-
--(NSString *)jsonString{
+@implementation NSDictionary (JSONString)
+-(NSString *)JSONString{
     NSError *error = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
                                                        options:NSJSONWritingPrettyPrinted
@@ -24,5 +23,4 @@
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     return jsonString;
 }
-
 @end

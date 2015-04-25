@@ -7,7 +7,7 @@
 //
 
 #import "UIButtonDemoViewController.h"
-
+#import "UIButton+CountDown.h"
 @interface UIButtonDemoViewController ()
 
 @end
@@ -34,4 +34,9 @@
 }
 */
 
+- (IBAction)countButtonTouchd:(id)sender {
+    
+    [sender startTime:6 title:@"倒计时" waitTittle:@"秒"];
+
+}
 @end

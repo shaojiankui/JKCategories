@@ -7,7 +7,7 @@
 //
 
 #import "NSDictionaryDemoViewController.h"
-
+#import "NSDictionary+SafeAccess.h"
 @interface NSDictionaryDemoViewController ()
 
 @end
@@ -17,6 +17,51 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    NSDictionary *responseObject;
+    //__unused  只是用来屏蔽未使用警告
+    __unused NSDictionary *d = [responseObject dictionaryForKey:@"object"];
+    
+    __unused NSArray *array = [responseObject arrayForKey:@"array"];
+    
+    __unused NSString *string = [responseObject stringForKey:@"string"];
+    
+    __unused long long date = [responseObject longLongForKey:@"date"];
+    
+    __unused NSNumber *number = [responseObject numberForKey:@"number"];
+    
+    __unused NSInteger count = [responseObject integerForKey:@"count"];
+    
+    __unused BOOL b = [responseObject boolForKey:@"count"];
+    
+    __unused CGPoint point = [responseObject pointForKey:@"point"];
+    
+    __unused CGFloat f = [responseObject CGFloatForKey:@"float"];
+    
+    __unused CGRect rect = [responseObject rectForKey:@"rect"];
+    
+    __unused CGSize size = [responseObject sizeForKey:@"size"];
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    
+    [dict setObj:@"334" forKey:@"obj"];
+    
+    [dict setString:@"string" forKey:@"str"];
+    
+    [dict setBool:YES forKey:@"b"];
+    
+    [dict setInt:1 forKey:@"intvalue"];
+    
+    [dict setCGFloat:1.1 forKey:@"float"];
+    
+    [dict setPoint:CGPointMake(1, 1) forKey:@"point"];
+    
+    [dict setSize:CGSizeMake(111, 111) forKey:@"size"];
+    
+    [dict setRect:CGRectMake(0, 0, 0, 0) forKey:@"rect"];
+    
+    NSLog(@"dict %@",[dict description]);
+
 }
 
 - (void)didReceiveMemoryWarning {
