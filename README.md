@@ -1,10 +1,7 @@
 IOS-Categories
 ================
 
-
-ios中的各种category, 
-
-A collection of useful categories extending functionality of some built in iOS and Cocoa objects
+IOS中的各种Objective-C Category, A collection of useful Objective-C categories extending functionality of some built in iOS and Cocoa objects
 
 ## Foundation
 NSArray
@@ -65,3 +62,8 @@ UIView
 UIViewController
 
 UIWebView
+
+## License
+
+IOS-Categories is available under the MIT license.
+
