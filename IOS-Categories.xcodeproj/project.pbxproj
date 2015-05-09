@@ -193,6 +193,14 @@
 		A2FD5B5D1A52706F00555EA2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD5B5C1A52706F00555EA2 /* libz.dylib */; };
 		A2FD5B601A52708900555EA2 /* NSURL+Param.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B5F1A52708900555EA2 /* NSURL+Param.m */; };
 		A2FD5B631A52718200555EA2 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B621A52718200555EA2 /* NSDate+Utilities.m */; };
+		BCB799F31AFDD95300C12525 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F21AFDD95300C12525 /* UIImage+GIF.m */; };
+		BCB799F61AFDDAA500C12525 /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F51AFDDAA500C12525 /* UIButton+BackgroundColor.m */; };
+		BCB799FC1AFDDE2300C12525 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799FB1AFDDE2300C12525 /* UIView+ViewController.m */; };
+		BCB799FF1AFDE08E00C12525 /* UIViewController+TopBarMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799FE1AFDE08E00C12525 /* UIViewController+TopBarMessage.m */; };
+		BCB79A021AFDE0B600C12525 /* NSObject+MKBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A011AFDE0B600C12525 /* NSObject+MKBlockTimer.m */; };
+		BCB79A051AFDE19200C12525 /* NSString+Contains.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A041AFDE19200C12525 /* NSString+Contains.m */; };
+		BCB79A081AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BCB79A0C1AFDF23500C12525 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -526,6 +534,22 @@
 		A2FD5B5F1A52708900555EA2 /* NSURL+Param.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Param.m"; sourceTree = "<group>"; };
 		A2FD5B611A52718200555EA2 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		A2FD5B621A52718200555EA2 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		BCB799F11AFDD95300C12525 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		BCB799F21AFDD95300C12525 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		BCB799F41AFDDAA500C12525 /* UIButton+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColor.h"; sourceTree = "<group>"; };
+		BCB799F51AFDDAA500C12525 /* UIButton+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BackgroundColor.m"; sourceTree = "<group>"; };
+		BCB799FA1AFDDE2300C12525 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		BCB799FB1AFDDE2300C12525 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		BCB799FD1AFDE08E00C12525 /* UIViewController+TopBarMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TopBarMessage.h"; sourceTree = "<group>"; };
+		BCB799FE1AFDE08E00C12525 /* UIViewController+TopBarMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopBarMessage.m"; sourceTree = "<group>"; };
+		BCB79A001AFDE0B600C12525 /* NSObject+MKBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MKBlockTimer.h"; sourceTree = "<group>"; };
+		BCB79A011AFDE0B600C12525 /* NSObject+MKBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MKBlockTimer.m"; sourceTree = "<group>"; };
+		BCB79A031AFDE19200C12525 /* NSString+Contains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Contains.h"; sourceTree = "<group>"; };
+		BCB79A041AFDE19200C12525 /* NSString+Contains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Contains.m"; sourceTree = "<group>"; };
+		BCB79A061AFDE2F700C12525 /* UIViewController+DDPopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DDPopUpViewController.h"; sourceTree = "<group>"; };
+		BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DDPopUpViewController.m"; sourceTree = "<group>"; };
+		BCB79A0A1AFDF23500C12525 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
+		BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -619,6 +643,7 @@
 				A280E5221A52339800E6ACA2 /* UIButton */,
 				A28BE38B1A3ED58F005C4AC6 /* UITextField */,
 				A28BE3871A3ED354005C4AC6 /* UITextView */,
+				BCB79A091AFDE92200C12525 /* UIAlertView */,
 				A28BE36F1A3EB2EE005C4AC6 /* UIImageView */,
 				A28BE2F21A3E9FDC005C4AC6 /* UIColor */,
 				A28BE2F51A3E9FDC005C4AC6 /* UIDevice */,
@@ -661,6 +686,8 @@
 				A2893D931AC3D42400EFA90A /* UIButton+CountDown.m */,
 				A280E5231A5233A700E6ACA2 /* UIButton+Block.h */,
 				A280E5241A5233A700E6ACA2 /* UIButton+Block.m */,
+				BCB799F41AFDDAA500C12525 /* UIButton+BackgroundColor.h */,
+				BCB799F51AFDDAA500C12525 /* UIButton+BackgroundColor.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -1249,6 +1276,8 @@
 				A2FD5B511A5269D400555EA2 /* NSObject+Runtime.m */,
 				A24377211ACBE9CF00FFFEA1 /* NSObject+AutoCoding.h */,
 				A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */,
+				BCB79A001AFDE0B600C12525 /* NSObject+MKBlockTimer.h */,
+				BCB79A011AFDE0B600C12525 /* NSObject+MKBlockTimer.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -1276,6 +1305,8 @@
 				A2681A431A75C7C8009BA7EE /* NSString+Encrypt.m */,
 				A2EC52E81A876E7C0059D53B /* NSString+Base64.h */,
 				A2EC52E91A876E7C0059D53B /* NSString+Base64.m */,
+				BCB79A031AFDE19200C12525 /* NSString+Contains.h */,
+				BCB79A041AFDE19200C12525 /* NSString+Contains.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1342,6 +1373,8 @@
 				A219B8B91A615E3800135327 /* UIImage+Capture.m */,
 				A2E538EA1A775A9900A5D921 /* UIImage+RemoteSize.h */,
 				A2E538EB1A775A9900A5D921 /* UIImage+RemoteSize.m */,
+				BCB799F11AFDD95300C12525 /* UIImage+GIF.h */,
+				BCB799F21AFDD95300C12525 /* UIImage+GIF.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1400,6 +1433,8 @@
 				A219B8B61A615CA100135327 /* UIView+Screenshot.m */,
 				A284C1511AEBD6E400D90ED5 /* UIView+Find.h */,
 				A284C1521AEBD6E400D90ED5 /* UIView+Find.m */,
+				BCB799FA1AFDDE2300C12525 /* UIView+ViewController.h */,
+				BCB799FB1AFDDE2300C12525 /* UIView+ViewController.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1413,6 +1448,10 @@
 				A28BE3691A3EB043005C4AC6 /* UIViewController+Visible.m */,
 				A243772E1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.h */,
 				A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */,
+				BCB799FD1AFDE08E00C12525 /* UIViewController+TopBarMessage.h */,
+				BCB799FE1AFDE08E00C12525 /* UIViewController+TopBarMessage.m */,
+				BCB79A061AFDE2F700C12525 /* UIViewController+DDPopUpViewController.h */,
+				BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1547,6 +1586,15 @@
 				A2FD5B5C1A52706F00555EA2 /* libz.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCB79A091AFDE92200C12525 /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				BCB79A0A1AFDF23500C12525 /* UIAlertView+Block.h */,
+				BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */,
+			);
+			path = UIAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1686,6 +1734,7 @@
 				A243772C1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.m in Sources */,
 				A280E5251A5233A700E6ACA2 /* UIButton+Block.m in Sources */,
 				A281FBA81AC81299009040DA /* NSSetDemoViewController.m in Sources */,
+				BCB799FF1AFDE08E00C12525 /* UIViewController+TopBarMessage.m in Sources */,
 				A28BE36A1A3EB043005C4AC6 /* UIViewController+Visible.m in Sources */,
 				A281FC0D1AC813EA009040DA /* UIWindowDemoViewController.m in Sources */,
 				A28BE35C1A3EAA97005C4AC6 /* NSTimer+Blocks.m in Sources */,
@@ -1698,6 +1747,7 @@
 				A281FBE51AC81386009040DA /* UIScrollViewDemoViewController.m in Sources */,
 				A2FD5B4F1A52693600555EA2 /* NSFileManager+Paths.m in Sources */,
 				A2AF02AA1A74C096003FEC8D /* NSDictionary+Merge.m in Sources */,
+				BCB79A021AFDE0B600C12525 /* NSObject+MKBlockTimer.m in Sources */,
 				A284C1151AEBBF8000D90ED5 /* UINavigationBar+Awesome.m in Sources */,
 				A280E5441A5246C200E6ACA2 /* NSObject+Additions.m in Sources */,
 				A28BE32E1A3E9FDC005C4AC6 /* UIImage+FX.m in Sources */,
@@ -1714,8 +1764,10 @@
 				A28BE37F1A3EC561005C4AC6 /* UIWebView+Load.m in Sources */,
 				A28BE38A1A3ED364005C4AC6 /* UITextView+PlaceHolder.m in Sources */,
 				A284C1101AEBBCFC00D90ED5 /* NSDate+TimeAgo.m in Sources */,
+				BCB799FC1AFDDE2300C12525 /* UIView+ViewController.m in Sources */,
 				A284C14D1AEBD39600D90ED5 /* NSDate+Extension.m in Sources */,
 				A281FC121AC813F5009040DA /* UINavigationControllerDemoViewController.m in Sources */,
+				BCB79A0C1AFDF23500C12525 /* UIAlertView+Block.m in Sources */,
 				A2893D971AC3E5FE00EFA90A /* UIButton+Indicator.m in Sources */,
 				A281FB4A1AC80C31009040DA /* WebView+Debug.m in Sources */,
 				A281FBEF1AC8139D009040DA /* UITableViewCellDemoViewController.m in Sources */,
@@ -1748,8 +1800,10 @@
 				A28BE3591A3EAA52005C4AC6 /* NSSet+Block.m in Sources */,
 				A28BE2F11A3E9F48005C4AC6 /* NSTimer+Addition.m in Sources */,
 				A281FBD01AC81324009040DA /* UIImageDemoViewController.m in Sources */,
+				BCB799F31AFDD95300C12525 /* UIImage+GIF.m in Sources */,
 				A2FD5B551A526AC900555EA2 /* NSString+UUID.m in Sources */,
 				A28BE2ED1A3E9F48005C4AC6 /* NSString+DictionaryValue.m in Sources */,
+				BCB79A051AFDE19200C12525 /* NSString+Contains.m in Sources */,
 				A218D8DF1A47A25100AB83CA /* UIWebView+Canvas.m in Sources */,
 				A281FB9E1AC8126F009040DA /* NSFileManagerDemoViewController.m in Sources */,
 				A281FB3F1AC80001009040DA /* NSString+Emoji.m in Sources */,
@@ -1774,6 +1828,7 @@
 				A281FB941AC8123F009040DA /* NSDictionaryDemoViewController.m in Sources */,
 				A22725D71A3E72D50061605B /* AppDelegate.m in Sources */,
 				A28BE3721A3EB31D005C4AC6 /* UIImageView+Addition.m in Sources */,
+				BCB799F61AFDDAA500C12525 /* UIButton+BackgroundColor.m in Sources */,
 				A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */,
 				A284C12A1AEBCB7F00D90ED5 /* NSIndexPath+Offset.m in Sources */,
 				A284C1331AEBCD9900D90ED5 /* NSManagedObjectContext+FetchRequestsConstructors.m in Sources */,
@@ -1782,6 +1837,7 @@
 				A284C13F1AEBCF9600D90ED5 /* NSDateFormatterDemoViewController.m in Sources */,
 				A28BE3421A3EA20B005C4AC6 /* UIColor+Random.m in Sources */,
 				A2FD5B631A52718200555EA2 /* NSDate+Utilities.m in Sources */,
+				BCB79A081AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m in Sources */,
 				A280E5321A523AD700E6ACA2 /* UIView+BlockGesture.m in Sources */,
 				A2FD5B591A526C6800555EA2 /* UISearchBar+Blocks.m in Sources */,
 				A28BE3351A3E9FDC005C4AC6 /* UINavigationController+KeyboardFix.m in Sources */,
