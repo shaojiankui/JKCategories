@@ -37,7 +37,10 @@
                        @"UIViewController",
                        @"UIWebView",
                        @"UIWindow",
-                       @"MKMapView"
+                       @"MKMapView",
+                       @"UITableView",
+                       @"UINavigationBar"
+
                        ],
             @"Foundation":@[@"NSArray",
                             @"NSBundle",
@@ -51,7 +54,11 @@
                             @"NSString",
                             @"NSTimer",
                             @"NSURL",
-                            @"NSUserDefaults"
+                            @"NSUserDefaults",
+                            @"NSIndexPath",
+                            @"NSManagedObjectContext",
+                            @"NSDateFormatter"
+                            
                             ]
                };
     [self.tableView reloadData];
@@ -84,7 +91,7 @@
     NSString *name =  [_items objectForKey:[_items allKeys][indexPath.section]][indexPath.row];
     NSString *className = [name stringByAppendingString:@"DemoViewController"];
     Class class = NSClassFromString(className);
-    UIViewController *controller = [[class alloc]init];
+    UIViewController *controller = [[class alloc]initWithNibName:className bundle:[NSBundle mainBundle]];
     controller.title = name;
     [self.navigationController pushViewController:controller animated:YES];
 }

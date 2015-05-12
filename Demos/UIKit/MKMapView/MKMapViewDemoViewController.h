@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface MKMapViewViewController : BaseViewController
+@interface MKMapViewDemoViewController : BaseViewController
 
 @end

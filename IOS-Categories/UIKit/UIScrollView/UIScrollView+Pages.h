@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIScrollView (Pages)
+- (NSInteger)pages;
+- (NSInteger)currentPage;
+- (CGFloat)scrollPercent;
+
 - (CGFloat)pagesY;
 - (CGFloat)pagesX;
 - (CGFloat)currentPageY;

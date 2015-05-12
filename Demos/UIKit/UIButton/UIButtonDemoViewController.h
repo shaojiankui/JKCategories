@@ -10,4 +10,5 @@
 
 @interface UIButtonDemoViewController : BaseViewController
 
+- (IBAction)countButtonTouchd:(id)sender;
 @end

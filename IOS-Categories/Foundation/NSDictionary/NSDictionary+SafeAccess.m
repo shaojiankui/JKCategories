@@ -9,13 +9,17 @@
 #import "NSDictionary+SafeAccess.h"
 
 @implementation NSDictionary (SafeAccess)
+- (BOOL)hasKey:(NSString *)key
+{
+    return [self objectForKey:key] != nil;
+}
 
 - (NSString*)stringForKey:(id)key
 {
     id value = [self objectForKey:key];
     if (value == nil || value == [NSNull null])
     {
-        return @"";
+        return nil;
     }
     if ([value isKindOfClass:[NSString class]]) {
         return (NSString*)value;
@@ -217,6 +221,27 @@
     }
     return 0;
 }
+- (long long)longLongForKey:(id)key
+{
+    id value = [self objectForKey:key];
+    if ([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]]) {
+        return [value longLongValue];
+    }
+    return 0;
+}
+
+- (unsigned long long)unsignedLongLongForKey:(id)key
+{
+    id value = [self objectForKey:key];
+    if ([value isKindOfClass:[NSString class]]) {
+        NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
+        value = [nf numberFromString:value];
+    }
+    if ([value isKindOfClass:[NSNumber class]]) {
+        return [value unsignedLongLongValue];
+    }
+    return 0;
+}
 //CG
 - (CGFloat)CGFloatForKey:(id)key
 {
@@ -278,6 +303,12 @@
 }
 -(void)setFloat:(float)i forKey:(NSString *)key
 {
+    self[key] = @(i);
+}
+-(void)setDouble:(double)i forKey:(NSString*)key{
+    self[key] = @(i);
+}
+-(void)setLongLong:(long long)i forKey:(NSString*)key{
     self[key] = @(i);
 }
 -(void)setPoint:(CGPoint)o forKey:(NSString *)key
