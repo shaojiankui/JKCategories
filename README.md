@@ -12,11 +12,17 @@ NSData
 
 NSDate
 
+NSDateFormatter
+
 NSDictionary
 
 NSException
 
 NSFileManager
+
+NSIndexPath
+
+NSManagedObjectCont
 
 NSObject
 
@@ -28,7 +34,10 @@ NSTimer
 
 NSURL
 
+
 ## UIKit
+MKMapView
+
 UIBezierPath
 
 UIButton
@@ -43,6 +52,8 @@ UIImageView
 
 UILable
 
+UINavigationBar
+
 UINavigationController
 
 UIResponder
@@ -50,6 +61,8 @@ UIResponder
 UIScrollView
 
 UISearchBar
+
+UITableView
 
 UITableViewCell
 
@@ -62,6 +75,8 @@ UIView
 UIViewController
 
 UIWebView
+
+UIWindow
 
 ## License
 

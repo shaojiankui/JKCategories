@@ -42,4 +42,5 @@ static const char *phTextView = "placeHolderTextView";
         self.placeHolderTextView.hidden = NO;
     }
 }
+
 @end
