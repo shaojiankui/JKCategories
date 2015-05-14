@@ -131,8 +131,10 @@
     }
     
     CGContextDrawImage(context,CGRectMake(0, 0, width, height), sourceImage.CGImage);
-    UIImage *grayImage = [UIImage imageWithCGImage:CGBitmapContextCreateImage(context)];
+    CGImageRef contextRef = CGBitmapContextCreateImage(context);
+    UIImage *grayImage = [UIImage imageWithCGImage:contextRef];
     CGContextRelease(context);
+    CGImageRelease(contextRef);
     
     return grayImage;
 }

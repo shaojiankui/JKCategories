@@ -47,6 +47,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextDrawImage(context, myImageRect, subImageRef);
     UIImage* smallImage = [UIImage imageWithCGImage:subImageRef];
+    CGImageRelease(subImageRef);
     UIGraphicsEndImageContext();
     return smallImage;
 }
