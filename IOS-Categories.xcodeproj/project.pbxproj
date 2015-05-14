@@ -201,7 +201,6 @@
 		BCB79A051AFDE19200C12525 /* NSString+Contains.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A041AFDE19200C12525 /* NSString+Contains.m */; };
 		BCB79A081AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BCB79A0C1AFDF23500C12525 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */; };
-		BCB79A0F1AFDFE6800C12525 /* UIAlertView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A0E1AFDFE6800C12525 /* UIAlertView+BlocksKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -551,8 +550,6 @@
 		BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DDPopUpViewController.m"; sourceTree = "<group>"; };
 		BCB79A0A1AFDF23500C12525 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
 		BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
-		BCB79A0D1AFDFE6800C12525 /* UIAlertView+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+BlocksKit.h"; sourceTree = "<group>"; };
-		BCB79A0E1AFDFE6800C12525 /* UIAlertView+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+BlocksKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1596,8 +1593,6 @@
 			children = (
 				BCB79A0A1AFDF23500C12525 /* UIAlertView+Block.h */,
 				BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */,
-				BCB79A0D1AFDFE6800C12525 /* UIAlertView+BlocksKit.h */,
-				BCB79A0E1AFDFE6800C12525 /* UIAlertView+BlocksKit.m */,
 			);
 			path = UIAlertView;
 			sourceTree = "<group>";
@@ -1859,7 +1854,6 @@
 				A2893D941AC3D42400EFA90A /* UIButton+CountDown.m in Sources */,
 				A28BE33C1A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m in Sources */,
 				A281FB421AC800F2009040DA /* NSString+Trims.m in Sources */,
-				BCB79A0F1AFDFE6800C12525 /* UIAlertView+BlocksKit.m in Sources */,
 				A28BE32F1A3E9FDC005C4AC6 /* UIImage+Resize.m in Sources */,
 				A24377231ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m in Sources */,
 				A281FB851AC81206009040DA /* NSBundleDemoViewController.m in Sources */,
