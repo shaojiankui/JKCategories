@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSArray *array = @[@"one",@"two",@"three",@"four",@"five",@"six",@"one",@"one",@"one"];
+//    NSArray *array = @[@"one",@"two",@"three",@"four",@"five",@"six",@"one",@"one",@"one"];
  
 }
 
