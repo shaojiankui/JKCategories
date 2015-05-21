@@ -10,7 +10,7 @@
 
 @class MJPopupBackgroundView;
 
-typedef enum {
+typedef NS_ENUM(NSInteger, MJPopupViewAnimation) {
     MJPopupViewAnimationFade = 0,
     MJPopupViewAnimationSlideBottomTop = 1,
     MJPopupViewAnimationSlideBottomBottom,
@@ -20,7 +20,7 @@ typedef enum {
     MJPopupViewAnimationSlideLeftRight,
     MJPopupViewAnimationSlideRightLeft,
     MJPopupViewAnimationSlideRightRight,
-} MJPopupViewAnimation;
+};
 
 @interface UIViewController (MJPopupViewController)
 

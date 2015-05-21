@@ -15,4 +15,8 @@
 - (UIColor *)colorAtPixel:(CGPoint)point;
 //返回该图片是否有透明度通道
 - (BOOL)hasAlphaChannel;
+
+///获得灰度图
++ (UIImage*)covertToGrayImageFromImage:(UIImage*)sourceImage;
+
 @end

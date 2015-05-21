@@ -33,4 +33,23 @@
     UIGraphicsEndImageContext();
     return screenshot;
 }
+
++ (UIImage *)getImageWithSize:(CGRect)myImageRect FromImage:(UIImage *)bigImage
+{
+    //大图bigImage
+    //定义myImageRect，截图的区域
+    CGImageRef imageRef = bigImage.CGImage;
+    CGImageRef subImageRef = CGImageCreateWithImageInRect(imageRef, myImageRect);
+    CGSize size;
+    size.width = CGRectGetWidth(myImageRect);
+    size.height = CGRectGetHeight(myImageRect);
+    UIGraphicsBeginImageContext(size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextDrawImage(context, myImageRect, subImageRef);
+    UIImage* smallImage = [UIImage imageWithCGImage:subImageRef];
+    CGImageRelease(subImageRef);
+    UIGraphicsEndImageContext();
+    return smallImage;
+}
+
 @end

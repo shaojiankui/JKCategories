@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (Capture)
+
 + (UIImage *)captureWithView:(UIView *)view;
+
+///截图（未测试是否可行）
++ (UIImage *)getImageWithSize:(CGRect)myImageRect FromImage:(UIImage *)bigImage;
+
 @end
