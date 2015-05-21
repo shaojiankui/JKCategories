@@ -201,6 +201,7 @@
 		BCB79A051AFDE19200C12525 /* NSString+Contains.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A041AFDE19200C12525 /* NSString+Contains.m */; };
 		BCB79A081AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BCB79A0C1AFDF23500C12525 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */; };
+		BCB9547D1B0D829800E6BA78 /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB9547C1B0D829800E6BA78 /* NSData+SDDataCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -550,6 +551,8 @@
 		BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DDPopUpViewController.m"; sourceTree = "<group>"; };
 		BCB79A0A1AFDF23500C12525 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
 		BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
+		BCB9547B1B0D829800E6BA78 /* NSData+SDDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SDDataCache.h"; sourceTree = "<group>"; };
+		BCB9547C1B0D829800E6BA78 /* NSData+SDDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SDDataCache.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1240,6 +1243,8 @@
 				A28BE2CF1A3E9F48005C4AC6 /* NSData+Encrypt.m */,
 				A280E53B1A52433200E6ACA2 /* NSData+Gzip.h */,
 				A280E53C1A52433200E6ACA2 /* NSData+Gzip.m */,
+				BCB9547B1B0D829800E6BA78 /* NSData+SDDataCache.h */,
+				BCB9547C1B0D829800E6BA78 /* NSData+SDDataCache.m */,
 			);
 			path = NSData;
 			sourceTree = "<group>";
@@ -1756,6 +1761,7 @@
 				A2E538EC1A775A9900A5D921 /* UIImage+RemoteSize.m in Sources */,
 				A28BE3321A3E9FDC005C4AC6 /* UILabel+ESAdjustableLabel.m in Sources */,
 				A28BE3371A3E9FDC005C4AC6 /* UIView+Animation.m in Sources */,
+				BCB9547D1B0D829800E6BA78 /* NSData+SDDataCache.m in Sources */,
 				A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */,
 				A28BE3751A3EBA7E005C4AC6 /* UIImage+FileName.m in Sources */,
 				A281FB8F1AC8122D009040DA /* NSDateDemoViewController.m in Sources */,

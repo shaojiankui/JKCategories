@@ -10,6 +10,7 @@
 #import <CommonCrypto/CommonCryptor.h>
 
 @implementation NSData (Encrypt)
+
 - (NSData*)encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv {
     
     NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
