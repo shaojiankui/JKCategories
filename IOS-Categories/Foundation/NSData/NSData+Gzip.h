@@ -11,5 +11,12 @@
 #import <Foundation/Foundation.h>
 extern NSString* const GzipErrorDomain;
 @interface NSData (Gzip)
-- (NSData*)gzip:(NSError**)error;
+/// GZIP压缩
+- (NSData *)gzippedDataWithCompressionLevel:(float)level;
+
+/// GZIP压缩
+- (NSData *)gzippedData;
+
+/// GZIP解压
+- (NSData *)gunzippedData;
 @end

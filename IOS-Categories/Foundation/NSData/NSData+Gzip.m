@@ -8,39 +8,97 @@
 
 #import "NSData+Gzip.h"
 #import <zlib.h>
-NSString* const GzipErrorDomain = @"org.skyfox.Gzip";
 @implementation NSData (Gzip)
--(NSData*)gzip:(NSError *__autoreleasing *)error
+#define SCFW_CHUNK_SIZE 16384
+
+/**
+ *  @brief GZIP压缩
+ *
+ *  @param level 压缩等级
+ */
+- (NSData *)gzippedDataWithCompressionLevel:(float)level
 {
-    /* stream setup */
-    z_stream stream;
-    memset(&stream, 0, sizeof(stream));
-    /* 31 below means generate gzip (16) with a window size of 15 (16 + 15) */
-    int iResult = deflateInit2(&stream, Z_DEFAULT_COMPRESSION, Z_DEFLATED, 31, 8, Z_DEFAULT_STRATEGY);
-    if(iResult != Z_OK)
+    if ([self length])
     {
-        if(error)
-            *error = [NSError errorWithDomain:GzipErrorDomain code:iResult userInfo:nil];
-        return nil;
+        z_stream stream;
+        stream.zalloc = Z_NULL;
+        stream.zfree = Z_NULL;
+        stream.opaque = Z_NULL;
+        stream.avail_in = (uint)[self length];
+        stream.next_in = (Bytef *)[self bytes];
+        stream.total_out = 0;
+        stream.avail_out = 0;
+        
+        int compression = (level < 0.0f) ? Z_DEFAULT_COMPRESSION : (int)roundf(level * 9);
+        if (deflateInit2(&stream, compression, Z_DEFLATED, 31, 8, Z_DEFAULT_STRATEGY) == Z_OK)
+        {
+            NSMutableData *data = [NSMutableData dataWithLength:SCFW_CHUNK_SIZE];
+            while (stream.avail_out == 0)
+            {
+                if (stream.total_out >= [data length])
+                {
+                    data.length += SCFW_CHUNK_SIZE;
+                }
+                stream.next_out = [data mutableBytes] + stream.total_out;
+                stream.avail_out = (uint)([data length] - stream.total_out);
+                deflate(&stream, Z_FINISH);
+            }
+            deflateEnd(&stream);
+            data.length = stream.total_out;
+            return data;
+        }
     }
-    /* input buffer setup */
-    stream.next_in = (Bytef*)self.bytes;
-    stream.avail_in = self.length;
-    /* output buffer setup */
-    uLong nMaxOutputBytes = deflateBound(&stream, stream.avail_in);
-    NSMutableData* zipOutput = [NSMutableData dataWithLength:nMaxOutputBytes];
-    stream.next_out = (Bytef*)zipOutput.bytes;
-    stream.avail_out = zipOutput.length;
-    /* compress */
-    iResult = deflate(&stream, Z_FINISH);
-    if(iResult != Z_STREAM_END)
-    {
-        if(error)
-            *error = [NSError errorWithDomain:GzipErrorDomain code:iResult userInfo:nil];
-        zipOutput = nil;
-    }
-    zipOutput.length = zipOutput.length - stream.avail_out;
-    deflateEnd(&stream);
-    return zipOutput;
+    return nil;
 }
+
+/**
+ *  @brief GZIP压缩, 压缩等级默认-1
+ */
+- (NSData *)gzippedData
+{
+    return [self gzippedDataWithCompressionLevel:-1.0f];
+}
+
+/**
+ *  @brief GZIP解压
+ */
+- (NSData *)gunzippedData
+{
+    if ([self length])
+    {
+        z_stream stream;
+        stream.zalloc = Z_NULL;
+        stream.zfree = Z_NULL;
+        stream.avail_in = (uint)[self length];
+        stream.next_in = (Bytef *)[self bytes];
+        stream.total_out = 0;
+        stream.avail_out = 0;
+        
+        NSMutableData *data = [NSMutableData dataWithLength: [self length] * 1.5];
+        if (inflateInit2(&stream, 47) == Z_OK)
+        {
+            int status = Z_OK;
+            while (status == Z_OK)
+            {
+                if (stream.total_out >= [data length])
+                {
+                    data.length += [self length] * 0.5;
+                }
+                stream.next_out = [data mutableBytes] + stream.total_out;
+                stream.avail_out = (uint)([data length] - stream.total_out);
+                status = inflate (&stream, Z_SYNC_FLUSH);
+            }
+            if (inflateEnd(&stream) == Z_OK)
+            {
+                if (status == Z_STREAM_END)
+                {
+                    data.length = stream.total_out;
+                    return data;
+                }
+            }
+        }
+    }
+    return nil;
+}
+
 @end

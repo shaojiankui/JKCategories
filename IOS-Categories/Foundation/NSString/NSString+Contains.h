@@ -19,4 +19,10 @@
 ///Unicode编码的字符串转成NSString
 - (NSString *)makeUnicodeToString;
 
+- (BOOL)containsCharacterSet:(NSCharacterSet *)set;
+
+- (BOOL)containsString:(NSString *)string;
+
+- (int)wordsCount;
+
 @end

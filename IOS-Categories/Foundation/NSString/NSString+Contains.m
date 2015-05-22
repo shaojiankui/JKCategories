@@ -49,4 +49,56 @@
     return [returnStr stringByReplacingOccurrencesOfString:@"\\r\\n"withString:@"\n"];
 }
 
+- (BOOL)containsCharacterSet:(NSCharacterSet *)set
+{
+    NSRange rang = [self rangeOfCharacterFromSet:set];
+    if (rang.location == NSNotFound) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
+
+/**
+ *  @brief 是否包含字符串
+ *
+ *  @param string 字符串
+ *
+ *  @return YES, 包含; Otherwise
+ */
+- (BOOL)containsString:(NSString *)string
+{
+    NSRange rang = [self rangeOfString:string];
+    if (rang.location == NSNotFound) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
+
+/**
+ *  @brief 获取字符数量
+ */
+- (int)wordsCount
+{
+    NSInteger n = self.length;
+    int i;
+    int l = 0, a = 0, b = 0;
+    unichar c;
+    for (i = 0; i < n; i++)
+    {
+        c = [self characterAtIndex:i];
+        if (isblank(c)) {
+            b++;
+        } else if (isascii(c)) {
+            a++;
+        } else {
+            l++;
+        }
+    }
+    if (a == 0 && l == 0) {
+        return 0;
+    }
+    return l + (int)ceilf((float)(a + b) / 2.0);
+}
 @end

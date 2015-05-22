@@ -10,5 +10,8 @@
 
 @interface UINavigationController (StackManager)
 - (id)findViewController:(NSString*)className;
-//-(NSArray *)popToViewController:(NSString *)className animated:(BOOL)animated;
+- (BOOL)isOnlyContainRootViewController;
+- (UIViewController *)rootViewController;
+- (NSArray *)popToViewControllerWithClassName:(NSString*)className animated:(BOOL)animated;
+- (NSArray *)popToViewControllerWithLevel:(NSInteger)level animated:(BOOL)animated;
 @end

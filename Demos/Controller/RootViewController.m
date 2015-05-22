@@ -39,7 +39,10 @@
                        @"UIWindow",
                        @"MKMapView",
                        @"UITableView",
-                       @"UINavigationBar"
+                       @"UINavigationBar",
+                       @"UIAlertView",
+                       @"UINavigationItem",
+                       @"UIScreen"
 
                        ],
             @"Foundation":@[@"NSArray",
