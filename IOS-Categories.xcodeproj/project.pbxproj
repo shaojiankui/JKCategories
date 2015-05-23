@@ -39,6 +39,14 @@
 		A202D9CA1B103B4600EAB199 /* CLLocationManagerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9C81B103B4600EAB199 /* CLLocationManagerDemoViewController.m */; };
 		A202D9CB1B103B4600EAB199 /* CLLocationManagerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D9C91B103B4600EAB199 /* CLLocationManagerDemoViewController.xib */; };
 		A202D9CE1B103BBD00EAB199 /* MKMapView+BetterMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9CD1B103BBD00EAB199 /* MKMapView+BetterMaps.m */; };
+		A202D9D81B103F9400EAB199 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9D21B103F9400EAB199 /* AppDelegate.m */; };
+		A202D9D91B103F9400EAB199 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D9D31B103F9400EAB199 /* LaunchScreen.xib */; };
+		A202D9DA1B103F9400EAB199 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A202D9D51B103F9400EAB199 /* Images.xcassets */; };
+		A202D9DB1B103F9400EAB199 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A202D9D61B103F9400EAB199 /* Info.plist */; };
+		A202D9DC1B103F9400EAB199 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9D71B103F9400EAB199 /* main.m */; };
+		A202D9E31B10400100EAB199 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9DF1B10400100EAB199 /* BaseViewController.m */; };
+		A202D9E41B10400100EAB199 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9E11B10400100EAB199 /* RootViewController.m */; };
+		A202D9E51B10400100EAB199 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D9E21B10400100EAB199 /* RootViewController.xib */; };
 		A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8D61A479E9C00AB83CA /* UIColor+Web.m */; };
 		A218D8DF1A47A25100AB83CA /* UIWebView+Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DC1A47A25100AB83CA /* UIWebView+Canvas.m */; };
 		A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DE1A47A25100AB83CA /* UIWebView+JS.m */; };
@@ -55,10 +63,6 @@
 		A21F34D61B0F28A600D73A91 /* UILabel+AutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34D51B0F28A600D73A91 /* UILabel+AutoSize.m */; };
 		A21F34D91B0F291600D73A91 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34D81B0F291600D73A91 /* UIImage+PDF.m */; };
 		A21F34DC1B0F302E00D73A91 /* UILabel+AutomaticWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34DB1B0F302E00D73A91 /* UILabel+AutomaticWriting.m */; };
-		A22725D41A3E72D50061605B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A22725D31A3E72D50061605B /* main.m */; };
-		A22725D71A3E72D50061605B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A22725D61A3E72D50061605B /* AppDelegate.m */; };
-		A22725D91A3E72D50061605B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22725D81A3E72D50061605B /* Images.xcassets */; };
-		A22725DC1A3E72D50061605B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22725DA1A3E72D50061605B /* LaunchScreen.xib */; };
 		A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A238E0571A4555F400383A97 /* NSObject+Property.m */; };
 		A24377231ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */; };
 		A24377301ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */; };
@@ -74,9 +78,6 @@
 		A281FB3F1AC80001009040DA /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB3E1AC80001009040DA /* NSString+Emoji.m */; };
 		A281FB421AC800F2009040DA /* NSString+Trims.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB411AC800F2009040DA /* NSString+Trims.m */; };
 		A281FB4A1AC80C31009040DA /* WebView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB491AC80C31009040DA /* WebView+Debug.m */; };
-		A281FB781AC811AD009040DA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB741AC811AD009040DA /* RootViewController.m */; };
-		A281FB791AC811AD009040DA /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A281FB751AC811AD009040DA /* RootViewController.xib */; };
-		A281FB7C1AC811C2009040DA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB7B1AC811C2009040DA /* BaseViewController.m */; };
 		A281FB801AC811F0009040DA /* NSArrayDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB7E1AC811F0009040DA /* NSArrayDemoViewController.m */; };
 		A281FB811AC811F0009040DA /* NSArrayDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A281FB7F1AC811F0009040DA /* NSArrayDemoViewController.xib */; };
 		A281FB851AC81206009040DA /* NSBundleDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB831AC81206009040DA /* NSBundleDemoViewController.m */; };
@@ -301,6 +302,17 @@
 		A202D9C91B103B4600EAB199 /* CLLocationManagerDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLLocationManagerDemoViewController.xib; sourceTree = "<group>"; };
 		A202D9CC1B103BBD00EAB199 /* MKMapView+BetterMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+BetterMaps.h"; sourceTree = "<group>"; };
 		A202D9CD1B103BBD00EAB199 /* MKMapView+BetterMaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+BetterMaps.m"; sourceTree = "<group>"; };
+		A202D9D11B103F9400EAB199 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A202D9D21B103F9400EAB199 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A202D9D41B103F9400EAB199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A202D9D51B103F9400EAB199 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A202D9D61B103F9400EAB199 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A202D9D71B103F9400EAB199 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A202D9DE1B10400100EAB199 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A202D9DF1B10400100EAB199 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A202D9E01B10400100EAB199 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		A202D9E11B10400100EAB199 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A202D9E21B10400100EAB199 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		A218D8D51A479E9C00AB83CA /* UIColor+Web.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Web.h"; sourceTree = "<group>"; };
 		A218D8D61A479E9C00AB83CA /* UIColor+Web.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Web.m"; sourceTree = "<group>"; };
 		A218D8DB1A47A25100AB83CA /* UIWebView+Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Canvas.h"; sourceTree = "<group>"; };
@@ -333,10 +345,6 @@
 		A22725CE1A3E72D50061605B /* IOS-Categories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Categories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22725D21A3E72D50061605B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22725D31A3E72D50061605B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A22725D51A3E72D50061605B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A22725D61A3E72D50061605B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A22725D81A3E72D50061605B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A22725DB1A3E72D50061605B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A238E0561A4555F400383A97 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
 		A238E0571A4555F400383A97 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		A24377211ACBE9CF00FFFEA1 /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
@@ -367,11 +375,6 @@
 		A281FB411AC800F2009040DA /* NSString+Trims.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trims.m"; sourceTree = "<group>"; };
 		A281FB481AC80C31009040DA /* WebView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+Debug.h"; sourceTree = "<group>"; };
 		A281FB491AC80C31009040DA /* WebView+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebView+Debug.m"; sourceTree = "<group>"; };
-		A281FB731AC811AD009040DA /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		A281FB741AC811AD009040DA /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		A281FB751AC811AD009040DA /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
-		A281FB7A1AC811C2009040DA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		A281FB7B1AC811C2009040DA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		A281FB7D1AC811F0009040DA /* NSArrayDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayDemoViewController.h; sourceTree = "<group>"; };
 		A281FB7E1AC811F0009040DA /* NSArrayDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayDemoViewController.m; sourceTree = "<group>"; };
 		A281FB7F1AC811F0009040DA /* NSArrayDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSArrayDemoViewController.xib; sourceTree = "<group>"; };
@@ -865,6 +868,32 @@
 			path = CLLocationManager;
 			sourceTree = "<group>";
 		};
+		A202D9D01B103F9400EAB199 /* IOS-Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9DD1B10400100EAB199 /* Controller */,
+				A202D9D11B103F9400EAB199 /* AppDelegate.h */,
+				A202D9D21B103F9400EAB199 /* AppDelegate.m */,
+				A202D9D31B103F9400EAB199 /* LaunchScreen.xib */,
+				A202D9D51B103F9400EAB199 /* Images.xcassets */,
+				A202D9D61B103F9400EAB199 /* Info.plist */,
+				A202D9D71B103F9400EAB199 /* main.m */,
+			);
+			path = "IOS-Categories";
+			sourceTree = "<group>";
+		};
+		A202D9DD1B10400100EAB199 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9DE1B10400100EAB199 /* BaseViewController.h */,
+				A202D9DF1B10400100EAB199 /* BaseViewController.m */,
+				A202D9E01B10400100EAB199 /* RootViewController.h */,
+				A202D9E11B10400100EAB199 /* RootViewController.m */,
+				A202D9E21B10400100EAB199 /* RootViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		A21F34BA1B0F220700D73A91 /* UINavigationItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -916,6 +945,7 @@
 		A22725C51A3E72D50061605B = {
 			isa = PBXGroup;
 			children = (
+				A202D9D01B103F9400EAB199 /* IOS-Categories */,
 				A22725D01A3E72D50061605B /* Categories */,
 				A281FB4C1AC80F61009040DA /* Demos */,
 				A22725CF1A3E72D50061605B /* Products */,
@@ -938,14 +968,9 @@
 				A22725F21A3E736D0061605B /* UIKit */,
 				A202D9821B0F7D1400EAB199 /* MapKit */,
 				A202D9761B0F7BE100EAB199 /* CoreLocation */,
-				A22725D51A3E72D50061605B /* AppDelegate.h */,
-				A22725D61A3E72D50061605B /* AppDelegate.m */,
-				A22725D81A3E72D50061605B /* Images.xcassets */,
-				A22725DA1A3E72D50061605B /* LaunchScreen.xib */,
 				A22725D11A3E72D50061605B /* Supporting Files */,
 			);
-			name = Categories;
-			path = "IOS-Categories";
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		A22725D11A3E72D50061605B /* Supporting Files */ = {
@@ -1079,7 +1104,6 @@
 				A281FB5B1AC8101F009040DA /* UIKit */,
 				A202D9871B0F7D6C00EAB199 /* MapKit */,
 				A202D9771B0F7BFB00EAB199 /* CoreLocation */,
-				A281FB6F1AC811AD009040DA /* Controller */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -1439,18 +1463,6 @@
 				A281FC0C1AC813EA009040DA /* UIWindowDemoViewController.xib */,
 			);
 			path = UIWindow;
-			sourceTree = "<group>";
-		};
-		A281FB6F1AC811AD009040DA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A281FB7A1AC811C2009040DA /* BaseViewController.h */,
-				A281FB7B1AC811C2009040DA /* BaseViewController.m */,
-				A281FB731AC811AD009040DA /* RootViewController.h */,
-				A281FB741AC811AD009040DA /* RootViewController.m */,
-				A281FB751AC811AD009040DA /* RootViewController.xib */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		A281FBDC1AC8136D009040DA /* UINavigationController */ = {
@@ -2027,12 +2039,12 @@
 				A284C1451AEBCFA300D90ED5 /* NSManagedObjectContextDemoViewController.xib in Resources */,
 				A281FB9A1AC8124F009040DA /* NSExceptionDemoViewController.xib in Resources */,
 				A281FC091AC813DF009040DA /* UIWebViewDemoViewController.xib in Resources */,
+				A202D9E51B10400100EAB199 /* RootViewController.xib in Resources */,
 				A281FBCC1AC8130E009040DA /* UIDeviceDemoViewController.xib in Resources */,
 				A281FBF51AC813AA009040DA /* UITextFieldDemoViewController.xib in Resources */,
 				A281FBAE1AC812A8009040DA /* NSStringDemoViewController.xib in Resources */,
 				A202D98D1B0F7D7900EAB199 /* MKMapViewDemoViewController.xib in Resources */,
 				A281FB901AC8122D009040DA /* NSDateDemoViewController.xib in Resources */,
-				A22725DC1A3E72D50061605B /* LaunchScreen.xib in Resources */,
 				A281FC181AC81427009040DA /* NSUserDefaultsDemoViewController.xib in Resources */,
 				A281FBB31AC812BA009040DA /* NSTimerDemoViewController.xib in Resources */,
 				A281FBF01AC8139D009040DA /* UITableViewCellDemoViewController.xib in Resources */,
@@ -2051,14 +2063,16 @@
 				A281FB8B1AC81217009040DA /* NSDataDemoViewController.xib in Resources */,
 				A202D9C11B1038DB00EAB199 /* UIBarButtonItemDemoViewController.xib in Resources */,
 				A281FBEB1AC81392009040DA /* UISearchBarDemoViewController.xib in Resources */,
+				A202D9DA1B103F9400EAB199 /* Images.xcassets in Resources */,
 				A281FB951AC8123F009040DA /* NSDictionaryDemoViewController.xib in Resources */,
 				A281FBBD1AC812E5009040DA /* UIBezierPathDemoViewController.xib in Resources */,
 				A202D9A81B102D7800EAB199 /* NSNumberDemoViewController.xib in Resources */,
-				A22725D91A3E72D50061605B /* Images.xcassets in Resources */,
 				A21F34CE1B0F248D00D73A91 /* UINavigationItemDemoViewController.xib in Resources */,
+				A202D9DB1B103F9400EAB199 /* Info.plist in Resources */,
 				A284C14A1AEBCFB000D90ED5 /* NSIndexPathDemoViewController.xib in Resources */,
 				A281FC0E1AC813EA009040DA /* UIWindowDemoViewController.xib in Resources */,
 				A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */,
+				A202D9D91B103F9400EAB199 /* LaunchScreen.xib in Resources */,
 				A281FC041AC813D4009040DA /* UIViewControllerDemoViewController.xib in Resources */,
 				A202D9B51B10338B00EAB199 /* UIApplicationDemoViewController.xib in Resources */,
 				A281FBFA1AC813B8009040DA /* UITextViewDemoViewController.xib in Resources */,
@@ -2070,7 +2084,6 @@
 				A284C1261AEBC19C00D90ED5 /* UINavigationBarDemoViewController.xib in Resources */,
 				A284C1111AEBBCFC00D90ED5 /* NSDateTimeAgo.bundle in Resources */,
 				A284C1081AEB944B00D90ED5 /* UITableViewDemoViewController.xib in Resources */,
-				A281FB791AC811AD009040DA /* RootViewController.xib in Resources */,
 				A281FBC71AC81303009040DA /* UIColorDemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2087,7 +2100,6 @@
 				A28BE3391A3E9FDC005C4AC6 /* UIView+Frame.m in Sources */,
 				A281FBF41AC813AA009040DA /* UITextFieldDemoViewController.m in Sources */,
 				A2AAA1EF1B0F1DCE004A3231 /* NSString+Util.m in Sources */,
-				A281FB781AC811AD009040DA /* RootViewController.m in Sources */,
 				A281FBD51AC81330009040DA /* UIImageViewDemoViewController.m in Sources */,
 				A202D9AB1B102F0F00EAB199 /* NSDate+Formatter.m in Sources */,
 				A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */,
@@ -2102,6 +2114,7 @@
 				A2CFAEF51A56BD050004A282 /* NSString+Score.m in Sources */,
 				A280E5481A52480300E6ACA2 /* UIBezierPath+SVG.m in Sources */,
 				A281FBB71AC812C8009040DA /* NSURLDemoViewController.m in Sources */,
+				A202D9DC1B103F9400EAB199 /* main.m in Sources */,
 				A284C15B1AEBDAC200D90ED5 /* NSDictionary+JSONString.m in Sources */,
 				A2FD5B321A52574C00555EA2 /* UIImage+Merge.m in Sources */,
 				A281FBDA1AC8133D009040DA /* UILableDemoViewController.m in Sources */,
@@ -2143,6 +2156,7 @@
 				BCB9547D1B0D829800E6BA78 /* NSData+SDDataCache.m in Sources */,
 				A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */,
 				A21F34BD1B0F221400D73A91 /* UINavigationItem+Lock.m in Sources */,
+				A202D9E31B10400100EAB199 /* BaseViewController.m in Sources */,
 				A28BE3751A3EBA7E005C4AC6 /* UIImage+FileName.m in Sources */,
 				A281FB8F1AC8122D009040DA /* NSDateDemoViewController.m in Sources */,
 				A281FBFE1AC813C6009040DA /* UIViewDemoViewController.m in Sources */,
@@ -2174,6 +2188,7 @@
 				A28BE3451A3EA292005C4AC6 /* NSString+Hash.m in Sources */,
 				A21F34DC1B0F302E00D73A91 /* UILabel+AutomaticWriting.m in Sources */,
 				A2C1ADCE1A58F35400E3BAFF /* UIImage+Orientation.m in Sources */,
+				A202D9D81B103F9400EAB199 /* AppDelegate.m in Sources */,
 				A281FBE01AC8137A009040DA /* UIResponderDemoViewController.m in Sources */,
 				A281FBBC1AC812E5009040DA /* UIBezierPathDemoViewController.m in Sources */,
 				A202D9CE1B103BBD00EAB199 /* MKMapView+BetterMaps.m in Sources */,
@@ -2203,7 +2218,6 @@
 				A218D8DF1A47A25100AB83CA /* UIWebView+Canvas.m in Sources */,
 				A281FB9E1AC8126F009040DA /* NSFileManagerDemoViewController.m in Sources */,
 				A281FB3F1AC80001009040DA /* NSString+Emoji.m in Sources */,
-				A281FB7C1AC811C2009040DA /* BaseViewController.m in Sources */,
 				A202D9B81B1033AC00EAB199 /* UIApplication+KeyboardFrame.m in Sources */,
 				A202D9A71B102D7800EAB199 /* NSNumberDemoViewController.m in Sources */,
 				A292BDCD1B03422D002DAB71 /* NSString+RemoveEmoji.m in Sources */,
@@ -2229,7 +2243,6 @@
 				A2FD5B351A52599C00555EA2 /* UIScrollView+Pages.m in Sources */,
 				A281FB941AC8123F009040DA /* NSDictionaryDemoViewController.m in Sources */,
 				A202D9BB1B1035DC00EAB199 /* UIControl+ActionBlocks.m in Sources */,
-				A22725D71A3E72D50061605B /* AppDelegate.m in Sources */,
 				A202D9CA1B103B4600EAB199 /* CLLocationManagerDemoViewController.m in Sources */,
 				A28BE3721A3EB31D005C4AC6 /* UIImageView+Addition.m in Sources */,
 				BCB799F61AFDDAA500C12525 /* UIButton+BackgroundColor.m in Sources */,
@@ -2246,7 +2259,6 @@
 				A280E5321A523AD700E6ACA2 /* UIView+BlockGesture.m in Sources */,
 				A2FD5B591A526C6800555EA2 /* UISearchBar+Blocks.m in Sources */,
 				A28BE3351A3E9FDC005C4AC6 /* UINavigationController+KeyboardFix.m in Sources */,
-				A22725D41A3E72D50061605B /* main.m in Sources */,
 				A284C1491AEBCFB000D90ED5 /* NSIndexPathDemoViewController.m in Sources */,
 				A202D9A21B102A4F00EAB199 /* NSNumber+Round.m in Sources */,
 				A202D98C1B0F7D7900EAB199 /* MKMapViewDemoViewController.m in Sources */,
@@ -2259,6 +2271,7 @@
 				A219B8BA1A615E3800135327 /* UIImage+Capture.m in Sources */,
 				A28BE33E1A3E9FDC005C4AC6 /* UIWebView+Blocks.m in Sources */,
 				A2893D941AC3D42400EFA90A /* UIButton+CountDown.m in Sources */,
+				A202D9E41B10400100EAB199 /* RootViewController.m in Sources */,
 				A28BE33C1A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m in Sources */,
 				A281FB421AC800F2009040DA /* NSString+Trims.m in Sources */,
 				A28BE32F1A3E9FDC005C4AC6 /* UIImage+Resize.m in Sources */,
@@ -2271,10 +2284,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A22725DA1A3E72D50061605B /* LaunchScreen.xib */ = {
+		A202D9D31B103F9400EAB199 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A22725DB1A3E72D50061605B /* Base */,
+				A202D9D41B103F9400EAB199 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
