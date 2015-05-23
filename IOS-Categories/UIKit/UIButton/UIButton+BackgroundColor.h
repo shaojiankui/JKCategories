@@ -11,5 +11,4 @@
 @interface UIButton (BackgroundColor)
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
-
 @end

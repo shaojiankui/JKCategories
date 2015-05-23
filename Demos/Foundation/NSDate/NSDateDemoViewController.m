@@ -7,7 +7,6 @@
 //
 
 #import "NSDateDemoViewController.h"
-#import "NSDate+TimeAgo.h"
 
 @interface NSDateDemoViewController ()
 
@@ -18,9 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSDate *date = [[NSDate alloc] initWithTimeIntervalSince1970:0];
-    NSString *ago = [date timeAgo];
-    NSLog(@"Output is: \"%@\"", ago);
+    NSDate *today = [NSDate firstDayOfCurrentYear];
+    NSDate *today2 = [[NSDate date] startOfWeek];
+
 }
 
 - (void)didReceiveMemoryWarning {

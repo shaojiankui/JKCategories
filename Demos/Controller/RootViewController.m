@@ -42,27 +42,38 @@
                        @"UINavigationBar",
                        @"UIAlertView",
                        @"UINavigationItem",
-                       @"UIScreen"
+                       @"UIScreen",
+                       @"UIControl",
+                       @"UIApplication",
+                       @"UIBarButtonItem"
 
                        ],
-            @"Foundation":@[@"NSArray",
-                            @"NSBundle",
-                            @"NSData",
-                            @"NSDate",
-                            @"NSDictionary",
-                            @"NSException",
-                            @"NSFileManager",
-                            @"NSObject",
-                            @"NSSet",
-                            @"NSString",
-                            @"NSTimer",
-                            @"NSURL",
-                            @"NSUserDefaults",
-                            @"NSIndexPath",
-                            @"NSManagedObjectContext",
-                            @"NSDateFormatter"
-                            
-                            ]
+        @"Foundation":@[@"NSArray",
+                        @"NSBundle",
+                        @"NSData",
+                        @"NSDate",
+                        @"NSDictionary",
+                        @"NSException",
+                        @"NSFileManager",
+                        @"NSObject",
+                        @"NSSet",
+                        @"NSString",
+                        @"NSTimer",
+                        @"NSURL",
+                        @"NSUserDefaults",
+                        @"NSIndexPath",
+                        @"NSManagedObjectContext",
+                        @"NSDateFormatter",
+                        @"NSNumber"
+                        
+                        ],
+         @"CoreLocation":@[
+                        @"CLLocation",
+                        @"CLLocationManager"
+                         ] ,
+            @"MapKit":@[
+                        @"MKMapView"
+                        ]
                };
     [self.tableView reloadData];
 }

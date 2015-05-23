@@ -8,6 +8,9 @@
 
 #import "UIButtonDemoViewController.h"
 #import "UIButton+CountDown.h"
+#import "UIButton+Block.h"
+#import "UIControl+ActionBlocks.h"
+#import "UIControl+Block.h"
 @interface UIButtonDemoViewController ()
 
 @end
@@ -17,11 +20,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.blockButton handleControlEvents:UIControlEventTouchDragInside withBlock:^(id weakSender) {
+        NSLog(@"UIControlEventTouchDragInside");
+    }];
+    [self.blockButton handleControlEvents:UIControlEventTouchUpInside withBlock:^(id weakSender) {
+        NSLog(@"UIControlEventTouchUpInside");
+    }];
+    
+    [self.blockButton touchUpInside:^{
+        NSLog(@"touchUpInside");
+
+    }];
+    [self.blockButton touchDown:^{
+        NSLog(@"touchDown");
+        
+    }];
+   
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
 }
 
 /*

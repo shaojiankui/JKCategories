@@ -94,6 +94,21 @@ typedef enum
 /** This method returns YES if the currend device is iPhone and has 4" display **/
 - (BOOL)isIphoneWith4inchDisplay;
 
++ (NSString *)macAddress;
+
+//Return the current device CPU frequency
++ (NSUInteger)cpuFrequency;
+// Return the current device BUS frequency
++ (NSUInteger)busFrequency;
+//current device RAM size
++ (NSUInteger)ramSize;
+//Return the current device CPU number
++ (NSUInteger)cpuNumber;
+//Return the current device total memory
++ (NSUInteger)totalMemory;
+// Return the current device non-kernel memory
++ (NSUInteger)userMemory;
+
 /// 获取iOS系统的版本号
 + (NSString *)systemVersion;
 /// 判断当前系统是否有摄像头

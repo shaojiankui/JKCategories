@@ -9,40 +9,58 @@
 #import "NSArray+Block.h"
 
 @implementation NSArray (Block)
-- (void)each:(void (^)(id))block
-{
-    for (id obj in self) {
+- (void)each:(void (^)(id object))block {
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         block(obj);
-    }
+    }];
 }
 
-- (NSArray *)select:(BOOL (^)(id))block
-{
-    NSMutableArray *rslt = [NSMutableArray array];
-    for (id obj in self) {
-        if (block(obj)) {
-            [rslt addObject:obj];
-        }
-    }
-    return rslt;
+- (void)eachWithIndex:(void (^)(id object, NSUInteger index))block {
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        block(obj, idx);
+    }];
 }
 
-- (NSArray *)map:(id (^)(id))block
-{
-    NSMutableArray *rslt = [NSMutableArray array];
-    for (id obj in self) {
-        [rslt addObject:block(obj)];
-    }
-    return rslt;
-}
-
-- (id)reduce:(id)initial withBlock:(id (^)(id,id))block
-{
-    id rslt = initial;
-    for (id obj in self) {
-        rslt = block(rslt, obj);
-    }
-    return rslt;
+- (NSArray *)map:(id (^)(id object))block {
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:self.count];
     
+    for (id object in self) {
+        [array addObject:block(object) ?: [NSNull null]];
+    }
+    
+    return array;
+}
+
+- (NSArray *)filter:(BOOL (^)(id object))block {
+    return [self filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+        return block(evaluatedObject);
+    }]];
+}
+
+- (NSArray *)reject:(BOOL (^)(id object))block {
+    return [self filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+        return !block(evaluatedObject);
+    }]];
+}
+
+- (id)detect:(BOOL (^)(id object))block {
+    for (id object in self) {
+        if (block(object))
+            return object;
+    }
+    return nil;
+}
+
+- (id)reduce:(id (^)(id accumulator, id object))block {
+    return [self reduce:nil withBlock:block];
+}
+
+- (id)reduce:(id)initial withBlock:(id (^)(id accumulator, id object))block {
+    id accumulator = initial;
+    
+    for(id object in self)
+        accumulator = accumulator ? block(accumulator, object) : object;
+    
+    return accumulator;
 }
 @end

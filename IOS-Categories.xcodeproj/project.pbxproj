@@ -7,12 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A202D9621B0F6C4400EAB199 /* NSDate+Reporting.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9611B0F6C4400EAB199 /* NSDate+Reporting.m */; };
+		A202D9651B0F6DF900EAB199 /* NSString+MIME.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9641B0F6DF900EAB199 /* NSString+MIME.m */; };
+		A202D96B1B0F6FA400EAB199 /* UIBarButtonItem+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D96A1B0F6FA400EAB199 /* UIBarButtonItem+Action.m */; };
+		A202D96E1B0F75B400EAB199 /* NSDictionary+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D96D1B0F75B400EAB199 /* NSDictionary+Block.m */; };
+		A202D9711B0F778900EAB199 /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9701B0F778900EAB199 /* UIView+Constraints.m */; };
+		A202D9751B0F78EE00EAB199 /* UISplitViewController+QuickAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9741B0F78EE00EAB199 /* UISplitViewController+QuickAccess.m */; };
+		A202D97B1B0F7C3300EAB199 /* CLLocation+CH1903.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D97A1B0F7C3300EAB199 /* CLLocation+CH1903.m */; };
+		A202D9801B0F7CD100EAB199 /* CLLocationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D97E1B0F7CD100EAB199 /* CLLocationDemoViewController.m */; };
+		A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D97F1B0F7CD100EAB199 /* CLLocationDemoViewController.xib */; };
+		A202D9861B0F7D2A00EAB199 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9851B0F7D2A00EAB199 /* MKMapView+ZoomLevel.m */; };
+		A202D98C1B0F7D7900EAB199 /* MKMapViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D98A1B0F7D7900EAB199 /* MKMapViewDemoViewController.m */; };
+		A202D98D1B0F7D7900EAB199 /* MKMapViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D98B1B0F7D7900EAB199 /* MKMapViewDemoViewController.xib */; };
+		A202D9911B0F8B6000EAB199 /* NSUserDefaults+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9901B0F8B6000EAB199 /* NSUserDefaults+SafeAccess.m */; };
+		A202D9941B0F8FB000EAB199 /* UIButton+Submitting.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9931B0F8FB000EAB199 /* UIButton+Submitting.m */; };
+		A202D99A1B0F916900EAB199 /* UIControlDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9981B0F916900EAB199 /* UIControlDemoViewController.m */; };
+		A202D99B1B0F916900EAB199 /* UIControlDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D9991B0F916900EAB199 /* UIControlDemoViewController.xib */; };
+		A202D99E1B0F919300EAB199 /* UIControl+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D99D1B0F919300EAB199 /* UIControl+Block.m */; };
+		A202D9A21B102A4F00EAB199 /* NSNumber+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9A11B102A4F00EAB199 /* NSNumber+Round.m */; };
+		A202D9A71B102D7800EAB199 /* NSNumberDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9A51B102D7800EAB199 /* NSNumberDemoViewController.m */; };
+		A202D9A81B102D7800EAB199 /* NSNumberDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D9A61B102D7800EAB199 /* NSNumberDemoViewController.xib */; };
+		A202D9AB1B102F0F00EAB199 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9AA1B102F0F00EAB199 /* NSDate+Formatter.m */; };
+		A202D9AE1B10305500EAB199 /* NSObject+KVOBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9AD1B10305500EAB199 /* NSObject+KVOBlocks.m */; };
+		A202D9B41B10338B00EAB199 /* UIApplicationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9B21B10338B00EAB199 /* UIApplicationDemoViewController.m */; };
+		A202D9B51B10338B00EAB199 /* UIApplicationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D9B31B10338B00EAB199 /* UIApplicationDemoViewController.xib */; };
+		A202D9B81B1033AC00EAB199 /* UIApplication+KeyboardFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9B71B1033AC00EAB199 /* UIApplication+KeyboardFrame.m */; };
+		A202D9BB1B1035DC00EAB199 /* UIControl+ActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9BA1B1035DC00EAB199 /* UIControl+ActionBlocks.m */; };
+		A202D9C01B1038DB00EAB199 /* UIBarButtonItemDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9BE1B1038DB00EAB199 /* UIBarButtonItemDemoViewController.m */; };
+		A202D9C11B1038DB00EAB199 /* UIBarButtonItemDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D9BF1B1038DB00EAB199 /* UIBarButtonItemDemoViewController.xib */; };
+		A202D9C51B103A8300EAB199 /* CLLocationManager+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9C41B103A8300EAB199 /* CLLocationManager+Blocks.m */; };
+		A202D9CA1B103B4600EAB199 /* CLLocationManagerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9C81B103B4600EAB199 /* CLLocationManagerDemoViewController.m */; };
+		A202D9CB1B103B4600EAB199 /* CLLocationManagerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D9C91B103B4600EAB199 /* CLLocationManagerDemoViewController.xib */; };
+		A202D9CE1B103BBD00EAB199 /* MKMapView+BetterMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9CD1B103BBD00EAB199 /* MKMapView+BetterMaps.m */; };
 		A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8D61A479E9C00AB83CA /* UIColor+Web.m */; };
 		A218D8DF1A47A25100AB83CA /* UIWebView+Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DC1A47A25100AB83CA /* UIWebView+Canvas.m */; };
 		A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DE1A47A25100AB83CA /* UIWebView+JS.m */; };
 		A219B8B71A615CA100135327 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A219B8B61A615CA100135327 /* UIView+Screenshot.m */; };
 		A219B8BA1A615E3800135327 /* UIImage+Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = A219B8B91A615E3800135327 /* UIImage+Capture.m */; };
-		A219B8BC1A615F8D00135327 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A219B8BB1A615F8D00135327 /* bg.jpg */; };
 		A21F34BD1B0F221400D73A91 /* UINavigationItem+Lock.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34BC1B0F221400D73A91 /* UINavigationItem+Lock.m */; };
 		A21F34C11B0F229700D73A91 /* UIScreen+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34C01B0F229700D73A91 /* UIScreen+Frame.m */; };
 		A21F34C81B0F247800D73A91 /* UIScreenDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34C61B0F247800D73A91 /* UIScreenDemoViewController.m */; };
@@ -30,9 +61,6 @@
 		A22725DC1A3E72D50061605B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22725DA1A3E72D50061605B /* LaunchScreen.xib */; };
 		A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A238E0571A4555F400383A97 /* NSObject+Property.m */; };
 		A24377231ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */; };
-		A24377271ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = A24377261ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.m */; };
-		A243772C1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A243772A1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.m */; };
-		A243772D1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A243772B1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.xib */; };
 		A24377301ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */; };
 		A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A401A75C788009BA7EE /* NSData+Base64.m */; };
 		A2681A441A75C7C8009BA7EE /* NSString+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A431A75C7C8009BA7EE /* NSString+Encrypt.m */; };
@@ -41,7 +69,6 @@
 		A280E5321A523AD700E6ACA2 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5311A523AD700E6ACA2 /* UIView+BlockGesture.m */; };
 		A280E53A1A52405A00E6ACA2 /* UIScrollView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5391A52405A00E6ACA2 /* UIScrollView+Addition.m */; };
 		A280E53D1A52433200E6ACA2 /* NSData+Gzip.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E53C1A52433200E6ACA2 /* NSData+Gzip.m */; };
-		A280E5411A5244EC00E6ACA2 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5401A5244EC00E6ACA2 /* NSDate+Addition.m */; };
 		A280E5441A5246C200E6ACA2 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5431A5246C200E6ACA2 /* NSObject+Additions.m */; };
 		A280E5481A52480300E6ACA2 /* UIBezierPath+SVG.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5471A52480300E6ACA2 /* UIBezierPath+SVG.m */; };
 		A281FB3F1AC80001009040DA /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB3E1AC80001009040DA /* NSString+Emoji.m */; };
@@ -217,6 +244,63 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A202D9601B0F6C4400EAB199 /* NSDate+Reporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Reporting.h"; sourceTree = "<group>"; };
+		A202D9611B0F6C4400EAB199 /* NSDate+Reporting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Reporting.m"; sourceTree = "<group>"; };
+		A202D9631B0F6DF900EAB199 /* NSString+MIME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MIME.h"; sourceTree = "<group>"; };
+		A202D9641B0F6DF900EAB199 /* NSString+MIME.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MIME.m"; sourceTree = "<group>"; };
+		A202D9691B0F6FA400EAB199 /* UIBarButtonItem+Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Action.h"; sourceTree = "<group>"; };
+		A202D96A1B0F6FA400EAB199 /* UIBarButtonItem+Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Action.m"; sourceTree = "<group>"; };
+		A202D96C1B0F75B400EAB199 /* NSDictionary+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Block.h"; sourceTree = "<group>"; };
+		A202D96D1B0F75B400EAB199 /* NSDictionary+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Block.m"; sourceTree = "<group>"; };
+		A202D96F1B0F778900EAB199 /* UIView+Constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints.h"; sourceTree = "<group>"; };
+		A202D9701B0F778900EAB199 /* UIView+Constraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
+		A202D9731B0F78EE00EAB199 /* UISplitViewController+QuickAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+QuickAccess.h"; sourceTree = "<group>"; };
+		A202D9741B0F78EE00EAB199 /* UISplitViewController+QuickAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+QuickAccess.m"; sourceTree = "<group>"; };
+		A202D9791B0F7C3300EAB199 /* CLLocation+CH1903.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+CH1903.h"; sourceTree = "<group>"; };
+		A202D97A1B0F7C3300EAB199 /* CLLocation+CH1903.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+CH1903.m"; sourceTree = "<group>"; };
+		A202D97D1B0F7CD100EAB199 /* CLLocationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLocationDemoViewController.h; sourceTree = "<group>"; };
+		A202D97E1B0F7CD100EAB199 /* CLLocationDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLocationDemoViewController.m; sourceTree = "<group>"; };
+		A202D97F1B0F7CD100EAB199 /* CLLocationDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLLocationDemoViewController.xib; sourceTree = "<group>"; };
+		A202D9841B0F7D2A00EAB199 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		A202D9851B0F7D2A00EAB199 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+		A202D9891B0F7D7900EAB199 /* MKMapViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapViewDemoViewController.h; sourceTree = "<group>"; };
+		A202D98A1B0F7D7900EAB199 /* MKMapViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapViewDemoViewController.m; sourceTree = "<group>"; };
+		A202D98B1B0F7D7900EAB199 /* MKMapViewDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKMapViewDemoViewController.xib; sourceTree = "<group>"; };
+		A202D98F1B0F8B6000EAB199 /* NSUserDefaults+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SafeAccess.h"; sourceTree = "<group>"; };
+		A202D9901B0F8B6000EAB199 /* NSUserDefaults+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SafeAccess.m"; sourceTree = "<group>"; };
+		A202D9921B0F8FB000EAB199 /* UIButton+Submitting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Submitting.h"; sourceTree = "<group>"; };
+		A202D9931B0F8FB000EAB199 /* UIButton+Submitting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Submitting.m"; sourceTree = "<group>"; };
+		A202D9971B0F916900EAB199 /* UIControlDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControlDemoViewController.h; sourceTree = "<group>"; };
+		A202D9981B0F916900EAB199 /* UIControlDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIControlDemoViewController.m; sourceTree = "<group>"; };
+		A202D9991B0F916900EAB199 /* UIControlDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIControlDemoViewController.xib; sourceTree = "<group>"; };
+		A202D99C1B0F919300EAB199 /* UIControl+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Block.h"; sourceTree = "<group>"; };
+		A202D99D1B0F919300EAB199 /* UIControl+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Block.m"; sourceTree = "<group>"; };
+		A202D9A01B102A4F00EAB199 /* NSNumber+Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Round.h"; sourceTree = "<group>"; };
+		A202D9A11B102A4F00EAB199 /* NSNumber+Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Round.m"; sourceTree = "<group>"; };
+		A202D9A41B102D7800EAB199 /* NSNumberDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberDemoViewController.h; sourceTree = "<group>"; };
+		A202D9A51B102D7800EAB199 /* NSNumberDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNumberDemoViewController.m; sourceTree = "<group>"; };
+		A202D9A61B102D7800EAB199 /* NSNumberDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSNumberDemoViewController.xib; sourceTree = "<group>"; };
+		A202D9A91B102F0F00EAB199 /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
+		A202D9AA1B102F0F00EAB199 /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
+		A202D9AC1B10305500EAB199 /* NSObject+KVOBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOBlocks.h"; sourceTree = "<group>"; };
+		A202D9AD1B10305500EAB199 /* NSObject+KVOBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOBlocks.m"; sourceTree = "<group>"; };
+		A202D9B11B10338B00EAB199 /* UIApplicationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIApplicationDemoViewController.h; sourceTree = "<group>"; };
+		A202D9B21B10338B00EAB199 /* UIApplicationDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIApplicationDemoViewController.m; sourceTree = "<group>"; };
+		A202D9B31B10338B00EAB199 /* UIApplicationDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIApplicationDemoViewController.xib; sourceTree = "<group>"; };
+		A202D9B61B1033AC00EAB199 /* UIApplication+KeyboardFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+KeyboardFrame.h"; sourceTree = "<group>"; };
+		A202D9B71B1033AC00EAB199 /* UIApplication+KeyboardFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+KeyboardFrame.m"; sourceTree = "<group>"; };
+		A202D9B91B1035DC00EAB199 /* UIControl+ActionBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ActionBlocks.h"; sourceTree = "<group>"; };
+		A202D9BA1B1035DC00EAB199 /* UIControl+ActionBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ActionBlocks.m"; sourceTree = "<group>"; };
+		A202D9BD1B1038DB00EAB199 /* UIBarButtonItemDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBarButtonItemDemoViewController.h; sourceTree = "<group>"; };
+		A202D9BE1B1038DB00EAB199 /* UIBarButtonItemDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBarButtonItemDemoViewController.m; sourceTree = "<group>"; };
+		A202D9BF1B1038DB00EAB199 /* UIBarButtonItemDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIBarButtonItemDemoViewController.xib; sourceTree = "<group>"; };
+		A202D9C31B103A8300EAB199 /* CLLocationManager+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+Blocks.h"; sourceTree = "<group>"; };
+		A202D9C41B103A8300EAB199 /* CLLocationManager+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+Blocks.m"; sourceTree = "<group>"; };
+		A202D9C71B103B4600EAB199 /* CLLocationManagerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLocationManagerDemoViewController.h; sourceTree = "<group>"; };
+		A202D9C81B103B4600EAB199 /* CLLocationManagerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLocationManagerDemoViewController.m; sourceTree = "<group>"; };
+		A202D9C91B103B4600EAB199 /* CLLocationManagerDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLLocationManagerDemoViewController.xib; sourceTree = "<group>"; };
+		A202D9CC1B103BBD00EAB199 /* MKMapView+BetterMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+BetterMaps.h"; sourceTree = "<group>"; };
+		A202D9CD1B103BBD00EAB199 /* MKMapView+BetterMaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+BetterMaps.m"; sourceTree = "<group>"; };
 		A218D8D51A479E9C00AB83CA /* UIColor+Web.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Web.h"; sourceTree = "<group>"; };
 		A218D8D61A479E9C00AB83CA /* UIColor+Web.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Web.m"; sourceTree = "<group>"; };
 		A218D8DB1A47A25100AB83CA /* UIWebView+Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Canvas.h"; sourceTree = "<group>"; };
@@ -227,7 +311,6 @@
 		A219B8B61A615CA100135327 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		A219B8B81A615E3800135327 /* UIImage+Capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Capture.h"; sourceTree = "<group>"; };
 		A219B8B91A615E3800135327 /* UIImage+Capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Capture.m"; sourceTree = "<group>"; };
-		A219B8BB1A615F8D00135327 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		A21F34BB1B0F221400D73A91 /* UINavigationItem+Lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Lock.h"; sourceTree = "<group>"; };
 		A21F34BC1B0F221400D73A91 /* UINavigationItem+Lock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Lock.m"; sourceTree = "<group>"; };
 		A21F34BF1B0F229700D73A91 /* UIScreen+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Frame.h"; sourceTree = "<group>"; };
@@ -258,11 +341,6 @@
 		A238E0571A4555F400383A97 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		A24377211ACBE9CF00FFFEA1 /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
 		A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoCoding.m"; sourceTree = "<group>"; };
-		A24377251ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
-		A24377261ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
-		A24377291ACBF10E00FFFEA1 /* MKMapViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapViewDemoViewController.h; sourceTree = "<group>"; };
-		A243772A1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapViewDemoViewController.m; sourceTree = "<group>"; };
-		A243772B1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKMapViewDemoViewController.xib; sourceTree = "<group>"; };
 		A243772E1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
 		A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
 		A2681A3F1A75C788009BA7EE /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -279,8 +357,6 @@
 		A280E5391A52405A00E6ACA2 /* UIScrollView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Addition.m"; sourceTree = "<group>"; };
 		A280E53B1A52433200E6ACA2 /* NSData+Gzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Gzip.h"; sourceTree = "<group>"; };
 		A280E53C1A52433200E6ACA2 /* NSData+Gzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Gzip.m"; sourceTree = "<group>"; };
-		A280E53F1A5244EC00E6ACA2 /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Addition.h"; sourceTree = "<group>"; };
-		A280E5401A5244EC00E6ACA2 /* NSDate+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Addition.m"; sourceTree = "<group>"; };
 		A280E5421A5246C200E6ACA2 /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
 		A280E5431A5246C200E6ACA2 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
 		A280E5461A52480300E6ACA2 /* UIBezierPath+SVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+SVG.h"; sourceTree = "<group>"; };
@@ -600,6 +676,195 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A202D9681B0F6F9800EAB199 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9691B0F6FA400EAB199 /* UIBarButtonItem+Action.h */,
+				A202D96A1B0F6FA400EAB199 /* UIBarButtonItem+Action.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		A202D9721B0F78D800EAB199 /* UISplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9731B0F78EE00EAB199 /* UISplitViewController+QuickAccess.h */,
+				A202D9741B0F78EE00EAB199 /* UISplitViewController+QuickAccess.m */,
+			);
+			path = UISplitViewController;
+			sourceTree = "<group>";
+		};
+		A202D9761B0F7BE100EAB199 /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9C21B103A7500EAB199 /* CLLocationManager */,
+				A202D9781B0F7C2000EAB199 /* CLLocation */,
+			);
+			path = CoreLocation;
+			sourceTree = "<group>";
+		};
+		A202D9771B0F7BFB00EAB199 /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9C61B103B3400EAB199 /* CLLocationManager */,
+				A202D97C1B0F7CC200EAB199 /* CLLocation */,
+			);
+			path = CoreLocation;
+			sourceTree = "<group>";
+		};
+		A202D9781B0F7C2000EAB199 /* CLLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9791B0F7C3300EAB199 /* CLLocation+CH1903.h */,
+				A202D97A1B0F7C3300EAB199 /* CLLocation+CH1903.m */,
+			);
+			path = CLLocation;
+			sourceTree = "<group>";
+		};
+		A202D97C1B0F7CC200EAB199 /* CLLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A202D97D1B0F7CD100EAB199 /* CLLocationDemoViewController.h */,
+				A202D97E1B0F7CD100EAB199 /* CLLocationDemoViewController.m */,
+				A202D97F1B0F7CD100EAB199 /* CLLocationDemoViewController.xib */,
+			);
+			path = CLLocation;
+			sourceTree = "<group>";
+		};
+		A202D9821B0F7D1400EAB199 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9831B0F7D2A00EAB199 /* MKMapView */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		A202D9831B0F7D2A00EAB199 /* MKMapView */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9841B0F7D2A00EAB199 /* MKMapView+ZoomLevel.h */,
+				A202D9851B0F7D2A00EAB199 /* MKMapView+ZoomLevel.m */,
+				A202D9CC1B103BBD00EAB199 /* MKMapView+BetterMaps.h */,
+				A202D9CD1B103BBD00EAB199 /* MKMapView+BetterMaps.m */,
+			);
+			path = MKMapView;
+			sourceTree = "<group>";
+		};
+		A202D9871B0F7D6C00EAB199 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9881B0F7D7900EAB199 /* MKMapView */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		A202D9881B0F7D7900EAB199 /* MKMapView */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9891B0F7D7900EAB199 /* MKMapViewDemoViewController.h */,
+				A202D98A1B0F7D7900EAB199 /* MKMapViewDemoViewController.m */,
+				A202D98B1B0F7D7900EAB199 /* MKMapViewDemoViewController.xib */,
+			);
+			path = MKMapView;
+			sourceTree = "<group>";
+		};
+		A202D98E1B0F8B4700EAB199 /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				A202D98F1B0F8B6000EAB199 /* NSUserDefaults+SafeAccess.h */,
+				A202D9901B0F8B6000EAB199 /* NSUserDefaults+SafeAccess.m */,
+			);
+			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		A202D9951B0F914D00EAB199 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				A202D99C1B0F919300EAB199 /* UIControl+Block.h */,
+				A202D99D1B0F919300EAB199 /* UIControl+Block.m */,
+				A202D9B91B1035DC00EAB199 /* UIControl+ActionBlocks.h */,
+				A202D9BA1B1035DC00EAB199 /* UIControl+ActionBlocks.m */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		A202D9961B0F915E00EAB199 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9971B0F916900EAB199 /* UIControlDemoViewController.h */,
+				A202D9981B0F916900EAB199 /* UIControlDemoViewController.m */,
+				A202D9991B0F916900EAB199 /* UIControlDemoViewController.xib */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		A202D99F1B102A3B00EAB199 /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9A01B102A4F00EAB199 /* NSNumber+Round.h */,
+				A202D9A11B102A4F00EAB199 /* NSNumber+Round.m */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		A202D9A31B102D6600EAB199 /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9A41B102D7800EAB199 /* NSNumberDemoViewController.h */,
+				A202D9A51B102D7800EAB199 /* NSNumberDemoViewController.m */,
+				A202D9A61B102D7800EAB199 /* NSNumberDemoViewController.xib */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		A202D9AF1B10336500EAB199 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9B61B1033AC00EAB199 /* UIApplication+KeyboardFrame.h */,
+				A202D9B71B1033AC00EAB199 /* UIApplication+KeyboardFrame.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		A202D9B01B10337F00EAB199 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9B11B10338B00EAB199 /* UIApplicationDemoViewController.h */,
+				A202D9B21B10338B00EAB199 /* UIApplicationDemoViewController.m */,
+				A202D9B31B10338B00EAB199 /* UIApplicationDemoViewController.xib */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		A202D9BC1B1038C000EAB199 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9BD1B1038DB00EAB199 /* UIBarButtonItemDemoViewController.h */,
+				A202D9BE1B1038DB00EAB199 /* UIBarButtonItemDemoViewController.m */,
+				A202D9BF1B1038DB00EAB199 /* UIBarButtonItemDemoViewController.xib */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		A202D9C21B103A7500EAB199 /* CLLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9C31B103A8300EAB199 /* CLLocationManager+Blocks.h */,
+				A202D9C41B103A8300EAB199 /* CLLocationManager+Blocks.m */,
+			);
+			path = CLLocationManager;
+			sourceTree = "<group>";
+		};
+		A202D9C61B103B3400EAB199 /* CLLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9C71B103B4600EAB199 /* CLLocationManagerDemoViewController.h */,
+				A202D9C81B103B4600EAB199 /* CLLocationManagerDemoViewController.m */,
+				A202D9C91B103B4600EAB199 /* CLLocationManagerDemoViewController.xib */,
+			);
+			path = CLLocationManager;
+			sourceTree = "<group>";
+		};
 		A21F34BA1B0F220700D73A91 /* UINavigationItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -671,9 +936,10 @@
 			children = (
 				A22725F11A3E736D0061605B /* Foundation */,
 				A22725F21A3E736D0061605B /* UIKit */,
+				A202D9821B0F7D1400EAB199 /* MapKit */,
+				A202D9761B0F7BE100EAB199 /* CoreLocation */,
 				A22725D51A3E72D50061605B /* AppDelegate.h */,
 				A22725D61A3E72D50061605B /* AppDelegate.m */,
-				A219B8BB1A615F8D00135327 /* bg.jpg */,
 				A22725D81A3E72D50061605B /* Images.xcassets */,
 				A22725DA1A3E72D50061605B /* LaunchScreen.xib */,
 				A22725D11A3E72D50061605B /* Supporting Files */,
@@ -694,6 +960,8 @@
 		A22725F11A3E736D0061605B /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A202D99F1B102A3B00EAB199 /* NSNumber */,
+				A202D98E1B0F8B4700EAB199 /* NSUserDefaults */,
 				A284C1351AEBCECE00D90ED5 /* NSDateFormatter */,
 				A284C12B1AEBCD8E00D90ED5 /* NSManagedObjectContext */,
 				A284C1271AEBCB7A00D90ED5 /* NSIndexPath */,
@@ -716,11 +984,14 @@
 		A22725F21A3E736D0061605B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A202D9AF1B10336500EAB199 /* UIApplication */,
+				A202D9951B0F914D00EAB199 /* UIControl */,
+				A202D9721B0F78D800EAB199 /* UISplitViewController */,
+				A202D9681B0F6F9800EAB199 /* UIBarButtonItem */,
 				A21F34BE1B0F228A00D73A91 /* UIScreen */,
 				A21F34BA1B0F220700D73A91 /* UINavigationItem */,
 				A284C1121AEBBF7900D90ED5 /* UINavigationBar */,
 				A284C0FF1AEB940F00D90ED5 /* UITableView */,
-				A24377241ACBF03800FFFEA1 /* MKMapView */,
 				A2FD0CBB1AB1618D00EDEA4C /* UIWindow */,
 				A2FD5B561A526C6800555EA2 /* UISearchBar */,
 				A2FD5B441A52635900555EA2 /* UIResponder */,
@@ -744,25 +1015,6 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		A24377241ACBF03800FFFEA1 /* MKMapView */ = {
-			isa = PBXGroup;
-			children = (
-				A24377251ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.h */,
-				A24377261ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.m */,
-			);
-			path = MKMapView;
-			sourceTree = "<group>";
-		};
-		A24377281ACBF0F600FFFEA1 /* MKMapView */ = {
-			isa = PBXGroup;
-			children = (
-				A24377291ACBF10E00FFFEA1 /* MKMapViewDemoViewController.h */,
-				A243772A1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.m */,
-				A243772B1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.xib */,
-			);
-			path = MKMapView;
-			sourceTree = "<group>";
-		};
 		A280E5221A52339800E6ACA2 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -774,6 +1026,8 @@
 				A280E5241A5233A700E6ACA2 /* UIButton+Block.m */,
 				BCB799F41AFDDAA500C12525 /* UIButton+BackgroundColor.h */,
 				BCB799F51AFDDAA500C12525 /* UIButton+BackgroundColor.m */,
+				A202D9921B0F8FB000EAB199 /* UIButton+Submitting.h */,
+				A202D9931B0F8FB000EAB199 /* UIButton+Submitting.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -793,12 +1047,14 @@
 			isa = PBXGroup;
 			children = (
 				A284C10C1AEBBCEF00D90ED5 /* NSDate+TimeAgo */,
-				A280E53F1A5244EC00E6ACA2 /* NSDate+Addition.h */,
-				A280E5401A5244EC00E6ACA2 /* NSDate+Addition.m */,
 				A2FD5B611A52718200555EA2 /* NSDate+Utilities.h */,
 				A2FD5B621A52718200555EA2 /* NSDate+Utilities.m */,
 				A284C14B1AEBD39600D90ED5 /* NSDate+Extension.h */,
 				A284C14C1AEBD39600D90ED5 /* NSDate+Extension.m */,
+				A202D9601B0F6C4400EAB199 /* NSDate+Reporting.h */,
+				A202D9611B0F6C4400EAB199 /* NSDate+Reporting.m */,
+				A202D9A91B102F0F00EAB199 /* NSDate+Formatter.h */,
+				A202D9AA1B102F0F00EAB199 /* NSDate+Formatter.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -819,9 +1075,11 @@
 		A281FB4C1AC80F61009040DA /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				A281FB6F1AC811AD009040DA /* Controller */,
 				A281FB4D1AC8101F009040DA /* Foundation */,
 				A281FB5B1AC8101F009040DA /* UIKit */,
+				A202D9871B0F7D6C00EAB199 /* MapKit */,
+				A202D9771B0F7BFB00EAB199 /* CoreLocation */,
+				A281FB6F1AC811AD009040DA /* Controller */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -829,6 +1087,7 @@
 		A281FB4D1AC8101F009040DA /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A202D9A31B102D6600EAB199 /* NSNumber */,
 				A284C13B1AEBCF7B00D90ED5 /* NSDateFormatter */,
 				A284C13A1AEBCF7200D90ED5 /* NSManagedObjectContext */,
 				A284C1391AEBCF6900D90ED5 /* NSIndexPath */,
@@ -982,12 +1241,14 @@
 		A281FB5B1AC8101F009040DA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A202D9BC1B1038C000EAB199 /* UIBarButtonItem */,
+				A202D9B01B10337F00EAB199 /* UIApplication */,
+				A202D9961B0F915E00EAB199 /* UIControl */,
 				A21F34C21B0F246100D73A91 /* UIAlertView */,
 				A21F34C31B0F246100D73A91 /* UINavigationItem */,
 				A21F34C41B0F246100D73A91 /* UIScreen */,
 				A284C1211AEBC19100D90ED5 /* UINavigationBar */,
 				A284C1031AEB943C00D90ED5 /* UITableView */,
-				A24377281ACBF0F600FFFEA1 /* MKMapView */,
 				A281FB5C1AC8101F009040DA /* UIBezierPath */,
 				A281FB5D1AC8101F009040DA /* UIButton */,
 				A281FB5E1AC8101F009040DA /* UIColor */,
@@ -1344,6 +1605,8 @@
 				A2AF02A91A74C096003FEC8D /* NSDictionary+Merge.m */,
 				A284C1591AEBDAC200D90ED5 /* NSDictionary+JSONString.h */,
 				A284C15A1AEBDAC200D90ED5 /* NSDictionary+JSONString.m */,
+				A202D96C1B0F75B400EAB199 /* NSDictionary+Block.h */,
+				A202D96D1B0F75B400EAB199 /* NSDictionary+Block.m */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
@@ -1369,6 +1632,8 @@
 				A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */,
 				BCB79A001AFDE0B600C12525 /* NSObject+MKBlockTimer.h */,
 				BCB79A011AFDE0B600C12525 /* NSObject+MKBlockTimer.m */,
+				A202D9AC1B10305500EAB199 /* NSObject+KVOBlocks.h */,
+				A202D9AD1B10305500EAB199 /* NSObject+KVOBlocks.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -1400,6 +1665,8 @@
 				A2EC52E91A876E7C0059D53B /* NSString+Base64.m */,
 				BCB79A031AFDE19200C12525 /* NSString+Contains.h */,
 				BCB79A041AFDE19200C12525 /* NSString+Contains.m */,
+				A202D9631B0F6DF900EAB199 /* NSString+MIME.h */,
+				A202D9641B0F6DF900EAB199 /* NSString+MIME.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1534,6 +1801,8 @@
 				A284C1521AEBD6E400D90ED5 /* UIView+Find.m */,
 				BCB799FA1AFDDE2300C12525 /* UIView+ViewController.h */,
 				BCB799FB1AFDDE2300C12525 /* UIView+ViewController.m */,
+				A202D96F1B0F778900EAB199 /* UIView+Constraints.h */,
+				A202D9701B0F778900EAB199 /* UIView+Constraints.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1761,6 +2030,7 @@
 				A281FBCC1AC8130E009040DA /* UIDeviceDemoViewController.xib in Resources */,
 				A281FBF51AC813AA009040DA /* UITextFieldDemoViewController.xib in Resources */,
 				A281FBAE1AC812A8009040DA /* NSStringDemoViewController.xib in Resources */,
+				A202D98D1B0F7D7900EAB199 /* MKMapViewDemoViewController.xib in Resources */,
 				A281FB901AC8122D009040DA /* NSDateDemoViewController.xib in Resources */,
 				A22725DC1A3E72D50061605B /* LaunchScreen.xib in Resources */,
 				A281FC181AC81427009040DA /* NSUserDefaultsDemoViewController.xib in Resources */,
@@ -1770,6 +2040,7 @@
 				A284C1401AEBCF9600D90ED5 /* NSDateFormatterDemoViewController.xib in Resources */,
 				A281FBDB1AC8133D009040DA /* UILableDemoViewController.xib in Resources */,
 				A281FBE11AC8137A009040DA /* UIResponderDemoViewController.xib in Resources */,
+				A202D9CB1B103B4600EAB199 /* CLLocationManagerDemoViewController.xib in Resources */,
 				A281FB9F1AC8126F009040DA /* NSFileManagerDemoViewController.xib in Resources */,
 				A281FB861AC81206009040DA /* NSBundleDemoViewController.xib in Resources */,
 				A281FB811AC811F0009040DA /* NSArrayDemoViewController.xib in Resources */,
@@ -1778,25 +2049,28 @@
 				A281FBB81AC812C8009040DA /* NSURLDemoViewController.xib in Resources */,
 				A281FBA41AC8127E009040DA /* NSObjectDemoViewController.xib in Resources */,
 				A281FB8B1AC81217009040DA /* NSDataDemoViewController.xib in Resources */,
+				A202D9C11B1038DB00EAB199 /* UIBarButtonItemDemoViewController.xib in Resources */,
 				A281FBEB1AC81392009040DA /* UISearchBarDemoViewController.xib in Resources */,
 				A281FB951AC8123F009040DA /* NSDictionaryDemoViewController.xib in Resources */,
 				A281FBBD1AC812E5009040DA /* UIBezierPathDemoViewController.xib in Resources */,
+				A202D9A81B102D7800EAB199 /* NSNumberDemoViewController.xib in Resources */,
 				A22725D91A3E72D50061605B /* Images.xcassets in Resources */,
 				A21F34CE1B0F248D00D73A91 /* UINavigationItemDemoViewController.xib in Resources */,
 				A284C14A1AEBCFB000D90ED5 /* NSIndexPathDemoViewController.xib in Resources */,
 				A281FC0E1AC813EA009040DA /* UIWindowDemoViewController.xib in Resources */,
+				A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */,
 				A281FC041AC813D4009040DA /* UIViewControllerDemoViewController.xib in Resources */,
+				A202D9B51B10338B00EAB199 /* UIApplicationDemoViewController.xib in Resources */,
 				A281FBFA1AC813B8009040DA /* UITextViewDemoViewController.xib in Resources */,
 				A281FBFF1AC813C6009040DA /* UIViewDemoViewController.xib in Resources */,
 				A281FBD11AC81324009040DA /* UIImageDemoViewController.xib in Resources */,
 				A281FBA91AC81299009040DA /* NSSetDemoViewController.xib in Resources */,
+				A202D99B1B0F916900EAB199 /* UIControlDemoViewController.xib in Resources */,
 				A21F34C91B0F247800D73A91 /* UIScreenDemoViewController.xib in Resources */,
-				A243772D1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.xib in Resources */,
 				A284C1261AEBC19C00D90ED5 /* UINavigationBarDemoViewController.xib in Resources */,
 				A284C1111AEBBCFC00D90ED5 /* NSDateTimeAgo.bundle in Resources */,
 				A284C1081AEB944B00D90ED5 /* UITableViewDemoViewController.xib in Resources */,
 				A281FB791AC811AD009040DA /* RootViewController.xib in Resources */,
-				A219B8BC1A615F8D00135327 /* bg.jpg in Resources */,
 				A281FBC71AC81303009040DA /* UIColorDemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1815,9 +2089,11 @@
 				A2AAA1EF1B0F1DCE004A3231 /* NSString+Util.m in Sources */,
 				A281FB781AC811AD009040DA /* RootViewController.m in Sources */,
 				A281FBD51AC81330009040DA /* UIImageViewDemoViewController.m in Sources */,
+				A202D9AB1B102F0F00EAB199 /* NSDate+Formatter.m in Sources */,
 				A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */,
 				A281FB991AC8124F009040DA /* NSExceptionDemoViewController.m in Sources */,
 				A28BE3671A3EAF2E005C4AC6 /* UIColor+Gradient.m in Sources */,
+				A202D9C51B103A8300EAB199 /* CLLocationManager+Blocks.m in Sources */,
 				A284C1441AEBCFA300D90ED5 /* NSManagedObjectContextDemoViewController.m in Sources */,
 				A28BE2E81A3E9F48005C4AC6 /* NSData+Encrypt.m in Sources */,
 				A281FC081AC813DF009040DA /* UIWebViewDemoViewController.m in Sources */,
@@ -1832,13 +2108,14 @@
 				A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */,
 				A28BE3521A3EA91B005C4AC6 /* NSArray+Block.m in Sources */,
 				A28BE33B1A3E9FDC005C4AC6 /* UIView+RecursiveDescription.m in Sources */,
+				A202D9651B0F6DF900EAB199 /* NSString+MIME.m in Sources */,
 				A281FBA31AC8127E009040DA /* NSObjectDemoViewController.m in Sources */,
 				A28BE3781A3EC1C6005C4AC6 /* NSObject+AddProperty.m in Sources */,
-				A243772C1ACBF10E00FFFEA1 /* MKMapViewDemoViewController.m in Sources */,
 				A21F34D21B0F249D00D73A91 /* UIAlertViewDemoViewController.m in Sources */,
 				A280E5251A5233A700E6ACA2 /* UIButton+Block.m in Sources */,
 				A281FBA81AC81299009040DA /* NSSetDemoViewController.m in Sources */,
 				BCB799FF1AFDE08E00C12525 /* UIViewController+TopBarMessage.m in Sources */,
+				A202D9621B0F6C4400EAB199 /* NSDate+Reporting.m in Sources */,
 				A28BE36A1A3EB043005C4AC6 /* UIViewController+Visible.m in Sources */,
 				A281FC0D1AC813EA009040DA /* UIWindowDemoViewController.m in Sources */,
 				A28BE35C1A3EAA97005C4AC6 /* NSTimer+Blocks.m in Sources */,
@@ -1853,12 +2130,14 @@
 				A2FD5B4F1A52693600555EA2 /* NSFileManager+Paths.m in Sources */,
 				A2AF02AA1A74C096003FEC8D /* NSDictionary+Merge.m in Sources */,
 				BCB79A021AFDE0B600C12525 /* NSObject+MKBlockTimer.m in Sources */,
+				A202D96E1B0F75B400EAB199 /* NSDictionary+Block.m in Sources */,
 				A284C1151AEBBF8000D90ED5 /* UINavigationBar+Awesome.m in Sources */,
 				A280E5441A5246C200E6ACA2 /* NSObject+Additions.m in Sources */,
 				A28BE32E1A3E9FDC005C4AC6 /* UIImage+FX.m in Sources */,
 				A281FB801AC811F0009040DA /* NSArrayDemoViewController.m in Sources */,
 				A2EC52E71A8769D40059D53B /* NSArray+SafeAccess.m in Sources */,
 				A2E538EC1A775A9900A5D921 /* UIImage+RemoteSize.m in Sources */,
+				A202D9801B0F7CD100EAB199 /* CLLocationDemoViewController.m in Sources */,
 				A28BE3321A3E9FDC005C4AC6 /* UILabel+ESAdjustableLabel.m in Sources */,
 				A28BE3371A3E9FDC005C4AC6 /* UIView+Animation.m in Sources */,
 				BCB9547D1B0D829800E6BA78 /* NSData+SDDataCache.m in Sources */,
@@ -1868,7 +2147,11 @@
 				A281FB8F1AC8122D009040DA /* NSDateDemoViewController.m in Sources */,
 				A281FBFE1AC813C6009040DA /* UIViewDemoViewController.m in Sources */,
 				A28BE3341A3E9FDC005C4AC6 /* UINavigationController+BATransitions.m in Sources */,
+				A202D9AE1B10305500EAB199 /* NSObject+KVOBlocks.m in Sources */,
+				A202D96B1B0F6FA400EAB199 /* UIBarButtonItem+Action.m in Sources */,
+				A202D9751B0F78EE00EAB199 /* UISplitViewController+QuickAccess.m in Sources */,
 				A28BE37F1A3EC561005C4AC6 /* UIWebView+Load.m in Sources */,
+				A202D9941B0F8FB000EAB199 /* UIButton+Submitting.m in Sources */,
 				A28BE38A1A3ED364005C4AC6 /* UITextView+PlaceHolder.m in Sources */,
 				A284C1101AEBBCFC00D90ED5 /* NSDate+TimeAgo.m in Sources */,
 				BCB799FC1AFDDE2300C12525 /* UIView+ViewController.m in Sources */,
@@ -1883,21 +2166,25 @@
 				A28BE3331A3E9FDC005C4AC6 /* UILabel+SuggestSize.m in Sources */,
 				A284C1341AEBCD9900D90ED5 /* NSManagedObjectContext+ObjectClear.m in Sources */,
 				A2EC52EA1A876E7C0059D53B /* NSString+Base64.m in Sources */,
+				A202D9911B0F8B6000EAB199 /* NSUserDefaults+SafeAccess.m in Sources */,
 				A281FB8A1AC81217009040DA /* NSDataDemoViewController.m in Sources */,
 				A28BE33F1A3E9FDC005C4AC6 /* UIWebView+Style.m in Sources */,
+				A202D9711B0F778900EAB199 /* UIView+Constraints.m in Sources */,
 				A28BE33D1A3E9FDC005C4AC6 /* UIWebView+Alert.m in Sources */,
 				A28BE3451A3EA292005C4AC6 /* NSString+Hash.m in Sources */,
 				A21F34DC1B0F302E00D73A91 /* UILabel+AutomaticWriting.m in Sources */,
 				A2C1ADCE1A58F35400E3BAFF /* UIImage+Orientation.m in Sources */,
 				A281FBE01AC8137A009040DA /* UIResponderDemoViewController.m in Sources */,
 				A281FBBC1AC812E5009040DA /* UIBezierPathDemoViewController.m in Sources */,
+				A202D9CE1B103BBD00EAB199 /* MKMapView+BetterMaps.m in Sources */,
 				A284C1071AEB944B00D90ED5 /* UITableViewDemoViewController.m in Sources */,
-				A280E5411A5244EC00E6ACA2 /* NSDate+Addition.m in Sources */,
 				A28BE32A1A3E9FDC005C4AC6 /* UIDevice+Hardware.m in Sources */,
 				A284C1501AEBD5BB00D90ED5 /* UINavigationController+StackManager.m in Sources */,
 				A2768FD31A5518C400E03C90 /* UIView+Toast.m in Sources */,
+				A202D9861B0F7D2A00EAB199 /* MKMapView+ZoomLevel.m in Sources */,
 				A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */,
 				A281FBF91AC813B8009040DA /* UITextViewDemoViewController.m in Sources */,
+				A202D9C01B1038DB00EAB199 /* UIBarButtonItemDemoViewController.m in Sources */,
 				A284C1321AEBCD9900D90ED5 /* NSManagedObjectContext+Fetching.m in Sources */,
 				A29266521A78976B00D01EDA /* UIResponder+UIAdapt.m in Sources */,
 				A28BE3551A3EAA21005C4AC6 /* NSObject+Blocks.m in Sources */,
@@ -1917,12 +2204,14 @@
 				A281FB9E1AC8126F009040DA /* NSFileManagerDemoViewController.m in Sources */,
 				A281FB3F1AC80001009040DA /* NSString+Emoji.m in Sources */,
 				A281FB7C1AC811C2009040DA /* BaseViewController.m in Sources */,
+				A202D9B81B1033AC00EAB199 /* UIApplication+KeyboardFrame.m in Sources */,
+				A202D9A71B102D7800EAB199 /* NSNumberDemoViewController.m in Sources */,
 				A292BDCD1B03422D002DAB71 /* NSString+RemoveEmoji.m in Sources */,
+				A202D99A1B0F916900EAB199 /* UIControlDemoViewController.m in Sources */,
 				A2FD5B4B1A52687000555EA2 /* NSException+Trace.m in Sources */,
 				A21F34D91B0F291600D73A91 /* UIImage+PDF.m in Sources */,
 				A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */,
 				A21F34C81B0F247800D73A91 /* UIScreenDemoViewController.m in Sources */,
-				A24377271ACBF04E00FFFEA1 /* MKMapView+ZoomLevel.m in Sources */,
 				A280E53A1A52405A00E6ACA2 /* UIScrollView+Addition.m in Sources */,
 				A284C10B1AEBBB8600D90ED5 /* UIBezierPath+Symbol.m in Sources */,
 				A28BE32D1A3E9FDC005C4AC6 /* UIImage+Color.m in Sources */,
@@ -1931,6 +2220,7 @@
 				A284C1381AEBCEE700D90ED5 /* NSDateFormatter+Make.m in Sources */,
 				A28BE3291A3E9FDC005C4AC6 /* UIColor+HEX.m in Sources */,
 				A28BE32C1A3E9FDC005C4AC6 /* UIImage+animatedGIF.m in Sources */,
+				A202D97B1B0F7C3300EAB199 /* CLLocation+CH1903.m in Sources */,
 				A281FBC61AC81303009040DA /* UIColorDemoViewController.m in Sources */,
 				A280E53D1A52433200E6ACA2 /* NSData+Gzip.m in Sources */,
 				A284C1021AEB941800D90ED5 /* UITableView+FDTemplateLayoutCell.m in Sources */,
@@ -1938,9 +2228,12 @@
 				A21F34CD1B0F248D00D73A91 /* UINavigationItemDemoViewController.m in Sources */,
 				A2FD5B351A52599C00555EA2 /* UIScrollView+Pages.m in Sources */,
 				A281FB941AC8123F009040DA /* NSDictionaryDemoViewController.m in Sources */,
+				A202D9BB1B1035DC00EAB199 /* UIControl+ActionBlocks.m in Sources */,
 				A22725D71A3E72D50061605B /* AppDelegate.m in Sources */,
+				A202D9CA1B103B4600EAB199 /* CLLocationManagerDemoViewController.m in Sources */,
 				A28BE3721A3EB31D005C4AC6 /* UIImageView+Addition.m in Sources */,
 				BCB799F61AFDDAA500C12525 /* UIButton+BackgroundColor.m in Sources */,
+				A202D99E1B0F919300EAB199 /* UIControl+Block.m in Sources */,
 				A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */,
 				A284C12A1AEBCB7F00D90ED5 /* NSIndexPath+Offset.m in Sources */,
 				A284C1331AEBCD9900D90ED5 /* NSManagedObjectContext+FetchRequestsConstructors.m in Sources */,
@@ -1955,6 +2248,8 @@
 				A28BE3351A3E9FDC005C4AC6 /* UINavigationController+KeyboardFix.m in Sources */,
 				A22725D41A3E72D50061605B /* main.m in Sources */,
 				A284C1491AEBCFB000D90ED5 /* NSIndexPathDemoViewController.m in Sources */,
+				A202D9A21B102A4F00EAB199 /* NSNumber+Round.m in Sources */,
+				A202D98C1B0F7D7900EAB199 /* MKMapViewDemoViewController.m in Sources */,
 				A281FBCB1AC8130E009040DA /* UIDeviceDemoViewController.m in Sources */,
 				A28BE3381A3E9FDC005C4AC6 /* UIView+Debug.m in Sources */,
 				A281FC031AC813D4009040DA /* UIViewControllerDemoViewController.m in Sources */,
@@ -1967,6 +2262,7 @@
 				A28BE33C1A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m in Sources */,
 				A281FB421AC800F2009040DA /* NSString+Trims.m in Sources */,
 				A28BE32F1A3E9FDC005C4AC6 /* UIImage+Resize.m in Sources */,
+				A202D9B41B10338B00EAB199 /* UIApplicationDemoViewController.m in Sources */,
 				A24377231ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m in Sources */,
 				A281FB851AC81206009040DA /* NSBundleDemoViewController.m in Sources */,
 			);

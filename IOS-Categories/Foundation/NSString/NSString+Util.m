@@ -182,4 +182,16 @@
 }
 
 
+
++ (NSString *)reverseString:(NSString *)strSrc
+{
+    NSMutableString* reverseString = [[NSMutableString alloc] init];
+    NSInteger charIndex = [strSrc length];
+    while (charIndex > 0) {
+        charIndex --;
+        NSRange subStrRange = NSMakeRange(charIndex, 1);
+        [reverseString appendString:[strSrc substringWithRange:subStrRange]];
+    }
+    return reverseString;
+}
 @end

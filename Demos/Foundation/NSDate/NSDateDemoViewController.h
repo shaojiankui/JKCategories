@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-
+#import "NSDate+Reporting.h"
 @interface NSDateDemoViewController : BaseViewController
 
 @end

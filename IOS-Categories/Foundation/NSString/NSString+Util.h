@@ -15,4 +15,5 @@
 - (CGSize)sizeWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width;
 - (CGSize)sizeWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height;
 
++ (NSString *)reverseString:(NSString *)strSrc;
 @end

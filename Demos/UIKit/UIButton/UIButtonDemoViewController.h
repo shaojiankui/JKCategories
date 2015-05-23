@@ -11,4 +11,5 @@
 @interface UIButtonDemoViewController : BaseViewController
 
 - (IBAction)countButtonTouchd:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *blockButton;
 @end
