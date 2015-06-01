@@ -348,8 +348,6 @@
 		A21F34DA1B0F302E00D73A91 /* UILabel+AutomaticWriting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutomaticWriting.h"; sourceTree = "<group>"; };
 		A21F34DB1B0F302E00D73A91 /* UILabel+AutomaticWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutomaticWriting.m"; sourceTree = "<group>"; };
 		A22725CE1A3E72D50061605B /* IOS-Categories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Categories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A22725D21A3E72D50061605B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A22725D31A3E72D50061605B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A238E0561A4555F400383A97 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
 		A238E0571A4555F400383A97 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		A24377211ACBE9CF00FFFEA1 /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
@@ -891,8 +889,7 @@
 				A202D9D21B103F9400EAB199 /* AppDelegate.m */,
 				A202D9D31B103F9400EAB199 /* LaunchScreen.xib */,
 				A202D9D51B103F9400EAB199 /* Images.xcassets */,
-				A202D9D61B103F9400EAB199 /* Info.plist */,
-				A202D9D71B103F9400EAB199 /* main.m */,
+				A26185781B1C2B5E00D62F54 /* Supporting Files */,
 			);
 			path = "IOS-Categories";
 			sourceTree = "<group>";
@@ -983,18 +980,8 @@
 				A22725F21A3E736D0061605B /* UIKit */,
 				A202D9821B0F7D1400EAB199 /* MapKit */,
 				A202D9761B0F7BE100EAB199 /* CoreLocation */,
-				A22725D11A3E72D50061605B /* Supporting Files */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		A22725D11A3E72D50061605B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A22725D21A3E72D50061605B /* Info.plist */,
-				A22725D31A3E72D50061605B /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A22725F11A3E736D0061605B /* Foundation */ = {
@@ -1053,6 +1040,15 @@
 				A28BE3221A3E9FDC005C4AC6 /* UIWebView */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A26185781B1C2B5E00D62F54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A202D9D61B103F9400EAB199 /* Info.plist */,
+				A202D9D71B103F9400EAB199 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A280E5221A52339800E6ACA2 /* UIButton */ = {
