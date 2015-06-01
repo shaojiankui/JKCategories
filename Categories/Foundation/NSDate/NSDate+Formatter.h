@@ -1,6 +1,6 @@
 //
 //  NSDate+Formatter.h
-//  IOS-Categories
+//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
 //
 //  Copyright (C) 2013 by Christopher Meyer
 //  http://schwiiz.org/

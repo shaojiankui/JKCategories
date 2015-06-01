@@ -1,6 +1,6 @@
 //
 //  NSString+Hash.m
-//  IOS-Categories
+//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
 //
 //  Created by Jakey on 14/12/15.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
@@ -42,31 +42,44 @@
     CC_SHA512(string, length, bytes);
     return [self stringFromBytes:bytes length:CC_SHA512_DIGEST_LENGTH];
 }
+
+- (NSString *)hmacMD5StringWithKey:(NSString *)key {
+   return [self hmacStringUsingAlg:kCCHmacAlgMD5 withKey:key];
+}
 - (NSString *)hmacSHA1StringWithKey:(NSString *)key
 {
-    NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *messageData = [self dataUsingEncoding:NSUTF8StringEncoding];
-    NSMutableData *mutableData = [NSMutableData dataWithLength:CC_SHA1_DIGEST_LENGTH];
-    CCHmac(kCCHmacAlgSHA1, keyData.bytes, keyData.length, messageData.bytes, messageData.length, mutableData.mutableBytes);
-    return [self stringFromBytes:(unsigned char *)mutableData.bytes length:(int)mutableData.length];
+    return [self hmacStringUsingAlg:kCCHmacAlgSHA1 withKey:key];
+
 }
 - (NSString *)hmacSHA256StringWithKey:(NSString *)key
 {
-    NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *messageData = [self dataUsingEncoding:NSUTF8StringEncoding];
-    NSMutableData *mutableData = [NSMutableData dataWithLength:CC_SHA256_DIGEST_LENGTH];
-    CCHmac(kCCHmacAlgSHA256, keyData.bytes, keyData.length, messageData.bytes, messageData.length, mutableData.mutableBytes);
-    return [self stringFromBytes:(unsigned char *)mutableData.bytes length:(int)mutableData.length];
+    return [self hmacStringUsingAlg:kCCHmacAlgSHA256 withKey:key];
+
 }
 - (NSString *)hmacSHA512StringWithKey:(NSString *)key
 {
-    NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *messageData = [self dataUsingEncoding:NSUTF8StringEncoding];
-    NSMutableData *mutableData = [NSMutableData dataWithLength:CC_SHA512_DIGEST_LENGTH];
-    CCHmac(kCCHmacAlgSHA512, keyData.bytes, keyData.length, messageData.bytes, messageData.length, mutableData.mutableBytes);
-    return [self stringFromBytes:(unsigned char *)mutableData.bytes length:(int)mutableData.length];
+    return [self hmacStringUsingAlg:kCCHmacAlgSHA512 withKey:key];
+
 }
 #pragma mark - Helpers
+- (NSString *)hmacStringUsingAlg:(CCHmacAlgorithm)alg withKey:(NSString *)key {
+    size_t size;
+    switch (alg) {
+        case kCCHmacAlgMD5: size = CC_MD5_DIGEST_LENGTH; break;
+        case kCCHmacAlgSHA1: size = CC_SHA1_DIGEST_LENGTH; break;
+        case kCCHmacAlgSHA224: size = CC_SHA224_DIGEST_LENGTH; break;
+        case kCCHmacAlgSHA256: size = CC_SHA256_DIGEST_LENGTH; break;
+        case kCCHmacAlgSHA384: size = CC_SHA384_DIGEST_LENGTH; break;
+        case kCCHmacAlgSHA512: size = CC_SHA512_DIGEST_LENGTH; break;
+        default: return nil;
+    }
+   
+    NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *messageData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    NSMutableData *mutableData = [NSMutableData dataWithLength:size];
+    CCHmac(alg, keyData.bytes, keyData.length, messageData.bytes, messageData.length, mutableData.mutableBytes);
+    return [self stringFromBytes:(unsigned char *)mutableData.bytes length:(int)mutableData.length];
+}
 - (NSString *)stringFromBytes:(unsigned char *)bytes length:(int)length
 {
     NSMutableString *mutableString = @"".mutableCopy;

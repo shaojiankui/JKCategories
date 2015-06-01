@@ -1,6 +1,6 @@
 //
 //  NSData+Encrypt.h
-//  IOS-Categories
+//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
 //
 //  Created by Jakey on 14/12/15.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
@@ -14,7 +14,7 @@
  *  利用AES加密数据
  *
  *  @param key key
- *  @param iv  <#iv description#>
+ *  @param iv  iv description
  *
  *  @return data
  */
@@ -25,7 +25,7 @@
  *  利用3DES加密数据
  *
  *  @param key key
- *  @param iv  <#iv description#>
+ *  @param iv  iv description
  *
  *  @return data
  */
