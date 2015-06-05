@@ -16,6 +16,8 @@
 
 - (NSNumber*)numberWithIndex:(NSUInteger)index;
 
+- (NSDecimalNumber *)decimalNumberWithIndex:(NSUInteger)index;
+
 - (NSArray*)arrayWithIndex:(NSUInteger)index;
 
 - (NSDictionary*)dictionaryWithIndex:(NSUInteger)index;
@@ -40,6 +42,7 @@
 
 - (double)doubleWithIndex:(NSUInteger)index;
 
+- (NSDate *)dateWithIndex:(NSUInteger)index dateFormat:(NSString *)dateFormat;
 //CG
 - (CGFloat)CGFloatWithIndex:(NSUInteger)index;
 

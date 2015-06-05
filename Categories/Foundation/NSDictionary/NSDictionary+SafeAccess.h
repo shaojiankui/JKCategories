@@ -16,6 +16,8 @@
 
 - (NSNumber*)numberForKey:(id)key;
 
+- (NSDecimalNumber *)decimalNumberForKey:(id)key;
+
 - (NSArray*)arrayForKey:(id)key;
 
 - (NSDictionary*)dictionaryForKey:(id)key;
@@ -43,6 +45,8 @@
 - (long long)longLongForKey:(id)key;
 
 - (unsigned long long)unsignedLongLongForKey:(id)key;
+
+- (NSDate *)dateForKey:(id)key dateFormat:(NSString *)dateFormat;
 
 //CG
 - (CGFloat)CGFloatForKey:(id)key;

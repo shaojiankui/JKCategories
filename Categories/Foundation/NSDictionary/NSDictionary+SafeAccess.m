@@ -45,6 +45,22 @@
     return nil;
 }
 
+- (NSDecimalNumber *)decimalNumberForKey:(id)key {
+    id value = [self objectForKey:key];
+    
+    if ([value isKindOfClass:[NSDecimalNumber class]]) {
+        return value;
+    } else if ([value isKindOfClass:[NSNumber class]]) {
+        NSNumber * number = (NSNumber*)value;
+        return [NSDecimalNumber decimalNumberWithDecimal:[number decimalValue]];
+    } else if ([value isKindOfClass:[NSString class]]) {
+        NSString * str = (NSString*)value;
+        return [str isEqualToString:@""] ? nil : [NSDecimalNumber decimalNumberWithString:str];
+    }
+    return nil;
+}
+
+
 - (NSArray*)arrayForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -242,6 +258,24 @@
     }
     return 0;
 }
+
+- (NSDate *)dateForKey:(id)key dateFormat:(NSString *)dateFormat{
+    NSDateFormatter *formater = [[NSDateFormatter alloc]init];
+    formater.dateFormat = dateFormat;
+    id value = [self objectForKey:key];
+    
+    if (value == nil || value == [NSNull null])
+    {
+        return nil;
+    }
+    
+    if ([value isKindOfClass:[NSString class]] && ![value isEqualToString:@""] && !dateFormat) {
+        return [formater dateFromString:value];
+    }
+    return nil;
+}
+
+
 //CG
 - (CGFloat)CGFloatForKey:(id)key
 {

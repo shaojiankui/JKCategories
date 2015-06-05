@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"iOS-Categories (https://github.com/shaojiankui/iOS-Categories)";
+    self.title = @"iOS-Categories";
     _items = @{
             @"UIKit":@[@"UIBezierPath",
                        @"UIButton",
@@ -62,15 +62,20 @@
                         @"NSURL",
                         @"NSUserDefaults",
                         @"NSIndexPath",
-                        @"NSManagedObjectContext",
                         @"NSDateFormatter",
-                        @"NSNumber"
+                        @"NSNumber",
+                        @"NSNotificationCenter"
                         
                         ],
          @"CoreLocation":@[
                         @"CLLocation",
                         @"CLLocationManager"
-                         ] ,
+                        ] ,
+            @"CoreData":@[
+                    @"NSManagedObjectContext",
+                    @"NSFetchRequest",
+                    @"NSManagedObject"
+                    ] ,
             @"MapKit":@[
                         @"MKMapView"
                         ]

@@ -49,6 +49,21 @@
     return nil;
 }
 
+- (NSDecimalNumber *)decimalNumberWithIndex:(NSUInteger)index{
+    id value = [self objectWithIndex:index];
+    
+    if ([value isKindOfClass:[NSDecimalNumber class]]) {
+        return value;
+    } else if ([value isKindOfClass:[NSNumber class]]) {
+        NSNumber * number = (NSNumber*)value;
+        return [NSDecimalNumber decimalNumberWithDecimal:[number decimalValue]];
+    } else if ([value isKindOfClass:[NSString class]]) {
+        NSString * str = (NSString*)value;
+        return [str isEqualToString:@""] ? nil : [NSDecimalNumber decimalNumberWithString:str];
+    }
+    return nil;
+}
+
 - (NSArray*)arrayWithIndex:(NSUInteger)index
 {
     id value = [self objectWithIndex:index];
@@ -230,6 +245,23 @@
     }
     return 0;
 }
+
+- (NSDate *)dateWithIndex:(NSUInteger)index dateFormat:(NSString *)dateFormat {
+    NSDateFormatter *formater = [[NSDateFormatter alloc]init];
+    formater.dateFormat = dateFormat;
+    id value = [self objectWithIndex:index];
+    
+    if (value == nil || value == [NSNull null])
+    {
+        return nil;
+    }
+    
+    if ([value isKindOfClass:[NSString class]] && ![value isEqualToString:@""] && !dateFormat) {
+        return [formater dateFromString:value];
+    }
+    return nil;
+}
+
 //CG
 - (CGFloat)CGFloatWithIndex:(NSUInteger)index
 {
