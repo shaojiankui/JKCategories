@@ -256,6 +256,7 @@
 		A2FD5B5D1A52706F00555EA2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD5B5C1A52706F00555EA2 /* libz.dylib */; };
 		A2FD5B601A52708900555EA2 /* NSURL+Param.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B5F1A52708900555EA2 /* NSURL+Param.m */; };
 		A2FD5B631A52718200555EA2 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B621A52718200555EA2 /* NSDate+Utilities.m */; };
+		B6879D371B3253EE00AF3DF7 /* CALayer+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B6879D361B3253EE00AF3DF7 /* CALayer+UIColor.m */; };
 		BCB799F31AFDD95300C12525 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F21AFDD95300C12525 /* UIImage+GIF.m */; };
 		BCB799F61AFDDAA500C12525 /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F51AFDDAA500C12525 /* UIButton+BackgroundColor.m */; };
 		BCB799FC1AFDDE2300C12525 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799FB1AFDDE2300C12525 /* UIView+ViewController.m */; };
@@ -707,6 +708,8 @@
 		A2FD5B5F1A52708900555EA2 /* NSURL+Param.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Param.m"; sourceTree = "<group>"; };
 		A2FD5B611A52718200555EA2 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDate+Utilities.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A2FD5B621A52718200555EA2 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDate+Utilities.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B6879D351B3253EE00AF3DF7 /* CALayer+UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+UIColor.h"; sourceTree = "<group>"; };
+		B6879D361B3253EE00AF3DF7 /* CALayer+UIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+UIColor.m"; sourceTree = "<group>"; };
 		BCB799F11AFDD95300C12525 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		BCB799F21AFDD95300C12525 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
 		BCB799F41AFDDAA500C12525 /* UIButton+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColor.h"; sourceTree = "<group>"; };
@@ -1067,6 +1070,7 @@
 		A22725F21A3E736D0061605B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B6879D341B3253EE00AF3DF7 /* CALayer */,
 				A202D9AF1B10336500EAB199 /* UIApplication */,
 				A202D9951B0F914D00EAB199 /* UIControl */,
 				A202D9721B0F78D800EAB199 /* UISplitViewController */,
@@ -2133,6 +2137,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B6879D341B3253EE00AF3DF7 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				B6879D351B3253EE00AF3DF7 /* CALayer+UIColor.h */,
+				B6879D361B3253EE00AF3DF7 /* CALayer+UIColor.m */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
 		BCB79A091AFDE92200C12525 /* UIAlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2356,6 +2369,7 @@
 				A28BE2F01A3E9F48005C4AC6 /* NSString+UrlEncode.m in Sources */,
 				A28BE3331A3E9FDC005C4AC6 /* UILabel+SuggestSize.m in Sources */,
 				A2EC52EA1A876E7C0059D53B /* NSString+Base64.m in Sources */,
+				B6879D371B3253EE00AF3DF7 /* CALayer+UIColor.m in Sources */,
 				A202D9911B0F8B6000EAB199 /* NSUserDefaults+SafeAccess.m in Sources */,
 				A281FB8A1AC81217009040DA /* NSDataDemoViewController.m in Sources */,
 				A28BE33F1A3E9FDC005C4AC6 /* UIWebView+Style.m in Sources */,
