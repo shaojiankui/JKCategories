@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIWebView (Style)
-- (void)setShadowView:(BOOL)b;
+- (void)setShadowViewHidden:(BOOL)b;
 - (void)setShowsHorizontalScrollIndicator:(BOOL)b;
 - (void)setShowsVerticalScrollIndicator:(BOOL)b;
+
+-(void) makeTransparent;
+-(void) makeTransparentAndRemoveShadow;
 @end

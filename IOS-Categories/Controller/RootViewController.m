@@ -65,19 +65,24 @@
                         @"NSDateFormatter",
                         @"NSNumber",
                         @"NSNotificationCenter"
-                        
                         ],
-         @"CoreLocation":@[
-                        @"CLLocation",
-                        @"CLLocationManager"
-                        ] ,
-            @"CoreData":@[
-                    @"NSManagedObjectContext",
-                    @"NSFetchRequest",
-                    @"NSManagedObject"
-                    ] ,
-            @"MapKit":@[
-                        @"MKMapView"
+            
+    @"CoreLocation":@[@"CALayer",
+                      @"CAMediaTimingFunction",
+                      @"CAAnimation",
+                      @"CAShapeLayer",
+                      @"CATransaction"
+                      ] ,
+            
+      @"QuartzCore":@[@"CLLocation",
+                      @"CLLocationManager"
+                     ] ,
+        @"CoreData":@[@"NSManagedObjectContext",
+                      @"NSFetchRequest",
+                      @"NSManagedObject",
+                      @"NSPersistentStoreCoordinator"
+                    ],
+         @"MapKit":@[@"MKMapView"
                         ]
                };
     [self.tableView reloadData];

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UITextView (Select)
+- (NSRange)selectedRange;
 - (void)selectAllText;
 - (void)setSelectedRange:(NSRange)range;
 @end

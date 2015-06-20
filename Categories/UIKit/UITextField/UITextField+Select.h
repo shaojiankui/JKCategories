@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UITextField (Select)
+- (NSRange)selectedRange;
 - (void)selectAllText;
 - (void)setSelectedRange:(NSRange)range;
 @end

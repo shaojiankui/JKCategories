@@ -10,7 +10,7 @@
 
 @implementation UIWebView (Style)
 
-- (void)setShadowView:(BOOL)b{
+- (void)setShadowViewHidden:(BOOL)b{
     for (UIView *aView in [self subviews])
     {
         if ([aView isKindOfClass:[UIScrollView class]])
@@ -43,5 +43,17 @@
             [(UIScrollView *)aView setShowsVerticalScrollIndicator:b];
         }
     }
+}
+
+-(void) makeTransparent
+{
+    self.backgroundColor = [UIColor clearColor];
+    self.opaque = NO;
+}
+
+-(void) makeTransparentAndRemoveShadow
+{
+    [self makeTransparent];
+    [self setShadowViewHidden:YES];
 }
 @end

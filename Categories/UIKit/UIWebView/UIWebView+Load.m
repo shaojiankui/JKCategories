@@ -15,7 +15,7 @@
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     [self loadRequest:req];
 }
-- (void)loadHtml:(NSString*)htmlName{
+- (void)loadLocalHtml:(NSString*)htmlName{
     NSString *filePath = [[NSBundle mainBundle]pathForResource:htmlName ofType:@"html"];
     NSURL *url = [NSURL fileURLWithPath:filePath];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

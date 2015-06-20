@@ -10,6 +10,6 @@
 
 @interface UIWebView (Load)
 - (void)loadURL:(NSString*)URLString;
-- (void)loadHtml:(NSString*)htmlName;
+- (void)loadLocalHtml:(NSString*)htmlName;
 - (void)clearCookies;
 @end

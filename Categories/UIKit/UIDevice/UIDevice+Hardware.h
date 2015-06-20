@@ -105,9 +105,6 @@ typedef enum
 //Return the current device CPU number
 + (NSUInteger)cpuNumber;
 //Return the current device total memory
-+ (NSUInteger)totalMemory;
-// Return the current device non-kernel memory
-+ (NSUInteger)userMemory;
 
 /// 获取iOS系统的版本号
 + (NSString *)systemVersion;
