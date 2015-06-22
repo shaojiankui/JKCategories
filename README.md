@@ -30,6 +30,7 @@ IOS中的各种Objective-C Category, a collection of useful Objective-C Categori
 * UIBezierPath
 * UIButton
 * UIColor
+* UIFont
 * UIControl
 * UIDevice
 * UIImage

@@ -69,6 +69,9 @@
 		A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A401A75C788009BA7EE /* NSData+Base64.m */; };
 		A2681A441A75C7C8009BA7EE /* NSString+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A431A75C7C8009BA7EE /* NSString+Encrypt.m */; };
 		A2768FD31A5518C400E03C90 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A2768FD21A5518C400E03C90 /* UIView+Toast.m */; };
+		A27E93181B381CE40010C7EA /* UIFont+WDCustomLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A27E93171B381CE40010C7EA /* UIFont+WDCustomLoader.m */; };
+		A27E931B1B381D210010C7EA /* UIFont-TTF.m in Sources */ = {isa = PBXBuildFile; fileRef = A27E931A1B381D210010C7EA /* UIFont-TTF.m */; };
+		A27E931E1B381D930010C7EA /* UIFont+DynamicFontControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A27E931D1B381D930010C7EA /* UIFont+DynamicFontControl.m */; };
 		A280E5251A5233A700E6ACA2 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5241A5233A700E6ACA2 /* UIButton+Block.m */; };
 		A280E5321A523AD700E6ACA2 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5311A523AD700E6ACA2 /* UIView+BlockGesture.m */; };
 		A280E53A1A52405A00E6ACA2 /* UIScrollView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5391A52405A00E6ACA2 /* UIScrollView+Addition.m */; };
@@ -252,6 +255,8 @@
 		A2958D3C1B35A2E900D7AA0F /* UIWebVIew+SwipeGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D3B1B35A2E900D7AA0F /* UIWebVIew+SwipeGesture.m */; };
 		A2958D3F1B35A41F00D7AA0F /* UIWebView+MetaParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D3E1B35A41F00D7AA0F /* UIWebView+MetaParser.m */; };
 		A2AAA1EF1B0F1DCE004A3231 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AAA1EE1B0F1DCE004A3231 /* NSString+Util.m */; };
+		A2AB1A651B381E3900ED88AF /* UIFontDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AB1A631B381E3900ED88AF /* UIFontDemoViewController.m */; };
+		A2AB1A661B381E3900ED88AF /* UIFontDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AB1A641B381E3900ED88AF /* UIFontDemoViewController.xib */; };
 		A2AF02A41A74BACB003FEC8D /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */; };
 		A2AF02AA1A74C096003FEC8D /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A91A74C096003FEC8D /* NSDictionary+Merge.m */; };
 		A2C12B9C1B1C27F100EAD198 /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C12B9B1B1C27F100EAD198 /* NSData+Hash.m */; };
@@ -423,6 +428,12 @@
 		A2681A431A75C7C8009BA7EE /* NSString+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encrypt.m"; sourceTree = "<group>"; };
 		A2768FD11A5518C400E03C90 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		A2768FD21A5518C400E03C90 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		A27E93161B381CE40010C7EA /* UIFont+WDCustomLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+WDCustomLoader.h"; sourceTree = "<group>"; };
+		A27E93171B381CE40010C7EA /* UIFont+WDCustomLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+WDCustomLoader.m"; sourceTree = "<group>"; };
+		A27E93191B381D210010C7EA /* UIFont-TTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont-TTF.h"; sourceTree = "<group>"; };
+		A27E931A1B381D210010C7EA /* UIFont-TTF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont-TTF.m"; sourceTree = "<group>"; };
+		A27E931C1B381D930010C7EA /* UIFont+DynamicFontControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+DynamicFontControl.h"; sourceTree = "<group>"; };
+		A27E931D1B381D930010C7EA /* UIFont+DynamicFontControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DynamicFontControl.m"; sourceTree = "<group>"; };
 		A280E5231A5233A700E6ACA2 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		A280E5241A5233A700E6ACA2 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
 		A280E5301A523AD700E6ACA2 /* UIView+BlockGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
@@ -747,6 +758,9 @@
 		A2958D3E1B35A41F00D7AA0F /* UIWebView+MetaParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+MetaParser.m"; sourceTree = "<group>"; };
 		A2AAA1ED1B0F1DCE004A3231 /* NSString+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
 		A2AAA1EE1B0F1DCE004A3231 /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
+		A2AB1A621B381E3900ED88AF /* UIFontDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFontDemoViewController.h; sourceTree = "<group>"; };
+		A2AB1A631B381E3900ED88AF /* UIFontDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFontDemoViewController.m; sourceTree = "<group>"; };
+		A2AB1A641B381E3900ED88AF /* UIFontDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIFontDemoViewController.xib; sourceTree = "<group>"; };
 		A2AF02A21A74BACB003FEC8D /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDictionary+SafeAccess.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A2AF02A81A74C096003FEC8D /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1205,6 +1219,7 @@
 		A22725F21A3E736D0061605B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A27E93151B381CBA0010C7EA /* UIFont */,
 				A202D9AF1B10336500EAB199 /* UIApplication */,
 				A202D9951B0F914D00EAB199 /* UIControl */,
 				A202D9721B0F78D800EAB199 /* UISplitViewController */,
@@ -1243,6 +1258,29 @@
 				A202D9D71B103F9400EAB199 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A27E93151B381CBA0010C7EA /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				A27E931C1B381D930010C7EA /* UIFont+DynamicFontControl.h */,
+				A27E931D1B381D930010C7EA /* UIFont+DynamicFontControl.m */,
+				A27E93191B381D210010C7EA /* UIFont-TTF.h */,
+				A27E931A1B381D210010C7EA /* UIFont-TTF.m */,
+				A27E93161B381CE40010C7EA /* UIFont+WDCustomLoader.h */,
+				A27E93171B381CE40010C7EA /* UIFont+WDCustomLoader.m */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		A27E931F1B381E1B0010C7EA /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				A2AB1A621B381E3900ED88AF /* UIFontDemoViewController.h */,
+				A2AB1A631B381E3900ED88AF /* UIFontDemoViewController.m */,
+				A2AB1A641B381E3900ED88AF /* UIFontDemoViewController.xib */,
+			);
+			path = UIFont;
 			sourceTree = "<group>";
 		};
 		A280E5221A52339800E6ACA2 /* UIButton */ = {
@@ -1476,6 +1514,7 @@
 		A281FB5B1AC8101F009040DA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A27E931F1B381E1B0010C7EA /* UIFont */,
 				A202D9BC1B1038C000EAB199 /* UIBarButtonItem */,
 				A202D9B01B10337F00EAB199 /* UIApplication */,
 				A202D9961B0F915E00EAB199 /* UIControl */,
@@ -2525,6 +2564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A281FC131AC813F5009040DA /* UINavigationControllerDemoViewController.xib in Resources */,
+				A2AB1A661B381E3900ED88AF /* UIFontDemoViewController.xib in Resources */,
 				A2EF56D91B21C51D0005F730 /* NSFetchRequestDemoViewController.xib in Resources */,
 				A281FBC21AC812F1009040DA /* UIButtonDemoViewController.xib in Resources */,
 				A281FB9A1AC8124F009040DA /* NSExceptionDemoViewController.xib in Resources */,
@@ -2630,6 +2670,7 @@
 				A28BE3521A3EA91B005C4AC6 /* NSArray+Block.m in Sources */,
 				A2958CEB1B35834D00D7AA0F /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				A2C12BA81B1C284F00EAD198 /* UITextField+Select.m in Sources */,
+				A2AB1A651B381E3900ED88AF /* UIFontDemoViewController.m in Sources */,
 				A28BE33B1A3E9FDC005C4AC6 /* UIView+RecursiveDescription.m in Sources */,
 				A2958D241B359A3B00D7AA0F /* UIImageView+BetterFace.m in Sources */,
 				A202D9651B0F6DF900EAB199 /* NSString+MIME.m in Sources */,
@@ -2649,6 +2690,7 @@
 				A2FD5B521A5269D400555EA2 /* NSObject+Runtime.m in Sources */,
 				A2958CC11B357E2E00D7AA0F /* CAAnimation+Blocks.m in Sources */,
 				A281FBEA1AC81392009040DA /* UISearchBarDemoViewController.m in Sources */,
+				A27E931B1B381D210010C7EA /* UIFont-TTF.m in Sources */,
 				A2EF56E11B21C59C0005F730 /* UIImage+Blur.m in Sources */,
 				A28BE33A1A3E9FDC005C4AC6 /* UIView+Nib.m in Sources */,
 				A21F34D61B0F28A600D73A91 /* UILabel+AutoSize.m in Sources */,
@@ -2710,6 +2752,7 @@
 				A281FB8A1AC81217009040DA /* NSDataDemoViewController.m in Sources */,
 				A28BE33F1A3E9FDC005C4AC6 /* UIWebView+Style.m in Sources */,
 				A202D9711B0F778900EAB199 /* UIView+Constraints.m in Sources */,
+				A27E93181B381CE40010C7EA /* UIFont+WDCustomLoader.m in Sources */,
 				A2958CD91B35825F00D7AA0F /* CAMediaTimingFunctionDemoViewController.m in Sources */,
 				A28BE33D1A3E9FDC005C4AC6 /* UIWebView+Alert.m in Sources */,
 				A2958D061B35906E00D7AA0F /* UIApplication+ApplicationSize.m in Sources */,
@@ -2761,6 +2804,7 @@
 				A202D99A1B0F916900EAB199 /* UIControlDemoViewController.m in Sources */,
 				A2FD5B4B1A52687000555EA2 /* NSException+Trace.m in Sources */,
 				A2958CBD1B357C5C00D7AA0F /* UIScrollView+Direction.m in Sources */,
+				A27E931E1B381D930010C7EA /* UIFont+DynamicFontControl.m in Sources */,
 				A21F34D91B0F291600D73A91 /* UIImage+PDF.m in Sources */,
 				A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */,
 				A21F34C81B0F247800D73A91 /* UIScreenDemoViewController.m in Sources */,

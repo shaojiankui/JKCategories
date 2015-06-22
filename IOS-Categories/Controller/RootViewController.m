@@ -22,6 +22,7 @@
             @"UIKit":@[@"UIBezierPath",
                        @"UIButton",
                        @"UIColor",
+                       @"UIFont",
                        @"UIDevice",
                        @"UIImage",
                        @"UIImageView",
