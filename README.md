@@ -21,9 +21,9 @@ IOS中的各种Objective-C Category, a collection of useful Objective-C Categori
 * NSTimer
 * NSURL
 * NSUserDefaults
+* NSHTTPCookieStorage
 
 ## UIKit
-* MKMapView
 * UIAlertView
 * UIApplication
 * UIBarButtonItem

@@ -65,7 +65,8 @@
                         @"NSIndexPath",
                         @"NSDateFormatter",
                         @"NSNumber",
-                        @"NSNotificationCenter"
+                        @"NSNotificationCenter",
+                        @"NSHTTPCookieStorage"
                         ],
             
     @"CoreLocation":@[@"CALayer",

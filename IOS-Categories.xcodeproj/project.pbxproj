@@ -42,7 +42,6 @@
 		A202D9D81B103F9400EAB199 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9D21B103F9400EAB199 /* AppDelegate.m */; };
 		A202D9D91B103F9400EAB199 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D9D31B103F9400EAB199 /* LaunchScreen.xib */; };
 		A202D9DA1B103F9400EAB199 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A202D9D51B103F9400EAB199 /* Images.xcassets */; };
-		A202D9DB1B103F9400EAB199 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A202D9D61B103F9400EAB199 /* Info.plist */; };
 		A202D9DC1B103F9400EAB199 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9D71B103F9400EAB199 /* main.m */; };
 		A202D9E31B10400100EAB199 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9DF1B10400100EAB199 /* BaseViewController.m */; };
 		A202D9E41B10400100EAB199 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9E11B10400100EAB199 /* RootViewController.m */; };
@@ -52,6 +51,11 @@
 		A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DE1A47A25100AB83CA /* UIWebView+JS.m */; };
 		A219B8B71A615CA100135327 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A219B8B61A615CA100135327 /* UIView+Screenshot.m */; };
 		A219B8BA1A615E3800135327 /* UIImage+Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = A219B8B91A615E3800135327 /* UIImage+Capture.m */; };
+		A21CF1801B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21CF17E1B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.m */; };
+		A21CF1811B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A21CF17F1B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.xib */; };
+		A21CF1841B38F65C006415E0 /* NSHTTPCookieStorage+FreezeDry.m in Sources */ = {isa = PBXBuildFile; fileRef = A21CF1831B38F65C006415E0 /* NSHTTPCookieStorage+FreezeDry.m */; };
+		A21CF1871B38F708006415E0 /* UINavigationBar+CustomHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = A21CF1861B38F708006415E0 /* UINavigationBar+CustomHeight.m */; };
+		A21CF18A1B38F7C4006415E0 /* MKMapView+MoveLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = A21CF1891B38F7C4006415E0 /* MKMapView+MoveLogo.m */; };
 		A21F34BD1B0F221400D73A91 /* UINavigationItem+Lock.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34BC1B0F221400D73A91 /* UINavigationItem+Lock.m */; };
 		A21F34C11B0F229700D73A91 /* UIScreen+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34C01B0F229700D73A91 /* UIScreen+Frame.m */; };
 		A21F34C81B0F247800D73A91 /* UIScreenDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34C61B0F247800D73A91 /* UIScreenDemoViewController.m */; };
@@ -63,6 +67,7 @@
 		A21F34D61B0F28A600D73A91 /* UILabel+AutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34D51B0F28A600D73A91 /* UILabel+AutoSize.m */; };
 		A21F34D91B0F291600D73A91 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34D81B0F291600D73A91 /* UIImage+PDF.m */; };
 		A21F34DC1B0F302E00D73A91 /* UILabel+AutomaticWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34DB1B0F302E00D73A91 /* UILabel+AutomaticWriting.m */; };
+		A232AC161B38EC9F00A149D3 /* UIView+Recursion.m in Sources */ = {isa = PBXBuildFile; fileRef = A232AC151B38EC9F00A149D3 /* UIView+Recursion.m */; };
 		A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A238E0571A4555F400383A97 /* NSObject+Property.m */; };
 		A24377231ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */; };
 		A24377301ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */; };
@@ -396,6 +401,15 @@
 		A219B8B61A615CA100135327 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		A219B8B81A615E3800135327 /* UIImage+Capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Capture.h"; sourceTree = "<group>"; };
 		A219B8B91A615E3800135327 /* UIImage+Capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Capture.m"; sourceTree = "<group>"; };
+		A21CF17D1B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSHTTPCookieStorageDemoViewController.h; sourceTree = "<group>"; };
+		A21CF17E1B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSHTTPCookieStorageDemoViewController.m; sourceTree = "<group>"; };
+		A21CF17F1B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSHTTPCookieStorageDemoViewController.xib; sourceTree = "<group>"; };
+		A21CF1821B38F65C006415E0 /* NSHTTPCookieStorage+FreezeDry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPCookieStorage+FreezeDry.h"; sourceTree = "<group>"; };
+		A21CF1831B38F65C006415E0 /* NSHTTPCookieStorage+FreezeDry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPCookieStorage+FreezeDry.m"; sourceTree = "<group>"; };
+		A21CF1851B38F708006415E0 /* UINavigationBar+CustomHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+CustomHeight.h"; sourceTree = "<group>"; };
+		A21CF1861B38F708006415E0 /* UINavigationBar+CustomHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+CustomHeight.m"; sourceTree = "<group>"; };
+		A21CF1881B38F7C4006415E0 /* MKMapView+MoveLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+MoveLogo.h"; sourceTree = "<group>"; };
+		A21CF1891B38F7C4006415E0 /* MKMapView+MoveLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+MoveLogo.m"; sourceTree = "<group>"; };
 		A21F34BB1B0F221400D73A91 /* UINavigationItem+Lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Lock.h"; sourceTree = "<group>"; };
 		A21F34BC1B0F221400D73A91 /* UINavigationItem+Lock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Lock.m"; sourceTree = "<group>"; };
 		A21F34BF1B0F229700D73A91 /* UIScreen+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Frame.h"; sourceTree = "<group>"; };
@@ -416,6 +430,8 @@
 		A21F34DA1B0F302E00D73A91 /* UILabel+AutomaticWriting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutomaticWriting.h"; sourceTree = "<group>"; };
 		A21F34DB1B0F302E00D73A91 /* UILabel+AutomaticWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutomaticWriting.m"; sourceTree = "<group>"; };
 		A22725CE1A3E72D50061605B /* IOS-Categories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Categories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A232AC141B38EC9F00A149D3 /* UIView+Recursion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Recursion.h"; sourceTree = "<group>"; };
+		A232AC151B38EC9F00A149D3 /* UIView+Recursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Recursion.m"; sourceTree = "<group>"; };
 		A238E0561A4555F400383A97 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
 		A238E0571A4555F400383A97 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		A24377211ACBE9CF00FFFEA1 /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
@@ -956,6 +972,8 @@
 				A202D9851B0F7D2A00EAB199 /* MKMapView+ZoomLevel.m */,
 				A202D9CC1B103BBD00EAB199 /* MKMapView+BetterMaps.h */,
 				A202D9CD1B103BBD00EAB199 /* MKMapView+BetterMaps.m */,
+				A21CF1881B38F7C4006415E0 /* MKMapView+MoveLogo.h */,
+				A21CF1891B38F7C4006415E0 /* MKMapView+MoveLogo.m */,
 			);
 			path = MKMapView;
 			sourceTree = "<group>";
@@ -1110,6 +1128,25 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		A21CF17B1B38F610006415E0 /* NSHTTPCookieStorage */ = {
+			isa = PBXGroup;
+			children = (
+				A21CF1821B38F65C006415E0 /* NSHTTPCookieStorage+FreezeDry.h */,
+				A21CF1831B38F65C006415E0 /* NSHTTPCookieStorage+FreezeDry.m */,
+			);
+			path = NSHTTPCookieStorage;
+			sourceTree = "<group>";
+		};
+		A21CF17C1B38F61F006415E0 /* NSHTTPCookieStorage */ = {
+			isa = PBXGroup;
+			children = (
+				A21CF17D1B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.h */,
+				A21CF17E1B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.m */,
+				A21CF17F1B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.xib */,
+			);
+			path = NSHTTPCookieStorage;
+			sourceTree = "<group>";
+		};
 		A21F34BA1B0F220700D73A91 /* UINavigationItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -1195,6 +1232,7 @@
 		A22725F11A3E736D0061605B /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A21CF17B1B38F610006415E0 /* NSHTTPCookieStorage */,
 				A2EF56EB1B21D0800005F730 /* NSNotificationCenter */,
 				A202D99F1B102A3B00EAB199 /* NSNumber */,
 				A202D98E1B0F8B4700EAB199 /* NSUserDefaults */,
@@ -1360,6 +1398,7 @@
 		A281FB4D1AC8101F009040DA /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A21CF17C1B38F61F006415E0 /* NSHTTPCookieStorage */,
 				A2EF56EF1B21D1170005F730 /* NSNotificationCenter */,
 				A202D9A31B102D6600EAB199 /* NSNumber */,
 				A284C13B1AEBCF7B00D90ED5 /* NSDateFormatter */,
@@ -1761,6 +1800,8 @@
 			children = (
 				A284C1131AEBBF8000D90ED5 /* UINavigationBar+Awesome.h */,
 				A284C1141AEBBF8000D90ED5 /* UINavigationBar+Awesome.m */,
+				A21CF1851B38F708006415E0 /* UINavigationBar+CustomHeight.h */,
+				A21CF1861B38F708006415E0 /* UINavigationBar+CustomHeight.m */,
 			);
 			path = UINavigationBar;
 			sourceTree = "<group>";
@@ -2064,6 +2105,8 @@
 				A2958CB61B35794500D7AA0F /* UIView+Visuals.m */,
 				A2958D131B35961600D7AA0F /* UIView+draggable.h */,
 				A2958D141B35961600D7AA0F /* UIView+draggable.m */,
+				A232AC141B38EC9F00A149D3 /* UIView+Recursion.h */,
+				A232AC151B38EC9F00A149D3 /* UIView+Recursion.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -2532,7 +2575,7 @@
 		A22725C61A3E72D50061605B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = www.skyfox.org;
 				TargetAttributes = {
 					A22725CD1A3E72D50061605B = {
@@ -2585,6 +2628,7 @@
 				A281FBE11AC8137A009040DA /* UIResponderDemoViewController.xib in Resources */,
 				A202D9CB1B103B4600EAB199 /* CLLocationManagerDemoViewController.xib in Resources */,
 				A281FB9F1AC8126F009040DA /* NSFileManagerDemoViewController.xib in Resources */,
+				A21CF1811B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.xib in Resources */,
 				A2958CE41B35827700D7AA0F /* CATransactionDemoViewController.xib in Resources */,
 				A2958CDF1B35826C00D7AA0F /* CAShapeLayerDemoViewController.xib in Resources */,
 				A281FB861AC81206009040DA /* NSBundleDemoViewController.xib in Resources */,
@@ -2604,7 +2648,6 @@
 				A281FBBD1AC812E5009040DA /* UIBezierPathDemoViewController.xib in Resources */,
 				A202D9A81B102D7800EAB199 /* NSNumberDemoViewController.xib in Resources */,
 				A21F34CE1B0F248D00D73A91 /* UINavigationItemDemoViewController.xib in Resources */,
-				A202D9DB1B103F9400EAB199 /* Info.plist in Resources */,
 				A284C14A1AEBCFB000D90ED5 /* NSIndexPathDemoViewController.xib in Resources */,
 				A281FC0E1AC813EA009040DA /* UIWindowDemoViewController.xib in Resources */,
 				A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */,
@@ -2729,6 +2772,7 @@
 				A202D9AE1B10305500EAB199 /* NSObject+KVOBlocks.m in Sources */,
 				A202D96B1B0F6FA400EAB199 /* UIBarButtonItem+Action.m in Sources */,
 				A202D9751B0F78EE00EAB199 /* UISplitViewController+QuickAccess.m in Sources */,
+				A21CF18A1B38F7C4006415E0 /* MKMapView+MoveLogo.m in Sources */,
 				A28BE37F1A3EC561005C4AC6 /* UIWebView+Load.m in Sources */,
 				A2958D151B35961600D7AA0F /* UIView+draggable.m in Sources */,
 				A202D9941B0F8FB000EAB199 /* UIButton+Submitting.m in Sources */,
@@ -2741,6 +2785,7 @@
 				A2893D971AC3E5FE00EFA90A /* UIButton+Indicator.m in Sources */,
 				A281FB4A1AC80C31009040DA /* WebView+Debug.m in Sources */,
 				A281FBEF1AC8139D009040DA /* UITableViewCellDemoViewController.m in Sources */,
+				A21CF1871B38F708006415E0 /* UINavigationBar+CustomHeight.m in Sources */,
 				A2FD5B471A52636100555EA2 /* UIResponder+Chain.m in Sources */,
 				A2958CC81B35804600D7AA0F /* CAShapeLayer+UIBezierPath.m in Sources */,
 				A2958D331B359CA900D7AA0F /* UIImageView+Reflect.m in Sources */,
@@ -2780,6 +2825,7 @@
 				A2C12BA21B1C282C00EAD198 /* UITableView+iOS7Style.m in Sources */,
 				A2681A441A75C7C8009BA7EE /* NSString+Encrypt.m in Sources */,
 				A284C0FE1AEB908100D90ED5 /* UIBezierPath+BasicShapes.m in Sources */,
+				A21CF1801B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.m in Sources */,
 				A28BE38E1A3ED5A4005C4AC6 /* UITextField+Blocks.m in Sources */,
 				A2EF56CC1B21C41C0005F730 /* NSManagedObject+Extensions.m in Sources */,
 				A281FC171AC81427009040DA /* NSUserDefaultsDemoViewController.m in Sources */,
@@ -2823,6 +2869,7 @@
 				A2958D121B35958000D7AA0F /* UITextField+Shake.m in Sources */,
 				A202D97B1B0F7C3300EAB199 /* CLLocation+CH1903.m in Sources */,
 				A281FBC61AC81303009040DA /* UIColorDemoViewController.m in Sources */,
+				A21CF1841B38F65C006415E0 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
 				A280E53D1A52433200E6ACA2 /* NSData+Gzip.m in Sources */,
 				A284C1021AEB941800D90ED5 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				A28BE3301A3E9FDC005C4AC6 /* UIImage+RoundedCorner.m in Sources */,
@@ -2870,6 +2917,7 @@
 				A2EF56C61B21C3370005F730 /* NSManagedObjectContextDemoViewController.m in Sources */,
 				A2893D941AC3D42400EFA90A /* UIButton+CountDown.m in Sources */,
 				A202D9E41B10400100EAB199 /* RootViewController.m in Sources */,
+				A232AC161B38EC9F00A149D3 /* UIView+Recursion.m in Sources */,
 				A28BE33C1A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m in Sources */,
 				A281FB421AC800F2009040DA /* NSString+Trims.m in Sources */,
 				A28BE32F1A3E9FDC005C4AC6 /* UIImage+Resize.m in Sources */,
@@ -2913,6 +2961,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2976,6 +3025,7 @@
 				INFOPLIST_FILE = "IOS-Categories/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.skyfox.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "IOS-Categories";
 			};
 			name = Debug;
@@ -2987,6 +3037,7 @@
 				INFOPLIST_FILE = "IOS-Categories/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.skyfox.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "IOS-Categories";
 			};
 			name = Release;

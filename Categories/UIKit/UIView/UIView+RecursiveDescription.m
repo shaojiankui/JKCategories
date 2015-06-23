@@ -9,6 +9,8 @@
 #import "UIView+RecursiveDescription.h"
 
 @implementation UIView (RecursiveDescription)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
 -(NSString*)recursiveView
 {
     NSString *description = [NSString stringWithFormat:@"%s [Line %d] \r\r %@",
@@ -28,5 +30,5 @@
                              [self performSelector:@selector(_autolayoutTrace)]];
     return description;
 }
-
+#pragma clang diagnostic pop
 @end
