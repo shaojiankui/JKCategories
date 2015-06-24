@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		798256171B3A57340033A0C1 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256161B3A57340033A0C1 /* UIViewController+BackButtonHandler.m */; };
+		7982561A1B3A59060033A0C1 /* NSString+RegexCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256191B3A59060033A0C1 /* NSString+RegexCategory.m */; };
 		A202D9621B0F6C4400EAB199 /* NSDate+Reporting.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9611B0F6C4400EAB199 /* NSDate+Reporting.m */; };
 		A202D9651B0F6DF900EAB199 /* NSString+MIME.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9641B0F6DF900EAB199 /* NSString+MIME.m */; };
 		A202D96B1B0F6FA400EAB199 /* UIBarButtonItem+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D96A1B0F6FA400EAB199 /* UIBarButtonItem+Action.m */; };
@@ -323,6 +325,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		798256151B3A57340033A0C1 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		798256161B3A57340033A0C1 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		798256181B3A59060033A0C1 /* NSString+RegexCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexCategory.h"; sourceTree = "<group>"; };
+		798256191B3A59060033A0C1 /* NSString+RegexCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexCategory.m"; sourceTree = "<group>"; };
 		A202D9601B0F6C4400EAB199 /* NSDate+Reporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Reporting.h"; sourceTree = "<group>"; };
 		A202D9611B0F6C4400EAB199 /* NSDate+Reporting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Reporting.m"; sourceTree = "<group>"; };
 		A202D9631B0F6DF900EAB199 /* NSString+MIME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MIME.h"; sourceTree = "<group>"; };
@@ -1953,6 +1959,8 @@
 				BCB79A041AFDE19200C12525 /* NSString+Contains.m */,
 				A202D9631B0F6DF900EAB199 /* NSString+MIME.h */,
 				A202D9641B0F6DF900EAB199 /* NSString+MIME.m */,
+				798256181B3A59060033A0C1 /* NSString+RegexCategory.h */,
+				798256191B3A59060033A0C1 /* NSString+RegexCategory.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -2128,6 +2136,8 @@
 				BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */,
 				A2958CB81B357AEF00D7AA0F /* UIViewController+StoreKit.h */,
 				A2958CB91B357AEF00D7AA0F /* UIViewController+StoreKit.m */,
+				798256151B3A57340033A0C1 /* UIViewController+BackButtonHandler.h */,
+				798256161B3A57340033A0C1 /* UIViewController+BackButtonHandler.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -2815,6 +2825,7 @@
 				A2768FD31A5518C400E03C90 /* UIView+Toast.m in Sources */,
 				A202D9861B0F7D2A00EAB199 /* MKMapView+ZoomLevel.m in Sources */,
 				A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */,
+				798256171B3A57340033A0C1 /* UIViewController+BackButtonHandler.m in Sources */,
 				A2958D301B359C3300D7AA0F /* UIImageView+GeometryConversion.m in Sources */,
 				A281FBF91AC813B8009040DA /* UITextViewDemoViewController.m in Sources */,
 				A202D9C01B1038DB00EAB199 /* UIBarButtonItemDemoViewController.m in Sources */,
@@ -2903,6 +2914,7 @@
 				A284C1491AEBCFB000D90ED5 /* NSIndexPathDemoViewController.m in Sources */,
 				A202D9A21B102A4F00EAB199 /* NSNumber+Round.m in Sources */,
 				A202D98C1B0F7D7900EAB199 /* MKMapViewDemoViewController.m in Sources */,
+				7982561A1B3A59060033A0C1 /* NSString+RegexCategory.m in Sources */,
 				A2958CF01B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.m in Sources */,
 				A281FBCB1AC8130E009040DA /* UIDeviceDemoViewController.m in Sources */,
 				A28BE3381A3E9FDC005C4AC6 /* UIView+Debug.m in Sources */,
