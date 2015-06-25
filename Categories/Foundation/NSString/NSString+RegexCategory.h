@@ -130,25 +130,56 @@
  */
 - (BOOL)isMacAddress;
 
-//#pragma mark - 这部分可以根据您的应用视情况定规则，下面为示例代码
-///**
-// *  是否纯数字
-// */
-//- (BOOL)isDigitalAll;
-//
-///**
-// *  用户名
-// */
-//- (BOOL) validateUserName;
-//
-///**
-// *  昵称
-// */
-//- (BOOL) validateNickname;
-//
-///**
-// *  密码
-// */
-//- (BOOL) validatePassword;
+/**
+ *  网址有效性
+ */
+- (BOOL)isValidUrl;
+
+/**
+ *  纯汉字
+ */
+- (BOOL)isValidChinese;
+
+/**
+ *  邮政编码
+ */
+- (BOOL)isValidPostalcode;
+
+/**
+ *  工商税号
+ */
+- (BOOL)isValidTaxNo;
+
+/**
+ @brief     是否符合最小长度、最长长度，是否包含中文,首字母是否可以为数字
+ @param     minLenth 账号最小长度
+ @param     maxLenth 账号最长长度
+ @param     containChinese 是否包含中文
+ @param     firstCannotBeDigtal 首字母不能为数字
+ @return    正则验证成功返回YES, 否则返回NO
+ */
+- (BOOL)isValidWithMinLenth:(NSInteger)minLenth
+                   maxLenth:(NSInteger)maxLenth
+             containChinese:(BOOL)containChinese
+        firstCannotBeDigtal:(BOOL)firstCannotBeDigtal;
+
+/**
+ @brief     是否符合最小长度、最长长度，是否包含中文,数字，字母，其他字符，首字母是否可以为数字
+ @param     minLenth 账号最小长度
+ @param     maxLenth 账号最长长度
+ @param     containChinese 是否包含中文
+ @param     containDigtal   包含数字
+ @param     containLetter   包含字母
+ @param     containOtherCharacter   其他字符
+ @param     firstCannotBeDigtal 首字母不能为数字
+ @return    正则验证成功返回YES, 否则返回NO
+ */
+- (BOOL)isValidWithMinLenth:(NSInteger)minLenth
+                   maxLenth:(NSInteger)maxLenth
+             containChinese:(BOOL)containChinese
+              containDigtal:(BOOL)containDigtal
+              containLetter:(BOOL)containLetter
+      containOtherCharacter:(NSString *)containOtherCharacter
+        firstCannotBeDigtal:(BOOL)firstCannotBeDigtal;
 
 @end

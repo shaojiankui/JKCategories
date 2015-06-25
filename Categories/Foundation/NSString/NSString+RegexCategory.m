@@ -10,6 +10,13 @@
 #import "NSString+RegexCategory.h"
 
 @implementation NSString (RegexCategory)
+#pragma mark - 正则相关
+- (BOOL)isValidateByRegex:(NSString *)regex{
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    return [pre evaluateWithObject:self];
+}
+
+#pragma mark -
 
 //手机号分服务商
 - (BOOL)isMobileNumberClassification{
@@ -47,15 +54,11 @@
     
     
     //    NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", MOBILE];
-    NSPredicate *regextestcm = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CM];
-    NSPredicate *regextestcu = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CU];
-    NSPredicate *regextestct = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CT];
-    NSPredicate *regextestphs = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",PHS];
     
-    if (([regextestcm evaluateWithObject:self] == YES)
-        || ([regextestct evaluateWithObject:self] == YES)
-        || ([regextestcu evaluateWithObject:self] == YES)
-        || ([regextestphs evaluateWithObject:self] == YES))
+    if (([self isValidateByRegex:CM])
+        || ([self isValidateByRegex:CU])
+        || ([self isValidateByRegex:CT])
+        || ([self isValidateByRegex:PHS]))
     {
         return YES;
     }
@@ -73,10 +76,9 @@
      */
     NSString *mobileNoRegex = @"^1((3\\d|5[0-35-9]|8[025-9])\\d|70[059])\\d{7}$";//除4以外的所有个位整数，不能使用[^4,\\d]匹配，这里是否iOS Bug?
     NSString *phsRegex =@"^0(10|2[0-57-9]|\\d{3})\\d{7,8}$";
-    NSPredicate *regextestMobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",mobileNoRegex];
-    NSPredicate *regextestPhs = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phsRegex];
-    BOOL ret = [regextestMobile evaluateWithObject:self];
-    BOOL ret1 = [regextestPhs evaluateWithObject:self];
+    
+    BOOL ret = [self isValidateByRegex:mobileNoRegex];
+    BOOL ret1 = [self isValidateByRegex:phsRegex];
     
     return (ret || ret1);
 }
@@ -84,18 +86,83 @@
 //邮箱
 - (BOOL)isEmailAddress{
     NSString *emailRegex = @"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",emailRegex];
-    return [emailTest evaluateWithObject:self];
+    return [self isValidateByRegex:emailRegex];
 }
 
 //身份证号
 - (BOOL) simpleVerifyIdentityCardNum
 {
     NSString *regex2 = @"^(\\d{14}|\\d{17})(\\d|[xX])$";
-    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex2];
-    return [identityCardPredicate evaluateWithObject:self];
+    return [self isValidateByRegex:regex2];
 }
 
+//车牌
+- (BOOL)isCarNumber{
+    //车牌号:湘K-DE829 香港车牌号码:粤Z-J499港
+    NSString *carRegex = @"^[\u4e00-\u9fff]{1}[a-zA-Z]{1}[-][a-zA-Z_0-9]{4}[a-zA-Z_0-9_\u4e00-\u9fff]$";//其中\u4e00-\u9fa5表示unicode编码中汉字已编码部分，\u9fa5-\u9fff是保留部分，将来可能会添加
+    return [self isValidateByRegex:carRegex];
+}
+
+- (BOOL)isMacAddress{
+    NSString * macAddRegex = @"([A-Fa-f\\d]{2}:){5}[A-Fa-f\\d]{2}";
+    return  [self isValidateByRegex:macAddRegex];
+}
+
+- (BOOL)isValidUrl
+{
+    NSString *regex = @"^((http)|(https))+:[^\\s]+\\.[^\\s]*$";
+    return [self isValidateByRegex:regex];
+}
+
+- (BOOL)isValidChinese;
+{
+    NSString *chineseRegex = @"^[\u4e00-\u9fa5]+$";
+    return [self isValidateByRegex:chineseRegex];
+}
+
+- (BOOL)isValidPostalcode {
+    NSString *postalRegex = @"^[0-8]\\d{5}(?!\\d)$";
+    return [self isValidateByRegex:postalRegex];
+}
+
+- (BOOL)isValidTaxNo
+{
+    NSString *taxNoRegex = @"[0-9]\\d{13}([0-9]|X)$";
+    return [self isValidateByRegex:taxNoRegex];
+}
+
+- (BOOL)isValidWithMinLenth:(NSInteger)minLenth
+                   maxLenth:(NSInteger)maxLenth
+             containChinese:(BOOL)containChinese
+        firstCannotBeDigtal:(BOOL)firstCannotBeDigtal;
+{
+    //  [\u4e00-\u9fa5A-Za-z0-9_]{4,20}
+    NSString *hanzi = containChinese ? @"\u4e00-\u9fa5" : @"";
+    NSString *first = firstCannotBeDigtal ? @"^[a-zA-Z_]" : @"";
+    
+    NSString *regex = [NSString stringWithFormat:@"%@[%@A-Za-z0-9_]{%d,%d}", first, hanzi, (int)(minLenth-1), (int)(maxLenth-1)];
+    return [self isValidateByRegex:regex];
+}
+
+- (BOOL)isValidWithMinLenth:(NSInteger)minLenth
+                   maxLenth:(NSInteger)maxLenth
+             containChinese:(BOOL)containChinese
+              containDigtal:(BOOL)containDigtal
+              containLetter:(BOOL)containLetter
+      containOtherCharacter:(NSString *)containOtherCharacter
+        firstCannotBeDigtal:(BOOL)firstCannotBeDigtal;
+{
+    NSString *hanzi = containChinese ? @"\u4e00-\u9fa5" : @"";
+    NSString *first = firstCannotBeDigtal ? @"^[a-zA-Z_]" : @"";
+    NSString *lengthRegex = [NSString stringWithFormat:@"(?=^.{%@,%@}$)", @(minLenth), @(maxLenth)];
+    NSString *digtalRegex = containDigtal ? @"(?=(.*\\d.*){1})" : @"";
+    NSString *letterRegex = containLetter ? @"(?=(.*[a-zA-Z].*){1})" : @"";
+    NSString *characterRegex = [NSString stringWithFormat:@"(?:%@[%@A-Za-z0-9%@]+)", first, hanzi, containOtherCharacter ? containOtherCharacter : @""];
+    NSString *regex = [NSString stringWithFormat:@"%@%@%@%@", lengthRegex, digtalRegex, letterRegex, characterRegex];
+    return [self isValidateByRegex:regex];
+}
+
+#pragma mark - 算法相关
 //精确的身份证号码有效性检测
 + (BOOL)accurateVerifyIDCardNumber:(NSString *)value {
     value = [value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -190,12 +257,7 @@
     }
 }
 
-//车牌
-- (BOOL)isCarNumber{
-    NSString *carRegex = @"^[\u4e00-\u9fff]{1}[a-zA-Z]{1}[a-zA-Z_0-9]{4}[a-zA-Z_0-9_\u4e00-\u9fff]$";//其中\u4e00-\u9fa5表示unicode编码中汉字已编码部分，\u9fa5-\u9fff是保留部分，将来可能会添加
-    NSPredicate *carTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",carRegex];
-    return [carTest evaluateWithObject:self];
-}
+
 
 /** 银行卡号有效性问题Luhn算法
  *  现行 16 位银联卡现行卡号开头 6 位是 622126～622925 之间的，7 到 15 位是银行自定义的，
@@ -263,46 +325,27 @@
 }
 
 - (BOOL)isIPAddress{
-    NSString * ipAddRegex = @"(\\d{1,3}[.]){3}\\d{1,3}";
-    NSPredicate *ipAddTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",ipAddRegex];
-    return [ipAddTest evaluateWithObject:self];
+    NSString *regex = [NSString stringWithFormat:@"^(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})$"];
+    NSPredicate *pre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    BOOL rc = [pre evaluateWithObject:self];
+    
+    if (rc) {
+        NSArray *componds = [self componentsSeparatedByString:@","];
+        
+        BOOL v = YES;
+        for (NSString *s in componds) {
+            if (s.integerValue > 255) {
+                v = NO;
+                break;
+            }
+        }
+        
+        return v;
+    }
+    
+    return NO;
 }
 
-- (BOOL)isMacAddress{
-    NSString * macAddRegex = @"([A-Fa-f\\d]{2}:){5}[A-Fa-f\\d]{2}";
-    NSPredicate * macAddTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",macAddRegex];
-    return [macAddTest evaluateWithObject:self];
-}
 
-//#pragma mark - 这部分可以根据您的应用视情况定规则，下面为示例代码
-////纯数字(8位)
-//- (BOOL)isDigitalAll{
-//    NSString * digitalRegex = @"^[0-9]{0,8}+$";
-//    NSPredicate *digitalPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",digitalRegex];
-//    return [digitalPredicate evaluateWithObject:self];
-//}
-////用户名(2到12个字符:包含中文、英文、数字、字母、点与下划线%+-等)
-//- (BOOL) validateUserName
-//{
-//    NSString *userNameRegex = @"^[\u4e00-\u9fffA-Za-z0-9._%+-]{2,12}$";
-//    NSPredicate *userNamePredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",userNameRegex];
-//    BOOL B = [userNamePredicate evaluateWithObject:self];
-//    return B;
-//}
-////昵称(4到8个字符:包含中文、英文、数字、字母、点与下划线％+-等)
-//- (BOOL) validateNickname
-//{
-//    NSString *nicknameRegex = @"^[\u4e00-\u9fffA-Za-z0-9._%+-]{4,8}$";
-//    NSPredicate *passWordPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",nicknameRegex];
-//    return [passWordPredicate evaluateWithObject:self];
-//}
-//
-////密码(6位数字与字母)
-//- (BOOL) validatePassword
-//{
-//    NSString *passWordRegex = @"^[a-zA-Z0-9]{6}$";
-//    NSPredicate *passWordPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",passWordRegex];
-//    return [passWordPredicate evaluateWithObject:self];
-//}
 
 @end
