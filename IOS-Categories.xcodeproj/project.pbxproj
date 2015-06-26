@@ -71,6 +71,7 @@
 		A21F34DC1B0F302E00D73A91 /* UILabel+AutomaticWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34DB1B0F302E00D73A91 /* UILabel+AutomaticWriting.m */; };
 		A232AC161B38EC9F00A149D3 /* UIView+Recursion.m in Sources */ = {isa = PBXBuildFile; fileRef = A232AC151B38EC9F00A149D3 /* UIView+Recursion.m */; };
 		A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A238E0571A4555F400383A97 /* NSObject+Property.m */; };
+		A23C10861B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m in Sources */ = {isa = PBXBuildFile; fileRef = A23C10851B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m */; };
 		A24377231ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */; };
 		A24377301ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */; };
 		A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A401A75C788009BA7EE /* NSData+Base64.m */; };
@@ -440,6 +441,8 @@
 		A232AC151B38EC9F00A149D3 /* UIView+Recursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Recursion.m"; sourceTree = "<group>"; };
 		A238E0561A4555F400383A97 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
 		A238E0571A4555F400383A97 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		A23C10841B3D39AD00FA34AA /* UIViewController+BackButtonTouched.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonTouched.h"; sourceTree = "<group>"; };
+		A23C10851B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonTouched.m"; sourceTree = "<group>"; };
 		A24377211ACBE9CF00FFFEA1 /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
 		A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoCoding.m"; sourceTree = "<group>"; };
 		A243772E1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
@@ -2122,6 +2125,8 @@
 		A28BE31F1A3E9FDC005C4AC6 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A23C10841B3D39AD00FA34AA /* UIViewController+BackButtonTouched.h */,
+				A23C10851B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m */,
 				A2958D0D1B35944000D7AA0F /* UIViewController+ScrollingStatusBar.h */,
 				A2958D0E1B35944000D7AA0F /* UIViewController+ScrollingStatusBar.m */,
 				A28BE3201A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.h */,
@@ -2929,6 +2934,7 @@
 				A2EF56C61B21C3370005F730 /* NSManagedObjectContextDemoViewController.m in Sources */,
 				A2893D941AC3D42400EFA90A /* UIButton+CountDown.m in Sources */,
 				A202D9E41B10400100EAB199 /* RootViewController.m in Sources */,
+				A23C10861B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m in Sources */,
 				A232AC161B38EC9F00A149D3 /* UIView+Recursion.m in Sources */,
 				A28BE33C1A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m in Sources */,
 				A281FB421AC800F2009040DA /* NSString+Trims.m in Sources */,
