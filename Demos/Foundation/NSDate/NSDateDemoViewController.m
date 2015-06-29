@@ -17,8 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSDate *today = [NSDate firstDayOfCurrentYear];
-    NSDate *today2 = [[NSDate date] startOfWeek];
+
 
 }
 

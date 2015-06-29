@@ -93,7 +93,7 @@
             break;
             
         default:
-            [NSException raise:NSInvalidArgumentException format:@"Unsupported content mode: %d", contentMode];
+            [NSException raise:NSInvalidArgumentException format:@"Unsupported content mode: %@", @(contentMode)];
     }
     
     CGSize newSize = CGSizeMake(round(self.size.width * ratio), round(self.size.height * ratio));

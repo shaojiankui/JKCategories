@@ -63,7 +63,7 @@ float radiansForDegrees(int degrees) {
     // Do the animation
     [UIView animateWithDuration:0.3 
                           delay:0.0 
-                        options:UIViewAnimationCurveEaseIn
+                        options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
                          self.frame = CGRectMake(stopPoint.x, stopPoint.y, self.frame.size.width, self.frame.size.height);
                      }
@@ -71,15 +71,22 @@ float radiansForDegrees(int degrees) {
                          if (withSnapBack) {
                              [UIView animateWithDuration:0.1 
                                                    delay:0.0 
-                                                 options:UIViewAnimationCurveLinear
+                                                 options:UIViewAnimationOptionCurveLinear
                                               animations:^{
                                                   self.frame = CGRectMake(destination.x, destination.y, self.frame.size.width, self.frame.size.height);
                                               }
                                               completion:^(BOOL finished) {
-                                                  [delegate performSelector:method];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+[delegate performSelector:method];
+#pragma clang diagnostic pop
+                                                  
                                               }];
                          } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
                              [delegate performSelector:method];
+#pragma clang diagnostic pop
                          }
                      }];        
 }
@@ -96,7 +103,10 @@ float radiansForDegrees(int degrees) {
                      }
                      completion:^(BOOL finished) { 
                          if (delegate != nil) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
                              [delegate performSelector:method];
+#pragma clang diagnostic pop
                          }
                      }];
 }
@@ -110,7 +120,10 @@ float radiansForDegrees(int degrees) {
                      }
                      completion:^(BOOL finished) { 
                          if (delegate != nil) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
                              [delegate performSelector:method];
+#pragma clang diagnostic pop
                          }
                      }];
 }
@@ -157,9 +170,8 @@ float radiansForDegrees(int degrees) {
 }
 
 - (void)drainAway:(float)secs {
-	NSTimer *timer;
     self.tag = 20;
-	timer = [NSTimer scheduledTimerWithTimeInterval:secs/50 target:self selector:@selector(drainTimer:) userInfo:nil repeats:YES];
+	[NSTimer scheduledTimerWithTimeInterval:secs/50 target:self selector:@selector(drainTimer:) userInfo:nil repeats:YES];
 }
 
 - (void)drainTimer:(NSTimer*)timer {

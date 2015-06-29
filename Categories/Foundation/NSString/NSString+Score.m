@@ -20,7 +20,7 @@
 }
 
 - (CGFloat) scoreAgainst:(NSString *)anotherString fuzziness:(NSNumber *)fuzziness options:(NSStringScoreOption)options{
-    NSMutableCharacterSet *workingInvalidCharacterSet = [NSCharacterSet lowercaseLetterCharacterSet];
+    NSMutableCharacterSet *workingInvalidCharacterSet = [NSMutableCharacterSet lowercaseLetterCharacterSet];
     [workingInvalidCharacterSet formUnionWithCharacterSet:[NSCharacterSet uppercaseLetterCharacterSet]];
     [workingInvalidCharacterSet addCharactersInString:@" "];
     NSCharacterSet *invalidCharacterSet = [workingInvalidCharacterSet invertedSet];

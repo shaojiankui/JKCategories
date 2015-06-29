@@ -31,7 +31,7 @@
                                                 else {
                                                     returnString = [returnString stringByAppendingString:@"| "];
                                                 }
-                                                returnString = [returnString stringByAppendingFormat:@"%@ (%d)\n", obj, idx];
+                                                returnString = [returnString stringByAppendingFormat:@"%@ (%@)\n", obj, @(idx)];
                                                 tabCount++;
                                             }];
     return returnString;

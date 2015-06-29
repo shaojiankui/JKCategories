@@ -113,7 +113,7 @@ static NSMutableDictionary *__defaultTopMessageConfig = nil;
 //        [self removeFromSuperview];
 //    }];
     
-#warning mark - 视图恢复到原来位置
+//#warning mark - 视图恢复到原来位置
     [UIView animateWithDuration:0.25 animations:^{
         self.superview.transform = CGAffineTransformIdentity;
         [self removeFromSuperview];
@@ -143,7 +143,7 @@ static NSMutableDictionary *__defaultTopMessageConfig = nil;
         [self.dimissTimer invalidate];
         self.dimissTimer = nil;
 
-#warning mark - 修改
+//#warning mark - 修改
         if (self.dimissDelay > 0) {
             self.dimissTimer = [NSTimer scheduledTimerWithTimeInterval:MAX(self.dimissDelay, kDefaultDimissDelay) target:self selector:@selector(dismiss) userInfo:nil repeats:0];
         }
@@ -257,7 +257,7 @@ static char TopWarningKey;
     
     [self.view addSubview:topV];
     
-#warning mark -
+//#warning mark -
     if (messageMode == TopBarMessageModeResize) {
         
         [UIView animateWithDuration:0.25f animations:^{

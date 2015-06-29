@@ -17,7 +17,8 @@
 @class WebScriptCallFrame;
 
 #pragma mark -
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
 static NSString* getAddress() {
     id myhost =[NSClassFromString(@"NSHost") performSelector:@selector(currentHost)];
     
@@ -36,7 +37,7 @@ void enableRemoteWebInspector() {
     [NSClassFromString(@"WebView") performSelector:@selector(_enableRemoteInspector)];
     NSLog(@"Point your browser at http://%@:9999", getAddress());
 }
-
+#pragma clang diagnostic pop
 #pragma mark -
 
 @interface ScriptDebuggerDelegate : NSObject
@@ -57,6 +58,7 @@ void enableRemoteWebInspector() {
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+#pragma clang diagnostic ignored "-Wundeclared-selector"
 
 -(id)functionNameForFrame:(WebScriptCallFrame*)frame {
     SEL functionNameSelector = @selector(functionName);

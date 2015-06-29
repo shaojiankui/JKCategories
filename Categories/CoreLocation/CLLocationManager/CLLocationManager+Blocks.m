@@ -113,7 +113,7 @@ CLLocationAgeFilter const kCLLocationAgeFilterNone = 0.0;
         // Location age filtering
         NSDate *eventDate = loc.timestamp;
         NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
-        if (abs(howRecent) > self.updateLocationAgeFilter) {
+        if (fabs(howRecent) > self.updateLocationAgeFilter) {
             continue;
         }
         

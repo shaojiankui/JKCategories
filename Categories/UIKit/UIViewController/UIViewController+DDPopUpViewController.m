@@ -570,7 +570,7 @@ static NSMutableArray *__popUpViewControllers = nil;
     return [self.presentingPopupController prefersStatusBarHidden];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return [self.presentingPopupController supportedInterfaceOrientations];
 }
