@@ -267,6 +267,10 @@
 		A2AB1A661B381E3900ED88AF /* UIFontDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AB1A641B381E3900ED88AF /* UIFontDemoViewController.xib */; };
 		A2AF02A41A74BACB003FEC8D /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */; };
 		A2AF02AA1A74C096003FEC8D /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A91A74C096003FEC8D /* NSDictionary+Merge.m */; };
+		A2B995CA1B46778500011613 /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B995C91B46778500011613 /* UIButton+TouchAreaInsets.m */; };
+		A2B995CD1B46779500011613 /* UINavigationItem+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B995CC1B46779500011613 /* UINavigationItem+Margin.m */; };
+		A2B995D01B4678FA00011613 /* UINavigationController+JZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B995CF1B4678FA00011613 /* UINavigationController+JZExtension.m */; };
+		A2B995D31B46797500011613 /* UIViewController+BlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B995D21B46797500011613 /* UIViewController+BlockSegue.m */; };
 		A2C12B9C1B1C27F100EAD198 /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C12B9B1B1C27F100EAD198 /* NSData+Hash.m */; };
 		A2C12B9F1B1C281200EAD198 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C12B9E1B1C281200EAD198 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		A2C12BA21B1C282C00EAD198 /* UITableView+iOS7Style.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C12BA11B1C282C00EAD198 /* UITableView+iOS7Style.m */; };
@@ -790,6 +794,14 @@
 		A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDictionary+SafeAccess.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A2AF02A81A74C096003FEC8D /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A2AF02A91A74C096003FEC8D /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A2B995C81B46778500011613 /* UIButton+TouchAreaInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TouchAreaInsets.h"; sourceTree = "<group>"; };
+		A2B995C91B46778500011613 /* UIButton+TouchAreaInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TouchAreaInsets.m"; sourceTree = "<group>"; };
+		A2B995CB1B46779500011613 /* UINavigationItem+Margin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Margin.h"; sourceTree = "<group>"; };
+		A2B995CC1B46779500011613 /* UINavigationItem+Margin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Margin.m"; sourceTree = "<group>"; };
+		A2B995CE1B4678FA00011613 /* UINavigationController+JZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JZExtension.h"; sourceTree = "<group>"; };
+		A2B995CF1B4678FA00011613 /* UINavigationController+JZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JZExtension.m"; sourceTree = "<group>"; };
+		A2B995D11B46797500011613 /* UIViewController+BlockSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BlockSegue.h"; sourceTree = "<group>"; };
+		A2B995D21B46797500011613 /* UIViewController+BlockSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BlockSegue.m"; sourceTree = "<group>"; };
 		A2C12B9A1B1C27F100EAD198 /* NSData+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSData+Hash.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A2C12B9B1B1C27F100EAD198 /* NSData+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSData+Hash.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A2C12B9D1B1C281200EAD198 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
@@ -1159,6 +1171,8 @@
 		A21F34BA1B0F220700D73A91 /* UINavigationItem */ = {
 			isa = PBXGroup;
 			children = (
+				A2B995CB1B46779500011613 /* UINavigationItem+Margin.h */,
+				A2B995CC1B46779500011613 /* UINavigationItem+Margin.m */,
 				A21F34BB1B0F221400D73A91 /* UINavigationItem+Lock.h */,
 				A21F34BC1B0F221400D73A91 /* UINavigationItem+Lock.m */,
 				A2EF56F81B21D44D0005F730 /* UINavigationItem+Loading.h */,
@@ -1333,6 +1347,8 @@
 		A280E5221A52339800E6ACA2 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				A2B995C81B46778500011613 /* UIButton+TouchAreaInsets.h */,
+				A2B995C91B46778500011613 /* UIButton+TouchAreaInsets.m */,
 				A2893D951AC3E5FE00EFA90A /* UIButton+Indicator.h */,
 				A2893D961AC3E5FE00EFA90A /* UIButton+Indicator.m */,
 				A2893D921AC3D42400EFA90A /* UIButton+CountDown.h */,
@@ -2064,6 +2080,8 @@
 		A28BE30C1A3E9FDC005C4AC6 /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				A2B995CE1B4678FA00011613 /* UINavigationController+JZExtension.h */,
+				A2B995CF1B4678FA00011613 /* UINavigationController+JZExtension.m */,
 				A2C12B9D1B1C281200EAD198 /* UINavigationController+FDFullscreenPopGesture.h */,
 				A2C12B9E1B1C281200EAD198 /* UINavigationController+FDFullscreenPopGesture.m */,
 				A28BE30D1A3E9FDC005C4AC6 /* UINavigationController+BATransitions.h */,
@@ -2125,6 +2143,8 @@
 		A28BE31F1A3E9FDC005C4AC6 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A2B995D11B46797500011613 /* UIViewController+BlockSegue.h */,
+				A2B995D21B46797500011613 /* UIViewController+BlockSegue.m */,
 				A23C10841B3D39AD00FA34AA /* UIViewController+BackButtonTouched.h */,
 				A23C10851B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m */,
 				A2958D0D1B35944000D7AA0F /* UIViewController+ScrollingStatusBar.h */,
@@ -2745,6 +2765,7 @@
 				A28BE36A1A3EB043005C4AC6 /* UIViewController+Visible.m in Sources */,
 				A281FC0D1AC813EA009040DA /* UIWindowDemoViewController.m in Sources */,
 				A28BE35C1A3EAA97005C4AC6 /* NSTimer+Blocks.m in Sources */,
+				A2B995CA1B46778500011613 /* UIButton+TouchAreaInsets.m in Sources */,
 				A2FD5B521A5269D400555EA2 /* NSObject+Runtime.m in Sources */,
 				A2958CC11B357E2E00D7AA0F /* CAAnimation+Blocks.m in Sources */,
 				A281FBEA1AC81392009040DA /* UISearchBarDemoViewController.m in Sources */,
@@ -2813,6 +2834,7 @@
 				A28BE33F1A3E9FDC005C4AC6 /* UIWebView+Style.m in Sources */,
 				A202D9711B0F778900EAB199 /* UIView+Constraints.m in Sources */,
 				A27E93181B381CE40010C7EA /* UIFont+WDCustomLoader.m in Sources */,
+				A2B995CD1B46779500011613 /* UINavigationItem+Margin.m in Sources */,
 				A2958CD91B35825F00D7AA0F /* CAMediaTimingFunctionDemoViewController.m in Sources */,
 				A28BE33D1A3E9FDC005C4AC6 /* UIWebView+Alert.m in Sources */,
 				A2958D061B35906E00D7AA0F /* UIApplication+ApplicationSize.m in Sources */,
@@ -2832,6 +2854,7 @@
 				A2681A411A75C788009BA7EE /* NSData+Base64.m in Sources */,
 				798256171B3A57340033A0C1 /* UIViewController+BackButtonHandler.m in Sources */,
 				A2958D301B359C3300D7AA0F /* UIImageView+GeometryConversion.m in Sources */,
+				A2B995D01B4678FA00011613 /* UINavigationController+JZExtension.m in Sources */,
 				A281FBF91AC813B8009040DA /* UITextViewDemoViewController.m in Sources */,
 				A202D9C01B1038DB00EAB199 /* UIBarButtonItemDemoViewController.m in Sources */,
 				A2C12B9F1B1C281200EAD198 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
@@ -2867,6 +2890,7 @@
 				A2FD5B4B1A52687000555EA2 /* NSException+Trace.m in Sources */,
 				A2958CBD1B357C5C00D7AA0F /* UIScrollView+Direction.m in Sources */,
 				A27E931E1B381D930010C7EA /* UIFont+DynamicFontControl.m in Sources */,
+				A2B995D31B46797500011613 /* UIViewController+BlockSegue.m in Sources */,
 				A21F34D91B0F291600D73A91 /* UIImage+PDF.m in Sources */,
 				A28BE2EC1A3E9F48005C4AC6 /* NSObject+AssociatedObject.m in Sources */,
 				A21F34C81B0F247800D73A91 /* UIScreenDemoViewController.m in Sources */,
