@@ -31,7 +31,11 @@ float radiansForDegrees(int degrees) {
                      }
                      completion:^(BOOL finished) {
                          if (delegate != nil) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
                              [delegate performSelector:method];
+#pragma clang diagnostic pop
+
                          }
                      }];
 }

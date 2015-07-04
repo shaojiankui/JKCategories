@@ -24,6 +24,8 @@
 }
 - (void)performAfter:(NSTimeInterval)seconds block:(void(^)(void))block {
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, seconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_current_queue(), block);
+//    dispatch_after(popTime, dispatch_get_current_queue(), block);
+    dispatch_after(popTime, dispatch_get_main_queue(), block);
+
 }
 @end
