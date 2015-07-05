@@ -10,4 +10,9 @@
 - (BOOL)hasAlpha;
 - (UIImage *)imageWithAlpha;
 - (UIImage *)transparentBorderImage:(NSUInteger)borderSize;
+
+//裁切含透明图片为最小大小
+//http://stackoverflow.com/questions/6521987/crop-uiimage-to-alpha?answertab=oldest#tab-top
+- (UIImage *)trimmedBetterSize;
+
 @end
