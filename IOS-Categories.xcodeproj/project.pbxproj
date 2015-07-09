@@ -48,6 +48,10 @@
 		A202D9E31B10400100EAB199 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9DF1B10400100EAB199 /* BaseViewController.m */; };
 		A202D9E41B10400100EAB199 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9E11B10400100EAB199 /* RootViewController.m */; };
 		A202D9E51B10400100EAB199 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D9E21B10400100EAB199 /* RootViewController.xib */; };
+		A20A5A671B4E27EA004E2474 /* NSFileHandle+readLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A20A5A661B4E27EA004E2474 /* NSFileHandle+readLine.m */; };
+		A20A5A6C1B4E2886004E2474 /* NSFileHandleDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20A5A6A1B4E2886004E2474 /* NSFileHandleDemoViewController.m */; };
+		A20A5A6D1B4E2886004E2474 /* NSFileHandleDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20A5A6B1B4E2886004E2474 /* NSFileHandleDemoViewController.xib */; };
+		A20A5A6F1B4E28CE004E2474 /* NSFileHandleSampleFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = A20A5A6E1B4E28CE004E2474 /* NSFileHandleSampleFile.txt */; };
 		A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8D61A479E9C00AB83CA /* UIColor+Web.m */; };
 		A218D8DF1A47A25100AB83CA /* UIWebView+Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DC1A47A25100AB83CA /* UIWebView+Canvas.m */; };
 		A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DE1A47A25100AB83CA /* UIWebView+JS.m */; };
@@ -402,6 +406,12 @@
 		A202D9E01B10400100EAB199 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A202D9E11B10400100EAB199 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A202D9E21B10400100EAB199 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		A20A5A651B4E27EA004E2474 /* NSFileHandle+readLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileHandle+readLine.h"; sourceTree = "<group>"; };
+		A20A5A661B4E27EA004E2474 /* NSFileHandle+readLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileHandle+readLine.m"; sourceTree = "<group>"; };
+		A20A5A691B4E2886004E2474 /* NSFileHandleDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFileHandleDemoViewController.h; sourceTree = "<group>"; };
+		A20A5A6A1B4E2886004E2474 /* NSFileHandleDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileHandleDemoViewController.m; sourceTree = "<group>"; };
+		A20A5A6B1B4E2886004E2474 /* NSFileHandleDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSFileHandleDemoViewController.xib; sourceTree = "<group>"; };
+		A20A5A6E1B4E28CE004E2474 /* NSFileHandleSampleFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSFileHandleSampleFile.txt; sourceTree = "<group>"; };
 		A218D8D51A479E9C00AB83CA /* UIColor+Web.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Web.h"; sourceTree = "<group>"; };
 		A218D8D61A479E9C00AB83CA /* UIColor+Web.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Web.m"; sourceTree = "<group>"; };
 		A218D8DB1A47A25100AB83CA /* UIWebView+Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Canvas.h"; sourceTree = "<group>"; };
@@ -1149,6 +1159,26 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		A20A5A641B4E27C6004E2474 /* NSFileHandle */ = {
+			isa = PBXGroup;
+			children = (
+				A20A5A651B4E27EA004E2474 /* NSFileHandle+readLine.h */,
+				A20A5A661B4E27EA004E2474 /* NSFileHandle+readLine.m */,
+			);
+			path = NSFileHandle;
+			sourceTree = "<group>";
+		};
+		A20A5A681B4E287B004E2474 /* NSFileHandle */ = {
+			isa = PBXGroup;
+			children = (
+				A20A5A6E1B4E28CE004E2474 /* NSFileHandleSampleFile.txt */,
+				A20A5A691B4E2886004E2474 /* NSFileHandleDemoViewController.h */,
+				A20A5A6A1B4E2886004E2474 /* NSFileHandleDemoViewController.m */,
+				A20A5A6B1B4E2886004E2474 /* NSFileHandleDemoViewController.xib */,
+			);
+			path = NSFileHandle;
+			sourceTree = "<group>";
+		};
 		A21CF17B1B38F610006415E0 /* NSHTTPCookieStorage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1255,6 +1285,7 @@
 		A22725F11A3E736D0061605B /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A20A5A641B4E27C6004E2474 /* NSFileHandle */,
 				A21CF17B1B38F610006415E0 /* NSHTTPCookieStorage */,
 				A2EF56EB1B21D0800005F730 /* NSNotificationCenter */,
 				A202D99F1B102A3B00EAB199 /* NSNumber */,
@@ -1423,6 +1454,7 @@
 		A281FB4D1AC8101F009040DA /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A20A5A681B4E287B004E2474 /* NSFileHandle */,
 				A21CF17C1B38F61F006415E0 /* NSHTTPCookieStorage */,
 				A2EF56EF1B21D1170005F730 /* NSNotificationCenter */,
 				A202D9A31B102D6600EAB199 /* NSNumber */,
@@ -2684,6 +2716,7 @@
 				A202D9A81B102D7800EAB199 /* NSNumberDemoViewController.xib in Resources */,
 				A21F34CE1B0F248D00D73A91 /* UINavigationItemDemoViewController.xib in Resources */,
 				A284C14A1AEBCFB000D90ED5 /* NSIndexPathDemoViewController.xib in Resources */,
+				A20A5A6F1B4E28CE004E2474 /* NSFileHandleSampleFile.txt in Resources */,
 				A281FC0E1AC813EA009040DA /* UIWindowDemoViewController.xib in Resources */,
 				A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */,
 				A202D9D91B103F9400EAB199 /* LaunchScreen.xib in Resources */,
@@ -2697,6 +2730,7 @@
 				A281FBA91AC81299009040DA /* NSSetDemoViewController.xib in Resources */,
 				A202D99B1B0F916900EAB199 /* UIControlDemoViewController.xib in Resources */,
 				A21F34C91B0F247800D73A91 /* UIScreenDemoViewController.xib in Resources */,
+				A20A5A6D1B4E2886004E2474 /* NSFileHandleDemoViewController.xib in Resources */,
 				A284C1261AEBC19C00D90ED5 /* UINavigationBarDemoViewController.xib in Resources */,
 				A284C1111AEBBCFC00D90ED5 /* NSDateTimeAgo.bundle in Resources */,
 				A284C1081AEB944B00D90ED5 /* UITableViewDemoViewController.xib in Resources */,
@@ -2866,6 +2900,7 @@
 				A284C0FE1AEB908100D90ED5 /* UIBezierPath+BasicShapes.m in Sources */,
 				A21CF1801B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.m in Sources */,
 				A28BE38E1A3ED5A4005C4AC6 /* UITextField+Blocks.m in Sources */,
+				A20A5A671B4E27EA004E2474 /* NSFileHandle+readLine.m in Sources */,
 				A2EF56CC1B21C41C0005F730 /* NSManagedObject+Extensions.m in Sources */,
 				A281FC171AC81427009040DA /* NSUserDefaultsDemoViewController.m in Sources */,
 				A28BE3591A3EAA52005C4AC6 /* NSSet+Block.m in Sources */,
@@ -2927,6 +2962,7 @@
 				A2958CBA1B357AEF00D7AA0F /* UIViewController+StoreKit.m in Sources */,
 				A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */,
 				A284C12A1AEBCB7F00D90ED5 /* NSIndexPath+Offset.m in Sources */,
+				A20A5A6C1B4E2886004E2474 /* NSFileHandleDemoViewController.m in Sources */,
 				A284C1251AEBC19C00D90ED5 /* UINavigationBarDemoViewController.m in Sources */,
 				A219B8B71A615CA100135327 /* UIView+Screenshot.m in Sources */,
 				A284C13F1AEBCF9600D90ED5 /* NSDateFormatterDemoViewController.m in Sources */,
