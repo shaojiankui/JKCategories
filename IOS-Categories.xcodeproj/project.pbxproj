@@ -52,6 +52,7 @@
 		A20A5A6C1B4E2886004E2474 /* NSFileHandleDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20A5A6A1B4E2886004E2474 /* NSFileHandleDemoViewController.m */; };
 		A20A5A6D1B4E2886004E2474 /* NSFileHandleDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20A5A6B1B4E2886004E2474 /* NSFileHandleDemoViewController.xib */; };
 		A20A5A6F1B4E28CE004E2474 /* NSFileHandleSampleFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = A20A5A6E1B4E28CE004E2474 /* NSFileHandleSampleFile.txt */; };
+		A20FFDFA1B4F944A00600093 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A20FFDF91B4F944A00600093 /* NSDate+InternetDateTime.m */; };
 		A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8D61A479E9C00AB83CA /* UIColor+Web.m */; };
 		A218D8DF1A47A25100AB83CA /* UIWebView+Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DC1A47A25100AB83CA /* UIWebView+Canvas.m */; };
 		A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */ = {isa = PBXBuildFile; fileRef = A218D8DE1A47A25100AB83CA /* UIWebView+JS.m */; };
@@ -412,6 +413,8 @@
 		A20A5A6A1B4E2886004E2474 /* NSFileHandleDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileHandleDemoViewController.m; sourceTree = "<group>"; };
 		A20A5A6B1B4E2886004E2474 /* NSFileHandleDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSFileHandleDemoViewController.xib; sourceTree = "<group>"; };
 		A20A5A6E1B4E28CE004E2474 /* NSFileHandleSampleFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSFileHandleSampleFile.txt; sourceTree = "<group>"; };
+		A20FFDF81B4F944A00600093 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		A20FFDF91B4F944A00600093 /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
 		A218D8D51A479E9C00AB83CA /* UIColor+Web.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Web.h"; sourceTree = "<group>"; };
 		A218D8D61A479E9C00AB83CA /* UIColor+Web.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Web.m"; sourceTree = "<group>"; };
 		A218D8DB1A47A25100AB83CA /* UIWebView+Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Canvas.h"; sourceTree = "<group>"; };
@@ -1421,6 +1424,8 @@
 				A202D9611B0F6C4400EAB199 /* NSDate+Reporting.m */,
 				A202D9A91B102F0F00EAB199 /* NSDate+Formatter.h */,
 				A202D9AA1B102F0F00EAB199 /* NSDate+Formatter.m */,
+				A20FFDF81B4F944A00600093 /* NSDate+InternetDateTime.h */,
+				A20FFDF91B4F944A00600093 /* NSDate+InternetDateTime.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -2912,6 +2917,7 @@
 				A28BE2ED1A3E9F48005C4AC6 /* NSString+DictionaryValue.m in Sources */,
 				A21F34C11B0F229700D73A91 /* UIScreen+Frame.m in Sources */,
 				BCB79A051AFDE19200C12525 /* NSString+Contains.m in Sources */,
+				A20FFDFA1B4F944A00600093 /* NSDate+InternetDateTime.m in Sources */,
 				A2958D271B359A5E00D7AA0F /* UIImage+BetterFace.m in Sources */,
 				A2958D001B358F0200D7AA0F /* UIApplication+Permissions.m in Sources */,
 				A218D8DF1A47A25100AB83CA /* UIWebView+Canvas.m in Sources */,
