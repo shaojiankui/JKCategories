@@ -1,5 +1,5 @@
 //
-//  NSString+Util.h
+//  NSString+Size.h
 //  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
 //
 //  Created by Jakey on 15/5/22.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface NSString (Util)
+@interface NSString (Size)
 - (CGFloat)heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width;
 - (CGFloat)widthWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height;
 

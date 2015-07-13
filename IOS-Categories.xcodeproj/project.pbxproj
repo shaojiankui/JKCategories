@@ -176,6 +176,8 @@
 		A284C1501AEBD5BB00D90ED5 /* UINavigationController+StackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A284C14F1AEBD5BB00D90ED5 /* UINavigationController+StackManager.m */; };
 		A284C1531AEBD6E400D90ED5 /* UIView+Find.m in Sources */ = {isa = PBXBuildFile; fileRef = A284C1521AEBD6E400D90ED5 /* UIView+Find.m */; };
 		A284C15B1AEBDAC200D90ED5 /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = A284C15A1AEBDAC200D90ED5 /* NSDictionary+JSONString.m */; };
+		A286CB671B53860C008896C6 /* UIPopoverControllerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A286CB651B53860C008896C6 /* UIPopoverControllerDemoViewController.m */; };
+		A286CB681B53860C008896C6 /* UIPopoverControllerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A286CB661B53860C008896C6 /* UIPopoverControllerDemoViewController.xib */; };
 		A2893D941AC3D42400EFA90A /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = A2893D931AC3D42400EFA90A /* UIButton+CountDown.m */; };
 		A2893D971AC3E5FE00EFA90A /* UIButton+Indicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A2893D961AC3E5FE00EFA90A /* UIButton+Indicator.m */; };
 		A28BE2E71A3E9F48005C4AC6 /* NSBundle+AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2CC1A3E9F48005C4AC6 /* NSBundle+AppIcon.m */; };
@@ -267,7 +269,8 @@
 		A2958D391B35A08000D7AA0F /* UIImage+Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D381B35A08000D7AA0F /* UIImage+Vector.m */; };
 		A2958D3C1B35A2E900D7AA0F /* UIWebVIew+SwipeGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D3B1B35A2E900D7AA0F /* UIWebVIew+SwipeGesture.m */; };
 		A2958D3F1B35A41F00D7AA0F /* UIWebView+MetaParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D3E1B35A41F00D7AA0F /* UIWebView+MetaParser.m */; };
-		A2AAA1EF1B0F1DCE004A3231 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AAA1EE1B0F1DCE004A3231 /* NSString+Util.m */; };
+		A29EC2681B527A19008ABB42 /* UIPopoverController+iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A29EC2671B527A19008ABB42 /* UIPopoverController+iPhone.m */; };
+		A2AAA1EF1B0F1DCE004A3231 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AAA1EE1B0F1DCE004A3231 /* NSString+Size.m */; };
 		A2AB1A651B381E3900ED88AF /* UIFontDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AB1A631B381E3900ED88AF /* UIFontDemoViewController.m */; };
 		A2AB1A661B381E3900ED88AF /* UIFontDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AB1A641B381E3900ED88AF /* UIFontDemoViewController.xib */; };
 		A2AF02A41A74BACB003FEC8D /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A31A74BACB003FEC8D /* NSDictionary+SafeAccess.m */; };
@@ -622,6 +625,9 @@
 		A284C1521AEBD6E400D90ED5 /* UIView+Find.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Find.m"; sourceTree = "<group>"; };
 		A284C1591AEBDAC200D90ED5 /* NSDictionary+JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDictionary+JSONString.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A284C15A1AEBDAC200D90ED5 /* NSDictionary+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDictionary+JSONString.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A286CB641B53860C008896C6 /* UIPopoverControllerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPopoverControllerDemoViewController.h; sourceTree = "<group>"; };
+		A286CB651B53860C008896C6 /* UIPopoverControllerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPopoverControllerDemoViewController.m; sourceTree = "<group>"; };
+		A286CB661B53860C008896C6 /* UIPopoverControllerDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIPopoverControllerDemoViewController.xib; sourceTree = "<group>"; };
 		A2893D921AC3D42400EFA90A /* UIButton+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDown.h"; sourceTree = "<group>"; };
 		A2893D931AC3D42400EFA90A /* UIButton+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CountDown.m"; sourceTree = "<group>"; };
 		A2893D951AC3E5FE00EFA90A /* UIButton+Indicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Indicator.h"; sourceTree = "<group>"; };
@@ -798,8 +804,10 @@
 		A2958D3B1B35A2E900D7AA0F /* UIWebVIew+SwipeGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebVIew+SwipeGesture.m"; sourceTree = "<group>"; };
 		A2958D3D1B35A41F00D7AA0F /* UIWebView+MetaParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+MetaParser.h"; sourceTree = "<group>"; };
 		A2958D3E1B35A41F00D7AA0F /* UIWebView+MetaParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+MetaParser.m"; sourceTree = "<group>"; };
-		A2AAA1ED1B0F1DCE004A3231 /* NSString+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
-		A2AAA1EE1B0F1DCE004A3231 /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
+		A29EC2661B527A19008ABB42 /* UIPopoverController+iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopoverController+iPhone.h"; sourceTree = "<group>"; };
+		A29EC2671B527A19008ABB42 /* UIPopoverController+iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverController+iPhone.m"; sourceTree = "<group>"; };
+		A2AAA1ED1B0F1DCE004A3231 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		A2AAA1EE1B0F1DCE004A3231 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		A2AB1A621B381E3900ED88AF /* UIFontDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFontDemoViewController.h; sourceTree = "<group>"; };
 		A2AB1A631B381E3900ED88AF /* UIFontDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFontDemoViewController.m; sourceTree = "<group>"; };
 		A2AB1A641B381E3900ED88AF /* UIFontDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIFontDemoViewController.xib; sourceTree = "<group>"; };
@@ -1314,6 +1322,7 @@
 		A22725F21A3E736D0061605B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A29EC2621B5279EC008ABB42 /* UIPopoverController */,
 				A27E93151B381CBA0010C7EA /* UIFont */,
 				A202D9AF1B10336500EAB199 /* UIApplication */,
 				A202D9951B0F914D00EAB199 /* UIControl */,
@@ -1615,6 +1624,7 @@
 		A281FB5B1AC8101F009040DA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A286CB631B5385E2008896C6 /* UIPopoverController */,
 				A27E931F1B381E1B0010C7EA /* UIFont */,
 				A202D9BC1B1038C000EAB199 /* UIBarButtonItem */,
 				A202D9B01B10337F00EAB199 /* UIApplication */,
@@ -1916,6 +1926,16 @@
 			path = NSDateFormatter;
 			sourceTree = "<group>";
 		};
+		A286CB631B5385E2008896C6 /* UIPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				A286CB641B53860C008896C6 /* UIPopoverControllerDemoViewController.h */,
+				A286CB651B53860C008896C6 /* UIPopoverControllerDemoViewController.m */,
+				A286CB661B53860C008896C6 /* UIPopoverControllerDemoViewController.xib */,
+			);
+			path = UIPopoverController;
+			sourceTree = "<group>";
+		};
 		A28BE2CA1A3E9F48005C4AC6 /* NSBundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -1989,8 +2009,8 @@
 			children = (
 				A2958D2B1B359BE400D7AA0F /* NSString+Pinyin.h */,
 				A2958D2C1B359BE400D7AA0F /* NSString+Pinyin.m */,
-				A2AAA1ED1B0F1DCE004A3231 /* NSString+Util.h */,
-				A2AAA1EE1B0F1DCE004A3231 /* NSString+Util.m */,
+				A2AAA1ED1B0F1DCE004A3231 /* NSString+Size.h */,
+				A2AAA1EE1B0F1DCE004A3231 /* NSString+Size.m */,
 				A292BDCB1B03422D002DAB71 /* NSString+RemoveEmoji.h */,
 				A292BDCC1B03422D002DAB71 /* NSString+RemoveEmoji.m */,
 				A281FB401AC800F2009040DA /* NSString+Trims.h */,
@@ -2393,6 +2413,15 @@
 			path = NSPersistentStoreCoordinator;
 			sourceTree = "<group>";
 		};
+		A29EC2621B5279EC008ABB42 /* UIPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				A29EC2661B527A19008ABB42 /* UIPopoverController+iPhone.h */,
+				A29EC2671B527A19008ABB42 /* UIPopoverController+iPhone.m */,
+			);
+			path = UIPopoverController;
+			sourceTree = "<group>";
+		};
 		A2EA48EE1B34FBB400A4B66F /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -2689,6 +2718,7 @@
 				A281FBF51AC813AA009040DA /* UITextFieldDemoViewController.xib in Resources */,
 				A281FBAE1AC812A8009040DA /* NSStringDemoViewController.xib in Resources */,
 				A202D98D1B0F7D7900EAB199 /* MKMapViewDemoViewController.xib in Resources */,
+				A286CB681B53860C008896C6 /* UIPopoverControllerDemoViewController.xib in Resources */,
 				A281FB901AC8122D009040DA /* NSDateDemoViewController.xib in Resources */,
 				A281FC181AC81427009040DA /* NSUserDefaultsDemoViewController.xib in Resources */,
 				A281FBB31AC812BA009040DA /* NSTimerDemoViewController.xib in Resources */,
@@ -2755,7 +2785,7 @@
 				A24377301ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m in Sources */,
 				A28BE3391A3E9FDC005C4AC6 /* UIView+Frame.m in Sources */,
 				A281FBF41AC813AA009040DA /* UITextFieldDemoViewController.m in Sources */,
-				A2AAA1EF1B0F1DCE004A3231 /* NSString+Util.m in Sources */,
+				A2AAA1EF1B0F1DCE004A3231 /* NSString+Size.m in Sources */,
 				A281FBD51AC81330009040DA /* UIImageViewDemoViewController.m in Sources */,
 				A202D9AB1B102F0F00EAB199 /* NSDate+Formatter.m in Sources */,
 				A218D8D71A479E9C00AB83CA /* UIColor+Web.m in Sources */,
@@ -2903,6 +2933,7 @@
 				A2C12BA21B1C282C00EAD198 /* UITableView+iOS7Style.m in Sources */,
 				A2681A441A75C7C8009BA7EE /* NSString+Encrypt.m in Sources */,
 				A284C0FE1AEB908100D90ED5 /* UIBezierPath+BasicShapes.m in Sources */,
+				A29EC2681B527A19008ABB42 /* UIPopoverController+iPhone.m in Sources */,
 				A21CF1801B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.m in Sources */,
 				A28BE38E1A3ED5A4005C4AC6 /* UITextField+Blocks.m in Sources */,
 				A20A5A671B4E27EA004E2474 /* NSFileHandle+readLine.m in Sources */,
@@ -2913,6 +2944,7 @@
 				A281FBD01AC81324009040DA /* UIImageDemoViewController.m in Sources */,
 				A2958CCC1B35808B00D7AA0F /* CATransaction+AnimateWithDuration.m in Sources */,
 				BCB799F31AFDD95300C12525 /* UIImage+GIF.m in Sources */,
+				A286CB671B53860C008896C6 /* UIPopoverControllerDemoViewController.m in Sources */,
 				A2FD5B551A526AC900555EA2 /* NSString+UUID.m in Sources */,
 				A28BE2ED1A3E9F48005C4AC6 /* NSString+DictionaryValue.m in Sources */,
 				A21F34C11B0F229700D73A91 /* UIScreen+Frame.m in Sources */,

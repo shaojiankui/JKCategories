@@ -46,7 +46,8 @@
                        @"UIScreen",
                        @"UIControl",
                        @"UIApplication",
-                       @"UIBarButtonItem"
+                       @"UIBarButtonItem",
+                       @"UIPopoverController"
 
                        ],
         @"Foundation":@[@"NSArray",

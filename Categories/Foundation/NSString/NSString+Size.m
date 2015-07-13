@@ -1,14 +1,14 @@
 //
-//  NSString+Util.m
+//  NSString+Size.m
 //  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
 //
 //  Created by Jakey on 15/5/22.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
-#import "NSString+Util.h"
+#import "NSString+Size.h"
 
-@implementation NSString (Util)
+@implementation NSString (Size)
 /**
  *  @brief 计算文字的高度
  *
