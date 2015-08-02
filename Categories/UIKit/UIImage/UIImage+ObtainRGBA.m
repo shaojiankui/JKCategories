@@ -80,10 +80,11 @@
     if (data != NULL) {
         int offset = 4 * ((w * round(touchPoint.y)) + round(touchPoint.x));
         int alpha  = data[offset];
-        int red    = data[offset+1];
-        int green  = data[offset+2];
-        int blue   = data[offset+3];
-        returnColor = [UIColor colorWithRed:(red/255.0f) green:(green/255.0f) blue:(blue/255.0f) alpha:alpha];
+        int red    = data[offset + 1];
+        int green  = data[offset + 2];
+        int blue   = data[offset + 3];
+        
+        returnColor = [UIColor colorWithRed:(red/255.0f) green:(green/255.0f) blue:(blue/255.0f) alpha:(alpha/255.0)];
     }
     
     CGContextRelease(cgConRef);
