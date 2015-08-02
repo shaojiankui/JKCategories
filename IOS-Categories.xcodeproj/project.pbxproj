@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		798256171B3A57340033A0C1 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256161B3A57340033A0C1 /* UIViewController+BackButtonHandler.m */; };
 		7982561A1B3A59060033A0C1 /* NSString+RegexCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256191B3A59060033A0C1 /* NSString+RegexCategory.m */; };
+		79B836961B6E15D000ABED82 /* UIImage+ObtainRGBA.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B836951B6E15D000ABED82 /* UIImage+ObtainRGBA.m */; };
 		A202D9621B0F6C4400EAB199 /* NSDate+Reporting.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9611B0F6C4400EAB199 /* NSDate+Reporting.m */; };
 		A202D9651B0F6DF900EAB199 /* NSString+MIME.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9641B0F6DF900EAB199 /* NSString+MIME.m */; };
 		A202D96B1B0F6FA400EAB199 /* UIBarButtonItem+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D96A1B0F6FA400EAB199 /* UIBarButtonItem+Action.m */; };
@@ -342,6 +343,8 @@
 		798256161B3A57340033A0C1 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+RegexCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexCategory.h"; sourceTree = "<group>"; };
 		798256191B3A59060033A0C1 /* NSString+RegexCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexCategory.m"; sourceTree = "<group>"; };
+		79B836941B6E15D000ABED82 /* UIImage+ObtainRGBA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ObtainRGBA.h"; sourceTree = "<group>"; };
+		79B836951B6E15D000ABED82 /* UIImage+ObtainRGBA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ObtainRGBA.m"; sourceTree = "<group>"; };
 		A202D9601B0F6C4400EAB199 /* NSDate+Reporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Reporting.h"; sourceTree = "<group>"; };
 		A202D9611B0F6C4400EAB199 /* NSDate+Reporting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Reporting.m"; sourceTree = "<group>"; };
 		A202D9631B0F6DF900EAB199 /* NSString+MIME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MIME.h"; sourceTree = "<group>"; };
@@ -2115,6 +2118,8 @@
 				A21F34D81B0F291600D73A91 /* UIImage+PDF.m */,
 				A2EF56DF1B21C59C0005F730 /* UIImage+Blur.h */,
 				A2EF56E01B21C59C0005F730 /* UIImage+Blur.m */,
+				79B836941B6E15D000ABED82 /* UIImage+ObtainRGBA.h */,
+				79B836951B6E15D000ABED82 /* UIImage+ObtainRGBA.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -2840,6 +2845,7 @@
 				A281FBEA1AC81392009040DA /* UISearchBarDemoViewController.m in Sources */,
 				A27E931B1B381D210010C7EA /* UIFont-TTF.m in Sources */,
 				A2EF56E11B21C59C0005F730 /* UIImage+Blur.m in Sources */,
+				79B836961B6E15D000ABED82 /* UIImage+ObtainRGBA.m in Sources */,
 				A28BE33A1A3E9FDC005C4AC6 /* UIView+Nib.m in Sources */,
 				A21F34D61B0F28A600D73A91 /* UILabel+AutoSize.m in Sources */,
 				A2958CB71B35794500D7AA0F /* UIView+Visuals.m in Sources */,
