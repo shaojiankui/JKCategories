@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7926E6931B736E8200888EB9 /* UIViewController+BackButtonItemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926E6921B736E8200888EB9 /* UIViewController+BackButtonItemTitle.m */; };
 		798256171B3A57340033A0C1 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256161B3A57340033A0C1 /* UIViewController+BackButtonHandler.m */; };
 		7982561A1B3A59060033A0C1 /* NSString+RegexCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256191B3A59060033A0C1 /* NSString+RegexCategory.m */; };
 		A202D9621B0F6C4400EAB199 /* NSDate+Reporting.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9611B0F6C4400EAB199 /* NSDate+Reporting.m */; };
@@ -338,6 +339,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7926E6911B736E8200888EB9 /* UIViewController+BackButtonItemTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonItemTitle.h"; sourceTree = "<group>"; };
+		7926E6921B736E8200888EB9 /* UIViewController+BackButtonItemTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonItemTitle.m"; sourceTree = "<group>"; };
 		798256151B3A57340033A0C1 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		798256161B3A57340033A0C1 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+RegexCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexCategory.h"; sourceTree = "<group>"; };
@@ -2200,6 +2203,8 @@
 		A28BE31F1A3E9FDC005C4AC6 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7926E6911B736E8200888EB9 /* UIViewController+BackButtonItemTitle.h */,
+				7926E6921B736E8200888EB9 /* UIViewController+BackButtonItemTitle.m */,
 				A2B995D11B46797500011613 /* UIViewController+BlockSegue.h */,
 				A2B995D21B46797500011613 /* UIViewController+BlockSegue.m */,
 				A23C10841B3D39AD00FA34AA /* UIViewController+BackButtonTouched.h */,
@@ -2960,6 +2965,7 @@
 				A202D9A71B102D7800EAB199 /* NSNumberDemoViewController.m in Sources */,
 				A292BDCD1B03422D002DAB71 /* NSString+RemoveEmoji.m in Sources */,
 				A202D99A1B0F916900EAB199 /* UIControlDemoViewController.m in Sources */,
+				7926E6931B736E8200888EB9 /* UIViewController+BackButtonItemTitle.m in Sources */,
 				A2FD5B4B1A52687000555EA2 /* NSException+Trace.m in Sources */,
 				A2958CBD1B357C5C00D7AA0F /* UIScrollView+Direction.m in Sources */,
 				A27E931E1B381D930010C7EA /* UIFont+DynamicFontControl.m in Sources */,
