@@ -29,7 +29,7 @@
     }
     
     if (!backButtonTitle) {
-        backButtonTitle = @" ";
+        backButtonTitle = viewController.title;
     }
     
     UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:backButtonTitle
