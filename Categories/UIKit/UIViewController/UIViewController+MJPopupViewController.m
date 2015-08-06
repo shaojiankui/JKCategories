@@ -50,15 +50,15 @@ static void * const keypath = (void*)&keypath;
     
 }
 
-- (void)presentPopupViewController:(UIViewController*)popupViewController animationType:(MJPopupViewAnimation)animationType dismissed:(void(^)(void))dismissed
+- (void)presentPopupViewController:(UIViewController*)popupViewController animationType:(MJPopupViewAnimation)animationType backgroundTouch:(BOOL)enable dismissed:(void(^)(void))dismissed
 {
     self.mj_popupViewController = popupViewController;
-    [self presentPopupView:popupViewController.view animationType:animationType dismissed:dismissed];
+    [self presentPopupView:popupViewController.view animationType:animationType backgroundTouch:enable dismissed:dismissed];
 }
 
 - (void)presentPopupViewController:(UIViewController*)popupViewController animationType:(MJPopupViewAnimation)animationType
 {
-    [self presentPopupViewController:popupViewController animationType:animationType dismissed:nil];
+    [self presentPopupViewController:popupViewController animationType:animationType backgroundTouch:YES dismissed:nil];
 }
 
 - (void)dismissPopupViewControllerWithanimationType:(MJPopupViewAnimation)animationType
@@ -93,10 +93,39 @@ static void * const keypath = (void*)&keypath;
 
 - (void)presentPopupView:(UIView*)popupView animationType:(MJPopupViewAnimation)animationType
 {
-    [self presentPopupView:popupView animationType:animationType dismissed:nil];
+    [self presentPopupView:popupView animationType:animationType backgroundTouch:YES dismissed:nil];
 }
 
-- (void)presentPopupView:(UIView*)popupView animationType:(MJPopupViewAnimation)animationType dismissed:(void(^)(void))dismissed
+- (UIViewController*)topViewController {
+    return [self topViewControllerWithRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+}
+
+- (UIViewController*)topViewControllerWithRootViewController:(UIViewController*)rootViewController {
+    if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+        UITabBarController* tabBarController = (UITabBarController*)rootViewController;
+        return [self topViewControllerWithRootViewController:tabBarController.selectedViewController];
+    } else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController* navigationController = (UINavigationController*)rootViewController;
+        return [self topViewControllerWithRootViewController:navigationController.visibleViewController];
+    } else if (rootViewController.presentedViewController) {
+        UIViewController* presentedViewController = rootViewController.presentedViewController;
+        return [self topViewControllerWithRootViewController:presentedViewController];
+    } else {
+        if (rootViewController) {
+            return rootViewController;
+        }else{
+            UIViewController *recentView = self;
+            
+            while (recentView.parentViewController != nil) {
+                recentView = recentView.parentViewController;
+            }
+            return recentView;
+            
+        }
+    }
+}
+
+- (void)presentPopupView:(UIView*)popupView animationType:(MJPopupViewAnimation)animationType backgroundTouch:(BOOL)enable dismissed:(void(^)(void))dismissed
 {
     UIView *sourceView = [self topView];
     sourceView.tag = kMJSourceViewTag;
@@ -139,6 +168,7 @@ static void * const keypath = (void*)&keypath;
     [overlayView addSubview:popupView];
     [sourceView addSubview:overlayView];
     
+    
     [dismissButton addTarget:self action:@selector(dismissPopupViewControllerWithanimation:) forControlEvents:UIControlEventTouchUpInside];
     switch (animationType) {
         case MJPopupViewAnimationSlideBottomTop:
@@ -157,18 +187,22 @@ static void * const keypath = (void*)&keypath;
             [self fadeViewIn:popupView sourceView:sourceView overlayView:overlayView];
             break;
     }
-    
+    dismissButton.enabled = enable;
     [self setDismissedCallback:dismissed];
 }
 
 -(UIView*)topView {
-    UIViewController *recentView = self;
     
-    while (recentView.parentViewController != nil) {
-        recentView = recentView.parentViewController;
-    }
-    return recentView.view;
+    return  [self topViewController].view;
 }
+//-(UIView*)topView {
+//    UIViewController *recentView = self;
+//
+//    while (recentView.parentViewController != nil) {
+//        recentView = recentView.parentViewController;
+//    }
+//    return recentView.view;
+//}
 
 - (void)dismissPopupViewControllerWithanimation:(id)sender
 {
@@ -364,6 +398,8 @@ static void * const keypath = (void*)&keypath;
 - (void)setDismissedCallback:(void(^)(void))dismissed
 {
     objc_setAssociatedObject(self, &MJPopupViewDismissedKey, dismissed, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self.mj_popupViewController, &MJPopupViewDismissedKey, dismissed, OBJC_ASSOCIATION_RETAIN);
+    
 }
 
 - (void(^)(void))dismissedCallback

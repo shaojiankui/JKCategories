@@ -96,9 +96,10 @@
     
     UInt8 * m_PixelBuf = (UInt8 *) CFDataGetBytePtr(m_DataRef);
     
-    size_t width = CGImageGetWidth(inImage);
-    size_t height = CGImageGetHeight(inImage);
-    
+//    size_t width = CGImageGetWidth(inImage);
+//    size_t height = CGImageGetHeight(inImage);
+    CGFloat width = CGImageGetWidth(inImage);
+    CGFloat height = CGImageGetHeight(inImage);
     CGPoint top,left,right,bottom;
     
     BOOL breakOut = NO;

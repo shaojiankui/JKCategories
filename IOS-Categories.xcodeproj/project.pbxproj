@@ -89,8 +89,8 @@
 		A280E5321A523AD700E6ACA2 /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5311A523AD700E6ACA2 /* UIView+BlockGesture.m */; };
 		A280E53A1A52405A00E6ACA2 /* UIScrollView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5391A52405A00E6ACA2 /* UIScrollView+Addition.m */; };
 		A280E53D1A52433200E6ACA2 /* NSData+Gzip.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E53C1A52433200E6ACA2 /* NSData+Gzip.m */; };
-		A280E5441A5246C200E6ACA2 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5431A5246C200E6ACA2 /* NSObject+Additions.m */; };
 		A280E5481A52480300E6ACA2 /* UIBezierPath+SVG.m in Sources */ = {isa = PBXBuildFile; fileRef = A280E5471A52480300E6ACA2 /* UIBezierPath+SVG.m */; };
+		A28141B91B5BCA0500496E75 /* NSDate+CupertinoYankee.m in Sources */ = {isa = PBXBuildFile; fileRef = A28141B81B5BCA0500496E75 /* NSDate+CupertinoYankee.m */; };
 		A281FB3F1AC80001009040DA /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB3E1AC80001009040DA /* NSString+Emoji.m */; };
 		A281FB421AC800F2009040DA /* NSString+Trims.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB411AC800F2009040DA /* NSString+Trims.m */; };
 		A281FB4A1AC80C31009040DA /* WebView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FB491AC80C31009040DA /* WebView+Debug.m */; };
@@ -487,10 +487,10 @@
 		A280E5391A52405A00E6ACA2 /* UIScrollView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Addition.m"; sourceTree = "<group>"; };
 		A280E53B1A52433200E6ACA2 /* NSData+Gzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSData+Gzip.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A280E53C1A52433200E6ACA2 /* NSData+Gzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSData+Gzip.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		A280E5421A5246C200E6ACA2 /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
-		A280E5431A5246C200E6ACA2 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
 		A280E5461A52480300E6ACA2 /* UIBezierPath+SVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+SVG.h"; sourceTree = "<group>"; };
 		A280E5471A52480300E6ACA2 /* UIBezierPath+SVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+SVG.m"; sourceTree = "<group>"; };
+		A28141B71B5BCA0500496E75 /* NSDate+CupertinoYankee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CupertinoYankee.h"; sourceTree = "<group>"; };
+		A28141B81B5BCA0500496E75 /* NSDate+CupertinoYankee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CupertinoYankee.m"; sourceTree = "<group>"; };
 		A281FB3D1AC80001009040DA /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		A281FB3E1AC80001009040DA /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		A281FB401AC800F2009040DA /* NSString+Trims.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trims.h"; sourceTree = "<group>"; };
@@ -1435,6 +1435,8 @@
 				A202D9AA1B102F0F00EAB199 /* NSDate+Formatter.m */,
 				A20FFDF81B4F944A00600093 /* NSDate+InternetDateTime.h */,
 				A20FFDF91B4F944A00600093 /* NSDate+InternetDateTime.m */,
+				A28141B71B5BCA0500496E75 /* NSDate+CupertinoYankee.h */,
+				A28141B81B5BCA0500496E75 /* NSDate+CupertinoYankee.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -1990,8 +1992,6 @@
 				A28BE3851A3ECF49005C4AC6 /* NSObject+GCD.m */,
 				A238E0561A4555F400383A97 /* NSObject+Property.h */,
 				A238E0571A4555F400383A97 /* NSObject+Property.m */,
-				A280E5421A5246C200E6ACA2 /* NSObject+Additions.h */,
-				A280E5431A5246C200E6ACA2 /* NSObject+Additions.m */,
 				A2FD5B501A5269D400555EA2 /* NSObject+Runtime.h */,
 				A2FD5B511A5269D400555EA2 /* NSObject+Runtime.m */,
 				A24377211ACBE9CF00FFFEA1 /* NSObject+AutoCoding.h */,
@@ -2853,7 +2853,6 @@
 				BCB79A021AFDE0B600C12525 /* NSObject+MKBlockTimer.m in Sources */,
 				A202D96E1B0F75B400EAB199 /* NSDictionary+Block.m in Sources */,
 				A284C1151AEBBF8000D90ED5 /* UINavigationBar+Awesome.m in Sources */,
-				A280E5441A5246C200E6ACA2 /* NSObject+Additions.m in Sources */,
 				A28BE32E1A3E9FDC005C4AC6 /* UIImage+FX.m in Sources */,
 				A2958D3F1B35A41F00D7AA0F /* UIWebView+MetaParser.m in Sources */,
 				A281FB801AC811F0009040DA /* NSArrayDemoViewController.m in Sources */,
@@ -2868,6 +2867,7 @@
 				A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */,
 				A21F34BD1B0F221400D73A91 /* UINavigationItem+Lock.m in Sources */,
 				A202D9E31B10400100EAB199 /* BaseViewController.m in Sources */,
+				A28141B91B5BCA0500496E75 /* NSDate+CupertinoYankee.m in Sources */,
 				A28BE3751A3EBA7E005C4AC6 /* UIImage+FileName.m in Sources */,
 				A281FB8F1AC8122D009040DA /* NSDateDemoViewController.m in Sources */,
 				A281FBFE1AC813C6009040DA /* UIViewDemoViewController.m in Sources */,

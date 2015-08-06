@@ -1,7 +1,7 @@
-IOS-Categories
+iOS-Categories
 ================
 
-IOS中的各种Objective-C Category, a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
+iOS中的各种Objective-C Category, a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
 
 ## Foundation
 * NSArray
@@ -77,5 +77,5 @@ IOS中的各种Objective-C Category, a collection of useful Objective-C Categori
 
 ## License
 
-IOS-Categories is available under the MIT license.
+iOS-Categories is available under the MIT license.
 

@@ -19,7 +19,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
-//https://github.com/JazysYu/JZNavigationExtension
+
 #import <UIKit/UIKit.h>
 
 /// The "UINavigationController+JZExtension" category integrates some convenient functions and open some hide property
@@ -39,9 +39,9 @@
 /// make sure the toolbarHidden property is NO, default is 1. Animatable
 @property (nonatomic, readonly, strong) UIViewController *interactivePopedViewController NS_AVAILABLE_IOS(7_0); // The view controller that is being popped
 /// when the interactive pop gesture recognizer's UIGestureRecognizerState is UIGestureRecognizerStateChanged.
-/// This category helps to change navigationBar or toolBar to any size, you may also change its frame.size by yourself.
-- (void)setNavigationBarSize:(CGSize)navigationBarSize;
-- (void)setToolbarSize:(CGSize)toolbarSize;
+/// This category helps to change navigationBar or toolBar to any size, if you want default value, then set to 0.f.
+@property (nonatomic, assign, readwrite) CGSize navigationBarSize;
+@property (nonatomic, assign, readwrite) CGSize toolbarSize;
 
 - (UIViewController *)previousViewControllerForViewController:(UIViewController *)viewController; // Return the gives
 /// view controller's previous view controller in the navigation stack.
