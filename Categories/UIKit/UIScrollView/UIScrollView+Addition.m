@@ -53,6 +53,33 @@
 {
     return CGPointMake(self.contentSize.width + self.contentInset.right - self.bounds.size.width, 0.0f);
 }
+- (ScrollDirection)scrollDirection
+{
+    ScrollDirection direction;
+    
+    if ([self.panGestureRecognizer translationInView:self.superview].y > 0.0f)
+    {
+        direction = ScrollDirectionUp;
+    }
+    else if ([self.panGestureRecognizer translationInView:self.superview].y < 0.0f)
+    {
+        direction = ScrollDirectionDown;
+    }
+    else if ([self.panGestureRecognizer translationInView:self].x < 0.0f)
+    {
+        direction = ScrollDirectionLeft;
+    }
+    else if ([self.panGestureRecognizer translationInView:self].x > 0.0f)
+    {
+        direction = ScrollDirectionRight;
+    }
+    else
+    {
+        direction = ScrollDirectionWTF;
+    }
+    
+    return direction;
+}
 - (BOOL)isScrolledToTop
 {
     return self.contentOffset.y <= [self topContentOffset].y;

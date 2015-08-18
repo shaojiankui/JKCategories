@@ -7,6 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef NS_ENUM(NSInteger, ScrollDirection) {
+    ScrollDirectionUp,
+    ScrollDirectionDown,
+    ScrollDirectionLeft,
+    ScrollDirectionRight,
+    ScrollDirectionWTF
+};
 
 @interface UIScrollView (Addition)
 @property(nonatomic) CGFloat contentWidth;
@@ -18,6 +25,8 @@
 - (CGPoint)bottomContentOffset;
 - (CGPoint)leftContentOffset;
 - (CGPoint)rightContentOffset;
+
+- (ScrollDirection)scrollDirection;
 
 - (BOOL)isScrolledToTop;
 - (BOOL)isScrolledToBottom;

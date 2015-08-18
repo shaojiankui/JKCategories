@@ -244,7 +244,6 @@
 		A2958CB41B35792300D7AA0F /* CAMediaTimingFunction+AdditionalEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CB31B35792300D7AA0F /* CAMediaTimingFunction+AdditionalEquations.m */; };
 		A2958CB71B35794500D7AA0F /* UIView+Visuals.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CB61B35794500D7AA0F /* UIView+Visuals.m */; };
 		A2958CBA1B357AEF00D7AA0F /* UIViewController+StoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CB91B357AEF00D7AA0F /* UIViewController+StoreKit.m */; };
-		A2958CBD1B357C5C00D7AA0F /* UIScrollView+Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CBC1B357C5C00D7AA0F /* UIScrollView+Direction.m */; };
 		A2958CC11B357E2E00D7AA0F /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CC01B357E2E00D7AA0F /* CAAnimation+Blocks.m */; };
 		A2958CC41B357E9100D7AA0F /* CAAnimation+EasingEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CC31B357E9100D7AA0F /* CAAnimation+EasingEquations.m */; };
 		A2958CC81B35804600D7AA0F /* CAShapeLayer+UIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CC71B35804600D7AA0F /* CAShapeLayer+UIBezierPath.m */; };
@@ -772,8 +771,6 @@
 		A2958CB61B35794500D7AA0F /* UIView+Visuals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Visuals.m"; sourceTree = "<group>"; };
 		A2958CB81B357AEF00D7AA0F /* UIViewController+StoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StoreKit.h"; sourceTree = "<group>"; };
 		A2958CB91B357AEF00D7AA0F /* UIViewController+StoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StoreKit.m"; sourceTree = "<group>"; };
-		A2958CBB1B357C5C00D7AA0F /* UIScrollView+Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Direction.h"; sourceTree = "<group>"; };
-		A2958CBC1B357C5C00D7AA0F /* UIScrollView+Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Direction.m"; sourceTree = "<group>"; };
 		A2958CBF1B357E2E00D7AA0F /* CAAnimation+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Blocks.h"; sourceTree = "<group>"; };
 		A2958CC01B357E2E00D7AA0F /* CAAnimation+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+Blocks.m"; sourceTree = "<group>"; };
 		A2958CC21B357E9100D7AA0F /* CAAnimation+EasingEquations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+EasingEquations.h"; sourceTree = "<group>"; };
@@ -1472,8 +1469,6 @@
 			children = (
 				A2958D071B3592C200D7AA0F /* UIScrollView+APParallaxHeader.h */,
 				A2958D081B3592C200D7AA0F /* UIScrollView+APParallaxHeader.m */,
-				A2958CBB1B357C5C00D7AA0F /* UIScrollView+Direction.h */,
-				A2958CBC1B357C5C00D7AA0F /* UIScrollView+Direction.m */,
 				A280E5381A52405A00E6ACA2 /* UIScrollView+Addition.h */,
 				A280E5391A52405A00E6ACA2 /* UIScrollView+Addition.m */,
 				A2FD5B331A52599C00555EA2 /* UIScrollView+Pages.h */,
@@ -3057,7 +3052,6 @@
 				A202D99A1B0F916900EAB199 /* UIControlDemoViewController.m in Sources */,
 				7926E6931B736E8200888EB9 /* UIViewController+BackButtonItemTitle.m in Sources */,
 				A2FD5B4B1A52687000555EA2 /* NSException+Trace.m in Sources */,
-				A2958CBD1B357C5C00D7AA0F /* UIScrollView+Direction.m in Sources */,
 				A27E931E1B381D930010C7EA /* UIFont+DynamicFontControl.m in Sources */,
 				A2B995D31B46797500011613 /* UIViewController+BlockSegue.m in Sources */,
 				A21F34D91B0F291600D73A91 /* UIImage+PDF.m in Sources */,
