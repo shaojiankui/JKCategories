@@ -304,6 +304,7 @@
 		A2EA48F21B34FBB400A4B66F /* CALayer+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EA48F11B34FBB400A4B66F /* CALayer+UIColor.m */; };
 		A2EC52E71A8769D40059D53B /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC52E61A8769D40059D53B /* NSArray+SafeAccess.m */; };
 		A2EC52EA1A876E7C0059D53B /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC52E91A876E7C0059D53B /* NSString+Base64.m */; };
+		A2EE52B51B89FD920000E7B3 /* UIBezierPath+LxThroughPointsBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EE52B41B89FD920000E7B3 /* UIBezierPath+LxThroughPointsBezier.m */; };
 		A2EF56AF1B21C2C30005F730 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EF56AE1B21C2C30005F730 /* CoreData.framework */; };
 		A2EF56B11B21C2C80005F730 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EF56B01B21C2C80005F730 /* CoreLocation.framework */; };
 		A2EF56B31B21C2D00005F730 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EF56B21B21C2D00005F730 /* UIKit.framework */; };
@@ -885,6 +886,8 @@
 		A2EC52E61A8769D40059D53B /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A2EC52E81A876E7C0059D53B /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		A2EC52E91A876E7C0059D53B /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		A2EE52B31B89FD920000E7B3 /* UIBezierPath+LxThroughPointsBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+LxThroughPointsBezier.h"; sourceTree = "<group>"; };
+		A2EE52B41B89FD920000E7B3 /* UIBezierPath+LxThroughPointsBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+LxThroughPointsBezier.m"; sourceTree = "<group>"; };
 		A2EF56AE1B21C2C30005F730 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A2EF56B01B21C2C80005F730 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A2EF56B21B21C2D00005F730 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1506,6 +1509,8 @@
 				A284C0FD1AEB908100D90ED5 /* UIBezierPath+BasicShapes.m */,
 				A280E5461A52480300E6ACA2 /* UIBezierPath+SVG.h */,
 				A280E5471A52480300E6ACA2 /* UIBezierPath+SVG.m */,
+				A2EE52B31B89FD920000E7B3 /* UIBezierPath+LxThroughPointsBezier.h */,
+				A2EE52B41B89FD920000E7B3 /* UIBezierPath+LxThroughPointsBezier.m */,
 			);
 			path = UIBezierPath;
 			sourceTree = "<group>";
@@ -3094,6 +3099,7 @@
 				A284C1251AEBC19C00D90ED5 /* UINavigationBarDemoViewController.m in Sources */,
 				A219B8B71A615CA100135327 /* UIView+Screenshot.m in Sources */,
 				A284C13F1AEBCF9600D90ED5 /* NSDateFormatterDemoViewController.m in Sources */,
+				A2EE52B51B89FD920000E7B3 /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
 				A2958D3C1B35A2E900D7AA0F /* UIWebVIew+SwipeGesture.m in Sources */,
 				A28BE3421A3EA20B005C4AC6 /* UIColor+Random.m in Sources */,
 				A2FD5B631A52718200555EA2 /* NSDate+Utilities.m in Sources */,

@@ -53,7 +53,7 @@
 {
     return CGPointMake(self.contentSize.width + self.contentInset.right - self.bounds.size.width, 0.0f);
 }
-- (ScrollDirection)scrollDirection
+- (ScrollDirection)ScrollDirection
 {
     ScrollDirection direction;
     

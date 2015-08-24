@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, ScrollDirection) {
 - (CGPoint)leftContentOffset;
 - (CGPoint)rightContentOffset;
 
-- (ScrollDirection)scrollDirection;
+- (ScrollDirection)ScrollDirection;
 
 - (BOOL)isScrolledToTop;
 - (BOOL)isScrolledToBottom;
