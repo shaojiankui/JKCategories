@@ -29,7 +29,11 @@
 static __weak id currentFirstResponder;
 
 @implementation UIResponder (FirstResponder)
-
+/**
+ *  @brief  当前第一响应者
+ *
+ *  @return 当前第一响应者
+ */
 + (id)currentFirstResponder {
     currentFirstResponder = nil;
     

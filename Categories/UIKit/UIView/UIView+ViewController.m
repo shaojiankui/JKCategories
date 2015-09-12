@@ -9,7 +9,9 @@
 #import "UIView+ViewController.h"
 
 @implementation UIView (ViewController)
-
+/**
+ *  @brief  找到当前view所在的viewcontroler
+ */
 - (UIViewController *)viewController
 {
     UIResponder *responder = self.nextResponder;

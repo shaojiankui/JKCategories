@@ -9,7 +9,11 @@
 #import "UIWebView+MetaParser.h"
 
 @implementation UIWebView (MetaParser)
-
+/**
+ *  @brief  获取网页meta信息
+ *
+ *  @return meta信息
+ */
 -(NSArray *)getMetaData
 {
     NSString *string = [self stringByEvaluatingJavaScriptFromString:@""

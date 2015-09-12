@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIBezierPath (SVG)
+/**
+ *  @brief  UIBezierPath转成SVG
+ *
+ *  @return SVG
+ */
 - (NSString*)toSVGString;
 @end

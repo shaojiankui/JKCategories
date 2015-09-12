@@ -9,6 +9,13 @@
 #import "UIView+Find.h"
 
 @implementation UIView (Find)
+/**
+ *  @brief  找到指定类名的view对象
+ *
+ *  @param clazz view类名
+ *
+ *  @return view对象
+ */
 - (id)findSubViewWithSubViewClass:(Class)clazz
 {
     for (id subView in self.subviews) {
@@ -19,8 +26,14 @@
     
     return nil;
 }
-
-- (id)findsuperViewWithSuperViewClass:(Class)clazz
+/**
+ *  @brief  找到指定类名的SuperView对象
+ *
+ *  @param clazz SuperView类名
+ *
+ *  @return view对象
+ */
+- (id)findSuperViewWithSuperViewClass:(Class)clazz
 {
     if (self == nil) {
         return nil;
@@ -29,10 +42,14 @@
     } else if ([self.superview isKindOfClass:clazz]) {
         return self.superview;
     } else {
-        return [self.superview findsuperViewWithSuperViewClass:clazz];
+        return [self.superview findSuperViewWithSuperViewClass:clazz];
     }
 }
-
+/**
+ *  @brief  找到并且resign第一响应者
+ *
+ *  @return 结果
+ */
 - (BOOL)findAndResignFirstResponder {
     if (self.isFirstResponder) {
         [self resignFirstResponder];
@@ -47,7 +64,11 @@
     
     return NO;
 }
-
+/**
+ *  @brief  找到第一响应者
+ *
+ *  @return 第一响应者
+ */
 - (UIView *)findFirstResponder {
     
     if (([self isKindOfClass:[UITextField class]] || [self isKindOfClass:[UITextView class]])

@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (Capture)
-
+/**
+ *  @brief  截图指定view成图片
+ *
+ *  @param view 一个view
+ *
+ *  @return 图片
+ */
 + (UIImage *)captureWithView:(UIView *)view;
 
 ///截图（未测试是否可行）

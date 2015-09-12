@@ -9,7 +9,11 @@
 #import "UIColor+Web.h"
 
 @implementation UIColor (Web)
-/// 获取canvas用的颜色字符串
+/**
+ *  @brief  获取canvas用的颜色字符串
+ *
+ *  @return canvas颜色
+ */
 - (NSString *)canvasColorString
 {
     CGFloat *arrRGBA = [self getRGB];
@@ -19,7 +23,11 @@
     float a = arrRGBA[3];
     return [NSString stringWithFormat:@"rgba(%d,%d,%d,%f)", r, g, b, a];
 }
-/// 获取网页颜色字串
+/**
+ *  @brief  获取网页颜色字串
+ *
+ *  @return 网页颜色
+ */
 - (NSString *)webColorString
 {
     CGFloat *arrRGBA = [self getRGB];

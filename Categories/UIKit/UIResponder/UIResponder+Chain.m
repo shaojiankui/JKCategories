@@ -9,6 +9,11 @@
 #import "UIResponder+Chain.h"
 
 @implementation UIResponder (Chain)
+/**
+ *  @brief  响应者链
+ *
+ *  @return  响应者链
+ */
 - (NSString *)responderChainDescription
 {
     NSMutableArray *responderChainStrings = [NSMutableArray array];

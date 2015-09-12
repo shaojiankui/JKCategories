@@ -31,7 +31,9 @@
 {
 	return [objc_getAssociatedObject(self, @selector(touchAreaInsets)) UIEdgeInsetsValue];
 }
-
+/**
+ *  @brief  设置按钮额外热区
+ */
 - (void)setTouchAreaInsets:(UIEdgeInsets)touchAreaInsets
 {
     NSValue *value = [NSValue valueWithUIEdgeInsets:touchAreaInsets];

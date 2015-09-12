@@ -11,8 +11,11 @@
 @end
 
 @implementation UIImage (Alpha)
-
-// Returns true if the image has an alpha layer
+/**
+ *  @brief  是否有alpha通道
+ *
+ *  @return 是否有alpha通道
+ */
 - (BOOL)hasAlpha {
     CGImageAlphaInfo alpha = CGImageGetAlphaInfo(self.CGImage);
     return (alpha == kCGImageAlphaFirst ||
@@ -20,8 +23,11 @@
             alpha == kCGImageAlphaPremultipliedFirst ||
             alpha == kCGImageAlphaPremultipliedLast);
 }
-
-// Returns a copy of the given image, adding an alpha channel if it doesn't already have one
+/**
+ *  @brief  如果没有alpha通道 增加alpha通道
+ *
+ *  @return 如果没有alpha通道 增加alpha通道
+ */
 - (UIImage *)imageWithAlpha {
     if ([self hasAlpha]) {
         return self;
@@ -54,6 +60,13 @@
 
 // Returns a copy of the image with a transparent border of the given size added around its edges.
 // If the image has no alpha layer, one will be added to it.
+/**
+ *  @brief  增加透明边框
+ *
+ *  @param borderSize 边框尺寸
+ *
+ *  @return 增加透明边框后的图片
+ */
 - (UIImage *)transparentBorderImage:(NSUInteger)borderSize {
     // If the image does not have an alpha layer, add one
     UIImage *image = [self imageWithAlpha];
@@ -87,7 +100,11 @@
     
     return transparentBorderImage;
 }
-
+/**
+ *  @brief  裁切含透明图片为最小大小
+ *
+ *  @return 裁切后的图片
+ */
 - (UIImage *)trimmedBetterSize {
     
     CGImageRef inImage = self.CGImage;

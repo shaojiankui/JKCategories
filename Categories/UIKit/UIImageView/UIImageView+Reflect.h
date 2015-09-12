@@ -11,7 +11,9 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (Reflect)
-
+/**
+ *  @brief  倒影
+ */
 - (void)reflect;
 
 @end

@@ -24,5 +24,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIWebView (MetaParser)
+/**
+ *  @brief  获取网页meta信息
+ *
+ *  @return meta信息
+ */
 -(NSArray *)getMetaData;
 @end

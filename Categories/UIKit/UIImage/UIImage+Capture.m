@@ -9,6 +9,13 @@
 #import "UIImage+Capture.h"
 #import <QuartzCore/QuartzCore.h>
 @implementation UIImage (Capture)
+/**
+ *  @brief  截图指定view成图片
+ *
+ *  @param view 一个view
+ *
+ *  @return 图片
+ */
 + (UIImage *)captureWithView:(UIView *)view
 {
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, [UIScreen mainScreen].scale);

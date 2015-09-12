@@ -9,6 +9,11 @@
 #import "UIBezierPath+SVG.h"
 static void SVGApplier(void* info, const CGPathElement* element);
 @implementation UIBezierPath (ZTKit)
+/**
+ *  @brief  UIBezierPath转成SVG
+ *
+ *  @return SVG
+ */
 - (NSString*)toSVGString
 {
     CGPathRef path = [self CGPath];

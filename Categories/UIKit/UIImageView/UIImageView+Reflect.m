@@ -9,7 +9,9 @@
 #import "UIImageView+Reflect.h"
 
 @implementation UIImageView (Reflect)
-
+/**
+ *  @brief  倒影
+ */
 - (void)reflect {
     CGRect frame = self.frame;
     frame.origin.y += (frame.size.height + 1);

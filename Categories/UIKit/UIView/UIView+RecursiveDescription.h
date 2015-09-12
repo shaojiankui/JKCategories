@@ -9,11 +9,23 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (RecursiveDescription)
-//打印视图层级
+/**
+ *  @brief  打印视图层级
+ *
+ *  @return 打印视图层级字符串
+ */
 -(NSString*)recursiveView;
-//打印约束
+/**
+ *  @brief  打印约束
+ *
+ *  @return 打印约束字符串
+ */
 -(NSString*)constraintsDescription;
-//打印整个视图树的字符串
+/**
+ *  @brief  打印整个autolayout树的字符串
+ *
+ *  @return 打印整个autolayout树的字符串
+ */
 -(NSString*)autolayoutTraceDescription;
 
 @end

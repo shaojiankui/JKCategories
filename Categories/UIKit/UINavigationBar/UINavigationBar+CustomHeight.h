@@ -24,7 +24,11 @@
 #import <UIKit/UIKit.h>
 
 @interface UINavigationBar (CustomHeight)
-
+/**
+ *  @brief  自定义UINavigationBar高度
+ *
+ *  @param height NavigationBar高度
+ */
 - (void)setHeight:(CGFloat)height;
 
 @end

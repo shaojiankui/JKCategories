@@ -9,7 +9,11 @@
 #import "UIWebView+Style.h"
 
 @implementation UIWebView (Style)
-
+/**
+ *  @brief  是否显示阴影
+ *
+ *  @param b 是否显示阴影
+ */
 - (void)setShadowViewHidden:(BOOL)b{
     for (UIView *aView in [self subviews])
     {
@@ -26,6 +30,11 @@
         }
     }
 }
+/**
+ *  @brief  是否显示水平滑动指示器
+ *
+ *  @param b 是否显示水平滑动指示器
+ */
 - (void)setShowsHorizontalScrollIndicator:(BOOL)b{
     for (UIView *aView in [self subviews])
     {
@@ -35,6 +44,11 @@
         }
     }
 }
+/**
+ *  @brief  是否显示垂直滑动指示器
+ *
+ *  @param b 是否显示垂直滑动指示器
+ */
 - (void)setShowsVerticalScrollIndicator:(BOOL)b{
     for (UIView *aView in [self subviews])
     {
@@ -44,13 +58,17 @@
         }
     }
 }
-
+/**
+ *  @brief  网页透明
+ */
 -(void) makeTransparent
 {
     self.backgroundColor = [UIColor clearColor];
     self.opaque = NO;
 }
-
+/**
+ *  @brief  网页透明移除阴影
+ */
 -(void) makeTransparentAndRemoveShadow
 {
     [self makeTransparent];

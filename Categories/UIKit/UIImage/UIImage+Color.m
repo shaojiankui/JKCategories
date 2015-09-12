@@ -9,6 +9,13 @@
 #import "UIImage+Color.h"
 
 @implementation UIImage (Color)
+/**
+ *  @brief  根据颜色生成纯色图片
+ *
+ *  @param color 颜色
+ *
+ *  @return 纯色图片
+ */
 + (UIImage *)imageWithColor:(UIColor *)color {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
@@ -22,6 +29,13 @@
     
     return image;
 }
+/**
+ *  @brief  取图片某一点的颜色
+ *
+ *  @param point 某一点
+ *
+ *  @return 颜色
+ */
 - (UIColor *)colorAtPoint:(CGPoint )point
 {
     if (point.x < 0 || point.y < 0) return nil;
@@ -65,6 +79,13 @@
     free(rawData);
     return result;
 }
+/**
+ *  @brief  取某一像素的颜色
+ *
+ *  @param point 一像素
+ *
+ *  @return 颜色
+ */
 - (UIColor *)colorAtPixel:(CGPoint)point
 {
     // Cancel if point is outside image coordinates
@@ -106,7 +127,11 @@
     CGFloat alpha = (CGFloat)pixelData[3] / 255.0f;
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
-
+/**
+ *  @brief  返回该图片是否有透明度通道
+ *
+ *  @return 是否有透明度通道
+ */
 - (BOOL)hasAlphaChannel
 {
     CGImageAlphaInfo alpha = CGImageGetAlphaInfo(self.CGImage);
@@ -116,7 +141,14 @@
             alpha == kCGImageAlphaPremultipliedLast);
 }
 
-//转成黑白图像
+/**
+ *  @brief  获得灰度图
+ *
+ *  @param sourceImage 图片
+ *
+ *  @return 获得灰度图片
+ */
+
 + (UIImage*)covertToGrayImageFromImage:(UIImage*)sourceImage
 {
     int width = sourceImage.size.width;

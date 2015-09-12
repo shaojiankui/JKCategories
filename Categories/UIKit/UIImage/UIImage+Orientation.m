@@ -9,6 +9,13 @@
 #import "UIImage+Orientation.h"
 
 @implementation UIImage (Orientation)
+/**
+ *  @brief  修正图片的方向
+ *
+ *  @param srcImg 图片
+ *
+ *  @return 修正方向后的图片
+ */
 + (UIImage *)fixOrientation:(UIImage *)srcImg {
     if (srcImg.imageOrientation == UIImageOrientationUp) return srcImg;
     CGAffineTransform transform = CGAffineTransformIdentity;
@@ -90,24 +97,45 @@
     UIGraphicsEndImageContext();
     return image;
 }
-
+/**
+ *  @brief  垂直翻转
+ *
+ *  @return  翻转后的图片
+ */
 - (UIImage *)flipVertical {
     return [self flip:NO];
 }
-
+/**
+ *  @brief  水平翻转
+ *
+ *  @return 翻转后的图片
+ */
 - (UIImage *)flipHorizontal {
     return [self flip:YES];
 }
-
+/**
+ *  @brief  旋转图片
+ *
+ *  @param degrees 弧度
+ *
+ *  @return 旋转后图片
+ */
 - (UIImage *)imageRotatedByRadians:(CGFloat)radians
 {
-    return [self imageRotatedByDegrees:RadiansToDegrees(radians)];
+    return [self imageRotatedByDegrees:[UIImage radiansToDegrees:radians]];
 }
+/**
+ *  @brief  旋转图片
+ *
+ *  @param degrees 度
+ *
+ *  @return 旋转后图片
+ */
 - (UIImage *)imageRotatedByDegrees:(CGFloat)degrees
 {
     // calculate the size of the rotated view's containing box for our drawing space
     UIView *rotatedViewBox = [[UIView alloc] initWithFrame:CGRectMake(0,0,self.size.width, self.size.height)];
-    CGAffineTransform t = CGAffineTransformMakeRotation(DegreesToRadians(degrees));
+    CGAffineTransform t = CGAffineTransformMakeRotation([UIImage degreesToRadians:degrees]);
     rotatedViewBox.transform = t;
     CGSize rotatedSize = rotatedViewBox.frame.size;
     
@@ -119,7 +147,7 @@
     CGContextTranslateCTM(bitmap, rotatedSize.width/2, rotatedSize.height/2);
     
     //   // Rotate the image context
-    CGContextRotateCTM(bitmap, DegreesToRadians(degrees));
+    CGContextRotateCTM(bitmap, [UIImage degreesToRadians:degrees]);
     
     // Now, draw the rotated/scaled image into the context
     CGContextScaleCTM(bitmap, 1.0, -1.0);
@@ -129,5 +157,28 @@
     UIGraphicsEndImageContext();
     return newImage;
     
+}
+
+/**
+ *  @brief  角度转弧度
+ *
+ *  @param degrees 角度
+ *
+ *  @return 弧度
+ */
++(CGFloat)degreesToRadians:(CGFloat)degrees
+{
+    return degrees * M_PI / 180;
+}
+/**
+ *  @brief  弧度转角度
+ *
+ *  @param radians 弧度
+ *
+ *  @return 角度
+ */
++(CGFloat)radiansToDegrees:(CGFloat)radians
+{
+    return radians * 180/M_PI;
 }
 @end

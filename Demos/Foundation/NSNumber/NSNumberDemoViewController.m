@@ -17,9 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSNumber *n = [NSNumber numberWithFloat:1.25656789];
-    NSNumber *sting = [n doCeilWithDigit:2];
-    
     
 }
 
