@@ -9,6 +9,11 @@
 #import "NSString+MIME.h"
 
 @implementation NSString (MIME)
+/**
+ *  @brief  根据文件url后缀 返回对应的MIMEType
+ *
+ *  @return MIMEType
+ */
 - (NSString *)MIMEType {
     return [[self class] MIMETypeForExtension:[self pathExtension]];
 }
@@ -16,7 +21,11 @@
 + (NSString *)MIMETypeForExtension:(NSString *)extension {
     return [[self MIMEDict] valueForKey:[extension lowercaseString]];
 }
-
+/**
+ *  @brief  常见MIME集合
+ *
+ *  @return 常见MIME集合
+ */
 + (NSDictionary *)MIMEDict {
     NSDictionary * MIMEDict;
     // Lazy loads the MIME type dictionary.

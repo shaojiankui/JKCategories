@@ -16,7 +16,15 @@
 #endif
 
 @interface CATransaction (AnimateWithDuration)
-
+/**
+ *  @author Denys Telezhkin
+ *
+ *  @brief  CATransaction 动画执 block回调
+ *
+ *  @param duration   动画时间
+ *  @param animations 动画块
+ *  @param completion 动画结束回调
+ */
 +(void)dt_animateWithDuration:(NSTimeInterval)duration
                    animations:(nullable void (^)(void))animations
                    completion:(nullable void (^)())completion;

@@ -9,6 +9,11 @@
 #import "NSString+UUID.h"
 #import <UIKit/UIKit.h>
 @implementation NSString (UUID)
+/**
+ *  @brief  获取随机 UUID
+ *
+ *  @return 随机 UUID
+ */
 + (NSString *)UUID
 {
     if([[[UIDevice currentDevice] systemVersion] floatValue] > 6.0)

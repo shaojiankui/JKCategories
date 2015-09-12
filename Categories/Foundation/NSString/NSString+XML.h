@@ -19,7 +19,11 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (XML)
-
+/**
+ *  @brief  xml字符串转换成NSDictionary
+ *
+ *  @return NSDictionary
+ */
 -(NSDictionary *)dictionaryFromXML;
 
 @end

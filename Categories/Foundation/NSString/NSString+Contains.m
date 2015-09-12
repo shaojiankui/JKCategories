@@ -10,7 +10,11 @@
 
 @implementation NSString (Contains)
 
-///判断URL中是否包含中文
+/**
+ *  @brief  判断URL中是否包含中文
+ *
+ *  @return 是否包含中文
+ */
 - (BOOL)isContainChinese
 {
     NSUInteger length = [self length];
@@ -25,7 +29,11 @@
     return NO;
 }
 
-///是否包含空格
+/**
+ *  @brief  是否包含空格
+ *
+ *  @return 是否包含空格
+ */
 - (BOOL)isContainBlank
 {
     NSRange range = [self rangeOfString:@" "];
@@ -65,7 +73,7 @@
  *
  *  @return YES, 包含; Otherwise
  */
-- (BOOL)containsString:(NSString *)string
+- (BOOL)containsaString:(NSString *)string
 {
     NSRange rang = [self rangeOfString:string];
     if (rang.location == NSNotFound) {

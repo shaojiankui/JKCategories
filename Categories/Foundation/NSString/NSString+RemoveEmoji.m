@@ -8,7 +8,11 @@
 #import "NSString+RemoveEmoji.h"
 
 @implementation NSString (RemoveEmoji)
-
+/**
+ *  @brief  是否包含emoji
+ *
+ *  @return 是否包含emoji
+ */
 - (BOOL)isEmoji {
     
     if ([self isFuckEmoji]) {
@@ -65,7 +69,11 @@
     
     return result;
 }
-
+/**
+ *  @brief  删除掉包含的emoji
+ *
+ *  @return 清除后的string
+ */
 - (instancetype)removedEmojiString {
     NSMutableString* __block buffer = [NSMutableString stringWithCapacity:[self length]];
     

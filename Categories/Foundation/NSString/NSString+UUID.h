@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (UUID)
+/**
+ *  @brief  获取随机 UUID
+ *
+ *  @return 随机 UUID
+ */
 + (NSString *)UUID;
 @end

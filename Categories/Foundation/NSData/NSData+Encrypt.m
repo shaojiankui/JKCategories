@@ -10,7 +10,14 @@
 #import <CommonCrypto/CommonCryptor.h>
 
 @implementation NSData (Encrypt)
-
+/**
+ *  利用AES加密数据
+ *
+ *  @param key key
+ *  @param iv  iv description
+ *
+ *  @return data
+ */
 - (NSData*)encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv {
     
     NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
@@ -38,7 +45,14 @@
     return nil;
     
 }
-
+/**
+ *  @brief  利用AES解密据
+ *
+ *  @param key key
+ *  @param iv  iv
+ *
+ *  @return 解密后数据
+ */
 - (NSData*)decryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv {
     
     NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
@@ -66,7 +80,14 @@
     return nil;
     
 }
-
+/**
+ *  利用3DES加密数据
+ *
+ *  @param key key
+ *  @param iv  iv description
+ *
+ *  @return data
+ */
 - (NSData*)encryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv {
     
     NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
@@ -94,7 +115,14 @@
     return nil;
     
 }
-
+/**
+ *  @brief   利用3DES解密数据
+ *
+ *  @param key key
+ *  @param iv  iv
+ *
+ *  @return 解密后数据
+ */
 - (NSData*)decryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv {
     
     NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
@@ -122,7 +150,11 @@
     return nil;
     
 }
-
+/**
+ *  @brief  NSData 转成UTF8 字符串
+ *
+ *  @return 转成UTF8 字符串
+ */
 -(NSString *)UTF8String{
     return [[NSString alloc] initWithData:self encoding:NSUTF8StringEncoding];
 }

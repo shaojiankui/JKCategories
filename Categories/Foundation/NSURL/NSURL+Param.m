@@ -9,6 +9,11 @@
 #import "NSURL+Param.h"
 
 @implementation NSURL (Param)
+/**
+ *  @brief  url参数转字典
+ *
+ *  @return 参数转字典结果
+ */
 - (NSDictionary *)parameters
 {
     NSMutableDictionary * parametersDictionary = [NSMutableDictionary dictionary];
@@ -20,6 +25,13 @@
     }
     return parametersDictionary;
 }
+/**
+ *  @brief  根据参数名 取参数值
+ *
+ *  @param parameterKey 参数名的key
+ *
+ *  @return 参数值
+ */
 - (NSString *)valueForParameter:(NSString *)parameterKey
 {
     return [[self parameters] objectForKey:parameterKey];

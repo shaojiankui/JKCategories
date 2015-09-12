@@ -10,11 +10,12 @@
 #import <zlib.h>
 @implementation NSData (Gzip)
 #define SCFW_CHUNK_SIZE 16384
-
 /**
- *  @brief GZIP压缩
+ *  @brief  GZIP压缩
  *
- *  @param level 压缩等级
+ *  @param level 压缩级别
+ *
+ *  @return 压缩后的数据
  */
 - (NSData *)gzippedDataWithCompressionLevel:(float)level
 {
@@ -52,7 +53,9 @@
 }
 
 /**
- *  @brief GZIP压缩, 压缩等级默认-1
+ *  @brief  GZIP压缩 压缩级别
+ *
+ *  @return 压缩后的数据
  */
 - (NSData *)gzippedData
 {
@@ -60,7 +63,9 @@
 }
 
 /**
- *  @brief GZIP解压
+ *  @brief  GZIP解压
+ *
+ *  @return 解压后数据
  */
 - (NSData *)gunzippedData
 {

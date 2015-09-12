@@ -37,6 +37,13 @@
 }
 
 #pragma mark - ceil , round, floor
+/**
+ *  @brief  四舍五入
+ *
+ *  @param digit  限制最大位数
+ *
+ *  @return 结果
+ */
 - (NSNumber*)doRoundWithDigit:(NSUInteger)digit
 {
     NSNumber *result = nil;
@@ -48,6 +55,13 @@
     result = [NSNumber numberWithDouble:[[formatter  stringFromNumber:self] doubleValue]];
     return result;
 }
+/**
+ *  @brief  取上整
+ *
+ *  @param digit  限制最大位数
+ *
+ *  @return 结果
+ */
 - (NSNumber*)doCeilWithDigit:(NSUInteger)digit
 {
     NSNumber *result = nil;
@@ -58,6 +72,13 @@
     result = [NSNumber numberWithDouble:[[formatter  stringFromNumber:self] doubleValue]];
     return result;
 }
+/**
+ *  @brief  取下整
+ *
+ *  @param digit  限制最大位数
+ *
+ *  @return 结果
+ */
 - (NSNumber*)doFloorWithDigit:(NSUInteger)digit
 {
     NSNumber *result = nil;

@@ -182,7 +182,13 @@
 }
 
 
-
+/**
+ *  @brief  反转字符串
+ *
+ *  @param strSrc 被反转字符串
+ *
+ *  @return 反转后字符串
+ */
 + (NSString *)reverseString:(NSString *)strSrc
 {
     NSMutableString* reverseString = [[NSMutableString alloc] init];

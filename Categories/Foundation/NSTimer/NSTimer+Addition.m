@@ -9,6 +9,9 @@
 #import "NSTimer+Addition.h"
 
 @implementation NSTimer (Addition)
+/**
+ *  @brief  暂停NSTimer
+ */
 -(void)pauseTimer
 {
     if (![self isValid]) {
@@ -16,8 +19,9 @@
     }
     [self setFireDate:[NSDate distantFuture]];
 }
-
-
+/**
+ *  @brief  开始NSTimer
+ */
 -(void)resumeTimer
 {
     if (![self isValid]) {
@@ -25,7 +29,9 @@
     }
     [self setFireDate:[NSDate date]];
 }
-
+/**
+ *  @brief  延迟开始NSTimer
+ */
 - (void)resumeTimerAfterTimeInterval:(NSTimeInterval)interval
 {
     if (![self isValid]) {

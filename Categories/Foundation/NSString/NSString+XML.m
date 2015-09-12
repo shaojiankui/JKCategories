@@ -18,7 +18,11 @@
 @end
 
 @implementation NSString (XML)
-
+/**
+ *  @brief  xml字符串转换成NSDictionary
+ *
+ *  @return NSDictionary
+ */
 -(NSDictionary *)dictionaryFromXML
 {
     //TURN THE STRING INTO DATA

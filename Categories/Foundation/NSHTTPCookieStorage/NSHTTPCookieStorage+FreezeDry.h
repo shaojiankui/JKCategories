@@ -21,16 +21,22 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-//Persists UIWebView cookies to disk. To send the cookies with an initial NSURLRequest you must do the following after loading the cookies:
-//NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:yourURL];
-//NSDictionary* headers = [NSHTTPCookie requestHeaderFieldsWithCookies:[[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]];
-//[request setAllHTTPHeaderFields:headers];
-
+/*
+    Persists UIWebView cookies to disk. To send the cookies with an initial NSURLRequest you must do the following after loading the cookies:
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:yourURL];
+    NSDictionary* headers = [NSHTTPCookie requestHeaderFieldsWithCookies:[[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]];
+    [request setAllHTTPHeaderFields:headers];
+*/
 #import <Foundation/Foundation.h>
 
 @interface NSHTTPCookieStorage (FreezeDry)
-
+/**
+ *  @brief 存储 UIWebView cookies到磁盘目录
+ */
 - (void)save;
+/**
+ *  @brief 读取UIWebView cookies从磁盘目录
+ */
 - (void)load;
 
 @end

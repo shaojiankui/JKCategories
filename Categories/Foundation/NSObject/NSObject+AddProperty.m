@@ -16,8 +16,10 @@ static const void *IntegerProperty = &IntegerProperty;
 @implementation NSObject (AddProperty)
 
 @dynamic stringProperty;
-
 //set
+/**
+ *  @brief  catgory runtime实现get set方法增加一个字符串属性
+ */
 -(void)setStringProperty:(NSString *)stringProperty{
     //use that a static const as the key
     objc_setAssociatedObject(self, StringProperty, stringProperty, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -28,7 +30,11 @@ static const void *IntegerProperty = &IntegerProperty;
 -(NSString *)stringProperty{
     return objc_getAssociatedObject(self, StringProperty);
 }
+
 //set
+/**
+ *  @brief  catgory runtime实现get set方法增加一个NSInteger属性
+ */
 -(void)setIntegerProperty:(NSInteger)integerProperty{
     NSNumber *number = [[NSNumber alloc]initWithInteger:integerProperty];
     objc_setAssociatedObject(self, IntegerProperty, number, OBJC_ASSOCIATION_ASSIGN);
