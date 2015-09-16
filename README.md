@@ -24,6 +24,7 @@ iOS中的各种Objective-C Category, a collection of useful Objective-C Categori
 * NSHTTPCookieStorage
 * NSFileHandle
 * NSRunLoop
+* NSURLRequest
 
 ## UIKit
 * UIAlertView
