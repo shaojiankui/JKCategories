@@ -300,6 +300,10 @@
 		A2C1ADCE1A58F35400E3BAFF /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1ADCD1A58F35400E3BAFF /* UIImage+Orientation.m */; };
 		A2CFAEF51A56BD050004A282 /* NSString+Score.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF41A56BD050004A282 /* NSString+Score.m */; };
 		A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF71A56D15C0004A282 /* UIColor+Modify.m */; };
+		A2E305651BA927E10006BE4E /* NSURLRequest+ParamsFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E305641BA927E10006BE4E /* NSURLRequest+ParamsFromDictionary.m */; };
+		A2E305681BA929700006BE4E /* NSMutableURLRequest+Upload.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E305671BA929700006BE4E /* NSMutableURLRequest+Upload.m */; };
+		A2E3056D1BA92A110006BE4E /* NSURLRequestDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E3056B1BA92A110006BE4E /* NSURLRequestDemoViewController.m */; };
+		A2E3056E1BA92A110006BE4E /* NSURLRequestDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E3056C1BA92A110006BE4E /* NSURLRequestDemoViewController.xib */; };
 		A2E538EC1A775A9900A5D921 /* UIImage+RemoteSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E538EB1A775A9900A5D921 /* UIImage+RemoteSize.m */; };
 		A2EA48F21B34FBB400A4B66F /* CALayer+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EA48F11B34FBB400A4B66F /* CALayer+UIColor.m */; };
 		A2EC52E71A8769D40059D53B /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC52E61A8769D40059D53B /* NSArray+SafeAccess.m */; };
@@ -878,6 +882,13 @@
 		A2CFAEF41A56BD050004A282 /* NSString+Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Score.m"; sourceTree = "<group>"; };
 		A2CFAEF61A56D15C0004A282 /* UIColor+Modify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Modify.h"; sourceTree = "<group>"; };
 		A2CFAEF71A56D15C0004A282 /* UIColor+Modify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Modify.m"; sourceTree = "<group>"; };
+		A2E305631BA927E10006BE4E /* NSURLRequest+ParamsFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+ParamsFromDictionary.h"; sourceTree = "<group>"; };
+		A2E305641BA927E10006BE4E /* NSURLRequest+ParamsFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+ParamsFromDictionary.m"; sourceTree = "<group>"; };
+		A2E305661BA929700006BE4E /* NSMutableURLRequest+Upload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Upload.h"; sourceTree = "<group>"; };
+		A2E305671BA929700006BE4E /* NSMutableURLRequest+Upload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Upload.m"; sourceTree = "<group>"; };
+		A2E3056A1BA92A110006BE4E /* NSURLRequestDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLRequestDemoViewController.h; sourceTree = "<group>"; };
+		A2E3056B1BA92A110006BE4E /* NSURLRequestDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLRequestDemoViewController.m; sourceTree = "<group>"; };
+		A2E3056C1BA92A110006BE4E /* NSURLRequestDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLRequestDemoViewController.xib; sourceTree = "<group>"; };
 		A2E538EA1A775A9900A5D921 /* UIImage+RemoteSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RemoteSize.h"; sourceTree = "<group>"; };
 		A2E538EB1A775A9900A5D921 /* UIImage+RemoteSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RemoteSize.m"; sourceTree = "<group>"; };
 		A2EA48F01B34FBB400A4B66F /* CALayer+UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+UIColor.h"; sourceTree = "<group>"; };
@@ -1337,6 +1348,7 @@
 		A22725F11A3E736D0061605B /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A2E305621BA927C20006BE4E /* NSURLRequest */,
 				A24EC2DE1B74D67F00CE538B /* NSRunLoop */,
 				A20A5A641B4E27C6004E2474 /* NSFileHandle */,
 				A21CF17B1B38F610006415E0 /* NSHTTPCookieStorage */,
@@ -1531,6 +1543,7 @@
 		A281FB4D1AC8101F009040DA /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A2E305691BA929FF0006BE4E /* NSURLRequest */,
 				A24EC2DF1B74D68F00CE538B /* NSRunLoop */,
 				A20A5A681B4E287B004E2474 /* NSFileHandle */,
 				A21CF17C1B38F61F006415E0 /* NSHTTPCookieStorage */,
@@ -2504,6 +2517,27 @@
 			path = UIPopoverController;
 			sourceTree = "<group>";
 		};
+		A2E305621BA927C20006BE4E /* NSURLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				A2E305631BA927E10006BE4E /* NSURLRequest+ParamsFromDictionary.h */,
+				A2E305641BA927E10006BE4E /* NSURLRequest+ParamsFromDictionary.m */,
+				A2E305661BA929700006BE4E /* NSMutableURLRequest+Upload.h */,
+				A2E305671BA929700006BE4E /* NSMutableURLRequest+Upload.m */,
+			);
+			path = NSURLRequest;
+			sourceTree = "<group>";
+		};
+		A2E305691BA929FF0006BE4E /* NSURLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3056A1BA92A110006BE4E /* NSURLRequestDemoViewController.h */,
+				A2E3056B1BA92A110006BE4E /* NSURLRequestDemoViewController.m */,
+				A2E3056C1BA92A110006BE4E /* NSURLRequestDemoViewController.xib */,
+			);
+			path = NSURLRequest;
+			sourceTree = "<group>";
+		};
 		A2EA48EE1B34FBB400A4B66F /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -2799,6 +2833,7 @@
 				A281FC091AC813DF009040DA /* UIWebViewDemoViewController.xib in Resources */,
 				A202D9E51B10400100EAB199 /* RootViewController.xib in Resources */,
 				A281FBCC1AC8130E009040DA /* UIDeviceDemoViewController.xib in Resources */,
+				A2E3056E1BA92A110006BE4E /* NSURLRequestDemoViewController.xib in Resources */,
 				A281FBF51AC813AA009040DA /* UITextFieldDemoViewController.xib in Resources */,
 				A281FBAE1AC812A8009040DA /* NSStringDemoViewController.xib in Resources */,
 				A24EC2E41B74D69E00CE538B /* NSRunLoopDemoViewController.xib in Resources */,
@@ -2902,6 +2937,7 @@
 				A2958D391B35A08000D7AA0F /* UIImage+Vector.m in Sources */,
 				A281FBDA1AC8133D009040DA /* UILableDemoViewController.m in Sources */,
 				A218D8E01A47A25100AB83CA /* UIWebView+JS.m in Sources */,
+				A2E305681BA929700006BE4E /* NSMutableURLRequest+Upload.m in Sources */,
 				A28BE3521A3EA91B005C4AC6 /* NSArray+Block.m in Sources */,
 				A2958CEB1B35834D00D7AA0F /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				A2C12BA81B1C284F00EAD198 /* UITextField+Select.m in Sources */,
@@ -3029,6 +3065,7 @@
 				A24EC2E31B74D69E00CE538B /* NSRunLoopDemoViewController.m in Sources */,
 				A284C0FE1AEB908100D90ED5 /* UIBezierPath+BasicShapes.m in Sources */,
 				A29EC2681B527A19008ABB42 /* UIPopoverController+iPhone.m in Sources */,
+				A2E305651BA927E10006BE4E /* NSURLRequest+ParamsFromDictionary.m in Sources */,
 				A21CF1801B38F631006415E0 /* NSHTTPCookieStorageDemoViewController.m in Sources */,
 				A28BE38E1A3ED5A4005C4AC6 /* UITextField+Blocks.m in Sources */,
 				A20A5A671B4E27EA004E2474 /* NSFileHandle+readLine.m in Sources */,
@@ -3054,6 +3091,7 @@
 				A202D9B81B1033AC00EAB199 /* UIApplication+KeyboardFrame.m in Sources */,
 				A202D9A71B102D7800EAB199 /* NSNumberDemoViewController.m in Sources */,
 				A292BDCD1B03422D002DAB71 /* NSString+RemoveEmoji.m in Sources */,
+				A2E3056D1BA92A110006BE4E /* NSURLRequestDemoViewController.m in Sources */,
 				A202D99A1B0F916900EAB199 /* UIControlDemoViewController.m in Sources */,
 				7926E6931B736E8200888EB9 /* UIViewController+BackButtonItemTitle.m in Sources */,
 				A2FD5B4B1A52687000555EA2 /* NSException+Trace.m in Sources */,

@@ -69,7 +69,8 @@
                         @"NSNotificationCenter",
                         @"NSHTTPCookieStorage",
                         @"NSFileHandle",
-                        @"NSRunLoop"
+                        @"NSRunLoop",
+                        @"NSURLRequest"
                         ],
             
     @"CoreLocation":@[@"CALayer",
