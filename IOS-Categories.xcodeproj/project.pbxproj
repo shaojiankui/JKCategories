@@ -353,6 +353,7 @@
 		BCB79A081AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BCB79A0C1AFDF23500C12525 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */; };
 		BCB9547D1B0D829800E6BA78 /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB9547C1B0D829800E6BA78 /* NSData+SDDataCache.m */; };
+		C7A8107F1BBA876B00865FFB /* NSObject+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A8107D1BBA876B00865FFB /* NSObject+AppInfo.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -978,6 +979,8 @@
 		BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
 		BCB9547B1B0D829800E6BA78 /* NSData+SDDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SDDataCache.h"; sourceTree = "<group>"; };
 		BCB9547C1B0D829800E6BA78 /* NSData+SDDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SDDataCache.m"; sourceTree = "<group>"; };
+		C7A8107D1BBA876B00865FFB /* NSObject+AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AppInfo.m"; sourceTree = "<group>"; };
+		C7A8107E1BBA876B00865FFB /* NSObject+AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AppInfo.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2065,6 +2068,8 @@
 		A28BE2D81A3E9F48005C4AC6 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				C7A8107E1BBA876B00865FFB /* NSObject+AppInfo.h */,
+				C7A8107D1BBA876B00865FFB /* NSObject+AppInfo.m */,
 				A28BE3531A3EAA21005C4AC6 /* NSObject+Blocks.h */,
 				A28BE3541A3EAA21005C4AC6 /* NSObject+Blocks.m */,
 				A28BE2D91A3E9F48005C4AC6 /* NSObject+AssociatedObject.h */,
@@ -2962,6 +2967,7 @@
 				A28BE35C1A3EAA97005C4AC6 /* NSTimer+Blocks.m in Sources */,
 				A2B995CA1B46778500011613 /* UIButton+TouchAreaInsets.m in Sources */,
 				A24EC2F81B74DF3000CE538B /* NSMutableString+Ruby.m in Sources */,
+				C7A8107F1BBA876B00865FFB /* NSObject+AppInfo.m in Sources */,
 				A2FD5B521A5269D400555EA2 /* NSObject+Runtime.m in Sources */,
 				A2958CC11B357E2E00D7AA0F /* CAAnimation+Blocks.m in Sources */,
 				A281FBEA1AC81392009040DA /* UISearchBarDemoViewController.m in Sources */,
