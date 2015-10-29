@@ -74,6 +74,9 @@
 		A21F34D61B0F28A600D73A91 /* UILabel+AutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34D51B0F28A600D73A91 /* UILabel+AutoSize.m */; };
 		A21F34D91B0F291600D73A91 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34D81B0F291600D73A91 /* UIImage+PDF.m */; };
 		A21F34DC1B0F302E00D73A91 /* UILabel+AutomaticWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34DB1B0F302E00D73A91 /* UILabel+AutomaticWriting.m */; };
+		A22845251BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.m in Sources */ = {isa = PBXBuildFile; fileRef = A22845241BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.m */; settings = {ASSET_TAGS = (); }; };
+		A22845281BE2095B000AD2F6 /* NSNumber+CGFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = A22845271BE2095B000AD2F6 /* NSNumber+CGFloat.m */; settings = {ASSET_TAGS = (); }; };
+		A228452E1BE20A24000AD2F6 /* NSNumber+RomanNumerals.m in Sources */ = {isa = PBXBuildFile; fileRef = A228452D1BE20A24000AD2F6 /* NSNumber+RomanNumerals.m */; settings = {ASSET_TAGS = (); }; };
 		A232AC161B38EC9F00A149D3 /* UIView+Recursion.m in Sources */ = {isa = PBXBuildFile; fileRef = A232AC151B38EC9F00A149D3 /* UIView+Recursion.m */; };
 		A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A238E0571A4555F400383A97 /* NSObject+Property.m */; };
 		A23C10861B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m in Sources */ = {isa = PBXBuildFile; fileRef = A23C10851B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m */; };
@@ -477,6 +480,12 @@
 		A21F34DA1B0F302E00D73A91 /* UILabel+AutomaticWriting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutomaticWriting.h"; sourceTree = "<group>"; };
 		A21F34DB1B0F302E00D73A91 /* UILabel+AutomaticWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutomaticWriting.m"; sourceTree = "<group>"; };
 		A22725CE1A3E72D50061605B /* IOS-Categories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Categories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22845231BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+CalculatingByString.h"; sourceTree = "<group>"; };
+		A22845241BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+CalculatingByString.m"; sourceTree = "<group>"; };
+		A22845261BE2095B000AD2F6 /* NSNumber+CGFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+CGFloat.h"; sourceTree = "<group>"; };
+		A22845271BE2095B000AD2F6 /* NSNumber+CGFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+CGFloat.m"; sourceTree = "<group>"; };
+		A228452C1BE20A24000AD2F6 /* NSNumber+RomanNumerals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+RomanNumerals.h"; sourceTree = "<group>"; };
+		A228452D1BE20A24000AD2F6 /* NSNumber+RomanNumerals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+RomanNumerals.m"; sourceTree = "<group>"; };
 		A232AC141B38EC9F00A149D3 /* UIView+Recursion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Recursion.h"; sourceTree = "<group>"; };
 		A232AC151B38EC9F00A149D3 /* UIView+Recursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Recursion.m"; sourceTree = "<group>"; };
 		A238E0561A4555F400383A97 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
@@ -1128,10 +1137,16 @@
 		A202D99F1B102A3B00EAB199 /* NSNumber */ = {
 			isa = PBXGroup;
 			children = (
+				A22845231BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.h */,
+				A22845241BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.m */,
 				A2EF56E51B21C5F60005F730 /* NSDecimalNumber+Extensions.h */,
 				A2EF56E61B21C5F60005F730 /* NSDecimalNumber+Extensions.m */,
 				A202D9A01B102A4F00EAB199 /* NSNumber+Round.h */,
 				A202D9A11B102A4F00EAB199 /* NSNumber+Round.m */,
+				A22845261BE2095B000AD2F6 /* NSNumber+CGFloat.h */,
+				A22845271BE2095B000AD2F6 /* NSNumber+CGFloat.m */,
+				A228452C1BE20A24000AD2F6 /* NSNumber+RomanNumerals.h */,
+				A228452D1BE20A24000AD2F6 /* NSNumber+RomanNumerals.m */,
 			);
 			path = NSNumber;
 			sourceTree = "<group>";
@@ -2993,6 +3008,7 @@
 				A2EC52E71A8769D40059D53B /* NSArray+SafeAccess.m in Sources */,
 				A24EC30A1B74E43600CE538B /* RootViewController.m in Sources */,
 				A2EF56BF1B21C3050005F730 /* NSManagedObjectContext+FetchRequestsConstructors.m in Sources */,
+				A228452E1BE20A24000AD2F6 /* NSNumber+RomanNumerals.m in Sources */,
 				A2E538EC1A775A9900A5D921 /* UIImage+RemoteSize.m in Sources */,
 				A202D9801B0F7CD100EAB199 /* CLLocationDemoViewController.m in Sources */,
 				A28BE3321A3E9FDC005C4AC6 /* UILabel+ESAdjustableLabel.m in Sources */,
@@ -3094,6 +3110,7 @@
 				A281FB9E1AC8126F009040DA /* NSFileManagerDemoViewController.m in Sources */,
 				A281FB3F1AC80001009040DA /* NSString+Emoji.m in Sources */,
 				A2EF56C01B21C3050005F730 /* NSManagedObjectContext+ObjectClear.m in Sources */,
+				A22845281BE2095B000AD2F6 /* NSNumber+CGFloat.m in Sources */,
 				A202D9B81B1033AC00EAB199 /* UIApplication+KeyboardFrame.m in Sources */,
 				A202D9A71B102D7800EAB199 /* NSNumberDemoViewController.m in Sources */,
 				A292BDCD1B03422D002DAB71 /* NSString+RemoveEmoji.m in Sources */,
@@ -3152,6 +3169,7 @@
 				A280E5321A523AD700E6ACA2 /* UIView+BlockGesture.m in Sources */,
 				A2FD5B591A526C6800555EA2 /* UISearchBar+Blocks.m in Sources */,
 				A28BE3351A3E9FDC005C4AC6 /* UINavigationController+KeyboardFix.m in Sources */,
+				A22845251BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.m in Sources */,
 				A2958D2D1B359BE400D7AA0F /* NSString+Pinyin.m in Sources */,
 				A2958CFD1B358EA400D7AA0F /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				A2958CDE1B35826C00D7AA0F /* CAShapeLayerDemoViewController.m in Sources */,
