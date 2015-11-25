@@ -74,9 +74,9 @@
 		A21F34D61B0F28A600D73A91 /* UILabel+AutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34D51B0F28A600D73A91 /* UILabel+AutoSize.m */; };
 		A21F34D91B0F291600D73A91 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34D81B0F291600D73A91 /* UIImage+PDF.m */; };
 		A21F34DC1B0F302E00D73A91 /* UILabel+AutomaticWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34DB1B0F302E00D73A91 /* UILabel+AutomaticWriting.m */; };
-		A22845251BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.m in Sources */ = {isa = PBXBuildFile; fileRef = A22845241BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.m */; settings = {ASSET_TAGS = (); }; };
-		A22845281BE2095B000AD2F6 /* NSNumber+CGFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = A22845271BE2095B000AD2F6 /* NSNumber+CGFloat.m */; settings = {ASSET_TAGS = (); }; };
-		A228452E1BE20A24000AD2F6 /* NSNumber+RomanNumerals.m in Sources */ = {isa = PBXBuildFile; fileRef = A228452D1BE20A24000AD2F6 /* NSNumber+RomanNumerals.m */; settings = {ASSET_TAGS = (); }; };
+		A22845251BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.m in Sources */ = {isa = PBXBuildFile; fileRef = A22845241BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.m */; };
+		A22845281BE2095B000AD2F6 /* NSNumber+CGFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = A22845271BE2095B000AD2F6 /* NSNumber+CGFloat.m */; };
+		A228452E1BE20A24000AD2F6 /* NSNumber+RomanNumerals.m in Sources */ = {isa = PBXBuildFile; fileRef = A228452D1BE20A24000AD2F6 /* NSNumber+RomanNumerals.m */; };
 		A232AC161B38EC9F00A149D3 /* UIView+Recursion.m in Sources */ = {isa = PBXBuildFile; fileRef = A232AC151B38EC9F00A149D3 /* UIView+Recursion.m */; };
 		A238E0581A4555F400383A97 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = A238E0571A4555F400383A97 /* NSObject+Property.m */; };
 		A23C10861B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m in Sources */ = {isa = PBXBuildFile; fileRef = A23C10851B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m */; };
@@ -353,10 +353,10 @@
 		BCB799FF1AFDE08E00C12525 /* UIViewController+TopBarMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799FE1AFDE08E00C12525 /* UIViewController+TopBarMessage.m */; };
 		BCB79A021AFDE0B600C12525 /* NSObject+MKBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A011AFDE0B600C12525 /* NSObject+MKBlockTimer.m */; };
 		BCB79A051AFDE19200C12525 /* NSString+Contains.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A041AFDE19200C12525 /* NSString+Contains.m */; };
-		BCB79A081AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BCB79A081AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A071AFDE2F700C12525 /* UIViewController+DDPopUpViewController.m */; };
 		BCB79A0C1AFDF23500C12525 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A0B1AFDF23500C12525 /* UIAlertView+Block.m */; };
 		BCB9547D1B0D829800E6BA78 /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB9547C1B0D829800E6BA78 /* NSData+SDDataCache.m */; };
-		C7A8107F1BBA876B00865FFB /* NSObject+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A8107D1BBA876B00865FFB /* NSObject+AppInfo.m */; settings = {ASSET_TAGS = (); }; };
+		C7A8107F1BBA876B00865FFB /* NSObject+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A8107D1BBA876B00865FFB /* NSObject+AppInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
