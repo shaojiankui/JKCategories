@@ -82,6 +82,13 @@
 		A23C10861B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m in Sources */ = {isa = PBXBuildFile; fileRef = A23C10851B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m */; };
 		A24377231ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */; };
 		A24377301ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */; };
+		A24868781C1FB05B00D3318A /* UIWebView+TS_JavaScriptContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A24868771C1FB05B00D3318A /* UIWebView+TS_JavaScriptContext.m */; };
+		A248687B1C1FB08D00D3318A /* UITableViewCell+TS_delaysContentTouches.m in Sources */ = {isa = PBXBuildFile; fileRef = A248687A1C1FB08D00D3318A /* UITableViewCell+TS_delaysContentTouches.m */; };
+		A248687E1C1FB10700D3318A /* UIView+FDCollapsibleConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = A248687D1C1FB10700D3318A /* UIView+FDCollapsibleConstraints.m */; };
+		A24868881C1FB19600D3318A /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A24868811C1FB19600D3318A /* UITableView+FDIndexPathHeightCache.m */; };
+		A24868891C1FB19600D3318A /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A24868831C1FB19600D3318A /* UITableView+FDKeyedHeightCache.m */; };
+		A248688A1C1FB19600D3318A /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A24868851C1FB19600D3318A /* UITableView+FDTemplateLayoutCell.m */; };
+		A248688B1C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A24868871C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		A24EC2DD1B74D49F00CE538B /* NSDictionary+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EC2DC1B74D49F00CE538B /* NSDictionary+URL.m */; };
 		A24EC2E31B74D69E00CE538B /* NSRunLoopDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EC2E11B74D69E00CE538B /* NSRunLoopDemoViewController.m */; };
 		A24EC2E41B74D69E00CE538B /* NSRunLoopDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A24EC2E21B74D69E00CE538B /* NSRunLoopDemoViewController.xib */; };
@@ -174,7 +181,6 @@
 		A281FC171AC81427009040DA /* NSUserDefaultsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A281FC151AC81427009040DA /* NSUserDefaultsDemoViewController.m */; };
 		A281FC181AC81427009040DA /* NSUserDefaultsDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A281FC161AC81427009040DA /* NSUserDefaultsDemoViewController.xib */; };
 		A284C0FE1AEB908100D90ED5 /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = A284C0FD1AEB908100D90ED5 /* UIBezierPath+BasicShapes.m */; };
-		A284C1021AEB941800D90ED5 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A284C1011AEB941800D90ED5 /* UITableView+FDTemplateLayoutCell.m */; };
 		A284C1071AEB944B00D90ED5 /* UITableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A284C1051AEB944B00D90ED5 /* UITableViewDemoViewController.m */; };
 		A284C1081AEB944B00D90ED5 /* UITableViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A284C1061AEB944B00D90ED5 /* UITableViewDemoViewController.xib */; };
 		A284C10B1AEBBB8600D90ED5 /* UIBezierPath+Symbol.m in Sources */ = {isa = PBXBuildFile; fileRef = A284C10A1AEBBB8600D90ED5 /* UIBezierPath+Symbol.m */; };
@@ -496,6 +502,20 @@
 		A24377221ACBE9CF00FFFEA1 /* NSObject+AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoCoding.m"; sourceTree = "<group>"; };
 		A243772E1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
 		A243772F1ACBF2A600FFFEA1 /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
+		A24868761C1FB05B00D3318A /* UIWebView+TS_JavaScriptContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+TS_JavaScriptContext.h"; sourceTree = "<group>"; };
+		A24868771C1FB05B00D3318A /* UIWebView+TS_JavaScriptContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+TS_JavaScriptContext.m"; sourceTree = "<group>"; };
+		A24868791C1FB08D00D3318A /* UITableViewCell+TS_delaysContentTouches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+TS_delaysContentTouches.h"; sourceTree = "<group>"; };
+		A248687A1C1FB08D00D3318A /* UITableViewCell+TS_delaysContentTouches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+TS_delaysContentTouches.m"; sourceTree = "<group>"; };
+		A248687C1C1FB10700D3318A /* UIView+FDCollapsibleConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FDCollapsibleConstraints.h"; sourceTree = "<group>"; };
+		A248687D1C1FB10700D3318A /* UIView+FDCollapsibleConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FDCollapsibleConstraints.m"; sourceTree = "<group>"; };
+		A24868801C1FB19600D3318A /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		A24868811C1FB19600D3318A /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		A24868821C1FB19600D3318A /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		A24868831C1FB19600D3318A /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		A24868841C1FB19600D3318A /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		A24868851C1FB19600D3318A /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		A24868861C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		A24868871C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		A24EC2DB1B74D49F00CE538B /* NSDictionary+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URL.h"; sourceTree = "<group>"; };
 		A24EC2DC1B74D49F00CE538B /* NSDictionary+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+URL.m"; sourceTree = "<group>"; };
 		A24EC2E01B74D69E00CE538B /* NSRunLoopDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRunLoopDemoViewController.h; sourceTree = "<group>"; };
@@ -647,8 +667,6 @@
 		A281FC161AC81427009040DA /* NSUserDefaultsDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsDemoViewController.xib; sourceTree = "<group>"; };
 		A284C0FC1AEB908100D90ED5 /* UIBezierPath+BasicShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+BasicShapes.h"; sourceTree = "<group>"; };
 		A284C0FD1AEB908100D90ED5 /* UIBezierPath+BasicShapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+BasicShapes.m"; sourceTree = "<group>"; };
-		A284C1001AEB941800D90ED5 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		A284C1011AEB941800D90ED5 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
 		A284C1041AEB944B00D90ED5 /* UITableViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewDemoViewController.h; sourceTree = "<group>"; };
 		A284C1051AEB944B00D90ED5 /* UITableViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewDemoViewController.m; sourceTree = "<group>"; };
 		A284C1061AEB944B00D90ED5 /* UITableViewDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITableViewDemoViewController.xib; sourceTree = "<group>"; };
@@ -1427,6 +1445,21 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		A248687F1C1FB18D00D3318A /* UITableView-FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				A24868801C1FB19600D3318A /* UITableView+FDIndexPathHeightCache.h */,
+				A24868811C1FB19600D3318A /* UITableView+FDIndexPathHeightCache.m */,
+				A24868821C1FB19600D3318A /* UITableView+FDKeyedHeightCache.h */,
+				A24868831C1FB19600D3318A /* UITableView+FDKeyedHeightCache.m */,
+				A24868841C1FB19600D3318A /* UITableView+FDTemplateLayoutCell.h */,
+				A24868851C1FB19600D3318A /* UITableView+FDTemplateLayoutCell.m */,
+				A24868861C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.h */,
+				A24868871C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.m */,
+			);
+			path = "UITableView-FDTemplateLayoutCell";
+			sourceTree = "<group>";
+		};
 		A24EC2DE1B74D67F00CE538B /* NSRunLoop */ = {
 			isa = PBXGroup;
 			children = (
@@ -1934,10 +1967,9 @@
 		A284C0FF1AEB940F00D90ED5 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				A248687F1C1FB18D00D3318A /* UITableView-FDTemplateLayoutCell */,
 				A2C12BA01B1C282C00EAD198 /* UITableView+iOS7Style.h */,
 				A2C12BA11B1C282C00EAD198 /* UITableView+iOS7Style.m */,
-				A284C1001AEB941800D90ED5 /* UITableView+FDTemplateLayoutCell.h */,
-				A284C1011AEB941800D90ED5 /* UITableView+FDTemplateLayoutCell.m */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -2265,6 +2297,8 @@
 		A28BE3111A3E9FDC005C4AC6 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				A24868791C1FB08D00D3318A /* UITableViewCell+TS_delaysContentTouches.h */,
+				A248687A1C1FB08D00D3318A /* UITableViewCell+TS_delaysContentTouches.m */,
 				A28BE3121A3E9FDC005C4AC6 /* UITableViewCell+NIB.h */,
 				A28BE3131A3E9FDC005C4AC6 /* UITableViewCell+NIB.m */,
 			);
@@ -2306,6 +2340,8 @@
 				A2958D141B35961600D7AA0F /* UIView+draggable.m */,
 				A232AC141B38EC9F00A149D3 /* UIView+Recursion.h */,
 				A232AC151B38EC9F00A149D3 /* UIView+Recursion.m */,
+				A248687C1C1FB10700D3318A /* UIView+FDCollapsibleConstraints.h */,
+				A248687D1C1FB10700D3318A /* UIView+FDCollapsibleConstraints.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -2342,6 +2378,8 @@
 		A28BE3221A3E9FDC005C4AC6 /* UIWebView */ = {
 			isa = PBXGroup;
 			children = (
+				A24868761C1FB05B00D3318A /* UIWebView+TS_JavaScriptContext.h */,
+				A24868771C1FB05B00D3318A /* UIWebView+TS_JavaScriptContext.m */,
 				A2958D3D1B35A41F00D7AA0F /* UIWebView+MetaParser.h */,
 				A2958D3E1B35A41F00D7AA0F /* UIWebView+MetaParser.m */,
 				A2958D3A1B35A2E900D7AA0F /* UIWebVIew+SwipeGesture.h */,
@@ -2965,6 +3003,7 @@
 				A28BE33B1A3E9FDC005C4AC6 /* UIView+RecursiveDescription.m in Sources */,
 				A2958D241B359A3B00D7AA0F /* UIImageView+BetterFace.m in Sources */,
 				A202D9651B0F6DF900EAB199 /* NSString+MIME.m in Sources */,
+				A248687E1C1FB10700D3318A /* UIView+FDCollapsibleConstraints.m in Sources */,
 				A281FBA31AC8127E009040DA /* NSObjectDemoViewController.m in Sources */,
 				A28BE3781A3EC1C6005C4AC6 /* NSObject+AddProperty.m in Sources */,
 				A21F34D21B0F249D00D73A91 /* UIAlertViewDemoViewController.m in Sources */,
@@ -3047,6 +3086,7 @@
 				A2958CC81B35804600D7AA0F /* CAShapeLayer+UIBezierPath.m in Sources */,
 				A2958D331B359CA900D7AA0F /* UIImageView+Reflect.m in Sources */,
 				A2958D1E1B3597F500D7AA0F /* UITextView+PinchZoom.m in Sources */,
+				A24868781C1FB05B00D3318A /* UIWebView+TS_JavaScriptContext.m in Sources */,
 				A28BE2F01A3E9F48005C4AC6 /* NSString+UrlEncode.m in Sources */,
 				A28BE3331A3E9FDC005C4AC6 /* UILabel+SuggestSize.m in Sources */,
 				A2EC52EA1A876E7C0059D53B /* NSString+Base64.m in Sources */,
@@ -3081,6 +3121,7 @@
 				A2C12B9F1B1C281200EAD198 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				A2EF56EA1B21CD620005F730 /* UIView+Shake.m in Sources */,
 				A29266521A78976B00D01EDA /* UIResponder+UIAdapt.m in Sources */,
+				A248687B1C1FB08D00D3318A /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
 				A28BE3551A3EAA21005C4AC6 /* NSObject+Blocks.m in Sources */,
 				A2C12BA21B1C282C00EAD198 /* UITableView+iOS7Style.m in Sources */,
 				A2681A441A75C7C8009BA7EE /* NSString+Encrypt.m in Sources */,
@@ -3140,13 +3181,14 @@
 				A281FBC61AC81303009040DA /* UIColorDemoViewController.m in Sources */,
 				A21CF1841B38F65C006415E0 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
 				A280E53D1A52433200E6ACA2 /* NSData+Gzip.m in Sources */,
-				A284C1021AEB941800D90ED5 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				A28BE3301A3E9FDC005C4AC6 /* UIImage+RoundedCorner.m in Sources */,
 				A21F34CD1B0F248D00D73A91 /* UINavigationItemDemoViewController.m in Sources */,
 				A2FD5B351A52599C00555EA2 /* UIScrollView+Pages.m in Sources */,
 				A2EF56F31B21D1270005F730 /* NSNotificationCenterDemoViewController.m in Sources */,
 				A281FB941AC8123F009040DA /* NSDictionaryDemoViewController.m in Sources */,
+				A248688B1C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				A2EF56EE1B21D0980005F730 /* NSNotificationCenter+MainThread.m in Sources */,
+				A24868891C1FB19600D3318A /* UITableView+FDKeyedHeightCache.m in Sources */,
 				A202D9BB1B1035DC00EAB199 /* UIControl+ActionBlocks.m in Sources */,
 				A202D9CA1B103B4600EAB199 /* CLLocationManagerDemoViewController.m in Sources */,
 				A28BE3721A3EB31D005C4AC6 /* UIImageView+Addition.m in Sources */,
@@ -3175,6 +3217,7 @@
 				A2958CDE1B35826C00D7AA0F /* CAShapeLayerDemoViewController.m in Sources */,
 				A284C1491AEBCFB000D90ED5 /* NSIndexPathDemoViewController.m in Sources */,
 				A202D9A21B102A4F00EAB199 /* NSNumber+Round.m in Sources */,
+				A248688A1C1FB19600D3318A /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				A202D98C1B0F7D7900EAB199 /* MKMapViewDemoViewController.m in Sources */,
 				7982561A1B3A59060033A0C1 /* NSString+RegexCategory.m in Sources */,
 				A2958CF01B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.m in Sources */,
@@ -3192,6 +3235,7 @@
 				A28BE33E1A3E9FDC005C4AC6 /* UIWebView+Blocks.m in Sources */,
 				A2EF56C61B21C3370005F730 /* NSManagedObjectContextDemoViewController.m in Sources */,
 				A2893D941AC3D42400EFA90A /* UIButton+CountDown.m in Sources */,
+				A24868881C1FB19600D3318A /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				A23C10861B3D39AD00FA34AA /* UIViewController+BackButtonTouched.m in Sources */,
 				A232AC161B38EC9F00A149D3 /* UIView+Recursion.m in Sources */,
 				A28BE33C1A3E9FDC005C4AC6 /* UIViewController+RecursiveDescription.m in Sources */,
