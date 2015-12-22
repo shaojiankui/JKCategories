@@ -25,7 +25,10 @@
 #if __MAC_OS_X_VERSION_MIN_REQUIRED < __MAC_10_9 || __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
     if (![NSData instancesRespondToSelector:@selector(initWithBase64EncodedString:options:)])
     {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         decoded = [[self alloc] initWithBase64Encoding:[string stringByReplacingOccurrencesOfString:@"[^A-Za-z0-9+/=]" withString:@"" options:NSRegularExpressionSearch range:NSMakeRange(0, [string length])]];
+#pragma clang diagnostic pop
     }
     else
 #endif
@@ -48,7 +51,11 @@
 #if __MAC_OS_X_VERSION_MIN_REQUIRED < __MAC_10_9 || __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
     if (![NSData instancesRespondToSelector:@selector(base64EncodedStringWithOptions:)])
     {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         encoded = [self base64Encoding];
+#pragma clang diagnostic pop
+
     }
     else
 #endif

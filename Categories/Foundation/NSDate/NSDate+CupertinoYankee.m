@@ -54,7 +54,7 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setWeek:1];
+    [components setWeekOfMonth:1];
     
     return [[calendar dateByAddingComponents:components toDate:[self beginningOfWeek] options:0] dateByAddingTimeInterval:-1];}
 

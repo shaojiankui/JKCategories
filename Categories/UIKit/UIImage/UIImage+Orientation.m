@@ -81,11 +81,8 @@
 
 - (UIImage *)flip:(BOOL)isHorizontal {
     CGRect rect = CGRectMake(0, 0, self.size.width, self.size.height);
-    if (UIGraphicsBeginImageContextWithOptions != NULL) {
-        UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    } else {
-        UIGraphicsBeginImageContext(rect.size);
-    }
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextClipToRect(ctx, rect);
     if (isHorizontal) {

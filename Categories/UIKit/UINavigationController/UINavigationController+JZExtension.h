@@ -19,14 +19,14 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
-
+//"UINavigationController+JZExtension"分类为UINavigationController集成了许多方便的功能点，同时为它打开了一些隐藏功能。
 #import <UIKit/UIKit.h>
 
 /// The "UINavigationController+JZExtension" category integrates some convenient functions and open some hide property
 /// for UINavigationController, such as gives your UINavigationController a fullscreen interactivePopGestureRecognizer,
 /// all you need is enable/disable "fullScreenInteractivePopGestureRecognizer" property for each ViewController.
-/// If you have some ViewController which doesn't wants a navigation bar, you can set the "hidesNavigationBarWhenPushed"
-/// property to YES.
+/// If you have some ViewController which doesn't wants a navigation bar, you can set the "wantsNavigationBarVisible"
+/// property to NO.
 /// You can also adjust your navigationBar or toolbar's background alpha.
 @interface UINavigationController (JZExtension)
 
@@ -51,14 +51,15 @@
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated completion:(void (^)(BOOL finished))completion;
 - (NSArray *)popToRootViewControllerAnimated:(BOOL)animated completion:(void (^)(BOOL finished))completion;
 - (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated completion:(void (^)(BOOL finished))completion;
-
+- (void)setInteractivePopGestureRecognizerCompletion:(void (^)(BOOL finished))completion;
 @end
 
 @interface UIViewController (JZExtension)
+// Worked on each view controller's push or pop, If NO, then when this view controller wants push/pop into a controller hierarchy, the specify bar will slide out.
+@property (nonatomic, assign) IBInspectable BOOL wantsNavigationBarVisible; //  Default is YES.
 
-@property(nonatomic, assign) BOOL hidesNavigationBarWhenPushed; // If YES, then when this view controller is pushed into a controller hierarchy with a navigation bar, the navigation bar will slide out. Default is NO.
-
-@property (nonatomic, assign, getter=isNavigationBarBackgroundHidden) BOOL navigationBarBackgroundHidden;
+@property (nonatomic, assign, getter=isNavigationBarBackgroundHidden) IBInspectable BOOL navigationBarBackgroundHidden;
 - (void)setNavigationBarBackgroundHidden:(BOOL)navigationBarBackgroundHidden animated:(BOOL)animated NS_AVAILABLE_IOS(8_0); // Hide or show the navigation bar background. If animated, it will transition vertically using UINavigationControllerHideShowBarDuration.
-
+- (UIViewController *)previousViewController; //Return the gives
+/// view controller's previous view controller in the navigation stack.
 @end

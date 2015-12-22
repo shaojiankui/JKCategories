@@ -23,7 +23,7 @@ static char kTextFieldHistoryviewIdentifyKey;
 #define MAX_HEIGHT 300
 
 
-@interface UITextField ()
+@interface UITextField ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (retain, nonatomic) UITableView* historyTableView;
 

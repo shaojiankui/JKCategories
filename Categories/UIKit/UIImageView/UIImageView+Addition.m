@@ -84,7 +84,19 @@
     // const CGFloat *colorComponents = CGColorGetComponents([color CGColor]);
     // CGContextSetRGBFillColor(context, colorComponents[0], colorComponents[1], colorComponents [2], colorComponents[3]);
     //水印文字
-    [markString drawInRect:rect withFont:font];
+    if ([markString respondsToSelector:@selector(drawInRect:withAttributes:)])
+    {
+        [markString drawInRect:rect withAttributes:@{NSFontAttributeName:font}];
+    }
+    else
+    {
+    // pre-iOS7.0
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        [markString drawInRect:rect withFont:font];
+#pragma clang diagnostic pop
+    }
+
     UIImage *newPic = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     self.image = newPic;
@@ -100,7 +112,21 @@
     //文字颜色
     [color set];
     //水印文字
-    [markString drawAtPoint:point withFont:font];
+    
+    if ([markString respondsToSelector:@selector(drawAtPoint:withAttributes:)])
+    {
+        [markString drawAtPoint:point withAttributes:@{NSFontAttributeName:font}];
+    }
+    else
+    {
+    // pre-iOS7.0
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        [markString drawAtPoint:point withFont:font];
+#pragma clang diagnostic pop
+     }
+    
+        
     UIImage *newPic = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     self.image = newPic;

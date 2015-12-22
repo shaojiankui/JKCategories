@@ -70,7 +70,10 @@
                         @"NSHTTPCookieStorage",
                         @"NSFileHandle",
                         @"NSRunLoop",
-                        @"NSURLRequest"
+                        @"NSURLRequest",
+                        @"NSOperation",
+                        @"NSInvocation",
+                        @"NSURLConnection"
                         ],
             
     @"CoreLocation":@[@"CALayer",
