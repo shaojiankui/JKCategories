@@ -101,6 +101,7 @@
 		A24868891C1FB19600D3318A /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A24868831C1FB19600D3318A /* UITableView+FDKeyedHeightCache.m */; };
 		A248688A1C1FB19600D3318A /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A24868851C1FB19600D3318A /* UITableView+FDTemplateLayoutCell.m */; };
 		A248688B1C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A24868871C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		A248782D1C55CC5C00AFF958 /* UIImage+SuperCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = A248782C1C55CC5C00AFF958 /* UIImage+SuperCompress.m */; };
 		A24EC2DD1B74D49F00CE538B /* NSDictionary+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EC2DC1B74D49F00CE538B /* NSDictionary+URL.m */; };
 		A24EC2E31B74D69E00CE538B /* NSRunLoopDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EC2E11B74D69E00CE538B /* NSRunLoopDemoViewController.m */; };
 		A24EC2E41B74D69E00CE538B /* NSRunLoopDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A24EC2E21B74D69E00CE538B /* NSRunLoopDemoViewController.xib */; };
@@ -355,6 +356,7 @@
 		A2EF56F31B21D1270005F730 /* NSNotificationCenterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF56F11B21D1270005F730 /* NSNotificationCenterDemoViewController.m */; };
 		A2EF56F41B21D1270005F730 /* NSNotificationCenterDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EF56F21B21D1270005F730 /* NSNotificationCenterDemoViewController.xib */; };
 		A2EF56FA1B21D44D0005F730 /* UINavigationItem+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF56F91B21D44D0005F730 /* UINavigationItem+Loading.m */; };
+		A2F4E1781C2A29A200DA6544 /* UIView+Genie.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F4E1771C2A29A200DA6544 /* UIView+Genie.m */; };
 		A2FD0CBE1AB1618D00EDEA4C /* UIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD0CBD1AB1618D00EDEA4C /* UIWindow+Hierarchy.m */; };
 		A2FD5B321A52574C00555EA2 /* UIImage+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B311A52574C00555EA2 /* UIImage+Merge.m */; };
 		A2FD5B351A52599C00555EA2 /* UIScrollView+Pages.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B341A52599C00555EA2 /* UIScrollView+Pages.m */; };
@@ -552,6 +554,8 @@
 		A24868851C1FB19600D3318A /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
 		A24868861C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
 		A24868871C1FB19600D3318A /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		A248782B1C55CC5C00AFF958 /* UIImage+SuperCompress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SuperCompress.h"; sourceTree = "<group>"; };
+		A248782C1C55CC5C00AFF958 /* UIImage+SuperCompress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SuperCompress.m"; sourceTree = "<group>"; };
 		A24EC2DB1B74D49F00CE538B /* NSDictionary+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URL.h"; sourceTree = "<group>"; };
 		A24EC2DC1B74D49F00CE538B /* NSDictionary+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+URL.m"; sourceTree = "<group>"; };
 		A24EC2E01B74D69E00CE538B /* NSRunLoopDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRunLoopDemoViewController.h; sourceTree = "<group>"; };
@@ -1004,6 +1008,8 @@
 		A2EF56F21B21D1270005F730 /* NSNotificationCenterDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSNotificationCenterDemoViewController.xib; sourceTree = "<group>"; };
 		A2EF56F81B21D44D0005F730 /* UINavigationItem+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Loading.h"; sourceTree = "<group>"; };
 		A2EF56F91B21D44D0005F730 /* UINavigationItem+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Loading.m"; sourceTree = "<group>"; };
+		A2F4E1761C2A29A200DA6544 /* UIView+Genie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Genie.h"; sourceTree = "<group>"; };
+		A2F4E1771C2A29A200DA6544 /* UIView+Genie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Genie.m"; sourceTree = "<group>"; };
 		A2FD0CBC1AB1618D00EDEA4C /* UIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Hierarchy.h"; sourceTree = "<group>"; };
 		A2FD0CBD1AB1618D00EDEA4C /* UIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Hierarchy.m"; sourceTree = "<group>"; };
 		A2FD5B301A52574C00555EA2 /* UIImage+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Merge.h"; sourceTree = "<group>"; };
@@ -2351,6 +2357,8 @@
 				A21F34D81B0F291600D73A91 /* UIImage+PDF.m */,
 				A2EF56DF1B21C59C0005F730 /* UIImage+Blur.h */,
 				A2EF56E01B21C59C0005F730 /* UIImage+Blur.m */,
+				A248782B1C55CC5C00AFF958 /* UIImage+SuperCompress.h */,
+				A248782C1C55CC5C00AFF958 /* UIImage+SuperCompress.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -2401,6 +2409,8 @@
 		A28BE3141A3E9FDC005C4AC6 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				A2F4E1761C2A29A200DA6544 /* UIView+Genie.h */,
+				A2F4E1771C2A29A200DA6544 /* UIView+Genie.m */,
 				A205E4E61C28EA6C002A1E33 /* UIView+CustomBorder.h */,
 				A205E4E71C28EA6C002A1E33 /* UIView+CustomBorder.m */,
 				A2768FD11A5518C400E03C90 /* UIView+Toast.h */,
@@ -3173,6 +3183,7 @@
 				A205E4E81C28EA6C002A1E33 /* UIView+CustomBorder.m in Sources */,
 				A28BE3321A3E9FDC005C4AC6 /* UILabel+ESAdjustableLabel.m in Sources */,
 				A28BE3371A3E9FDC005C4AC6 /* UIView+Animation.m in Sources */,
+				A248782D1C55CC5C00AFF958 /* UIImage+SuperCompress.m in Sources */,
 				BCB9547D1B0D829800E6BA78 /* NSData+SDDataCache.m in Sources */,
 				A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */,
 				A21F34BD1B0F221400D73A91 /* UINavigationItem+Lock.m in Sources */,
@@ -3335,6 +3346,7 @@
 				A24EC3021B74E26400CE538B /* NSData+APNSToken.m in Sources */,
 				A280E5321A523AD700E6ACA2 /* UIView+BlockGesture.m in Sources */,
 				A2FD5B591A526C6800555EA2 /* UISearchBar+Blocks.m in Sources */,
+				A2F4E1781C2A29A200DA6544 /* UIView+Genie.m in Sources */,
 				A28BE3351A3E9FDC005C4AC6 /* UINavigationController+KeyboardFix.m in Sources */,
 				A22845251BE2085C000AD2F6 /* NSDecimalNumber+CalculatingByString.m in Sources */,
 				A2958D2D1B359BE400D7AA0F /* NSString+Pinyin.m in Sources */,
