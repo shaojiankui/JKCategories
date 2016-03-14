@@ -322,6 +322,9 @@
 		A2C12BA81B1C284F00EAD198 /* UITextField+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C12BA71B1C284F00EAD198 /* UITextField+Select.m */; };
 		A2C12BAB1B1C286C00EAD198 /* UITextView+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C12BAA1B1C286C00EAD198 /* UITextView+Select.m */; };
 		A2C1ADCE1A58F35400E3BAFF /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1ADCD1A58F35400E3BAFF /* UIImage+Orientation.m */; };
+		A2C97D851C96576E00614B98 /* UICollectionViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C97D831C96576E00614B98 /* UICollectionViewDemoViewController.m */; };
+		A2C97D861C96576E00614B98 /* UICollectionViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C97D841C96576E00614B98 /* UICollectionViewDemoViewController.xib */; };
+		A2C97D891C9657D300614B98 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C97D881C9657D300614B98 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */; };
 		A2CFAEF51A56BD050004A282 /* NSString+Score.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF41A56BD050004A282 /* NSString+Score.m */; };
 		A2CFAEF81A56D15C0004A282 /* UIColor+Modify.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF71A56D15C0004A282 /* UIColor+Modify.m */; };
 		A2E305651BA927E10006BE4E /* NSURLRequest+ParamsFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E305641BA927E10006BE4E /* NSURLRequest+ParamsFromDictionary.m */; };
@@ -949,6 +952,11 @@
 		A2C12BAA1B1C286C00EAD198 /* UITextView+Select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Select.m"; sourceTree = "<group>"; };
 		A2C1ADCC1A58F35400E3BAFF /* UIImage+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Orientation.h"; sourceTree = "<group>"; };
 		A2C1ADCD1A58F35400E3BAFF /* UIImage+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Orientation.m"; sourceTree = "<group>"; };
+		A2C97D821C96576E00614B98 /* UICollectionViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewDemoViewController.h; sourceTree = "<group>"; };
+		A2C97D831C96576E00614B98 /* UICollectionViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewDemoViewController.m; sourceTree = "<group>"; };
+		A2C97D841C96576E00614B98 /* UICollectionViewDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UICollectionViewDemoViewController.xib; sourceTree = "<group>"; };
+		A2C97D871C9657D300614B98 /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.h"; sourceTree = "<group>"; };
+		A2C97D881C9657D300614B98 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.m"; sourceTree = "<group>"; };
 		A2CFAEF31A56BD050004A282 /* NSString+Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Score.h"; sourceTree = "<group>"; };
 		A2CFAEF41A56BD050004A282 /* NSString+Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Score.m"; sourceTree = "<group>"; };
 		A2CFAEF61A56D15C0004A282 /* UIColor+Modify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Modify.h"; sourceTree = "<group>"; };
@@ -1500,6 +1508,7 @@
 		A22725F21A3E736D0061605B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A2C97D801C96573200614B98 /* UICollectionView */,
 				A29EC2621B5279EC008ABB42 /* UIPopoverController */,
 				A27E93151B381CBA0010C7EA /* UIFont */,
 				A202D9AF1B10336500EAB199 /* UIApplication */,
@@ -1849,6 +1858,7 @@
 		A281FB5B1AC8101F009040DA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A2C97D811C96575400614B98 /* UICollectionView */,
 				A286CB631B5385E2008896C6 /* UIPopoverController */,
 				A27E931F1B381E1B0010C7EA /* UIFont */,
 				A202D9BC1B1038C000EAB199 /* UIBarButtonItem */,
@@ -2697,6 +2707,25 @@
 			path = UIPopoverController;
 			sourceTree = "<group>";
 		};
+		A2C97D801C96573200614B98 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A2C97D871C9657D300614B98 /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */,
+				A2C97D881C9657D300614B98 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		A2C97D811C96575400614B98 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A2C97D821C96576E00614B98 /* UICollectionViewDemoViewController.h */,
+				A2C97D831C96576E00614B98 /* UICollectionViewDemoViewController.m */,
+				A2C97D841C96576E00614B98 /* UICollectionViewDemoViewController.xib */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 		A2E305621BA927C20006BE4E /* NSURLRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -3043,6 +3072,7 @@
 				A2958CDA1B35825F00D7AA0F /* CAMediaTimingFunctionDemoViewController.xib in Resources */,
 				A281FBB81AC812C8009040DA /* NSURLDemoViewController.xib in Resources */,
 				A281FBA41AC8127E009040DA /* NSObjectDemoViewController.xib in Resources */,
+				A2C97D861C96576E00614B98 /* UICollectionViewDemoViewController.xib in Resources */,
 				A2EF56F41B21D1270005F730 /* NSNotificationCenterDemoViewController.xib in Resources */,
 				A281FB8B1AC81217009040DA /* NSDataDemoViewController.xib in Resources */,
 				A202D9C11B1038DB00EAB199 /* UIBarButtonItemDemoViewController.xib in Resources */,
@@ -3215,6 +3245,7 @@
 				BCB79A0C1AFDF23500C12525 /* UIAlertView+Block.m in Sources */,
 				A2893D971AC3E5FE00EFA90A /* UIButton+Indicator.m in Sources */,
 				A281FB4A1AC80C31009040DA /* WebView+Debug.m in Sources */,
+				A2C97D851C96576E00614B98 /* UICollectionViewDemoViewController.m in Sources */,
 				A281FBEF1AC8139D009040DA /* UITableViewCellDemoViewController.m in Sources */,
 				A21CF1871B38F708006415E0 /* UINavigationBar+CustomHeight.m in Sources */,
 				A2FD5B471A52636100555EA2 /* UIResponder+Chain.m in Sources */,
@@ -3330,6 +3361,7 @@
 				A28BE3721A3EB31D005C4AC6 /* UIImageView+Addition.m in Sources */,
 				BCB799F61AFDDAA500C12525 /* UIButton+BackgroundColor.m in Sources */,
 				A2958D211B3598D700D7AA0F /* UIImageView+Letters.m in Sources */,
+				A2C97D891C9657D300614B98 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				A202D99E1B0F919300EAB199 /* UIControl+Block.m in Sources */,
 				A2958CBA1B357AEF00D7AA0F /* UIViewController+StoreKit.m in Sources */,
 				A284C12A1AEBCB7F00D90ED5 /* NSIndexPath+Offset.m in Sources */,
