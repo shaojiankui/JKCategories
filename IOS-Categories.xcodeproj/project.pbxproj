@@ -372,6 +372,7 @@
 		A2FD5B5D1A52706F00555EA2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD5B5C1A52706F00555EA2 /* libz.dylib */; };
 		A2FD5B601A52708900555EA2 /* NSURL+Param.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B5F1A52708900555EA2 /* NSURL+Param.m */; };
 		A2FD5B631A52718200555EA2 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B621A52718200555EA2 /* NSDate+Utilities.m */; };
+		B869399D1CA8EEB500EE7A1A /* UIButton+LXMImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = B869399C1CA8EEB500EE7A1A /* UIButton+LXMImagePosition.m */; };
 		BCB799F31AFDD95300C12525 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F21AFDD95300C12525 /* UIImage+GIF.m */; };
 		BCB799F61AFDDAA500C12525 /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F51AFDDAA500C12525 /* UIButton+BackgroundColor.m */; };
 		BCB799FC1AFDDE2300C12525 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799FB1AFDDE2300C12525 /* UIView+ViewController.m */; };
@@ -1041,6 +1042,8 @@
 		A2FD5B5F1A52708900555EA2 /* NSURL+Param.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Param.m"; sourceTree = "<group>"; };
 		A2FD5B611A52718200555EA2 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDate+Utilities.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A2FD5B621A52718200555EA2 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDate+Utilities.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B869399B1CA8EEB500EE7A1A /* UIButton+LXMImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LXMImagePosition.h"; sourceTree = "<group>"; };
+		B869399C1CA8EEB500EE7A1A /* UIButton+LXMImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LXMImagePosition.m"; sourceTree = "<group>"; };
 		BCB799F11AFDD95300C12525 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		BCB799F21AFDD95300C12525 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
 		BCB799F41AFDDAA500C12525 /* UIButton+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColor.h"; sourceTree = "<group>"; };
@@ -1611,6 +1614,8 @@
 		A280E5221A52339800E6ACA2 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				B869399B1CA8EEB500EE7A1A /* UIButton+LXMImagePosition.h */,
+				B869399C1CA8EEB500EE7A1A /* UIButton+LXMImagePosition.m */,
 				A205E4D51C28E815002A1E33 /* UIButton+MiddleAligning.h */,
 				A205E4D61C28E815002A1E33 /* UIButton+MiddleAligning.m */,
 				A2B995C81B46778500011613 /* UIButton+TouchAreaInsets.h */,
@@ -3189,6 +3194,7 @@
 				A28BE33A1A3E9FDC005C4AC6 /* UIView+Nib.m in Sources */,
 				A21F34D61B0F28A600D73A91 /* UILabel+AutoSize.m in Sources */,
 				A2958CB71B35794500D7AA0F /* UIView+Visuals.m in Sources */,
+				B869399D1CA8EEB500EE7A1A /* UIButton+LXMImagePosition.m in Sources */,
 				A28BE32B1A3E9FDC005C4AC6 /* UIImage+Alpha.m in Sources */,
 				A28BE3361A3E9FDC005C4AC6 /* UITableViewCell+NIB.m in Sources */,
 				A281FBAD1AC812A8009040DA /* NSStringDemoViewController.m in Sources */,
