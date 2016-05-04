@@ -20,9 +20,9 @@
 - (NSString*)stringWithIndex:(NSUInteger)index
 {
     id value = [self objectWithIndex:index];
-    if (value == nil || value == [NSNull null])
+    if (value == nil || value == [NSNull null] || [[value description] isEqualToString:@"<null>"])
     {
-        return @"";
+        return nil;
     }
     if ([value isKindOfClass:[NSString class]]) {
         return (NSString*)value;

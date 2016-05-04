@@ -157,7 +157,7 @@
         NSMutableDictionary *info = [NSMutableDictionary dictionary];
         
         Method method = methods[i];
-        IMP imp_f = method_getImplementation(method);
+//        IMP imp = method_getImplementation(method);
         SEL name = method_getName(method);
         // 返回方法的参数的个数
         int argumentsCount = method_getNumberOfArguments(method);

@@ -47,7 +47,9 @@
                        @"UIControl",
                        @"UIApplication",
                        @"UIBarButtonItem",
-                       @"UIPopoverController"
+                       @"UIPopoverController",
+                       @"UICollectionView"
+
 
                        ],
         @"Foundation":@[@"NSArray",

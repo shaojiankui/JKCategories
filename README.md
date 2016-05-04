@@ -59,6 +59,7 @@ iOS中的各种Objective-C Category, a collection of useful Objective-C Categori
 * UIWebView
 * UIWindow
 * UIPopoverController
+* UICollectionView
 
 ## QuartzCore
 * CALayer
