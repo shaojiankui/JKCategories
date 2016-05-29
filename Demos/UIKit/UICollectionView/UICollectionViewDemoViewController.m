@@ -1,6 +1,6 @@
 //
 //  UICollectionViewDemoViewController.m
-//  IOS-Categories
+//  JKCategories
 //
 //  Created by Jakey on 16/3/14.
 //  Copyright © 2016年 www.skyfox.org. All rights reserved.

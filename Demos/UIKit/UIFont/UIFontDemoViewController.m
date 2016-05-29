@@ -1,6 +1,6 @@
 //
 //  UIFontDemoViewController.m
-//  IOS-Categories
+//  JKCategories
 //
 //  Created by Jakey on 15/6/22.
 //  Copyright © 2015年 www.skyfox.org. All rights reserved.

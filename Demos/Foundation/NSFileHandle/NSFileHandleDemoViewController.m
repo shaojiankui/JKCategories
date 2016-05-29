@@ -1,13 +1,13 @@
 //
 //  NSFileHandleDemoViewController.m
-//  IOS-Categories
+//  JKCategories
 //
 //  Created by Jakey on 15/7/9.
 //  Copyright © 2015年 www.skyfox.org. All rights reserved.
 //
 
 #import "NSFileHandleDemoViewController.h"
-#import "NSFileHandle+readLine.h"
+#import "NSFileHandle+JKReadLine.h"
 @interface NSFileHandleDemoViewController ()
 
 @end
@@ -28,7 +28,7 @@
     
     NSData *lineData;
     
-    while ((lineData = [demoFileHandle readLineWithDelimiter:@"\n"]))
+    while ((lineData = [demoFileHandle jk_readLineWithDelimiter:@"\n"]))
     {
         NSString *lineString = [[NSString alloc] initWithData:lineData encoding:NSASCIIStringEncoding];
         NSLog(@"lineString:%@",lineString);
