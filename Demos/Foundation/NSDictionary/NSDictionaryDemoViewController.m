@@ -1,14 +1,14 @@
 //
 //  NSDictionaryDemoViewController.m
-//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
+//  JKCategories (https://github.com/shaojiankui/JKCategories)
 //
 //  Created by Jakey on 15/3/29.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
 #import "NSDictionaryDemoViewController.h"
-#import "NSDictionary+SafeAccess.h"
-#import "NSDictionary+Merge.h"
+#import "NSDictionary+JKSafeAccess.h"
+#import "NSDictionary+JKMerge.h"
 @interface NSDictionaryDemoViewController ()
 
 @end
@@ -22,45 +22,45 @@
     
     NSDictionary *responseObject;
     //__unused  只是用来屏蔽未使用警告
-    __unused NSDictionary *d = [responseObject dictionaryForKey:@"object"];
+    __unused NSDictionary *d = [responseObject jk_dictionaryForKey:@"object"];
     
-    __unused NSArray *array = [responseObject arrayForKey:@"array"];
+    __unused NSArray *array = [responseObject jk_arrayForKey:@"array"];
     
-    __unused NSString *string = [responseObject stringForKey:@"string"];
+    __unused NSString *string = [responseObject jk_stringForKey:@"string"];
     
-    __unused long long date = [responseObject longLongForKey:@"date"];
+    __unused long long date = [responseObject jk_longLongForKey:@"date"];
     
-    __unused NSNumber *number = [responseObject numberForKey:@"number"];
+    __unused NSNumber *number = [responseObject jk_numberForKey:@"number"];
     
-    __unused NSInteger count = [responseObject integerForKey:@"count"];
+    __unused NSInteger count = [responseObject jk_integerForKey:@"count"];
     
-    __unused BOOL b = [responseObject boolForKey:@"count"];
+    __unused BOOL b = [responseObject jk_boolForKey:@"count"];
     
-    __unused CGPoint point = [responseObject pointForKey:@"point"];
+    __unused CGPoint point = [responseObject jk_pointForKey:@"point"];
     
-    __unused CGFloat f = [responseObject CGFloatForKey:@"float"];
+    __unused CGFloat f = [responseObject jk_CGFloatForKey:@"float"];
     
-    __unused CGRect rect = [responseObject rectForKey:@"rect"];
+    __unused CGRect rect = [responseObject jk_rectForKey:@"rect"];
     
-    __unused CGSize size = [responseObject sizeForKey:@"size"];
+    __unused CGSize size = [responseObject jk_sizeForKey:@"size"];
     
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     
-    [dict setObj:@"334" forKey:@"obj"];
+    [dict jk_setObj:@"334" forKey:@"obj"];
     
-    [dict setString:@"string" forKey:@"str"];
+    [dict jk_setString:@"string" forKey:@"str"];
     
-    [dict setBool:YES forKey:@"b"];
+    [dict jk_setBool:YES forKey:@"b"];
     
-    [dict setInt:1 forKey:@"intvalue"];
+    [dict jk_setInt:1 forKey:@"intvalue"];
     
-    [dict setCGFloat:1.1 forKey:@"float"];
+    [dict jk_setCGFloat:1.1 forKey:@"float"];
     
-    [dict setPoint:CGPointMake(1, 1) forKey:@"point"];
+    [dict jk_setPoint:CGPointMake(1, 1) forKey:@"point"];
     
-    [dict setSize:CGSizeMake(111, 111) forKey:@"size"];
+    [dict jk_setSize:CGSizeMake(111, 111) forKey:@"size"];
     
-    [dict setRect:CGRectMake(0, 0, 0, 0) forKey:@"rect"];
+    [dict jk_setRect:CGRectMake(0, 0, 0, 0) forKey:@"rect"];
     
     NSLog(@"dict %@",[dict description]);
 

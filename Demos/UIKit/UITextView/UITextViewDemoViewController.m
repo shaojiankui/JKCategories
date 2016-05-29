@@ -1,13 +1,13 @@
 //
 //  UITextViewDemoViewController.m
-//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
+//  JKCategories (https://github.com/shaojiankui/JKCategories)
 //
 //  Created by Jakey on 15/3/29.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
 #import "UITextViewDemoViewController.h"
-#import "UITextView+PlaceHolder.h"
+#import "UITextView+JKPlaceHolder.h"
 
 @interface UITextViewDemoViewController ()
 {
@@ -25,7 +25,7 @@
     textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 100, CGRectGetWidth(self.view.bounds) - 20, 120)];
     textView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     textView.layer.borderWidth = 1.5f;
-    [textView addPlaceHolder:@"请输入您想要说的话..."];
+    [textView jk_addPlaceHolder:@"请输入您想要说的话..."];
     [self.view addSubview:textView];
 }
 

@@ -1,13 +1,13 @@
 //
 //  UINavigationBarDemoViewController.m
-//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
+//  JKCategories (https://github.com/shaojiankui/JKCategories)
 //
 //  Created by Jakey on 15/4/25.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
 #import "UINavigationBarDemoViewController.h"
-#import "UINavigationBar+Awesome.h"
+#import "UINavigationBar+JKAwesome.h"
 @interface UINavigationBarDemoViewController ()
 
 @end
@@ -41,8 +41,8 @@
 
 - (void)setNavigationBarTransformProgress:(CGFloat)progress
 {
-    [self.navigationController.navigationBar lt_setTranslationY:(-44 * progress)];
-    [self.navigationController.navigationBar lt_setElementsAlpha:(1-progress)];
+    [self.navigationController.navigationBar jk_setTranslationY:(-44 * progress)];
+    [self.navigationController.navigationBar jk_setElementsAlpha:(1-progress)];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -53,7 +53,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [self.navigationController.navigationBar lt_reset];
+    [self.navigationController.navigationBar jk_reset];
 }
 
 #pragma mark UITableViewDatasource

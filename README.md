@@ -1,7 +1,17 @@
-iOS-Categories
+JKCategories(iOS-Categories)
 ================
 
-iOS中的各种Objective-C Category, a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
+JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
+## Installation
+
+### Installation with CocoaPods
+
+	platform :ios
+ 	pod 'JKCategories'
+ 	
+### Manually
+
+Copy JKCategories folder to your project.
 
 ## Foundation
 * NSArray
@@ -83,5 +93,5 @@ iOS中的各种Objective-C Category, a collection of useful Objective-C Categori
 
 ## License
 
-iOS-Categories is available under the MIT license.
+JKCategories is available under the MIT license.
 

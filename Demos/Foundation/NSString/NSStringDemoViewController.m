@@ -1,13 +1,13 @@
 //
 //  NSStringDemoViewController.m
-//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
+//  JKCategories (https://github.com/shaojiankui/JKCategories)
 //
 //  Created by Jakey on 15/3/29.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
 #import "NSStringDemoViewController.h"
-#import "NSString+UUID.h"
+#import "NSString+JKUUID.h"
 @interface NSStringDemoViewController ()
 
 @end
