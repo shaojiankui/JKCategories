@@ -10,9 +10,9 @@
 
 @import UIKit;
 
-typedef NS_ENUM(NSInteger, JKShakeDirection) {
-    JKShakeDirectionHorizontal,
-    JKShakeDirectionVertical
+typedef NS_ENUM(NSInteger, JKShakedDirection) {
+    JKShakedDirectionHorizontal,
+    JKShakedDirectionVertical
 };
 
 @interface UITextField (JKShake)
@@ -77,7 +77,7 @@ typedef NS_ENUM(NSInteger, JKShakeDirection) {
  * @param interval The duration of one shake
  * @param direction of the shake
  */
-- (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(JKShakeDirection)shakeDirection;
+- (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(JKShakedDirection)shakeDirection;
 
 /** Shake the UITextField at a custom speed
  *
@@ -89,6 +89,6 @@ typedef NS_ENUM(NSInteger, JKShakeDirection) {
  * @param direction of the shake
  * @param handler A block object to be executed when the shake sequence ends
  */
-- (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(JKShakeDirection)shakeDirection completion:(void((^)()))handler;
+- (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(JKShakedDirection)shakeDirection completion:(void((^)()))handler;
 
 @end

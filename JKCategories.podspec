@@ -1,4 +1,4 @@
-version = "1.0";
+version = "1.1";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "6.0"
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'CoreData', 'QuartzCore', 'CoreLocation', 'MapKit'
+  s.libraries    = "z"
   s.source       = { :git => "https://github.com/shaojiankui/JKCategories.git", :tag => "#{version}" }
-  s.source_files = "JKCategories", "JKCategories/**/*.{h,m}"
+  s.source_files = "JKCategories", "JKCategories/*.{h}","JKCategories/**/*.{h,m}"
   #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end

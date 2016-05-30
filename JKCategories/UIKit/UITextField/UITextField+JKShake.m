@@ -19,7 +19,7 @@
 }
 
 - (void)jk_shake:(int)times withDelta:(CGFloat)delta completion:(void(^)())handler {
-    [self _jk_shake:times direction:1 currentTimes:0 withDelta:delta speed:0.03 shakeDirection:JKShakeDirectionHorizontal completion:handler];
+    [self _jk_shake:times direction:1 currentTimes:0 withDelta:delta speed:0.03 shakeDirection:JKShakedDirectionHorizontal completion:handler];
 }
 
 - (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval {
@@ -27,20 +27,20 @@
 }
 
 - (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval completion:(void(^)())handler {
-    [self _jk_shake:times direction:1 currentTimes:0 withDelta:delta speed:interval shakeDirection:JKShakeDirectionHorizontal completion:handler];
+    [self _jk_shake:times direction:1 currentTimes:0 withDelta:delta speed:interval shakeDirection:JKShakedDirectionHorizontal completion:handler];
 }
 
-- (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(JKShakeDirection)shakeDirection {
+- (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(JKShakedDirection)shakeDirection {
     [self jk_shake:times withDelta:delta speed:interval shakeDirection:shakeDirection completion:nil];
 }
 
-- (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(JKShakeDirection)shakeDirection completion:(void(^)())handler {
+- (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(JKShakedDirection)shakeDirection completion:(void(^)())handler {
     [self _jk_shake:times direction:1 currentTimes:0 withDelta:delta speed:interval shakeDirection:shakeDirection completion:handler];
 }
 
-- (void)_jk_shake:(int)times direction:(int)direction currentTimes:(int)current withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(JKShakeDirection)shakeDirection completion:(void(^)())handler {
+- (void)_jk_shake:(int)times direction:(int)direction currentTimes:(int)current withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(JKShakedDirection)shakeDirection completion:(void(^)())handler {
     [UIView animateWithDuration:interval animations:^{
-        self.transform = (shakeDirection == JKShakeDirectionHorizontal) ? CGAffineTransformMakeTranslation(delta * direction, 0) : CGAffineTransformMakeTranslation(0, delta * direction);
+        self.transform = (shakeDirection == JKShakedDirectionHorizontal) ? CGAffineTransformMakeTranslation(delta * direction, 0) : CGAffineTransformMakeTranslation(0, delta * direction);
     } completion:^(BOOL finished) {
         if(current >= times) {
             [UIView animateWithDuration:interval animations:^{
