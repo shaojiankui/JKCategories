@@ -309,6 +309,7 @@
 		A2AB1A661B381E3900ED88AF /* UIFontDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AB1A641B381E3900ED88AF /* UIFontDemoViewController.xib */; };
 		A2AF02A41A74BACB003FEC8D /* NSDictionary+JKSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A31A74BACB003FEC8D /* NSDictionary+JKSafeAccess.m */; };
 		A2AF02AA1A74C096003FEC8D /* NSDictionary+JKMerge.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AF02A91A74C096003FEC8D /* NSDictionary+JKMerge.m */; };
+		A2B13FF61D01AA300035FC4F /* UIControl+JKSound.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B13FF51D01AA300035FC4F /* UIControl+JKSound.m */; };
 		A2B995CA1B46778500011613 /* UIButton+JKTouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B995C91B46778500011613 /* UIButton+JKTouchAreaInsets.m */; };
 		A2B995CD1B46779500011613 /* UINavigationItem+JKMargin.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B995CC1B46779500011613 /* UINavigationItem+JKMargin.m */; };
 		A2B995D31B46797500011613 /* UIViewController+JKBlockSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B995D21B46797500011613 /* UIViewController+JKBlockSegue.m */; };
@@ -925,6 +926,8 @@
 		A2AF02A31A74BACB003FEC8D /* NSDictionary+JKSafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDictionary+JKSafeAccess.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A2AF02A81A74C096003FEC8D /* NSDictionary+JKMerge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDictionary+JKMerge.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A2AF02A91A74C096003FEC8D /* NSDictionary+JKMerge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDictionary+JKMerge.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A2B13FF41D01AA300035FC4F /* UIControl+JKSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+JKSound.h"; sourceTree = "<group>"; };
+		A2B13FF51D01AA300035FC4F /* UIControl+JKSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+JKSound.m"; sourceTree = "<group>"; };
 		A2B995C81B46778500011613 /* UIButton+JKTouchAreaInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKTouchAreaInsets.h"; sourceTree = "<group>"; };
 		A2B995C91B46778500011613 /* UIButton+JKTouchAreaInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JKTouchAreaInsets.m"; sourceTree = "<group>"; };
 		A2B995CB1B46779500011613 /* UINavigationItem+JKMargin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+JKMargin.h"; sourceTree = "<group>"; };
@@ -1168,6 +1171,8 @@
 		A202D9951B0F914D00EAB199 /* UIControl */ = {
 			isa = PBXGroup;
 			children = (
+				A2B13FF41D01AA300035FC4F /* UIControl+JKSound.h */,
+				A2B13FF51D01AA300035FC4F /* UIControl+JKSound.m */,
 				A202D99C1B0F919300EAB199 /* UIControl+JKBlock.h */,
 				A202D99D1B0F919300EAB199 /* UIControl+JKBlock.m */,
 				A202D9B91B1035DC00EAB199 /* UIControl+JKActionBlocks.h */,
@@ -3348,6 +3353,7 @@
 				A22845251BE2085C000AD2F6 /* NSDecimalNumber+JKCalculatingByString.m in Sources */,
 				A2958D2D1B359BE400D7AA0F /* NSString+JKPinyin.m in Sources */,
 				A2958CFD1B358EA400D7AA0F /* UIApplication+JKNetworkActivityIndicator.m in Sources */,
+				A2B13FF61D01AA300035FC4F /* UIControl+JKSound.m in Sources */,
 				A2958CDE1B35826C00D7AA0F /* CAShapeLayerDemoViewController.m in Sources */,
 				A284C1491AEBCFB000D90ED5 /* NSIndexPathDemoViewController.m in Sources */,
 				A202D9A21B102A4F00EAB199 /* NSNumber+JKRound.m in Sources */,
