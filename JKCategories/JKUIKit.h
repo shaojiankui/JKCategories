@@ -93,7 +93,7 @@
 #import "UITextView+JKPinchZoom.h"
 #import "UITextView+JKPlaceHolder.h"
 #import "UITextView+JKSelect.h"
-#import "UIView+Animation.h"
+#import "UIView+JKAnimation.h"
 #import "UIView+JKBlockGesture.h"
 #import "UIView+JKConstraints.h"
 #import "UIView+JKCustomBorder.h"

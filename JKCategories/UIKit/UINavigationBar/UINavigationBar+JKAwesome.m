@@ -26,7 +26,7 @@ static char jk_overlayKey;
 {
     if (!self.jk_overlay) {
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-        self.jk_overlay = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, CGRectGetHeight(self.bounds) + 20)];
+        self.jk_overlay = [[UIView alloc] initWithFrame:CGRectMake(0, -20, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) + 20)];
         self.jk_overlay.userInteractionEnabled = NO;
         self.jk_overlay.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
         [self insertSubview:self.jk_overlay atIndex:0];
@@ -51,6 +51,13 @@ static char jk_overlayKey;
     
     UIView *titleView = [self valueForKey:@"_titleView"];
     titleView.alpha = alpha;
+    //    when viewController first load, the titleView maybe nil
+    [[self subviews] enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
+        if ([obj isKindOfClass:NSClassFromString(@"UINavigationItemView")]) {
+            obj.alpha = alpha;
+            *stop = YES;
+        }
+    }];
 }
 
 - (void)jk_reset

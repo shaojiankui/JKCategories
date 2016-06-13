@@ -6,25 +6,25 @@
 //  Copyright (c) 2011 PT Software Solutions. All rights reserved.
 //
 
-#import "UIView+Animation.h"
+#import "UIView+JKAnimation.h"
 
 
 // Very helpful function
 
-float radiansForDegrees(int degrees) {
+float jk_radiansForDegrees(int degrees) {
     return degrees * M_PI / 180;
 }
 
 
-@implementation UIView (Animation)
+@implementation UIView (JKAnimation)
 
 #pragma mark - Moves
 
-- (void)moveTo:(CGPoint)destination duration:(float)secs option:(UIViewAnimationOptions)option {
-    [self moveTo:destination duration:secs option:option delegate:nil callback:nil];
+- (void)jk_moveTo:(CGPoint)destination duration:(float)secs option:(UIViewAnimationOptions)option {
+    [self jk_moveTo:destination duration:secs option:option delegate:nil callback:nil];
 }
 
-- (void)moveTo:(CGPoint)destination duration:(float)secs option:(UIViewAnimationOptions)option delegate:(id)delegate callback:(SEL)method {
+- (void)jk_moveTo:(CGPoint)destination duration:(float)secs option:(UIViewAnimationOptions)option delegate:(id)delegate callback:(SEL)method {
     [UIView animateWithDuration:secs delay:0.0 options:option
                      animations:^{
                          self.frame = CGRectMake(destination.x,destination.y, self.frame.size.width, self.frame.size.height);
@@ -40,11 +40,11 @@ float radiansForDegrees(int degrees) {
                      }];
 }
 
-- (void)raceTo:(CGPoint)destination withSnapBack:(BOOL)withSnapBack {
-    [self raceTo:destination withSnapBack:withSnapBack delegate:nil callback:nil];
+- (void)jk_raceTo:(CGPoint)destination withSnapBack:(BOOL)withSnapBack {
+    [self jk_raceTo:destination withSnapBack:withSnapBack delegate:nil callback:nil];
 }
 
-- (void)raceTo:(CGPoint)destination withSnapBack:(BOOL)withSnapBack delegate:(id)delegate callback:(SEL)method {
+- (void)jk_raceTo:(CGPoint)destination withSnapBack:(BOOL)withSnapBack delegate:(id)delegate callback:(SEL)method {
     CGPoint stopPoint = destination;
     if (withSnapBack) {
         // Determine our stop point, from which we will "snap back" to the final destination
@@ -98,12 +98,12 @@ float radiansForDegrees(int degrees) {
 
 #pragma mark - Transforms
 
-- (void)rotate:(int)degrees secs:(float)secs delegate:(id)delegate callback:(SEL)method {
+- (void)jk_rotate:(int)degrees secs:(float)secs delegate:(id)delegate callback:(SEL)method {
     [UIView animateWithDuration:secs 
                           delay:0.0 
                         options:UIViewAnimationOptionCurveLinear
                      animations:^{
-                         self.transform = CGAffineTransformRotate(self.transform, radiansForDegrees(degrees));
+                         self.transform = CGAffineTransformRotate(self.transform, jk_radiansForDegrees(degrees));
                      }
                      completion:^(BOOL finished) { 
                          if (delegate != nil) {
@@ -115,7 +115,7 @@ float radiansForDegrees(int degrees) {
                      }];
 }
 
-- (void)scale:(float)secs x:(float)scaleX y:(float)scaleY delegate:(id)delegate callback:(SEL)method {
+- (void)jk_scale:(float)secs x:(float)scaleX y:(float)scaleY delegate:(id)delegate callback:(SEL)method {
     [UIView animateWithDuration:secs 
                           delay:0.0 
                         options:UIViewAnimationOptionCurveLinear
@@ -132,53 +132,53 @@ float radiansForDegrees(int degrees) {
                      }];
 }
 
-- (void)spinClockwise:(float)secs {
+- (void)jk_spinClockwise:(float)secs {
     [UIView animateWithDuration:secs/4 
                           delay:0.0 
                         options:UIViewAnimationOptionCurveLinear
                      animations:^{
-                         self.transform = CGAffineTransformRotate(self.transform, radiansForDegrees(90));
+                         self.transform = CGAffineTransformRotate(self.transform, jk_radiansForDegrees(90));
                      }
                      completion:^(BOOL finished) { 
-                         [self spinClockwise:secs];
+                         [self jk_spinClockwise:secs];
                      }];
 }
 
-- (void)spinCounterClockwise:(float)secs {
+- (void)jk_spinCounterClockwise:(float)secs {
     [UIView animateWithDuration:secs/4 
                           delay:0.0 
                         options:UIViewAnimationOptionCurveLinear
                      animations:^{
-                         self.transform = CGAffineTransformRotate(self.transform, radiansForDegrees(270));
+                         self.transform = CGAffineTransformRotate(self.transform, jk_radiansForDegrees(270));
                      }
                      completion:^(BOOL finished) { 
-                         [self spinCounterClockwise:secs];
+                         [self jk_spinCounterClockwise:secs];
                      }];
 }
 
 
 #pragma mark - Transitions
 
-- (void)curlDown:(float)secs {
+- (void)jk_curlDown:(float)secs {
     [UIView transitionWithView:self duration:secs
                        options:UIViewAnimationOptionTransitionCurlDown
                     animations:^ { [self setAlpha:1.0]; }
                     completion:nil];
 }
 
-- (void)curlUpAndAway:(float)secs {
+- (void)jk_curlUpAndAway:(float)secs {
     [UIView transitionWithView:self duration:secs
                        options:UIViewAnimationOptionTransitionCurlUp
                     animations:^ { [self setAlpha:0]; }
                     completion:nil];
 }
 
-- (void)drainAway:(float)secs {
+- (void)jk_drainAway:(float)secs {
     self.tag = 20;
-	[NSTimer scheduledTimerWithTimeInterval:secs/50 target:self selector:@selector(drainTimer:) userInfo:nil repeats:YES];
+	[NSTimer scheduledTimerWithTimeInterval:secs/50 target:self selector:@selector(jk_drainTimer:) userInfo:nil repeats:YES];
 }
 
-- (void)drainTimer:(NSTimer*)timer {
+- (void)jk_drainTimer:(NSTimer*)timer {
 	CGAffineTransform trans = CGAffineTransformRotate(CGAffineTransformScale(self.transform, 0.9, 0.9),0.314);
 	self.transform = trans;
 	self.alpha = self.alpha * 0.98;
@@ -191,7 +191,7 @@ float radiansForDegrees(int degrees) {
 
 #pragma mark - Effects
 
-- (void)changeAlpha:(float)newAlpha secs:(float)secs {
+- (void)jk_changeAlpha:(float)newAlpha secs:(float)secs {
     [UIView animateWithDuration:secs 
                           delay:0.0 
                         options:UIViewAnimationOptionCurveLinear
@@ -201,7 +201,7 @@ float radiansForDegrees(int degrees) {
                      completion:nil];
 }
 
-- (void)pulse:(float)secs continuously:(BOOL)continuously {
+- (void)jk_pulse:(float)secs continuously:(BOOL)continuously {
     [UIView animateWithDuration:secs/2 
                           delay:0.0 
                         options:UIViewAnimationOptionCurveLinear
@@ -219,14 +219,14 @@ float radiansForDegrees(int degrees) {
                                           }
                                           completion:^(BOOL finished) { 
                                               if (continuously) {
-                                                  [self pulse:secs continuously:continuously];
+                                                  [self jk_pulse:secs continuously:continuously];
                                               }
                                           }];
                      }];
 }
 #pragma mark - add subview
 
-- (void)addSubviewWithFadeAnimation:(UIView *)subview {
+- (void)jk_addSubviewWithFadeAnimation:(UIView *)subview {
     
     CGFloat finalAlpha = subview.alpha;
     
