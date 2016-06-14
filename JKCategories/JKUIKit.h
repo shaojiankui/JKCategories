@@ -101,7 +101,6 @@
 #import "UIView+JKFrame.h"
 #import "UIView+JKNib.h"
 #import "UIView+JKRecursion.h"
-#import "UIView+JKRecursiveDescription.h"
 #import "UIView+JKScreenshot.h"
 #import "UIView+JKShake.h"
 #import "UIView+JKToast.h"

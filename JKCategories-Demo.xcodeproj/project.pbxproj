@@ -241,7 +241,6 @@
 		A28BE3371A3E9FDC005C4AC6 /* UIView+JKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3161A3E9FDC005C4AC6 /* UIView+JKAnimation.m */; };
 		A28BE3391A3E9FDC005C4AC6 /* UIView+JKFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE31A1A3E9FDC005C4AC6 /* UIView+JKFrame.m */; };
 		A28BE33A1A3E9FDC005C4AC6 /* UIView+JKNib.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE31C1A3E9FDC005C4AC6 /* UIView+JKNib.m */; };
-		A28BE33B1A3E9FDC005C4AC6 /* UIView+JKRecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE31E1A3E9FDC005C4AC6 /* UIView+JKRecursiveDescription.m */; };
 		A28BE33C1A3E9FDC005C4AC6 /* UIViewController+JKRecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3211A3E9FDC005C4AC6 /* UIViewController+JKRecursiveDescription.m */; };
 		A28BE33E1A3E9FDC005C4AC6 /* UIWebView+JKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3261A3E9FDC005C4AC6 /* UIWebView+JKBlocks.m */; };
 		A28BE33F1A3E9FDC005C4AC6 /* UIWebView+JKStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3281A3E9FDC005C4AC6 /* UIWebView+JKStyle.m */; };
@@ -796,8 +795,6 @@
 		A28BE31A1A3E9FDC005C4AC6 /* UIView+JKFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKFrame.m"; sourceTree = "<group>"; };
 		A28BE31B1A3E9FDC005C4AC6 /* UIView+JKNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKNib.h"; sourceTree = "<group>"; };
 		A28BE31C1A3E9FDC005C4AC6 /* UIView+JKNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKNib.m"; sourceTree = "<group>"; };
-		A28BE31D1A3E9FDC005C4AC6 /* UIView+JKRecursiveDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKRecursiveDescription.h"; sourceTree = "<group>"; };
-		A28BE31E1A3E9FDC005C4AC6 /* UIView+JKRecursiveDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKRecursiveDescription.m"; sourceTree = "<group>"; };
 		A28BE3201A3E9FDC005C4AC6 /* UIViewController+JKRecursiveDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKRecursiveDescription.h"; sourceTree = "<group>"; };
 		A28BE3211A3E9FDC005C4AC6 /* UIViewController+JKRecursiveDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JKRecursiveDescription.m"; sourceTree = "<group>"; };
 		A28BE3251A3E9FDC005C4AC6 /* UIWebView+JKBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JKBlocks.h"; sourceTree = "<group>"; };
@@ -2435,8 +2432,6 @@
 				A28BE31A1A3E9FDC005C4AC6 /* UIView+JKFrame.m */,
 				A28BE31B1A3E9FDC005C4AC6 /* UIView+JKNib.h */,
 				A28BE31C1A3E9FDC005C4AC6 /* UIView+JKNib.m */,
-				A28BE31D1A3E9FDC005C4AC6 /* UIView+JKRecursiveDescription.h */,
-				A28BE31E1A3E9FDC005C4AC6 /* UIView+JKRecursiveDescription.m */,
 				A280E5301A523AD700E6ACA2 /* UIView+JKBlockGesture.h */,
 				A280E5311A523AD700E6ACA2 /* UIView+JKBlockGesture.m */,
 				A219B8B51A615CA100135327 /* UIView+JKScreenshot.h */,
@@ -3136,7 +3131,6 @@
 				A22104181CFAC4E500CE6547 /* UIImageView+JKAddition.m in Sources */,
 				A2C12BA81B1C284F00EAD198 /* UITextField+JKSelect.m in Sources */,
 				A2AB1A651B381E3900ED88AF /* UIFontDemoViewController.m in Sources */,
-				A28BE33B1A3E9FDC005C4AC6 /* UIView+JKRecursiveDescription.m in Sources */,
 				A2958D241B359A3B00D7AA0F /* UIImageView+JKBetterFace.m in Sources */,
 				A202D9651B0F6DF900EAB199 /* NSString+JKMIME.m in Sources */,
 				A281FBA31AC8127E009040DA /* NSObjectDemoViewController.m in Sources */,
