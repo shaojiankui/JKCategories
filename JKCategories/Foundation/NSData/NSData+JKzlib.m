@@ -1,7 +1,7 @@
 @import Foundation;
 
 #import <zlib.h>
-
+#import <dlfcn.h>
 #import "NSData+JKzlib.h"
 
 static const uInt CHUNK_SIZE = 65536;
@@ -10,6 +10,15 @@ NSString *const JKZlibErrorDomain = @"se.bitba.JKZlibErrorDomain";
 NSString *const JKZlibErrorInfoKey = @"zerror";
 
 @implementation NSData (JKzlib)
+static void *jk_zlibOpen()
+{
+    static void *libz;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        libz = dlopen("/usr/lib/libz.dylib", RTLD_LAZY);
+    });
+    return libz;
+}
 
 - (NSData *)jk_dataByInflatingWithError:(NSError *__autoreleasing *)error
 {
@@ -37,6 +46,20 @@ NSString *const JKZlibErrorInfoKey = @"zerror";
 - (BOOL)jk_inflate:(void (^)(NSData *))processBlock
           error:(NSError *__autoreleasing *)error
 {
+    void *libz = jk_zlibOpen();
+//    int (*deflateInit2_)(z_streamp, int, int, int, int, int, const char *, int) =
+//    (int (*)(z_streamp, int, int, int, int, int, const char *, int))dlsym(libz, "deflateInit2_");
+//    int (*deflateInit_)(z_streamp, int, const char *, int) =
+//    (int (*)(z_streamp, int, const char *, int))dlsym(libz, "deflateInit_");
+    
+    int (*inflateInit_)(z_streamp,const char *, int) =
+    (int (*)(z_streamp,  const char *, int))dlsym(libz, "inflateInit_");
+    int (*inflate)(z_streamp, int) = (int (*)(z_streamp, int))dlsym(libz, "inflate");
+//    int (*deflate)(z_streamp, int) = (int (*)(z_streamp, int))dlsym(libz, "deflate");
+//    int (*deflateEnd)(z_streamp) = (int (*)(z_streamp))dlsym(libz, "deflateEnd");
+    int (*inflateEnd)(z_streamp) = (int (*)(z_streamp))dlsym(libz, "inflateEnd");
+
+    
     z_stream stream;
     stream.zalloc = Z_NULL;
     stream.zfree = Z_NULL;
@@ -90,12 +113,25 @@ NSString *const JKZlibErrorInfoKey = @"zerror";
 - (BOOL)jk_deflate:(void (^)(NSData *))processBlock
           error:(NSError *__autoreleasing *)error
 {
+    void *libz = jk_zlibOpen();
+//    int (*deflateInit2_)(z_streamp, int, int, int, int, int, const char *, int) =
+//    (int (*)(z_streamp, int, int, int, int, int, const char *, int))dlsym(libz, "deflateInit2_");
+    int (*deflateInit_)(z_streamp, int, const char *, int) =
+    (int (*)(z_streamp, int, const char *, int))dlsym(libz, "deflateInit_");
+    
+//    int (*inflate)(z_streamp, int) = (int (*)(z_streamp, int))dlsym(libz, "inflate");
+    int (*deflate)(z_streamp, int) = (int (*)(z_streamp, int))dlsym(libz, "deflate");
+    int (*deflateEnd)(z_streamp) = (int (*)(z_streamp))dlsym(libz, "deflateEnd");
+//    int (*inflateEnd)(z_streamp) = (int (*)(z_streamp))dlsym(libz, "inflateEnd");
+
+    
     z_stream stream;
     stream.zalloc = Z_NULL;
     stream.zfree = Z_NULL;
     stream.opaque = Z_NULL;
 
     int ret = deflateInit(&stream, 9);
+    
     if (ret != Z_OK) {
         if (error) *error = [NSError errorWithDomain:JKZlibErrorDomain
                                                 code:JKZlibErrorCodeDeflationError
