@@ -1,4 +1,5 @@
-@import Foundation;
+
+#import <Foundation/Foundation.h>
 
 #import <zlib.h>
 #import <dlfcn.h>

@@ -10,13 +10,13 @@
 #import <objc/runtime.h>
 
 //Import required frameworks
-@import AddressBook;
-@import AssetsLibrary;
-@import AVFoundation;
-@import CoreBluetooth;
-@import CoreLocation;
-@import CoreMotion;
-@import EventKit;
+#import <AddressBook/AddressBook.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <AVFoundation/AVFoundation.h>
+#import <CoreBluetooth/CoreBluetooth.h>
+#import <CoreLocation/CoreLocation.h>
+#import <CoreMotion/CoreMotion.h>
+#import <EventKit/EventKit.h>
 
 typedef void (^JKLocationSuccessCallback)();
 typedef void (^JKLocationFailureCallback)();

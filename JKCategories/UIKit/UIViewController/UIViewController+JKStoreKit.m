@@ -10,7 +10,7 @@
 
 #import <objc/runtime.h>
 
-@import StoreKit;
+#import <StoreKit/StoreKit.h>
 
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Constants
