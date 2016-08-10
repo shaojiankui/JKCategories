@@ -13,7 +13,7 @@
                 transform:(CGAffineTransform)transform
            drawTransposed:(BOOL)transpose
      interpolationQuality:(CGInterpolationQuality)quality;
-- (CGAffineTransform)transformForOrientation:(CGSize)newSize;
+- (CGAffineTransform)jk_transformForOrientation:(CGSize)newSize;
 @end
 
 @implementation UIImage (JKResize)
@@ -70,7 +70,7 @@
     }
     
     return [self jk_resizedImage:newSize
-                    transform:[self transformForOrientation:newSize]
+                    transform:[self jk_transformForOrientation:newSize]
                drawTransposed:drawTransposed
          interpolationQuality:quality];
 }
