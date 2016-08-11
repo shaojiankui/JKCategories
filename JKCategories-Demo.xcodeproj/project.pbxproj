@@ -107,7 +107,6 @@
 		A232AC161B38EC9F00A149D3 /* UIView+JKRecursion.m in Sources */ = {isa = PBXBuildFile; fileRef = A232AC151B38EC9F00A149D3 /* UIView+JKRecursion.m */; };
 		A23C10861B3D39AD00FA34AA /* UIViewController+JKBackButtonTouched.m in Sources */ = {isa = PBXBuildFile; fileRef = A23C10851B3D39AD00FA34AA /* UIViewController+JKBackButtonTouched.m */; };
 		A24377231ACBE9CF00FFFEA1 /* NSObject+JKAutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A24377221ACBE9CF00FFFEA1 /* NSObject+JKAutoCoding.m */; };
-		A24868781C1FB05B00D3318A /* UIWebView+JKTS_JavaScriptContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A24868771C1FB05B00D3318A /* UIWebView+JKTS_JavaScriptContext.m */; };
 		A248687B1C1FB08D00D3318A /* UITableViewCell+JKDelaysContentTouches.m in Sources */ = {isa = PBXBuildFile; fileRef = A248687A1C1FB08D00D3318A /* UITableViewCell+JKDelaysContentTouches.m */; };
 		A248782D1C55CC5C00AFF958 /* UIImage+JKSuperCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = A248782C1C55CC5C00AFF958 /* UIImage+JKSuperCompress.m */; };
 		A24EC2DD1B74D49F00CE538B /* NSDictionary+JKURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EC2DC1B74D49F00CE538B /* NSDictionary+JKURL.m */; };
@@ -565,8 +564,6 @@
 		A23C10851B3D39AD00FA34AA /* UIViewController+JKBackButtonTouched.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JKBackButtonTouched.m"; sourceTree = "<group>"; };
 		A24377211ACBE9CF00FFFEA1 /* NSObject+JKAutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JKAutoCoding.h"; sourceTree = "<group>"; };
 		A24377221ACBE9CF00FFFEA1 /* NSObject+JKAutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JKAutoCoding.m"; sourceTree = "<group>"; };
-		A24868761C1FB05B00D3318A /* UIWebView+JKTS_JavaScriptContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JKTS_JavaScriptContext.h"; sourceTree = "<group>"; };
-		A24868771C1FB05B00D3318A /* UIWebView+JKTS_JavaScriptContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JKTS_JavaScriptContext.m"; sourceTree = "<group>"; };
 		A24868791C1FB08D00D3318A /* UITableViewCell+JKDelaysContentTouches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+JKDelaysContentTouches.h"; sourceTree = "<group>"; };
 		A248687A1C1FB08D00D3318A /* UITableViewCell+JKDelaysContentTouches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+JKDelaysContentTouches.m"; sourceTree = "<group>"; };
 		A248782B1C55CC5C00AFF958 /* UIImage+JKSuperCompress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKSuperCompress.h"; sourceTree = "<group>"; };
@@ -2474,8 +2471,6 @@
 		A28BE3221A3E9FDC005C4AC6 /* UIWebView */ = {
 			isa = PBXGroup;
 			children = (
-				A24868761C1FB05B00D3318A /* UIWebView+JKTS_JavaScriptContext.h */,
-				A24868771C1FB05B00D3318A /* UIWebView+JKTS_JavaScriptContext.m */,
 				A2958D3D1B35A41F00D7AA0F /* UIWebView+JKMetaParser.h */,
 				A2958D3E1B35A41F00D7AA0F /* UIWebView+JKMetaParser.m */,
 				A2958D3A1B35A2E900D7AA0F /* UIWebVIew+JKSwipeGesture.h */,
@@ -3220,7 +3215,6 @@
 				A2958CC81B35804600D7AA0F /* CAShapeLayer+JKUIBezierPath.m in Sources */,
 				A2958D331B359CA900D7AA0F /* UIImageView+JKReflect.m in Sources */,
 				A2958D1E1B3597F500D7AA0F /* UITextView+JKPinchZoom.m in Sources */,
-				A24868781C1FB05B00D3318A /* UIWebView+JKTS_JavaScriptContext.m in Sources */,
 				A28BE2F01A3E9F48005C4AC6 /* NSString+JKURLEncode.m in Sources */,
 				A28BE3331A3E9FDC005C4AC6 /* UILabel+JKSuggestSize.m in Sources */,
 				A2EC52EA1A876E7C0059D53B /* NSString+JKBase64.m in Sources */,
