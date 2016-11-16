@@ -47,13 +47,14 @@
     [self jk_zeroOutTimeComponents:&components];
     
     // Generate a valid NSDate and return it.
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     return [gregorianCalendar dateFromComponents:components];
 }
 
+
 + (NSDate *)jk_midnightOfDate:(NSDate *)date {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
+
     // Start out by getting just the year, month and day components of the specified date.
     NSDateComponents *components = [gregorianCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit
                                                         fromDate:date];
@@ -77,14 +78,14 @@
     NSDateComponents *oneDayComponent = [[NSDateComponents alloc] init];
     [oneDayComponent setDay:1];
     
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     return [gregorianCalendar dateByAddingComponents:oneDayComponent
                                               toDate:date
                                              options:0];
 }
 
 + (NSDate *)jk_firstDayOfCurrentMonth {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     
     // Start out by getting just the year, month and day components of the current date.
     NSDate *currentDate = [NSDate date];
@@ -104,7 +105,7 @@
     [minusOneMonthComponent setMonth:-1];
     
     // Subtract 1 month from today's date. This gives us "one month ago today".
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     NSDate *currentDate = [NSDate date];
     NSDate *oneMonthAgoToday = [gregorianCalendar dateByAddingComponents:minusOneMonthComponent
                                                                   toDate:currentDate
@@ -132,7 +133,7 @@
     [plusOneMonthComponent setMonth:1];
     
     // Add 1 month to firstDayOfCurrentMonth.
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     return [gregorianCalendar dateByAddingComponents:plusOneMonthComponent
                                               toDate:firstDayOfCurrentMonth
                                              options:0];
@@ -150,7 +151,7 @@
     [minusOneDayComponent setDay:-1];
     
     // Subtract 1 day from firstDayOfCurrentQuarter.
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     NSDate *lastDayOfPreviousQuarter = [gregorianCalendar dateByAddingComponents:minusOneDayComponent
                                                                           toDate:firstDayOfCurrentQuarter
                                                                          options:0];
@@ -165,14 +166,14 @@
     [plusThreeMonthsComponent setMonth:3];
     
     // Add 3 months to firstDayOfCurrentQuarter.
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     return [gregorianCalendar dateByAddingComponents:plusThreeMonthsComponent
                                               toDate:firstDayOfCurrentQuarter
                                              options:0];
 }
 
 + (NSDate *)jk_firstDayOfCurrentYear {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     
     // Start out by getting just the year, month and day components of the current date.
     NSDate *currentDate = [NSDate date];
@@ -188,7 +189,7 @@
 }
 
 + (NSDate *)jk_firstDayOfPreviousYear {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     NSDate *currentDate = [NSDate date];
     NSDateComponents *components = [gregorianCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit
                                                         fromDate:currentDate];
@@ -209,7 +210,7 @@
     [plusOneYearComponent setYear:1];
     
     // Add 1 year to firstDayOfCurrentYear.
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     return [gregorianCalendar dateByAddingComponents:plusOneYearComponent
                                               toDate:firstDayOfCurrentYear
                                              options:0];
@@ -233,7 +234,7 @@
 }
 
 + (NSDate *)jk_firstDayOfQuarterFromDate:(NSDate *)date {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
     NSDateComponents *components = [gregorianCalendar components:NSMonthCalendarUnit | NSYearCalendarUnit
                                                         fromDate:date];
     
@@ -252,7 +253,7 @@
 
 
 - (NSDate*) jk_dateFloor {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
     NSDateComponents* dateComponents = [gregorianCalendar components:(NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit) fromDate:self];
     
@@ -260,7 +261,7 @@
 }
 
 - (NSDate*) jk_dateCeil {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
     NSDateComponents* dateComponents = [gregorianCalendar components:(NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit) fromDate:self];
     
@@ -272,7 +273,7 @@
 }
 
 - (NSDate*) jk_startOfWeek {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
     NSDateComponents* components = [gregorianCalendar components:NSWeekdayCalendarUnit | NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:self];
     
@@ -282,7 +283,7 @@
 }
 
 - (NSDate*) jk_endOfWeek {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
     NSDateComponents* components = [gregorianCalendar components:NSWeekdayCalendarUnit | NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:self];
     
@@ -295,7 +296,7 @@
 }
 
 - (NSDate*) jk_startOfMonth {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
     NSDateComponents* components = [gregorianCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit fromDate:self];
     
@@ -303,7 +304,7 @@
 }
 
 - (NSDate*) jk_endOfMonth {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
     NSDateComponents* components = [gregorianCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit fromDate:self];
     
@@ -318,7 +319,7 @@
 }
 
 - (NSDate*) jk_startOfYear {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
     NSDateComponents* components = [gregorianCalendar components:NSYearCalendarUnit fromDate:self];
     
@@ -326,7 +327,7 @@
 }
 
 - (NSDate*) jk_endOfYear {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
     NSDateComponents* components = [gregorianCalendar components:NSYearCalendarUnit fromDate:self];
     
@@ -360,7 +361,7 @@
 }
 
 - (NSDate*) jk_previousMonth:(NSUInteger) monthsToMove {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
     NSDateComponents* components = [gregorianCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:self];
     
@@ -384,9 +385,12 @@
 - (NSDate*) jk_nextMonth {
     return [self jk_nextMonth:1];
 }
-
-- (NSDate*) jk_nextMonth:(NSUInteger) monthsToMove {
++(NSCalendar*)jk_gregorianCalendar_factory{
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    return gregorianCalendar;
+}
+- (NSDate*) jk_nextMonth:(NSUInteger) monthsToMove {
+    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
     NSDateComponents* components = [gregorianCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:self];
     

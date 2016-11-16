@@ -695,7 +695,7 @@ static int JK_EscapeMapCompare(const void *ucharVoid, const void *mapVoid) {
     }
 }
 
-- (NSString *)stringByConvertingHTMLToPlainText {
+- (NSString *)jk_stringByConvertingHTMLToPlainText {
     @autoreleasepool {
         // Character sets
         NSCharacterSet *stopCharacters = [NSCharacterSet characterSetWithCharactersInString:[NSString stringWithFormat:@"< \t\n\r%C%C%C%C", (unichar)0x0085, (unichar)0x000C, (unichar)0x2028, (unichar)0x2029]];

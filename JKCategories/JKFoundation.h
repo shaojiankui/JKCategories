@@ -78,6 +78,7 @@
 #import "NSString+JKUUID.h"
 #import "NSString+JKXMLDictionary.h"
 #import "NSString+JKStringPages.h"
+#import "NSString+JKHTML.h"
 #import "NSTimer+JKAddition.h"
 #import "NSTimer+JKBlocks.h"
 #import "NSURL+JKParam.h"
