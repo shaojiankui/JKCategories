@@ -82,25 +82,7 @@
 		A21F34D61B0F28A600D73A91 /* UILabel+JKAutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34D51B0F28A600D73A91 /* UILabel+JKAutoSize.m */; };
 		A21F34DC1B0F302E00D73A91 /* UILabel+JKAutomaticWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34DB1B0F302E00D73A91 /* UILabel+JKAutomaticWriting.m */; };
 		A22103FF1CF8938800CE6547 /* NSTimer+JKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A22103FE1CF8938800CE6547 /* NSTimer+JKBlocks.m */; };
-		A22104031CF9D16D00CE6547 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104021CF9D16D00CE6547 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */; };
-		A221040D1CF9D78C00CE6547 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104061CF9D78C00CE6547 /* UITableView+FDIndexPathHeightCache.m */; };
-		A221040E1CF9D78C00CE6547 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104081CF9D78C00CE6547 /* UITableView+FDKeyedHeightCache.m */; };
-		A221040F1CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A221040A1CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCell.m */; };
-		A22104101CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A221040C1CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCellDebug.m */; };
-		A22104131CF9DCD800CE6547 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104121CF9DCD800CE6547 /* UIScrollView+EmptyDataSet.m */; };
-		A22104161CF9DCFE00CE6547 /* UIScrollView+APParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104151CF9DCFE00CE6547 /* UIScrollView+APParallaxHeader.m */; };
 		A22104181CFAC4E500CE6547 /* UIImageView+JKAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104171CFAC4E500CE6547 /* UIImageView+JKAddition.m */; };
-		A221041B1CFAD49800CE6547 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A221041A1CFAD49800CE6547 /* UINavigationController+FDFullscreenPopGesture.m */; };
-		A221041E1CFAD4FD00CE6547 /* UIView+FDCollapsibleConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = A221041D1CFAD4FD00CE6547 /* UIView+FDCollapsibleConstraints.m */; };
-		A22104211CFAD67000CE6547 /* UIView+Genie.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104201CFAD67000CE6547 /* UIView+Genie.m */; };
-		A22104241CFAD7F700CE6547 /* UIView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104231CFAD7F700CE6547 /* UIView+Debug.m */; };
-		A22104271CFAD8D500CE6547 /* UIView+GestureCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104261CFAD8D500CE6547 /* UIView+GestureCallback.m */; };
-		A221042E1CFADC9600CE6547 /* UIViewController+DDPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104291CFADC9600CE6547 /* UIViewController+DDPopUpViewController.m */; };
-		A221042F1CFADC9600CE6547 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A221042B1CFADC9600CE6547 /* UIViewController+MJPopupViewController.m */; };
-		A22104301CFADC9600CE6547 /* UIViewController+TopBarMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A221042D1CFADC9600CE6547 /* UIViewController+TopBarMessage.m */; };
-		A22104331CFAE2FC00CE6547 /* WebView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104321CFAE2FC00CE6547 /* WebView+Debug.m */; };
-		A22104361CFAE31200CE6547 /* UIWebView+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104351CFAE31200CE6547 /* UIWebView+Alert.m */; };
-		A22104391CFAE6F500CE6547 /* CLLocationManager+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A22104381CFAE6F500CE6547 /* CLLocationManager+Blocks.m */; };
 		A22845251BE2085C000AD2F6 /* NSDecimalNumber+JKCalculatingByString.m in Sources */ = {isa = PBXBuildFile; fileRef = A22845241BE2085C000AD2F6 /* NSDecimalNumber+JKCalculatingByString.m */; };
 		A22845281BE2095B000AD2F6 /* NSNumber+JKCGFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = A22845271BE2095B000AD2F6 /* NSNumber+JKCGFloat.m */; };
 		A228452E1BE20A24000AD2F6 /* NSNumber+JKRomanNumerals.m in Sources */ = {isa = PBXBuildFile; fileRef = A228452D1BE20A24000AD2F6 /* NSNumber+JKRomanNumerals.m */; };
@@ -365,6 +347,7 @@
 		A2FD5B631A52718200555EA2 /* NSDate+JKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B621A52718200555EA2 /* NSDate+JKUtilities.m */; };
 		A2FF6FE71D04334F00320C36 /* NSData+JKPCM.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FF6FE61D04334F00320C36 /* NSData+JKPCM.m */; };
 		B869399D1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = B869399C1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m */; };
+		B8A419521DDC07C800BDB39A /* NSString+JKHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A419511DDC07C800BDB39A /* NSString+JKHTML.m */; };
 		BCB799F31AFDD95300C12525 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F21AFDD95300C12525 /* UIImage+JKGIF.m */; };
 		BCB799F61AFDDAA500C12525 /* UIButton+JKBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F51AFDDAA500C12525 /* UIButton+JKBackgroundColor.m */; };
 		BCB79A021AFDE0B600C12525 /* NSObject+JKBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A011AFDE0B600C12525 /* NSObject+JKBlockTimer.m */; };
@@ -507,43 +490,7 @@
 		A21F34DA1B0F302E00D73A91 /* UILabel+JKAutomaticWriting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JKAutomaticWriting.h"; sourceTree = "<group>"; };
 		A21F34DB1B0F302E00D73A91 /* UILabel+JKAutomaticWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JKAutomaticWriting.m"; sourceTree = "<group>"; };
 		A22103FE1CF8938800CE6547 /* NSTimer+JKBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+JKBlocks.m"; sourceTree = "<group>"; };
-		A22104011CF9D16D00CE6547 /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.h"; sourceTree = "<group>"; };
-		A22104021CF9D16D00CE6547 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.m"; sourceTree = "<group>"; };
-		A22104051CF9D78C00CE6547 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
-		A22104061CF9D78C00CE6547 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
-		A22104071CF9D78C00CE6547 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
-		A22104081CF9D78C00CE6547 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
-		A22104091CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		A221040A1CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
-		A221040B1CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
-		A221040C1CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
-		A22104111CF9DCD800CE6547 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
-		A22104121CF9DCD800CE6547 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
-		A22104141CF9DCFE00CE6547 /* UIScrollView+APParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+APParallaxHeader.h"; sourceTree = "<group>"; };
-		A22104151CF9DCFE00CE6547 /* UIScrollView+APParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+APParallaxHeader.m"; sourceTree = "<group>"; };
 		A22104171CFAC4E500CE6547 /* UIImageView+JKAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKAddition.m"; sourceTree = "<group>"; };
-		A22104191CFAD49800CE6547 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
-		A221041A1CFAD49800CE6547 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		A221041C1CFAD4FD00CE6547 /* UIView+FDCollapsibleConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FDCollapsibleConstraints.h"; sourceTree = "<group>"; };
-		A221041D1CFAD4FD00CE6547 /* UIView+FDCollapsibleConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FDCollapsibleConstraints.m"; sourceTree = "<group>"; };
-		A221041F1CFAD67000CE6547 /* UIView+Genie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Genie.h"; sourceTree = "<group>"; };
-		A22104201CFAD67000CE6547 /* UIView+Genie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Genie.m"; sourceTree = "<group>"; };
-		A22104221CFAD7F700CE6547 /* UIView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug.h"; sourceTree = "<group>"; };
-		A22104231CFAD7F700CE6547 /* UIView+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Debug.m"; sourceTree = "<group>"; };
-		A22104251CFAD8D500CE6547 /* UIView+GestureCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GestureCallback.h"; sourceTree = "<group>"; };
-		A22104261CFAD8D500CE6547 /* UIView+GestureCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureCallback.m"; sourceTree = "<group>"; };
-		A22104281CFADC9600CE6547 /* UIViewController+DDPopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DDPopUpViewController.h"; sourceTree = "<group>"; };
-		A22104291CFADC9600CE6547 /* UIViewController+DDPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DDPopUpViewController.m"; sourceTree = "<group>"; };
-		A221042A1CFADC9600CE6547 /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
-		A221042B1CFADC9600CE6547 /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
-		A221042C1CFADC9600CE6547 /* UIViewController+TopBarMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TopBarMessage.h"; sourceTree = "<group>"; };
-		A221042D1CFADC9600CE6547 /* UIViewController+TopBarMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopBarMessage.m"; sourceTree = "<group>"; };
-		A22104311CFAE2FC00CE6547 /* WebView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+Debug.h"; sourceTree = "<group>"; };
-		A22104321CFAE2FC00CE6547 /* WebView+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebView+Debug.m"; sourceTree = "<group>"; };
-		A22104341CFAE31200CE6547 /* UIWebView+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Alert.h"; sourceTree = "<group>"; };
-		A22104351CFAE31200CE6547 /* UIWebView+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Alert.m"; sourceTree = "<group>"; };
-		A22104371CFAE6F500CE6547 /* CLLocationManager+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+Blocks.h"; sourceTree = "<group>"; };
-		A22104381CFAE6F500CE6547 /* CLLocationManager+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+Blocks.m"; sourceTree = "<group>"; };
 		A22104621CFAFF0100CE6547 /* JKQuartzCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKQuartzCore.h; sourceTree = "<group>"; };
 		A22104631CFAFF1E00CE6547 /* JKCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKCoreData.h; sourceTree = "<group>"; };
 		A22104641CFAFF2900CE6547 /* JKFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKFoundation.h; sourceTree = "<group>"; };
@@ -1025,6 +972,8 @@
 		A2FF6FE61D04334F00320C36 /* NSData+JKPCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKPCM.m"; sourceTree = "<group>"; };
 		B869399B1CA8EEB500EE7A1A /* UIButton+JKImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKImagePosition.h"; sourceTree = "<group>"; };
 		B869399C1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JKImagePosition.m"; sourceTree = "<group>"; };
+		B8A419501DDC07C800BDB39A /* NSString+JKHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKHTML.h"; sourceTree = "<group>"; };
+		B8A419511DDC07C800BDB39A /* NSString+JKHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKHTML.m"; sourceTree = "<group>"; };
 		BCB799F11AFDD95300C12525 /* UIImage+JKGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKGIF.h"; sourceTree = "<group>"; };
 		BCB799F21AFDD95300C12525 /* UIImage+JKGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKGIF.m"; sourceTree = "<group>"; };
 		BCB799F41AFDDAA500C12525 /* UIButton+JKBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKBackgroundColor.h"; sourceTree = "<group>"; };
@@ -1420,62 +1369,10 @@
 			path = UIScreen;
 			sourceTree = "<group>";
 		};
-		A22104001CF9D16400CE6547 /* NotRenamed */ = {
-			isa = PBXGroup;
-			children = (
-				A22104371CFAE6F500CE6547 /* CLLocationManager+Blocks.h */,
-				A22104381CFAE6F500CE6547 /* CLLocationManager+Blocks.m */,
-				A22104341CFAE31200CE6547 /* UIWebView+Alert.h */,
-				A22104351CFAE31200CE6547 /* UIWebView+Alert.m */,
-				A22104311CFAE2FC00CE6547 /* WebView+Debug.h */,
-				A22104321CFAE2FC00CE6547 /* WebView+Debug.m */,
-				A22104281CFADC9600CE6547 /* UIViewController+DDPopUpViewController.h */,
-				A22104291CFADC9600CE6547 /* UIViewController+DDPopUpViewController.m */,
-				A221042A1CFADC9600CE6547 /* UIViewController+MJPopupViewController.h */,
-				A221042B1CFADC9600CE6547 /* UIViewController+MJPopupViewController.m */,
-				A221042C1CFADC9600CE6547 /* UIViewController+TopBarMessage.h */,
-				A221042D1CFADC9600CE6547 /* UIViewController+TopBarMessage.m */,
-				A22104251CFAD8D500CE6547 /* UIView+GestureCallback.h */,
-				A22104261CFAD8D500CE6547 /* UIView+GestureCallback.m */,
-				A22104221CFAD7F700CE6547 /* UIView+Debug.h */,
-				A22104231CFAD7F700CE6547 /* UIView+Debug.m */,
-				A221041F1CFAD67000CE6547 /* UIView+Genie.h */,
-				A22104201CFAD67000CE6547 /* UIView+Genie.m */,
-				A221041C1CFAD4FD00CE6547 /* UIView+FDCollapsibleConstraints.h */,
-				A221041D1CFAD4FD00CE6547 /* UIView+FDCollapsibleConstraints.m */,
-				A22104191CFAD49800CE6547 /* UINavigationController+FDFullscreenPopGesture.h */,
-				A221041A1CFAD49800CE6547 /* UINavigationController+FDFullscreenPopGesture.m */,
-				A22104141CF9DCFE00CE6547 /* UIScrollView+APParallaxHeader.h */,
-				A22104151CF9DCFE00CE6547 /* UIScrollView+APParallaxHeader.m */,
-				A22104111CF9DCD800CE6547 /* UIScrollView+EmptyDataSet.h */,
-				A22104121CF9DCD800CE6547 /* UIScrollView+EmptyDataSet.m */,
-				A22104041CF9D78C00CE6547 /* UITableView-FDTemplateLayoutCell */,
-				A22104011CF9D16D00CE6547 /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */,
-				A22104021CF9D16D00CE6547 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */,
-			);
-			path = NotRenamed;
-			sourceTree = "<group>";
-		};
-		A22104041CF9D78C00CE6547 /* UITableView-FDTemplateLayoutCell */ = {
-			isa = PBXGroup;
-			children = (
-				A22104051CF9D78C00CE6547 /* UITableView+FDIndexPathHeightCache.h */,
-				A22104061CF9D78C00CE6547 /* UITableView+FDIndexPathHeightCache.m */,
-				A22104071CF9D78C00CE6547 /* UITableView+FDKeyedHeightCache.h */,
-				A22104081CF9D78C00CE6547 /* UITableView+FDKeyedHeightCache.m */,
-				A22104091CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCell.h */,
-				A221040A1CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCell.m */,
-				A221040B1CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCellDebug.h */,
-				A221040C1CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCellDebug.m */,
-			);
-			path = "UITableView-FDTemplateLayoutCell";
-			sourceTree = "<group>";
-		};
 		A22725C51A3E72D50061605B = {
 			isa = PBXGroup;
 			children = (
 				A22725D01A3E72D50061605B /* JKCategories */,
-				A22104001CF9D16400CE6547 /* NotRenamed */,
 				A202D9D01B103F9400EAB199 /* JKCategories-Demo */,
 				A281FB4C1AC80F61009040DA /* Demos */,
 				A22725CF1A3E72D50061605B /* Products */,
@@ -2295,6 +2192,8 @@
 				A24EC2FB1B74E05300CE538B /* NSString+JKMatcher.m */,
 				A2BD820E1D0ED7C2006E32F0 /* NSString+JKStringPages.h */,
 				A2BD820F1D0ED7C2006E32F0 /* NSString+JKStringPages.m */,
+				B8A419501DDC07C800BDB39A /* NSString+JKHTML.h */,
+				B8A419511DDC07C800BDB39A /* NSString+JKHTML.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -3085,7 +2984,6 @@
 				A2AAA1EF1B0F1DCE004A3231 /* NSString+JKSize.m in Sources */,
 				A281FBD51AC81330009040DA /* UIImageViewDemoViewController.m in Sources */,
 				A205E4D71C28E815002A1E33 /* UIButton+JKMiddleAligning.m in Sources */,
-				A22104101CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				A202D9AB1B102F0F00EAB199 /* NSDate+JKFormatter.m in Sources */,
 				A218D8D71A479E9C00AB83CA /* UIColor+JKWeb.m in Sources */,
 				A24EC2DD1B74D49F00CE538B /* NSDictionary+JKURL.m in Sources */,
@@ -3095,7 +2993,6 @@
 				A24EC2F01B74DD5600CE538B /* NSString+JKXMLDictionary.m in Sources */,
 				A28BE3671A3EAF2E005C4AC6 /* UIColor+JKGradient.m in Sources */,
 				A28BE2E81A3E9F48005C4AC6 /* NSData+JKEncrypt.m in Sources */,
-				A22104391CFAE6F500CE6547 /* CLLocationManager+Blocks.m in Sources */,
 				A281FC081AC813DF009040DA /* UIWebViewDemoViewController.m in Sources */,
 				A28BE3861A3ECF49005C4AC6 /* NSObject+JKGCD.m in Sources */,
 				A22103FF1CF8938800CE6547 /* NSTimer+JKBlocks.m in Sources */,
@@ -3103,21 +3000,17 @@
 				A2EF56FA1B21D44D0005F730 /* UINavigationItem+JKLoading.m in Sources */,
 				A2958CB41B35792300D7AA0F /* CAMediaTimingFunction+JKAdditionalEquations.m in Sources */,
 				A2958CAF1B34FC1100D7AA0F /* CALayerDemoViewController.m in Sources */,
-				A22104161CF9DCFE00CE6547 /* UIScrollView+APParallaxHeader.m in Sources */,
 				A2CFAEF51A56BD050004A282 /* NSString+JKScore.m in Sources */,
-				A22104271CFAD8D500CE6547 /* UIView+GestureCallback.m in Sources */,
 				A2958CF41B3583D200D7AA0F /* NSManagedObject+JKDictionary.m in Sources */,
 				A280E5481A52480300E6ACA2 /* UIBezierPath+JKSVGString.m in Sources */,
 				A281FBB71AC812C8009040DA /* NSURLDemoViewController.m in Sources */,
 				A2958CD41B35825100D7AA0F /* CAAnimationDemoViewController.m in Sources */,
 				A202D9DC1B103F9400EAB199 /* main.m in Sources */,
 				A2EF56BE1B21C3050005F730 /* NSManagedObjectContext+JKFetching.m in Sources */,
-				A22104241CFAD7F700CE6547 /* UIView+Debug.m in Sources */,
 				A29551B51C22A3CE007962FC /* NSOperationDemoViewController.m in Sources */,
 				A2EF56DD1B21C52B0005F730 /* NSManagedObjectDemoViewController.m in Sources */,
 				A284C15B1AEBDAC200D90ED5 /* NSDictionary+JKJSONString.m in Sources */,
 				A2FD5B321A52574C00555EA2 /* UIImage+JKMerge.m in Sources */,
-				A221041E1CFAD4FD00CE6547 /* UIView+FDCollapsibleConstraints.m in Sources */,
 				A2958D391B35A08000D7AA0F /* UIImage+JKVector.m in Sources */,
 				A281FBDA1AC8133D009040DA /* UILableDemoViewController.m in Sources */,
 				A218D8E01A47A25100AB83CA /* UIWebView+JKJavaScript.m in Sources */,
@@ -3157,7 +3050,6 @@
 				A281FBAD1AC812A8009040DA /* NSStringDemoViewController.m in Sources */,
 				A281FBE51AC81386009040DA /* UIScrollViewDemoViewController.m in Sources */,
 				A2FD5B4F1A52693600555EA2 /* NSFileManager+JKPaths.m in Sources */,
-				A22104331CFAE2FC00CE6547 /* WebView+Debug.m in Sources */,
 				A2C12BAB1B1C286C00EAD198 /* UITextView+JKSelect.m in Sources */,
 				A2AF02AA1A74C096003FEC8D /* NSDictionary+JKMerge.m in Sources */,
 				BCB79A021AFDE0B600C12525 /* NSObject+JKBlockTimer.m in Sources */,
@@ -3192,9 +3084,7 @@
 				A2958CE31B35827700D7AA0F /* CATransactionDemoViewController.m in Sources */,
 				A28BE3341A3E9FDC005C4AC6 /* UINavigationController+JKTransitions.m in Sources */,
 				A202D9AE1B10305500EAB199 /* NSObject+JKKVOBlocks.m in Sources */,
-				A22104211CFAD67000CE6547 /* UIView+Genie.m in Sources */,
 				A202D96B1B0F6FA400EAB199 /* UIBarButtonItem+JKAction.m in Sources */,
-				A221040E1CF9D78C00CE6547 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				A202D9751B0F78EE00EAB199 /* UISplitViewController+JKQuickAccess.m in Sources */,
 				A21CF18A1B38F7C4006415E0 /* MKMapView+JKMoveLogo.m in Sources */,
 				A28BE37F1A3EC561005C4AC6 /* UIWebView+JKLoad.m in Sources */,
@@ -3207,21 +3097,19 @@
 				A281FC121AC813F5009040DA /* UINavigationControllerDemoViewController.m in Sources */,
 				BCB79A0C1AFDF23500C12525 /* UIAlertView+JKBlock.m in Sources */,
 				A2893D971AC3E5FE00EFA90A /* UIButton+JKIndicator.m in Sources */,
-				A221042E1CFADC9600CE6547 /* UIViewController+DDPopUpViewController.m in Sources */,
 				A2C97D851C96576E00614B98 /* UICollectionViewDemoViewController.m in Sources */,
 				A281FBEF1AC8139D009040DA /* UITableViewCellDemoViewController.m in Sources */,
 				A2FD5B471A52636100555EA2 /* UIResponder+JKChain.m in Sources */,
-				A221042F1CFADC9600CE6547 /* UIViewController+MJPopupViewController.m in Sources */,
 				A2958CC81B35804600D7AA0F /* CAShapeLayer+JKUIBezierPath.m in Sources */,
 				A2958D331B359CA900D7AA0F /* UIImageView+JKReflect.m in Sources */,
 				A2958D1E1B3597F500D7AA0F /* UITextView+JKPinchZoom.m in Sources */,
 				A28BE2F01A3E9F48005C4AC6 /* NSString+JKURLEncode.m in Sources */,
 				A28BE3331A3E9FDC005C4AC6 /* UILabel+JKSuggestSize.m in Sources */,
 				A2EC52EA1A876E7C0059D53B /* NSString+JKBase64.m in Sources */,
-				A221041B1CFAD49800CE6547 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				A202D9911B0F8B6000EAB199 /* NSUserDefaults+JKSafeAccess.m in Sources */,
 				A281FB8A1AC81217009040DA /* NSDataDemoViewController.m in Sources */,
 				A28BE33F1A3E9FDC005C4AC6 /* UIWebView+JKStyle.m in Sources */,
+				B8A419521DDC07C800BDB39A /* NSString+JKHTML.m in Sources */,
 				A202D9711B0F778900EAB199 /* UIView+JKConstraints.m in Sources */,
 				A27E93181B381CE40010C7EA /* UIFont+JKCustomLoader.m in Sources */,
 				A2B995CD1B46779500011613 /* UINavigationItem+JKMargin.m in Sources */,
@@ -3244,7 +3132,6 @@
 				A2958D301B359C3300D7AA0F /* UIImageView+JKGeometryConversion.m in Sources */,
 				A281FBF91AC813B8009040DA /* UITextViewDemoViewController.m in Sources */,
 				A202D9C01B1038DB00EAB199 /* UIBarButtonItemDemoViewController.m in Sources */,
-				A22104361CFAE31200CE6547 /* UIWebView+Alert.m in Sources */,
 				A2EF56EA1B21CD620005F730 /* UIView+JKShake.m in Sources */,
 				A248687B1C1FB08D00D3318A /* UITableViewCell+JKDelaysContentTouches.m in Sources */,
 				A28BE3551A3EAA21005C4AC6 /* NSObject+JKBlocks.m in Sources */,
@@ -3263,10 +3150,8 @@
 				A28BE2F11A3E9F48005C4AC6 /* NSTimer+JKAddition.m in Sources */,
 				A281FBD01AC81324009040DA /* UIImageDemoViewController.m in Sources */,
 				A2958CCC1B35808B00D7AA0F /* CATransaction+JKAnimateWithDuration.m in Sources */,
-				A22104131CF9DCD800CE6547 /* UIScrollView+EmptyDataSet.m in Sources */,
 				BCB799F31AFDD95300C12525 /* UIImage+JKGIF.m in Sources */,
 				A286CB671B53860C008896C6 /* UIPopoverControllerDemoViewController.m in Sources */,
-				A221040F1CF9D78C00CE6547 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				A2FD5B551A526AC900555EA2 /* NSString+JKUUID.m in Sources */,
 				A28BE2ED1A3E9F48005C4AC6 /* NSString+JKDictionaryValue.m in Sources */,
 				A21F34C11B0F229700D73A91 /* UIScreen+JKFrame.m in Sources */,
@@ -3286,7 +3171,6 @@
 				A202D99A1B0F916900EAB199 /* UIControlDemoViewController.m in Sources */,
 				7926E6931B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m in Sources */,
 				A2FD5B4B1A52687000555EA2 /* NSException+JKTrace.m in Sources */,
-				A22104031CF9D16D00CE6547 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				A27E931E1B381D930010C7EA /* UIFont+JKDynamicFontControl.m in Sources */,
 				A2B995D31B46797500011613 /* UIViewController+JKBlockSegue.m in Sources */,
 				A286CA781C291ECE000075D4 /* NSObject+JKReflection.m in Sources */,
@@ -3309,7 +3193,6 @@
 				A202D97B1B0F7C3300EAB199 /* CLLocation+JKCH1903.m in Sources */,
 				A281FBC61AC81303009040DA /* UIColorDemoViewController.m in Sources */,
 				A21CF1841B38F65C006415E0 /* NSHTTPCookieStorage+JKFreezeDry.m in Sources */,
-				A221040D1CF9D78C00CE6547 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				A280E53D1A52433200E6ACA2 /* NSData+JKGzip.m in Sources */,
 				A28BE3301A3E9FDC005C4AC6 /* UIImage+JKRoundedCorner.m in Sources */,
 				A21F34CD1B0F248D00D73A91 /* UINavigationItemDemoViewController.m in Sources */,
@@ -3361,7 +3244,6 @@
 				A2893D941AC3D42400EFA90A /* UIButton+JKCountDown.m in Sources */,
 				A23C10861B3D39AD00FA34AA /* UIViewController+JKBackButtonTouched.m in Sources */,
 				A232AC161B38EC9F00A149D3 /* UIView+JKRecursion.m in Sources */,
-				A22104301CFADC9600CE6547 /* UIViewController+TopBarMessage.m in Sources */,
 				A28BE33C1A3E9FDC005C4AC6 /* UIViewController+JKRecursiveDescription.m in Sources */,
 				A281FB421AC800F2009040DA /* NSString+JKTrims.m in Sources */,
 				A28BE32F1A3E9FDC005C4AC6 /* UIImage+JKResize.m in Sources */,
