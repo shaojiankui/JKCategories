@@ -26,6 +26,7 @@
 #import "NSDate+JKInternetDateTime.h"
 #import "NSDate+JKReporting.h"
 #import "NSDate+JKUtilities.h"
+#import "NSDate+JKZeroDate.h"
 #import "NSDateFormatter+JKMake.h"
 #import "NSDecimalNumber+JKCalculatingByString.h"
 #import "NSDecimalNumber+JKExtensions.h"

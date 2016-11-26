@@ -302,6 +302,7 @@
 		A2C97D861C96576E00614B98 /* UICollectionViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C97D841C96576E00614B98 /* UICollectionViewDemoViewController.xib */; };
 		A2CFAEF51A56BD050004A282 /* NSString+JKScore.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF41A56BD050004A282 /* NSString+JKScore.m */; };
 		A2CFAEF81A56D15C0004A282 /* UIColor+JKModify.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CFAEF71A56D15C0004A282 /* UIColor+JKModify.m */; };
+		A2D4AFF61DE950C700DA0C3F /* NSDate+JKZeroDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D4AFF51DE950C700DA0C3F /* NSDate+JKZeroDate.m */; };
 		A2E305651BA927E10006BE4E /* NSURLRequest+JKParamsFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E305641BA927E10006BE4E /* NSURLRequest+JKParamsFromDictionary.m */; };
 		A2E3056D1BA92A110006BE4E /* NSURLRequestDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E3056B1BA92A110006BE4E /* NSURLRequestDemoViewController.m */; };
 		A2E3056E1BA92A110006BE4E /* NSURLRequestDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E3056C1BA92A110006BE4E /* NSURLRequestDemoViewController.xib */; };
@@ -891,6 +892,8 @@
 		A2CFAEF41A56BD050004A282 /* NSString+JKScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKScore.m"; sourceTree = "<group>"; };
 		A2CFAEF61A56D15C0004A282 /* UIColor+JKModify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKModify.h"; sourceTree = "<group>"; };
 		A2CFAEF71A56D15C0004A282 /* UIColor+JKModify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKModify.m"; sourceTree = "<group>"; };
+		A2D4AFF41DE950C700DA0C3F /* NSDate+JKZeroDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JKZeroDate.h"; sourceTree = "<group>"; };
+		A2D4AFF51DE950C700DA0C3F /* NSDate+JKZeroDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JKZeroDate.m"; sourceTree = "<group>"; };
 		A2E305631BA927E10006BE4E /* NSURLRequest+JKParamsFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+JKParamsFromDictionary.h"; sourceTree = "<group>"; };
 		A2E305641BA927E10006BE4E /* NSURLRequest+JKParamsFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+JKParamsFromDictionary.m"; sourceTree = "<group>"; };
 		A2E305661BA929700006BE4E /* NSMutableURLRequest+JKUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+JKUpload.h"; sourceTree = "<group>"; };
@@ -1576,6 +1579,8 @@
 				A20FFDF91B4F944A00600093 /* NSDate+JKInternetDateTime.m */,
 				A28141B71B5BCA0500496E75 /* NSDate+JKCupertinoYankee.h */,
 				A28141B81B5BCA0500496E75 /* NSDate+JKCupertinoYankee.m */,
+				A2D4AFF41DE950C700DA0C3F /* NSDate+JKZeroDate.h */,
+				A2D4AFF51DE950C700DA0C3F /* NSDate+JKZeroDate.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -3138,6 +3143,7 @@
 				A2C12BA21B1C282C00EAD198 /* UITableView+JKiOS7Style.m in Sources */,
 				A2681A441A75C7C8009BA7EE /* NSString+JKEncrypt.m in Sources */,
 				A24EC2E31B74D69E00CE538B /* NSRunLoopDemoViewController.m in Sources */,
+				A2D4AFF61DE950C700DA0C3F /* NSDate+JKZeroDate.m in Sources */,
 				A284C0FE1AEB908100D90ED5 /* UIBezierPath+JKBasicShapes.m in Sources */,
 				A29EC2681B527A19008ABB42 /* UIPopoverController+iPhone.m in Sources */,
 				A2E305651BA927E10006BE4E /* NSURLRequest+JKParamsFromDictionary.m in Sources */,
