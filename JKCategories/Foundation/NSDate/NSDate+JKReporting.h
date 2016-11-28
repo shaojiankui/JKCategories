@@ -47,28 +47,28 @@
 + (NSDate *)jk_firstDayOfNextYear;
 
 
-- (NSDate*)jk_dateFloor;
-- (NSDate*)jk_dateCeil;
+- (NSDate *)jk_dateFloor;
+- (NSDate *)jk_dateCeil;
 
-- (NSDate*)jk_startOfWeek;
-- (NSDate*)jk_endOfWeek;
+- (NSDate *)jk_startOfWeek;
+- (NSDate *)jk_endOfWeek;
 
-- (NSDate*) jk_startOfMonth;
-- (NSDate*) jk_endOfMonth;
+- (NSDate *)jk_startOfMonth;
+- (NSDate *)jk_endOfMonth;
 
-- (NSDate*) jk_startOfYear;
-- (NSDate*) jk_endOfYear;
+- (NSDate *)jk_startOfYear;
+- (NSDate *)jk_endOfYear;
 
-- (NSDate*) jk_previousDay;
-- (NSDate*) jk_nextDay;
+- (NSDate *)jk_previousDay;
+- (NSDate *)jk_nextDay;
 
-- (NSDate*) jk_previousWeek;
-- (NSDate*) jk_nextWeek;
+- (NSDate *)jk_previousWeek;
+- (NSDate *)jk_nextWeek;
 
-- (NSDate*) jk_previousMonth;
-- (NSDate*) jk_previousMonth:(NSUInteger) monthsToMove;
-- (NSDate*) jk_nextMonth;
-- (NSDate*) jk_nextMonth:(NSUInteger) monthsToMove;
+- (NSDate *)jk_previousMonth;
+- (NSDate *)jk_previousMonth:(NSUInteger) monthsToMove;
+- (NSDate *)jk_nextMonth;
+- (NSDate *)jk_nextMonth:(NSUInteger) monthsToMove;
 
 #ifdef DEBUG
 // For testing only. A helper function to format and display a date
