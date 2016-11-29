@@ -349,6 +349,10 @@
 		A2FF6FE71D04334F00320C36 /* NSData+JKPCM.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FF6FE61D04334F00320C36 /* NSData+JKPCM.m */; };
 		B869399D1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = B869399C1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m */; };
 		B8A419521DDC07C800BDB39A /* NSString+JKHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A419511DDC07C800BDB39A /* NSString+JKHTML.m */; };
+		B8C8D1361DED106A0069354F /* UIButton+JKBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8D1351DED106A0069354F /* UIButton+JKBadge.m */; };
+		B8C8D1391DED106F0069354F /* UIBarButtonItem+JKBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8D1381DED106F0069354F /* UIBarButtonItem+JKBadge.m */; };
+		B8C8D1421DED16D60069354F /* UITextField+JKInputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8D1411DED16D60069354F /* UITextField+JKInputLimit.m */; };
+		B8C8D1451DED18820069354F /* UITextView+JKInputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8D1441DED18820069354F /* UITextView+JKInputLimit.m */; };
 		BCB799F31AFDD95300C12525 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F21AFDD95300C12525 /* UIImage+JKGIF.m */; };
 		BCB799F61AFDDAA500C12525 /* UIButton+JKBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F51AFDDAA500C12525 /* UIButton+JKBackgroundColor.m */; };
 		BCB79A021AFDE0B600C12525 /* NSObject+JKBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A011AFDE0B600C12525 /* NSObject+JKBlockTimer.m */; };
@@ -977,6 +981,14 @@
 		B869399C1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JKImagePosition.m"; sourceTree = "<group>"; };
 		B8A419501DDC07C800BDB39A /* NSString+JKHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKHTML.h"; sourceTree = "<group>"; };
 		B8A419511DDC07C800BDB39A /* NSString+JKHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKHTML.m"; sourceTree = "<group>"; };
+		B8C8D1341DED106A0069354F /* UIButton+JKBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKBadge.h"; sourceTree = "<group>"; };
+		B8C8D1351DED106A0069354F /* UIButton+JKBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JKBadge.m"; sourceTree = "<group>"; };
+		B8C8D1371DED106F0069354F /* UIBarButtonItem+JKBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JKBadge.h"; sourceTree = "<group>"; };
+		B8C8D1381DED106F0069354F /* UIBarButtonItem+JKBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JKBadge.m"; sourceTree = "<group>"; };
+		B8C8D1401DED16D60069354F /* UITextField+JKInputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+JKInputLimit.h"; sourceTree = "<group>"; };
+		B8C8D1411DED16D60069354F /* UITextField+JKInputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKInputLimit.m"; sourceTree = "<group>"; };
+		B8C8D1431DED18820069354F /* UITextView+JKInputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+JKInputLimit.h"; sourceTree = "<group>"; };
+		B8C8D1441DED18820069354F /* UITextView+JKInputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JKInputLimit.m"; sourceTree = "<group>"; };
 		BCB799F11AFDD95300C12525 /* UIImage+JKGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKGIF.h"; sourceTree = "<group>"; };
 		BCB799F21AFDD95300C12525 /* UIImage+JKGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKGIF.m"; sourceTree = "<group>"; };
 		BCB799F41AFDDAA500C12525 /* UIButton+JKBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKBackgroundColor.h"; sourceTree = "<group>"; };
@@ -1012,6 +1024,8 @@
 		A202D9681B0F6F9800EAB199 /* UIBarButtonItem */ = {
 			isa = PBXGroup;
 			children = (
+				B8C8D1371DED106F0069354F /* UIBarButtonItem+JKBadge.h */,
+				B8C8D1381DED106F0069354F /* UIBarButtonItem+JKBadge.m */,
 				A202D9691B0F6FA400EAB199 /* UIBarButtonItem+JKAction.h */,
 				A202D96A1B0F6FA400EAB199 /* UIBarButtonItem+JKAction.m */,
 			);
@@ -1533,6 +1547,8 @@
 		A280E5221A52339800E6ACA2 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				B8C8D1341DED106A0069354F /* UIButton+JKBadge.h */,
+				B8C8D1351DED106A0069354F /* UIButton+JKBadge.m */,
 				B869399B1CA8EEB500EE7A1A /* UIButton+JKImagePosition.h */,
 				B869399C1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m */,
 				A205E4D51C28E815002A1E33 /* UIButton+JKMiddleAligning.h */,
@@ -2435,6 +2451,8 @@
 		A28BE3871A3ED354005C4AC6 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
+				B8C8D1431DED18820069354F /* UITextView+JKInputLimit.h */,
+				B8C8D1441DED18820069354F /* UITextView+JKInputLimit.m */,
 				A28BE3881A3ED364005C4AC6 /* UITextView+JKPlaceHolder.h */,
 				A28BE3891A3ED364005C4AC6 /* UITextView+JKPlaceHolder.m */,
 				A2C12BA91B1C286C00EAD198 /* UITextView+JKSelect.h */,
@@ -2456,6 +2474,8 @@
 				A2C12BA71B1C284F00EAD198 /* UITextField+JKSelect.m */,
 				A28BE38C1A3ED5A4005C4AC6 /* UITextField+JKBlocks.h */,
 				A28BE38D1A3ED5A4005C4AC6 /* UITextField+JKBlocks.m */,
+				B8C8D1401DED16D60069354F /* UITextField+JKInputLimit.h */,
+				B8C8D1411DED16D60069354F /* UITextField+JKInputLimit.m */,
 			);
 			path = UITextField;
 			sourceTree = "<group>";
@@ -3050,6 +3070,7 @@
 				A21F34D61B0F28A600D73A91 /* UILabel+JKAutoSize.m in Sources */,
 				A2958CB71B35794500D7AA0F /* UIView+JKVisuals.m in Sources */,
 				B869399D1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m in Sources */,
+				B8C8D1361DED106A0069354F /* UIButton+JKBadge.m in Sources */,
 				A28BE32B1A3E9FDC005C4AC6 /* UIImage+JKAlpha.m in Sources */,
 				A28BE3361A3E9FDC005C4AC6 /* UITableViewCell+JKNIB.m in Sources */,
 				A281FBAD1AC812A8009040DA /* NSStringDemoViewController.m in Sources */,
@@ -3175,11 +3196,14 @@
 				A292BDCD1B03422D002DAB71 /* NSString+JKRemoveEmoji.m in Sources */,
 				A2E3056D1BA92A110006BE4E /* NSURLRequestDemoViewController.m in Sources */,
 				A202D99A1B0F916900EAB199 /* UIControlDemoViewController.m in Sources */,
+				B8C8D1421DED16D60069354F /* UITextField+JKInputLimit.m in Sources */,
+				B8C8D1451DED18820069354F /* UITextView+JKInputLimit.m in Sources */,
 				7926E6931B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m in Sources */,
 				A2FD5B4B1A52687000555EA2 /* NSException+JKTrace.m in Sources */,
 				A27E931E1B381D930010C7EA /* UIFont+JKDynamicFontControl.m in Sources */,
 				A2B995D31B46797500011613 /* UIViewController+JKBlockSegue.m in Sources */,
 				A286CA781C291ECE000075D4 /* NSObject+JKReflection.m in Sources */,
+				B8C8D1391DED106F0069354F /* UIBarButtonItem+JKBadge.m in Sources */,
 				A28BE2EC1A3E9F48005C4AC6 /* NSObject+JKAssociatedObject.m in Sources */,
 				A21F34C81B0F247800D73A91 /* UIScreenDemoViewController.m in Sources */,
 				A2958D1B1B35975A00D7AA0F /* UITextField+JKHistory.m in Sources */,

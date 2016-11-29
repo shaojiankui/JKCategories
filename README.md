@@ -16,7 +16,7 @@ JKCategories(iOS-Categories), a collection of useful Objective-C Categories exte
 Copy JKCategories folder to your project
 
 ## Usage
-import the header file into any class where you wish to make use of the functionality such ass **#import "NSArray+JKSafeAccess.h"** ,Not recommended for import all the header files of JKCategories into pch or baseclass
+import the header file into any class where you wish to make use of the functionality such as **#import "NSArray+JKSafeAccess.h"** ,Not recommended for import all the header files of JKCategories into pch or baseclass
 
 ####onekey import all categories of framework
 

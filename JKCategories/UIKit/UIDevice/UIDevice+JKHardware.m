@@ -4,7 +4,7 @@
 //
 //  Created by Inder Kumar Rathore on 19/01/13.
 //  Copyright (c) 2013 Rathore. All rights reserved.
-//
+//  https://github.com/fahrulazmi/UIDeviceHardware/blob/master/UIDeviceHardware.m
 
 #import "UIDevice+JKHardware.h"
 #include <sys/types.h>
@@ -51,6 +51,10 @@
     if ([platform isEqualToString:@"iPhone8,1"])    return @"iPhone 6s";
     if ([platform isEqualToString:@"iPhone8,2"])    return @"iPhone 6s Plus";
     if ([platform isEqualToString:@"iPhone8,4"])    return @"iPhone SE";
+    if ([platform isEqualToString:@"iPhone9,1"])    return @"iPhone 7";
+    if ([platform isEqualToString:@"iPhone9,2"])    return @"iPhone 7 Plus";
+    if ([platform isEqualToString:@"iPhone9,3"])    return @"iPhone 7";
+    if ([platform isEqualToString:@"iPhone9,4"])    return @"iPhone 7 Plus";
     
     if ([platform isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
     if ([platform isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
