@@ -5,13 +5,13 @@
 //  Created by Jakey on 14/12/30.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
 //
-
+// https://github.com/erica/NSDate-Extensions
 #import <Foundation/Foundation.h>
-#define D_MINUTE	60
-#define D_HOUR	3600
-#define D_DAY	86400
-#define D_WEEK	604800
-#define D_YEAR	31556926
+#define JK_D_MINUTE	60
+#define JK_D_HOUR	3600
+#define JK_D_DAY	86400
+#define JK_D_WEEK	604800
+#define JK_D_YEAR	31556926
 @interface NSDate (JKUtilities)
 + (NSCalendar *)jk_currentCalendar; // avoid bottlenecks
 #pragma mark ---- Decomposing dates 分解的日期

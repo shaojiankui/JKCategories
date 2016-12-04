@@ -21,12 +21,24 @@
 // THE SOFTWARE.
 
 #import "NSDate+JKCupertinoYankee.h"
-
+#import <UIKit/UIKit.h>
 @implementation NSDate (JKCupertinoYankee)
 
 - (NSDate *)jk_beginningOfDay {
     NSCalendar *calendar = [NSCalendar currentCalendar];
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
+    NSDateComponents *components;
+    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+        components = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:self];
+    }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:self];
+#pragma clang diagnostic pop
+    }
+#else
     NSDateComponents *components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:self];
+#endif
     
     return [calendar dateFromComponents:components];
 }
@@ -42,7 +54,19 @@
 
 - (NSDate *)jk_beginningOfWeek {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekdayCalendarUnit | NSDayCalendarUnit fromDate:self];
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
+    NSDateComponents *components;
+    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+        components = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekday|NSCalendarUnitDay fromDate:self];
+    }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekdayCalendarUnit|NSDayCalendarUnit fromDate:self];
+#pragma clang diagnostic pop
+    }
+#else
+    NSDateComponents *components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit |NSWeekdayCalendarUnit| NSDayCalendarUnit fromDate:self];
+#endif
 
     NSUInteger offset = ([components weekday] == [calendar firstWeekday]) ? 6 : [components weekday] - 2;
     [components setDay:[components day] - offset];
@@ -60,8 +84,19 @@
 
 - (NSDate *)jk_beginningOfMonth {
     NSCalendar *calendar = [NSCalendar currentCalendar];
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
+    NSDateComponents *components;
+    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+        components = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth  fromDate:self];
+    }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit fromDate:self];
+#pragma clang diagnostic pop
+    }
+#else
     NSDateComponents *components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit fromDate:self];
-        
+#endif
     return [calendar dateFromComponents:components];
 }
 
@@ -76,8 +111,19 @@
 
 - (NSDate *)jk_beginningOfYear {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:NSYearCalendarUnit fromDate:self];
-    
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
+    NSDateComponents *components;
+    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+        components = [calendar components:NSCalendarUnitYear   fromDate:self];
+    }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        components = [calendar components:NSYearCalendarUnit  fromDate:self];
+#pragma clang diagnostic pop
+    }
+#else
+    NSDateComponents *components = [calendar components:NSYearCalendarUnit  fromDate:self];
+#endif
     return [calendar dateFromComponents:components];
 }
 

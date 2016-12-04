@@ -9,7 +9,6 @@
 #ifndef JKQuartzCore_h
 #define JKQuartzCore_h
 
-#import "CAAnimation+Blocks.h"
 #import "CAAnimation+JKEasingEquations.h"
 #import "CALayer+JKBorderColor.h"
 #import "CAMediaTimingFunction+JKAdditionalEquations.h"

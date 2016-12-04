@@ -246,7 +246,6 @@
 		A2958CB41B35792300D7AA0F /* CAMediaTimingFunction+JKAdditionalEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CB31B35792300D7AA0F /* CAMediaTimingFunction+JKAdditionalEquations.m */; };
 		A2958CB71B35794500D7AA0F /* UIView+JKVisuals.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CB61B35794500D7AA0F /* UIView+JKVisuals.m */; };
 		A2958CBA1B357AEF00D7AA0F /* UIViewController+JKStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CB91B357AEF00D7AA0F /* UIViewController+JKStoreKit.m */; };
-		A2958CC11B357E2E00D7AA0F /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CC01B357E2E00D7AA0F /* CAAnimation+Blocks.m */; };
 		A2958CC41B357E9100D7AA0F /* CAAnimation+JKEasingEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CC31B357E9100D7AA0F /* CAAnimation+JKEasingEquations.m */; };
 		A2958CC81B35804600D7AA0F /* CAShapeLayer+JKUIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CC71B35804600D7AA0F /* CAShapeLayer+JKUIBezierPath.m */; };
 		A2958CCC1B35808B00D7AA0F /* CATransaction+JKAnimateWithDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CCB1B35808B00D7AA0F /* CATransaction+JKAnimateWithDuration.m */; };
@@ -792,8 +791,6 @@
 		A2958CB61B35794500D7AA0F /* UIView+JKVisuals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKVisuals.m"; sourceTree = "<group>"; };
 		A2958CB81B357AEF00D7AA0F /* UIViewController+JKStoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKStoreKit.h"; sourceTree = "<group>"; };
 		A2958CB91B357AEF00D7AA0F /* UIViewController+JKStoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JKStoreKit.m"; sourceTree = "<group>"; };
-		A2958CBF1B357E2E00D7AA0F /* CAAnimation+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Blocks.h"; sourceTree = "<group>"; };
-		A2958CC01B357E2E00D7AA0F /* CAAnimation+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+Blocks.m"; sourceTree = "<group>"; };
 		A2958CC21B357E9100D7AA0F /* CAAnimation+JKEasingEquations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+JKEasingEquations.h"; sourceTree = "<group>"; };
 		A2958CC31B357E9100D7AA0F /* CAAnimation+JKEasingEquations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+JKEasingEquations.m"; sourceTree = "<group>"; };
 		A2958CC61B35804600D7AA0F /* CAShapeLayer+JKUIBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+JKUIBezierPath.h"; sourceTree = "<group>"; };
@@ -2511,8 +2508,6 @@
 			children = (
 				A2958CC21B357E9100D7AA0F /* CAAnimation+JKEasingEquations.h */,
 				A2958CC31B357E9100D7AA0F /* CAAnimation+JKEasingEquations.m */,
-				A2958CBF1B357E2E00D7AA0F /* CAAnimation+Blocks.h */,
-				A2958CC01B357E2E00D7AA0F /* CAAnimation+Blocks.m */,
 			);
 			path = CAAnimation;
 			sourceTree = "<group>";
@@ -3062,7 +3057,6 @@
 				A2B995CA1B46778500011613 /* UIButton+JKTouchAreaInsets.m in Sources */,
 				C7A8107F1BBA876B00865FFB /* NSObject+JKAppInfo.m in Sources */,
 				A2FD5B521A5269D400555EA2 /* NSObject+JKRuntime.m in Sources */,
-				A2958CC11B357E2E00D7AA0F /* CAAnimation+Blocks.m in Sources */,
 				A281FBEA1AC81392009040DA /* UISearchBarDemoViewController.m in Sources */,
 				A27E931B1B381D210010C7EA /* UIFont+JKTTF.m in Sources */,
 				A2EF56E11B21C59C0005F730 /* UIImage+JKBlur.m in Sources */,
