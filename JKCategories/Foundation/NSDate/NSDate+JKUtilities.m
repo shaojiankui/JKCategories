@@ -24,7 +24,10 @@
     if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){ \
         components = (NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit); \
     }else{ \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
         components = (NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit); \
+_Pragma("clang diagnostic pop") \
     } \
     components; \
 })\
@@ -37,7 +40,6 @@
 })\
 
 #endif
-
 
 @implementation NSDate (Utilities)
 
@@ -170,13 +172,8 @@
 
 - (BOOL) jk_isEqualToDateIgnoringTime: (NSDate *) aDate
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components1 = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
     NSDateComponents *components2 = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:aDate];
-#pragma clang diagnostic pop
-    
-
     return ((components1.year == components2.year) &&
             (components1.month == components2.month) &&
             (components1.day == components2.day));
@@ -200,8 +197,6 @@
 // This hard codes the assumption that a week is 7 days
 - (BOOL) jk_isSameWeekAsDate: (NSDate *) aDate
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components1 = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
     NSDateComponents *components2 = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:aDate];
 
@@ -210,7 +205,6 @@
     
     // Must have a time interval under 1 week. Thanks @aclark
     return (abs([self timeIntervalSinceDate:aDate]) < JK_D_WEEK);
-#pragma clang diagnostic pop
 
 }
 
@@ -467,10 +461,7 @@
 
 - (NSDateComponents *) jk_componentsWithOffsetFromDate: (NSDate *) aDate
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *dTime = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:aDate toDate:self options:0];
-#pragma clang diagnostic pop
     return dTime;
 }
 
@@ -478,10 +469,7 @@
 
 - (NSDate *) jk_dateAtStartOfDay
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
     components.hour = 0;
     components.minute = 0;
     components.second = 0;
@@ -491,10 +479,7 @@
 // Thanks gsempe & mteece
 - (NSDate *) jk_dateAtEndOfDay
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
 
     components.hour = 23; // Thanks Aleksey Kononov
     components.minute = 59;
@@ -615,82 +600,55 @@
 }
 - (NSInteger) jk_hour
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
     return components.hour;
 }
 
 - (NSInteger) jk_minute
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
     return components.minute;
 }
 
 - (NSInteger) jk_seconds
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
     return components.second;
 }
 
 - (NSInteger) jk_day
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
     return components.day;
 }
 
 - (NSInteger) jk_month
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
     return components.month;
 }
 
 - (NSInteger) jk_week
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
     return components.weekOfMonth;
 }
 
 - (NSInteger) jk_weekday
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
     return components.weekday;
 }
 
 - (NSInteger) jk_nthWeekday // e.g. 2nd Tuesday of the month is 2
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
     return components.weekdayOrdinal;
 }
 
 - (NSInteger) jk_year
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
-#pragma clang diagnostic pop
     return components.year;
 }
 @end
