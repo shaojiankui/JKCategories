@@ -37,7 +37,7 @@
 +(NSCalendar*)jk_gregorianCalendar_factory{
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSCalendar *gregorianCalendar;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     }else{
 #pragma clang diagnostic push
@@ -57,7 +57,7 @@
     
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [gregorianCalendar components: NSCalendarUnitMonth | NSCalendarUnitDay |NSCalendarUnitYear fromDate:date];
         return components;
     }else{
@@ -310,7 +310,7 @@
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [gregorianCalendar components: NSCalendarUnitWeekday | NSCalendarUnitYear |NSCalendarUnitMonth |NSCalendarUnitDay  fromDate:self];
     }else{
 #pragma clang diagnostic push
@@ -332,7 +332,7 @@
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [gregorianCalendar components: NSCalendarUnitWeekday | NSCalendarUnitYear |NSCalendarUnitMonth |NSCalendarUnitDay  fromDate:self];
     }else{
 #pragma clang diagnostic push
@@ -357,7 +357,7 @@
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [gregorianCalendar components:NSCalendarUnitYear |NSCalendarUnitMonth  fromDate:self];
     }else{
 #pragma clang diagnostic push
@@ -378,7 +378,7 @@
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
     NSRange dayRange;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [gregorianCalendar components:NSCalendarUnitYear |NSCalendarUnitMonth  fromDate:self];
         dayRange = [gregorianCalendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:self];
 
@@ -409,7 +409,7 @@
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [gregorianCalendar components:NSCalendarUnitYear fromDate:self];
     }else{
 #pragma clang diagnostic push
@@ -429,7 +429,7 @@
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [gregorianCalendar components:NSCalendarUnitYear fromDate:self];
     }else{
 #pragma clang diagnostic push
@@ -485,7 +485,7 @@
     NSDate* workingDate = [gregorianCalendar dateFromComponents:components];
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSRange dayRange;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         dayRange = [gregorianCalendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:workingDate];
         
     }else{
@@ -524,7 +524,7 @@
     NSDate* workingDate = [gregorianCalendar dateFromComponents:components];
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSRange dayRange;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         dayRange = [gregorianCalendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:workingDate];
         
     }else{

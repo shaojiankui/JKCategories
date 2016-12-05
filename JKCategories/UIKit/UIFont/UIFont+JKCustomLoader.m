@@ -24,6 +24,7 @@
 #define UIFontWDCustomLoaderDLog(...)
 #endif
 
+
 @implementation UIFont (JKCustomLoader)
 static CGFloat const kSizePlaceholder = 1.0f;
 static NSMutableDictionary *appRegisteredCustomFonts = nil;
@@ -34,9 +35,12 @@ static NSMutableDictionary *appRegisteredCustomFonts = nil;
  @return YES if all features are supported
  */
 + (BOOL) jk_deviceHasFullSupportForFontCollections {
-    
-    return (CTFontManagerCreateFontDescriptorsFromURL != NULL); // 10.6 or 7.0
-    
+    if([UIDevice currentDevice].systemVersion.floatValue >= 7.0f){
+        return YES;
+    }else{
+        return NO;
+    }
+//    return (CTFontManagerCreateFontDescriptorsFromURL != NULL); // 10.6 or 7.0
 }
 
 /**

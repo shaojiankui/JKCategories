@@ -28,7 +28,7 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:self];
     }else{
 #pragma clang diagnostic push
@@ -56,7 +56,7 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekday|NSCalendarUnitDay fromDate:self];
     }else{
 #pragma clang diagnostic push
@@ -86,7 +86,7 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth  fromDate:self];
     }else{
 #pragma clang diagnostic push
@@ -113,7 +113,7 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [calendar components:NSCalendarUnitYear   fromDate:self];
     }else{
 #pragma clang diagnostic push

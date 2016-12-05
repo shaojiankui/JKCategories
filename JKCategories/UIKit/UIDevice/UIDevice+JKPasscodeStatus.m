@@ -35,8 +35,10 @@ NSString * const UIDevicePasscodeKeychainAccount = @"UIDevice-PasscodeStatus_Key
 #endif
     
 #ifdef __IPHONE_8_0
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunreachable-code"
     if (&kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly != NULL) {
-        
+#pragma clang diagnostic pop
         static NSData *password = nil;
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{

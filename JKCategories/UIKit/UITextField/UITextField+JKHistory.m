@@ -153,6 +153,8 @@ static char kTextFieldHistoryviewIdentifyKey;
 
 
 #pragma mark tableview datasource
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView; {
     return 1;
 }
@@ -172,6 +174,7 @@ static char kTextFieldHistoryviewIdentifyKey;
     
     return cell;
 }
+#pragma clang diagnostic pop
 
 #pragma mark tableview delegate
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section; {

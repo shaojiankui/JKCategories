@@ -19,6 +19,7 @@
 
 @implementation UILabel (JKAdjustableLabel)
 
+
 // General method. If minSize is set to CGSizeZero then
 // it is ignored.
 // =====================================================

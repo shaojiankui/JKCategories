@@ -19,7 +19,21 @@
     //断行类型
     NSLineBreakMode lineBreakMode = NSLineBreakByCharWrapping;
     //显示字体的行高
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
+    CGFloat lineHeight;
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0f){
+        lineHeight = [@"Sample样本"  sizeWithAttributes:@{NSFontAttributeName:font}].height;
+    }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        lineHeight = [@"Sample样本" sizeWithFont:font].height;
+#pragma clang diagnostic pop
+    }
+#else
     CGFloat lineHeight = [@"Sample样本" sizeWithFont:font].height;
+#endif
+    
+    
     NSInteger maxLine = floor(r.size.height/lineHeight);
     NSInteger totalLines = 0;
     NSLog(@"Max Line Per Page: %zd (%.2f/%.2f)", maxLine, r.size.height, lineHeight);
@@ -38,7 +52,22 @@
             if (p < [paragraphs count] - 1)
                 para = [para stringByAppendingString:@"\n"]; //刚才分段去掉了一个换行,现在还给它
         }
+        
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
+        CGSize paraSize;
+        if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0f){
+            paraSize= [para boundingRectWithSize:r.size options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading) attributes:@{NSFontAttributeName:font} context:nil].size;
+        }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            paraSize=[para sizeWithFont:font constrainedToSize:r.size lineBreakMode:lineBreakMode];
+#pragma clang diagnostic pop
+        }
+#else
         CGSize paraSize=[para sizeWithFont:font constrainedToSize:r.size lineBreakMode:lineBreakMode];
+#endif
+        
+        
         NSInteger paraLines = floor(paraSize.height/lineHeight);
         if (totalLines + paraLines < maxLine) {
             totalLines += paraLines;
@@ -64,9 +93,20 @@
             for (i = 1; i< [para length]; i ++) {
                 //逐字判断是否达到了本页最大容量
                 NSString *tmp = [para substringToIndex:i];
-                tmpSize = [tmp sizeWithFont:font
-                          constrainedToSize:r.size
-                              lineBreakMode:lineBreakMode];
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0
+                if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0f){
+                    tmpSize= [tmp boundingRectWithSize:r.size options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading) attributes:@{NSFontAttributeName:font} context:nil].size;
+                }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+                    tmpSize=[tmp sizeWithFont:font constrainedToSize:r.size lineBreakMode:lineBreakMode];
+#pragma clang diagnostic pop
+                }
+#else
+               tmpSize = [tmp sizeWithFont:font constrainedToSize:r.size lineBreakMode:lineBreakMode];
+#endif
+                
+                
                 int nowLine = floor(tmpSize.height / lineHeight);
                 if (lineLeft < nowLine) {
                     //超出容量,跳出, 字符要回退一个, 应为当前字符已经超出范围了

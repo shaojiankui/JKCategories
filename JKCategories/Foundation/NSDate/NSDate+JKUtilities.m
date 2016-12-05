@@ -19,25 +19,28 @@
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
 #define JK_NSDATE_UTILITIES_COMPONENT_FLAGS \
-({ \
-     unsigned components;\
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){ \
-        components = (NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit); \
-    }else{ \
 _Pragma("clang diagnostic push") \
 _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
+({ \
+     unsigned components;\
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){ \
+        components = (NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit); \
+    }else{ \
         components = (NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit); \
-_Pragma("clang diagnostic pop") \
     } \
     components; \
 })\
+_Pragma("clang diagnostic pop") \
 
 #else
 #define JK_NSDATE_UTILITIES_COMPONENT_FLAGS \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
 ({\
      unsigned components = (NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit); \
     components; \
 })\
+_Pragma("clang diagnostic pop") \
 
 #endif
 
@@ -195,7 +198,7 @@ _Pragma("clang diagnostic pop") \
 }
 
 // This hard codes the assumption that a week is 7 days
-- (BOOL) jk_isSameWeekAsDate: (NSDate *) aDate
+- (BOOL)jk_isSameWeekAsDate: (NSDate *) aDate
 {
     NSDateComponents *components1 = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
     NSDateComponents *components2 = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:aDate];
@@ -204,7 +207,7 @@ _Pragma("clang diagnostic pop") \
     if (components1.week != components2.week) return NO;
     
     // Must have a time interval under 1 week. Thanks @aclark
-    return (abs([self timeIntervalSinceDate:aDate]) < JK_D_WEEK);
+    return (fabs([self timeIntervalSinceDate:aDate]) < JK_D_WEEK);
 
 }
 
@@ -234,7 +237,7 @@ _Pragma("clang diagnostic pop") \
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components1;
     NSDateComponents *components2;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components1 = [[NSDate jk_currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:self];
         components2 = [[NSDate jk_currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:aDate];
     }else{
@@ -274,7 +277,7 @@ _Pragma("clang diagnostic pop") \
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components1;
     NSDateComponents *components2;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components1 = [[NSDate jk_currentCalendar] components:NSCalendarUnitYear fromDate:self];
         components2 = [[NSDate jk_currentCalendar] components:NSCalendarUnitYear fromDate:aDate];
     }else{
@@ -302,7 +305,7 @@ _Pragma("clang diagnostic pop") \
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components1;
     NSDateComponents *components2;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components1 = [[NSDate jk_currentCalendar] components:NSCalendarUnitYear fromDate:self];
         components2 = [[NSDate jk_currentCalendar] components:NSCalendarUnitYear fromDate:[NSDate date]];
     }else{
@@ -325,7 +328,7 @@ _Pragma("clang diagnostic pop") \
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components1;
     NSDateComponents *components2;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components1 = [[NSDate jk_currentCalendar] components:NSCalendarUnitYear fromDate:self];
         components2 = [[NSDate jk_currentCalendar] components:NSCalendarUnitYear fromDate:[NSDate date]];
     }else{
@@ -370,7 +373,7 @@ _Pragma("clang diagnostic pop") \
 {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [[NSDate jk_currentCalendar] components:NSCalendarUnitWeekday | NSCalendarUnitMonth fromDate:self];
     }else{
 #pragma clang diagnostic push
@@ -531,7 +534,7 @@ _Pragma("clang diagnostic pop") \
 {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [[NSDate jk_currentCalendar] components:NSCalendarUnitDay fromDate:self toDate:anotherDate options:0];
     }else{
 #pragma clang diagnostic push
@@ -548,7 +551,7 @@ _Pragma("clang diagnostic pop") \
 - (NSInteger)jk_distanceMonthsToDate:(NSDate *)anotherDate{
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [[NSDate jk_currentCalendar] components:NSCalendarUnitMonth fromDate:self toDate:anotherDate options:0];
     }else{
 #pragma clang diagnostic push
@@ -564,7 +567,7 @@ _Pragma("clang diagnostic pop") \
 - (NSInteger)jk_distanceYearsToDate:(NSDate *)anotherDate{
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [[NSDate jk_currentCalendar] components:NSCalendarUnitYear fromDate:self toDate:anotherDate options:0];
     }else{
 #pragma clang diagnostic push
@@ -585,7 +588,7 @@ _Pragma("clang diagnostic pop") \
     
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
-    if ([UIDevice currentDevice].systemVersion.floatValue > 8.0f){
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
         components = [[NSDate jk_currentCalendar] components:NSCalendarUnitHour fromDate:newDate];
     }else{
 #pragma clang diagnostic push
