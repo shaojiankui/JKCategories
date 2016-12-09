@@ -242,20 +242,20 @@ NSString *jk_completeRPCURLPath = @"/jkwebviewprogressproxy/complete";
     [self jk_updateProgress:0.0];
     self.jk_readyState = JK_JKReadyState_uninitialized;
 }
-
--(void)awakeFromNib{
-    [super awakeFromNib];
-    [self jk_setDelegateIfNoDelegateSet];
-}
-
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self jk_setDelegateIfNoDelegateSet];
-    }
-    return self;
-}
+//会影响未包含头文件的webview
+//-(void)awakeFromNib{
+//    [super awakeFromNib];
+//    [self jk_setDelegateIfNoDelegateSet];
+//}
+//
+//- (instancetype)initWithFrame:(CGRect)frame
+//{
+//    self = [super initWithFrame:frame];
+//    if (self) {
+//        [self jk_setDelegateIfNoDelegateSet];
+//    }
+//    return self;
+//}
 #pragma mark - Delegate Forwarder
 - (void)jk_setDelegateIfNoDelegateSet
 {
