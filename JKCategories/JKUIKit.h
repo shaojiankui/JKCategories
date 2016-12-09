@@ -122,5 +122,6 @@
 #import "UIWebView+JKMetaParser.h"
 #import "UIWebView+JKStyle.h"
 #import "UIWebVIew+JKSwipeGesture.h"
+#import "UIWebView+JKLoadInfo.h"
 #import "UIWindow+JKHierarchy.h"
 #endif /* JKUIKit_h */
