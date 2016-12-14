@@ -1,8 +1,8 @@
 //
 //  UITextField+JKInputLimit.m
-//  JKCategories-Demo
+//  JKCategories (https://github.com/shaojiankui/JKCategories)
 //
-//  Created by runlin on 2016/11/29.
+//  Created by Jakey on 2016/11/29.
 //  Copyright © 2016年 www.skyfox.org. All rights reserved.
 //
 

@@ -36,4 +36,13 @@
 - (void)jk_setFontColor:(UIColor *) color withTag:(NSString *)tagName;
 /// 改变指定标签的字体大小
 - (void)jk_setFontSize:(int) size withTag:(NSString *)tagName;
+
+#pragma mark 删除
+///根据 ElementsID 删除WebView 中的节点
+- (void )jk_deleteNodeByElementID:(NSString *)elementID;
+/// 根据 ElementsClass 删除 WebView 中的节点
+- (void )jk_deleteNodeByElementClass:(NSString *)elementClass;
+///根据  TagName 删除 WebView 的节点
+- (void)jk_deleteNodeByTagName:(NSString *)elementTagName;
+
 @end

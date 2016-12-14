@@ -107,4 +107,44 @@
                           nodes[i].style.fontSize = '%dpx';}", tagName, size];
     [self stringByEvaluatingJavaScriptFromString:jsString];
 }
+
+#pragma mark -
+#pragma mark 删除
+/**
+ *  根据 ElementsID 删除WebView 中的节点
+ */
+- (void )jk_deleteNodeByElementID:(NSString *)elementID
+{
+    [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementById('%@').remove();",elementID]];
+}
+/**
+ *  根据 ElementsClass 删除 WebView 中的节点
+ */
+- (void)jk_deleteNodeByElementClass:(NSString *)elementClass
+{
+    NSString *javaScriptString = [NSString stringWithFormat:@"\
+                                  function getElementsByClassName(n) {\
+                                  var classElements = [],allElements = document.getElementsByTagName('*');\
+                                  for (var i=0; i< allElements.length; i++ )\
+                                  {\
+                                  if (allElements[i].className == n) {\
+                                  classElements[classElements.length] = allElements[i];\
+                                  }\
+                                  }\
+                                  for (var i=0; i<classElements.length; i++) {\
+                                  classElements[i].style.display = \"none\";\
+                                  }\
+                                  }\
+                                  getElementsByClassName('%@')",elementClass];
+    [self stringByEvaluatingJavaScriptFromString:javaScriptString];
+}
+/**
+ *  根据 ElementsClassTagName 删除 WebView 的节点
+ */
+- (void)jk_deleteNodeByTagName:(NSString *)elementTagName
+{
+    NSString *javaScritptString = [NSString stringWithFormat:@"document.getElementByTagName('%@').remove();",elementTagName];
+    [self stringByEvaluatingJavaScriptFromString:javaScritptString];
+}
+
 @end

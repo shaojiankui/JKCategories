@@ -10,6 +10,5 @@
 #import <objc/runtime.h>
 @interface UITextView (JKPlaceHolder) <UITextViewDelegate>
 @property (nonatomic, strong) UITextView *jk_placeHolderTextView;
-//@property (nonatomic, assign) id <UITextViewDelegate> textViewDelegate;
 - (void)jk_addPlaceHolder:(NSString *)placeHolder;
 @end

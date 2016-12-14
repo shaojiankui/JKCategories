@@ -8,6 +8,7 @@
 
 #import "UITextView+JKPlaceHolder.h"
 static const char *jk_placeHolderTextView = "jk_placeHolderTextView";
+
 @implementation UITextView (JKPlaceHolder)
 - (UITextView *)jk_placeHolderTextView {
     return objc_getAssociatedObject(self, jk_placeHolderTextView);
@@ -15,9 +16,10 @@ static const char *jk_placeHolderTextView = "jk_placeHolderTextView";
 - (void)setJk_placeHolderTextView:(UITextView *)placeHolderTextView {
     objc_setAssociatedObject(self, jk_placeHolderTextView, placeHolderTextView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+
+
 - (void)jk_addPlaceHolder:(NSString *)placeHolder {
     if (![self jk_placeHolderTextView]) {
-        self.delegate = self;
         UITextView *textView = [[UITextView alloc] initWithFrame:self.bounds];
         textView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         textView.font = self.font;
@@ -27,20 +29,25 @@ static const char *jk_placeHolderTextView = "jk_placeHolderTextView";
         textView.text = placeHolder;
         [self addSubview:textView];
         [self setJk_placeHolderTextView:textView];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidBeginEditing:) name:UITextViewTextDidBeginEditingNotification object:self];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidEndEditing:) name:UITextViewTextDidEndEditingNotification object:self];
+
     }
+    self.jk_placeHolderTextView.text = placeHolder;
 }
 # pragma mark -
 # pragma mark - UITextViewDelegate
-- (void)textViewDidBeginEditing:(UITextView *)textView {
+- (void)textViewDidBeginEditing:(NSNotification *)noti {
     self.jk_placeHolderTextView.hidden = YES;
-    // if (self.textViewDelegate) {
-    //
-    // }
 }
-- (void)textViewDidEndEditing:(UITextView *)textView {
-    if (textView.text && [textView.text isEqualToString:@""]) {
+- (void)textViewDidEndEditing:(UITextView *)noti {
+    if (self.text && [self.text isEqualToString:@""]) {
         self.jk_placeHolderTextView.hidden = NO;
     }
 }
-
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 @end

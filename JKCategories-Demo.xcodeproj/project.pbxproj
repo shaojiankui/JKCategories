@@ -353,6 +353,7 @@
 		B8C8D1391DED106F0069354F /* UIBarButtonItem+JKBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8D1381DED106F0069354F /* UIBarButtonItem+JKBadge.m */; };
 		B8C8D1421DED16D60069354F /* UITextField+JKInputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8D1411DED16D60069354F /* UITextField+JKInputLimit.m */; };
 		B8C8D1451DED18820069354F /* UITextView+JKInputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8D1441DED18820069354F /* UITextView+JKInputLimit.m */; };
+		B8C999AE1E012CAD00DB9F8C /* UIWebView+JKWebStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C999AD1E012CAD00DB9F8C /* UIWebView+JKWebStorage.m */; };
 		BCB799F31AFDD95300C12525 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F21AFDD95300C12525 /* UIImage+JKGIF.m */; };
 		BCB799F61AFDDAA500C12525 /* UIButton+JKBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F51AFDDAA500C12525 /* UIButton+JKBackgroundColor.m */; };
 		BCB79A021AFDE0B600C12525 /* NSObject+JKBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB79A011AFDE0B600C12525 /* NSObject+JKBlockTimer.m */; };
@@ -973,8 +974,8 @@
 		A2FD5B5F1A52708900555EA2 /* NSURL+JKParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+JKParam.m"; sourceTree = "<group>"; };
 		A2FD5B611A52718200555EA2 /* NSDate+JKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDate+JKUtilities.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A2FD5B621A52718200555EA2 /* NSDate+JKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDate+JKUtilities.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		A2FF6FE51D04334F00320C36 /* NSData+JKPCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JKPCM.h"; sourceTree = "<group>"; };
-		A2FF6FE61D04334F00320C36 /* NSData+JKPCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKPCM.m"; sourceTree = "<group>"; };
+		A2FF6FE51D04334F00320C36 /* NSData+JKPCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSData+JKPCM.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A2FF6FE61D04334F00320C36 /* NSData+JKPCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSData+JKPCM.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B869399B1CA8EEB500EE7A1A /* UIButton+JKImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKImagePosition.h"; sourceTree = "<group>"; };
 		B869399C1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JKImagePosition.m"; sourceTree = "<group>"; };
 		B87E87DF1DFAAFC7008EB83A /* UIWebView+JKLoadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JKLoadInfo.h"; sourceTree = "<group>"; };
@@ -985,10 +986,12 @@
 		B8C8D1351DED106A0069354F /* UIButton+JKBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JKBadge.m"; sourceTree = "<group>"; };
 		B8C8D1371DED106F0069354F /* UIBarButtonItem+JKBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JKBadge.h"; sourceTree = "<group>"; };
 		B8C8D1381DED106F0069354F /* UIBarButtonItem+JKBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JKBadge.m"; sourceTree = "<group>"; };
-		B8C8D1401DED16D60069354F /* UITextField+JKInputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+JKInputLimit.h"; sourceTree = "<group>"; };
-		B8C8D1411DED16D60069354F /* UITextField+JKInputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKInputLimit.m"; sourceTree = "<group>"; };
-		B8C8D1431DED18820069354F /* UITextView+JKInputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+JKInputLimit.h"; sourceTree = "<group>"; };
-		B8C8D1441DED18820069354F /* UITextView+JKInputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JKInputLimit.m"; sourceTree = "<group>"; };
+		B8C8D1401DED16D60069354F /* UITextField+JKInputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "UITextField+JKInputLimit.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B8C8D1411DED16D60069354F /* UITextField+JKInputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UITextField+JKInputLimit.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B8C8D1431DED18820069354F /* UITextView+JKInputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "UITextView+JKInputLimit.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B8C8D1441DED18820069354F /* UITextView+JKInputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UITextView+JKInputLimit.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B8C999AC1E012CAD00DB9F8C /* UIWebView+JKWebStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JKWebStorage.h"; sourceTree = "<group>"; };
+		B8C999AD1E012CAD00DB9F8C /* UIWebView+JKWebStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JKWebStorage.m"; sourceTree = "<group>"; };
 		BCB799F11AFDD95300C12525 /* UIImage+JKGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKGIF.h"; sourceTree = "<group>"; };
 		BCB799F21AFDD95300C12525 /* UIImage+JKGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKGIF.m"; sourceTree = "<group>"; };
 		BCB799F41AFDDAA500C12525 /* UIButton+JKBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKBackgroundColor.h"; sourceTree = "<group>"; };
@@ -2407,6 +2410,8 @@
 				A218D8DC1A47A25100AB83CA /* UIWebView+JKCanvas.m */,
 				A218D8DD1A47A25100AB83CA /* UIWebView+JKJavaScript.h */,
 				A218D8DE1A47A25100AB83CA /* UIWebView+JKJavaScript.m */,
+				B8C999AC1E012CAD00DB9F8C /* UIWebView+JKWebStorage.h */,
+				B8C999AD1E012CAD00DB9F8C /* UIWebView+JKWebStorage.m */,
 			);
 			path = UIWebView;
 			sourceTree = "<group>";
@@ -3096,6 +3101,7 @@
 				A28BE3321A3E9FDC005C4AC6 /* UILabel+JKAdjustableLabel.m in Sources */,
 				A28BE3371A3E9FDC005C4AC6 /* UIView+JKAnimation.m in Sources */,
 				A248782D1C55CC5C00AFF958 /* UIImage+JKSuperCompress.m in Sources */,
+				B8C999AE1E012CAD00DB9F8C /* UIWebView+JKWebStorage.m in Sources */,
 				BCB9547D1B0D829800E6BA78 /* NSData+JKDataCache.m in Sources */,
 				A2CFAEF81A56D15C0004A282 /* UIColor+JKModify.m in Sources */,
 				A21F34BD1B0F221400D73A91 /* UINavigationItem+JKLock.m in Sources */,
