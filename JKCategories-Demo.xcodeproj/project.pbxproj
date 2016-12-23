@@ -102,6 +102,8 @@
 		A24EC2FF1B74E21200CE538B /* NSData+JKzlib.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EC2FE1B74E21200CE538B /* NSData+JKzlib.m */; };
 		A24EC3021B74E26400CE538B /* NSData+JKAPNSToken.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EC3011B74E26400CE538B /* NSData+JKAPNSToken.m */; };
 		A24EC30A1B74E43600CE538B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A24EC3091B74E43600CE538B /* RootViewController.m */; };
+		A25E7E591E0D390C00381835 /* NSURLSessionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25E7E571E0D390C00381835 /* NSURLSessionDemoViewController.m */; };
+		A25E7E5A1E0D390C00381835 /* NSURLSessionDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25E7E581E0D390C00381835 /* NSURLSessionDemoViewController.xib */; };
 		A2681A411A75C788009BA7EE /* NSData+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A401A75C788009BA7EE /* NSData+JKBase64.m */; };
 		A2681A441A75C7C8009BA7EE /* NSString+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A2681A431A75C7C8009BA7EE /* NSString+JKEncrypt.m */; };
 		A2768FD31A5518C400E03C90 /* UIView+JKToast.m in Sources */ = {isa = PBXBuildFile; fileRef = A2768FD21A5518C400E03C90 /* UIView+JKToast.m */; };
@@ -542,6 +544,9 @@
 		A24EC3001B74E26400CE538B /* NSData+JKAPNSToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JKAPNSToken.h"; sourceTree = "<group>"; };
 		A24EC3011B74E26400CE538B /* NSData+JKAPNSToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKAPNSToken.m"; sourceTree = "<group>"; };
 		A24EC3091B74E43600CE538B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A25E7E561E0D390C00381835 /* NSURLSessionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionDemoViewController.h; sourceTree = "<group>"; };
+		A25E7E571E0D390C00381835 /* NSURLSessionDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionDemoViewController.m; sourceTree = "<group>"; };
+		A25E7E581E0D390C00381835 /* NSURLSessionDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSURLSessionDemoViewController.xib; sourceTree = "<group>"; };
 		A2681A3F1A75C788009BA7EE /* NSData+JKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSData+JKBase64.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A2681A401A75C788009BA7EE /* NSData+JKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSData+JKBase64.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A2681A421A75C7C8009BA7EE /* NSString+JKEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKEncrypt.h"; sourceTree = "<group>"; };
@@ -1519,6 +1524,16 @@
 			path = NSRunLoop;
 			sourceTree = "<group>";
 		};
+		A25E7E551E0D390100381835 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				A25E7E561E0D390C00381835 /* NSURLSessionDemoViewController.h */,
+				A25E7E571E0D390C00381835 /* NSURLSessionDemoViewController.m */,
+				A25E7E581E0D390C00381835 /* NSURLSessionDemoViewController.xib */,
+			);
+			path = NSURLSession;
+			sourceTree = "<group>";
+		};
 		A26185781B1C2B5E00D62F54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1641,6 +1656,7 @@
 		A281FB4D1AC8101F009040DA /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A25E7E551E0D390100381835 /* NSURLSession */,
 				A205E4CC1C28E593002A1E33 /* NSURLConnection */,
 				A205E4BF1C28E43A002A1E33 /* NSInvocation */,
 				A29551B11C22A3BF007962FC /* NSOperation */,
@@ -2945,6 +2961,7 @@
 				A281FC131AC813F5009040DA /* UINavigationControllerDemoViewController.xib in Resources */,
 				A2AB1A661B381E3900ED88AF /* UIFontDemoViewController.xib in Resources */,
 				A2EF56D91B21C51D0005F730 /* NSFetchRequestDemoViewController.xib in Resources */,
+				A25E7E5A1E0D390C00381835 /* NSURLSessionDemoViewController.xib in Resources */,
 				A281FBC21AC812F1009040DA /* UIButtonDemoViewController.xib in Resources */,
 				A281FB9A1AC8124F009040DA /* NSExceptionDemoViewController.xib in Resources */,
 				A281FC091AC813DF009040DA /* UIWebViewDemoViewController.xib in Resources */,
@@ -3299,6 +3316,7 @@
 				A28BE32F1A3E9FDC005C4AC6 /* UIImage+JKResize.m in Sources */,
 				A202D9B41B10338B00EAB199 /* UIApplicationDemoViewController.m in Sources */,
 				A2FF6FE71D04334F00320C36 /* NSData+JKPCM.m in Sources */,
+				A25E7E591E0D390C00381835 /* NSURLSessionDemoViewController.m in Sources */,
 				A24377231ACBE9CF00FFFEA1 /* NSObject+JKAutoCoding.m in Sources */,
 				A205E4EB1C28ED32002A1E33 /* NSObject+JKEasyCopy.m in Sources */,
 				A281FB851AC81206009040DA /* NSBundleDemoViewController.m in Sources */,

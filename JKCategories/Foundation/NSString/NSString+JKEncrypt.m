@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
+// 加密解密工具 http://tool.chacuo.net/cryptdes
 #import "NSString+JKEncrypt.h"
 #import "NSData+JKEncrypt.h"
 #import "NSData+JKBase64.h"
@@ -20,6 +21,20 @@
 
 - (NSString*)jk_decryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv {
     NSData *decrypted = [[NSData jk_dataWithBase64EncodedString:self] jk_decryptedWithAESUsingKey:key andIV:iv];
+    NSString *decryptedString = [[NSString alloc] initWithData:decrypted encoding:NSUTF8StringEncoding];
+    
+    return decryptedString;
+}
+
+- (NSString*)jk_encryptedWithDESUsingKey:(NSString*)key andIV:(NSData*)iv {
+    NSData *encrypted = [[self dataUsingEncoding:NSUTF8StringEncoding] jk_encryptedWithDESUsingKey:key andIV:iv];
+    NSString *encryptedString = [encrypted jk_base64EncodedString];
+    
+    return encryptedString;
+}
+
+- (NSString*)jk_decryptedWithDESUsingKey:(NSString*)key andIV:(NSData*)iv {
+    NSData *decrypted = [[NSData jk_dataWithBase64EncodedString:self] jk_decryptedWithDESUsingKey:key andIV:iv];
     NSString *decryptedString = [[NSString alloc] initWithData:decrypted encoding:NSUTF8StringEncoding];
     
     return decryptedString;

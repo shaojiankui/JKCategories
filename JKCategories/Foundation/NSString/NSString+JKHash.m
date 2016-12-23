@@ -26,12 +26,27 @@
     CC_SHA1(string, length, bytes);
     return [self jk_stringFromBytes:bytes length:CC_SHA1_DIGEST_LENGTH];
 }
+- (NSString *)jk_sha224String {
+    const char *string = self.UTF8String;
+    int length = (int)strlen(string);
+    unsigned char bytes[CC_SHA256_DIGEST_LENGTH];
+    CC_SHA224(string, length, bytes);
+    return [self jk_stringFromBytes:bytes length:CC_SHA256_DIGEST_LENGTH];
+}
 - (NSString *)jk_sha256String
 {
     const char *string = self.UTF8String;
     int length = (int)strlen(string);
     unsigned char bytes[CC_SHA256_DIGEST_LENGTH];
     CC_SHA256(string, length, bytes);
+    return [self jk_stringFromBytes:bytes length:CC_SHA256_DIGEST_LENGTH];
+}
+- (NSString *)jk_sha384String
+{
+    const char *string = self.UTF8String;
+    int length = (int)strlen(string);
+    unsigned char bytes[CC_SHA256_DIGEST_LENGTH];
+    CC_SHA384(string, length, bytes);
     return [self jk_stringFromBytes:bytes length:CC_SHA256_DIGEST_LENGTH];
 }
 - (NSString *)jk_sha512String
@@ -51,10 +66,16 @@
     return [self jk_hmacStringUsingAlg:kCCHmacAlgSHA1 withKey:key];
 
 }
+- (NSString *)jk_hmacSHA224StringWithKey:(NSString *)key{
+    return [self jk_hmacStringUsingAlg:kCCHmacAlgSHA224 withKey:key];
+}
 - (NSString *)jk_hmacSHA256StringWithKey:(NSString *)key
 {
     return [self jk_hmacStringUsingAlg:kCCHmacAlgSHA256 withKey:key];
 
+}
+- (NSString *)jk_hmacSHA384StringWithKey:(NSString *)key{
+    return [self jk_hmacStringUsingAlg:kCCHmacAlgSHA384 withKey:key];
 }
 - (NSString *)jk_hmacSHA512StringWithKey:(NSString *)key
 {
