@@ -86,6 +86,7 @@
 #import "NSURL+JKQueryDictionary.h"
 #import "NSURLConnection+JKSelfSigned.h"
 #import "NSURLRequest+JKParamsFromDictionary.h"
+#import "NSURLSession+JKSynchronousTask.h"
 #import "NSUserDefaults+JKiCloudSync.h"
 #import "NSUserDefaults+JKSafeAccess.h"
 

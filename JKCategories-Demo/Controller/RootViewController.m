@@ -77,7 +77,8 @@
                         @"NSURLRequest",
                         @"NSOperation",
                         @"NSInvocation",
-                        @"NSURLConnection"
+                        @"NSURLConnection",
+                        @"NSURLSession"
                         ],
             
     @"CoreLocation":@[@"CALayer",

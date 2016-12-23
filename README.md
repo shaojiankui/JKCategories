@@ -59,6 +59,7 @@ import the header file into any class where you wish to make use of the function
 * NSOperation
 * NSInvocation
 * NSURLConnection
+* NSURLSession
 
 ### UIKit
 * UIAlertView

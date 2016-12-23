@@ -348,6 +348,7 @@
 		A2FF6FE71D04334F00320C36 /* NSData+JKPCM.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FF6FE61D04334F00320C36 /* NSData+JKPCM.m */; };
 		B869399D1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = B869399C1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m */; };
 		B87E87E11DFAAFC7008EB83A /* UIWebView+JKLoadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B87E87E01DFAAFC7008EB83A /* UIWebView+JKLoadInfo.m */; };
+		B87F47971E0CB81900B788C6 /* NSURLSession+JKSynchronousTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B87F47961E0CB81900B788C6 /* NSURLSession+JKSynchronousTask.m */; };
 		B8A419521DDC07C800BDB39A /* NSString+JKHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A419511DDC07C800BDB39A /* NSString+JKHTML.m */; };
 		B8C8D1361DED106A0069354F /* UIButton+JKBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8D1351DED106A0069354F /* UIButton+JKBadge.m */; };
 		B8C8D1391DED106F0069354F /* UIBarButtonItem+JKBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8D1381DED106F0069354F /* UIBarButtonItem+JKBadge.m */; };
@@ -980,6 +981,8 @@
 		B869399C1CA8EEB500EE7A1A /* UIButton+JKImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JKImagePosition.m"; sourceTree = "<group>"; };
 		B87E87DF1DFAAFC7008EB83A /* UIWebView+JKLoadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JKLoadInfo.h"; sourceTree = "<group>"; };
 		B87E87E01DFAAFC7008EB83A /* UIWebView+JKLoadInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JKLoadInfo.m"; sourceTree = "<group>"; };
+		B87F47951E0CB81900B788C6 /* NSURLSession+JKSynchronousTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+JKSynchronousTask.h"; sourceTree = "<group>"; };
+		B87F47961E0CB81900B788C6 /* NSURLSession+JKSynchronousTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+JKSynchronousTask.m"; sourceTree = "<group>"; };
 		B8A419501DDC07C800BDB39A /* NSString+JKHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKHTML.h"; sourceTree = "<group>"; };
 		B8A419511DDC07C800BDB39A /* NSString+JKHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKHTML.m"; sourceTree = "<group>"; };
 		B8C8D1341DED106A0069354F /* UIButton+JKBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKBadge.h"; sourceTree = "<group>"; };
@@ -1431,6 +1434,7 @@
 		A22725F11A3E736D0061605B /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				B87F47941E0CB80E00B788C6 /* NSURLSession */,
 				A205E4C81C28E55F002A1E33 /* NSURLConnection */,
 				A205E4BE1C28E42A002A1E33 /* NSInvocation */,
 				A29551B01C22A3B2007962FC /* NSOperation */,
@@ -2863,6 +2867,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B87F47941E0CB80E00B788C6 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				B87F47951E0CB81900B788C6 /* NSURLSession+JKSynchronousTask.h */,
+				B87F47961E0CB81900B788C6 /* NSURLSession+JKSynchronousTask.m */,
+			);
+			path = NSURLSession;
+			sourceTree = "<group>";
+		};
 		BCB79A091AFDE92200C12525 /* UIAlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -3055,6 +3068,7 @@
 				A281FBA31AC8127E009040DA /* NSObjectDemoViewController.m in Sources */,
 				A28BE3781A3EC1C6005C4AC6 /* NSObject+JKAddProperty.m in Sources */,
 				A21F34D21B0F249D00D73A91 /* UIAlertViewDemoViewController.m in Sources */,
+				B87F47971E0CB81900B788C6 /* NSURLSession+JKSynchronousTask.m in Sources */,
 				A2EF56D21B21C42A0005F730 /* NSManagedObjectContext+JKExtensions.m in Sources */,
 				A280E5251A5233A700E6ACA2 /* UIButton+JKBlock.m in Sources */,
 				A281FBA81AC81299009040DA /* NSSetDemoViewController.m in Sources */,
