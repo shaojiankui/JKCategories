@@ -8,18 +8,26 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (JKRemoveEmoji)
-/**
- *  @brief  是否包含emoji
- *
- *  @return 是否包含emoji
- */
-- (BOOL)jk_isIncludingEmoji;
+///移除所有emoji，以“”替换
+- (NSString *)jk_removingEmoji;
+///移除所有emoji，以“”替换
+- (NSString *)jk_stringByRemovingEmoji;
+///移除所有emoji，以string替换
+- (NSString *)jk_stringByReplaceingEmojiWithString:(NSString*)string;
 
-/**
- *  @brief  删除掉包含的emoji
- *
- *  @return 清除后的string
- */
-- (instancetype)jk_removedEmojiString;
+///字符串是否包含emoji
+- (BOOL)jk_containsEmoji;
+///字符串中包含的所有emoji unicode格式
+- (NSArray<NSString *>*)jk_allEmoji;
+///字符串中包含的所有emoji
+- (NSString *)jk_allEmojiString;
+///字符串中包含的所有emoji rang
+- (NSArray<NSString *>*)jk_allEmojiRanges;
 
+///所有emoji表情
++ (NSString*)jk_allSystemEmoji;
+@end
+
+@interface NSCharacterSet (JKEmojiCharacterSet)
++ (NSCharacterSet *)jk_emojiCharacterSet;
 @end
