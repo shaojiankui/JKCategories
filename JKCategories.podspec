@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/shaojiankui/JKCategories"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "skyfox" => "i@skyfox.org" }
-  s.platform     = :ios, "6.0"
-  s.ios.deployment_target = "6.0"
+  s.platform     = :ios, "7.0"
+  s.ios.deployment_target = "7.0"
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'CoreData', 'QuartzCore', 'CoreLocation', 'MapKit'
   s.libraries    = "z"

@@ -10,7 +10,7 @@ JKCategories(iOS-Categories)
 JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
 
 ## Requirements
-This library requires `iOS 6.0+` and `Xcode 7.0+`.
+This library requires `iOS 7.0+` and `Xcode 8.0+`.
 
 ## Installation
 
@@ -26,7 +26,7 @@ Copy JKCategories folder to your project
 ## Usage
 import the header file into any class where you wish to make use of the functionality such as **#import "NSArray+JKSafeAccess.h"** ,Not recommended for import all the header files of JKCategories into pch or baseclass
 
-####onekey import all categories of framework
+#### onekey import all categories of framework
 
 "JKUIKit.h","JKFoundation.h","JKCoreData.h","JKCoreLocation.h","JKMapKit.h","JKQuartzCore.h" 
 #### onekey import all categories of all frameworks

@@ -206,7 +206,7 @@ static char JKPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)jk_requestAccessToPhotosWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)())accessDenied {
+-(void)jk_requestAccessToPhotosWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
     [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
         accessGranted();
@@ -215,7 +215,7 @@ static char JKPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)jk_requestAccessToRemindersWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)jk_requestAccessToRemindersWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     EKEventStore *eventStore = [[EKEventStore alloc] init];
     [eventStore requestAccessToEntityType:EKEntityTypeReminder completion:^(BOOL granted, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -236,7 +236,7 @@ static char JKPermissionsLocationBlockFailurePropertyKey;
  }
  */
 
--(void)jk_requestAccessToLocationWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)jk_requestAccessToLocationWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     self.jk_permissionsLocationManager = [[CLLocationManager alloc] init];
     self.jk_permissionsLocationManager.delegate = self;
     
