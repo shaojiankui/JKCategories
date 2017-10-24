@@ -43,17 +43,17 @@ typedef enum {
 -(JKPermissionAccess)jk_hasAccessToReminders;
 
 //Request permission with callback
--(void)jk_requestAccessToCalendarWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied;
--(void)jk_requestAccessToContactsWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied;
--(void)jk_requestAccessToMicrophoneWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied;
--(void)jk_requestAccessToPhotosWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied;
--(void)jk_requestAccessToRemindersWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied;
+-(void)jk_requestAccessToCalendarWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied;
+-(void)jk_requestAccessToContactsWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied;
+-(void)jk_requestAccessToMicrophoneWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied;
+-(void)jk_requestAccessToPhotosWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied;
+-(void)jk_requestAccessToRemindersWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied;
 
 //Instance methods
--(void)jk_requestAccessToLocationWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied;
+-(void)jk_requestAccessToLocationWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied;
 
 //No failure callback available
--(void)jk_requestAccessToMotionWithSuccess:(void(^)())accessGranted;
+-(void)jk_requestAccessToMotionWithSuccess:(void(^)(void))accessGranted;
 
 //Needs investigating - unsure whether it can be implemented because of required delegate callbacks
 //-(void)requestAccessToBluetoothLEWithSuccess:(void(^)())accessGranted;

@@ -45,7 +45,7 @@
     forControlEvents:UIControlEvent##eventName];                                \
 }                                                                               \
 -(void)methodName##Action:(id)sender {                                        \
-    void (^block)() = objc_getAssociatedObject(self, @selector(methodName:));  \
+    void (^block)(void) = objc_getAssociatedObject(self, @selector(methodName:));  \
     if (block) {                                                                \
         block();                                                                \
     }                                                                           \

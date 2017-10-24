@@ -20,7 +20,7 @@
  */
 +(void)jk_animateWithDuration:(NSTimeInterval)duration
                    animations:(void (^)(void))animations
-                   completion:(void (^)())completion
+                   completion:(void (^)(void))completion
 {
     [CATransaction begin];
     [CATransaction setAnimationDuration:duration];

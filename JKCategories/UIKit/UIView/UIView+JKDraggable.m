@@ -75,22 +75,22 @@
     return (moveAlongX) ? [moveAlongX boolValue] : YES;
 }
 
-- (void)setJk_draggingStartedBlock:(void (^)())draggingStartedBlock
+- (void)setJk_draggingStartedBlock:(void (^)(void))draggingStartedBlock
 {
     objc_setAssociatedObject(self, @selector(jk_draggingStartedBlock), draggingStartedBlock, OBJC_ASSOCIATION_RETAIN);
 }
 
-- (void (^)())jk_draggingStartedBlock
+- (void (^)(void))jk_draggingStartedBlock
 {
     return objc_getAssociatedObject(self, @selector(jk_draggingStartedBlock));
 }
 
-- (void)setJk_draggingEndedBlock:(void (^)())draggingEndedBlock
+- (void)setJk_draggingEndedBlock:(void (^)(void))draggingEndedBlock
 {
     objc_setAssociatedObject(self, @selector(jk_draggingEndedBlock), draggingEndedBlock, OBJC_ASSOCIATION_RETAIN);
 }
 
-- (void (^)())jk_draggingEndedBlock
+- (void (^)(void))jk_draggingEndedBlock
 {
     return objc_getAssociatedObject(self, @selector(jk_draggingEndedBlock));
 }

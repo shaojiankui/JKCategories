@@ -9,16 +9,16 @@
 
 @implementation NSTimer (JKBlocks)
 
-+(id)jk_scheduledTimerWithTimeInterval:(NSTimeInterval)inTimeInterval block:(void (^)())inBlock repeats:(BOOL)inRepeats
++(id)jk_scheduledTimerWithTimeInterval:(NSTimeInterval)inTimeInterval block:(void (^)(void))inBlock repeats:(BOOL)inRepeats
 {
-    void (^block)() = [inBlock copy];
+    void (^block)(void) = [inBlock copy];
     id ret = [self scheduledTimerWithTimeInterval:inTimeInterval target:self selector:@selector(jk_jdExecuteSimpleBlock:) userInfo:block repeats:inRepeats];
     return ret;
 }
 
-+(id)jk_timerWithTimeInterval:(NSTimeInterval)inTimeInterval block:(void (^)())inBlock repeats:(BOOL)inRepeats
++(id)jk_timerWithTimeInterval:(NSTimeInterval)inTimeInterval block:(void (^)(void))inBlock repeats:(BOOL)inRepeats
 {
-    void (^block)() = [inBlock copy];
+    void (^block)(void) = [inBlock copy];
     id ret = [self timerWithTimeInterval:inTimeInterval target:self selector:@selector(jk_jdExecuteSimpleBlock:) userInfo:block repeats:inRepeats];
     return ret;
 }
@@ -27,7 +27,7 @@
 {
     if([inTimer userInfo])
     {
-        void (^block)() = (void (^)())[inTimer userInfo];
+        void (^block)(void) = (void (^)(void))[inTimer userInfo];
         block();
     }
 }

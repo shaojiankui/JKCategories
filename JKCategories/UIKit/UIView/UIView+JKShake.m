@@ -18,7 +18,7 @@
     [self _jk_shake:times direction:1 currentTimes:0 withDelta:delta speed:0.03 shakeDirection:JKShakeDirectionHorizontal completion:nil];
 }
 
-- (void)jk_shake:(int)times withDelta:(CGFloat)delta completion:(void(^)())handler {
+- (void)jk_shake:(int)times withDelta:(CGFloat)delta completion:(void(^)(void))handler {
     [self _jk_shake:times direction:1 currentTimes:0 withDelta:delta speed:0.03 shakeDirection:JKShakeDirectionHorizontal completion:handler];
 }
 
@@ -26,7 +26,7 @@
     [self _jk_shake:times direction:1 currentTimes:0 withDelta:delta speed:interval shakeDirection:JKShakeDirectionHorizontal completion:nil];
 }
 
-- (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval completion:(void(^)())handler {
+- (void)jk_shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval completion:(void(^)(void))handler {
     [self _jk_shake:times direction:1 currentTimes:0 withDelta:delta speed:interval shakeDirection:JKShakeDirectionHorizontal completion:handler];
 }
 

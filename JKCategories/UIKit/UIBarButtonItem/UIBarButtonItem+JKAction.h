@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void (^BarButtonJKActionBlock)();
+typedef void (^BarButtonJKActionBlock)(void);
 
 @interface UIBarButtonItem (JKAction)
 

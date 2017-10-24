@@ -18,8 +18,8 @@
 #import <CoreMotion/CoreMotion.h>
 #import <EventKit/EventKit.h>
 
-typedef void (^JKLocationSuccessCallback)();
-typedef void (^JKLocationFailureCallback)();
+typedef void (^JKLocationSuccessCallback)(void);
+typedef void (^JKLocationFailureCallback)(void);
 
 static char JKPermissionsLocationManagerPropertyKey;
 static char JKPermissionsLocationBlockSuccessPropertyKey;
@@ -156,7 +156,7 @@ static char JKPermissionsLocationBlockFailurePropertyKey;
 
 
 #pragma mark - Request permissions
--(void)jk_requestAccessToCalendarWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)jk_requestAccessToCalendarWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     EKEventStore *eventStore = [[EKEventStore alloc] init];
     [eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -169,7 +169,7 @@ static char JKPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)jk_requestAccessToContactsWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)jk_requestAccessToContactsWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     if(addressBook) {
         ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
@@ -184,7 +184,7 @@ static char JKPermissionsLocationBlockFailurePropertyKey;
     }
 }
 
--(void)jk_requestAccessToMicrophoneWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)jk_requestAccessToMicrophoneWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)(void))accessDenied {
     AVAudioSession *session = [[AVAudioSession alloc] init];
     [session requestRecordPermission:^(BOOL granted) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -197,7 +197,7 @@ static char JKPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)jk_requestAccessToMotionWithSuccess:(void(^)())accessGranted {
+-(void)jk_requestAccessToMotionWithSuccess:(void(^)(void))accessGranted {
     CMMotionActivityManager *motionManager = [[CMMotionActivityManager alloc] init];
     NSOperationQueue *motionQueue = [[NSOperationQueue alloc] init];
     [motionManager startActivityUpdatesToQueue:motionQueue withHandler:^(CMMotionActivity *activity) {
@@ -206,7 +206,7 @@ static char JKPermissionsLocationBlockFailurePropertyKey;
     }];
 }
 
--(void)jk_requestAccessToPhotosWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+-(void)jk_requestAccessToPhotosWithSuccess:(void(^)(void))accessGranted andFailure:(void(^)())accessDenied {
     ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
     [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
         accessGranted();

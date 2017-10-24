@@ -57,12 +57,12 @@
 /**
  Notifies when dragging started
  */
-@property (nonatomic, copy) void (^jk_draggingStartedBlock)();
+@property (nonatomic, copy) void (^jk_draggingStartedBlock)(void);
 
 /**
  Notifies when dragging ended
  */
-@property (nonatomic, copy) void (^jk_draggingEndedBlock)();
+@property (nonatomic, copy) void (^jk_draggingEndedBlock)(void);
 
 
 /**-----------------------------------------------------------------------------

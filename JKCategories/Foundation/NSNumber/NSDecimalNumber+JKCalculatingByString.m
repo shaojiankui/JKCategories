@@ -24,7 +24,7 @@ NSArray* tokenizeEquation (NSString *equation, NSDictionary *numbers);
 NSArray* RPNFromTokens (NSArray *tokens);
 
 static NSArray *operators;
-void initOperators();
+void initOperators(void);
 
 @implementation NSDecimalNumber (JKCalculatingByString)
 
@@ -293,7 +293,7 @@ NSArray* RPNFromTokens (NSArray *tokens)
 
 #pragma mark - Operators static array
 
-void initOperators()
+void initOperators(void)
 {
     if (operators == nil) {
         operators = @[@"+", @"-", @"*", @"/", @"^"];
