@@ -41,7 +41,7 @@
  @param extension Font filename extension (@"ttf" and @"otf" are supported)
  @return `UIFont` object or `nil` on errors
  */
-+ (UIFont *)jk_customFontOfSize:(CGFloat)size withName:(NSString *)name withExtension:(NSString *)extension;
++ (UIFont *)jk_customFontOfSize:(CGFloat)size withName:(NSString *)name withExtension:(NSString *)extension  __attribute__ ((deprecated));
 
 /**
  Get `UIFont` object for the selected font file (*.ttf or *.otf files).

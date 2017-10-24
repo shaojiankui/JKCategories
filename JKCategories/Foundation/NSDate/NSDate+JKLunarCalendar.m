@@ -26,7 +26,7 @@
 {
     static NSCalendar *jk_chineseCalendar_sharedCalendar = nil;
     if (!jk_chineseCalendar_sharedCalendar)
-        jk_chineseCalendar_sharedCalendar =[NSCalendar calendarWithIdentifier:NSCalendarIdentifierChinese];;
+        jk_chineseCalendar_sharedCalendar =[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierChinese];
     return jk_chineseCalendar_sharedCalendar;
 }
 + (NSString*)jk_currentMDDateString{
