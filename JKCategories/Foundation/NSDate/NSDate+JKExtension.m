@@ -431,7 +431,9 @@
     if (time < 3600) { // 小于一小时
         retTime = time / 60;
         retTime = retTime <= 0.0 ? 1.0 : retTime;
-        return [NSString stringWithFormat:@"%.0f分钟前", retTime];
+//        return [NSString stringWithFormat:@"%.0f分钟前", retTime];
+        return retTime < 1.0 ? @"刚刚" : [NSString stringWithFormat:@"%.0f分钟前", retTime];
+
     } else if (time < 3600 * 24) { // 小于一天，也就是今天
         retTime = time / 3600;
         retTime = retTime <= 0.0 ? 1.0 : retTime;
