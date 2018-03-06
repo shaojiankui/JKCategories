@@ -101,6 +101,13 @@
     if ([platform isEqualToString:@"iPad6,7"])      return @"iPad Pro 12.9-inch (WiFi)";
     if ([platform isEqualToString:@"iPad6,8"])      return @"iPad Pro 12.9-inch (Cellular)";
     
+    if ([platform isEqualToString:@"iPad6,11"])     return @"iPad 5 (WiFi)";
+    if ([platform isEqualToString:@"iPad6,12"])     return @"iPad 5 (Cellular)";
+    if ([platform isEqualToString:@"iPad7,1"])      return @"iPad Pro 12.9-inch (WiFi)";
+    if ([platform isEqualToString:@"iPad7,2"])      return @"iPad Pro 12.9-inch (Cellular)";
+    if ([platform isEqualToString:@"iPad7,3"])      return @"iPad Pro 10.5-inch (WiFi)";
+    if ([platform isEqualToString:@"iPad7,4"])      return @"iPad Pro 10.5-inch (Cellular)";
+    
     if ([platform isEqualToString:@"i386"])         return [UIDevice currentDevice].model;
     if ([platform isEqualToString:@"x86_64"])       return [UIDevice currentDevice].model;
     
