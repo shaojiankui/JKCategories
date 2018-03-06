@@ -278,7 +278,6 @@
 		A2958D2D1B359BE400D7AA0F /* NSString+JKPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D2C1B359BE400D7AA0F /* NSString+JKPinyin.m */; };
 		A2958D301B359C3300D7AA0F /* UIImageView+JKGeometryConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D2F1B359C3300D7AA0F /* UIImageView+JKGeometryConversion.m */; };
 		A2958D331B359CA900D7AA0F /* UIImageView+JKReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D321B359CA900D7AA0F /* UIImageView+JKReflect.m */; };
-		A2958D361B359D3300D7AA0F /* UIDevice+JKPasscodeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D351B359D3300D7AA0F /* UIDevice+JKPasscodeStatus.m */; };
 		A2958D391B35A08000D7AA0F /* UIImage+JKVector.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D381B35A08000D7AA0F /* UIImage+JKVector.m */; };
 		A2958D3C1B35A2E900D7AA0F /* UIWebVIew+JKSwipeGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D3B1B35A2E900D7AA0F /* UIWebVIew+JKSwipeGesture.m */; };
 		A2958D3F1B35A41F00D7AA0F /* UIWebView+JKMetaParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D3E1B35A41F00D7AA0F /* UIWebView+JKMetaParser.m */; };
@@ -855,8 +854,6 @@
 		A2958D2F1B359C3300D7AA0F /* UIImageView+JKGeometryConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKGeometryConversion.m"; sourceTree = "<group>"; };
 		A2958D311B359CA900D7AA0F /* UIImageView+JKReflect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKReflect.h"; sourceTree = "<group>"; };
 		A2958D321B359CA900D7AA0F /* UIImageView+JKReflect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKReflect.m"; sourceTree = "<group>"; };
-		A2958D341B359D3300D7AA0F /* UIDevice+JKPasscodeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JKPasscodeStatus.h"; sourceTree = "<group>"; };
-		A2958D351B359D3300D7AA0F /* UIDevice+JKPasscodeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JKPasscodeStatus.m"; sourceTree = "<group>"; };
 		A2958D371B35A08000D7AA0F /* UIImage+JKVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKVector.h"; sourceTree = "<group>"; };
 		A2958D381B35A08000D7AA0F /* UIImage+JKVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKVector.m"; sourceTree = "<group>"; };
 		A2958D3A1B35A2E900D7AA0F /* UIWebVIew+JKSwipeGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebVIew+JKSwipeGesture.h"; sourceTree = "<group>"; };
@@ -2278,8 +2275,6 @@
 		A28BE2F51A3E9FDC005C4AC6 /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
-				A2958D341B359D3300D7AA0F /* UIDevice+JKPasscodeStatus.h */,
-				A2958D351B359D3300D7AA0F /* UIDevice+JKPasscodeStatus.m */,
 				A28BE2F61A3E9FDC005C4AC6 /* UIDevice+JKHardware.h */,
 				A28BE2F71A3E9FDC005C4AC6 /* UIDevice+JKHardware.m */,
 			);
@@ -3100,7 +3095,6 @@
 				A280E5251A5233A700E6ACA2 /* UIButton+JKBlock.m in Sources */,
 				A281FBA81AC81299009040DA /* NSSetDemoViewController.m in Sources */,
 				A2EF56CF1B21C4230005F730 /* NSFetchRequest+JKExtensions.m in Sources */,
-				A2958D361B359D3300D7AA0F /* UIDevice+JKPasscodeStatus.m in Sources */,
 				A202D9621B0F6C4400EAB199 /* NSDate+JKReporting.m in Sources */,
 				A24EC2FC1B74E05300CE538B /* NSString+JKMatcher.m in Sources */,
 				A28BE36A1A3EB043005C4AC6 /* UIViewController+JKVisible.m in Sources */,

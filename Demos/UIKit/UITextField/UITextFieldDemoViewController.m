@@ -7,7 +7,7 @@
 //
 
 #import "UITextFieldDemoViewController.h"
-
+#import "UITextField+JKInputLimit.h"
 @interface UITextFieldDemoViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.textField.jk_maxLength =  20;
 }
 
 - (void)didReceiveMemoryWarning {

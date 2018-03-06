@@ -7,7 +7,8 @@
 //
 
 #import "NSDateDemoViewController.h"
-#import "NSDate+JKUtilities.h"
+
+#import "NSDate+JKExtension.h"
 @interface NSDateDemoViewController ()
 
 @end
@@ -20,6 +21,7 @@
 
 //    BOOL  y =    [[NSDate date] jk_isEqualToDateIgnoringTime:[NSDate date]];
 
+    
 }
 
 - (void)didReceiveMemoryWarning {

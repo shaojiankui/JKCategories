@@ -9,5 +9,6 @@
 #import "BaseViewController.h"
 
 @interface UITextFieldDemoViewController : BaseViewController
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end

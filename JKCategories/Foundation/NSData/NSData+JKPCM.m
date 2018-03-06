@@ -12,7 +12,6 @@
 /**
  *  format wav data
  *
- *  @param self   raw audio data
  *  @param PCMFormat format of pcm
  *
  *  @return wav data

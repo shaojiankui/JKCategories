@@ -39,7 +39,6 @@
 #import "UIControl+JKActionBlocks.h"
 #import "UIControl+JKBlock.h"
 #import "UIDevice+JKHardware.h"
-#import "UIDevice+JKPasscodeStatus.h"
 #import "UIFont+JKCustomLoader.h"
 #import "UIFont+JKDynamicFontControl.h"
 #import "UIFont+JKTTF.h"
