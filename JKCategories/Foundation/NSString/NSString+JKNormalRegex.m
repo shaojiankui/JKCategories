@@ -323,7 +323,7 @@
     BOOL rc = [pre evaluateWithObject:self];
     
     if (rc) {
-        NSArray *componds = [self componentsSeparatedByString:@","];
+        NSArray *componds = [self componentsSeparatedByString:@"."];
         
         BOOL v = YES;
         for (NSString *s in componds) {
