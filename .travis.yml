@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode7.3
 xcode_project: JKCategories-Demo.xcodeproj
-xcode_scheme: JKCategories-Demo
+xcode_scheme: JKCategories
 
 script:
-- xctool -project JKCategories-Demo.xcodeproj -scheme JKCategories-Demo build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+- xctool -project JKCategories-Demo.xcodeproj -scheme JKCategories build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
