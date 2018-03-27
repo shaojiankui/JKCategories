@@ -5,10 +5,89 @@
 //  Created by Jakey on 16/5/29.
 //  Copyright © 2016年 www.skyfox.org. All rights reserved.
 //
-
-#ifndef JKFoundation_h
-#define JKFoundation_h
-
+#if __has_include(<JKCategories/JKFoundation.h>)
+#import <JKCategories/NSArray+JKBlock.h>
+#import <JKCategories/NSArray+JKSafeAccess.h>
+#import <JKCategories/NSBundle+JKAppIcon.h>
+#import <JKCategories/NSData+JKAPNSToken.h>
+#import <JKCategories/NSData+JKBase64.h>
+#import <JKCategories/NSData+JKDataCache.h>
+#import <JKCategories/NSData+JKEncrypt.h>
+#import <JKCategories/NSData+JKGzip.h>
+#import <JKCategories/NSData+JKHash.h>
+#import <JKCategories/NSData+JKzlib.h>
+#import <JKCategories/NSData+JKPCM.h>
+#import <JKCategories/NSDate+JKCupertinoYankee.h>
+#import <JKCategories/NSDate+JKExtension.h>
+#import <JKCategories/NSDate+JKFormatter.h>
+#import <JKCategories/NSDate+JKInternetDateTime.h>
+#import <JKCategories/NSDate+JKReporting.h>
+#import <JKCategories/NSDate+JKUtilities.h>
+#import <JKCategories/NSDate+JKZeroDate.h>
+#import <JKCategories/NSDate+JKLunarCalendar.h>
+#import <JKCategories/NSDateFormatter+JKMake.h>
+#import <JKCategories/NSDecimalNumber+JKCalculatingByString.h>
+#import <JKCategories/NSDecimalNumber+JKExtensions.h>
+#import <JKCategories/NSDictionary+JKBlock.h>
+#import <JKCategories/NSDictionary+JKJSONString.h>
+#import <JKCategories/NSDictionary+JKMerge.h>
+#import <JKCategories/NSDictionary+JKSafeAccess.h>
+#import <JKCategories/NSDictionary+JKURL.h>
+#import <JKCategories/NSDictionary+JKXML.h>
+#import <JKCategories/NSException+JKTrace.h>
+#import <JKCategories/NSFileHandle+JKReadLine.h>
+#import <JKCategories/NSFileManager+JKPaths.h>
+#import <JKCategories/NSHTTPCookieStorage+JKFreezeDry.h>
+#import <JKCategories/NSIndexPath+JKOffset.h>
+#import <JKCategories/NSInvocation+JKBb.h>
+#import <JKCategories/NSInvocation+JKBlock.h>
+#import <JKCategories/NSMutableURLRequest+JKUpload.h>
+#import <JKCategories/NSNotificationCenter+JKMainThread.h>
+#import <JKCategories/NSNumber+JKCGFloat.h>
+#import <JKCategories/NSNumber+JKRomanNumerals.h>
+#import <JKCategories/NSNumber+JKRound.h>
+#import <JKCategories/NSObject+JKAddProperty.h>
+#import <JKCategories/NSObject+JKAppInfo.h>
+#import <JKCategories/NSObject+JKAssociatedObject.h>
+#import <JKCategories/NSObject+JKAutoCoding.h>
+#import <JKCategories/NSObject+JKBlocks.h>
+#import <JKCategories/NSObject+JKBlockTimer.h>
+#import <JKCategories/NSObject+JKEasyCopy.h>
+#import <JKCategories/NSObject+JKGCD.h>
+#import <JKCategories/NSObject+JKKVOBlocks.h>
+#import <JKCategories/NSObject+JKReflection.h>
+#import <JKCategories/NSObject+JKRuntime.h>
+#import <JKCategories/NSRunLoop+JKPerformBlock.h>
+#import <JKCategories/NSSet+JKBlock.h>
+#import <JKCategories/NSString+JKBase64.h>
+#import <JKCategories/NSString+JKContains.h>
+#import <JKCategories/NSString+JKDictionaryValue.h>
+#import <JKCategories/NSString+JKEmoji.h>
+#import <JKCategories/NSString+JKEncrypt.h>
+#import <JKCategories/NSString+JKHash.h>
+#import <JKCategories/NSString+JKMatcher.h>
+#import <JKCategories/NSString+JKMIME.h>
+#import <JKCategories/NSString+JKNormalRegex.h>
+#import <JKCategories/NSString+JKPinyin.h>
+#import <JKCategories/NSString+JKRemoveEmoji.h>
+#import <JKCategories/NSString+JKScore.h>
+#import <JKCategories/NSString+JKSize.h>
+#import <JKCategories/NSString+JKTrims.h>
+#import <JKCategories/NSString+JKURLEncode.h>
+#import <JKCategories/NSString+JKUUID.h>
+#import <JKCategories/NSString+JKXMLDictionary.h>
+#import <JKCategories/NSString+JKStringPages.h>
+#import <JKCategories/NSString+JKHTML.h>
+#import <JKCategories/NSTimer+JKAddition.h>
+#import <JKCategories/NSTimer+JKBlocks.h>
+#import <JKCategories/NSURL+JKParam.h>
+#import <JKCategories/NSURL+JKQueryDictionary.h>
+#import <JKCategories/NSURLConnection+JKSelfSigned.h>
+#import <JKCategories/NSURLRequest+JKParamsFromDictionary.h>
+#import <JKCategories/NSURLSession+JKSynchronousTask.h>
+#import <JKCategories/NSUserDefaults+JKiCloudSync.h>
+#import <JKCategories/NSUserDefaults+JKSafeAccess.h>
+#else
 #import "NSArray+JKBlock.h"
 #import "NSArray+JKSafeAccess.h"
 #import "NSBundle+JKAppIcon.h"
@@ -90,5 +169,6 @@
 #import "NSURLSession+JKSynchronousTask.h"
 #import "NSUserDefaults+JKiCloudSync.h"
 #import "NSUserDefaults+JKSafeAccess.h"
+#endif
 
-#endif /* JKFoundation_h */
+

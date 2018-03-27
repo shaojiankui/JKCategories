@@ -7,9 +7,7 @@
 //
 
 #import "NSDataDemoViewController.h"
-#import "NSData+JKEncrypt.h"
 
-#import "NSString+JKEncrypt.h"
 @interface NSDataDemoViewController ()
 
 @end
@@ -23,11 +21,11 @@
 //    NSData* data = [NSData dataWithBytes:bytes length:sizeof(bytes)];
 //   __unused NSData* data2 = [data jk_encryptedWithAESUsingKey:@"123456781234567" andIV:nil];
 //
-    __unused  NSString *aes = [@"123" jk_encryptedWithAESUsingKey:@"1234567812345678" andIV:nil];
-
-    __unused  NSString *des = [@"123" jk_encryptedWith3DESUsingKey:@"12345678" andIV:nil];
-
-   __unused  NSString *des3 = [@"123" jk_encryptedWith3DESUsingKey:@"123456781234567812345678" andIV:nil];
+//    __unused  NSString *aes = [@"123" jk_encryptedWithAESUsingKey:@"1234567812345678" andIV:nil];
+//
+//    __unused  NSString *des = [@"123" jk_encryptedWith3DESUsingKey:@"12345678" andIV:nil];
+//
+//   __unused  NSString *des3 = [@"123" jk_encryptedWith3DESUsingKey:@"123456781234567812345678" andIV:nil];
     
 }
 

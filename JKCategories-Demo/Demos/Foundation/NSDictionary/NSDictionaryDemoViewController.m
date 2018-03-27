@@ -7,8 +7,8 @@
 //
 
 #import "NSDictionaryDemoViewController.h"
-#import "NSDictionary+JKSafeAccess.h"
-#import "NSDictionary+JKMerge.h"
+#import <JKCategories/NSDictionary+JKSafeAccess.h>
+#import <JKCategories/NSDictionary+JKMerge.h>
 @interface NSDictionaryDemoViewController ()
 
 @end

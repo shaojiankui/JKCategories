@@ -6,11 +6,12 @@
 //  Copyright © 2016年 www.skyfox.org. All rights reserved.
 //
 
-#ifndef JKMapKit_h
-#define JKMapKit_h
-
+#if __has_include(<JKCategories/JKMapKit.h>)
+#import <JKCategories/MKMapView+JKBetterMaps.h>
+#import <JKCategories/MKMapView+JKMoveLogo.h>
+#import <JKCategories/MKMapView+JKZoomLevel.h>
+#else
 #import "MKMapView+JKBetterMaps.h"
 #import "MKMapView+JKMoveLogo.h"
 #import "MKMapView+JKZoomLevel.h"
-
-#endif /* JKMapKit_h */
+#endif

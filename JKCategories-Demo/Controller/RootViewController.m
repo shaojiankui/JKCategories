@@ -7,9 +7,9 @@
 //
 
 #import "RootViewController.h"
-#import "JKCategories.h"
+#import <JKCategories/JKCategories.h>
 
-#import "NSData+JKGzip.h"
+
 @interface RootViewController ()
 
 @end

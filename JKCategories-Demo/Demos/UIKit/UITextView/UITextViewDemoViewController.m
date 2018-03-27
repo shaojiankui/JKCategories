@@ -7,7 +7,7 @@
 //
 
 #import "UITextViewDemoViewController.h"
-#import "UITextView+JKPlaceHolder.h"
+#import <JKCategories/UITextView+JKPlaceHolder.h>
 
 @interface UITextViewDemoViewController ()
 {

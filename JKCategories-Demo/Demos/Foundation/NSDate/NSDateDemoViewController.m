@@ -8,7 +8,6 @@
 
 #import "NSDateDemoViewController.h"
 
-#import "NSDate+JKExtension.h"
 @interface NSDateDemoViewController ()
 
 @end
