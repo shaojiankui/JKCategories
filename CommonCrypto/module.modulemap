@@ -1,11 +1,7 @@
-module JKCategories {
-    umbrella header "JKCategories.h"
+module CommonCrypto [system] {
+    header "/usr/include/CommonCrypto/CommonCrypto.h"
     export *
-    module * { export * }
-    
-    explicit module CommonCrypto [system] {
-        header "CommonCryptoHeader.h"
-        export *
-    }
 }
 
+framework module JKCategories {
+}
