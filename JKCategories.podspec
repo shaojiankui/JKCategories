@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.ios.deployment_target = "7.0"
   s.requires_arc = true
-  s.frameworks = 'Foundation', 'UIKit', 'CoreData', 'QuartzCore', 'CoreLocation', 'MapKit'
+  s.frameworks = 'Foundation', 'UIKit', 'CoreData', 'QuartzCore', 'CoreLocation', 'MapKit','Security'
   s.libraries    = "z"
   s.source       = { :git => "https://github.com/shaojiankui/JKCategories.git", :tag => "#{version}" }
   s.source_files = "JKCategories", "JKCategories/*.{h}","JKCategories/**/*.{h,m}"
