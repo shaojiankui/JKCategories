@@ -49,8 +49,18 @@ static const void *JKTextViewInputLimitMaxLength = &JKTextViewInputLimitMaxLengt
         }
     }
 }
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
++ (void)load {
+    [super load];
+    Method origMethod = class_getInstanceMethod([self class], NSSelectorFromString(@"dealloc"));
+    Method newMethod = class_getInstanceMethod([self class], @selector(jk_textView_limit_swizzledDealloc));
+    method_exchangeImplementations(origMethod, newMethod);
 }
+- (void)jk_textView_limit_swizzledDealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self jk_textView_limit_swizzledDealloc];
+}
+//- (void)dealloc
+//{
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
+//}
 @end

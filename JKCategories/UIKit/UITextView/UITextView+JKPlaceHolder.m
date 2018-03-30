@@ -46,8 +46,18 @@ static const char *jk_placeHolderTextView = "jk_placeHolderTextView";
         self.jk_placeHolderTextView.hidden = NO;
     }
 }
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
++ (void)load {
+    [super load];
+    Method origMethod = class_getInstanceMethod([self class], NSSelectorFromString(@"dealloc"));
+    Method newMethod = class_getInstanceMethod([self class], @selector(jk_textView_placeholder_swizzledDealloc));
+    method_exchangeImplementations(origMethod, newMethod);
 }
+- (void)jk_textView_placeholder_swizzledDealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self jk_textView_placeholder_swizzledDealloc];
+}
+//- (void)dealloc
+//{
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
+//}
 @end
