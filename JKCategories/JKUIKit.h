@@ -10,7 +10,6 @@
 #import <JKCategories/UIApplication+JKApplicationSize.h>
 #import <JKCategories/UIApplication+JKKeyboardFrame.h>
 #import <JKCategories/UIApplication+JKNetworkActivityIndicator.h>
-#import <JKCategories/UIApplication+JKPermissions.h>
 #import <JKCategories/UIBarButtonItem+JKAction.h>
 #import <JKCategories/UIBarButtonItem+JKBadge.h>
 #import <JKCategories/UIBezierPath+JKBasicShapes.h>
@@ -126,7 +125,6 @@
 #import "UIApplication+JKApplicationSize.h"
 #import "UIApplication+JKKeyboardFrame.h"
 #import "UIApplication+JKNetworkActivityIndicator.h"
-#import "UIApplication+JKPermissions.h"
 #import "UIBarButtonItem+JKAction.h"
 #import "UIBarButtonItem+JKBadge.h"
 #import "UIBezierPath+JKBasicShapes.h"

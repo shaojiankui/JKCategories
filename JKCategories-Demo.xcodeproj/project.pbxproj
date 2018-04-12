@@ -342,7 +342,6 @@
 		B8102534206A108A0099CDA8 /* UIFont+JKTTF.h in Headers */ = {isa = PBXBuildFile; fileRef = A27E93191B381D210010C7EA /* UIFont+JKTTF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8102535206A108A0099CDA8 /* UIFont+JKCustomLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = A27E93161B381CE40010C7EA /* UIFont+JKCustomLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8102536206A108A0099CDA8 /* UIApplication+JKApplicationSize.h in Headers */ = {isa = PBXBuildFile; fileRef = A2958D041B35906E00D7AA0F /* UIApplication+JKApplicationSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8102537206A108A0099CDA8 /* UIApplication+JKPermissions.h in Headers */ = {isa = PBXBuildFile; fileRef = A2958CFE1B358F0200D7AA0F /* UIApplication+JKPermissions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8102538206A108A0099CDA8 /* UIApplication+JKNetworkActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = A2958CFB1B358EA400D7AA0F /* UIApplication+JKNetworkActivityIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8102539206A108A0099CDA8 /* UIApplication+JKKeyboardFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = A202D9B61B1033AC00EAB199 /* UIApplication+JKKeyboardFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B810253A206A108A0099CDA8 /* UIControl+JKSound.h in Headers */ = {isa = PBXBuildFile; fileRef = A2B13FF41D01AA300035FC4F /* UIControl+JKSound.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -357,7 +356,6 @@
 		B8102543206A10940099CDA8 /* UIFont+JKTTF.m in Sources */ = {isa = PBXBuildFile; fileRef = A27E931A1B381D210010C7EA /* UIFont+JKTTF.m */; };
 		B8102544206A10940099CDA8 /* UIFont+JKCustomLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A27E93171B381CE40010C7EA /* UIFont+JKCustomLoader.m */; };
 		B8102545206A10940099CDA8 /* UIApplication+JKApplicationSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958D051B35906E00D7AA0F /* UIApplication+JKApplicationSize.m */; };
-		B8102546206A10940099CDA8 /* UIApplication+JKPermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CFF1B358F0200D7AA0F /* UIApplication+JKPermissions.m */; };
 		B8102547206A10940099CDA8 /* UIApplication+JKNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CFC1B358EA400D7AA0F /* UIApplication+JKNetworkActivityIndicator.m */; };
 		B8102548206A10940099CDA8 /* UIApplication+JKKeyboardFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9B71B1033AC00EAB199 /* UIApplication+JKKeyboardFrame.m */; };
 		B8102549206A10940099CDA8 /* UIControl+JKSound.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B13FF51D01AA300035FC4F /* UIControl+JKSound.m */; };
@@ -1086,8 +1084,6 @@
 		A2958CF91B358AC900D7AA0F /* NSUserDefaults+JKiCloudSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+JKiCloudSync.m"; sourceTree = "<group>"; };
 		A2958CFB1B358EA400D7AA0F /* UIApplication+JKNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JKNetworkActivityIndicator.h"; sourceTree = "<group>"; };
 		A2958CFC1B358EA400D7AA0F /* UIApplication+JKNetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JKNetworkActivityIndicator.m"; sourceTree = "<group>"; };
-		A2958CFE1B358F0200D7AA0F /* UIApplication+JKPermissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JKPermissions.h"; sourceTree = "<group>"; };
-		A2958CFF1B358F0200D7AA0F /* UIApplication+JKPermissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JKPermissions.m"; sourceTree = "<group>"; };
 		A2958D041B35906E00D7AA0F /* UIApplication+JKApplicationSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JKApplicationSize.h"; sourceTree = "<group>"; };
 		A2958D051B35906E00D7AA0F /* UIApplication+JKApplicationSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JKApplicationSize.m"; sourceTree = "<group>"; };
 		A2958D0A1B35937000D7AA0F /* UIResponder+JKFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+JKFirstResponder.h"; sourceTree = "<group>"; };
@@ -1466,8 +1462,6 @@
 			children = (
 				A2958D041B35906E00D7AA0F /* UIApplication+JKApplicationSize.h */,
 				A2958D051B35906E00D7AA0F /* UIApplication+JKApplicationSize.m */,
-				A2958CFE1B358F0200D7AA0F /* UIApplication+JKPermissions.h */,
-				A2958CFF1B358F0200D7AA0F /* UIApplication+JKPermissions.m */,
 				A2958CFB1B358EA400D7AA0F /* UIApplication+JKNetworkActivityIndicator.h */,
 				A2958CFC1B358EA400D7AA0F /* UIApplication+JKNetworkActivityIndicator.m */,
 				A202D9B61B1033AC00EAB199 /* UIApplication+JKKeyboardFrame.h */,
@@ -3300,7 +3294,6 @@
 				B8102530206A106D0099CDA8 /* NSTimer+JKBlocks.h in Headers */,
 				B8102562206A10BA0099CDA8 /* UINavigationItem+JKLoading.h in Headers */,
 				B81025F4206A11650099CDA8 /* UIView+JKShake.h in Headers */,
-				B8102537206A108A0099CDA8 /* UIApplication+JKPermissions.h in Headers */,
 				B81025E7206A11650099CDA8 /* UINavigationController+JKKeyboardFix.h in Headers */,
 				B8102585206A10E70099CDA8 /* UIButton+JKCountDown.h in Headers */,
 				B8102580206A10E70099CDA8 /* UIButton+JKBadge.h in Headers */,
@@ -3831,7 +3824,6 @@
 				B8102572206A10C70099CDA8 /* UINavigationItem+JKLoading.m in Sources */,
 				B81024BD206A0FDD0099CDA8 /* NSHTTPCookieStorage+JKFreezeDry.m in Sources */,
 				B81025B7206A11190099CDA8 /* UIImageView+JKAddition.m in Sources */,
-				B8102546206A10940099CDA8 /* UIApplication+JKPermissions.m in Sources */,
 				B81025D4206A11470099CDA8 /* UIImage+JKFileName.m in Sources */,
 				B8102605206A11720099CDA8 /* UIView+JKConstraints.m in Sources */,
 				B81025BC206A11190099CDA8 /* UIColor+JKModify.m in Sources */,
