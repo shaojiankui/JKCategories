@@ -598,7 +598,6 @@
 		B810265E206A12160099CDA8 /* NSObject+JKKVOBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9AD1B10305500EAB199 /* NSObject+JKKVOBlocks.m */; };
 		B810265F206A14C00099CDA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EF56B41B21C2D50005F730 /* Foundation.framework */; };
 		B8102660206A14C40099CDA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EF56B21B21C2D00005F730 /* UIKit.framework */; };
-		B8102674206A24AC0099CDA8 /* module.modulemap in Resources */ = {isa = PBXBuildFile; fileRef = B8102673206A24AC0099CDA8 /* module.modulemap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1237,7 +1236,6 @@
 		A2FF6FE51D04334F00320C36 /* NSData+JKPCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSData+JKPCM.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A2FF6FE61D04334F00320C36 /* NSData+JKPCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSData+JKPCM.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B8102479206A0DE90099CDA8 /* JKCategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKCategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8102673206A24AC0099CDA8 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		B8531B381F9ED8E700233355 /* NSDate+JKLunarCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+JKLunarCalendar.h"; sourceTree = "<group>"; };
 		B8531B391F9ED8E700233355 /* NSDate+JKLunarCalendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JKLunarCalendar.m"; sourceTree = "<group>"; };
 		B869399B1CA8EEB500EE7A1A /* UIButton+JKImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKImagePosition.h"; sourceTree = "<group>"; };
@@ -1669,7 +1667,6 @@
 			children = (
 				A22725D01A3E72D50061605B /* JKCategories */,
 				A202D9D01B103F9400EAB199 /* JKCategories-Demo */,
-				B8102672206A249B0099CDA8 /* CommonCrypto */,
 				A22725CF1A3E72D50061605B /* Products */,
 				A2FD5B5B1A52704800555EA2 /* Frameworks */,
 			);
@@ -3151,14 +3148,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B8102672206A249B0099CDA8 /* CommonCrypto */ = {
-			isa = PBXGroup;
-			children = (
-				B8102673206A24AC0099CDA8 /* module.modulemap */,
-			);
-			path = CommonCrypto;
-			sourceTree = "<group>";
-		};
 		B87F47941E0CB80E00B788C6 /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
@@ -3574,7 +3563,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8102674206A24AC0099CDA8 /* module.modulemap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4067,7 +4055,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "$(SRCROOT)/CommonCrypto/module.modulemap";
+				MODULEMAP_FILE = "";
 				MODULEMAP_PRIVATE_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.skyfox.JKCategories;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -4109,7 +4097,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "$(SRCROOT)/CommonCrypto/module.modulemap";
+				MODULEMAP_FILE = "";
 				MODULEMAP_PRIVATE_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.skyfox.JKCategories;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

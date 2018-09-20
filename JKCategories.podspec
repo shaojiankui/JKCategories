@@ -1,4 +1,4 @@
-version = "1.7";
+version = "1.7.1";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -17,6 +17,5 @@ Pod::Spec.new do |s|
   s.libraries    = "z"
   s.source       = { :git => "https://github.com/shaojiankui/JKCategories.git", :tag => "#{version}" }
   s.source_files = "JKCategories", "JKCategories/*.{h}","JKCategories/**/*.{h,m}"
-  s.module_map = "CommonCrypto/module.modulemap"
   #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end

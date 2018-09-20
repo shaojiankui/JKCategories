@@ -61,7 +61,11 @@
     if ([platform isEqualToString:@"iPhone10,5"])   return @"iPhone 8 Plus";
     if ([platform isEqualToString:@"iPhone10,3"])   return @"iPhone X";
     if ([platform isEqualToString:@"iPhone10,6"])   return @"iPhone X";
-    
+    if ([platform isEqualToString:@"iPhone11,2"])   return @"iPhone XS";
+    if ([platform isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max";
+    if ([platform isEqualToString:@"iPhone11,6"])   return @"iPhone XS Max CN";
+    if ([platform isEqualToString:@"iPhone11,8"])   return @"iPhone XR";
+
     
     if ([platform isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
     if ([platform isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
