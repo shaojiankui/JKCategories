@@ -6,7 +6,8 @@
 //  Copyright © 2016年 Jakey. All rights reserved.
 //  https://github.com/CompletionHandler/CYImageCompress
 
-//usage      [UIImage compressImage:image toMaxLength:512*1024*8 maxWidth:1024];
+//512kb  2014px
+//usage      [UIImage compressImage:image toMaxLength:512*1024 maxWidth:1024];
 
 #import <UIKit/UIKit.h>
 
