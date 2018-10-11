@@ -198,6 +198,7 @@ Pod::Spec.new do |s|
       end
       uikit.subspec 'UIWebView' do |webview|
           webview.source_files = 'JKCategories/UIKit/UIWebView/*.{h,m}'
+          webview.dependency 'JKCategories/UIKit/UIColor'
       end
       uikit.subspec 'UIWindow' do |window|
           window.source_files = 'JKCategories/UIKit/UIWindow/*.{h,m}'
