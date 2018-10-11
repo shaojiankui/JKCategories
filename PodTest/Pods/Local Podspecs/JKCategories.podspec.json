@@ -1,6 +1,6 @@
 {
   "name": "JKCategories",
-  "version": "1.7.1",
+  "version": "1.8",
   "summary": "JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks",
   "description": "JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.",
   "homepage": "https://github.com/shaojiankui/JKCategories",
@@ -18,7 +18,7 @@
   "libraries": "z",
   "source": {
     "git": "https://github.com/shaojiankui/JKCategories.git",
-    "tag": "1.7.1"
+    "tag": "1.8"
   },
   "public_header_files": "JKCategories/JKCategories.h",
   "source_files": "JKCategories/JKCategories.h",
@@ -263,7 +263,10 @@
       "name": "QuartzCore",
       "public_header_files": "JKCategories/QuartzCore/JKQuartzCore.h",
       "source_files": "JKCategories/QuartzCore/JKQuartzCore.h",
-      "frameworks": "QuartzCore",
+      "frameworks": [
+        "QuartzCore",
+        "UIKit"
+      ],
       "subspecs": [
         {
           "name": "CAAnimation",
@@ -323,11 +326,21 @@
         },
         {
           "name": "NSManagedObject",
-          "source_files": "JKCategories/CoreData/NSManagedObject/*.{h,m}"
+          "source_files": "JKCategories/CoreData/NSManagedObject/*.{h,m}",
+          "dependencies": {
+            "JKCategories/CoreData/NSManagedObjectContext": [
+
+            ]
+          }
         },
         {
           "name": "NSManagedObjectContext",
-          "source_files": "JKCategories/CoreData/NSManagedObjectContext/*.{h,m}"
+          "source_files": "JKCategories/CoreData/NSManagedObjectContext/*.{h,m}",
+          "dependencies": {
+            "JKCategories/CoreData/NSFetchRequest": [
+
+            ]
+          }
         }
       ]
     }

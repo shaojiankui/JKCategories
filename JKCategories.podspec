@@ -209,7 +209,7 @@ Pod::Spec.new do |s|
       # quartzcore.source_files = 'JKCategories/QuartzCore/**/*.{h,m}'
       quartzcore.public_header_files = 'JKCategories/QuartzCore/JKQuartzCore.h'
       quartzcore.source_files = 'JKCategories/QuartzCore/JKQuartzCore.h'
-      quartzcore.frameworks = 'QuartzCore'
+      quartzcore.frameworks = 'QuartzCore','UIKit'
 
       quartzcore.subspec 'CAAnimation' do |animation|
           animation.source_files = 'JKCategories/QuartzCore/CAAnimation/*.{h,m}'
@@ -264,9 +264,12 @@ Pod::Spec.new do |s|
       end
       coredata.subspec 'NSManagedObject' do |managerobject|
           managerobject.source_files = 'JKCategories/CoreData/NSManagedObject/*.{h,m}'
+          managerobject.dependency 'JKCategories/CoreData/NSManagedObjectContext'
       end
       coredata.subspec 'NSManagedObjectContext' do |managerobjectcontext|
           managerobjectcontext.source_files = 'JKCategories/CoreData/NSManagedObjectContext/*.{h,m}'
+          managerobjectcontext.dependency 'JKCategories/CoreData/NSFetchRequest'
+
       end
   end
   
