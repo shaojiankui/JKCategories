@@ -2,7 +2,7 @@
 //  NSDate+JKLunarCalendar.m
 //  JKCategories-Demo
 //
-//  Created by runlin on 2017/10/24.
+//  Created by Jakey on 2017/10/24.
 //  Copyright © 2017年 www.skyfox.org. All rights reserved.
 //
 

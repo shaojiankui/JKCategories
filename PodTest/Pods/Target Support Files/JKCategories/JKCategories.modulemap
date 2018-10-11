@@ -1,0 +1,6 @@
+framework module JKCategories {
+  umbrella header "JKCategories-umbrella.h"
+
+  export *
+  module * { export * }
+}

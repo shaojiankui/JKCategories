@@ -15,23 +15,45 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
 ## Installation
 
 ### Installation with CocoaPods
+when you will use the all Categories:
 
     platform :ios
     pod 'JKCategories'
  	
+when you will use the some one type framework lib,such as `Foundation`:
+
+    platform :ios
+    pod 'JKCategories/Foundation'
+
+when you will use a more detailed class type lib, in some one type framework lib,such as `Foundation's NSDictionary`:
+
+    platform :ios
+    pod 'JKCategories/Foundation/NSDictionary'
+    
+you will find all sublib with `pod search  JKCategories` or Podfile or in the project folder hierarchy
 ### Manually
 
-Copy JKCategories folder to your project
+Copy JKCategories or some specific class file to your project
 
 ## Usage
-import the header file into any class where you wish to make use of the functionality such as **#import "NSArray+JKSafeAccess.h"** ,Not recommended for import all the header files of JKCategories into pch or baseclass
+import the header file into any class where you wish to make use of the functionality such as 
+
+    #import "NSArray+JKSafeAccess.h" or "<JKCategories/NSArray+JKSafeAccess.h>",
+
+Not recommended for import all the header files of JKCategories into pch or baseclass
 
 #### onekey import all categories of framework
 
-"JKUIKit.h","JKFoundation.h","JKCoreData.h","JKCoreLocation.h","JKMapKit.h","JKQuartzCore.h" 
+	"JKUIKit.h" or "<JKCategories/JKUIKit.h>",
+	"JKFoundation.h" or "<JKCategories/JKFoundation.h>",
+	"JKCoreData.h" or "<JKCategories/JKCoreData.h>",
+	"JKCoreLocation.h" or "<JKCategories/JKCoreLocation.h>",
+	"JKMapKit.h"  or "<JKCategories/JKMapKit.h>",
+	"JKQuartzCore.h"  or "<JKCategories/JKQuartzCore.h>""
+	
 #### onekey import all categories of all frameworks
 
-"JKCategories.h",
+	"JKCategories.h" or <JKCategories/JKCategories.h>,
 
 ## Content
 ### Foundation
