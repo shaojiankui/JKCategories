@@ -19,7 +19,6 @@
 #import <JKCategories/UIBezierPath+JKThroughPointsBezier.h>
 #import <JKCategories/UIButton+JKBackgroundColor.h>
 #import <JKCategories/UIButton+JKBlock.h>
-#import <JKCategories/UIButton+JKCountDown.h>
 #import <JKCategories/UIButton+JKImagePosition.h>
 #import <JKCategories/UIButton+JKIndicator.h>
 #import <JKCategories/UIButton+JKMiddleAligning.h>
@@ -132,7 +131,6 @@
 #import "UIBezierPath+JKThroughPointsBezier.h"
 #import "UIButton+JKBackgroundColor.h"
 #import "UIButton+JKBlock.h"
-#import "UIButton+JKCountDown.h"
 #import "UIButton+JKImagePosition.h"
 #import "UIButton+JKIndicator.h"
 #import "UIButton+JKMiddleAligning.h"

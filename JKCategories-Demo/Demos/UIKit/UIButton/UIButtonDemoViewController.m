@@ -7,7 +7,6 @@
 //
 
 #import "UIButtonDemoViewController.h"
-#import "UIButton+JKCountDown.h"
 #import "UIButton+JKBlock.h"
 #import "UIControl+JKActionBlocks.h"
 #import "UIControl+JKBlock.h"
@@ -56,7 +55,6 @@
 
 - (IBAction)countButtonTouchd:(id)sender {
     
-    [sender jk_startTime:6 title:@"倒计时" waitTittle:@"秒"];
 
 }
 @end
