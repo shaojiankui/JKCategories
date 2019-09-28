@@ -20,6 +20,9 @@
     NSArray * queryComponents = [self.query componentsSeparatedByString:@"&"];
     for (NSString * queryComponent in queryComponents) {
         NSString * key = [queryComponent componentsSeparatedByString:@"="].firstObject;
+        if (queryComponent.hash == key.hash) {
+            continue;
+        }
         NSString * value = [queryComponent substringFromIndex:(key.length + 1)];
         [parametersDictionary setObject:value forKey:key];
     }
