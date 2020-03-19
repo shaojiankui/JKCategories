@@ -32,6 +32,5 @@
 
 + (NSString *)jk_currentDateStringWithFormat:(NSString *)format;
 + (NSDate *)jk_dateWithSecondsFromNow:(NSInteger)seconds;
-+ (NSDate *)jk_dateWithYear:(NSInteger)year month:(NSUInteger)month day:(NSUInteger)day;
 - (NSString *)jk_dateWithFormat:(NSString *)format;
 @end

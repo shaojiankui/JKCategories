@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 @interface NSDate (JKReporting)
 
-// Return a date with a specified year, month and day.
+// Return a date with a specified year, month and day.  00:00:00
 + (NSDate *)jk_dateWithYear:(int)year month:(int)month day:(int)day;
 
 // Return midnight on the specified date.

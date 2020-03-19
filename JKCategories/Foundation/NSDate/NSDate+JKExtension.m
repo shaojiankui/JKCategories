@@ -298,11 +298,7 @@
     return [self jk_isSameDay:[NSDate date]];
 }
 
-- (NSDate *)jk_dateByAddingDays:(NSUInteger)days {
-    NSDateComponents *c = [[NSDateComponents alloc] init];
-    c.day = days;
-    return [[NSCalendar currentCalendar] dateByAddingComponents:c toDate:self options:0];
-}
+ 
 
 /**
  *  Get the month as a localized string from the given month number

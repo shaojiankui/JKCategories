@@ -25,7 +25,7 @@
 
 @implementation NSHTTPCookieStorage (JKFreezeDry)
 /**
- *  @brief  /Persists UIWebView cookies to disk
+ *  @brief  /Persists I Web V  cookies to disk
  */
 - (void)jk_saveCookie {
     NSMutableArray* cookieData = [NSMutableArray new];
@@ -47,7 +47,7 @@
     [cookieData writeToFile:[self storagePath] atomically:TRUE];
 }
 /**
- *  @brief  /load UIWebView cookies from disk
+ *  @brief  /load I Web V  cookies from disk
  */
 - (void)jk_loadCookie {
     NSMutableArray* cookies = [NSMutableArray arrayWithContentsOfFile:[self storagePath]];

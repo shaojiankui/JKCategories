@@ -14,17 +14,6 @@
 #define JK_D_YEAR	31556926
 @interface NSDate (JKUtilities)
 + (NSCalendar *)jk_currentCalendar; // avoid bottlenecks
-#pragma mark ---- Decomposing dates 分解的日期
-@property (readonly) NSInteger jk_nearestHour;
-@property (readonly) NSInteger jk_hour;
-@property (readonly) NSInteger jk_minute;
-@property (readonly) NSInteger jk_seconds;
-@property (readonly) NSInteger jk_day;
-@property (readonly) NSInteger jk_month;
-@property (readonly) NSInteger jk_week;
-@property (readonly) NSInteger jk_weekday;
-@property (readonly) NSInteger jk_nthWeekday; // e.g. 2nd Tuesday of the month == 2
-@property (readonly) NSInteger jk_year;
 
 #pragma mark ----short time 格式化的时间
 @property (nonatomic, readonly) NSString *jk_shortString;
@@ -39,8 +28,7 @@
 
 ///使用dateStyle timeStyle格式化时间
 - (NSString *)jk_stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle;
-///给定format格式化时间
-- (NSString *)jk_stringWithFormat:(NSString *)format;
+ 
 
 #pragma mark ---- 从当前日期相对日期时间
 ///明天

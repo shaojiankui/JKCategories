@@ -6,7 +6,6 @@
 //  Copyright © 2016年 www.skyfox.org. All rights reserved.
 //
 #if __has_include(<JKCategories/JKUIKit.h>)
-#import <JKCategories/UIAlertView+JKBlock.h>
 #import <JKCategories/UIApplication+JKApplicationSize.h>
 #import <JKCategories/UIApplication+JKKeyboardFrame.h>
 #import <JKCategories/UIApplication+JKNetworkActivityIndicator.h>
@@ -107,18 +106,8 @@
 #import <JKCategories/UIViewController+JKRecursiveDescription.h>
 #import <JKCategories/UIViewController+JKStoreKit.h>
 #import <JKCategories/UIViewController+JKVisible.h>
-#import <JKCategories/UIWebView+JKBlocks.h>
-#import <JKCategories/UIWebView+JKCanvas.h>
-#import <JKCategories/UIWebView+JKJavaScript.h>
-#import <JKCategories/UIWebView+JKLoad.h>
-#import <JKCategories/UIWebView+JKMetaParser.h>
-#import <JKCategories/UIWebView+JKStyle.h>
-#import <JKCategories/UIWebVIew+JKSwipeGesture.h>
-#import <JKCategories/UIWebView+JKLoadInfo.h>
-#import <JKCategories/UIWebView+JKWebStorage.h>
 #import <JKCategories/UIWindow+JKHierarchy.h>
 #else
-#import "UIAlertView+JKBlock.h"
 #import "UIApplication+JKApplicationSize.h"
 #import "UIApplication+JKKeyboardFrame.h"
 #import "UIApplication+JKNetworkActivityIndicator.h"
@@ -219,15 +208,6 @@
 #import "UIViewController+JKRecursiveDescription.h"
 #import "UIViewController+JKStoreKit.h"
 #import "UIViewController+JKVisible.h"
-#import "UIWebView+JKBlocks.h"
-#import "UIWebView+JKCanvas.h"
-#import "UIWebView+JKJavaScript.h"
-#import "UIWebView+JKLoad.h"
-#import "UIWebView+JKMetaParser.h"
-#import "UIWebView+JKStyle.h"
-#import "UIWebVIew+JKSwipeGesture.h"
-#import "UIWebView+JKLoadInfo.h"
-#import "UIWebView+JKWebStorage.h"
 #import "UIWindow+JKHierarchy.h"
 #endif
 
