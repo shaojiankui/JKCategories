@@ -1,4 +1,4 @@
-version = "1.8.2";
+version = "1.9";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -115,9 +115,7 @@ Pod::Spec.new do |s|
       uikit.source_files = 'JKCategories/UIKit/JKUIKit.h'
       uikit.frameworks = 'UIKit'
 
-      uikit.subspec 'UIAlertView' do |alertview|
-          alertview.source_files = 'JKCategories/UIKit/UIAlertView/*.{h,m}'
-      end
+      
       uikit.subspec 'UIApplication' do |application|
           application.source_files = 'JKCategories/UIKit/UIApplication/*.{h,m}'
       end
@@ -195,10 +193,6 @@ Pod::Spec.new do |s|
       end
       uikit.subspec 'UIViewController' do |viewcontroller|
           viewcontroller.source_files = 'JKCategories/UIKit/UIViewController/*.{h,m}'
-      end
-      uikit.subspec 'UIWebView' do |webview|
-          webview.source_files = 'JKCategories/UIKit/UIWebView/*.{h,m}'
-          webview.dependency 'JKCategories/UIKit/UIColor'
       end
       uikit.subspec 'UIWindow' do |window|
           window.source_files = 'JKCategories/UIKit/UIWindow/*.{h,m}'

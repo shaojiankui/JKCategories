@@ -157,13 +157,7 @@
  */
 - (BOOL)jk_isToday;
 
-/**
- *  Add days to self
- *
- *  @param days The number of days to add
- *  @return Return self by adding the gived days number
- */
-- (NSDate *)jk_dateByAddingDays:(NSUInteger)days;
+ 
 
 /**
  *  Get the month as a localized string from the given month number
@@ -221,5 +215,6 @@
 + (NSString *)jk_ymdFormat;
 + (NSString *)jk_hmsFormat;
 + (NSString *)jk_ymdHmsFormat;
+
 
 @end

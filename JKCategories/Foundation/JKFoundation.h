@@ -17,7 +17,6 @@
 #import <JKCategories/NSData+JKHash.h>
 #import <JKCategories/NSData+JKzlib.h>
 #import <JKCategories/NSData+JKPCM.h>
-#import <JKCategories/NSDate+JKCupertinoYankee.h>
 #import <JKCategories/NSDate+JKExtension.h>
 #import <JKCategories/NSDate+JKFormatter.h>
 #import <JKCategories/NSDate+JKInternetDateTime.h>
@@ -99,7 +98,6 @@
 #import "NSData+JKHash.h"
 #import "NSData+JKzlib.h"
 #import "NSData+JKPCM.h"
-#import "NSDate+JKCupertinoYankee.h"
 #import "NSDate+JKExtension.h"
 #import "NSDate+JKFormatter.h"
 #import "NSDate+JKInternetDateTime.h"

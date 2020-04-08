@@ -22,7 +22,7 @@
 //  THE SOFTWARE.
 
 /*
-    Persists UIWebView cookies to disk. To send the cookies with an initial NSURLRequest you must do the following after loading the cookies:
+    Persists IWebV cookies to disk. To send the cookies with an initial NSURLRequest you must do the following after loading the cookies:
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:yourURL];
     NSDictionary* headers = [NSHTTPCookie requestHeaderFieldsWithCookies:[[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]];
     [request setAllHTTPHeaderFields:headers];
@@ -31,11 +31,11 @@
 
 @interface NSHTTPCookieStorage (JKFreezeDry)
 /**
- *  @brief 存储 UIWebView cookies到磁盘目录
+ *  @brief 存储 I Web V cookies到磁盘目录
  */
 - (void)jk_saveCookie;
 /**
- *  @brief 读取UIWebView cookies从磁盘目录
+ *  @brief 读取 I Web V  cookies从磁盘目录
  */
 - (void)jk_loadCookie;
 
