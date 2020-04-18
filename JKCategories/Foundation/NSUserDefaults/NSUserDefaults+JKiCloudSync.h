@@ -4,12 +4,10 @@
 //  Created by Riccardo Paolillo on 09/05/13.
 //  Copyright (c) 2013. All rights reserved.
 //
-
-//https://github.com/RiccardoPaolillo/NSUserDefault-iCloud
-// A very simple iOS Category for synchronize NSUserDefaults with iCloud (NSUbiquitousKeyValueStore)
+//  https://github.com/RiccardoPaolillo/NSUserDefault-iCloud
+//  A very simple iOS Category for synchronize NSUserDefaults with iCloud (NSUbiquitousKeyValueStore)
 
 #import <Foundation/Foundation.h>
-
 
 @interface NSUserDefaults (JKiCloudSync)
 

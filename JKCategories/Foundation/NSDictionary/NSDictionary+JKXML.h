@@ -6,11 +6,12 @@
 //  Copyright © 2015年 www.skyfox.org. All rights reserved.
 //  https://github.com/shaojiankui/NSDictionary-JKXML
 
-// 在线XML、JSON数据互转
-// http://www.bejson.com/xml2json/
+//  在线XML、JSON数据互转
+//  http://www.bejson.com/xml2json/
 
-//XML 新手入门基础知识
-//http://www.ibm.com/developerworks/cn/xml/x-newxml/
+//  XML 新手入门基础知识
+//  http://www.ibm.com/developerworks/cn/xml/x-newxml/
+
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary (JKXML)
