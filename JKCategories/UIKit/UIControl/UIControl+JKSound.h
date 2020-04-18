@@ -14,7 +14,7 @@
 /// Set the sound for a particular control event (or events).
 /// @param name The name of the file. The method looks for an image with the specified name in the application’s main bundle.
 /// @param controlEvent A bitmask specifying the control events for which the action message is sent. See “Control Events” for bitmask constants.
-//不同事件增加不同声音
+// 不同事件增加不同声音
 - (void)jk_setSoundNamed:(NSString *)name forControlEvent:(UIControlEvents)controlEvent;
 
 @end

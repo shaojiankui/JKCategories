@@ -10,7 +10,7 @@
 
 @interface UITableView (JKiOS7Style)
 /**
- *  @brief  ios7设置页面的UITableViewCell样式
+ *  @brief  iOS 7 设置页面的 UITableViewCell 样式
  *
  *  @param cell      cell
  *  @param indexPath indexPath

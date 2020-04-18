@@ -4,7 +4,10 @@
 //
 //  Created by Inder Kumar Rathore on 19/01/13.
 //  Copyright (c) 2013 Rathore. All rights reserved.
+//
 //  https://github.com/fahrulazmi/UIDeviceHardware/blob/master/UIDeviceHardware.m
+//
+//  Reference: <https://www.theiphonewiki.com/wiki/Models>
 
 #import "UIDevice+JKHardware.h"
 #include <sys/types.h>
@@ -68,6 +71,7 @@
     if ([platform isEqualToString:@"iPhone12,1"])   return @"iPhone 11";
     if ([platform isEqualToString:@"iPhone12,3"])   return @"iPhone 11 Pro";
     if ([platform isEqualToString:@"iPhone12,5"])   return @"iPhone 11 Pro Max";
+    if ([platform isEqualToString:@"iPhone12,8"])   return @"iPhone SE (2nd generation)";
     
     
     if ([platform isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
@@ -125,6 +129,11 @@
     if ([platform isEqualToString:@"iPad8,6"])      return @"iPad Pro 3rd Gen 12.9-inch (WiFi)"; // 1TB
     if ([platform isEqualToString:@"iPad8,7"])      return @"iPad Pro 3rd Gen 12.9-inch (Cellular)";
     if ([platform isEqualToString:@"iPad8,8"])      return @"iPad Pro 3rd Gen 12.9-inch (Cellular)"; // 1TB
+    if ([platform isEqualToString:@"iPad8,9"])      return @"iPad Pro 2rd Gen 11-inch";
+    if ([platform isEqualToString:@"iPad8,10"])     return @"iPad Pro 2rd Gen 11-inch";
+    if ([platform isEqualToString:@"iPad8,11"])     return @"iPad Pro 4rd Gen 12.9-inch";
+    if ([platform isEqualToString:@"iPad8,12"])     return @"iPad Pro 4rd Gen 12.9-inch";
+    
     if ([platform isEqualToString:@"iPad11,1"])      return @"iPad Mini 5 (WiFi)";
     if ([platform isEqualToString:@"iPad11,2"])      return @"iPad Mini 5";
     if ([platform isEqualToString:@"iPad11,3"])      return @"iPad Air 3 (WiFi)";

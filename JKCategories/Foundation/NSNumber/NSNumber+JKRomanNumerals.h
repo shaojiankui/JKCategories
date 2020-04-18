@@ -14,7 +14,7 @@
  *
  *   A category on NSNumber that returns the value as a roman numeral 
  *
- *  @return <#return value description#>
+ *  @return 罗马数字格式的字符串
  */
 - (NSString *)jk_romanNumeral;
 

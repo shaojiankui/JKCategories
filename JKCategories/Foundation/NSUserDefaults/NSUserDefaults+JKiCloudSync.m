@@ -8,9 +8,7 @@
 
 #import "NSUserDefaults+JKiCloudSync.h"
 
-
 @implementation NSUserDefaults (JKiCloudSync)
-
 
 -(void)jk_setValue:(id)value forKey:(NSString *)key iCloudSync:(BOOL)sync
 {
