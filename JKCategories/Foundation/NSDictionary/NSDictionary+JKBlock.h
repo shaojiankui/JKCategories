@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (JKBlock)
+@interface NSDictionary<__covariant KeyType, __covariant ObjectType> (JKBlock)
 
 #pragma mark - RX
-- (void)jk_each:(void (^)(id k, id v))block;
-- (void)jk_eachKey:(void (^)(id k))block;
-- (void)jk_eachValue:(void (^)(id v))block;
-- (NSArray *)jk_map:(id (^)(id key, id value))block;
+- (void)jk_each:(void (^)(KeyType k, ObjectType v))block;
+- (void)jk_eachKey:(void (^)(KeyType k))block;
+- (void)jk_eachValue:(void (^)(ObjectType v))block;
+- (NSArray *)jk_map:(id (^)(KeyType key, ObjectType value))block;
+- (NSDictionary <KeyType, id>*)jk_mapValues:(id (^)(ObjectType value))block;
 - (NSDictionary *)jk_pick:(NSArray *)keys;
 - (NSDictionary *)jk_omit:(NSArray *)key;
 
