@@ -16,7 +16,7 @@
 - (void)jk_eachValue:(void (^)(ObjectType v))block;
 - (NSArray *)jk_map:(id (^)(KeyType key, ObjectType value))block;
 - (NSDictionary <KeyType, id>*)jk_mapValues:(id (^)(ObjectType value))block;
-- (NSDictionary *)jk_pick:(NSArray *)keys;
-- (NSDictionary *)jk_omit:(NSArray *)key;
+- (NSDictionary <KeyType, ObjectType>*)jk_pick:(NSArray <KeyType>*)keys;
+- (NSDictionary <KeyType, ObjectType>*)jk_omit:(NSArray <KeyType>*)key;
 
 @end
