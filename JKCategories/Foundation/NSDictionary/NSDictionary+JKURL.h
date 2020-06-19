@@ -22,5 +22,5 @@
  *
  *  @return url 参数字符串
  */
-- (NSString *)jk_URLQueryString;
+- (NSString *)jk_URLQueryString2;
 @end

@@ -269,7 +269,7 @@
         return nil;
     }
     
-    if ([value isKindOfClass:[NSString class]] && ![value isEqualToString:@""] && !dateFormat) {
+    if ([value isKindOfClass:[NSString class]] && ![value isEqualToString:@""] && dateFormat) {
         return [formater dateFromString:value];
     }
     return nil;

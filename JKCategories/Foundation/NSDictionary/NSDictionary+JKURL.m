@@ -38,7 +38,7 @@
  *
  *  @return url 参数字符串
  */
-- (NSString *)jk_URLQueryString 
+- (NSString *)jk_URLQueryString2
 {
     NSMutableString *string = [NSMutableString string];
     for (NSString *key in [self allKeys]) {
