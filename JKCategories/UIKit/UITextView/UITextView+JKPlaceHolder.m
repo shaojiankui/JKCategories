@@ -47,7 +47,7 @@ static const char *jk_placeHolderTextView = "jk_placeHolderTextView";
     }
 }
 + (void)load {
-    [super load];
+//    [super load];
     Method origMethod = class_getInstanceMethod([self class], NSSelectorFromString(@"dealloc"));
     Method newMethod = class_getInstanceMethod([self class], @selector(jk_textView_placeholder_swizzledDealloc));
     method_exchangeImplementations(origMethod, newMethod);
