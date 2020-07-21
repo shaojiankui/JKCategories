@@ -10,9 +10,9 @@
 
 @interface UIView (JKFind)
 /**
- *  @brief  找到指定类名的SubVie对象
+ *  @brief  找到指定类名的SubView对象
  *
- *  @param clazz SubVie类名
+ *  @param clazz SubView类名
  *
  *  @return view对象
  */
@@ -27,7 +27,7 @@
 - (id)jk_findSuperViewWithSuperViewClass:(Class)clazz;
 
 /**
- *  @brief  找到并且resign第一响应者
+ *  @brief  找到并且释放第一响应者
  *
  *  @return 结果
  */
@@ -43,4 +43,15 @@
  *  @brief  找到当前view所在的viewcontroler
  */
 @property (readonly) UIViewController *jk_viewController;
+
+/**
+ * @brief 找到当前view所在的navigationController
+ */
+@property (readonly) UINavigationController *jk_navigationController;
+
+/**
+ * @brief 找到当前view所在的tabBarController
+ */
+@property (readonly) UITabBarController *jk_tabBarController;
+
 @end

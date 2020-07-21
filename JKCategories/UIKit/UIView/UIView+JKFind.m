@@ -100,4 +100,38 @@
     return nil;
 }
 
+/**
+ * @brief 找到当前view所在的navigationController
+ */
+- (UINavigationController *)jk_navigationController
+{
+    UIResponder *responder = self.nextResponder;
+    do {
+        if ([responder isKindOfClass:[UINavigationController class]]) {
+            return (UINavigationController *)responder;
+        }
+        
+        responder = responder.nextResponder;
+    } while (responder);
+    
+    return nil;
+}
+
+/**
+ * @brief 找到当前view所在的tabBarController
+ */
+- (UITabBarController *)jk_tabBarController
+{
+    UIResponder *responder = self.nextResponder;
+    do {
+        if ([responder isKindOfClass:[UITabBarController class]]) {
+            return (UITabBarController *)responder;
+        }
+        
+        responder = responder.nextResponder;
+    } while (responder);
+    
+    return nil;
+}
+
 @end
