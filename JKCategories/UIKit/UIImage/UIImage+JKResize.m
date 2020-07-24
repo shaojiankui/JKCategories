@@ -75,6 +75,15 @@
          interpolationQuality:quality];
 }
 
+- (UIImage *)jk_resizedImage:(CGSize)newSize
+{
+	UIGraphicsBeginImageContextWithOptions(newSize, NO, UIScreen.mainScreen.scale);
+	[self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+	UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	return newImage;
+}
+
 // Resizes the image according to the given content mode, taking into account the image's orientation
 - (UIImage *)jk_resizedImageWithContentMode:(UIViewContentMode)contentMode
                                   bounds:(CGSize)bounds

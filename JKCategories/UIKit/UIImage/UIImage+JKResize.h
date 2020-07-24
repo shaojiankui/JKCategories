@@ -15,6 +15,7 @@
        interpolationQuality:(CGInterpolationQuality)quality;
 - (UIImage *)jk_resizedImage:(CGSize)newSize
      interpolationQuality:(CGInterpolationQuality)quality;
+- (UIImage *)jk_resizedImage:(CGSize)newSize;
 - (UIImage *)jk_resizedImageWithContentMode:(UIViewContentMode)contentMode
                                   bounds:(CGSize)bounds
                     interpolationQuality:(CGInterpolationQuality)quality;
