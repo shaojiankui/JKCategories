@@ -8,6 +8,8 @@
 
 #import "UIImageDemoViewController.h"
 
+#import <JKCategories/UIImage+JKResize.h>
+
 @interface UIImageDemoViewController ()
 
 @end
@@ -16,22 +18,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	
+	
+	for (int i = 0; i < 7; i++) {
+		UIImage *image = [UIImage imageNamed:@"diannao"];
+		if (i == 0) image = [image jk_resizedImage:CGSizeMake(100, 100*0.728)];
+		else image = [image jk_resizedImage:CGSizeMake(100, 100*0.728) interpolationQuality:i - 1];
+		UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+		[btn setImage:image forState:UIControlStateNormal];
+		btn.frame = CGRectMake(100, 100 * i + 100, 200, 100);
+		btn.layer.borderColor = UIColor.redColor.CGColor;
+		btn.layer.borderWidth = 1;
+		[self.view addSubview:btn];
+	}
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
