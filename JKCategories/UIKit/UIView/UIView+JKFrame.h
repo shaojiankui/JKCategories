@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (JKFrame)
+
 // shortcuts for frame properties
 @property (nonatomic, assign) CGPoint jk_origin;
 @property (nonatomic, assign) CGSize jk_size;
@@ -17,12 +18,14 @@
 @property (nonatomic) CGFloat jk_centerX;
 @property (nonatomic) CGFloat jk_centerY;
 
-
+// shortcuts for the coords
 @property (nonatomic) CGFloat jk_top;
 @property (nonatomic) CGFloat jk_bottom;
-@property (nonatomic) CGFloat jk_right;
 @property (nonatomic) CGFloat jk_left;
+@property (nonatomic) CGFloat jk_right;
 
+// shortcuts for the size
 @property (nonatomic) CGFloat jk_width;
 @property (nonatomic) CGFloat jk_height;
+
 @end
