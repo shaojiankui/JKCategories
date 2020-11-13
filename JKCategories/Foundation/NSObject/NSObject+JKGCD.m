@@ -21,7 +21,7 @@
  *  @brief  GCD主线程执行代码块
  *
  *  @param block 代码块
- *  @param wait  是否同步请求
+ *  @param shouldWait  是否同步请求
  */
 - (void)jk_performOnMainThread:(void(^)(void))block wait:(BOOL)shouldWait {
     if (shouldWait) {

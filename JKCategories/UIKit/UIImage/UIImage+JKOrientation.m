@@ -113,7 +113,7 @@
 /**
  *  @brief  旋转图片
  *
- *  @param degrees 弧度
+ *  @param radians 弧度
  *
  *  @return 旋转后图片
  */

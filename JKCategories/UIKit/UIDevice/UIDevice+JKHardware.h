@@ -10,7 +10,9 @@
 
 
 @interface UIDevice (JKHardware)
+//返回机型代号 例如 iPhone10,2
 + (NSString *)jk_platform;
+//返回机型名称 例如 iPhone 8 Plus
 + (NSString *)jk_platformString;
 
 
