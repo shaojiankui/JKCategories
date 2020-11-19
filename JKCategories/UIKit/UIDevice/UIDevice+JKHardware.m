@@ -72,10 +72,10 @@
     if ([platform isEqualToString:@"iPhone12,3"])   return @"iPhone 11 Pro";
     if ([platform isEqualToString:@"iPhone12,5"])   return @"iPhone 11 Pro Max";
     if ([platform isEqualToString:@"iPhone12,8"])   return @"iPhone SE 2";
-    if ([platform isEqualToString:@"iPhone13,1"])  return  @"iPhone 12 Mini";
-    if ([platform isEqualToString:@"iPhone13,2"])  return  @"iPhone 12";
-    if ([platform isEqualToString:@"iPhone13,3"])  return  @"iPhone 12 Pro";
-    if ([platform isEqualToString:@"iPhone13,4"])  return  @"iPhone 12 Pro Max";
+    if ([platform isEqualToString:@"iPhone13,1"])   return  @"iPhone 12 Mini";
+    if ([platform isEqualToString:@"iPhone13,2"])   return  @"iPhone 12";
+    if ([platform isEqualToString:@"iPhone13,3"])   return  @"iPhone 12 Pro";
+    if ([platform isEqualToString:@"iPhone13,4"])   return  @"iPhone 12 Pro Max";
 
     if ([platform isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
     if ([platform isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
@@ -142,6 +142,8 @@
     if ([platform isEqualToString:@"iPad11,2"])     return @"iPad Mini 5 (Cellular)";
     if ([platform isEqualToString:@"iPad11,3"])     return @"iPad Air 3 (WiFi)";
     if ([platform isEqualToString:@"iPad11,4"])     return @"iPad Air 3 (Cellular)";
+    if ([platform isEqualToString:@"iPad11,6"])     return @"iPad 8 (WiFi)";
+    if ([platform isEqualToString:@"iPad11,7"])     return @"iPad 8 (Cellular)";
     if ([platform isEqualToString:@"iPad13,1"])     return @"iPad Air 4 (WiFi)";
     if ([platform isEqualToString:@"iPad13,2"])     return @"iPad Air 4 (Cellular)";
 
