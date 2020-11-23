@@ -78,14 +78,38 @@ NSString* const jk_iTunesAppleString = @"itunes.apple.com";
 
 + (void)jk_openAppReviewURLForIdentifier:(NSInteger)identifier
 {
-    NSString* reviewURLString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%li", (long)identifier];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:reviewURLString]];
+    NSString *reviewURLString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%li", (long)identifier];
+    
+    NSURL *reviewURL = [NSURL URLWithString:reviewURLString];
+    BOOL canOpenReviewURL = [[UIApplication sharedApplication] canOpenURL:reviewURL];
+    if (!canOpenReviewURL) { return; }
+    
+    if (@available(iOS 10.0, *)) {
+        [[UIApplication sharedApplication] openURL:reviewURL options:@{} completionHandler:nil];
+    } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            [[UIApplication sharedApplication] openURL:reviewURL];
+#pragma clang diagnostic pop
+    }
 }
 
 + (void)jk_openAppURLForIdentifier:(NSInteger)identifier
 {
-    NSString* appURLString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%li", (long)identifier];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appURLString]];
+    NSString *appURLString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%li", (long)identifier];
+    
+    NSURL *appURL = [NSURL URLWithString:appURLString];
+    BOOL canOpenAppURL = [[UIApplication sharedApplication] canOpenURL:appURL];
+    if (!canOpenAppURL) { return; }
+    
+    if (@available(iOS 10.0, *)) {
+        [[UIApplication sharedApplication] openURL:appURL options:@{} completionHandler:nil];
+    } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            [[UIApplication sharedApplication] openURL:appURL];
+#pragma clang diagnostic pop
+    }
 }
 
 + (BOOL)jk_containsITunesURLString:(NSString*)URLString
