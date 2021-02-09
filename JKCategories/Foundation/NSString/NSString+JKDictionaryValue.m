@@ -9,6 +9,7 @@
 #import "NSString+JKDictionaryValue.h"
 
 @implementation NSString (JKDictionaryValue)
+
 /**
  *  @brief  JSON字符串转成NSDictionary
  *
@@ -16,8 +17,9 @@
  */
 -(NSDictionary *)jk_dictionaryValue{
     NSError *errorJson;
-    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:[self dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&errorJson];
-    if (errorJson != nil) {
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&errorJson];
+    if (errorJson) {
 #ifdef DEBUG
         NSLog(@"fail to get dictioanry from JSON: %@, error: %@", self, errorJson);
 #endif

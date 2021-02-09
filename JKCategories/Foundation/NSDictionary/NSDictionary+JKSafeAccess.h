@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NSDictionary (JKSafeAccess)
+
 - (BOOL)jk_hasKey:(NSString *)key;
 
 - (NSString*)jk_stringForKey:(id)key;
@@ -56,9 +57,10 @@
 - (CGSize)jk_sizeForKey:(id)key;
 
 - (CGRect)jk_rectForKey:(id)key;
+
 @end
 
-#pragma --mark NSMutableDictionary setter
+#pragma mark - NSMutableDictionary setter
 
 @interface NSMutableDictionary(SafeAccess)
 
@@ -89,4 +91,5 @@
 -(void)jk_setSize:(CGSize)o forKey:(NSString*)key;
 
 -(void)jk_setRect:(CGRect)o forKey:(NSString*)key;
+
 @end

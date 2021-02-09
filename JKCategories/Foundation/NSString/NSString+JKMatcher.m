@@ -9,7 +9,6 @@
 
 @implementation NSString(JKMatcher)
 
-
 - (NSArray *)jk_matchWithRegex:(NSString *)regex
 {
     NSTextCheckingResult *result = [self jk_firstMatchedResultWithRegex:regex];
@@ -20,20 +19,17 @@
     return mArray;
 }
 
-
 - (NSString *)jk_matchWithRegex:(NSString *)regex atIndex:(NSUInteger)index
 {
     NSTextCheckingResult *result = [self jk_firstMatchedResultWithRegex:regex];
     return [self substringWithRange:[result rangeAtIndex:index]];
 }
 
-
 - (NSString *)jk_firstMatchedGroupWithRegex:(NSString *)regex
 {
     NSTextCheckingResult *result = [self jk_firstMatchedResultWithRegex:regex];
     return [self substringWithRange:[result rangeAtIndex:1]];
 }
-
 
 - (NSTextCheckingResult *)jk_firstMatchedResultWithRegex:(NSString *)regex
 {

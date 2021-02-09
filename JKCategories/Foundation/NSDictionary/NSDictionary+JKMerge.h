@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary (JKMerge)
+
 /**
  *  @brief  合并两个NSDictionary
  *
@@ -18,6 +19,7 @@
  *  @return 合并后的NSDictionary
  */
 + (NSDictionary *)jk_dictionaryByMerging:(NSDictionary *)dict1 with:(NSDictionary *)dict2;
+
 /**
  *  @brief  并入一个NSDictionary
  *
@@ -28,6 +30,7 @@
 - (NSDictionary *)jk_dictionaryByMergingWith:(NSDictionary *)dict;
 
 #pragma mark - Manipulation
+
 - (NSDictionary *)jk_dictionaryByAddingEntriesFromDictionary:(NSDictionary *)dictionary;
 - (NSDictionary *)jk_dictionaryByRemovingEntriesWithKeys:(NSSet *)keys;
 

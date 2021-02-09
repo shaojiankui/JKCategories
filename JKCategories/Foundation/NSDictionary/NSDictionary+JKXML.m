@@ -9,6 +9,7 @@
 #import "NSDictionary+JKXML.h"
 
 @implementation NSDictionary (JKXML)
+
 /**
  *  @brief  将NSDictionary转换成XML 字符串
  *
@@ -18,10 +19,11 @@
    
     return [self  jk_XMLStringWithRootElement:nil declaration:nil];
 }
+
 - (NSString*)jk_XMLStringDefaultDeclarationWithRootElement:(NSString*)rootElement{
     return [self  jk_XMLStringWithRootElement:rootElement declaration:@"<?xml version=\"1.0\" encoding=\"utf-8\"?>"];
-
 }
+
 - (NSString*)jk_XMLStringWithRootElement:(NSString*)rootElement declaration:(NSString*)declaration{
     NSMutableString *xml = [[NSMutableString alloc] initWithString:@""];
     if (declaration) {
@@ -63,9 +65,11 @@
     NSString *result = [[NSString alloc] initWithData:[self jk_plistData]  encoding:NSUTF8StringEncoding];
     return result;
 }
+
 - (NSData *)jk_plistData{
     //    return [NSPropertyListSerialization dataFromPropertyList:self format:NSPropertyListXMLFormat_v1_0   errorDescription:nil];
     NSError *error = nil;
     return [NSPropertyListSerialization dataWithPropertyList:self format:NSPropertyListXMLFormat_v1_0 options:0 error:&error];
 }
+
 @end

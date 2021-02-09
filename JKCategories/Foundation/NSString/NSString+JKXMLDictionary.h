@@ -5,20 +5,19 @@
 //  Will return nil if there has been an error.
 
 /*
+ <https://github.com/AndrewHydeJr/NSString-XML>
+ 
+ ### Usage
  
  #import "NSString+XMLDictionary.h"
  
- ...
- 
  NSString *XMLString = @"<test>data</test>";
  NSDictionary *XMLAsDictionary = [XMLString XMLDictionary];
- 
  */
-
-//https://github.com/AndrewHydeJr/NSString-XML
 #import <Foundation/Foundation.h>
 
 @interface NSString (XML)
+
 /**
  *  @brief  xml字符串转换成NSDictionary
  *

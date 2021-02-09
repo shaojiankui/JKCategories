@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @interface NSString (JKStringPages)
+
 /**
  *  根据字符串进行分页
  *
@@ -22,4 +23,5 @@
 - (NSArray *)jk_getPagesOfString:(NSString *)cache
                      withFont:(UIFont*)font
                        inRect:(CGRect)r;
+
 @end

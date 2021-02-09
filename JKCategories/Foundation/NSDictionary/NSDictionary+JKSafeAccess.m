@@ -9,6 +9,7 @@
 #import "NSDictionary+JKSafeAccess.h"
 
 @implementation NSDictionary (JKSafeAccess)
+
 - (BOOL)jk_hasKey:(NSString *)key
 {
     return [self objectForKey:key] != nil;
@@ -60,7 +61,6 @@
     return nil;
 }
 
-
 - (NSArray*)jk_arrayForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -102,6 +102,7 @@
     }
     return 0;
 }
+
 - (NSUInteger)jk_unsignedIntegerForKey:(id)key{
     id value = [self objectForKey:key];
     if (value == nil || value == [NSNull null])
@@ -114,6 +115,7 @@
     }
     return 0;
 }
+
 - (BOOL)jk_boolForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -132,6 +134,7 @@
     }
     return NO;
 }
+
 - (int16_t)jk_int16ForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -150,6 +153,7 @@
     }
     return 0;
 }
+
 - (int32_t)jk_int32ForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -164,6 +168,7 @@
     }
     return 0;
 }
+
 - (int64_t)jk_int64ForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -178,6 +183,7 @@
     }
     return 0;
 }
+
 - (char)jk_charForKey:(id)key{
     id value = [self objectForKey:key];
     
@@ -191,6 +197,7 @@
     }
     return 0;
 }
+
 - (short)jk_shortForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -209,6 +216,7 @@
     }
     return 0;
 }
+
 - (float)jk_floatForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -223,6 +231,7 @@
     }
     return 0;
 }
+
 - (double)jk_doubleForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -237,6 +246,7 @@
     }
     return 0;
 }
+
 - (long long)jk_longLongForKey:(id)key
 {
     id value = [self objectForKey:key];
@@ -275,7 +285,6 @@
     return nil;
 }
 
-
 //CG
 - (CGFloat)jk_CGFloatForKey:(id)key
 {
@@ -288,73 +297,92 @@
     CGPoint point = CGPointFromString(self[key]);
     return point;
 }
+
 - (CGSize)jk_sizeForKey:(id)key
 {
     CGSize size = CGSizeFromString(self[key]);
     return size;
 }
+
 - (CGRect)jk_rectForKey:(id)key
 {
     CGRect rect = CGRectFromString(self[key]);
     return rect;
 }
+
 @end
 
-#pragma --mark NSMutableDictionary setter
+#pragma mark - NSMutableDictionary setter
+
 @implementation NSMutableDictionary (JKSafeAccess)
+
 -(void)jk_setObj:(id)i forKey:(NSString*)key{
     if (i!=nil) {
         self[key] = i;
     }
 }
+
 -(void)jk_setString:(NSString*)i forKey:(NSString*)key;
 {
     [self setValue:i forKey:key];
 }
+
 -(void)jk_setBool:(BOOL)i forKey:(NSString *)key
 {
     self[key] = @(i);
 }
+
 -(void)jk_setInt:(int)i forKey:(NSString *)key
 {
     self[key] = @(i);
 }
+
 -(void)jk_setInteger:(NSInteger)i forKey:(NSString *)key
 {
     self[key] = @(i);
 }
+
 -(void)jk_setUnsignedInteger:(NSUInteger)i forKey:(NSString *)key
 {
     self[key] = @(i);
 }
+
 -(void)jk_setCGFloat:(CGFloat)f forKey:(NSString *)key
 {
     self[key] = @(f);
 }
+
 -(void)jk_setChar:(char)c forKey:(NSString *)key
 {
     self[key] = @(c);
 }
+
 -(void)jk_setFloat:(float)i forKey:(NSString *)key
 {
     self[key] = @(i);
 }
+
 -(void)jk_setDouble:(double)i forKey:(NSString*)key{
     self[key] = @(i);
 }
+
 -(void)jk_setLongLong:(long long)i forKey:(NSString*)key{
     self[key] = @(i);
 }
+
 -(void)jk_setPoint:(CGPoint)o forKey:(NSString *)key
 {
     self[key] = NSStringFromCGPoint(o);
 }
+
 -(void)jk_setSize:(CGSize)o forKey:(NSString *)key
 {
     self[key] = NSStringFromCGSize(o);
 }
+
 -(void)jk_setRect:(CGRect)o forKey:(NSString *)key
 {
     self[key] = NSStringFromCGRect(o);
 }
+
 @end

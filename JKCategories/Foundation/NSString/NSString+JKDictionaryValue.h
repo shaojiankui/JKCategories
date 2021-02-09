@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (JKDictionaryValue)
+
 /**
  *  @brief  JSON字符串转成NSDictionary
  *
  *  @return NSDictionary
  */
 -(NSDictionary *)jk_dictionaryValue;
+
 @end

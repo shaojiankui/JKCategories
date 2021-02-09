@@ -9,6 +9,7 @@
 #import "NSDictionary+JKURL.h"
 
 @implementation NSDictionary (JKURI)
+
 /**
  *  @brief  将url参数转换成NSDictionary
  *
@@ -33,6 +34,7 @@
     }
     return [NSDictionary dictionaryWithDictionary:dict];
 }
+
 /**
  *  @brief  将NSDictionary转换成url 参数字符串
  *
@@ -53,4 +55,5 @@
     }
     return string;
 }
+
 @end

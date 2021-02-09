@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (JKRemoveEmoji)
+
 ///移除所有emoji，以“”替换
 - (NSString *)jk_removingEmoji;
 ///移除所有emoji，以“”替换
@@ -26,6 +27,7 @@
 
 ///所有emoji表情
 + (NSString*)jk_allSystemEmoji;
+
 @end
 
 @interface NSCharacterSet (JKEmojiCharacterSet)

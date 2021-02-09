@@ -9,6 +9,7 @@
 #import "NSDictionary+JKJSONString.h"
 
 @implementation NSDictionary (JKJSONString)
+
 /**
  *  @brief NSDictionary转换成JSON字符串
  *
@@ -19,7 +20,7 @@
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
                                                        options:NSJSONWritingPrettyPrinted
                                                          error:&error];
-    if (jsonData == nil) {
+    if (!jsonData) {
 #ifdef DEBUG
         NSLog(@"fail to get JSON from dictionary: %@, error: %@", self, error);
 #endif
@@ -28,4 +29,5 @@
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     return jsonString;
 }
+
 @end

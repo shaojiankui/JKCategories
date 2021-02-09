@@ -9,6 +9,7 @@
 #import "NSString+JKTrims.h"
 
 @implementation NSString (JKTrims)
+
 /**
  *  @brief  清除html标签
  *
@@ -17,6 +18,7 @@
 - (NSString *)jk_stringByStrippingHTML {
     return [self stringByReplacingOccurrencesOfString:@"<[^>]+>" withString:@"" options:NSRegularExpressionSearch range:NSMakeRange(0, self.length)];
 }
+
 /**
  *  @brief  清除js脚本
  *
@@ -32,6 +34,7 @@
     }
     return [mString jk_stringByStrippingHTML];
 }
+
 /**
  *  @brief  去除空格
  *
@@ -41,6 +44,7 @@
 {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
+
 /**
  *  @brief  去除字符串与空行
  *
@@ -50,4 +54,5 @@
 {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
+
 @end

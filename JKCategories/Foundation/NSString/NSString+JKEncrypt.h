@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (JKEncrypt)
+
 /**
  *  AES加密数据
  *
@@ -19,6 +20,7 @@
  *  @return data
  */
 - (NSString*)jk_encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv;
+
 /**
  *  AES解密数据
  *
@@ -38,6 +40,7 @@
  *  @return data
  */
 - (NSString*)jk_encryptedWithDESUsingKey:(NSString*)key andIV:(NSData*)iv;
+
 /**
  *  DE解密数据
  *
@@ -57,6 +60,7 @@
  *  @return data
  */
 - (NSString*)jk_encryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv;
+
 /**
  *  3DES解密数据
  *

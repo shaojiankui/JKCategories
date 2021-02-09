@@ -9,6 +9,7 @@
 #import "NSDictionary+JKMerge.h"
 
 @implementation NSDictionary (JKMerge)
+
 /**
  *  @brief  合并两个NSDictionary
  *
@@ -41,8 +42,8 @@
         }
     }];
     return (NSDictionary *) [result mutableCopy];
-    
 }
+
 /**
  *  @brief  并入一个NSDictionary
  *
@@ -55,6 +56,7 @@
 }
 
 #pragma mark - Manipulation
+
 - (NSDictionary *)jk_dictionaryByAddingEntriesFromDictionary:(NSDictionary *)dictionary {
     NSMutableDictionary *result = [self mutableCopy];
     [result addEntriesFromDictionary:dictionary];
