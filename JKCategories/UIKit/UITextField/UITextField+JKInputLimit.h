@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UITextField (JKInputLimit)
+
 @property (assign, nonatomic)  NSInteger jk_maxLength;//if <=0, no limit
+
 @end

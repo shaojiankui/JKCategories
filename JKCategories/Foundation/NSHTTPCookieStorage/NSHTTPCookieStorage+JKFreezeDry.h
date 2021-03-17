@@ -27,16 +27,15 @@
     NSDictionary* headers = [NSHTTPCookie requestHeaderFieldsWithCookies:[[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]];
     [request setAllHTTPHeaderFields:headers];
 */
+
 #import <Foundation/Foundation.h>
 
 @interface NSHTTPCookieStorage (JKFreezeDry)
-/**
- *  @brief 存储 I Web V cookies到磁盘目录
- */
+
+/// 存储 Web cookies 到磁盘目录
 - (void)jk_saveCookie;
-/**
- *  @brief 读取 I Web V  cookies从磁盘目录
- */
+
+/// 从磁盘目录读取 Web cookies
 - (void)jk_loadCookie;
 
 @end

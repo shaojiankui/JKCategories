@@ -46,7 +46,6 @@
 + (NSDate *)jk_firstDayOfPreviousYear;
 + (NSDate *)jk_firstDayOfNextYear;
 
-
 - (NSDate *)jk_dateFloor;
 - (NSDate *)jk_dateCeil;
 

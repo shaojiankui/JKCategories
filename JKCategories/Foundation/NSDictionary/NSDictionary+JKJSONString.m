@@ -16,13 +16,11 @@
  *  @return  JSON字符串
  */
 -(NSString *)jk_JSONString{
-    NSError *error = nil;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
-                                                       options:NSJSONWritingPrettyPrinted
-                                                         error:&error];
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:NSJSONWritingPrettyPrinted error:&error];
     if (!jsonData) {
 #ifdef DEBUG
-        NSLog(@"fail to get JSON from dictionary: %@, error: %@", self, error);
+        NSLog(@"%@, NSDictionary 转换成 JSON 字符串错误，Error:%@", @(__PRETTY_FUNCTION__), error);
 #endif
         return nil;
     }

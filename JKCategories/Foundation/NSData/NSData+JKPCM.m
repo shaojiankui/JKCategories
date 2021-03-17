@@ -9,6 +9,7 @@
 #import "NSData+JKPCM.h"
 
 @implementation NSData (JKPCM)
+
 /**
  *  format wav data
  *
@@ -16,8 +17,7 @@
  *
  *  @return wav data
  */
-- (NSData *)jk_wavDataWithPCMFormat:(AudioStreamBasicDescription)PCMFormat;
-
+- (NSData *)jk_wavDataWithPCMFormat:(AudioStreamBasicDescription)PCMFormat
 {
     // Following https://ccrma.stanford.edu/courses/422/projects/WaveFormat/ formating wav
     

@@ -31,7 +31,9 @@
 //
 
 #import <Foundation/Foundation.h>
+
 @interface NSData (JKGzip)
+
 /**
  *  @brief  GZIP压缩
  *
@@ -56,4 +58,5 @@
 - (NSData *)jk_gunzippedData;
 
 - (BOOL)jk_isGzippedData;
+
 @end

@@ -9,6 +9,7 @@
 #import "UIPopoverController+iPhone.h"
 
 @implementation UIPopoverController (iPhone)
+
 /**
  *  @brief  开启UIPopoverController支持iPhone
  *
@@ -17,4 +18,5 @@
 + (BOOL)_popoversDisabled {
     return NO;
 }
+
 @end

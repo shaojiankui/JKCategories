@@ -10,15 +10,10 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDecimalNumber (JKCalculatingByString)
-/**
- *  @author JKCategories
- *
- *   use string calculation for nsdecimalnumber, for simplicity when doing much calculation works. 
- *
- *  @param equation <#equation description#>
- *  @param numbers  <#numbers description#>
- *
- *  @return <#return value description#>
- */
+
+/// 使用字符串计算 NSDecimalNumber，以简化大量计算工作。
+/// @param equation equation description
+/// @param numbers numbers description
 + (NSDecimalNumber *)jk_decimalNumberWithEquation:(NSString *)equation decimalNumbers:(NSDictionary *)numbers;
+
 @end

@@ -66,4 +66,5 @@ typedef NS_ENUM(NSUInteger, JKZlibErrorCode) {
  */
 - (BOOL)jk_writeInflatedToFile:(NSString *)path
                           error:(NSError *__autoreleasing *)error;
+
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIScreen (JKFrame)
+
 + (CGSize)jk_size;
 + (CGFloat)jk_width;
 + (CGFloat)jk_height;

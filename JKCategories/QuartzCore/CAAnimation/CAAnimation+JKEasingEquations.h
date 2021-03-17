@@ -5,9 +5,7 @@
 //  Created by Bryan Oltman on 12/18/12.
 //  Copyright (c) 2012 Bryan Oltman. All rights reserved.
 //  https://github.com/bryanoltman/CAAnimation-EasingEquations
-
-
-//  A category on CAAnimation that provides a number of easing equations to add some zazz to your app (with examples!)
+//  CAAnimation 的扩展，它提供了一些 easing 动画公式来给你的应用程序添加一些 zazz
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -56,6 +54,7 @@ typedef NS_ENUM(NSInteger, CAAnimationEasingFunction) {
 };
 
 @interface CAAnimation (JKEasingEquations)
+
 + (CAKeyframeAnimation*)jk_transformAnimationWithDuration:(CGFloat)duration
                                                   from:(CATransform3D)startValue
                                                     to:(CATransform3D)endValue
@@ -84,4 +83,5 @@ typedef NS_ENUM(NSInteger, CAAnimationEasingFunction) {
                        from:(CGFloat)startValue
                          to:(CGFloat)endValue
              easingFunction:(CAAnimationEasingFunction)easingFunction;
+
 @end

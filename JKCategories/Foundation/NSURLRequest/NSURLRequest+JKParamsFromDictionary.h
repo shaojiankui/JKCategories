@@ -13,12 +13,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSURLRequest (JKParamsFromDictionary)
-/**
- *  @author JKCategories
- *
- *
- *
- */
+
 - (id)initWithURL:(NSURL *)URL parameters:(NSDictionary *)params;
 
 +(NSURLRequest *)jk_requestGETWithURL:(NSURL *)url parameters:(NSDictionary *)params;
@@ -28,4 +23,5 @@
 +(NSArray *)jk_queryStringComponentsFromKey:(NSString *)key value:(id)value;
 +(NSArray *)jk_queryStringComponentsFromKey:(NSString *)key dictionaryValue:(NSDictionary *)dict;
 +(NSArray *)jk_queryStringComponentsFromKey:(NSString *)key arrayValue:(NSArray *)array;
+
 @end

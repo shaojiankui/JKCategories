@@ -9,6 +9,7 @@
 #import "UIScreen+JKFrame.h"
 
 @implementation UIScreen (JKFrame)
+
 + (CGSize)jk_size
 {
     return [[UIScreen mainScreen] bounds].size;
@@ -48,7 +49,6 @@
     CGFloat scale = [[UIScreen mainScreen] scale];
     return CGSizeMake(size.width * scale, size.height * scale);
 }
-
 
 /**
  *  交换高度与宽度

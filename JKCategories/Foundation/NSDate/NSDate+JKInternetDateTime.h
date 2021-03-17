@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-// Formatting hints
+// 时间格式枚举类型
 typedef enum {
     DateFormatHintNone, 
     DateFormatHintRFC822, 
     DateFormatHintRFC3339
 } DateFormatHint;
 
-// A category to parse internet date & time strings
+/// 一个分析互联网日期和时间字符串的扩展
 @interface NSDate (JKInternetDateTime)
 
 // Get date from RFC3339 or RFC822 string

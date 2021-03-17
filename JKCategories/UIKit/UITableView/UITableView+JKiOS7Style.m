@@ -10,6 +10,7 @@
 
 @implementation UITableView (JKiOS7Style)
 // http://stackoverflow.com/questions/18822619/ios-7-tableview-like-in-settings-app-on-ipad
+// https://github.com/TimOliver/TORoundedTableView
 /**
  *  @brief  ios7设置页面的UITableViewCell样式
  *
@@ -58,4 +59,5 @@
         cell.backgroundView = testView;
     }
 }
+
 @end

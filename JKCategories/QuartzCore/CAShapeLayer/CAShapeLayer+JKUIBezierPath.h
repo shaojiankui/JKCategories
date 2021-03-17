@@ -32,19 +32,14 @@
 #define __nullable
 #endif
 
-/**
- Category on `CAShapeLayer`, that allows setting and getting UIBezierPath on CAShapeLayer.
- */
+/// CAShapeLayer 的扩展，允许在 CAShapeLayer 上获取和设置 UIBezierPath
 @interface CAShapeLayer (JKUIBezierPath)
 
-/**
- Update CAShapeLayer with UIBezierPath.
- */
+/// 使用 UIBezierPath 更新 CAShapeLayer
+/// @param path 贝塞尔曲线
 - (void)jk_updateWithBezierPath:(UIBezierPath *)path;
 
-/**
- Get UIBezierPath object, constructed from CAShapeLayer.
- */
+/// 获取 UIBezierPath 对象，该对象由 CAShapeLayer 构建。
 - (UIBezierPath*)jk_bezierPath;
 
 @end

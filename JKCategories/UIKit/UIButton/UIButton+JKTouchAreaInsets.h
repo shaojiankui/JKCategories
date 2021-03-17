@@ -26,9 +26,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIButton (JKTouchAreaInsets)
-/**
- *  @brief  设置按钮额外热区
- */
+
+/// 设置按钮额外热区
 @property (nonatomic, assign) UIEdgeInsets jk_touchAreaInsets;
 
 @end

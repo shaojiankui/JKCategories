@@ -9,13 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface NSNumber (JKRomanNumerals)
-/**
- *  @author JKCategories
- *
- *   A category on NSNumber that returns the value as a roman numeral 
- *
- *  @return 罗马数字格式的字符串
- */
+
+/// 以罗马数字形式返回值的 NSNumber
 - (NSString *)jk_romanNumeral;
 
 @end

@@ -29,8 +29,8 @@
 -(NSString *)jk_formatWithTimeZoneOffsetWithoutDate:(NSTimeInterval)offset;
 -(NSString *)jk_formatTimeWithTimeZone:(NSTimeZone *)timezone;
 
-
 + (NSString *)jk_currentDateStringWithFormat:(NSString *)format;
 + (NSDate *)jk_dateWithSecondsFromNow:(NSInteger)seconds;
 - (NSString *)jk_dateWithFormat:(NSString *)format;
+
 @end

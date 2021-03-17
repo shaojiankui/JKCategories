@@ -45,7 +45,6 @@
  *
  *  @return A UIFont reference derived from the TrueType Font at the given path with the requested size.
  */
- 
 + (UIFont *)jk_fontWithTTFAtPath:(NSString *)path size:(CGFloat)size;
 
 /**
@@ -56,7 +55,6 @@
  *
  *  @return A UIFont reference derived from the TrueType Font at the given path with the requested size.
  */
- 
 + (UIFont *)jk_fontWithTTFAtURL:(NSURL *)URL size:(CGFloat)size;
 
 @end

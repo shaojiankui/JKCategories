@@ -145,8 +145,6 @@
 		A2958CDF1B35826C00D7AA0F /* CAShapeLayerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2958CDD1B35826C00D7AA0F /* CAShapeLayerDemoViewController.xib */; };
 		A2958CE31B35827700D7AA0F /* CATransactionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CE11B35827700D7AA0F /* CATransactionDemoViewController.m */; };
 		A2958CE41B35827700D7AA0F /* CATransactionDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2958CE21B35827700D7AA0F /* CATransactionDemoViewController.xib */; };
-		A2958CF01B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2958CEE1B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.m */; };
-		A2958CF11B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2958CEF1B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.xib */; };
 		A2AB1A651B381E3900ED88AF /* UIFontDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AB1A631B381E3900ED88AF /* UIFontDemoViewController.m */; };
 		A2AB1A661B381E3900ED88AF /* UIFontDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AB1A641B381E3900ED88AF /* UIFontDemoViewController.xib */; };
 		A2C97D851C96576E00614B98 /* UICollectionViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C97D831C96576E00614B98 /* UICollectionViewDemoViewController.m */; };
@@ -157,12 +155,6 @@
 		A2EF56B11B21C2C80005F730 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EF56B01B21C2C80005F730 /* CoreLocation.framework */; };
 		A2EF56B31B21C2D00005F730 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EF56B21B21C2D00005F730 /* UIKit.framework */; };
 		A2EF56B51B21C2D50005F730 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EF56B41B21C2D50005F730 /* Foundation.framework */; };
-		A2EF56C61B21C3370005F730 /* NSManagedObjectContextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF56C41B21C3370005F730 /* NSManagedObjectContextDemoViewController.m */; };
-		A2EF56C71B21C3370005F730 /* NSManagedObjectContextDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EF56C51B21C3370005F730 /* NSManagedObjectContextDemoViewController.xib */; };
-		A2EF56D81B21C51D0005F730 /* NSFetchRequestDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF56D61B21C51D0005F730 /* NSFetchRequestDemoViewController.m */; };
-		A2EF56D91B21C51D0005F730 /* NSFetchRequestDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EF56D71B21C51D0005F730 /* NSFetchRequestDemoViewController.xib */; };
-		A2EF56DD1B21C52B0005F730 /* NSManagedObjectDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF56DB1B21C52B0005F730 /* NSManagedObjectDemoViewController.m */; };
-		A2EF56DE1B21C52B0005F730 /* NSManagedObjectDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EF56DC1B21C52B0005F730 /* NSManagedObjectDemoViewController.xib */; };
 		A2EF56F31B21D1270005F730 /* NSNotificationCenterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF56F11B21D1270005F730 /* NSNotificationCenterDemoViewController.m */; };
 		A2EF56F41B21D1270005F730 /* NSNotificationCenterDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EF56F21B21D1270005F730 /* NSNotificationCenterDemoViewController.xib */; };
 		A2FD5B5D1A52706F00555EA2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FD5B5C1A52706F00555EA2 /* libz.dylib */; };
@@ -1009,9 +1001,6 @@
 		A2958CE01B35827700D7AA0F /* CATransactionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransactionDemoViewController.h; sourceTree = "<group>"; };
 		A2958CE11B35827700D7AA0F /* CATransactionDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransactionDemoViewController.m; sourceTree = "<group>"; };
 		A2958CE21B35827700D7AA0F /* CATransactionDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CATransactionDemoViewController.xib; sourceTree = "<group>"; };
-		A2958CED1B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPersistentStoreCoordinatorDemoViewController.h; sourceTree = "<group>"; };
-		A2958CEE1B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPersistentStoreCoordinatorDemoViewController.m; sourceTree = "<group>"; };
-		A2958CEF1B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSPersistentStoreCoordinatorDemoViewController.xib; sourceTree = "<group>"; };
 		A2958CF81B358AC900D7AA0F /* NSUserDefaults+JKiCloudSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+JKiCloudSync.h"; sourceTree = "<group>"; };
 		A2958CF91B358AC900D7AA0F /* NSUserDefaults+JKiCloudSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+JKiCloudSync.m"; sourceTree = "<group>"; };
 		A2958CFB1B358EA400D7AA0F /* UIApplication+JKNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JKNetworkActivityIndicator.h"; sourceTree = "<group>"; };
@@ -1103,15 +1092,6 @@
 		A2EF56B01B21C2C80005F730 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A2EF56B21B21C2D00005F730 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A2EF56B41B21C2D50005F730 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A2EF56C31B21C3370005F730 /* NSManagedObjectContextDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectContextDemoViewController.h; sourceTree = "<group>"; };
-		A2EF56C41B21C3370005F730 /* NSManagedObjectContextDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectContextDemoViewController.m; sourceTree = "<group>"; };
-		A2EF56C51B21C3370005F730 /* NSManagedObjectContextDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSManagedObjectContextDemoViewController.xib; sourceTree = "<group>"; };
-		A2EF56D51B21C51D0005F730 /* NSFetchRequestDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFetchRequestDemoViewController.h; sourceTree = "<group>"; };
-		A2EF56D61B21C51D0005F730 /* NSFetchRequestDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFetchRequestDemoViewController.m; sourceTree = "<group>"; };
-		A2EF56D71B21C51D0005F730 /* NSFetchRequestDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSFetchRequestDemoViewController.xib; sourceTree = "<group>"; };
-		A2EF56DA1B21C52B0005F730 /* NSManagedObjectDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectDemoViewController.h; sourceTree = "<group>"; };
-		A2EF56DB1B21C52B0005F730 /* NSManagedObjectDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectDemoViewController.m; sourceTree = "<group>"; };
-		A2EF56DC1B21C52B0005F730 /* NSManagedObjectDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSManagedObjectDemoViewController.xib; sourceTree = "<group>"; };
 		A2EF56DF1B21C59C0005F730 /* UIImage+JKBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKBlur.h"; sourceTree = "<group>"; };
 		A2EF56E01B21C59C0005F730 /* UIImage+JKBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKBlur.m"; sourceTree = "<group>"; };
 		A2EF56E51B21C5F60005F730 /* NSDecimalNumber+JKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+JKExtensions.h"; sourceTree = "<group>"; };
@@ -1804,7 +1784,6 @@
 			isa = PBXGroup;
 			children = (
 				A2EA48F31B34FBD200A4B66F /* QuartzCore */,
-				A2EF56C11B21C32A0005F730 /* CoreData */,
 				A281FB4D1AC8101F009040DA /* Foundation */,
 				A281FB5B1AC8101F009040DA /* UIKit */,
 				A202D9871B0F7D6C00EAB199 /* MapKit */,
@@ -2724,16 +2703,6 @@
 			path = CATransaction;
 			sourceTree = "<group>";
 		};
-		A2958CEC1B35837500D7AA0F /* NSPersistentStoreCoordinator */ = {
-			isa = PBXGroup;
-			children = (
-				A2958CED1B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.h */,
-				A2958CEE1B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.m */,
-				A2958CEF1B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.xib */,
-			);
-			path = NSPersistentStoreCoordinator;
-			sourceTree = "<group>";
-		};
 		A29EC2621B5279EC008ABB42 /* UIPopoverController */ = {
 			isa = PBXGroup;
 			children = (
@@ -2816,47 +2785,6 @@
 				A2958CAE1B34FC1100D7AA0F /* CALayerDemoViewController.xib */,
 			);
 			path = CALayer;
-			sourceTree = "<group>";
-		};
-		A2EF56C11B21C32A0005F730 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				A2958CEC1B35837500D7AA0F /* NSPersistentStoreCoordinator */,
-				A2EF56D41B21C5090005F730 /* NSFetchRequest */,
-				A2EF56D31B21C4FD0005F730 /* NSManagedObject */,
-				A2EF56C21B21C3370005F730 /* NSManagedObjectContext */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		A2EF56C21B21C3370005F730 /* NSManagedObjectContext */ = {
-			isa = PBXGroup;
-			children = (
-				A2EF56C31B21C3370005F730 /* NSManagedObjectContextDemoViewController.h */,
-				A2EF56C41B21C3370005F730 /* NSManagedObjectContextDemoViewController.m */,
-				A2EF56C51B21C3370005F730 /* NSManagedObjectContextDemoViewController.xib */,
-			);
-			path = NSManagedObjectContext;
-			sourceTree = "<group>";
-		};
-		A2EF56D31B21C4FD0005F730 /* NSManagedObject */ = {
-			isa = PBXGroup;
-			children = (
-				A2EF56DA1B21C52B0005F730 /* NSManagedObjectDemoViewController.h */,
-				A2EF56DB1B21C52B0005F730 /* NSManagedObjectDemoViewController.m */,
-				A2EF56DC1B21C52B0005F730 /* NSManagedObjectDemoViewController.xib */,
-			);
-			path = NSManagedObject;
-			sourceTree = "<group>";
-		};
-		A2EF56D41B21C5090005F730 /* NSFetchRequest */ = {
-			isa = PBXGroup;
-			children = (
-				A2EF56D51B21C51D0005F730 /* NSFetchRequestDemoViewController.h */,
-				A2EF56D61B21C51D0005F730 /* NSFetchRequestDemoViewController.m */,
-				A2EF56D71B21C51D0005F730 /* NSFetchRequestDemoViewController.xib */,
-			);
-			path = NSFetchRequest;
 			sourceTree = "<group>";
 		};
 		A2EF56EB1B21D0800005F730 /* NSNotificationCenter */ = {
@@ -3258,7 +3186,6 @@
 			files = (
 				A281FC131AC813F5009040DA /* UINavigationControllerDemoViewController.xib in Resources */,
 				A2AB1A661B381E3900ED88AF /* UIFontDemoViewController.xib in Resources */,
-				A2EF56D91B21C51D0005F730 /* NSFetchRequestDemoViewController.xib in Resources */,
 				A25E7E5A1E0D390C00381835 /* NSURLSessionDemoViewController.xib in Resources */,
 				A281FBC21AC812F1009040DA /* UIButtonDemoViewController.xib in Resources */,
 				A281FB9A1AC8124F009040DA /* NSExceptionDemoViewController.xib in Resources */,
@@ -3277,7 +3204,6 @@
 				A281FBB31AC812BA009040DA /* NSTimerDemoViewController.xib in Resources */,
 				A281FBF01AC8139D009040DA /* UITableViewCellDemoViewController.xib in Resources */,
 				A281FBE61AC81386009040DA /* UIScrollViewDemoViewController.xib in Resources */,
-				A2EF56DE1B21C52B0005F730 /* NSManagedObjectDemoViewController.xib in Resources */,
 				A284C1401AEBCF9600D90ED5 /* NSDateFormatterDemoViewController.xib in Resources */,
 				A281FBDB1AC8133D009040DA /* UILableDemoViewController.xib in Resources */,
 				A205E4C41C28E44C002A1E33 /* NSInvocationDemoViewController.xib in Resources */,
@@ -3290,7 +3216,6 @@
 				A281FB861AC81206009040DA /* NSBundleDemoViewController.xib in Resources */,
 				A281FB811AC811F0009040DA /* NSArrayDemoViewController.xib in Resources */,
 				A281FBD61AC81330009040DA /* UIImageViewDemoViewController.xib in Resources */,
-				A2EF56C71B21C3370005F730 /* NSManagedObjectContextDemoViewController.xib in Resources */,
 				A21F34D31B0F249D00D73A91 /* UIAlertViewDemoViewController.xib in Resources */,
 				A2958CDA1B35825F00D7AA0F /* CAMediaTimingFunctionDemoViewController.xib in Resources */,
 				A281FBB81AC812C8009040DA /* NSURLDemoViewController.xib in Resources */,
@@ -3311,7 +3236,6 @@
 				A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */,
 				A202D9D91B103F9400EAB199 /* LaunchScreen.xib in Resources */,
 				A281FC041AC813D4009040DA /* UIViewControllerDemoViewController.xib in Resources */,
-				A2958CF11B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.xib in Resources */,
 				A202D9B51B10338B00EAB199 /* UIApplicationDemoViewController.xib in Resources */,
 				A281FBFA1AC813B8009040DA /* UITextViewDemoViewController.xib in Resources */,
 				A281FBFF1AC813C6009040DA /* UIViewDemoViewController.xib in Resources */,
@@ -3362,7 +3286,6 @@
 				A281FBF41AC813AA009040DA /* UITextFieldDemoViewController.m in Sources */,
 				A281FBD51AC81330009040DA /* UIImageViewDemoViewController.m in Sources */,
 				A281FB991AC8124F009040DA /* NSExceptionDemoViewController.m in Sources */,
-				A2EF56D81B21C51D0005F730 /* NSFetchRequestDemoViewController.m in Sources */,
 				A281FC081AC813DF009040DA /* UIWebViewDemoViewController.m in Sources */,
 				A281FBB21AC812BA009040DA /* NSTimerDemoViewController.m in Sources */,
 				A2958CAF1B34FC1100D7AA0F /* CALayerDemoViewController.m in Sources */,
@@ -3370,7 +3293,6 @@
 				A2958CD41B35825100D7AA0F /* CAAnimationDemoViewController.m in Sources */,
 				A202D9DC1B103F9400EAB199 /* main.m in Sources */,
 				A29551B51C22A3CE007962FC /* NSOperationDemoViewController.m in Sources */,
-				A2EF56DD1B21C52B0005F730 /* NSManagedObjectDemoViewController.m in Sources */,
 				A281FBDA1AC8133D009040DA /* UILableDemoViewController.m in Sources */,
 				A205E4D01C28E59E002A1E33 /* NSURLConnectionDemoViewController.m in Sources */,
 				A2AB1A651B381E3900ED88AF /* UIFontDemoViewController.m in Sources */,
@@ -3421,11 +3343,9 @@
 				A2958CDE1B35826C00D7AA0F /* CAShapeLayerDemoViewController.m in Sources */,
 				A284C1491AEBCFB000D90ED5 /* NSIndexPathDemoViewController.m in Sources */,
 				A202D98C1B0F7D7900EAB199 /* MKMapViewDemoViewController.m in Sources */,
-				A2958CF01B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.m in Sources */,
 				A281FBCB1AC8130E009040DA /* UIDeviceDemoViewController.m in Sources */,
 				A281FC031AC813D4009040DA /* UIViewControllerDemoViewController.m in Sources */,
 				A281FBC11AC812F1009040DA /* UIButtonDemoViewController.m in Sources */,
-				A2EF56C61B21C3370005F730 /* NSManagedObjectContextDemoViewController.m in Sources */,
 				A202D9B41B10338B00EAB199 /* UIApplicationDemoViewController.m in Sources */,
 				A25E7E591E0D390C00381835 /* NSURLSessionDemoViewController.m in Sources */,
 				A281FB851AC81206009040DA /* NSBundleDemoViewController.m in Sources */,

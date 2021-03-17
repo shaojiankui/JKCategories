@@ -74,10 +74,7 @@
     return path;
 }
 
-
-
-+(NSDictionary *)CGtoCALineCaps
-{
++(NSDictionary *)CGtoCALineCaps {
     return @{
              @(kCGLineCapSquare) :kCALineCapSquare,
              @(kCGLineCapButt) : kCALineCapButt,
@@ -85,8 +82,7 @@
              };
 }
 
-+(NSDictionary *)CGtoCALineJoins
-{
++(NSDictionary *)CGtoCALineJoins {
     return @{
              @(kCGLineJoinRound) : kCALineJoinRound,
              @(kCGLineJoinMiter) : kCALineJoinMiter,
@@ -94,8 +90,7 @@
              };
 }
 
-+(NSDictionary *)CAtoCGLineCaps
-{
++(NSDictionary *)CAtoCGLineCaps {
     return @{
              kCALineCapSquare : @(kCGLineCapSquare),
              kCALineCapButt : @(kCGLineCapButt),
@@ -103,8 +98,7 @@
              };
 }
 
-+(NSDictionary *)CAtoCGLineJoins
-{
++(NSDictionary *)CAtoCGLineJoins {
     return @{
              kCALineJoinRound : @(kCGLineJoinRound),
              kCALineJoinMiter : @(kCGLineJoinMiter),
@@ -112,23 +106,20 @@
              };
 }
 
-+(NSString *)lineCapFromCGLineCap:(CGLineCap)lineCap
-{
++(NSString *)lineCapFromCGLineCap:(CGLineCap)lineCap {
     return [self CGtoCALineCaps][@(lineCap)];
 }
 
-+(NSString *)lineJoinFromCGLineJoin:(CGLineJoin)lineJoin
-{
++(NSString *)lineJoinFromCGLineJoin:(CGLineJoin)lineJoin {
     return [self CGtoCALineJoins][@(lineJoin)];
 }
 
-+(CGLineCap)lineCapFromCALineCap:(NSString *)lineCap
-{
++(CGLineCap)lineCapFromCALineCap:(NSString *)lineCap {
     return [[self CAtoCGLineCaps][lineCap] intValue];
 }
 
-+(CGLineJoin)lineJoinFromCALineJoin:(NSString *)lineJoin
-{
++(CGLineJoin)lineJoinFromCALineJoin:(NSString *)lineJoin {
     return [[self CAtoCGLineJoins][lineJoin] intValue];
 }
+
 @end

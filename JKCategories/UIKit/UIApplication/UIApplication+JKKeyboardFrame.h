@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIApplication (JKKeyboardFrame)
+
 - (CGRect)jk_keyboardFrame;
+
 @end

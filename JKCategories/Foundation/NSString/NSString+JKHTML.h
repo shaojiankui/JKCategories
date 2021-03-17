@@ -21,6 +21,7 @@
 
 /// Utilities for NSStrings containing HTML
 @interface NSString (JKHTML)
+
 /// 使用Unicode 编码所有HTML实体 Get a string where internal characters that need escaping for HTML are escaped
 //
 ///  For example, '&' become '&amp;'. This will only cover characters from table
@@ -36,6 +37,7 @@
 //
 
 - (NSString *)jk_stringByEscapingForHTML;
+
 /// 使用Ascii编码所有HTML实体  Get a string where internal characters that need escaping for HTML are escaped
 //
 ///  For example, '&' become '&amp;'
@@ -51,6 +53,7 @@
 //    Autoreleased NSString
 //
 - (NSString *)jk_stringByEscapingForAsciiHTML;
+
 /// 解码HTML实体 Get a string where internal characters that are escaped for HTML are unescaped
 //
 ///  For example, '&amp;' becomes '&'
@@ -81,4 +84,5 @@
 
 /// 将html转换为纯文本 Convert HTML To Plain Text
 - (NSString *)jk_stringByConvertingHTMLToPlainText;
+
 @end

@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 yuriy. All rights reserved.
 //
 // A category on NSURLConnection that allows making async requests that accept all https certificates. 
-//https://github.com/yuriy128/NSURLConnection-SelfSigned
+// https://github.com/yuriy128/NSURLConnection-SelfSigned
+
 #import <Foundation/Foundation.h>
 
 @interface NSURLConnection (JKSelfSigned)
 /**
  *  @author JKCategories
  *
- *  Sends async request while accepting all self-signed certs
- *
+ *  当接受所有自签名证书时发送异步请求
  */
 + (void)jk_sendAsynchronousRequestAcceptingAllCerts:(NSURLRequest *)request queue:(NSOperationQueue *)queue completionHandler:(void (^)(NSURLResponse *, NSData *, NSError *))handler;
 

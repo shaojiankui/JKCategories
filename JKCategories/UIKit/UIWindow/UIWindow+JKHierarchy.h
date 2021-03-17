@@ -9,17 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @interface UIWindow (JKHierarchy)
+
 /*!
  @method topMostController
  
  @return Returns the current Top Most ViewController in hierarchy.
  */
-- (UIViewController*)jk_topMostController;
+- (UIViewController *)jk_topMostController;
 
 /*!
  @method currentViewController
  
  @return Returns the topViewController in stack of topMostController.
  */
-- (UIViewController*)jk_currentViewController;
+- (UIViewController *)jk_currentViewController;
+
 @end

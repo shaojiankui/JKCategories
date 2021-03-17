@@ -24,17 +24,12 @@
 
 @interface UIFont (JKDynamicFontControl)
 
-
 +(UIFont *)jk_preferredFontForTextStyle:(NSString *)style withFontName:(NSString *)fontName scale:(CGFloat)scale;
 
 +(UIFont *)jk_preferredFontForTextStyle:(NSString *)style withFontName:(NSString *)fontName;
 
-
-
 -(UIFont *)jk_adjustFontForTextStyle:(NSString *)style;
 
 -(UIFont *)jk_adjustFontForTextStyle:(NSString *)style scale:(CGFloat)scale;
-
-
 
 @end

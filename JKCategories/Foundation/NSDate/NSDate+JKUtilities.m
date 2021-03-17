@@ -46,8 +46,6 @@ _Pragma("clang diagnostic pop") \
 
 @implementation NSDate (Utilities)
 
-// Courtesy of Lukasz Margielewski
-// Updated via Holger Haenisch
 + (NSCalendar *) jk_currentCalendar
 {
     static NSCalendar *sharedCalendar = nil;
@@ -56,17 +54,15 @@ _Pragma("clang diagnostic pop") \
     return sharedCalendar;
 }
 
-#pragma mark - Relative Dates
+#pragma mark - 相对时间
 
-+ (NSDate *)jk_dateWithDaysFromNow: (NSInteger) days
++ (NSDate *)jk_dateWithDaysFromNow:(NSInteger) days
 {
-    // Thanks, Jim Morrison
     return [[NSDate date] jk_dateByAddingDays:days];
 }
 
-+ (NSDate *)jk_dateWithDaysBeforeNow: (NSInteger) days
++ (NSDate *)jk_dateWithDaysBeforeNow:(NSInteger) days
 {
-    // Thanks, Jim Morrison
     return [[NSDate date] jk_dateBySubtractingDays:days];
 }
 
@@ -80,94 +76,93 @@ _Pragma("clang diagnostic pop") \
     return [NSDate jk_dateWithDaysBeforeNow:1];
 }
 
-+ (NSDate *) jk_dateWithHoursFromNow: (NSInteger) dHours
++ (NSDate *) jk_dateWithHoursFromNow:(NSInteger)dHours
 {
     NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] + JK_D_HOUR * dHours;
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
     return newDate;
 }
 
-+ (NSDate *) jk_dateWithHoursBeforeNow: (NSInteger) dHours
++ (NSDate *) jk_dateWithHoursBeforeNow:(NSInteger)dHours
 {
     NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] - JK_D_HOUR * dHours;
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
     return newDate;
 }
 
-+ (NSDate *) jk_dateWithMinutesFromNow: (NSInteger) dMinutes
++ (NSDate *) jk_dateWithMinutesFromNow:(NSInteger)dMinutes
 {
     NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] + JK_D_MINUTE * dMinutes;
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
     return newDate;
 }
 
-+ (NSDate *) jk_dateWithMinutesBeforeNow: (NSInteger) dMinutes
++ (NSDate *) jk_dateWithMinutesBeforeNow:(NSInteger)dMinutes
 {
     NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] - JK_D_MINUTE * dMinutes;
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
     return newDate;
 }
 
-#pragma mark - String Properties
- 
+#pragma mark - 字符串属性
 
-- (NSString *) jk_stringWithDateStyle: (NSDateFormatterStyle) dateStyle timeStyle: (NSDateFormatterStyle) timeStyle
+- (NSString *)jk_stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle
 {
     NSDateFormatter *formatter = [NSDateFormatter new];
     formatter.dateStyle = dateStyle;
     formatter.timeStyle = timeStyle;
-    //    formatter.locale = [NSLocale currentLocale]; // Necessary?
+    formatter.locale = [NSLocale currentLocale];
     return [formatter stringFromDate:self];
 }
 
-- (NSString *) jk_shortString
+- (NSString *)jk_shortString
 {
     return [self jk_stringWithDateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterShortStyle];
 }
 
-- (NSString *) jk_shortTimeString
+- (NSString *)jk_shortTimeString
 {
     return [self jk_stringWithDateStyle:NSDateFormatterNoStyle timeStyle:NSDateFormatterShortStyle];
 }
 
-- (NSString *) jk_shortDateString
+- (NSString *)jk_shortDateString
 {
     return [self jk_stringWithDateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterNoStyle];
 }
 
-- (NSString *) jk_mediumString
+- (NSString *)jk_mediumString
 {
     return [self jk_stringWithDateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterMediumStyle ];
 }
 
-- (NSString *) jk_mediumTimeString
+- (NSString *)jk_mediumTimeString
 {
     return [self jk_stringWithDateStyle:NSDateFormatterNoStyle timeStyle:NSDateFormatterMediumStyle ];
 }
 
-- (NSString *) jk_mediumDateString
+- (NSString *)jk_mediumDateString
 {
     return [self jk_stringWithDateStyle:NSDateFormatterMediumStyle  timeStyle:NSDateFormatterNoStyle];
 }
 
-- (NSString *) jk_longString
+- (NSString *)jk_longString
 {
     return [self jk_stringWithDateStyle:NSDateFormatterLongStyle timeStyle:NSDateFormatterLongStyle ];
 }
 
-- (NSString *) jk_longTimeString
+- (NSString *)jk_longTimeString
 {
     return [self jk_stringWithDateStyle:NSDateFormatterNoStyle timeStyle:NSDateFormatterLongStyle ];
 }
 
-- (NSString *) jk_longDateString
+- (NSString *)jk_longDateString
 {
     return [self jk_stringWithDateStyle:NSDateFormatterLongStyle  timeStyle:NSDateFormatterNoStyle];
 }
 
-#pragma mark - Comparing Dates
+#pragma mark - 比较时间
 
-- (BOOL) jk_isEqualToDateIgnoringTime: (NSDate *) aDate
+- (BOOL)jk_isSameDay: (NSDate *) aDate
 {
     NSDateComponents *components1 = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
     NSDateComponents *components2 = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:aDate];
@@ -176,19 +171,19 @@ _Pragma("clang diagnostic pop") \
             (components1.day == components2.day));
 }
 
-- (BOOL) jk_jk_isToday
+- (BOOL)jk_isToday
 {
-    return [self jk_isEqualToDateIgnoringTime:[NSDate date]];
+    return [self jk_isSameDay:[NSDate date]];
 }
 
-- (BOOL) jk_isTomorrow
+- (BOOL)jk_isTomorrow
 {
-    return [self jk_isEqualToDateIgnoringTime:[NSDate jk_dateTomorrow]];
+    return [self jk_isSameDay:[NSDate jk_dateTomorrow]];
 }
 
-- (BOOL) jk_isYesterday
+- (BOOL)jk_isYesterday
 {
-    return [self jk_isEqualToDateIgnoringTime:[NSDate jk_dateYesterday]];
+    return [self jk_isSameDay:[NSDate jk_dateYesterday]];
 }
 
 // This hard codes the assumption that a week is 7 days
@@ -224,7 +219,6 @@ _Pragma("clang diagnostic pop") \
     return [self jk_isSameWeekAsDate:newDate];
 }
 
-// Thanks, mspasov
 - (BOOL) jk_isSameMonthAsDate: (NSDate *) aDate
 {
     
@@ -255,7 +249,6 @@ _Pragma("clang diagnostic pop") \
     return [self jk_isSameMonthAsDate:[NSDate date]];
 }
 
-// Thanks Marcin Krzyzanowski, also for adding/subtracting years and months
 - (BOOL) jk_isLastMonth
 {
     return [self jk_isSameMonthAsDate:[[NSDate date] jk_dateBySubtractingMonths:1]];
@@ -290,7 +283,6 @@ _Pragma("clang diagnostic pop") \
 
 - (BOOL) jk_isThisYear
 {
-    // Thanks, baspellis
     return [self jk_isSameYearAsDate:[NSDate date]];
 }
 
@@ -349,13 +341,11 @@ _Pragma("clang diagnostic pop") \
     return ([self compare:aDate] == NSOrderedDescending);
 }
 
-// Thanks, markrickert
 - (BOOL) jk_isInFuture
 {
     return ([self jk_isLaterThanDate:[NSDate date]]);
 }
 
-// Thanks, markrickert
 - (BOOL) jk_isInPast
 {
     return ([self jk_isEarlierThanDate:[NSDate date]]);
@@ -363,6 +353,7 @@ _Pragma("clang diagnostic pop") \
 
 
 #pragma mark - Roles
+
 - (BOOL) jk_isTypicallyWeekend
 {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
@@ -389,9 +380,8 @@ _Pragma("clang diagnostic pop") \
     return ![self jk_isTypicallyWeekend];
 }
 
-#pragma mark - Adjusting Dates
+#pragma mark - 调节时间
 
-// Thaks, rsjohnson
 - (NSDate *) jk_dateByAddingYears: (NSInteger) dYears
 {
     NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
@@ -418,7 +408,6 @@ _Pragma("clang diagnostic pop") \
     return [self jk_dateByAddingMonths:-dMonths];
 }
 
-// Courtesy of dedan who mentions issues with Daylight Savings
 - (NSDate *) jk_dateByAddingDays: (NSInteger) dDays
 {
     NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
@@ -473,12 +462,11 @@ _Pragma("clang diagnostic pop") \
     return [[NSDate jk_currentCalendar] dateFromComponents:components];
 }
 
-// Thanks gsempe & mteece
 - (NSDate *) jk_dateAtEndOfDay
 {
     NSDateComponents *components = [[NSDate jk_currentCalendar] components:JK_NSDATE_UTILITIES_COMPONENT_FLAGS fromDate:self];
 
-    components.hour = 23; // Thanks Aleksey Kononov
+    components.hour = 23;
     components.minute = 59;
     components.second = 59;
     return [[NSDate jk_currentCalendar] dateFromComponents:components];
@@ -522,8 +510,6 @@ _Pragma("clang diagnostic pop") \
     return (NSInteger) (ti / JK_D_DAY);
 }
 
-// Thanks, dmitrydims
-// I have not yet thoroughly tested this
 - (NSInteger)jk_distanceDaysToDate:(NSDate *)anotherDate
 {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
@@ -542,6 +528,7 @@ _Pragma("clang diagnostic pop") \
     
     return components.day;
 }
+
 - (NSInteger)jk_distanceMonthsToDate:(NSDate *)anotherDate{
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
@@ -558,6 +545,7 @@ _Pragma("clang diagnostic pop") \
 #endif
     return components.month;
 }
+
 - (NSInteger)jk_distanceYearsToDate:(NSDate *)anotherDate{
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
     NSDateComponents *components;
@@ -574,6 +562,7 @@ _Pragma("clang diagnostic pop") \
 #endif
     return components.year;
 }
+
 #pragma mark Decomposing Dates
 - (NSInteger)jk_nearestHour
 {

@@ -16,15 +16,11 @@
 #endif
 
 @interface CATransaction (JKAnimateWithDuration)
-/**
- *  @author Denys Telezhkin
- *
- *  @brief  CATransaction 动画执行 block 回调
- *
- *  @param duration   动画时间
- *  @param animations 动画块
- *  @param completion 动画结束回调
- */
+
+/// CATransaction 动画执行 block 回调
+/// @param duration 动画执行时间
+/// @param animations 动画执行的 Block 块
+/// @param completion 动画结束的回调
 +(void)jk_animateWithDuration:(NSTimeInterval)duration
                    animations:(nullable void (^)(void))animations
                    completion:(nullable void (^)(void))completion;

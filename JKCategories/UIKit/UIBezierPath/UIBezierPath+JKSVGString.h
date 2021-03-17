@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UIBezierPath (JKSVGString)
+
 /**
  *  @brief  UIBezierPath转成SVG
  *
  *  @return SVG
  */
 - (NSString*)jk_SVGString;
+
 @end

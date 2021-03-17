@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @interface UITextField (JKBlocks)
+
 @property (copy, nonatomic) BOOL (^jk_shouldBegindEditingBlock)(UITextField *textField);
 @property (copy, nonatomic) BOOL (^jk_shouldEndEditingBlock)(UITextField *textField);
 @property (copy, nonatomic) void (^jk_didBeginEditingBlock)(UITextField *textField);
@@ -23,4 +25,5 @@
 - (void)setJk_shouldChangeCharactersInRangeBlock:(BOOL (^)(UITextField *textField, NSRange range, NSString *string))shouldChangeCharactersInRangeBlock;
 - (void)setJk_shouldClearBlock:(BOOL (^)(UITextField *textField))shouldClearBlock;
 - (void)setJk_shouldReturnBlock:(BOOL (^)(UITextField *textField))shouldReturnBlock;
+
 @end

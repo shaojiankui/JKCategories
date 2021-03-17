@@ -5,48 +5,25 @@
 //  Copyright 2015 Nicolas Goutaland. All rights reserved.
 //
 #import <UIKit/UIKit.h>
+
 @interface NSIndexPath (JKOffset)
-/**
- *  @author JKCategories
- *
- *  Compute previous row indexpath
- *
- */
+
+/// return previous row indexPath
 - (NSIndexPath *)jk_previousRow;
-/**
- *  @author JKCategories
- *
- *  Compute next row indexpath
- *
- */
+
+/// return next row indexPath
 - (NSIndexPath *)jk_nextRow;
-/**
- *  @author JKCategories
- *
- *  Compute previous item indexpath
- *
- */
+
+/// return previous item indexPath
 - (NSIndexPath *)jk_previousItem;
-/**
- *  @author JKCategories
- *
- *  Compute next item indexpath
- *
- */
+
+/// return next item indexPath
 - (NSIndexPath *)jk_nextItem;
-/**
- *  @author JKCategories
- *
- *  Compute next section indexpath
- *
- */
+
+/// return next section indexPath
 - (NSIndexPath *)jk_nextSection;
-/**
- *  @author JKCategories
- *
- *  Compute previous section indexpath
- *
- */
+
+/// return previous section indexPath
 - (NSIndexPath *)jk_previousSection;
 
 @end

@@ -24,9 +24,8 @@
 #import "NSHTTPCookieStorage+JKFreezeDry.h"
 
 @implementation NSHTTPCookieStorage (JKFreezeDry)
-/**
- *  @brief  /Persists I Web V  cookies to disk
- */
+
+/// 存储 Web cookies 到磁盘目录
 - (void)jk_saveCookie {
     NSMutableArray* cookieData = [NSMutableArray new];
     
@@ -46,9 +45,8 @@
     
     [cookieData writeToFile:[self storagePath] atomically:TRUE];
 }
-/**
- *  @brief  /load I Web V  cookies from disk
- */
+
+/// 从磁盘目录读取 Web cookies
 - (void)jk_loadCookie {
     NSMutableArray* cookies = [NSMutableArray arrayWithContentsOfFile:[self storagePath]];
     NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];

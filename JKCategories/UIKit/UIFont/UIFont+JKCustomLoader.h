@@ -71,6 +71,4 @@
  */
 + (NSArray *)jk_registerFontFromURL:(NSURL *)fontURL;
 
-
-
 @end

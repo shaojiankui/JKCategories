@@ -10,15 +10,18 @@
 #import <objc/runtime.h>
 
 static const void *JKTextFieldInputLimitMaxLength = &JKTextFieldInputLimitMaxLength;
+
 @implementation UITextField (JKInputLimit)
 
 - (NSInteger)jk_maxLength {
     return [objc_getAssociatedObject(self, JKTextFieldInputLimitMaxLength) integerValue];
 }
+
 - (void)setJk_maxLength:(NSInteger)maxLength {
     objc_setAssociatedObject(self, JKTextFieldInputLimitMaxLength, @(maxLength), OBJC_ASSOCIATION_ASSIGN);
     [self addTarget:self action:@selector(jk_textFieldTextDidChange) forControlEvents:UIControlEventEditingChanged];
 }
+
 - (void)jk_textFieldTextDidChange {
     NSString *toBeString = self.text;
     //获取高亮部分
@@ -47,4 +50,5 @@ static const void *JKTextFieldInputLimitMaxLength = &JKTextFieldInputLimitMaxLen
         }
     }
 }
+
 @end
