@@ -9,7 +9,8 @@
 #import "UIView+JKConstraints.h"
 
 @implementation UIView (JKConstraints)
--(NSLayoutConstraint *)jk_constraintForAttribute:(NSLayoutAttribute)attribute {
+
+- (NSLayoutConstraint *)jk_constraintForAttribute:(NSLayoutAttribute)attribute {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"firstAttribute = %d && (firstItem = %@ || secondItem = %@)", attribute, self, self];
     NSArray *constraintArray = [self.superview constraints];
     
@@ -68,4 +69,5 @@
 - (NSLayoutConstraint *)jk_baseLineConstraint {
     return [self jk_constraintForAttribute:NSLayoutAttributeBaseline];
 }
+
 @end

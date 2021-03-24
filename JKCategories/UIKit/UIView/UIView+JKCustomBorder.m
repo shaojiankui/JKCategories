@@ -17,7 +17,6 @@ typedef NS_ENUM(NSInteger, EdgeType) {
 
 @implementation UIView (JKCustomBorder)
 
-
 - (void)jk_removeTopBorder {
     [self.subviews enumerateObjectsUsingBlock:^(UIView *subView, NSUInteger idx, BOOL *stop) {
         if (subView.tag == TopBorder) {
@@ -54,21 +53,17 @@ typedef NS_ENUM(NSInteger, EdgeType) {
     [self jk_addTopBorderWithColor:color width:borderWidth excludePoint:0 edgeType:0];
 }
 
-
 - (void)jk_addLeftBorderWithColor:(UIColor *)color width:(CGFloat)borderWidth {
     [self jk_addLeftBorderWithColor:color width:borderWidth excludePoint:0 edgeType:0];
 }
-
 
 - (void)jk_addBottomBorderWithColor:(UIColor *)color width:(CGFloat) borderWidth {
     [self jk_addBottomBorderWithColor:color width:borderWidth excludePoint:0 edgeType:0];
 }
 
-
 - (void)jk_addRightBorderWithColor:(UIColor *)color width:(CGFloat)borderWidth {
     [self jk_addRightBorderWithColor:color width:borderWidth excludePoint:0 edgeType:0];
 }
-
 
 - (void)jk_addTopBorderWithColor:(UIColor *)color width:(CGFloat)borderWidth excludePoint:(CGFloat)point edgeType:(JKExcludePoint)edge {
     [self jk_removeTopBorder];
@@ -107,7 +102,6 @@ typedef NS_ENUM(NSInteger, EdgeType) {
     [self addConstraint:[NSLayoutConstraint constraintWithItem:border attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:borderWidth]];
 }
 
-
 - (void)jk_addLeftBorderWithColor:(UIColor *)color width:(CGFloat)borderWidth excludePoint:(CGFloat)point edgeType:(JKExcludePoint)edge {
     [self jk_removeLeftBorder];
     
@@ -144,7 +138,6 @@ typedef NS_ENUM(NSInteger, EdgeType) {
     [self addConstraint:[NSLayoutConstraint constraintWithItem:border attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:borderWidth]];
     
 }
-
 
 - (void)jk_addBottomBorderWithColor:(UIColor *)color width:(CGFloat)borderWidth excludePoint:(CGFloat)point edgeType:(JKExcludePoint)edge {
     [self jk_removeBottomBorder];
@@ -216,6 +209,5 @@ typedef NS_ENUM(NSInteger, EdgeType) {
     [self addConstraint:[NSLayoutConstraint constraintWithItem:border attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-endPoint]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:border attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:borderWidth]];
 }
-
 
 @end

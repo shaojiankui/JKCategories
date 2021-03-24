@@ -10,13 +10,11 @@
 //
 //  Contribution released in the public domain.
 
-// https://github.com/nubbel/UIImageView-GeometryConversion
-//  A category on UIImageView that provides methods for converting points and rects from the image to view coordinates.
-
+//  https://github.com/nubbel/UIImageView-GeometryConversion
+//  将图像中的点（point）和尺寸（rect）转换为视图坐标点
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
 
 @interface UIImageView (JKGeometryConversion)
 

@@ -9,14 +9,7 @@
 #import "UIImage+JKMerge.h"
 
 @implementation UIImage (JKMerge)
-/**
- *  @brief  合并两个图片
- *
- *  @param firstImage  一个图片
- *  @param secondImage 二个图片
- *
- *  @return 合并后图片
- */
+
 + (UIImage*)jk_mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage {
     CGImageRef firstImageRef = firstImage.CGImage;
     CGFloat firstWidth = CGImageGetWidth(firstImageRef);
@@ -32,4 +25,5 @@
     UIGraphicsEndImageContext();
     return image;
 }
+
 @end

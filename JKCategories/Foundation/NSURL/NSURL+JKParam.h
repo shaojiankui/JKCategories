@@ -16,4 +16,5 @@
 /// 根据参数名 取参数值
 /// @param parameterKey 参数名的key
 - (NSString *)jk_valueForParameter:(NSString *)parameterKey;
+
 @end

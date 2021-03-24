@@ -15,7 +15,6 @@ float jk_radiansForDegrees(int degrees) {
     return degrees * M_PI / 180;
 }
 
-
 @implementation UIView (JKAnimation)
 
 #pragma mark - Moves

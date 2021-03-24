@@ -9,6 +9,7 @@
 #import "UIImage+JKColor.h"
 
 @implementation UIImage (JKColor)
+
 /**
  *  @brief  根据颜色生成纯色图片
  *
@@ -29,6 +30,7 @@
     
     return image;
 }
+
 /**
  *  @brief  取图片某一点的颜色
  *
@@ -79,6 +81,7 @@
     free(rawData);
     return result;
 }
+
 /**
  *  @brief  取某一像素的颜色
  *
@@ -127,6 +130,7 @@
     CGFloat alpha = (CGFloat)pixelData[3] / 255.0f;
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
+
 /**
  *  @brief  返回该图片是否有透明度通道
  *
@@ -148,7 +152,6 @@
  *
  *  @return 获得灰度图片
  */
-
 + (UIImage*)jk_covertToGrayImageFromImage:(UIImage*)sourceImage
 {
     int width = sourceImage.size.width;
@@ -170,6 +173,5 @@
     
     return grayImage;
 }
-
 
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (JKConstraints)
+
 - (NSLayoutConstraint *)jk_constraintForAttribute:(NSLayoutAttribute)attribute;
 
 - (NSLayoutConstraint *)jk_leftConstraint;
@@ -22,4 +23,5 @@
 - (NSLayoutConstraint *)jk_centerXConstraint;
 - (NSLayoutConstraint *)jk_centerYConstraint;
 - (NSLayoutConstraint *)jk_baseLineConstraint;
+
 @end

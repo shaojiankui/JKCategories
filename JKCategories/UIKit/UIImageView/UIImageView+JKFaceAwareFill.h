@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Julio Andrés Carrettoni. All rights reserved.
 //
 //  https://github.com/Julioacarrettoni/UIImageView_FaceAwareFill
-// This category applies Aspect Fill content mode to an image and if faces are detected it centers them instead of centering the image just by its geometrical center.
+//  This category applies Aspect Fill content mode to an image and if faces are detected it centers them instead of centering the image just by its geometrical center.
 
 #import <UIKit/UIKit.h>
 

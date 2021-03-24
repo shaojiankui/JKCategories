@@ -32,7 +32,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface UIImage (JKFXImage)
 
 - (UIImage *)jk_imageCroppedToRect:(CGRect)rect;
@@ -51,6 +50,5 @@
 - (UIImage *)jk_imageWithMask:(UIImage *)maskImage;
 
 - (UIImage *)jk_maskImageFromImageAlpha;
-
 
 @end

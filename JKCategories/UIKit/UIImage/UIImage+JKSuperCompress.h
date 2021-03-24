@@ -42,6 +42,6 @@
  */
 + (CGSize)jk_scaleImage:(UIImage *) image withLength:(CGFloat) imageLength;
 
-
 + (UIImage*)jk_resizableHalfImage:(NSString *)name;
+
 @end

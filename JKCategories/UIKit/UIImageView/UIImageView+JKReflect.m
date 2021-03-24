@@ -9,9 +9,7 @@
 #import "UIImageView+JKReflect.h"
 
 @implementation UIImageView (JKReflect)
-/**
- *  @brief  倒影
- */
+
 - (void)jk_reflect {
     CGRect frame = self.frame;
     frame.origin.y += (frame.size.height + 1);
@@ -36,7 +34,6 @@
     reflectionLayer.mask = gradientLayer;
     
     [self.superview addSubview:reflectionImageView];
-
 }
 
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (JKVisible)
+
 - (BOOL)jk_isVisible;
 
 @end

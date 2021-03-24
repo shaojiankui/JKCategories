@@ -55,7 +55,7 @@
     } else {
         static NSString * const kLegalURLEscapedCharacters = @"?!@#$^&%*+=,:;'\"`<>()[]{}/\\|~ ";
         NSString *valueString = [value description];
-        NSString *unescapedString = [valueString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSString *unescapedString = [valueString stringByRemovingPercentEncoding];
         if (unescapedString) {
             valueString = unescapedString;
         }

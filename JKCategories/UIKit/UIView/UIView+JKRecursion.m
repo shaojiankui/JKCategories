@@ -9,6 +9,7 @@
 #import "UIView+JKRecursion.h"
 
 @implementation UIView (JKRecursion)
+
 /**
  *  @brief  寻找子视图
  *
@@ -30,7 +31,6 @@
     
     return nil;
 }
-
 
 -(void)jk_runBlockOnAllSubviews:(JKSubviewBlock)block
 {
@@ -79,4 +79,5 @@
         }
     }];
 }
+
 @end

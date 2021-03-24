@@ -35,6 +35,7 @@
 - (NSMutableArray*)jk_mutableArrayAtIndex:(NSUInteger)index;
 - (NSMutableDictionary*)jk_mutableDictionaryAtIndex:(NSUInteger)index;
 
+- (NSData *)jk_dataAtIndex:(NSUInteger)index;
 - (NSDate *)jk_dateAtIndex:(NSUInteger)index dateFormat:(NSString *)dateFormat;
 
 - (CGFloat)jk_CGFloatAtIndex:(NSUInteger)index;

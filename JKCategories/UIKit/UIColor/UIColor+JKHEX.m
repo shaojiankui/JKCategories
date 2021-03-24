@@ -17,9 +17,11 @@ CGFloat jk_colorComponentFrom(NSString *string, NSUInteger start, NSUInteger len
 }
 
 @implementation UIColor (JKHEX)
+
 + (UIColor *)jk_colorWithHex:(UInt32)hex{
     return [UIColor jk_colorWithHex:hex andAlpha:1];
 }
+
 + (UIColor *)jk_colorWithHex:(UInt32)hex andAlpha:(CGFloat)alpha{
     return [UIColor colorWithRed:((hex >> 16) & 0xFF)/255.0
                            green:((hex >> 8) & 0xFF)/255.0

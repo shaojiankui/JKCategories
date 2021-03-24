@@ -10,6 +10,7 @@
 
 ///农历大写日期
 @interface NSDate (JKLunarCalendar)
+
 + (NSCalendar *)jk_chineseCalendar;
 //例如 五月初一
 + (NSString*)jk_currentMDDateString;

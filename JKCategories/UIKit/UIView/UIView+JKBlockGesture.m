@@ -8,12 +8,14 @@
 
 #import "UIView+JKBlockGesture.h"
 #import <objc/runtime.h>
+
 static char jk_kActionHandlerTapBlockKey;
 static char jk_kActionHandlerTapGestureKey;
 static char jk_kActionHandlerLongPressBlockKey;
 static char jk_kActionHandlerLongPressGestureKey;
 
 @implementation UIView (JKBlockGesture)
+
 - (void)jk_addTapActionWithBlock:(JKGestureActionBlock)block
 {
     UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &jk_kActionHandlerTapGestureKey);
@@ -25,6 +27,7 @@ static char jk_kActionHandlerLongPressGestureKey;
     }
     objc_setAssociatedObject(self, &jk_kActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_COPY);
 }
+
 - (void)jk_handleActionForTapGesture:(UITapGestureRecognizer*)gesture
 {
     if (gesture.state == UIGestureRecognizerStateRecognized)
@@ -36,6 +39,7 @@ static char jk_kActionHandlerLongPressGestureKey;
         }
     }
 }
+
 - (void)jk_addLongPressActionWithBlock:(JKGestureActionBlock)block
 {
     UILongPressGestureRecognizer *gesture = objc_getAssociatedObject(self, &jk_kActionHandlerLongPressGestureKey);
@@ -47,6 +51,7 @@ static char jk_kActionHandlerLongPressGestureKey;
     }
     objc_setAssociatedObject(self, &jk_kActionHandlerLongPressBlockKey, block, OBJC_ASSOCIATION_COPY);
 }
+
 - (void)jk_handleActionForLongPressGesture:(UITapGestureRecognizer*)gesture
 {
     if (gesture.state == UIGestureRecognizerStateRecognized)
@@ -58,4 +63,5 @@ static char jk_kActionHandlerLongPressGestureKey;
         }
     }
 }
+
 @end

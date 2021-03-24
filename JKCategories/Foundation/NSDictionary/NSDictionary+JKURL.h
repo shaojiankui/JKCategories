@@ -10,20 +10,11 @@
 
 @interface NSDictionary (JKURL)
 
-/**
- *  @brief  将url参数转换成NSDictionary
- *
- *  @param query url参数
- *
- *  @return NSDictionary
- */
+/// 将url参数转换成 NSDictionary
+/// @param query url参数
 + (NSDictionary *)jk_dictionaryWithURLQuery:(NSString *)query;
 
-/**
- *  @brief  将NSDictionary转换成url 参数字符串
- *
- *  @return url 参数字符串
- */
+/// 将 NSDictionary 转换成url参数字符串
 - (NSString *)jk_URLQueryString2;
 
 @end

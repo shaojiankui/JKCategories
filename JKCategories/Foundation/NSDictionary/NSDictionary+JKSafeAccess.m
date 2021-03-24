@@ -21,7 +21,7 @@
 
 - (id)jk_objectForKey:(id)key class:(Class)aClass {
     id value = [self jk_objectForKey:key];
-    if ([value isKindOfClass:aClass]) {
+    if (value && [value isKindOfClass:aClass]) {
         return value;
     }
     return nil;
@@ -155,6 +155,10 @@
 
 - (NSMutableDictionary *)jk_mutableDictionaryForKey:(id)key {
     return [self jk_objectForKey:key class:[NSMutableDictionary class]];
+}
+
+- (NSData *)jk_dataForKey:(id)key {
+    return [self jk_objectForKey:key class:[NSData class]];
 }
 
 - (NSDate *)jk_dateForKey:(id)key dateFormat:(NSString *)dateFormat{

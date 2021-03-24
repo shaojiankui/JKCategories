@@ -94,6 +94,7 @@
     UIGraphicsEndImageContext();
     return image;
 }
+
 /**
  *  @brief  垂直翻转
  *
@@ -102,6 +103,7 @@
 - (UIImage *)jk_flipVertical {
     return [self jk_flip:NO];
 }
+
 /**
  *  @brief  水平翻转
  *
@@ -110,6 +112,7 @@
 - (UIImage *)jk_flipHorizontal {
     return [self jk_flip:YES];
 }
+
 /**
  *  @brief  旋转图片
  *
@@ -121,6 +124,7 @@
 {
     return [self jk_imageRotatedByDegrees:[UIImage jk_radiansToDegrees:radians]];
 }
+
 /**
  *  @brief  旋转图片
  *
@@ -153,7 +157,6 @@
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;
-    
 }
 
 /**
@@ -163,10 +166,10 @@
  *
  *  @return 弧度
  */
-+(CGFloat)jk_degreesToRadians:(CGFloat)degrees
-{
++ (CGFloat)jk_degreesToRadians:(CGFloat)degrees {
     return degrees * M_PI / 180;
 }
+
 /**
  *  @brief  弧度转角度
  *
@@ -174,8 +177,8 @@
  *
  *  @return 角度
  */
-+(CGFloat)jk_radiansToDegrees:(CGFloat)radians
-{
++ (CGFloat)jk_radiansToDegrees:(CGFloat)radians {
     return radians * 180/M_PI;
 }
+
 @end

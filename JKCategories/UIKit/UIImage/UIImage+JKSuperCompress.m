@@ -18,7 +18,6 @@
     return [normal resizableImageWithCapInsets:UIEdgeInsetsMake(imageH, imageW, imageH, imageW)];
 }
 
-
 + (NSData *)jk_compressImage:(UIImage *)image toMaxLength:(NSInteger)maxLength maxWidth:(NSInteger)maxWidth{
     NSAssert(maxLength > 0, @"图片的大小必须大于 0");
     NSAssert(maxWidth > 0, @"图片的最大边长必须大于 0");
@@ -76,7 +75,6 @@
     }else{
         return CGSizeMake(width, height);
     }
-    
     return CGSizeMake(newWidth, newHeight);
 }
 

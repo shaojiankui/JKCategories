@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Jonathan Crooke. All rights reserved.
 //
 // https://github.com/itsthejb/NSURL-QueryDictionary
+//
+
 #import <Foundation/Foundation.h>
 
 @interface NSURL (JK_URLQuery)
@@ -69,9 +71,9 @@
  *  @param sortedKeys Sorted the keys alphabetically?
  *  @see cavetas from the main `NSURL` category as well.
  */
-- (NSString*) jk_URLQueryStringWithSortedKeys:(BOOL) sortedKeys;
+- (NSString *)jk_URLQueryStringWithSortedKeys:(BOOL) sortedKeys;
 
 /** As above, but `sortedKeys=NO` */
-- (NSString*) jk_URLQueryString;
+- (NSString *)jk_URLQueryString;
 
 @end

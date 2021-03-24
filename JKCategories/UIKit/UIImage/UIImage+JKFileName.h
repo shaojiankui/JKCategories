@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (JKFileName)
+
 /**
  *  @brief  根据main bundle中的文件名读取图片
  *
@@ -28,4 +29,5 @@
  *  @return 无缓存的图片
  */
 + (UIImage *)jk_imageWithFileName:(NSString *)name inBundle:(NSBundle*)bundle;
+
 @end

@@ -4,20 +4,7 @@
 //  Created by Walter Da Col on 10/17/13.
 //  Copyright (c) 2013 Walter Da Col (walter.dacol<at>gmail.com)
 //
-
-/**
- *  @Author(作者)         Walter Da Col
- *
- *  @URL(地址)            https://github.com/daktales/UIFontWDCustomLoader
- *
- *  @Version(版本)        20150622
- *
- *  @Requirements(运行要求)
- *
- *  @Description(描述)     An iOS custom font loader
- *
- *  @Usage(使用) ..
- */
+//  Reference:<https://github.com/daktales/UIFontWDCustomLoader>
 
 #import <UIKit/UIKit.h>
 

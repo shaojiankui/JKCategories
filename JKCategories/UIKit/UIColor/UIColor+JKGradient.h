@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (JKGradient)
+
 /**
  *  @brief  渐变颜色
  *
@@ -19,4 +20,5 @@
  *  @return 渐变颜色
  */
 + (UIColor*)jk_gradientFromColor:(UIColor*)c1 toColor:(UIColor*)c2 withHeight:(int)height;
+
 @end

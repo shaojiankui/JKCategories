@@ -5,9 +5,6 @@
 //  Created by Inder Kumar Rathore on 19/01/13.
 //  Copyright (c) 2013 Rathore. All rights reserved.
 //
-//  https://github.com/fahrulazmi/UIDeviceHardware/blob/master/UIDeviceHardware.m
-//
-//  Reference: <https://www.theiphonewiki.com/wiki/Models>
 
 #import "UIDevice+JKHardware.h"
 #include <sys/types.h>
@@ -25,6 +22,7 @@
 #import <mach/processor_info.h>
 
 @implementation UIDevice (JKHardware)
+
 + (NSString *)jk_platform{
     size_t size;
     sysctlbyname("hw.machine", NULL, &size, NULL, 0);
@@ -163,7 +161,6 @@
     return platform;
 }
 
-
 + (NSString *)jk_macAddress {
     int                 mib[6];
     size_t              len;
@@ -216,6 +213,7 @@
 {
     return [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
 }
+
 #pragma mark - sysctl utils
 
 + (NSUInteger)jk_getSysInfo:(uint)typeSpecifier
@@ -288,4 +286,5 @@
     }
     return totalspace;
 }
+
 @end

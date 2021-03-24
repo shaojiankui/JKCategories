@@ -16,21 +16,7 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  *
  */
-
-/**
- *  @Author(作者)         nin9tyfour
- *
- *  @URL(地址)            https://github.com/nin9tyfour/UIFont-TTF
- *
- *  @Version(版本)        20150622
- *
- *  @Requirements(运行要求)
- *
- *  @Description(描述)      UIFont category that allows loading local TrueType font files. This does NOT require defining fonts in the Info.plist file of the project. It is also specifically useful for Cydia Substrate extensions, where modifying the Info.plist is not viable.
-
- *
- *  @Usage(使用) ..
- */
+//  Reference:<https://github.com/nin9tyfour/UIFont-TTF>
 
 #import <UIKit/UIKit.h>
 

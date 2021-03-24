@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 //  Reference:<https://github.com/alibaba/LazyScrollView/TMUtils/NSDictionary+TMSafeUtils.h>
-//
+//  Reference:<https://github.com/Anonymous-Monk/MSCrashProtector>
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -36,6 +36,7 @@
 - (NSMutableArray *)jk_mutableArrayForKey:(id)key;
 - (NSMutableDictionary *)jk_mutableDictionaryForKey:(id)key;
 
+- (NSData *)jk_dataForKey:(id)key;
 - (NSDate *)jk_dateForKey:(id)key dateFormat:(NSString *)dateFormat;
 
 - (CGFloat)jk_CGFloatForKey:(id)key;

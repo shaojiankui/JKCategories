@@ -81,14 +81,14 @@ static NSString *const kFragmentBegin       = @"#";
     if (components.count == 0) {
       continue;
     }
-    NSString *key = [components[0] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *key = [components[0] stringByRemovingPercentEncoding];
     id value = nil;
     if (components.count == 1) {
       // key with no value
       value = [NSNull null];
     }
     if (components.count == 2) {
-      value = [components[1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+      value = [components[1] stringByRemovingPercentEncoding];
       // cover case where there is a separator, but no actual value
       value = [value length] ? value : [NSNull null];
     }

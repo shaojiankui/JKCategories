@@ -5,8 +5,8 @@ Pod::Spec.new do |s|
   s.version      = version
   s.summary      = "JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks"
   s.description      = <<-DESC
-                       JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
-                       DESC
+                        JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
+                        DESC
   s.homepage     = "https://github.com/shaojiankui/JKCategories"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "skyfox" => "i@skyfox.org" }
@@ -93,9 +93,6 @@ Pod::Spec.new do |s|
       end
       foundation.subspec 'NSURL' do |url|
           url.source_files = 'JKCategories/Foundation/NSURL/*.{h,m}'
-      end
-      foundation.subspec 'NSURLConnection' do |connection|
-          connection.source_files = 'JKCategories/Foundation/NSURLConnection/*.{h,m}'
       end
       foundation.subspec 'NSURLRequest' do |urlrequest|
           urlrequest.source_files = 'JKCategories/Foundation/NSURLRequest/*.{h,m}'

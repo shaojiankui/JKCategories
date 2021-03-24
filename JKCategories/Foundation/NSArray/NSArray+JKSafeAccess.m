@@ -175,6 +175,10 @@
     return [self jk_objectAtIndex:index class:[NSMutableDictionary class]];
 }
 
+- (NSData *)jk_dataAtIndex:(NSUInteger)index {
+    return [self jk_objectAtIndex:index class:[NSData class]];
+}
+
 - (NSDate *)jk_dateAtIndex:(NSUInteger)index dateFormat:(NSString *)dateFormat {
     if ([dateFormat isEqualToString:@""]) {
         return nil;

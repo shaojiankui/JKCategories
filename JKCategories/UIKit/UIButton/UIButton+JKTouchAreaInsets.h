@@ -21,7 +21,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-//https://github.com/devxoul/UIButton-TouchAreaInsets
+// https://github.com/devxoul/UIButton-TouchAreaInsets
 
 #import <UIKit/UIKit.h>
 

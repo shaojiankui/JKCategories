@@ -81,7 +81,6 @@
 #import <JKCategories/NSTimer+JKBlocks.h>
 #import <JKCategories/NSURL+JKParam.h>
 #import <JKCategories/NSURL+JKQueryDictionary.h>
-#import <JKCategories/NSURLConnection+JKSelfSigned.h>
 #import <JKCategories/NSURLRequest+JKParamsFromDictionary.h>
 #import <JKCategories/NSURLSession+JKSynchronousTask.h>
 #import <JKCategories/NSUserDefaults+JKiCloudSync.h>
@@ -162,7 +161,6 @@
 #import "NSTimer+JKBlocks.h"
 #import "NSURL+JKParam.h"
 #import "NSURL+JKQueryDictionary.h"
-#import "NSURLConnection+JKSelfSigned.h"
 #import "NSURLRequest+JKParamsFromDictionary.h"
 #import "NSURLSession+JKSynchronousTask.h"
 #import "NSUserDefaults+JKiCloudSync.h"

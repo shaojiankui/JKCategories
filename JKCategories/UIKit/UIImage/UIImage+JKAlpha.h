@@ -7,18 +7,21 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (JKAlpha)
+
 /**
  *  @brief  是否有alpha通道
  *
  *  @return 是否有alpha通道
  */
 - (BOOL)jk_hasAlpha;
+
 /**
  *  @brief  如果没有alpha通道 增加alpha通道
  *
  *  @return 如果没有alpha通道 增加alpha通道
  */
 - (UIImage *)jk_imageWithAlpha;
+
 /**
  *  @brief  增加透明边框
  *

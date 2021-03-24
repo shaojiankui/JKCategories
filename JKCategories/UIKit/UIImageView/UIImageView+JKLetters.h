@@ -26,7 +26,7 @@
 // THE SOFTWARE.
 
 // https://github.com/bachonk/UIImageView-Letters
-// UIImageView category for using initials as a placeholder image
+// 使用首字母作为占位符图像的 UIImageView 扩展
 
 #import <UIKit/UIKit.h>
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 typedef NS_ENUM(NSInteger, JKScrollDirection) {
     JKScrollDirectionUp,
     JKScrollDirectionDown,

@@ -15,7 +15,7 @@
  *
  *  @return NSDictionary
  */
--(NSDictionary *)jk_dictionaryValue{
+- (NSDictionary *)jk_dictionaryValue{
     NSError *errorJson;
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&errorJson];
