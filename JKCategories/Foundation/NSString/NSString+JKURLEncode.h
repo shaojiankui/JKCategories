@@ -40,7 +40,7 @@
 - (NSString *)jk_urlDecodeUsingEncoding:(NSStringEncoding)encoding;
 
 /**
- *  @brief  url query转成NSDictionary
+ *  @brief  url query 转成 NSDictionary
  *
  *  @return NSDictionary
  */

@@ -70,6 +70,7 @@
 #import <JKCategories/NSString+JKPinyin.h>
 #import <JKCategories/NSString+JKRemoveEmoji.h>
 #import <JKCategories/NSString+JKScore.h>
+#import <JKCategories/NSString+JKSafe.h>
 #import <JKCategories/NSString+JKSize.h>
 #import <JKCategories/NSString+JKTrims.h>
 #import <JKCategories/NSString+JKURLEncode.h>
@@ -77,6 +78,7 @@
 #import <JKCategories/NSString+JKXMLDictionary.h>
 #import <JKCategories/NSString+JKStringPages.h>
 #import <JKCategories/NSString+JKHTML.h>
+#import <JKCategories/NSString+HexConversion.h>
 #import <JKCategories/NSTimer+JKAddition.h>
 #import <JKCategories/NSTimer+JKBlocks.h>
 #import <JKCategories/NSURL+JKParam.h>
@@ -150,6 +152,7 @@
 #import "NSString+JKPinyin.h"
 #import "NSString+JKRemoveEmoji.h"
 #import "NSString+JKScore.h"
+#import "NSString+JKSafe.h"
 #import "NSString+JKSize.h"
 #import "NSString+JKTrims.h"
 #import "NSString+JKURLEncode.h"
@@ -157,6 +160,7 @@
 #import "NSString+JKXMLDictionary.h"
 #import "NSString+JKStringPages.h"
 #import "NSString+JKHTML.h"
+#import "NSString+HexConversion.h"
 #import "NSTimer+JKAddition.h"
 #import "NSTimer+JKBlocks.h"
 #import "NSURL+JKParam.h"
