@@ -25,6 +25,8 @@
 		2216E759260AECA700375CC4 /* NSString+HexConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E757260AECA700375CC4 /* NSString+HexConversion.m */; };
 		2216E762260B017100375CC4 /* NSString+JKSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 2216E760260B017100375CC4 /* NSString+JKSafe.h */; };
 		2216E763260B017100375CC4 /* NSString+JKSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E761260B017100375CC4 /* NSString+JKSafe.m */; };
+		221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */; };
+		221A8EC1260DECA900515746 /* NSDictionary+RemoveNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */; };
 		A202D9801B0F7CD100EAB199 /* CLLocationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D97E1B0F7CD100EAB199 /* CLLocationDemoViewController.m */; };
 		A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D97F1B0F7CD100EAB199 /* CLLocationDemoViewController.xib */; };
 		A202D98C1B0F7D7900EAB199 /* MKMapViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D98A1B0F7D7900EAB199 /* MKMapViewDemoViewController.m */; };
@@ -579,6 +581,8 @@
 		2216E757260AECA700375CC4 /* NSString+HexConversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HexConversion.m"; sourceTree = "<group>"; };
 		2216E760260B017100375CC4 /* NSString+JKSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JKSafe.h"; sourceTree = "<group>"; };
 		2216E761260B017100375CC4 /* NSString+JKSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKSafe.m"; sourceTree = "<group>"; };
+		221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RemoveNullValue.h"; sourceTree = "<group>"; };
+		221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RemoveNullValue.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+JKNormalRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKNormalRegex.h"; sourceTree = "<group>"; };
 		798256191B3A59060033A0C1 /* NSString+JKNormalRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKNormalRegex.m"; sourceTree = "<group>"; };
 		A202D9601B0F6C4400EAB199 /* NSDate+JKReporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JKReporting.h"; sourceTree = "<group>"; };
@@ -2297,6 +2301,8 @@
 				A24EC2DC1B74D49F00CE538B /* NSDictionary+JKURL.m */,
 				A24EC2F11B74DE6A00CE538B /* NSDictionary+JKXML.h */,
 				A24EC2F21B74DE6A00CE538B /* NSDictionary+JKXML.m */,
+				221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */,
+				221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
@@ -3058,6 +3064,7 @@
 				B810250C206A104F0099CDA8 /* NSString+JKEmoji.h in Headers */,
 				B81024EF206A102C0099CDA8 /* NSData+JKAPNSToken.h in Headers */,
 				B8102535206A108A0099CDA8 /* UIFont+JKCustomLoader.h in Headers */,
+				221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */,
 				B810251A206A104F0099CDA8 /* NSString+JKHTML.h in Headers */,
 				B8102534206A108A0099CDA8 /* UIFont+JKTTF.h in Headers */,
 				B81025EF206A11650099CDA8 /* UIView+JKNib.h in Headers */,
@@ -3452,6 +3459,7 @@
 				B810265C206A12160099CDA8 /* NSObject+JKAutoCoding.m in Sources */,
 				B81024FB206A10390099CDA8 /* NSData+JKBase64.m in Sources */,
 				B81025D9206A11470099CDA8 /* UIImage+JKResize.m in Sources */,
+				221A8EC1260DECA900515746 /* NSDictionary+RemoveNullValue.m in Sources */,
 				B810262C206A11A20099CDA8 /* MKMapView+JKBetterMaps.m in Sources */,
 				B8102528206A10660099CDA8 /* NSString+JKMIME.m in Sources */,
 				B81024DE206A100E0099CDA8 /* NSDate+JKReporting.m in Sources */,

@@ -10,11 +10,7 @@
 
 @interface NSString (JKDictionaryValue)
 
-/**
- *  @brief  JSON字符串转成NSDictionary
- *
- *  @return NSDictionary
- */
+/// 将 JSON String 转换为 NSDictionary
 - (NSDictionary *)jk_dictionaryValue;
 
 @end

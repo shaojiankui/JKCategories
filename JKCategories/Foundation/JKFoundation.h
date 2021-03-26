@@ -33,6 +33,7 @@
 #import <JKCategories/NSDictionary+JKSafeAccess.h>
 #import <JKCategories/NSDictionary+JKURL.h>
 #import <JKCategories/NSDictionary+JKXML.h>
+#import <JKCategories/NSDictionary+RemoveNullValue.h>
 #import <JKCategories/NSException+JKTrace.h>
 #import <JKCategories/NSFileHandle+JKReadLine.h>
 #import <JKCategories/NSFileManager+JKPaths.h>
@@ -115,6 +116,7 @@
 #import "NSDictionary+JKSafeAccess.h"
 #import "NSDictionary+JKURL.h"
 #import "NSDictionary+JKXML.h"
+#import "NSDictionary+RemoveNullValue.h"
 #import "NSException+JKTrace.h"
 #import "NSFileHandle+JKReadLine.h"
 #import "NSFileManager+JKPaths.h"

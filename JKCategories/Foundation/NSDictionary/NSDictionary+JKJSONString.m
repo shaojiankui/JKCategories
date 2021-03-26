@@ -10,12 +10,8 @@
 
 @implementation NSDictionary (JKJSONString)
 
-/**
- *  @brief NSDictionary转换成JSON字符串
- *
- *  @return  JSON字符串
- */
--(NSString *)jk_JSONString{
+// 原理：NSDictionary -> NSData -> NSString
+- (NSString *)jk_JSONString {
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:NSJSONWritingPrettyPrinted error:&error];
     if (!jsonData) {
