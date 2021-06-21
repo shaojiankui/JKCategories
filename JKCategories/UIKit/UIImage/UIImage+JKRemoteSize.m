@@ -245,18 +245,15 @@ typedef uint32_t dword;
     
     if([imgURL isFileURL] ) {
         //Load from file stream
-    }
-    else {
+    } else {
         imgURL.jk_sizeRequestCompletion = completion;
         
         NSURLRequest* request = [NSURLRequest requestWithURL:imgURL];
         NSURLConnection* conn = [NSURLConnection connectionWithRequest: request delegate: imgURL];
-        
         [conn scheduleInRunLoop: [NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
         [conn start];
     }
 }
-
 
 + (void)requestSizeWithHeader:(NSURL*)imgURL completion:(JKUIImageSizeRequestCompleted)completion{
 //        NSURLRequest* request = [NSURLRequest requestWithURL:imgURL];
