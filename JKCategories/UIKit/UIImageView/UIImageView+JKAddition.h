@@ -39,6 +39,7 @@
  *  @return imageview
  */
 + (id)jk_imageViewWithImageArray:(NSArray*)imageArray duration:(NSTimeInterval)duration;
+
 - (void)jk_setImageWithStretchableImage:(NSString*)imageName;
 
 // 图片水印

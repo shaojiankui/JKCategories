@@ -251,7 +251,8 @@ typedef uint32_t dword;
         
         NSURLRequest* request = [NSURLRequest requestWithURL:imgURL];
         NSURLConnection* conn = [NSURLConnection connectionWithRequest: request delegate: imgURL];
-        [conn scheduleInRunLoop: [NSRunLoop mainRunLoop] forMode: NSDefaultRunLoopMode];
+        
+        [conn scheduleInRunLoop: [NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
         [conn start];
     }
 }

@@ -27,6 +27,8 @@
 		2216E763260B017100375CC4 /* NSString+JKSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E761260B017100375CC4 /* NSString+JKSafe.m */; };
 		221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */; };
 		221A8EC1260DECA900515746 /* NSDictionary+RemoveNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */; };
+		2279530E2680404D004C46A5 /* UIImage+JKWaterMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */; };
+		2279530F2680404D004C46A5 /* UIImage+JKWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */; };
 		A202D9801B0F7CD100EAB199 /* CLLocationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D97E1B0F7CD100EAB199 /* CLLocationDemoViewController.m */; };
 		A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D97F1B0F7CD100EAB199 /* CLLocationDemoViewController.xib */; };
 		A202D98C1B0F7D7900EAB199 /* MKMapViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D98A1B0F7D7900EAB199 /* MKMapViewDemoViewController.m */; };
@@ -583,6 +585,8 @@
 		2216E761260B017100375CC4 /* NSString+JKSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKSafe.m"; sourceTree = "<group>"; };
 		221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RemoveNullValue.h"; sourceTree = "<group>"; };
 		221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RemoveNullValue.m"; sourceTree = "<group>"; };
+		2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKWaterMark.h"; sourceTree = "<group>"; };
+		2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKWaterMark.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+JKNormalRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKNormalRegex.h"; sourceTree = "<group>"; };
 		798256191B3A59060033A0C1 /* NSString+JKNormalRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKNormalRegex.m"; sourceTree = "<group>"; };
 		A202D9601B0F6C4400EAB199 /* NSDate+JKReporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JKReporting.h"; sourceTree = "<group>"; };
@@ -2457,6 +2461,8 @@
 				A2EF56E01B21C59C0005F730 /* UIImage+JKBlur.m */,
 				A248782B1C55CC5C00AFF958 /* UIImage+JKSuperCompress.h */,
 				A248782C1C55CC5C00AFF958 /* UIImage+JKSuperCompress.m */,
+				2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */,
+				2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -3068,6 +3074,7 @@
 				B810251A206A104F0099CDA8 /* NSString+JKHTML.h in Headers */,
 				B8102534206A108A0099CDA8 /* UIFont+JKTTF.h in Headers */,
 				B81025EF206A11650099CDA8 /* UIView+JKNib.h in Headers */,
+				2279530E2680404D004C46A5 /* UIImage+JKWaterMark.h in Headers */,
 				B81025D1206A11350099CDA8 /* UILabel+JKAutomaticWriting.h in Headers */,
 				B8102508206A104F0099CDA8 /* NSString+JKPinyin.h in Headers */,
 				B810250A206A104F0099CDA8 /* NSString+JKRemoveEmoji.h in Headers */,
@@ -3376,6 +3383,7 @@
 				B810251F206A10660099CDA8 /* NSString+JKEmoji.m in Sources */,
 				B810252D206A10660099CDA8 /* NSString+JKHTML.m in Sources */,
 				B81025F9206A11720099CDA8 /* UINavigationController+JKKeyboardFix.m in Sources */,
+				2279530F2680404D004C46A5 /* UIImage+JKWaterMark.m in Sources */,
 				B8102522206A10660099CDA8 /* NSString+JKHash.m in Sources */,
 				B81024FC206A10390099CDA8 /* NSData+JKEncrypt.m in Sources */,
 				B8102525206A10660099CDA8 /* NSString+JKEncrypt.m in Sources */,
