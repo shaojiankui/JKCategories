@@ -18,6 +18,6 @@ typedef NS_ENUM(NSUInteger, JKAccuracy) {
 @interface UIImage (JKBetterFace)
 
 - (UIImage *)jk_betterFaceImageForSize:(CGSize)size
-                           accuracy:(JKAccuracy)accurary;
+                              accuracy:(JKAccuracy)accurary;
 
 @end

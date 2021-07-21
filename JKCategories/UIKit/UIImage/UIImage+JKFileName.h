@@ -18,6 +18,7 @@
  *  @return 无缓存的图片
  */
 + (UIImage *)jk_imageWithFileName:(NSString *)name;
+
 /**
  *  @author JKCategories
  *
