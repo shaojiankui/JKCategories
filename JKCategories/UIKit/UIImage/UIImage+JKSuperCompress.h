@@ -22,7 +22,7 @@
 /// 压缩图片到指定字节
 /// @param image 原始图片
 /// @param maxLength 最大字节长度
-+ (UIImage *)jk_compressImage:(UIImage *)image toBytes:(NSUInteger)maxLength;
++ (NSData *)jk_compressImage:(UIImage *)image toBytes:(NSUInteger)maxLength;
 
 /**
  *  压缩图片尺寸

@@ -27,11 +27,11 @@
     return data;
 }
 
-+ (UIImage *)jk_compressImage:(UIImage *)image toBytes:(NSUInteger)maxLength {
++ (NSData *)jk_compressImage:(UIImage *)image toBytes:(NSUInteger)maxLength {
     // 首先判断原图大小是否满足要求，如果满足要求则直接返回
     CGFloat compression = 1;
     NSData *data = UIImageJPEGRepresentation(image, compression);
-    if (data.length < maxLength) { return image; }
+    if (data.length < maxLength) { return data; }
     
     // 原图大小超过范围，先进行“压处理”，这里“压缩比”采用二分法进行处理，6次二分后的最小压缩比是0.015625，已经够小了
     CGFloat max = 1;
@@ -50,7 +50,7 @@
     
     // 判断“压处理”后的图片结果是否满足要求，如果满足要求则返回
     UIImage *resultImage = [UIImage imageWithData:data];
-    if (data.length < maxLength) { return resultImage; }
+    if (data.length < maxLength) { return data; }
     
     // 缩处理，直接用大小比例作为缩处理的比例进行处理，因为有取整处理，所以一般需要处理两次
     NSUInteger lastDataLength = 0;
@@ -66,7 +66,7 @@
         data = UIImageJPEGRepresentation(resultImage, compression);
     }
     
-    return resultImage;
+    return data;
 }
 
 + (UIImage *)jk_resizeImage:(UIImage *)image withNewSize:(CGSize)newSize {
