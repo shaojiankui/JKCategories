@@ -54,6 +54,7 @@ static const char *__BlockSignature__(id blockObj)
     invocation.target = block;
     return invocation;
 }
+
 #define ARG_GET_SET(type) do { type val = 0; val = va_arg(args,type); [invocation setArgument:&val atIndex:1 + i];} while (0)
 + (instancetype)jk_invocationWithBlockAndArguments:(id) block ,...
 {
@@ -106,4 +107,5 @@ static const char *__BlockSignature__(id blockObj)
     va_end(args);
     return invocation;
 }
+
 @end

@@ -3,11 +3,11 @@
 //
 //  Created by Heiko Dreyer on 25.05.11.
 //  Copyright 2011 boxedfolder.com. All rights reserved.
+//
 //  https://github.com/bfolder/UIView-Visuals
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
-
 
 @interface UIView (JKVisuals)
 

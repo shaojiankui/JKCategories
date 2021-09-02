@@ -244,25 +244,25 @@ typedef uint32_t dword;
 + (void)requestSizeNoHeader:(NSURL*)imgURL completion:(JKUIImageSizeRequestCompleted)completion{
     
     if([imgURL isFileURL] ) {
-        //Load from file stream
+        // Load from file stream
     } else {
         imgURL.jk_sizeRequestCompletion = completion;
         
-        NSURLRequest* request = [NSURLRequest requestWithURL:imgURL];
-        NSURLConnection* conn = [NSURLConnection connectionWithRequest: request delegate: imgURL];
+        NSURLRequest *request = [NSURLRequest requestWithURL:imgURL];
+        NSURLConnection *conn = [NSURLConnection connectionWithRequest:request delegate:imgURL];
         [conn scheduleInRunLoop: [NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
         [conn start];
     }
 }
 
-+ (void)requestSizeWithHeader:(NSURL*)imgURL completion:(JKUIImageSizeRequestCompleted)completion{
+//+ (void)requestSizeWithHeader:(NSURL*)imgURL completion:(JKUIImageSizeRequestCompleted)completion{
 //        NSURLRequest* request = [NSURLRequest requestWithURL:imgURL];
 //
 //        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *resp, NSData *d, NSError *e) {
 //            NSLog(@"respone%@", [(NSHTTPURLResponse*)resp allHeaderFields]);
-//    
-//            
+//
+//
 //        }];
-}
+//}
 
 @end

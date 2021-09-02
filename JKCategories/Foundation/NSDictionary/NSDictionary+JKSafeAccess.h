@@ -5,8 +5,8 @@
 //  Created by Jakey on 15/1/25.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
-//  Reference:<https://github.com/alibaba/LazyScrollView/TMUtils/NSDictionary+TMSafeUtils.h>
-//  Reference:<https://github.com/Anonymous-Monk/MSCrashProtector>
+//  Reference: <https://github.com/alibaba/LazyScrollView/TMUtils/NSDictionary+TMSafeUtils.h>
+//  Reference: <https://github.com/Anonymous-Monk/MSCrashProtector>
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>

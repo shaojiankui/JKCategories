@@ -5,8 +5,7 @@
 //  Created by Jon Crooke on 10/12/2013.
 //  Copyright (c) 2013 Jonathan Crooke. All rights reserved.
 //
-// https://github.com/itsthejb/NSURL-QueryDictionary
-//
+//  https://github.com/itsthejb/NSURL-QueryDictionary
 
 #import <Foundation/Foundation.h>
 
@@ -16,7 +15,7 @@
  *  @return URL's query component as keys/values
  *  Returns nil for an empty query
  */
-- (NSDictionary*) jk_queryDictionary;
+- (NSDictionary *)jk_queryDictionary;
 
 /**
  *  @return URL with keys values appending to query string
@@ -25,11 +24,11 @@
  *  @warning If keys overlap in receiver and query dictionary,
  *  behaviour is undefined.
  */
-- (NSURL*) jk_URLByAppendingQueryDictionary:(NSDictionary*) queryDictionary
+- (NSURL *)jk_URLByAppendingQueryDictionary:(NSDictionary*) queryDictionary
                              withSortedKeys:(BOOL) sortedKeys;
 
 /** As above, but `sortedKeys=NO` */
-- (NSURL*) jk_URLByAppendingQueryDictionary:(NSDictionary*) queryDictionary;
+- (NSURL *)jk_URLByAppendingQueryDictionary:(NSDictionary*) queryDictionary;
 
 /**
  *  @return Copy of URL with its query component replaced with
@@ -37,14 +36,14 @@
  *  @param queryDictionary A new query dictionary
  *  @param sortedKeys      Whether or not to sort the query keys
  */
-- (NSURL*) jk_URLByReplacingQueryWithDictionary:(NSDictionary*) queryDictionary
+- (NSURL *)jk_URLByReplacingQueryWithDictionary:(NSDictionary*) queryDictionary
                                  withSortedKeys:(BOOL) sortedKeys;
 
 /** As above, but `sortedKeys=NO` */
-- (NSURL*) jk_URLByReplacingQueryWithDictionary:(NSDictionary*) queryDictionary;
+- (NSURL *)jk_URLByReplacingQueryWithDictionary:(NSDictionary*) queryDictionary;
 
 /** @return Receiver with query component completely removed */
-- (NSURL*) jk_URLByRemovingQuery;
+- (NSURL *)jk_URLByRemovingQuery;
 
 @end
 
@@ -57,7 +56,7 @@
  *  components as key/value pairs. If couldn't split into *any* pairs,
  *  returns nil.
  */
-- (NSDictionary*) jk_URLQueryDictionary;
+- (NSDictionary *)jk_URLQueryDictionary;
 
 @end
 

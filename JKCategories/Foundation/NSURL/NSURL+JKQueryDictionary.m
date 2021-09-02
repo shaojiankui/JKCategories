@@ -8,19 +8,18 @@
 
 #import "NSURL+JKQueryDictionary.h"
 
-static NSString *const jk_URLReservedChars  = @"￼=,!$&'()*+;@?\r\n\"<>#\t :/";
-static NSString *const kQuerySeparator      = @"&";
-static NSString *const kQueryDivider        = @"=";
-static NSString *const kQueryBegin          = @"?";
-static NSString *const kFragmentBegin       = @"#";
+static NSString *const kQuerySeparator = @"&";
+static NSString *const kQueryDivider   = @"=";
+static NSString *const kQueryBegin     = @"?";
+static NSString *const kFragmentBegin  = @"#";
 
 @implementation NSURL (jk_URLQuery)
 
-- (NSDictionary*) jk_queryDictionary {
+- (NSDictionary *)jk_queryDictionary {
   return self.query.jk_URLQueryDictionary;
 }
 
-- (NSURL*) jk_URLByAppendingQueryDictionary:(NSDictionary*) queryDictionary {
+- (NSURL *)jk_URLByAppendingQueryDictionary:(NSDictionary*) queryDictionary {
   return [self jk_URLByAppendingQueryDictionary:queryDictionary withSortedKeys:NO];
 }
 
@@ -49,7 +48,7 @@ static NSString *const kFragmentBegin       = @"#";
   return self;
 }
 
-- (NSURL*) jk_URLByRemovingQuery {
+- (NSURL *)jk_URLByRemovingQuery {
   NSArray *queryComponents = [self.absoluteString componentsSeparatedByString:kQueryBegin];
   if (queryComponents.count) {
     return [NSURL URLWithString:queryComponents.firstObject];
@@ -61,7 +60,7 @@ static NSString *const kFragmentBegin       = @"#";
   return [self jk_URLByReplacingQueryWithDictionary:queryDictionary withSortedKeys:NO];
 }
 
-- (NSURL*) jk_URLByReplacingQueryWithDictionary:(NSDictionary*) queryDictionary
+- (NSURL *)jk_URLByReplacingQueryWithDictionary:(NSDictionary*) queryDictionary
                                  withSortedKeys:(BOOL) sortedKeys
 {
   NSURL *stripped = [self jk_URLByRemovingQuery];
@@ -74,7 +73,7 @@ static NSString *const kFragmentBegin       = @"#";
 
 @implementation NSString (URLQuery)
 
-- (NSDictionary*) jk_URLQueryDictionary {
+- (NSDictionary *)jk_URLQueryDictionary {
   NSMutableDictionary *mute = @{}.mutableCopy;
   for (NSString *query in [self componentsSeparatedByString:kQuerySeparator]) {
     NSArray *components = [query componentsSeparatedByString:kQueryDivider];
@@ -113,7 +112,7 @@ static inline NSString *jk_URLEscape(NSString *string);
   return [self jk_URLQueryStringWithSortedKeys:NO];
 }
 
-- (NSString*) jk_URLQueryStringWithSortedKeys:(BOOL)sortedKeys {
+- (NSString *)jk_URLQueryStringWithSortedKeys:(BOOL)sortedKeys {
   NSMutableString *queryString = @"".mutableCopy;
   NSArray *keys = sortedKeys ? [self.allKeys sortedArrayUsingSelector:@selector(compare:)] : self.allKeys;
   for (NSString *key in keys) {
@@ -133,12 +132,7 @@ static inline NSString *jk_URLEscape(NSString *string);
 }
 
 static inline NSString *jk_URLEscape(NSString *string) {
-    return ((__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(
-        NULL,
-        (__bridge CFStringRef)string,
-        NULL,
-        (__bridge CFStringRef)jk_URLReservedChars,
-        kCFStringEncodingUTF8));
+    return [string stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 }
 
 @end

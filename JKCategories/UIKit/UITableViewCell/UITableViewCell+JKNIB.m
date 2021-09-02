@@ -9,12 +9,9 @@
 #import "UITableViewCell+JKNIB.h"
 
 @implementation UITableViewCell (JKNIB)
-/**
- *  @brief  加载同类名的nib
- *
- *  @return nib
- */
-+(UINib*)jk_nib{
+
++ (UINib *)jk_nib{
    return  [UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil];
 }
+
 @end

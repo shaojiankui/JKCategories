@@ -25,12 +25,7 @@
 
 #import <UIKit/UIKit.h>
 
-#if __has_feature(nullability) // Xcode 6.3+
-#pragma clang assume_nonnull begin
-#else
-#define nullable
-#define __nullable
-#endif
+NS_ASSUME_NONNULL_BEGIN
 
 /// CAShapeLayer 的扩展，允许在 CAShapeLayer 上获取和设置 UIBezierPath
 @interface CAShapeLayer (JKUIBezierPath)
@@ -44,6 +39,4 @@
 
 @end
 
-#if __has_feature(nullability)
-#pragma clang assume_nonnull end
-#endif
+NS_ASSUME_NONNULL_END

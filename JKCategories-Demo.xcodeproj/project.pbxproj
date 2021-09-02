@@ -21,14 +21,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2216E758260AECA700375CC4 /* NSString+HexConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 2216E756260AECA700375CC4 /* NSString+HexConversion.h */; };
+		2216E758260AECA700375CC4 /* NSString+HexConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 2216E756260AECA700375CC4 /* NSString+HexConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2216E759260AECA700375CC4 /* NSString+HexConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E757260AECA700375CC4 /* NSString+HexConversion.m */; };
-		2216E762260B017100375CC4 /* NSString+JKSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 2216E760260B017100375CC4 /* NSString+JKSafe.h */; };
+		2216E762260B017100375CC4 /* NSString+JKSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 2216E760260B017100375CC4 /* NSString+JKSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2216E763260B017100375CC4 /* NSString+JKSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E761260B017100375CC4 /* NSString+JKSafe.m */; };
-		221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */; };
+		221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221A8EC1260DECA900515746 /* NSDictionary+RemoveNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */; };
-		2279530E2680404D004C46A5 /* UIImage+JKWaterMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */; };
-		2279530F2680404D004C46A5 /* UIImage+JKWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */; };
+		2279530E2680404D004C46A5 /* UIImage+JKWaterMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2282CBD026E097AD004C96CA /* UIImage+JKWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */; };
 		A202D9801B0F7CD100EAB199 /* CLLocationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D97E1B0F7CD100EAB199 /* CLLocationDemoViewController.m */; };
 		A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D97F1B0F7CD100EAB199 /* CLLocationDemoViewController.xib */; };
 		A202D98C1B0F7D7900EAB199 /* MKMapViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D98A1B0F7D7900EAB199 /* MKMapViewDemoViewController.m */; };
@@ -313,7 +313,6 @@
 		B810252F206A106A0099CDA8 /* NSTimer+JKAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2E61A3E9F48005C4AC6 /* NSTimer+JKAddition.m */; };
 		B8102530206A106D0099CDA8 /* NSTimer+JKBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = A28BE35A1A3EAA97005C4AC6 /* NSTimer+JKBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8102531206A106D0099CDA8 /* NSTimer+JKAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = A28BE2E51A3E9F48005C4AC6 /* NSTimer+JKAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8102532206A108A0099CDA8 /* UIPopoverController+iPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = A29EC2661B527A19008ABB42 /* UIPopoverController+iPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8102533206A108A0099CDA8 /* UIFont+JKDynamicFontControl.h in Headers */ = {isa = PBXBuildFile; fileRef = A27E931C1B381D930010C7EA /* UIFont+JKDynamicFontControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8102534206A108A0099CDA8 /* UIFont+JKTTF.h in Headers */ = {isa = PBXBuildFile; fileRef = A27E93191B381D210010C7EA /* UIFont+JKTTF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8102535206A108A0099CDA8 /* UIFont+JKCustomLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = A27E93161B381CE40010C7EA /* UIFont+JKCustomLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -327,7 +326,6 @@
 		B810253E206A108A0099CDA8 /* UIBarButtonItem+JKBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C8D1371DED106F0069354F /* UIBarButtonItem+JKBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B810253F206A108A0099CDA8 /* UIBarButtonItem+JKAction.h in Headers */ = {isa = PBXBuildFile; fileRef = A202D9691B0F6FA400EAB199 /* UIBarButtonItem+JKAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8102540206A108A0099CDA8 /* UIScreen+JKFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = A21F34BF1B0F229700D73A91 /* UIScreen+JKFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8102541206A10940099CDA8 /* UIPopoverController+iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A29EC2671B527A19008ABB42 /* UIPopoverController+iPhone.m */; };
 		B8102542206A10940099CDA8 /* UIFont+JKDynamicFontControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A27E931D1B381D930010C7EA /* UIFont+JKDynamicFontControl.m */; };
 		B8102543206A10940099CDA8 /* UIFont+JKTTF.m in Sources */ = {isa = PBXBuildFile; fileRef = A27E931A1B381D210010C7EA /* UIFont+JKTTF.m */; };
 		B8102544206A10940099CDA8 /* UIFont+JKCustomLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A27E93171B381CE40010C7EA /* UIFont+JKCustomLoader.m */; };
@@ -1045,8 +1043,6 @@
 		A2958D321B359CA900D7AA0F /* UIImageView+JKReflect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKReflect.m"; sourceTree = "<group>"; };
 		A2958D371B35A08000D7AA0F /* UIImage+JKVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKVector.h"; sourceTree = "<group>"; };
 		A2958D381B35A08000D7AA0F /* UIImage+JKVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKVector.m"; sourceTree = "<group>"; };
-		A29EC2661B527A19008ABB42 /* UIPopoverController+iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopoverController+iPhone.h"; sourceTree = "<group>"; };
-		A29EC2671B527A19008ABB42 /* UIPopoverController+iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverController+iPhone.m"; sourceTree = "<group>"; };
 		A2AAA1ED1B0F1DCE004A3231 /* NSString+JKSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKSize.h"; sourceTree = "<group>"; };
 		A2AAA1EE1B0F1DCE004A3231 /* NSString+JKSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKSize.m"; sourceTree = "<group>"; };
 		A2AB1A621B381E3900ED88AF /* UIFontDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFontDemoViewController.h; sourceTree = "<group>"; };
@@ -1573,12 +1569,12 @@
 		A22725D01A3E72D50061605B /* JKCategories */ = {
 			isa = PBXGroup;
 			children = (
+				A22104681CFBE29200CE6547 /* JKCategories.h */,
 				A2EA48EE1B34FBB400A4B66F /* QuartzCore */,
 				A22725F11A3E736D0061605B /* Foundation */,
 				A22725F21A3E736D0061605B /* UIKit */,
 				A202D9821B0F7D1400EAB199 /* MapKit */,
 				A202D9761B0F7BE100EAB199 /* CoreLocation */,
-				A22104681CFBE29200CE6547 /* JKCategories.h */,
 			);
 			path = JKCategories;
 			sourceTree = "<group>";
@@ -1618,7 +1614,6 @@
 			isa = PBXGroup;
 			children = (
 				B8C46B57216F11B200EC7F15 /* JKUIKit.h */,
-				A29EC2621B5279EC008ABB42 /* UIPopoverController */,
 				A27E93151B381CBA0010C7EA /* UIFont */,
 				A202D9AF1B10336500EAB199 /* UIApplication */,
 				A202D9951B0F914D00EAB199 /* UIControl */,
@@ -2713,15 +2708,6 @@
 			path = CATransaction;
 			sourceTree = "<group>";
 		};
-		A29EC2621B5279EC008ABB42 /* UIPopoverController */ = {
-			isa = PBXGroup;
-			children = (
-				A29EC2661B527A19008ABB42 /* UIPopoverController+iPhone.h */,
-				A29EC2671B527A19008ABB42 /* UIPopoverController+iPhone.m */,
-			);
-			path = UIPopoverController;
-			sourceTree = "<group>";
-		};
 		A2C97D811C96575400614B98 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -3026,7 +3012,6 @@
 				B810260E206A118A0099CDA8 /* UIViewController+JKVisible.h in Headers */,
 				B81024C8206A0FFD0099CDA8 /* NSURL+JKParam.h in Headers */,
 				B81024CB206A0FFE0099CDA8 /* NSDate+JKUtilities.h in Headers */,
-				2216E758260AECA700375CC4 /* NSString+HexConversion.h in Headers */,
 				B8102514206A104F0099CDA8 /* NSString+JKContains.h in Headers */,
 				B8102589206A10E70099CDA8 /* UITextField+JKHistory.h in Headers */,
 				B81025BF206A11350099CDA8 /* UIImage+JKBetterFace.h in Headers */,
@@ -3038,7 +3023,6 @@
 				B810263F206A120C0099CDA8 /* NSObject+JKEasyCopy.h in Headers */,
 				B8102648206A120C0099CDA8 /* NSObject+JKKVOBlocks.h in Headers */,
 				B81024F6206A102C0099CDA8 /* NSDictionary+JKXML.h in Headers */,
-				2216E762260B017100375CC4 /* NSString+JKSafe.h in Headers */,
 				B8102533206A108A0099CDA8 /* UIFont+JKDynamicFontControl.h in Headers */,
 				B8102493206A0F890099CDA8 /* CAAnimation+JKEasingEquations.h in Headers */,
 				B81025C6206A11350099CDA8 /* UIImage+JKRoundedCorner.h in Headers */,
@@ -3070,17 +3054,14 @@
 				B810250C206A104F0099CDA8 /* NSString+JKEmoji.h in Headers */,
 				B81024EF206A102C0099CDA8 /* NSData+JKAPNSToken.h in Headers */,
 				B8102535206A108A0099CDA8 /* UIFont+JKCustomLoader.h in Headers */,
-				221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */,
 				B810251A206A104F0099CDA8 /* NSString+JKHTML.h in Headers */,
 				B8102534206A108A0099CDA8 /* UIFont+JKTTF.h in Headers */,
 				B81025EF206A11650099CDA8 /* UIView+JKNib.h in Headers */,
-				2279530E2680404D004C46A5 /* UIImage+JKWaterMark.h in Headers */,
 				B81025D1206A11350099CDA8 /* UILabel+JKAutomaticWriting.h in Headers */,
 				B8102508206A104F0099CDA8 /* NSString+JKPinyin.h in Headers */,
 				B810250A206A104F0099CDA8 /* NSString+JKRemoveEmoji.h in Headers */,
 				B81024B2206A0FD00099CDA8 /* NSNumber+JKRound.h in Headers */,
 				B8102512206A104F0099CDA8 /* NSString+JKEncrypt.h in Headers */,
-				B8102532206A108A0099CDA8 /* UIPopoverController+iPhone.h in Headers */,
 				B8102515206A104F0099CDA8 /* NSString+JKMIME.h in Headers */,
 				B81025A5206A110F0099CDA8 /* UIImageView+JKReflect.h in Headers */,
 				B81025AE206A110F0099CDA8 /* UIColor+JKWeb.h in Headers */,
@@ -3091,11 +3072,15 @@
 				B81025C0206A11350099CDA8 /* UIImage+JKFileName.h in Headers */,
 				B81025F6206A11650099CDA8 /* UIView+JKDraggable.h in Headers */,
 				B8C46B52216F119A00EC7F15 /* JKQuartzCore.h in Headers */,
+				2216E758260AECA700375CC4 /* NSString+HexConversion.h in Headers */,
+				2216E762260B017100375CC4 /* NSString+JKSafe.h in Headers */,
+				221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */,
 				B8C46B58216F11B200EC7F15 /* JKUIKit.h in Headers */,
 				B8C46B5A216F11BA00EC7F15 /* JKMapKit.h in Headers */,
 				B8C46B56216F11AA00EC7F15 /* JKFoundation.h in Headers */,
 				B8C46B5C216F11C000EC7F15 /* JKCoreLocation.h in Headers */,
 				B81025C3206A11350099CDA8 /* UIImage+JKColor.h in Headers */,
+				2279530E2680404D004C46A5 /* UIImage+JKWaterMark.h in Headers */,
 				B81024E9206A102C0099CDA8 /* NSData+JKHash.h in Headers */,
 				B8102628206A119F0099CDA8 /* MKMapView+JKZoomLevel.h in Headers */,
 				B81024E8206A102C0099CDA8 /* NSBundle+JKAppIcon.h in Headers */,
@@ -3369,6 +3354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2282CBD026E097AD004C96CA /* UIImage+JKWaterMark.m in Sources */,
 				B8102576206A10C70099CDA8 /* UISearchBar+JKBlocks.m in Sources */,
 				2216E759260AECA700375CC4 /* NSString+HexConversion.m in Sources */,
 				B8102524206A10660099CDA8 /* NSString+JKScore.m in Sources */,
@@ -3383,7 +3369,6 @@
 				B810251F206A10660099CDA8 /* NSString+JKEmoji.m in Sources */,
 				B810252D206A10660099CDA8 /* NSString+JKHTML.m in Sources */,
 				B81025F9206A11720099CDA8 /* UINavigationController+JKKeyboardFix.m in Sources */,
-				2279530F2680404D004C46A5 /* UIImage+JKWaterMark.m in Sources */,
 				B8102522206A10660099CDA8 /* NSString+JKHash.m in Sources */,
 				B81024FC206A10390099CDA8 /* NSData+JKEncrypt.m in Sources */,
 				B8102525206A10660099CDA8 /* NSString+JKEncrypt.m in Sources */,
@@ -3398,7 +3383,6 @@
 				B810265D206A12160099CDA8 /* NSObject+JKBlockTimer.m in Sources */,
 				B8102491206A0F800099CDA8 /* CAShapeLayer+JKUIBezierPath.m in Sources */,
 				B810257A206A10C70099CDA8 /* UIBezierPath+JKSymbol.m in Sources */,
-				B8102541206A10940099CDA8 /* UIPopoverController+iPhone.m in Sources */,
 				B81024B7206A0FDD0099CDA8 /* NSInvocation+JKBlock.m in Sources */,
 				B8102527206A10660099CDA8 /* NSString+JKContains.m in Sources */,
 				B8102607206A11720099CDA8 /* UIView+JKVisuals.m in Sources */,

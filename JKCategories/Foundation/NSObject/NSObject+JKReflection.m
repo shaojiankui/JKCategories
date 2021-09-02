@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 
 @implementation NSObject (JKReflection)
+
 - (NSString *)jk_className
 {
     return NSStringFromClass([self class]);
@@ -61,13 +62,8 @@
 {
     return [[self class] jk_propertiesInfo];
 }
-/**
- *  @author Jakey, 15-12-22 11:12:38
- *
- *  属性列表与属性的各种信息
- *
- *  @return <#return value description#>
- */
+
+/// 属性列表与属性的各种信息
 + (NSArray *)jk_propertiesInfo
 {
     NSMutableArray *propertieArray = [NSMutableArray array];

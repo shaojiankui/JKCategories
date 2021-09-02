@@ -1,5 +1,5 @@
 
-//https://github.com/bitbasenyc/nsdata-zlib
+// 404 page: <https://github.com/bitbasenyc/nsdata-zlib>
 @interface NSData (JKzlib)
 
 /**

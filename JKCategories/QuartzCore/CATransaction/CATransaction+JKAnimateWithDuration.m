@@ -10,7 +10,7 @@
 
 @implementation CATransaction (JKAnimateWithDuration)
 
-+(void)jk_animateWithDuration:(NSTimeInterval)duration
++ (void)jk_animateWithDuration:(NSTimeInterval)duration
                    animations:(void (^)(void))animations
                    completion:(void (^)(void))completion
 {

@@ -51,7 +51,6 @@ static NSDictionary * jk_s_cheatCodesToUnicode = nil;
                                  @"😓": @":sweat:",
                                  @"😩": @":weary:",
                                  @"😔": @":pensive:",
-                                 @"😞": @":dissapointed:",
                                  @"😖": @":confounded:",
                                  @"😨": @":fearful:",
                                  @"😰": @":cold_sweat:",

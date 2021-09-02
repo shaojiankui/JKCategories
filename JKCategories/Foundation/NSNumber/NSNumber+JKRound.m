@@ -11,6 +11,7 @@
 @implementation NSNumber (JKRound)
 
 #pragma mark - Display
+
 - (NSString*)jk_toDisplayNumberWithDigit:(NSInteger)digit
 {
     NSString *result = nil;

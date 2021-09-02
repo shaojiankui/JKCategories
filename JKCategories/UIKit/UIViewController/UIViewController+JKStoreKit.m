@@ -7,26 +7,16 @@
 //
 
 #import "UIViewController+JKStoreKit.h"
-
 #import <objc/runtime.h>
-
 #import <StoreKit/StoreKit.h>
 
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Constants
-
-NSString* const jk_affiliateTokenKey = @"at";
-NSString* const jk_campaignTokenKey = @"ct";
-NSString* const jk_iTunesAppleString = @"itunes.apple.com";
-
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Interface
+static NSString * const kAffiliateTokenKey = @"at";
+static NSString * const kCampaignTokenKey = @"ct";
+static NSString * const KiTunesAppleString = @"itunes.apple.com";
 
 @interface UIViewController (SKStoreProductViewControllerDelegate) <SKStoreProductViewControllerDelegate>
-
 @end
 
-////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Implementation
 
 @implementation UIViewController (JKStoreKit)
@@ -40,8 +30,8 @@ NSString* const jk_iTunesAppleString = @"itunes.apple.com";
 
     NSDictionary* parameters = @{
         SKStoreProductParameterITunesItemIdentifier : @(itemIdentifier),
-        jk_affiliateTokenKey : jk_affiliateTokenKey,
-        jk_campaignTokenKey : campaignToken,
+        kAffiliateTokenKey : kAffiliateTokenKey,
+        kCampaignTokenKey : campaignToken,
     };
 
     if (self.jk_loadingStoreKitItemBlock) {
@@ -114,7 +104,7 @@ NSString* const jk_iTunesAppleString = @"itunes.apple.com";
 
 + (BOOL)jk_containsITunesURLString:(NSString*)URLString
 {
-    return ([URLString rangeOfString:jk_iTunesAppleString].location != NSNotFound);
+    return ([URLString rangeOfString:KiTunesAppleString].location != NSNotFound);
 }
 
 + (NSInteger)jk_IDFromITunesURL:(NSString*)URLString

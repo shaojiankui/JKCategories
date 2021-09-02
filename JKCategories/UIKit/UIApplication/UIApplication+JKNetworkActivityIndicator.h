@@ -4,6 +4,7 @@
 //
 //  Created by Matt Zanchelli on 1/10/14.
 //  Copyright (c) 2014 Matt Zanchelli. All rights reserved.
+//
 //  https://github.com/mdznr/NetworkActivityIndicator
 
 #import <UIKit/UIKit.h>

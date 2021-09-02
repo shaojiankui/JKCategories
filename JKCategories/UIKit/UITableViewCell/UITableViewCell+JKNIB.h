@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UITableViewCell (JKNIB)
-/**
- *  @brief  加载同类名的nib
- *
- *  @return nib
- */
-+(UINib*)jk_nib;
+
+/// 加载同类名的 XIB 文件
++ (UINib *)jk_nib;
+
 @end

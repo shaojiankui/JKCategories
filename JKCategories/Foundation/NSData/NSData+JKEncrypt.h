@@ -5,7 +5,7 @@
 //  Created by Jakey on 14/12/15.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
 //
-// 加密解密工具 http://tool.chacuo.net/cryptdes
+//  加密解密工具 http://tool.chacuo.net/cryptdes
 
 #import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonCryptor.h>

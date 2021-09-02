@@ -5,7 +5,7 @@
 //  Created by Jakey on 14/12/30.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
 //
-// https://github.com/erica/NSDate-Extensions
+//  https://github.com/erica/NSDate-Extensions
 
 #import <Foundation/Foundation.h>
 

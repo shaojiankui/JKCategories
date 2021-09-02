@@ -12,7 +12,7 @@
 
 @implementation NSString (HexConversion)
 
--(NSInteger)hexValue {
+- (NSInteger)hexValue {
     CFStringRef cfSelf = (__bridge CFStringRef)self;
     UInt8 buffer[64];
     const char *cptr;

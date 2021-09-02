@@ -5,6 +5,7 @@
 //  Created by Jakey on 16/5/29.
 //  Copyright © 2016年 www.skyfox.org. All rights reserved.
 //
+
 #if __has_include(<JKCategories/JKUIKit.h>)
 #import <JKCategories/UIApplication+JKApplicationSize.h>
 #import <JKCategories/UIApplication+JKKeyboardFrame.h>
@@ -69,7 +70,6 @@
 #import <JKCategories/UINavigationController+JKTransitions.h>
 #import <JKCategories/UINavigationItem+JKLoading.h>
 #import <JKCategories/UINavigationItem+JKLock.h>
-#import <JKCategories/UIPopoverController+iPhone.h>
 #import <JKCategories/UIResponder+JKChain.h>
 #import <JKCategories/UIResponder+JKFirstResponder.h>
 #import <JKCategories/UIScreen+JKFrame.h>
@@ -172,7 +172,6 @@
 #import "UINavigationController+JKTransitions.h"
 #import "UINavigationItem+JKLoading.h"
 #import "UINavigationItem+JKLock.h"
-#import "UIPopoverController+iPhone.h"
 #import "UIResponder+JKChain.h"
 #import "UIResponder+JKFirstResponder.h"
 #import "UIScreen+JKFrame.h"

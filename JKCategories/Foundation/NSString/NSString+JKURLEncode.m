@@ -26,10 +26,9 @@
  *  @return urlEncode 后的字符串
  */
 - (NSString *)jk_urlEncodeUsingEncoding:(NSStringEncoding)encoding {
-    return (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,
-                (__bridge CFStringRef)self,NULL,(CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ",
-                 CFStringConvertNSStringEncodingToEncoding(encoding));
+    return [self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 }
+
 /**
  *  @brief  urlDecode
  *
@@ -38,6 +37,7 @@
 - (NSString *)jk_urlDecode {
     return [self jk_urlDecodeUsingEncoding:NSUTF8StringEncoding];
 }
+
 /**
  *  @brief  urlDecode
  *
@@ -46,21 +46,20 @@
  *  @return urlDecode 后的字符串
  */
 - (NSString *)jk_urlDecodeUsingEncoding:(NSStringEncoding)encoding {
-	return (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
-             (__bridge CFStringRef)self,CFSTR(""),CFStringConvertNSStringEncodingToEncoding(encoding));
+    return [self stringByRemovingPercentEncoding];
 }
+
 /**
- *  @brief  url query转成NSDictionary
+ *  @brief  url query 转成 NSDictionary
  *
  *  @return NSDictionary
  */
-- (NSDictionary *)jk_dictionaryFromURLParameters
-{
+- (NSDictionary *)jk_dictionaryFromURLParameters {
     NSArray *pairs = [self componentsSeparatedByString:@"&"];
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     for (NSString *pair in pairs) {
         NSArray *kv = [pair componentsSeparatedByString:@"="];
-        NSString *val = [[kv objectAtIndex:1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSString *val = [[kv objectAtIndex:1] stringByRemovingPercentEncoding];
         [params setObject:val forKey:[kv objectAtIndex:0]];
     }
     return params;

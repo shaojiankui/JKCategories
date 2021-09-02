@@ -5,9 +5,12 @@
 //  Created by Jakey on 15/8/7.
 //  Copyright © 2015年 www.skyfox.org. All rights reserved.
 //
-//  https://github.com/ishkawa/NSRunLoop-PerformBlock
 
-/* 使用
+/**
+ Reference:<https://github.com/ishkawa/NSRunLoop-PerformBlock>
+ 
+ Example:
+ 
 - (void)testPerformBlockAndWait
 {
     // 1

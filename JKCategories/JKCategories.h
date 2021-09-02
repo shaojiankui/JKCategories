@@ -7,7 +7,6 @@
 //
 #import <UIKit/UIKit.h>
 
-
 #if __has_include(<JKCategories/JKCategories.h>)
 FOUNDATION_EXPORT double JKCategoriesVersionNumber;
 //! Project version string for JKCategories.

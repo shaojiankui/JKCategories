@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSString (HexConversion)
 
 // 将字符串转换为十六进制数
--(NSInteger)hexValue;
+- (NSInteger)hexValue;
 
 @end
 

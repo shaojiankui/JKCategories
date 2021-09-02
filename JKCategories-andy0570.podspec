@@ -1,8 +1,6 @@
-version = "1.9.3";
-
 Pod::Spec.new do |s|
-  s.name         = "JKCategories"
-  s.version      = version
+  s.name         = "JKCategories-andy0570"
+  s.version      = "1.9.4"
   s.summary      = "JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks"
   s.description      = <<-DESC
                         JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
@@ -10,29 +8,22 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/shaojiankui/JKCategories"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "skyfox" => "i@skyfox.org" }
-  s.platform     = :ios, "7.0"
-  s.ios.deployment_target = "7.0"
+  s.platform     = :ios, "9.0"
+  s.ios.deployment_target = "9.0"
   s.requires_arc = true
-  #s.frameworks = 'Foundation', 'UIKit', 'CoreData', 'QuartzCore', 'CoreLocation', 'MapKit','Security'
   s.libraries    = "z"
-  s.source       = { :git => "https://github.com/shaojiankui/JKCategories.git", :tag => "#{version}" }
 
-#  s.source_files = "JKCategories", "JKCategories/*.{h}","JKCategories/**/*.{h,m}"
-  #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.public_header_files = 'JKCategories/JKCategories.h'
+  s.source       = { :git => "https://github.com/Andy0570/JKCategories.git", :tag => s.version.to_s }
+  # s.source_files = "JKCategories", "JKCategories/*.{h}","JKCategories/**/*.{h,m}"
+  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.source_files = 'JKCategories/JKCategories.h'
-
-
+  s.public_header_files = 'JKCategories/JKCategories.h'
   
-  
-  #Foundation
   s.subspec 'Foundation' do |foundation|
-#      foundation.source_files = 'JKCategories/Foundation/**/*.{h,m}'
-#      foundation.source_files = 'JKCategories/Foundation/**/*.{h,m}'
       foundation.public_header_files = 'JKCategories/Foundation/JKFoundation.h'
       foundation.source_files = 'JKCategories/Foundation/JKFoundation.h'
       foundation.frameworks = 'Foundation','Security'
-      #三级
+
       foundation.subspec 'NSArray' do |array|
           array.source_files = 'JKCategories/Foundation/NSArray/*.{h,m}'
       end
@@ -105,14 +96,11 @@ Pod::Spec.new do |s|
       end
   end
   
-  #UIKit
   s.subspec 'UIKit' do |uikit|
-      # uikit.source_files = 'JKCategories/UIKit/**/*.{h,m}'
       uikit.public_header_files = 'JKCategories/UIKit/JKUIKit.h'
       uikit.source_files = 'JKCategories/UIKit/JKUIKit.h'
       uikit.frameworks = 'UIKit'
 
-      
       uikit.subspec 'UIApplication' do |application|
           application.source_files = 'JKCategories/UIKit/UIApplication/*.{h,m}'
       end
@@ -155,9 +143,6 @@ Pod::Spec.new do |s|
       uikit.subspec 'UINavigationItem' do |navigationitem|
           navigationitem.source_files = 'JKCategories/UIKit/UINavigationItem/*.{h,m}'
       end
-      uikit.subspec 'UIPopoverController' do |popovercontrolller|
-          popovercontrolller.source_files = 'JKCategories/UIKit/UIPopoverController/*.{h,m}'
-      end
       uikit.subspec 'UIResponder' do |responder|
           responder.source_files = 'JKCategories/UIKit/UIResponder/*.{h,m}'
       end
@@ -196,9 +181,7 @@ Pod::Spec.new do |s|
       end
   end
 
-  #QuartzCore
   s.subspec 'QuartzCore' do |quartzcore|
-      # quartzcore.source_files = 'JKCategories/QuartzCore/**/*.{h,m}'
       quartzcore.public_header_files = 'JKCategories/QuartzCore/JKQuartzCore.h'
       quartzcore.source_files = 'JKCategories/QuartzCore/JKQuartzCore.h'
       quartzcore.frameworks = 'QuartzCore','UIKit'
@@ -220,9 +203,7 @@ Pod::Spec.new do |s|
       end
   end
   
-  #MapKit
   s.subspec 'MapKit' do |mapkit|
-      # mapkit.source_files = 'JKCategories/MapKit/**/*.{h,m}'
       mapkit.public_header_files = 'JKCategories/MapKit/JKMapKit.h'
       mapkit.source_files = 'JKCategories/MapKit/JKMapKit.h'
       mapkit.frameworks = 'MapKit'
@@ -232,9 +213,7 @@ Pod::Spec.new do |s|
       end
   end
   
-  #CoreLocation
   s.subspec 'CoreLocation' do |corelocation|
-#      corelocation.source_files = 'JKCategories/CoreLocation/**/*.{h,m}'
       corelocation.public_header_files = 'JKCategories/CoreLocation/JKCoreLocation.h'
       corelocation.source_files = 'JKCategories/CoreLocation/JKCoreLocation.h'
       corelocation.frameworks = 'CoreLocation'
@@ -243,26 +222,5 @@ Pod::Spec.new do |s|
           location.source_files = 'JKCategories/CoreLocation/CLLocation/*.{h,m}'
       end
   end
-  
-  #CoreData
-  s.subspec 'CoreData' do |coredata|
-      # coredata.source_files = 'JKCategories/CoreData/**/*.{h,m}'
-      coredata.public_header_files = 'JKCategories/CoreData/JKCoreData.h'
-      coredata.source_files = 'JKCategories/CoreData/JKCoreData.h'
-      coredata.frameworks = 'CoreData'
 
-      coredata.subspec 'NSFetchRequest' do |fecthrequest|
-          fecthrequest.source_files = 'JKCategories/CoreData/NSFetchRequest/*.{h,m}'
-      end
-      coredata.subspec 'NSManagedObject' do |managerobject|
-          managerobject.source_files = 'JKCategories/CoreData/NSManagedObject/*.{h,m}'
-          managerobject.dependency 'JKCategories/CoreData/NSManagedObjectContext'
-      end
-      coredata.subspec 'NSManagedObjectContext' do |managerobjectcontext|
-          managerobjectcontext.source_files = 'JKCategories/CoreData/NSManagedObjectContext/*.{h,m}'
-          managerobjectcontext.dependency 'JKCategories/CoreData/NSFetchRequest'
-
-      end
-  end
-  
 end

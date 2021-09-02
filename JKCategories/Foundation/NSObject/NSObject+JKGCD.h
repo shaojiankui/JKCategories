@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+
 @interface NSObject (JKGCD)
+
 /**
  *  @brief  异步执行代码块
  *
@@ -29,4 +31,5 @@
  *  @param block   代码块
  */
 - (void)jk_performAfter:(NSTimeInterval)seconds block:(void(^)(void))block;
+
 @end

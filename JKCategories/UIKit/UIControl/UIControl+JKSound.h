@@ -4,8 +4,10 @@
 //
 //  Created by Fred Showell on 6/01/13.
 //  Copyright (c) 2013 Fred Showell. All rights reserved.
-// https://github.com/scopegate/octave
+//
+//  https://github.com/scopegate/octave
 //  Octave: A free library of UI sounds, handmade for iOS http://raisedbeaches.com/octave
+
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 

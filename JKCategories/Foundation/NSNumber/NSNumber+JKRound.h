@@ -10,7 +10,7 @@
 
 @interface NSNumber (JKRound)
 
-/* 展示 */
+/// 展示
 - (NSString*)jk_toDisplayNumberWithDigit:(NSInteger)digit;
 - (NSString*)jk_toDisplayPercentageWithDigit:(NSInteger)digit;
 
