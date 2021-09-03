@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JKCategories-andy0570"
-  s.version      = "1.9.4"
+  s.version      = "2.0.0"
   s.summary      = "JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks"
   s.description      = <<-DESC
                         JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
@@ -14,8 +14,6 @@ Pod::Spec.new do |s|
   s.libraries    = "z"
 
   s.source       = { :git => "https://github.com/Andy0570/JKCategories.git", :tag => s.version.to_s }
-  # s.source_files = "JKCategories", "JKCategories/*.{h}","JKCategories/**/*.{h,m}"
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.source_files = 'JKCategories/JKCategories.h'
   s.public_header_files = 'JKCategories/JKCategories.h'
   
