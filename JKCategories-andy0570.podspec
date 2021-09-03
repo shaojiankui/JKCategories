@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JKCategories-andy0570"
-  s.version      = "2.0.0"
+  s.version      = "2.0.1"
   s.summary      = "JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks"
   s.description      = <<-DESC
                         JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
@@ -10,13 +10,14 @@ Pod::Spec.new do |s|
   s.author       = { "skyfox" => "i@skyfox.org" }
   s.platform     = :ios, "9.0"
   s.ios.deployment_target = "9.0"
-  s.requires_arc = true
-  s.libraries    = "z"
-
   s.source       = { :git => "https://github.com/Andy0570/JKCategories.git", :tag => s.version.to_s }
+
+  s.requires_arc = true
   s.source_files = 'JKCategories/JKCategories.h'
   s.public_header_files = 'JKCategories/JKCategories.h'
   
+  s.libraries    = "z"
+
   s.subspec 'Foundation' do |foundation|
       foundation.public_header_files = 'JKCategories/Foundation/JKFoundation.h'
       foundation.source_files = 'JKCategories/Foundation/JKFoundation.h'
@@ -75,7 +76,7 @@ Pod::Spec.new do |s|
       end
       foundation.subspec 'NSString' do |string|
           string.source_files = 'JKCategories/Foundation/NSString/*.{h,m}'
-          string.dependency 'JKCategories/Foundation/NSData'
+          string.dependency 'JKCategories-andy0570/Foundation/NSData'
       end
       foundation.subspec 'NSTimer' do |timer|
           timer.source_files = 'JKCategories/Foundation/NSTimer/*.{h,m}'
