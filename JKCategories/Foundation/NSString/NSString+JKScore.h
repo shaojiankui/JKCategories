@@ -4,6 +4,7 @@
 //  Created by Nicholas Bruning on 5/12/11.
 //  Copyright (c) 2011 Involved Pty Ltd. All rights reserved.
 //
+//  Reference: http://jsfiddle.net/JrLVD/
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>

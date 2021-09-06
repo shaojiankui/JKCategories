@@ -10,20 +10,13 @@
 #define JK_ASSOCIATIVE_CURRENT_TEXT_KEY @"ASSOCIATIVE_CURRENT_TEXT_KEY"
 
 @interface NSString () <NSXMLParserDelegate>
-
 @property(nonatomic, retain)NSMutableArray *currentDictionaries;
 @property(nonatomic, retain)NSMutableString *currentText;
-
-
 @end
 
 @implementation NSString (JKXMLDictionary)
-/**
- *  @brief  xml字符串转换成NSDictionary
- *
- *  @return NSDictionary
- */
--(NSDictionary *)jk_XMLDictionary
+
+- (NSDictionary *)jk_XMLDictionary
 {
     //TURN THE STRING INTO DATA
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];

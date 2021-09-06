@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    self.textField.jk_maxLength =  20;
+    
+    self.textField.jk_maxLength =  10;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -5,7 +5,7 @@
 //  Created by croath on 11/11/13.
 //  Copyright (c) 2013 Snowball. All rights reserved.
 //
-//  https://github.com/croath/NSString-Pinyin
+//  Reference: https://github.com/croath/NSString-Pinyin
 
 #import <Foundation/Foundation.h>
 

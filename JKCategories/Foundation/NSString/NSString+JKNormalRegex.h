@@ -4,8 +4,8 @@
 //
 //  Created by KevinHM on 15/6/24.
 //  Copyright (c) 2015年 KevinHM. All rights reserved.
-//   https://github.com/KevinHM
 //
+//  Reference: https://github.com/KevinHM
 
 #import <Foundation/Foundation.h>
 /**

@@ -5,8 +5,6 @@
 //  Copyright (c) 2011 Involved Pty Ltd. All rights reserved.
 //
 
-//score reference: http://jsfiddle.net/JrLVD/
-
 #import "NSString+JKScore.h"
 
 @implementation NSString (JKScore)

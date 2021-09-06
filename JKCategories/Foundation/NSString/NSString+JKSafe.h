@@ -5,7 +5,7 @@
 //  Created by Qilin Hu on 2021/3/24.
 //  Copyright © 2021 www.skyfox.org. All rights reserved.
 //
-//  Reference:<https://github.com/Anonymous-Monk/MSCrashProtector>
+//  Reference: https://github.com/Anonymous-Monk/MSCrashProtector
 
 #import <Foundation/Foundation.h>
 
