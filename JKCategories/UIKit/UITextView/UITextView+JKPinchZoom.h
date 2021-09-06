@@ -7,8 +7,8 @@
 //
 
 /**
+ Reference: <https://github.com/cfr/UITextView-PinchZoom>
  为 UITextView 添加捏合缩放功能。
- More info: : https://github.com/cfr/UITextView-PinchZoom
  
  Sample Code:
  

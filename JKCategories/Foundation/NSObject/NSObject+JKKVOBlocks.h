@@ -27,20 +27,22 @@
 
 
 /*
-UIViewController *observer = self;
-if (self.observersOn) {
-    // This is where the magic happens
-    [self.user jk_addObserver:observer forKeyPath:@"email" options:0 context:nil withBlock:^(NSDictionary *change, void *context) {
-        NSLog(@"Changed email");
-    }];
-    
-    [self.user jk_addObserver:observer forKeyPath:@"username" options:0 context:nil withBlock:^(NSDictionary *change, void *context) {
-        NSLog(@"Changed username");
-    }];
-} else {
-    [self.user jk_removeBlockObserver:observer forKeyPath:@"username"];
-    [self.user jk_removeBlockObserver:observer forKeyPath:@"email"];
-}
+ Example Code:
+ 
+     UIViewController *observer = self;
+     if (self.observersOn) {
+         // This is where the magic happens
+         [self.user jk_addObserver:observer forKeyPath:@"email" options:0 context:nil withBlock:^(NSDictionary *change, void *context) {
+             NSLog(@"Changed email");
+         }];
+         
+         [self.user jk_addObserver:observer forKeyPath:@"username" options:0 context:nil withBlock:^(NSDictionary *change, void *context) {
+             NSLog(@"Changed username");
+         }];
+     } else {
+         [self.user jk_removeBlockObserver:observer forKeyPath:@"username"];
+         [self.user jk_removeBlockObserver:observer forKeyPath:@"email"];
+     }
  */
 
 

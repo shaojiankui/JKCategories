@@ -3,8 +3,11 @@
 //  JKCategories (https://github.com/shaojiankui/JKCategories)
 //
 //  Copyright (C) 2013 by Christopher Meyer
-//  http://schwiiz.org/
 //
+
+/**
+ Reference:<http://schwiiz.org/>
+ */
 
 #import <Foundation/Foundation.h>
 

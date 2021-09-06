@@ -5,9 +5,11 @@
 //  Created by David Keegan on 8/7/13.
 //  Copyright (c) 2013 David Keegan All rights reserved.
 //
-//  https://github.com/kgn/UIImage-Vector
-//  UIImage category for dealing with vector formats like PDF and icon fonts.
 
+/**
+ Reference: <https://github.com/kgn/UIImage-Vector>
+ UIImage category for dealing with vector formats like PDF and icon fonts.
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIImage(JKVector)

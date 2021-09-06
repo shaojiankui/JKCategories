@@ -29,7 +29,6 @@
     } else {
         return (0x2100 <= high && high <= 0x27bf);
     }
-    //
 }
 
 + (NSString *)jk_allSystemEmoji {

@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (JKAppInfo)
+
 -(NSString *)jk_version;
 -(NSInteger)jk_build;
 -(NSString *)jk_identifier;
 -(NSString *)jk_currentLanguage;
 -(NSString *)jk_deviceModel;
+
 @end

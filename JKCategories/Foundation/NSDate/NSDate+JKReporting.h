@@ -6,6 +6,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 @interface NSDate (JKReporting)
 
 // Return a date with a specified year, month and day.  00:00:00

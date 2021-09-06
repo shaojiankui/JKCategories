@@ -20,11 +20,11 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-//
-//  Reference:
-//  <https://github.com/floschliep/NSURLSession-SynchronousTask>
-//  为 NSURLSession 添加类似 NSURLConnection 的同步任务。
 
+/**
+ Reference: <https://github.com/floschliep/NSURLSession-SynchronousTask>
+ 为 NSURLSession 添加类似 NSURLConnection 的同步任务。
+ */
 #import <Foundation/Foundation.h>
 
 @interface NSURLSession (JKSynchronousTask)

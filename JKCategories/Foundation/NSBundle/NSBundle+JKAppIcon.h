@@ -13,4 +13,6 @@
 - (NSString *)jk_appIconPath;
 - (UIImage *)jk_appIcon;
 
++ (NSString *)jk_localizableLanguageKey;
+
 @end

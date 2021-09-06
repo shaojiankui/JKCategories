@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JKCategories-andy0570"
-  s.version      = "2.0.3"
+  s.version      = "2.0.4"
   s.summary      = "JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks"
   s.description      = <<-DESC
                         JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.

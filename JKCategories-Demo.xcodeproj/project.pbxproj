@@ -27,6 +27,10 @@
 		2216E763260B017100375CC4 /* NSString+JKSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E761260B017100375CC4 /* NSString+JKSafe.m */; };
 		221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221A8EC1260DECA900515746 /* NSDictionary+RemoveNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */; };
+		222C56B826E6256200A79D99 /* UIColor+JKDarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 222C56B626E6256200A79D99 /* UIColor+JKDarkMode.h */; };
+		222C56B926E6256200A79D99 /* UIColor+JKDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C56B726E6256200A79D99 /* UIColor+JKDarkMode.m */; };
+		222C56BC26E6291200A79D99 /* UIImage+JKDarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 222C56BA26E6291200A79D99 /* UIImage+JKDarkMode.h */; };
+		222C56BD26E6291200A79D99 /* UIImage+JKDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C56BB26E6291200A79D99 /* UIImage+JKDarkMode.m */; };
 		2279530E2680404D004C46A5 /* UIImage+JKWaterMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2282CBD026E097AD004C96CA /* UIImage+JKWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */; };
 		A202D9801B0F7CD100EAB199 /* CLLocationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D97E1B0F7CD100EAB199 /* CLLocationDemoViewController.m */; };
@@ -583,6 +587,10 @@
 		2216E761260B017100375CC4 /* NSString+JKSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKSafe.m"; sourceTree = "<group>"; };
 		221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RemoveNullValue.h"; sourceTree = "<group>"; };
 		221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RemoveNullValue.m"; sourceTree = "<group>"; };
+		222C56B626E6256200A79D99 /* UIColor+JKDarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKDarkMode.h"; sourceTree = "<group>"; };
+		222C56B726E6256200A79D99 /* UIColor+JKDarkMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKDarkMode.m"; sourceTree = "<group>"; };
+		222C56BA26E6291200A79D99 /* UIImage+JKDarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKDarkMode.h"; sourceTree = "<group>"; };
+		222C56BB26E6291200A79D99 /* UIImage+JKDarkMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKDarkMode.m"; sourceTree = "<group>"; };
 		2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKWaterMark.h"; sourceTree = "<group>"; };
 		2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKWaterMark.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+JKNormalRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKNormalRegex.h"; sourceTree = "<group>"; };
@@ -2408,6 +2416,8 @@
 				A218D8D61A479E9C00AB83CA /* UIColor+JKWeb.m */,
 				A2CFAEF61A56D15C0004A282 /* UIColor+JKModify.h */,
 				A2CFAEF71A56D15C0004A282 /* UIColor+JKModify.m */,
+				222C56B626E6256200A79D99 /* UIColor+JKDarkMode.h */,
+				222C56B726E6256200A79D99 /* UIColor+JKDarkMode.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -2458,6 +2468,8 @@
 				A248782C1C55CC5C00AFF958 /* UIImage+JKSuperCompress.m */,
 				2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */,
 				2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */,
+				222C56BA26E6291200A79D99 /* UIImage+JKDarkMode.h */,
+				222C56BB26E6291200A79D99 /* UIImage+JKDarkMode.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -3022,6 +3034,7 @@
 				B8102582206A10E70099CDA8 /* UIButton+JKMiddleAligning.h in Headers */,
 				B810263F206A120C0099CDA8 /* NSObject+JKEasyCopy.h in Headers */,
 				B8102648206A120C0099CDA8 /* NSObject+JKKVOBlocks.h in Headers */,
+				222C56B826E6256200A79D99 /* UIColor+JKDarkMode.h in Headers */,
 				B81024F6206A102C0099CDA8 /* NSDictionary+JKXML.h in Headers */,
 				B8102533206A108A0099CDA8 /* UIFont+JKDynamicFontControl.h in Headers */,
 				B8102493206A0F890099CDA8 /* CAAnimation+JKEasingEquations.h in Headers */,
@@ -3049,6 +3062,7 @@
 				B81024D2206A0FFE0099CDA8 /* NSDate+JKLunarCalendar.h in Headers */,
 				B81024E6206A102C0099CDA8 /* NSArray+JKBlock.h in Headers */,
 				B810256C206A10BB0099CDA8 /* UIBezierPath+JKSVGString.h in Headers */,
+				222C56BC26E6291200A79D99 /* UIImage+JKDarkMode.h in Headers */,
 				B81024A6206A0FD00099CDA8 /* NSURLSession+JKSynchronousTask.h in Headers */,
 				B81024F1206A102C0099CDA8 /* NSDictionary+JKSafeAccess.h in Headers */,
 				B810250C206A104F0099CDA8 /* NSString+JKEmoji.h in Headers */,
@@ -3427,6 +3441,7 @@
 				B81024DC206A100E0099CDA8 /* NSDate+JKUtilities.m in Sources */,
 				B81024C0206A0FDD0099CDA8 /* NSDecimalNumber+JKExtensions.m in Sources */,
 				B8102504206A10390099CDA8 /* NSDictionary+JKJSONString.m in Sources */,
+				222C56BD26E6291200A79D99 /* UIImage+JKDarkMode.m in Sources */,
 				B81025E3206A11470099CDA8 /* UILabel+JKSuggestSize.m in Sources */,
 				B81025FA206A11720099CDA8 /* UINavigationController+JKStackManager.m in Sources */,
 				B8102655206A12160099CDA8 /* NSObject+JKEasyCopy.m in Sources */,
@@ -3523,6 +3538,7 @@
 				B810257D206A10C70099CDA8 /* UIBezierPath+JKThroughPointsBezier.m in Sources */,
 				B810265B206A12160099CDA8 /* NSObject+JKRuntime.m in Sources */,
 				B81024C3206A0FDD0099CDA8 /* NSNumber+JKRomanNumerals.m in Sources */,
+				222C56B926E6256200A79D99 /* UIColor+JKDarkMode.m in Sources */,
 				B810261C206A11970099CDA8 /* UIViewController+JKRecursiveDescription.m in Sources */,
 				B810261B206A11970099CDA8 /* UIViewController+JKBackButtonTouched.m in Sources */,
 				B8102600206A11720099CDA8 /* UIView+JKFrame.m in Sources */,

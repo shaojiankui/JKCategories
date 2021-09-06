@@ -22,7 +22,9 @@
 //  THE SOFTWARE.
 
 /*
-    Persists IWebV cookies to disk. To send the cookies with an initial NSURLRequest you must do the following after loading the cookies:
+    Persists IWebV cookies to disk. To send the cookies with an initial NSURLRequest
+    you must do the following after loading the cookies:
+ 
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:yourURL];
     NSDictionary* headers = [NSHTTPCookie requestHeaderFieldsWithCookies:[[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]];
     [request setAllHTTPHeaderFields:headers];

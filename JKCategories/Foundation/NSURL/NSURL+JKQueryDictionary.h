@@ -5,8 +5,10 @@
 //  Created by Jon Crooke on 10/12/2013.
 //  Copyright (c) 2013 Jonathan Crooke. All rights reserved.
 //
-//  https://github.com/itsthejb/NSURL-QueryDictionary
 
+/**
+ Reference: <https://github.com/itsthejb/NSURL-QueryDictionary>
+ */
 #import <Foundation/Foundation.h>
 
 @interface NSURL (JK_URLQuery)

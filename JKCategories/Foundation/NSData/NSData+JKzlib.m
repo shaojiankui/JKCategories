@@ -1,3 +1,12 @@
+//
+//  NSData+JKzlib.h
+//  JKCategories (https://github.com/shaojiankui/JKCategories)
+//
+//  Created by Qilin Hu on 2020/4/30.
+//  Copyright © 2020 Qilin Hu. All rights reserved.
+//  Released under an MIT license: http://opensource.org/licenses/MIT
+//  Reference Not Found: <https://github.com/bitbasenyc/nsdata-zlib>
+//
 
 #import <Foundation/Foundation.h>
 
@@ -11,6 +20,7 @@ NSString *const JKZlibErrorDomain = @"se.bitba.JKZlibErrorDomain";
 NSString *const JKZlibErrorInfoKey = @"zerror";
 
 @implementation NSData (JKzlib)
+
 static void *jk_zlibOpen()
 {
     static void *libz;

@@ -3,8 +3,11 @@
 //
 //  Created by Heiko Dreyer on 02.04.12.
 //  Copyright (c) 2012 boxedfolder.com. All rights reserved.
-//  https://github.com/bfolder/UIView-Visuals
+//
 
+/**
+ Reference: <https://github.com/bfolder/UIView-Visuals>
+ */
 #import <QuartzCore/QuartzCore.h>
 
 @interface CAMediaTimingFunction (JKAdditionalEquations)
