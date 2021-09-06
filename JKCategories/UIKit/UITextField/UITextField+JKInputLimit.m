@@ -23,6 +23,8 @@ static const void *JKTextFieldInputLimitMaxLength = &JKTextFieldInputLimitMaxLen
 }
 
 - (void)jk_textFieldTextDidChange {
+    if (self.jk_maxLength <= 0) { return; }
+    
     NSString *toBeString = self.text;
     
     // 键盘输入模式
@@ -38,7 +40,7 @@ static const void *JKTextFieldInputLimitMaxLength = &JKTextFieldInputLimitMaxLen
         UITextPosition *position = [self positionFromPosition:selectedRange.start offset:0];
         
         // 如果没有高亮选择字符，则对已输入的文字进行字数统计和限制
-        if ( (!position ||!selectedRange) && (self.jk_maxLength > 0 && toBeString.length > self.jk_maxLength)) {
+        if (!position ||!selectedRange) {
             self.text = [self substringWith:toBeString index:self.jk_maxLength];
         }
     } else {
@@ -47,6 +49,8 @@ static const void *JKTextFieldInputLimitMaxLength = &JKTextFieldInputLimitMaxLen
 }
 
 - (NSString *)substringWith:(NSString *)string index:(NSInteger)index {
+    if (index >= string.length) { return string; }
+    
     // 获取指定索引处的字符范围
     // 将 emoji 表情视为一个连续的字符串，如果 index 处于连续的字符串之间，就会返回这个字符串的 range
     NSRange rangeIndex = [string rangeOfComposedCharacterSequenceAtIndex:index];
