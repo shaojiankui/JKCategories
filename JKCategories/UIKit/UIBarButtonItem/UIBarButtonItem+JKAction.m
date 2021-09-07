@@ -6,9 +6,10 @@
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
-char * const UIBarButtonItemJKActionBlock = "UIBarButtonItemJKActionBlock";
 #import "UIBarButtonItem+JKAction.h"
 #import <objc/runtime.h>
+
+char * const UIBarButtonItemJKActionBlock = "UIBarButtonItemJKActionBlock";
 
 @implementation UIBarButtonItem (JKAction)
 
@@ -16,9 +17,9 @@ char * const UIBarButtonItemJKActionBlock = "UIBarButtonItemJKActionBlock";
     
     dispatch_block_t block = self.jk_actionBlock;
     
-    if (block)
+    if (block) {
         block();
-    
+    } 
 }
 
 - (BarButtonJKActionBlock)jk_actionBlock {

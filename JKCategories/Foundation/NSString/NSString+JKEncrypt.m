@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
-// 加密解密工具 http://tool.chacuo.net/cryptdes
 #import "NSString+JKEncrypt.h"
 #import "NSData+JKEncrypt.h"
 #import "NSData+JKBase64.h"
 
 @implementation NSString (JKEncrypt)
+
 -(NSString*)jk_encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv {
     NSData *encrypted = [[self dataUsingEncoding:NSUTF8StringEncoding] jk_encryptedWithAESUsingKey:key andIV:iv];
     NSString *encryptedString = [encrypted jk_base64EncodedString];

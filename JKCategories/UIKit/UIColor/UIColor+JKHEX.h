@@ -6,6 +6,7 @@
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
 //
 
+/// RGB to HEX Color Converter: <https://www.rgbtohex.net/>
 #import <UIKit/UIKit.h>
 
 @interface UIColor (JKHEX)
@@ -25,4 +26,5 @@
 + (UIColor *)jk_colorWithWholeRed:(CGFloat)red
                          green:(CGFloat)green
                           blue:(CGFloat)blue;
+
 @end

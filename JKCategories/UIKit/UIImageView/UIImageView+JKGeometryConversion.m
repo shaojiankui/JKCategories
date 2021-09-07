@@ -4,11 +4,6 @@
 //  Created by Dominique d'Argent on 18.04.12.
 //  Copyright (c) 2012. All rights reserved.
 //
-//  Thomas Sarlandie - 2012:
-//  - Added convertPointFromView:viewPoint
-//  - Added convertRectFromView:viewPoint
-//
-//  Contribution released in the public domain.
 
 #import "UIImageView+JKGeometryConversion.h"
 

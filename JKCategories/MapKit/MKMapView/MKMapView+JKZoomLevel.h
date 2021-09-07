@@ -5,8 +5,10 @@
 //  Created by Jakey on 15/4/1.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
-//  Reference: <http://troybrant.net/blog/2010/01/set-the-zoom-level-of-an-mkmapview/>
 
+/**
+ Reference: <http://troybrant.net/blog/2010/01/set-the-zoom-level-of-an-mkmapview/>
+ */
 #import <MapKit/MapKit.h>
 
 @interface MKMapView (JKZoomLevel)

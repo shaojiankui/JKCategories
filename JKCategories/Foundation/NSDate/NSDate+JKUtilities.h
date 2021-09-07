@@ -5,8 +5,10 @@
 //  Created by Jakey on 14/12/30.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
 //
-//  Reference: <https://github.com/erica/NSDate-Extensions>
 
+/**
+ Reference: <https://github.com/erica/NSDate-Extensions>
+ */
 #import <Foundation/Foundation.h>
 
 #define JK_D_MINUTE	60

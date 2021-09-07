@@ -5,8 +5,10 @@
 //  Created by Mike on 2014-05-05.
 //  Copyright (c) 2014 Valnet Inc. All rights reserved.
 //
-//  https://github.com/mikeMTOL/UIBarButtonItem-Badge
 
+/**
+ Reference:<https://github.com/mikeMTOL/UIBarButtonItem-Badge>
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIBarButtonItem (JKBadge)

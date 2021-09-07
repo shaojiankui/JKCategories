@@ -4,7 +4,7 @@
 //
 //  Created by Jakey on 15/4/25.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
-//  https://github.com/632840804/HYBNSDateExtension
+//
 
 #import "NSDate+JKExtension.h"
 

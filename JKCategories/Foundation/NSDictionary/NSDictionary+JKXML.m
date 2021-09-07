@@ -10,11 +10,6 @@
 
 @implementation NSDictionary (JKXML)
 
-/**
- *  @brief  将NSDictionary转换成XML 字符串
- *
- *  @return XML 字符串
- */
 - (NSString *)jk_XMLString {
    
     return [self  jk_XMLStringWithRootElement:nil declaration:nil];

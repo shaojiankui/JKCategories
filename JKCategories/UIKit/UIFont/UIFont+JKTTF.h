@@ -16,8 +16,10 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  *
  */
-//  Reference:<https://github.com/nin9tyfour/UIFont-TTF>
 
+/**
+ Reference:<https://github.com/nin9tyfour/UIFont-TTF>
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIFont (JKTTF)

@@ -5,9 +5,12 @@
 //  Created by fox softer on 15/2/23.
 //  Copyright (c) 2015年 foxsofter. All rights reserved.
 //
-//  https://github.com/foxsofter/FXCategories
-//  http://stackoverflow.com/questions/2437875/target-action-uicontrolevents
 
+/**
+ Reference:
+   * <https://github.com/foxsofter/FXCategories>
+   * <http://stackoverflow.com/questions/2437875/target-action-uicontrolevents>
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIControl (JKBlock)

@@ -9,16 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @interface NSTimer (JKAddition)
-/**
- *  @brief  暂停NSTimer
- */
-- (void)jk_pauseTimer;
-/**
- *  @brief  开始NSTimer
- */
+
+/// 开始 NSTimer
 - (void)jk_resumeTimer;
-/**
- *  @brief  延迟开始NSTimer
- */
+
+/// 暂停 NSTimer
+- (void)jk_pauseTimer;
+
+/// 延迟开始 NSTimer
 - (void)jk_resumeTimerAfterTimeInterval:(NSTimeInterval)interval;
+
 @end

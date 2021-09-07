@@ -10,11 +10,7 @@
 
 @interface UIBezierPath (JKSVGString)
 
-/**
- *  @brief  UIBezierPath转成SVG
- *
- *  @return SVG
- */
+/// UIBezierPath 转换为 SVG
 - (NSString*)jk_SVGString;
 
 @end

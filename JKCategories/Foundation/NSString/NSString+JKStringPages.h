@@ -12,7 +12,6 @@
  2. 根据CGRect来计算页数；
  3. 利用多线程加载和分页；
  */
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 

@@ -4,8 +4,10 @@
 //  Created by Walter Da Col on 10/17/13.
 //  Copyright (c) 2013 Walter Da Col (walter.dacol<at>gmail.com)
 //
-//  Reference:<https://github.com/daktales/UIFontWDCustomLoader>
 
+/**
+ Reference:<https://github.com/daktales/UIFontWDCustomLoader>
+ */
 #import <UIKit/UIKit.h>
 
 /**

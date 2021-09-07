@@ -5,9 +5,12 @@
 //  Created by Inder Kumar Rathore on 19/01/13.
 //  Copyright (c) 2013 Rathore. All rights reserved.
 //
-//  https://github.com/fahrulazmi/UIDeviceHardware/blob/master/UIDeviceHardware.m
-//  Reference: <https://www.theiphonewiki.com/wiki/Models>
 
+/**
+ Reference:
+ <https://www.theiphonewiki.com/wiki/Models>
+ <https://github.com/fahrulazmi/UIDeviceHardware/blob/master/UIDeviceHardware.m>
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIDevice (JKHardware)

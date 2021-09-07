@@ -1,10 +1,10 @@
 JKCategories(iOS-Categories)
 ================
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/shaojiankui/JKCategories/master/LICENSE)&nbsp;
-[![CocoaPods](http://img.shields.io/cocoapods/v/JKCategories.svg?style=flat)](http://cocoapods.org/?q=JKCategories)&nbsp;
-[![CocoaPods](http://img.shields.io/cocoapods/p/JKCategories.svg?style=flat)](http://cocoapods.org/?q=JKCategories)&nbsp;
+[![CocoaPods](http://img.shields.io/cocoapods/v/JKCategories-andy0570.svg?style=flat)](http://cocoapods.org/?q=JKCategories-andy0570)&nbsp;
+[![CocoaPods](http://img.shields.io/cocoapods/p/JKCategories-andy0570.svg?style=flat)](http://cocoapods.org/?q=JKCategories-andy0570)&nbsp;
 [![Support](https://img.shields.io/badge/support-iOS%209%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
-[![Build Status](https://travis-ci.org/shaojiankui/JKCategories.svg?branch=master)](https://travis-ci.org/shaojiankui/JKCategories)
+[![Build Status](https://travis-ci.org/Andy0570/JKCategories-andy0570.svg?branch=master)](https://travis-ci.org/Andy0570/JKCategories)
 
 
 JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation, UIKit, QuartzCore, CoreLocation, MapKit...

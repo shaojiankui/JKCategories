@@ -3,7 +3,7 @@
 //  JKCategories
 //
 //  Created by Qilin Hu on 2021/3/24.
-//  Copyright © 2021 www.skyfox.org. All rights reserved.
+//  Copyright © 2020 Qilin Hu. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

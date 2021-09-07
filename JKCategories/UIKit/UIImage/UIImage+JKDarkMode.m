@@ -4,7 +4,6 @@
 //
 //  Created by Qilin Hu on 2021/9/6.
 //  Copyright © 2020 Qilin Hu. All rights reserved.
-//  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
 #import "UIImage+JKDarkMode.h"

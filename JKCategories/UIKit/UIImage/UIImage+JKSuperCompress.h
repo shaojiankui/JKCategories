@@ -4,8 +4,11 @@
 //
 //  Created by Jakey on 16/1/22.
 //  Copyright © 2016年 Jakey. All rights reserved.
-//  https://github.com/IcaliaLabs/UIImage-ImageCompress
+//
 
+/**
+ Reference: <https://github.com/IcaliaLabs/UIImage-ImageCompress>
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIImage (JKSuperCompress)

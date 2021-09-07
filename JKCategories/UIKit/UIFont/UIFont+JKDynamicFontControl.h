@@ -4,8 +4,10 @@
 //  Created by Michael Kral on 10/28/13.
 //  Copyright (c) 2013 Michael Kral. All rights reserved.
 //
-//  Reference: <https://github.com/mkral/UIFont-DynamicFontControlDemo>
 
+/**
+ Reference: <https://github.com/mkral/UIFont-DynamicFontControlDemo>
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIFont (JKDynamicFontControl)

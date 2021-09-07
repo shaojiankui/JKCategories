@@ -5,13 +5,15 @@
 //  Created by Jonas Schnelli on 22.04.10.
 //  Copyright 2010 include7 AG. All rights reserved.
 //
-//  瑞士坐标系转换
-//  Reference: <http://github.com/jonasschnelli/CLLocation-CH1903>
-//
-//  This small extension allows you to easly manage CH1903 (swiss coordinate system) within the CLLocation object.
-//  All the calculation are based on the official swiss federal informations:
-//  <http://www.swisstopo.admin.ch/internet/swisstopo/de/home/products/software/products/skripts.html>
 
+/**
+ 瑞士坐标系转换
+ Reference: <http://github.com/jonasschnelli/CLLocation-CH1903>
+ 
+ This small extension allows you to easly manage CH1903 (swiss coordinate system) within the CLLocation object.
+ All the calculation are based on the official swiss federal informations:
+ <http://www.swisstopo.admin.ch/internet/swisstopo/de/home/products/software/products/skripts.html>
+ */
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 

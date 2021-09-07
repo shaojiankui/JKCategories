@@ -5,9 +5,12 @@
 //  Created by luxiaoming on 16/1/15.
 //  Copyright © 2016年 luxiaoming. All rights reserved.
 //
-//  https://github.com/Phelthas/Demo_ButtonImageTitleEdgeInsets
-//  用 UIButton 的 titleEdgeInsets 和 imageEdgeInsets 属性来实现 button 文字图片上下或者左右排列
 
+/**
+ Reference: <https://github.com/Phelthas/Demo_ButtonImageTitleEdgeInsets>
+ 
+ 用 UIButton 的 titleEdgeInsets 和 imageEdgeInsets 属性来实现 button 文字图片上下或者左右排列
+ */
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, JKImagePosition) {

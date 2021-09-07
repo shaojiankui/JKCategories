@@ -4,8 +4,11 @@
 //
 //  Created by ltebean on 15-2-15.
 //  Copyright (c) 2015 ltebean. All rights reserved.
-//  https://github.com/ltebean/LTNavigationBar
+//
 
+/**
+ Reference:<https://github.com/ltebean/LTNavigationBar>
+ */
 #import <UIKit/UIKit.h>
 
 @interface UINavigationBar (JKAwesome)

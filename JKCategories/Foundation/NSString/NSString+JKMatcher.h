@@ -5,8 +5,10 @@
 //  Created by Damien Romito on 29/01/15.
 //  Copyright (c) 2015 Damien Romito. All rights reserved.
 //
-//  Reference: https://github.com/damienromito/NSString-Matcher
 
+/**
+ Reference: https://github.com/damienromito/NSString-Matcher
+ */
 #import <Foundation/Foundation.h>
 
 @interface NSString(JKMatcher)

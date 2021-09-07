@@ -5,9 +5,11 @@
 //  Created by DamonDing on 15/5/26.
 //  Copyright (c) 2015年 morenotepad. All rights reserved.
 //
-//  https://github.com/Jameson-zxm/UITextField-History
-//   A category of UITextfiled that can record it's input as history
 
+/**
+ Reference: <https://github.com/Jameson-zxm/UITextField-History>
+ A category of UITextfiled that can record it's input as history
+ */
 #import <UIKit/UIKit.h>
 
 @interface UITextField (JKHistory)

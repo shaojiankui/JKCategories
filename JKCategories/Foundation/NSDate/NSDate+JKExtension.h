@@ -6,6 +6,9 @@
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
+/**
+ Reference:<https://github.com/632840804/HYBNSDateExtension>
+ */
 #import <Foundation/Foundation.h>
 
 @interface NSDate (JKExtension)

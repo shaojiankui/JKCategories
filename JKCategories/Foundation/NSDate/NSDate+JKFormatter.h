@@ -8,7 +8,6 @@
 /**
  Reference:<http://schwiiz.org/>
  */
-
 #import <Foundation/Foundation.h>
 
 @interface NSDate (JKFormatter)

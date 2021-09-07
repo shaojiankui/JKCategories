@@ -1,22 +1,23 @@
 Pod::Spec.new do |s|
-  s.name         = "JKCategories-andy0570"
-  s.version      = "2.0.4"
-  s.summary      = "JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks"
-  s.description      = <<-DESC
-                        JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
-                        DESC
-  s.homepage     = "https://github.com/shaojiankui/JKCategories"
-  s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author       = { "skyfox" => "i@skyfox.org" }
-  s.platform     = :ios, "9.0"
+  s.name = "JKCategories-andy0570"
+  s.version = "2.0.5"
+  s.summary = "JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks"
+  s.description = <<-DESC
+                  JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks 
+                  such as Foundation, UIKit, QuartzCore, CoreLocation, MapKit...
+                  DESC
+  s.homepage = "https://github.com/shaojiankui/JKCategories"
+  s.license = { :type => "MIT", :file => "LICENSE" }
+  s.author = { "Andy0570" => "andywhm@163.com" }
+  s.platform = :ios, "9.0"
   s.ios.deployment_target = "9.0"
-  s.source       = { :git => "https://github.com/Andy0570/JKCategories.git", :tag => s.version.to_s }
+  s.source = { :git => "https://github.com/Andy0570/JKCategories.git", :tag => s.version.to_s }
 
   s.requires_arc = true
   s.source_files = 'JKCategories/JKCategories.h'
   s.public_header_files = 'JKCategories/JKCategories.h'
   
-  s.libraries    = "z"
+  s.libraries = "z"
 
   s.subspec 'Foundation' do |foundation|
       foundation.public_header_files = 'JKCategories/Foundation/JKFoundation.h'

@@ -9,11 +9,7 @@
 #import "UIResponder+JKChain.h"
 
 @implementation UIResponder (JKChain)
-/**
- *  @brief  响应者链
- *
- *  @return  响应者链
- */
+
 - (NSString *)jk_responderChainDescription
 {
     NSMutableArray *responderChainStrings = [NSMutableArray array];

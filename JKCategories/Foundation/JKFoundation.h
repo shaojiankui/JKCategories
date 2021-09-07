@@ -5,6 +5,7 @@
 //  Created by Jakey on 16/5/29.
 //  Copyright © 2016年 www.skyfox.org. All rights reserved.
 //
+
 #if __has_include(<JKCategories/JKFoundation.h>)
 #import <JKCategories/NSArray+JKBlock.h>
 #import <JKCategories/NSArray+JKSafeAccess.h>
@@ -172,5 +173,3 @@
 #import "NSUserDefaults+JKiCloudSync.h"
 #import "NSUserDefaults+JKSafeAccess.h"
 #endif
-
-

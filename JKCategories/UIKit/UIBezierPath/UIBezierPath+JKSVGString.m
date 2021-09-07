@@ -7,13 +7,11 @@
 //
 
 #import "UIBezierPath+JKSVGString.h"
+
 static void JKSVGApplier(void* info, const CGPathElement* element);
+
 @implementation UIBezierPath (ZTKit)
-/**
- *  @brief  UIBezierPath转成SVG
- *
- *  @return SVG
- */
+
 - (NSString*)jk_SVGString
 {
     CGPathRef path = [self CGPath];

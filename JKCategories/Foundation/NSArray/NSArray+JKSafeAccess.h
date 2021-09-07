@@ -5,9 +5,10 @@
 //  Created by Jakey on 15/2/8.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
-//  Reference:<https://github.com/alibaba/LazyScrollView/TMUtils/NSArray+TMSafeUtils.h>
-//
 
+/**
+ Reference:<https://github.com/alibaba/LazyScrollView/TMUtils/NSArray+TMSafeUtils.h>
+ */
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
