@@ -27,7 +27,7 @@
 }
 
 - (CGFloat)jk_right {
-    return CGRectGetMinX(self.frame) + CGRectGetWidth(self.frame);
+    return CGRectGetMaxX(self.frame);
 }
 
 - (void)setJk_top:(CGFloat)y {
@@ -47,8 +47,7 @@
 }
 
 - (CGFloat)jk_bottom {
-    CGRect frame = self.frame;
-    return CGRectGetMinY(frame) + CGRectGetHeight(frame);
+    return CGRectGetMaxY(self.frame);
 }
 
 - (void)setJk_width:(CGFloat)width {

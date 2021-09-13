@@ -23,8 +23,6 @@
 /* Begin PBXBuildFile section */
 		2216E758260AECA700375CC4 /* NSString+HexConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 2216E756260AECA700375CC4 /* NSString+HexConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2216E759260AECA700375CC4 /* NSString+HexConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E757260AECA700375CC4 /* NSString+HexConversion.m */; };
-		2216E762260B017100375CC4 /* NSString+JKSafe.h in Headers */ = {isa = PBXBuildFile; fileRef = 2216E760260B017100375CC4 /* NSString+JKSafe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2216E763260B017100375CC4 /* NSString+JKSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E761260B017100375CC4 /* NSString+JKSafe.m */; };
 		221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221A8EC1260DECA900515746 /* NSDictionary+RemoveNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */; };
 		222C56B826E6256200A79D99 /* UIColor+JKDarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 222C56B626E6256200A79D99 /* UIColor+JKDarkMode.h */; };
@@ -583,8 +581,6 @@
 /* Begin PBXFileReference section */
 		2216E756260AECA700375CC4 /* NSString+HexConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HexConversion.h"; sourceTree = "<group>"; };
 		2216E757260AECA700375CC4 /* NSString+HexConversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HexConversion.m"; sourceTree = "<group>"; };
-		2216E760260B017100375CC4 /* NSString+JKSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JKSafe.h"; sourceTree = "<group>"; };
-		2216E761260B017100375CC4 /* NSString+JKSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKSafe.m"; sourceTree = "<group>"; };
 		221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RemoveNullValue.h"; sourceTree = "<group>"; };
 		221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RemoveNullValue.m"; sourceTree = "<group>"; };
 		222C56B626E6256200A79D99 /* UIColor+JKDarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKDarkMode.h"; sourceTree = "<group>"; };
@@ -2364,8 +2360,6 @@
 				A28BE3441A3EA292005C4AC6 /* NSString+JKHash.m */,
 				A2FD5B531A526AC900555EA2 /* NSString+JKUUID.h */,
 				A2FD5B541A526AC900555EA2 /* NSString+JKUUID.m */,
-				2216E760260B017100375CC4 /* NSString+JKSafe.h */,
-				2216E761260B017100375CC4 /* NSString+JKSafe.m */,
 				A2CFAEF31A56BD050004A282 /* NSString+JKScore.h */,
 				A2CFAEF41A56BD050004A282 /* NSString+JKScore.m */,
 				A2681A421A75C7C8009BA7EE /* NSString+JKEncrypt.h */,
@@ -3087,7 +3081,6 @@
 				B81025F6206A11650099CDA8 /* UIView+JKDraggable.h in Headers */,
 				B8C46B52216F119A00EC7F15 /* JKQuartzCore.h in Headers */,
 				2216E758260AECA700375CC4 /* NSString+HexConversion.h in Headers */,
-				2216E762260B017100375CC4 /* NSString+JKSafe.h in Headers */,
 				221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */,
 				B8C46B58216F11B200EC7F15 /* JKUIKit.h in Headers */,
 				B8C46B5A216F11BA00EC7F15 /* JKMapKit.h in Headers */,
@@ -3422,7 +3415,6 @@
 				B81025FB206A11720099CDA8 /* UITableViewCell+JKDelaysContentTouches.m in Sources */,
 				B81024E4206A10170099CDA8 /* NSSet+JKBlock.m in Sources */,
 				B81024BB206A0FDD0099CDA8 /* NSRunLoop+JKPerformBlock.m in Sources */,
-				2216E763260B017100375CC4 /* NSString+JKSafe.m in Sources */,
 				B81024D6206A100E0099CDA8 /* NSDateFormatter+JKMake.m in Sources */,
 				B81024DD206A100E0099CDA8 /* NSDate+JKExtension.m in Sources */,
 				B81024FE206A10390099CDA8 /* NSData+JKDataCache.m in Sources */,

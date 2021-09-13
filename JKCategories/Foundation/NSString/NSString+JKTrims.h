@@ -10,32 +10,16 @@
 
 @interface NSString (JKTrims)
 
-/**
- *  @brief  清除html标签
- *
- *  @return 清除后的结果
- */
+/// 清除 HTML 标签
 - (NSString *)jk_stringByStrippingHTML;
 
-/**
- *  @brief  清除js脚本
- *
- *  @return 清楚js后的结果
- */
+/// 清除 JavaScript 脚本
 - (NSString *)jk_stringByRemovingScriptsAndStrippingHTML;
 
-/**
- *  @brief  去除空格
- *
- *  @return 去除空格后的字符串
- */
+/// 修剪头部和尾部的空白字符（空格）
 - (NSString *)jk_trimmingWhitespace;
 
-/**
- *  @brief  去除字符串与空行
- *
- *  @return 去除字符串与空行的字符串
- */
+/// 修剪头部和尾部的空白字符（空格和换行）
 - (NSString *)jk_trimmingWhitespaceAndNewlines;
 
 @end

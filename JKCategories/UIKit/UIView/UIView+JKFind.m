@@ -11,13 +11,14 @@
 @implementation UIView (JKFind)
 
 - (UIViewController *)jk_viewController {
-    UIResponder *responder = self.nextResponder;
-    do {
-        if ([responder isKindOfClass:[UIViewController class]]) {
-            return (UIViewController *)responder;
+    UIView *view = self;
+    while (view) {
+        UIResponder *nextResponder = [view nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
         }
-        responder = responder.nextResponder;
-    } while (responder);
+        view = view.superview;
+    }
     return nil;
 }
 
@@ -58,9 +59,9 @@
 }
 
 - (id)jk_findSuperViewWithSuperViewClass:(Class)clazz {
-    if (self == nil) {
+    if (!self) {
         return nil;
-    } else if (self.superview == nil) {
+    } else if (!self.superview) {
         return nil;
     } else if ([self.superview isKindOfClass:clazz]) {
         return self.superview;

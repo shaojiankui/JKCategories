@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (JKDarkMode)
 
++ (void)d_fixResizableImage;
+
 + (UIImage *)jk_imageWithLightImageNamed:(NSString *)lightImageName
                           darkImageNamed:(NSString *)darkImageNamed;
 

@@ -10,34 +10,34 @@
 
 @interface UIView (JKFrame)
 
-/// Shortcut for frame.origin.x
+/// frame.origin.x
 @property (nonatomic) CGFloat jk_left;
 
-/// Shortcut for frame.origin.x + frame.size.width
+/// frame.origin.x + frame.size.width
 @property (nonatomic) CGFloat jk_right;
 
-/// Shortcut for frame.origin.y
+/// frame.origin.y
 @property (nonatomic) CGFloat jk_top;
 
-/// Shortcut for frame.origin.y + frame.size.height
+/// frame.origin.y + frame.size.height
 @property (nonatomic) CGFloat jk_bottom;
 
-/// Shortcur for frame.size.width
+/// frame.size.width
 @property (nonatomic) CGFloat jk_width;
 
-/// Shortcut for frame.size.height
+/// frame.size.height
 @property (nonatomic) CGFloat jk_height;
 
-/// Shortcut for center.x
+/// center.x
 @property (nonatomic) CGFloat jk_centerX;
 
-/// Shortcut for center.y
+/// center.y
 @property (nonatomic) CGFloat jk_centerY;
 
-/// Shortcut for frame.origin
+/// frame.origin
 @property (nonatomic, assign) CGPoint jk_origin;
 
-/// Shortcut for frame.size
+/// frame.size
 @property (nonatomic, assign) CGSize jk_size;
 
 @end
