@@ -12,6 +12,7 @@
  */
 #import <UIKit/UIKit.h>
 
+/// 准确度
 typedef NS_ENUM(NSUInteger, JKAccuracy) {
     JKAccuracyLow = 0,
     JKAccuracyHigh,

@@ -11,7 +11,7 @@
 @interface UIImage (JKFileName)
 
 /**
- *  @brief  根据main bundle中的文件名读取图片
+ *  @brief  根据 main bundle 中的文件名读取图片
  *
  *  @param name 图片名
  *
@@ -22,7 +22,7 @@
 /**
  *  @author JKCategories
  *
- *  根据指定bundle中的文件名读取图片
+ *  根据指定 bundle 中的文件名读取图片
  *
  *  @param name   图片名
  *  @param bundle bundle

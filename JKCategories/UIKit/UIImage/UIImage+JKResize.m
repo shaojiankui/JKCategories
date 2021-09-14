@@ -8,11 +8,14 @@
 
 // Private helper methods
 @interface UIImage (ResizePrivateMethods)
+
 - (UIImage *)jk_resizedImage:(CGSize)newSize
                 transform:(CGAffineTransform)transform
            drawTransposed:(BOOL)transpose
      interpolationQuality:(CGInterpolationQuality)quality;
+
 - (CGAffineTransform)jk_transformForOrientation:(CGSize)newSize;
+
 @end
 
 @implementation UIImage (JKResize)
@@ -63,7 +66,6 @@
         case UIImageOrientationRightMirrored:
             drawTransposed = YES;
             break;
-            
         default:
             drawTransposed = NO;
     }

@@ -49,7 +49,6 @@
 #import <JKCategories/UIImage+JKGIF.h>
 #import <JKCategories/UIImage+JKMerge.h>
 #import <JKCategories/UIImage+JKOrientation.h>
-#import <JKCategories/UIImage+JKRemoteSize.h>
 #import <JKCategories/UIImage+JKResize.h>
 #import <JKCategories/UIImage+JKRoundedCorner.h>
 #import <JKCategories/UIImage+JKSuperCompress.h>
@@ -153,7 +152,6 @@
 #import "UIImage+JKGIF.h"
 #import "UIImage+JKMerge.h"
 #import "UIImage+JKOrientation.h"
-#import "UIImage+JKRemoteSize.h"
 #import "UIImage+JKResize.h"
 #import "UIImage+JKRoundedCorner.h"
 #import "UIImage+JKSuperCompress.h"
