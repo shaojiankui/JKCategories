@@ -86,24 +86,4 @@ CGFloat jk_colorComponentFrom(NSString *string, NSUInteger start, NSUInteger len
             (int)((CGColorGetComponents(color.CGColor))[2]*255.0)];
 }
 
-+ (UIColor *)jk_colorWithWholeRed:(CGFloat)red
-                         green:(CGFloat)green
-                          blue:(CGFloat)blue
-                         alpha:(CGFloat)alpha
-{
-    return [UIColor colorWithRed:red/255.f
-                           green:green/255.f
-                            blue:blue/255.f
-                           alpha:alpha];
-}
-
-+ (UIColor *)jk_colorWithWholeRed:(CGFloat)red
-                         green:(CGFloat)green
-                          blue:(CGFloat)blue
-{
-    return [self jk_colorWithWholeRed:red
-                             green:green
-                              blue:blue
-                             alpha:1.0];
-}
 @end

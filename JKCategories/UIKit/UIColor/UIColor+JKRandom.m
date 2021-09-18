@@ -11,11 +11,9 @@
 @implementation UIColor (JKRandom)
 
 + (UIColor *)jk_randomColor {
-    NSInteger aRedValue = arc4random() % 255;
-    NSInteger aGreenValue = arc4random() % 255;
-    NSInteger aBlueValue = arc4random() % 255;
-    UIColor *randColor = [UIColor colorWithRed:aRedValue / 255.0f green:aGreenValue / 255.0f blue:aBlueValue / 255.0f alpha:1.0f];
-    return randColor;
+    // arc4random()%255/255.0 表示生成 [0, 255] 之间的随机数
+    UIColor *randomColor = [UIColor colorWithDisplayP3Red:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1];
+    return randomColor;
 }
 
 @end

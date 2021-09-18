@@ -1,10 +1,14 @@
 JKCategories(iOS-Categories)
 ================
+
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/shaojiankui/JKCategories/master/LICENSE)&nbsp;
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)&nbsp;
 [![CocoaPods](http://img.shields.io/cocoapods/v/JKCategories-andy0570.svg?style=flat)](http://cocoapods.org/?q=JKCategories-andy0570)&nbsp;
 [![CocoaPods](http://img.shields.io/cocoapods/p/JKCategories-andy0570.svg?style=flat)](http://cocoapods.org/?q=JKCategories-andy0570)&nbsp;
+[![Language](https://img.shields.io/badge/language-Objective--C-informational)](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)&nbsp;
 [![Support](https://img.shields.io/badge/support-iOS%209%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
-[![Build Status](https://travis-ci.org/Andy0570/JKCategories-andy0570.svg?branch=master)](https://travis-ci.org/Andy0570/JKCategories)
+[![Build Status](https://travis-ci.org/Andy0570/JKCategories-andy0570.svg?branch=master)](https://travis-ci.org/Andy0570/JKCategories)&nbsp;
+[![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.dev)&nbsp;
 
 
 JKCategories(iOS-Categories), a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation, UIKit, QuartzCore, CoreLocation, MapKit...

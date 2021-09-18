@@ -2,8 +2,9 @@
 // Created by Trevor Harmon on 9/20/09.
 //
 
-/// Extends the UIImage class to support making rounded corners
 #import <UIKit/UIKit.h>
+
+/// Extends the UIImage class to support making rounded corners
 @interface UIImage (JKRoundedCorner)
 
 - (UIImage *)jk_roundedCornerImage:(NSInteger)cornerSize

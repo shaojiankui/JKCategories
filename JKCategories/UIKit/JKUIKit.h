@@ -51,10 +51,11 @@
 #import <JKCategories/UIImage+JKOrientation.h>
 #import <JKCategories/UIImage+JKResize.h>
 #import <JKCategories/UIImage+JKRoundedCorner.h>
-#import <JKCategories/UIImage+JKSuperCompress.h>
+#import <JKCategories/UIImage+JKCompress.h>
 #import <JKCategories/UIImage+JKVector.h>
 #import <JKCategories/UIImage+JKWaterMark.h>
 #import <JKCategories/UIImage+JKDarkMode.h>
+#import <JKCategories/UIImage+JKGrayscale.h>
 #import <JKCategories/UIImageView+JKAddition.h>
 #import <JKCategories/UIImageView+JKBetterFace.h>
 #import <JKCategories/UIImageView+JKFaceAwareFill.h>
@@ -154,10 +155,11 @@
 #import "UIImage+JKOrientation.h"
 #import "UIImage+JKResize.h"
 #import "UIImage+JKRoundedCorner.h"
-#import "UIImage+JKSuperCompress.h"
+#import "UIImage+JKCompress.h"
 #import "UIImage+JKVector.h"
 #import "UIImage+JKWaterMark.h"
 #import "UIImage+JKDarkMode.h"
+#import "UIImage+JKGrayscale.h"
 #import "UIImageView+JKAddition.h"
 #import "UIImageView+JKBetterFace.h"
 #import "UIImageView+JKFaceAwareFill.h"

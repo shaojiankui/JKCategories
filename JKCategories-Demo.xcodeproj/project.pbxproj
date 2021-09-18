@@ -29,8 +29,12 @@
 		222C56B926E6256200A79D99 /* UIColor+JKDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C56B726E6256200A79D99 /* UIColor+JKDarkMode.m */; };
 		222C56BC26E6291200A79D99 /* UIImage+JKDarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 222C56BA26E6291200A79D99 /* UIImage+JKDarkMode.h */; };
 		222C56BD26E6291200A79D99 /* UIImage+JKDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C56BB26E6291200A79D99 /* UIImage+JKDarkMode.m */; };
+		2273AA1326F5ABA9008331F1 /* UIImage+JKGrayscale.h in Headers */ = {isa = PBXBuildFile; fileRef = 2273AA1126F5ABA9008331F1 /* UIImage+JKGrayscale.h */; };
+		2273AA1426F5ABA9008331F1 /* UIImage+JKGrayscale.m in Sources */ = {isa = PBXBuildFile; fileRef = 2273AA1226F5ABA9008331F1 /* UIImage+JKGrayscale.m */; };
 		2279530E2680404D004C46A5 /* UIImage+JKWaterMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2282CBD026E097AD004C96CA /* UIImage+JKWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */; };
+		22B56BE726F45AD7000B2AF3 /* UIImage+JKCompress.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B56BE526F45AD7000B2AF3 /* UIImage+JKCompress.h */; };
+		22B56BE826F45AD7000B2AF3 /* UIImage+JKCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B56BE626F45AD7000B2AF3 /* UIImage+JKCompress.m */; };
 		A202D9801B0F7CD100EAB199 /* CLLocationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D97E1B0F7CD100EAB199 /* CLLocationDemoViewController.m */; };
 		A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D97F1B0F7CD100EAB199 /* CLLocationDemoViewController.xib */; };
 		A202D98C1B0F7D7900EAB199 /* MKMapViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D98A1B0F7D7900EAB199 /* MKMapViewDemoViewController.m */; };
@@ -443,7 +447,6 @@
 		B81025C9206A11350099CDA8 /* UIImage+JKCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = A219B8B81A615E3800135327 /* UIImage+JKCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B81025CB206A11350099CDA8 /* UIImage+JKGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB799F11AFDD95300C12525 /* UIImage+JKGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B81025CC206A11350099CDA8 /* UIImage+JKBlur.h in Headers */ = {isa = PBXBuildFile; fileRef = A2EF56DF1B21C59C0005F730 /* UIImage+JKBlur.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B81025CD206A11350099CDA8 /* UIImage+JKSuperCompress.h in Headers */ = {isa = PBXBuildFile; fileRef = A248782B1C55CC5C00AFF958 /* UIImage+JKSuperCompress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B81025CE206A11350099CDA8 /* UILabel+JKAdjustableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = A28BE3081A3E9FDC005C4AC6 /* UILabel+JKAdjustableLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B81025CF206A11350099CDA8 /* UILabel+JKSuggestSize.h in Headers */ = {isa = PBXBuildFile; fileRef = A28BE30A1A3E9FDC005C4AC6 /* UILabel+JKSuggestSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B81025D0206A11350099CDA8 /* UILabel+JKAutoSize.h in Headers */ = {isa = PBXBuildFile; fileRef = A21F34D41B0F28A600D73A91 /* UILabel+JKAutoSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -462,7 +465,6 @@
 		B81025DD206A11470099CDA8 /* UIImage+JKCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = A219B8B91A615E3800135327 /* UIImage+JKCapture.m */; };
 		B81025DF206A11470099CDA8 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB799F21AFDD95300C12525 /* UIImage+JKGIF.m */; };
 		B81025E0206A11470099CDA8 /* UIImage+JKBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EF56E01B21C59C0005F730 /* UIImage+JKBlur.m */; };
-		B81025E1206A11470099CDA8 /* UIImage+JKSuperCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = A248782C1C55CC5C00AFF958 /* UIImage+JKSuperCompress.m */; };
 		B81025E2206A11470099CDA8 /* UILabel+JKAdjustableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3091A3E9FDC005C4AC6 /* UILabel+JKAdjustableLabel.m */; };
 		B81025E3206A11470099CDA8 /* UILabel+JKSuggestSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE30B1A3E9FDC005C4AC6 /* UILabel+JKSuggestSize.m */; };
 		B81025E4206A11470099CDA8 /* UILabel+JKAutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F34D51B0F28A600D73A91 /* UILabel+JKAutoSize.m */; };
@@ -585,8 +587,12 @@
 		222C56B726E6256200A79D99 /* UIColor+JKDarkMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKDarkMode.m"; sourceTree = "<group>"; };
 		222C56BA26E6291200A79D99 /* UIImage+JKDarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKDarkMode.h"; sourceTree = "<group>"; };
 		222C56BB26E6291200A79D99 /* UIImage+JKDarkMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKDarkMode.m"; sourceTree = "<group>"; };
+		2273AA1126F5ABA9008331F1 /* UIImage+JKGrayscale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKGrayscale.h"; sourceTree = "<group>"; };
+		2273AA1226F5ABA9008331F1 /* UIImage+JKGrayscale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKGrayscale.m"; sourceTree = "<group>"; };
 		2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKWaterMark.h"; sourceTree = "<group>"; };
 		2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKWaterMark.m"; sourceTree = "<group>"; };
+		22B56BE526F45AD7000B2AF3 /* UIImage+JKCompress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKCompress.h"; sourceTree = "<group>"; };
+		22B56BE626F45AD7000B2AF3 /* UIImage+JKCompress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKCompress.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+JKNormalRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKNormalRegex.h"; sourceTree = "<group>"; };
 		798256191B3A59060033A0C1 /* NSString+JKNormalRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKNormalRegex.m"; sourceTree = "<group>"; };
 		A202D9601B0F6C4400EAB199 /* NSDate+JKReporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JKReporting.h"; sourceTree = "<group>"; };
@@ -728,8 +734,6 @@
 		A24377221ACBE9CF00FFFEA1 /* NSObject+JKAutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JKAutoCoding.m"; sourceTree = "<group>"; };
 		A24868791C1FB08D00D3318A /* UITableViewCell+JKDelaysContentTouches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+JKDelaysContentTouches.h"; sourceTree = "<group>"; };
 		A248687A1C1FB08D00D3318A /* UITableViewCell+JKDelaysContentTouches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+JKDelaysContentTouches.m"; sourceTree = "<group>"; };
-		A248782B1C55CC5C00AFF958 /* UIImage+JKSuperCompress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKSuperCompress.h"; sourceTree = "<group>"; };
-		A248782C1C55CC5C00AFF958 /* UIImage+JKSuperCompress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKSuperCompress.m"; sourceTree = "<group>"; };
 		A24EC2DB1B74D49F00CE538B /* NSDictionary+JKURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JKURL.h"; sourceTree = "<group>"; };
 		A24EC2DC1B74D49F00CE538B /* NSDictionary+JKURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JKURL.m"; sourceTree = "<group>"; };
 		A24EC2E01B74D69E00CE538B /* NSRunLoopDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRunLoopDemoViewController.h; sourceTree = "<group>"; };
@@ -2452,12 +2456,14 @@
 				BCB799F21AFDD95300C12525 /* UIImage+JKGIF.m */,
 				A2EF56DF1B21C59C0005F730 /* UIImage+JKBlur.h */,
 				A2EF56E01B21C59C0005F730 /* UIImage+JKBlur.m */,
-				A248782B1C55CC5C00AFF958 /* UIImage+JKSuperCompress.h */,
-				A248782C1C55CC5C00AFF958 /* UIImage+JKSuperCompress.m */,
+				22B56BE526F45AD7000B2AF3 /* UIImage+JKCompress.h */,
+				22B56BE626F45AD7000B2AF3 /* UIImage+JKCompress.m */,
 				2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */,
 				2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */,
 				222C56BA26E6291200A79D99 /* UIImage+JKDarkMode.h */,
 				222C56BB26E6291200A79D99 /* UIImage+JKDarkMode.m */,
+				2273AA1126F5ABA9008331F1 /* UIImage+JKGrayscale.h */,
+				2273AA1226F5ABA9008331F1 /* UIImage+JKGrayscale.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -2929,11 +2935,12 @@
 				B81025A8206A110F0099CDA8 /* UIImageView+JKBetterFace.h in Headers */,
 				B8102591206A10E70099CDA8 /* UITextView+JKPinchZoom.h in Headers */,
 				B81025C2206A11350099CDA8 /* UIImage+JKAnimatedGIF.h in Headers */,
+				2273AA1326F5ABA9008331F1 /* UIImage+JKGrayscale.h in Headers */,
 				B8102644206A120C0099CDA8 /* NSObject+JKGCD.h in Headers */,
 				B81024A8206A0FD00099CDA8 /* NSInvocation+JKBlock.h in Headers */,
-				B81025CD206A11350099CDA8 /* UIImage+JKSuperCompress.h in Headers */,
 				B81024B0206A0FD00099CDA8 /* NSDecimalNumber+JKCalculatingByString.h in Headers */,
 				B81024AF206A0FD00099CDA8 /* NSNotificationCenter+JKMainThread.h in Headers */,
+				22B56BE726F45AD7000B2AF3 /* UIImage+JKCompress.h in Headers */,
 				B8102590206A10E70099CDA8 /* UITextView+JKSelect.h in Headers */,
 				B81024D3206A10010099CDA8 /* NSUserDefaults+JKSafeAccess.h in Headers */,
 				B81024EE206A102C0099CDA8 /* NSData+JKzlib.h in Headers */,
@@ -3136,7 +3143,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1220;
-				ORGANIZATIONNAME = www.skyfox.org;
+				ORGANIZATIONNAME = "Qilin Hu";
 				TargetAttributes = {
 					A22725CD1A3E72D50061605B = {
 						CreatedOnToolsVersion = 6.1;
@@ -3413,7 +3420,6 @@
 				B81024FE206A10390099CDA8 /* NSData+JKDataCache.m in Sources */,
 				B81025FE206A11720099CDA8 /* UIView+JKToast.m in Sources */,
 				B81024C2206A0FDD0099CDA8 /* NSNumber+JKCGFloat.m in Sources */,
-				B81025E1206A11470099CDA8 /* UIImage+JKSuperCompress.m in Sources */,
 				B8102609206A11720099CDA8 /* UIView+JKRecursion.m in Sources */,
 				B8102573206A10C70099CDA8 /* UINavigationBar+JKAwesome.m in Sources */,
 				B810257C206A10C70099CDA8 /* UIBezierPath+JKSVGString.m in Sources */,
@@ -3439,10 +3445,12 @@
 				B81024DB206A100E0099CDA8 /* NSException+JKTrace.m in Sources */,
 				B81025BA206A11190099CDA8 /* UIColor+JKGradient.m in Sources */,
 				B81025DB206A11470099CDA8 /* UIImage+JKMerge.m in Sources */,
+				22B56BE826F45AD7000B2AF3 /* UIImage+JKCompress.m in Sources */,
 				B81024FA206A10390099CDA8 /* NSData+JKHash.m in Sources */,
 				B8102579206A10C70099CDA8 /* UIBezierPath+JKLength.m in Sources */,
 				B81024F9206A10390099CDA8 /* NSBundle+JKAppIcon.m in Sources */,
 				B8102502206A10390099CDA8 /* NSDictionary+JKSafeAccess.m in Sources */,
+				2273AA1426F5ABA9008331F1 /* UIImage+JKGrayscale.m in Sources */,
 				B8102658206A12160099CDA8 /* NSObject+JKAssociatedObject.m in Sources */,
 				B81024B9206A0FDD0099CDA8 /* NSURLRequest+JKParamsFromDictionary.m in Sources */,
 				B81024F8206A10390099CDA8 /* NSArray+JKSafeAccess.m in Sources */,

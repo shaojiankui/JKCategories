@@ -110,28 +110,6 @@
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
-+ (UIImage*)jk_covertToGrayImageFromImage:(UIImage*)sourceImage
-{
-    int width = sourceImage.size.width;
-    int height = sourceImage.size.height;
-    
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
-    CGContextRef context = CGBitmapContextCreate (nil,width,height,8,0,colorSpace,kCGImageAlphaNone);
-    CGColorSpaceRelease(colorSpace);
-    
-    if (context == NULL) {
-        return nil;
-    }
-    
-    CGContextDrawImage(context,CGRectMake(0, 0, width, height), sourceImage.CGImage);
-    CGImageRef contextRef = CGBitmapContextCreateImage(context);
-    UIImage *grayImage = [UIImage imageWithCGImage:contextRef];
-    CGContextRelease(context);
-    CGImageRelease(contextRef);
-    
-    return grayImage;
-}
-
 - (UIImage *)jk_imageMaskedWithColor:(UIColor *)maskColor {
     NSParameterAssert(maskColor != nil);
     

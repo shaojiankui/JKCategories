@@ -13,14 +13,11 @@
 /// 根据颜色生成纯色图片
 + (UIImage *)jk_imageWithColor:(UIColor *)color;
 
-/// 取图片某一点的颜色
+/// 获取图片某一点的颜色
 - (UIColor *)jk_colorAtPoint:(CGPoint )point;
 
-/// 取某一像素的颜色
+/// 获取某一像素的颜色
 - (UIColor *)jk_colorAtPixel:(CGPoint)point;
-
-/// 获得灰度图
-+ (UIImage *)jk_covertToGrayImageFromImage:(UIImage*)sourceImage;
 
 /// 渲染图片，添加一层指定的遮罩颜色
 - (UIImage *)jk_imageMaskedWithColor:(UIColor *)maskColor;

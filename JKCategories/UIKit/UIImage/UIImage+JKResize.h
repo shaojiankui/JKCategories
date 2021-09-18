@@ -2,10 +2,19 @@
 // Created by Trevor Harmon on 8/5/09.
 //
 
-/// Extends the UIImage class to support resizing/cropping
 #import <UIKit/UIKit.h>
 
+/// Extends the UIImage class to support resizing/cropping
 @interface UIImage (JKResize)
+
+/// 指定图片的最长边，返回等比例图片的尺寸
+/// @param image 原始图片
+/// @param maxLength 最长边
++ (CGSize)jk_resizeImage:(UIImage *)image withMaxLength:(CGFloat)maxLength;
+
+/// 返回一张可拉伸的图片
+/// 使用场景：拉伸聊天气泡框
++ (UIImage *)jk_resizableImage:(UIImage *)image;
 
 /// 裁剪图片
 /// @param bounds 裁剪的区域
@@ -20,16 +29,17 @@
        interpolationQuality:(CGInterpolationQuality)quality;
 
 /// 调整图片大小
+/// @param newSize 新的图片尺寸
+- (UIImage *)jk_resizedImage:(CGSize)newSize;
+
+/// 调整图片大小
 /// @param newSize 补差质量
 /// @param quality 补差质量
 - (UIImage *)jk_resizedImage:(CGSize)newSize
      interpolationQuality:(CGInterpolationQuality)quality;
 
-/// 调整图片大小
-/// @param newSize 新的图片尺寸
-- (UIImage *)jk_resizedImage:(CGSize)newSize;
-
 - (UIImage *)jk_resizedImageWithContentMode:(UIViewContentMode)contentMode
                                   bounds:(CGSize)bounds
                     interpolationQuality:(CGInterpolationQuality)quality;
+
 @end

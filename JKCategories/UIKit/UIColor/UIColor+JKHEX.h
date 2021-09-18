@@ -16,15 +16,4 @@
 + (UIColor *)jk_colorWithHexString:(NSString *)hexString;
 - (NSString *)jk_HEXString;
 
-/// 值不需要除以255.0
-+ (UIColor *)jk_colorWithWholeRed:(CGFloat)red
-                         green:(CGFloat)green
-                          blue:(CGFloat)blue
-                         alpha:(CGFloat)alpha;
-
-/// 值不需要除以255.0
-+ (UIColor *)jk_colorWithWholeRed:(CGFloat)red
-                         green:(CGFloat)green
-                          blue:(CGFloat)blue;
-
 @end
