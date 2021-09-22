@@ -8,7 +8,7 @@
 
 /**
  Reference: <https://github.com/croath/UIImageView-BetterFace>
- a UIImageView category to let the picture-cutting with faces showing better.
+ 一个 UIImage 扩展，让图片裁剪自适应人脸位置。
  */
 #import <UIKit/UIKit.h>
 

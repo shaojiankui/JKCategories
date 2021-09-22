@@ -10,20 +10,24 @@
 
 @implementation UIImage (JKMerge)
 
-+ (UIImage*)jk_mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage {
-    CGImageRef firstImageRef = firstImage.CGImage;
-    CGFloat firstWidth = CGImageGetWidth(firstImageRef);
-    CGFloat firstHeight = CGImageGetHeight(firstImageRef);
-    CGImageRef secondImageRef = secondImage.CGImage;
-    CGFloat secondWidth = CGImageGetWidth(secondImageRef);
-    CGFloat secondHeight = CGImageGetHeight(secondImageRef);
-    CGSize mergedSize = CGSizeMake(MAX(firstWidth, secondWidth), MAX(firstHeight, secondHeight));
-    UIGraphicsBeginImageContext(mergedSize);
-    [firstImage drawInRect:CGRectMake(0, 0, firstWidth, firstHeight)];
-    [secondImage drawInRect:CGRectMake(0, 0, secondWidth, secondHeight)];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
++ (UIImage *)jk_mergeImage:(UIImage *)backImage frontImage:(UIImage *)frontImage {
+    
+    CGImageRef backCGImage = backImage.CGImage;
+    CGFloat backImageWidth = CGImageGetWidth(backCGImage);
+    CGFloat backImageHeight = CGImageGetHeight(backCGImage);
+    
+    CGImageRef frontCGImage = frontImage.CGImage;
+    CGFloat frontImageWidth = CGImageGetWidth(frontCGImage);
+    CGFloat frontImageHeight = CGImageGetHeight(frontCGImage);
+    
+    // 1.1 计算图案的大小和位置
+    UIGraphicsBeginImageContext(CGSizeMake(backImageWidth, backImageHeight));
+    [backImage drawInRect:CGRectMake(0, 0, backImageWidth, backImageHeight)];
+    [frontImage drawInRect:CGRectMake(0, 0, frontImageWidth, frontImageHeight)];
+    UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    return image;
+    
+    return resultImage;
 }
 
 @end
