@@ -43,6 +43,19 @@
     return array;
 }
 
+- (NSDictionary *)jk_mapValues:(id (^)(id value))block
+{
+	NSMutableDictionary *mapped = [NSMutableDictionary dictionaryWithCapacity:self.count];
+	
+	[self enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+		id object = block(obj);
+		if (object) {
+			[mapped setObject:block(obj) forKey:key];
+		}
+	}];
+	
+	return mapped;
+}
 
 - (NSDictionary *)jk_pick:(NSArray *)keys {
     NSMutableDictionary *picked = [[NSMutableDictionary alloc] initWithCapacity:keys.count];

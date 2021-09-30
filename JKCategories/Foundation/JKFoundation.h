@@ -8,6 +8,7 @@
 #if __has_include(<JKCategories/JKFoundation.h>)
 #import <JKCategories/NSArray+JKBlock.h>
 #import <JKCategories/NSArray+JKSafeAccess.h>
+#import <JKCategories/NSArray+JKJSONString.h>
 #import <JKCategories/NSBundle+JKAppIcon.h>
 #import <JKCategories/NSData+JKAPNSToken.h>
 #import <JKCategories/NSData+JKBase64.h>
@@ -89,6 +90,7 @@
 #else
 #import "NSArray+JKBlock.h"
 #import "NSArray+JKSafeAccess.h"
+#import "NSArray+JKJSONString.h"
 #import "NSBundle+JKAppIcon.h"
 #import "NSData+JKAPNSToken.h"
 #import "NSData+JKBase64.h"

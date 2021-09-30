@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSSet (JKBlock)
-- (void)jk_each:(void (^)(id))block;
-- (void)jk_eachWithIndex:(void (^)(id, int))block;
-- (NSArray *)jk_map:(id (^)(id object))block;
-- (NSArray *)jk_select:(BOOL (^)(id object))block;
-- (NSArray *)jk_reject:(BOOL (^)(id object))block;
-- (NSArray *)jk_sort;
-- (id)jk_reduce:(id(^)(id accumulator, id object))block;
-- (id)jk_reduce:(id)initial withBlock:(id(^)(id accumulator, id object))block;
+@interface NSSet<__covariant ObjectType> (JKBlock)
+- (void)jk_each:(void (^)(ObjectType))block;
+- (void)jk_eachWithIndex:(void (^)(ObjectType object, int idx))block;
+- (NSArray *)jk_map:(id (^)(ObjectType object))block;
+- (NSArray <ObjectType>*)jk_select:(BOOL (^)(ObjectType object))block;
+- (NSArray <ObjectType>*)jk_reject:(BOOL (^)(ObjectType object))block;
+- (NSArray <ObjectType>*)jk_sort;
+- (id)jk_reduce:(id(^)(id accumulator, ObjectType object))block;
+- (id)jk_reduce:(id)initial withBlock:(id(^)(id accumulator, id ObjectType))block;
 @end

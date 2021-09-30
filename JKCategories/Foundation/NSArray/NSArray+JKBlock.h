@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (JKBlock)
-- (void)jk_each:(void (^)(id object))block;
-- (void)jk_eachWithIndex:(void (^)(id object, NSUInteger index))block;
-- (NSArray *)jk_map:(id (^)(id object))block;
-- (NSArray *)jk_filter:(BOOL (^)(id object))block;
-- (NSArray *)jk_reject:(BOOL (^)(id object))block;
-- (id)jk_detect:(BOOL (^)(id object))block;
-- (id)jk_reduce:(id (^)(id accumulator, id object))block;
-- (id)jk_reduce:(id)initial withBlock:(id (^)(id accumulator, id object))block;
+@interface NSArray<__covariant ObjectType> (JKBlock)
+- (void)jk_each:(void (^)(ObjectType object))block;
+- (void)jk_eachWithIndex:(void (^)(ObjectType object, NSUInteger index))block;
+- (NSArray *)jk_map:(id (^)(ObjectType object))block;
+- (NSArray *)jk_filter:(BOOL (^)(ObjectType object))block;
+- (NSArray <ObjectType>*)jk_reject:(BOOL (^)(ObjectType object))block;
+- (ObjectType)jk_detect:(BOOL (^)(ObjectType object))block;
+- (id)jk_reduce:(id (^)(id accumulator, ObjectType object))block;
+- (id)jk_reduce:(id)initial withBlock:(id (^)(id accumulator, ObjectType object))block;
 @end
