@@ -28,7 +28,7 @@
     
     __unused NSString *string = [responseObject jk_stringForKey:@"string"];
     
-    __unused long long date = [responseObject jk_longLongForKey:@"date"];
+    //__unused long long date = [responseObject jk_longLongForKey:@"date"];
     
     __unused NSNumber *number = [responseObject jk_numberForKey:@"number"];
     
@@ -46,7 +46,7 @@
     
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     
-    [dict jk_setObj:@"334" forKey:@"obj"];
+    [dict jk_setObject:@"334" forKey:@"obj"];
     
     [dict jk_setString:@"string" forKey:@"str"];
     

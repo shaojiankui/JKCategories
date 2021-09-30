@@ -5,9 +5,11 @@
 //  Created by croath on 13-10-22.
 //  Copyright (c) 2013年 Croath. All rights reserved.
 //
-// https://github.com/croath/UIImageView-BetterFace
-//  a UIImageView category to let the picture-cutting with faces showing better
 
+/**
+ Reference: <https://github.com/croath/UIImageView-BetterFace>
+ a UIImageView category to let the picture-cutting with faces showing better
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (JKBetterFace)

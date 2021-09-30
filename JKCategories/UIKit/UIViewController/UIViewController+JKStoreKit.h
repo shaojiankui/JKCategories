@@ -4,17 +4,12 @@
 //
 //  Created by Joe Fabisevich on 8/12/14.
 //  Copyright (c) 2014 Snarkbots. All rights reserved.
+//
 //  https://github.com/mergesort/UIViewController-StoreKit
 
 #import <UIKit/UIKit.h>
 
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Constants
-
 #define affiliateToken @"10laQX"
-
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Interface
 
 @interface UIViewController (JKStoreKit)
 

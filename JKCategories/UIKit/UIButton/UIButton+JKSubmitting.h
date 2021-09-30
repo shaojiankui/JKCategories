@@ -1,12 +1,14 @@
-
 //
 //  UIButton+Submitting.h
 //  FXCategories
 //
 //  Created by foxsofter on 15/4/2.
 //  Copyright (c) 2015年 foxsofter. All rights reserved.
-//  https://github.com/foxsofter/FXCategories
+//
 
+/**
+ Reference: <https://github.com/foxsofter/FXCategories>
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIButton (JKSubmitting)

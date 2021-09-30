@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface NSObject (JKAssociatedObject)
+
 /**
  *  @brief  附加一个stong对象
  *
@@ -17,6 +17,7 @@
  *  @param key   被附加对象的key
  */
 - (void)jk_associateValue:(id)value withKey:(void *)key; // Strong reference
+
 /**
  *  @brief  附加一个weak对象
  *

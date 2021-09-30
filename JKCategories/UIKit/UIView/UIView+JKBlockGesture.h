@@ -7,19 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+
 typedef void (^JKGestureActionBlock)(UIGestureRecognizer *gestureRecoginzer);
 
 @interface UIView (JKBlockGesture)
-/**
- *  @brief  添加tap手势
- *
- *  @param block 代码块
- */
+
+/// 添加 Tag 手势
 - (void)jk_addTapActionWithBlock:(JKGestureActionBlock)block;
-/**
- *  @brief  添加长按手势
- *
- *  @param block 代码块
- */
+
+/// 添加长按手势
 - (void)jk_addLongPressActionWithBlock:(JKGestureActionBlock)block;
+
 @end

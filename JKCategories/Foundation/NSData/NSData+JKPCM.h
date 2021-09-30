@@ -8,20 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+
 /*
- 
-AudioStreamBasicDescription _format;
-_format.mFormatID = kAudioFormatLinearPCM;
-_format.mFormatFlags = kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked;
-_format.mBitsPerChannel = 16;
-_format.mChannelsPerFrame = 1;
-_format.mBytesPerPacket = _format.mBytesPerFrame = (_format.mBitsPerChannel / 8) * _format.mChannelsPerFrame;
-_format.mFramesPerPacket = 1;
-_format.mSampleRate = 8000.0f;
+ AudioStreamBasicDescription _format;
+ _format.mFormatID = kAudioFormatLinearPCM;
+ _format.mFormatFlags = kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked;
+ _format.mBitsPerChannel = 16;
+ _format.mChannelsPerFrame = 1;
+ _format.mBytesPerPacket = _format.mBytesPerFrame = (_format.mBitsPerChannel / 8) * _format.mChannelsPerFrame;
+ _format.mFramesPerPacket = 1;
+ _format.mSampleRate = 8000.0f;
 */
 
 @interface NSData (JKPCM)
-//self   raw audio data
 
 /**
  *  format wav data
@@ -31,4 +30,5 @@ _format.mSampleRate = 8000.0f;
  *  @return wav data
  */
 - (NSData *)jk_wavDataWithPCMFormat:(AudioStreamBasicDescription)PCMFormat;
+
 @end

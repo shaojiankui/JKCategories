@@ -3,9 +3,11 @@
 //
 // Created by Mel Sampat on 5/11/12.
 // Copyright (c) 2012 Mel Sampat.
+//
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 @interface NSDate (JKReporting)
 
 // Return a date with a specified year, month and day.  00:00:00
@@ -45,7 +47,6 @@
 + (NSDate *)jk_firstDayOfCurrentYear;
 + (NSDate *)jk_firstDayOfPreviousYear;
 + (NSDate *)jk_firstDayOfNextYear;
-
 
 - (NSDate *)jk_dateFloor;
 - (NSDate *)jk_dateCeil;

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UITextView (JKInputLimit)
-@property (assign, nonatomic)  NSInteger jk_maxLength;//if <=0, no limit
+
+// if <=0, no limit
+@property (assign, nonatomic)  NSInteger jk_maxLength;
+
 @end

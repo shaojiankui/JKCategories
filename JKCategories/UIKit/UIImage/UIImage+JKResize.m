@@ -1,7 +1,6 @@
 // UIImage+Resize.m
 // Created by Trevor Harmon on 8/5/09.
-// Free for personal or commercial use, with or without modification.
-// No warranty is expressed or implied.
+//
 
 #import "UIImage+JKResize.h"
 #import "UIImage+JKRoundedCorner.h"
@@ -9,14 +8,44 @@
 
 // Private helper methods
 @interface UIImage (ResizePrivateMethods)
+
 - (UIImage *)jk_resizedImage:(CGSize)newSize
                 transform:(CGAffineTransform)transform
            drawTransposed:(BOOL)transpose
      interpolationQuality:(CGInterpolationQuality)quality;
+
 - (CGAffineTransform)jk_transformForOrientation:(CGSize)newSize;
+
 @end
 
 @implementation UIImage (JKResize)
+
++ (CGSize)jk_resizeImage:(UIImage *)image withMaxLength:(CGFloat)maxLength {
+
+    CGFloat targetWidth = maxLength;
+    CGFloat targetHeight = maxLength;
+    CGFloat sourceWidth = CGImageGetWidth(image.CGImage);
+    CGFloat sourceHeight = CGImageGetHeight(image.CGImage);
+    
+    if (sourceWidth > maxLength || sourceHeight > maxLength) {
+        if (sourceWidth > sourceHeight) {
+            // 如果图片宽度 > 高度，横图，宽度作为最大长度
+            targetHeight = round(targetWidth * sourceHeight / sourceWidth);
+        } else {
+            // 如果图片高度 > 宽度，长度，高度作为最大长度
+            targetWidth = round(targetHeight * sourceWidth / sourceHeight);
+        }
+        return CGSizeMake(targetWidth, targetHeight);
+    } else {
+        return CGSizeMake(sourceWidth, sourceHeight);
+    }
+}
+
++ (UIImage *)jk_resizableImage:(UIImage *)image {
+    CGFloat imageWidth = image.size.width * 0.5;
+    CGFloat imageHeight = image.size.height * 0.5;
+    return [image resizableImageWithCapInsets:UIEdgeInsetsMake(imageHeight, imageWidth, imageHeight, imageWidth)];
+}
 
 // Returns a copy of this image that is cropped to the given bounds.
 // The bounds will be adjusted using CGRectIntegral.
@@ -52,6 +81,15 @@
     return [transparentBorderImage jk_roundedCornerImage:cornerRadius borderSize:borderSize];
 }
 
+- (UIImage *)jk_resizedImage:(CGSize)newSize
+{
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, UIScreen.mainScreen.scale);
+    [self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 // Returns a rescaled copy of the image, taking into account its orientation
 // The image will be scaled disproportionately if necessary to fit the bounds specified by the parameter
 - (UIImage *)jk_resizedImage:(CGSize)newSize interpolationQuality:(CGInterpolationQuality)quality {
@@ -64,7 +102,6 @@
         case UIImageOrientationRightMirrored:
             drawTransposed = YES;
             break;
-            
         default:
             drawTransposed = NO;
     }
@@ -73,15 +110,6 @@
                     transform:[self jk_transformForOrientation:newSize]
                drawTransposed:drawTransposed
          interpolationQuality:quality];
-}
-
-- (UIImage *)jk_resizedImage:(CGSize)newSize
-{
-	UIGraphicsBeginImageContextWithOptions(newSize, NO, UIScreen.mainScreen.scale);
-	[self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-	UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-	UIGraphicsEndImageContext();
-	return newImage;
 }
 
 // Resizes the image according to the given content mode, taking into account the image's orientation

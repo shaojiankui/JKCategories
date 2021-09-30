@@ -103,8 +103,4 @@ static inline dispatch_time_t jk_dTimeDelay(NSTimeInterval time) {
     aWrappingBlock(YES);
 }
 
-+ (void)jk_cancelPreviousPerformBlock:(id)aWrappingBlockHandle {
-    [self jk_cancelBlock:aWrappingBlockHandle];
-}
-
 @end

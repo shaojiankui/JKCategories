@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSUserDefaults (JKSafeAccess)
+
 + (NSString *)jk_stringForKey:(NSString *)defaultName;
 
 + (NSArray *)jk_arrayForKey:(NSString *)defaultName;

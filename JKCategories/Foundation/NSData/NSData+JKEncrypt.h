@@ -5,8 +5,10 @@
 //  Created by Jakey on 14/12/15.
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
 //
-// 加密解密工具 http://tool.chacuo.net/cryptdes
 
+/**
+ 加密解密工具：<http://tool.chacuo.net/cryptdes>
+ */
 #import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonCryptor.h>
 
@@ -21,6 +23,7 @@
  *  @return data
  */
 - (NSData *)jk_encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv;
+
 /**
  *  @brief  利用AES解密据
  *
@@ -30,6 +33,7 @@
  *  @return 解密后数据
  */
 - (NSData *)jk_decryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv;
+
 /**
  *  利用DES加密数据
  *
@@ -39,6 +43,7 @@
  *  @return data
  */
 - (NSData *)jk_encryptedWithDESUsingKey:(NSString*)key andIV:(NSData*)iv;
+
 /**
  *  @brief   利用DES解密数据
  *
@@ -48,6 +53,7 @@
  *  @return 解密后数据
  */
 - (NSData *)jk_decryptedWithDESUsingKey:(NSString*)key andIV:(NSData*)iv;
+
 /**
  *  利用3DES加密数据
  *
@@ -57,6 +63,7 @@
  *  @return data
  */
 - (NSData *)jk_encryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv;
+
 /**
  *  @brief   利用3DES解密数据
  *
@@ -73,10 +80,12 @@
                  operation:(CCOperation)operation
                        key:(NSString *)key
                         iv:(NSData *)iv;
+
 /**
  *  @brief  NSData 转成UTF8 字符串
  *
  *  @return 转成UTF8 字符串
  */
 - (NSString *)jk_UTF8String;
+
 @end

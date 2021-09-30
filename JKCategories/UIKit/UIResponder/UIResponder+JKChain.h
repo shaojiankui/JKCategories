@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIResponder (JKChain)
-/**
- *  @brief  响应者链
- *
- *  @return  响应者链
- */
+
+/// 响应者链
 - (NSString *)jk_responderChainDescription;
+
 @end

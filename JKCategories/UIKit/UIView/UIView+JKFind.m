@@ -9,102 +9,20 @@
 #import "UIView+JKFind.h"
 
 @implementation UIView (JKFind)
-/**
- *  @brief  找到指定类名的view对象
- *
- *  @param clazz view类名
- *
- *  @return view对象
- */
-- (id)jk_findSubViewWithSubViewClass:(Class)clazz
-{
-    for (id subView in self.subviews) {
-        if ([subView isKindOfClass:clazz]) {
-            return subView;
+
+- (UIViewController *)jk_viewController {
+    UIView *view = self;
+    while (view) {
+        UIResponder *nextResponder = [view nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
         }
+        view = view.superview;
     }
-    
-    return nil;
-}
-/**
- *  @brief  找到指定类名的SuperView对象
- *
- *  @param clazz SuperView类名
- *
- *  @return view对象
- */
-- (id)jk_findSuperViewWithSuperViewClass:(Class)clazz
-{
-    if (self == nil) {
-        return nil;
-    } else if (self.superview == nil) {
-        return nil;
-    } else if ([self.superview isKindOfClass:clazz]) {
-        return self.superview;
-    } else {
-        return [self.superview jk_findSuperViewWithSuperViewClass:clazz];
-    }
-}
-/**
- *  @brief  找到并且resign第一响应者
- *
- *  @return 结果
- */
-- (BOOL)jk_findAndResignFirstResponder {
-    if (self.isFirstResponder) {
-        [self resignFirstResponder];
-        return YES;
-    }
-    
-    for (UIView *v in self.subviews) {
-        if ([v jk_findAndResignFirstResponder]) {
-            return YES;
-        }
-    }
-    
-    return NO;
-}
-/**
- *  @brief  找到第一响应者
- *
- *  @return 第一响应者
- */
-- (UIView *)jk_findFirstResponder {
-    
-    if (([self isKindOfClass:[UITextField class]] || [self isKindOfClass:[UITextView class]])
-        && (self.isFirstResponder)) {
-        return self;
-    }
-    
-    for (UIView *v in self.subviews) {
-        UIView *fv = [v jk_findFirstResponder];
-        if (fv) {
-            return fv;
-        }
-    }
-    
-    return nil;
-}
-/**
- *  @brief  找到当前view所在的viewcontroler
- */
-- (UIViewController *)jk_viewController
-{
-    UIResponder *responder = self.nextResponder;
-    do {
-        if ([responder isKindOfClass:[UIViewController class]]) {
-            return (UIViewController *)responder;
-        }
-        responder = responder.nextResponder;
-    } while (responder);
     return nil;
 }
 
-/**
- * @brief 找到当前view所在的navigationController
- */
-- (UINavigationController *)jk_navigationController
-{
+- (UINavigationController *)jk_navigationController {
     UIResponder *responder = self.nextResponder;
     do {
         if ([responder isKindOfClass:[UINavigationController class]]) {
@@ -117,11 +35,7 @@
     return nil;
 }
 
-/**
- * @brief 找到当前view所在的tabBarController
- */
-- (UITabBarController *)jk_tabBarController
-{
+- (UITabBarController *)jk_tabBarController {
     UIResponder *responder = self.nextResponder;
     do {
         if ([responder isKindOfClass:[UITabBarController class]]) {
@@ -130,6 +44,58 @@
         
         responder = responder.nextResponder;
     } while (responder);
+    
+    return nil;
+}
+
+- (id)jk_findSubViewWithSubViewClass:(Class)clazz {
+    for (id subView in self.subviews) {
+        if ([subView isKindOfClass:clazz]) {
+            return subView;
+        }
+    }
+    
+    return nil;
+}
+
+- (id)jk_findSuperViewWithSuperViewClass:(Class)clazz {
+    if (!self) {
+        return nil;
+    } else if (!self.superview) {
+        return nil;
+    } else if ([self.superview isKindOfClass:clazz]) {
+        return self.superview;
+    } else {
+        return [self.superview jk_findSuperViewWithSuperViewClass:clazz];
+    }
+}
+
+- (BOOL)jk_findAndResignFirstResponder {
+    if (self.isFirstResponder) {
+        [self resignFirstResponder];
+        return YES;
+    }
+    
+    for (UIView *v in self.subviews) {
+        if ([v jk_findAndResignFirstResponder]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+- (UIView *)jk_findFirstResponder {
+    if (([self isKindOfClass:[UITextField class]] || [self isKindOfClass:[UITextView class]])
+        && (self.isFirstResponder)) {
+        return self;
+    }
+    
+    for (UIView *v in self.subviews) {
+        UIView *fv = [v jk_findFirstResponder];
+        if (fv) {
+            return fv;
+        }
+    }
     
     return nil;
 }

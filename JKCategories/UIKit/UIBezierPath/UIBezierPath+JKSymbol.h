@@ -4,10 +4,13 @@
 //
 //  Created by Kaijie Yu on 6/29/12.
 //  Copyright (c) 2012 Kjuly. All rights reserved.
-//https://github.com/Kjuly/UIBezierPath-Symbol
+//
 
-
+/**
+ Reference: <https://github.com/Kjuly/UIBezierPath-Symbol>
+ */
 #import <UIKit/UIKit.h>
+
 // Direction
 typedef enum {
   kUIBezierPathArrowDirectionNone  = 0,

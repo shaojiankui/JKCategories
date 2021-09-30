@@ -33,7 +33,7 @@ float jk_radiansForDegrees(int degrees);
 - (void)jk_changeAlpha:(float)newAlpha secs:(float)secs;
 - (void)jk_pulse:(float)secs continuously:(BOOL)continuously;
 
-//add subview
+// add subview
 - (void)jk_addSubviewWithFadeAnimation:(UIView *)subview;
 
 @end

@@ -9,15 +9,14 @@
 #import "UIImage+JKOrientation.h"
 
 @implementation UIImage (JKOrientation)
-/**
- *  @brief  修正图片的方向
- *
- *  @param srcImg 图片
- *
- *  @return 修正方向后的图片
- */
+
 + (UIImage *)jk_fixOrientation:(UIImage *)srcImg {
+    
+    // No-op if the orientation is already correct
     if (srcImg.imageOrientation == UIImageOrientationUp) return srcImg;
+    
+    // We need to calculate the proper transformation to make the image upright.
+    // We do it in 2 steps: Rotate if Left/Right/Down, and then flip if Mirrored.
     CGAffineTransform transform = CGAffineTransformIdentity;
     switch (srcImg.imageOrientation) {
         case UIImageOrientationDown:
@@ -39,6 +38,7 @@
         case UIImageOrientationUpMirrored:
             break;
     }
+    
     switch (srcImg.imageOrientation) {
         case UIImageOrientationUpMirrored:
         case UIImageOrientationDownMirrored:
@@ -56,6 +56,8 @@
         case UIImageOrientationRight:
             break;
     }
+    
+    // Now we draw the underlying CGImage into a new context, applying the transform calculated above.
     CGContextRef ctx = CGBitmapContextCreate(NULL, srcImg.size.width, srcImg.size.height,
                                              CGImageGetBitsPerComponent(srcImg.CGImage), 0,
                                              CGImageGetColorSpace(srcImg.CGImage),
@@ -66,16 +68,21 @@
         case UIImageOrientationLeftMirrored:
         case UIImageOrientationRight:
         case UIImageOrientationRightMirrored:
+            // Grr...
             CGContextDrawImage(ctx, CGRectMake(0,0,srcImg.size.height,srcImg.size.width), srcImg.CGImage);
             break;
+            
         default:
             CGContextDrawImage(ctx, CGRectMake(0,0,srcImg.size.width,srcImg.size.height), srcImg.CGImage);
             break;
     }
+    
+    // And now we just create a new UIImage from the drawing context
     CGImageRef cgimg = CGBitmapContextCreateImage(ctx);
     UIImage *img = [UIImage imageWithCGImage:cgimg];
     CGContextRelease(ctx);
     CGImageRelease(cgimg);
+    
     return img;
 }
 
@@ -94,40 +101,20 @@
     UIGraphicsEndImageContext();
     return image;
 }
-/**
- *  @brief  垂直翻转
- *
- *  @return  翻转后的图片
- */
+
 - (UIImage *)jk_flipVertical {
     return [self jk_flip:NO];
 }
-/**
- *  @brief  水平翻转
- *
- *  @return 翻转后的图片
- */
+
 - (UIImage *)jk_flipHorizontal {
     return [self jk_flip:YES];
 }
-/**
- *  @brief  旋转图片
- *
- *  @param radians 弧度
- *
- *  @return 旋转后图片
- */
+
 - (UIImage *)jk_imageRotatedByRadians:(CGFloat)radians
 {
     return [self jk_imageRotatedByDegrees:[UIImage jk_radiansToDegrees:radians]];
 }
-/**
- *  @brief  旋转图片
- *
- *  @param degrees 度
- *
- *  @return 旋转后图片
- */
+
 - (UIImage *)jk_imageRotatedByDegrees:(CGFloat)degrees
 {
     // calculate the size of the rotated view's containing box for our drawing space
@@ -153,29 +140,14 @@
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;
-    
 }
 
-/**
- *  @brief  角度转弧度
- *
- *  @param degrees 角度
- *
- *  @return 弧度
- */
-+(CGFloat)jk_degreesToRadians:(CGFloat)degrees
-{
++ (CGFloat)jk_degreesToRadians:(CGFloat)degrees {
     return degrees * M_PI / 180;
 }
-/**
- *  @brief  弧度转角度
- *
- *  @param radians 弧度
- *
- *  @return 角度
- */
-+(CGFloat)jk_radiansToDegrees:(CGFloat)radians
-{
+
++ (CGFloat)jk_radiansToDegrees:(CGFloat)radians {
     return radians * 180/M_PI;
 }
+
 @end

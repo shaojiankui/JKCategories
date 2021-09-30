@@ -18,7 +18,6 @@ typedef void (^JK_UISearchBarScopeIndexBlock)(UISearchBar *searchBar, NSInteger 
 
 @implementation UISearchBar (JKBlocks)
 
-
 static const void *JK_UISearchBarDelegateKey                                = &JK_UISearchBarDelegateKey;
 static const void *JK_UISearchBarShouldBeginEditingKey                      = &JK_UISearchBarShouldBeginEditingKey;
 static const void *JK_UISearchBarTextDidBeginEditingKey                     = &JK_UISearchBarTextDidBeginEditingKey;
@@ -32,10 +31,8 @@ static const void *JK_UISearchBarCancelButtonClickedKey                         
 static const void *JK_UISearchBarResultsListButtonClickedKey                                = &JK_UISearchBarResultsListButtonClickedKey;
 static const void *JK_UISearchBarSelectedScopeButtonIndexDidChangeKey                                = &JK_UISearchBarSelectedScopeButtonIndexDidChangeKey;
 
-
-
-
 #pragma mark UISearchBar delegate Methods
+
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar;
 {
     JK_UISearchBarReturnBlock block = searchBar.jk_completionShouldBeginEditingBlock;

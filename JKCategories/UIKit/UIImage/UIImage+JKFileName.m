@@ -7,8 +7,8 @@
 //
 #import "UIImage+JKFileName.h"
 
-
 @implementation UIImage (JKFileName)
+
 /**
  *  @brief  根据bundle中的文件名读取图片
  *
@@ -19,6 +19,7 @@
 + (UIImage *)jk_imageWithFileName:(NSString *)name {
     return [self jk_imageWithFileName:name inBundle:[NSBundle mainBundle]];
 }
+
 + (UIImage *)jk_imageWithFileName:(NSString *)name inBundle:(NSBundle*)bundle{
     NSString *extension = @"png";
     

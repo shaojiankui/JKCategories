@@ -5,9 +5,12 @@
 //  Created by Barry on 12/11/15.
 //  Copyright © 2015 BarryLee. All rights reserved.
 //
-// An UIButton category for middle aligning imageView and titleLabel 
-//https://github.com/hcbarry/MiddleAlignedButton
 
+/**
+ Reference: <https://github.com/hcbarry/MiddleAlignedButton>
+ 
+ An UIButton category for middle aligning imageView and titleLabel
+ */
 #import <UIKit/UIKit.h>
 
 /**

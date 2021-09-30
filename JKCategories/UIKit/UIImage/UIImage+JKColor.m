@@ -9,13 +9,7 @@
 #import "UIImage+JKColor.h"
 
 @implementation UIImage (JKColor)
-/**
- *  @brief  根据颜色生成纯色图片
- *
- *  @param color 颜色
- *
- *  @return 纯色图片
- */
+
 + (UIImage *)jk_imageWithColor:(UIColor *)color {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
@@ -29,13 +23,7 @@
     
     return image;
 }
-/**
- *  @brief  取图片某一点的颜色
- *
- *  @param point 某一点
- *
- *  @return 颜色
- */
+
 - (UIColor *)jk_colorAtPoint:(CGPoint )point
 {
     if (point.x < 0 || point.y < 0) return nil;
@@ -79,13 +67,7 @@
     free(rawData);
     return result;
 }
-/**
- *  @brief  取某一像素的颜色
- *
- *  @param point 一像素
- *
- *  @return 颜色
- */
+
 - (UIColor *)jk_colorAtPixel:(CGPoint)point
 {
     // Cancel if point is outside image coordinates
@@ -127,49 +109,29 @@
     CGFloat alpha = (CGFloat)pixelData[3] / 255.0f;
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
-/**
- *  @brief  返回该图片是否有透明度通道
- *
- *  @return 是否有透明度通道
- */
-- (BOOL)jk_hasAlphaChannel
-{
-    CGImageAlphaInfo alpha = CGImageGetAlphaInfo(self.CGImage);
-    return (alpha == kCGImageAlphaFirst ||
-            alpha == kCGImageAlphaLast ||
-            alpha == kCGImageAlphaPremultipliedFirst ||
-            alpha == kCGImageAlphaPremultipliedLast);
-}
 
-/**
- *  @brief  获得灰度图
- *
- *  @param sourceImage 图片
- *
- *  @return 获得灰度图片
- */
-
-+ (UIImage*)jk_covertToGrayImageFromImage:(UIImage*)sourceImage
-{
-    int width = sourceImage.size.width;
-    int height = sourceImage.size.height;
+- (UIImage *)jk_imageMaskedWithColor:(UIColor *)maskColor {
+    NSParameterAssert(maskColor != nil);
     
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
-    CGContextRef context = CGBitmapContextCreate (nil,width,height,8,0,colorSpace,kCGImageAlphaNone);
-    CGColorSpaceRelease(colorSpace);
+    CGRect imageRect = CGRectMake(0.0f, 0.0f, self.size.width, self.size.height);
+    UIImage *newImage = nil;
     
-    if (context == NULL) {
-        return nil;
+    UIGraphicsBeginImageContextWithOptions(imageRect.size, NO, self.scale);
+    {
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        
+        CGContextScaleCTM(context, 1.0f, -1.0f);
+        CGContextTranslateCTM(context, 0.0f, -(imageRect.size.height));
+        
+        CGContextClipToMask(context, imageRect, self.CGImage);
+        CGContextSetFillColorWithColor(context, maskColor.CGColor);
+        CGContextFillRect(context, imageRect);
+        
+        newImage = UIGraphicsGetImageFromCurrentImageContext();
     }
+    UIGraphicsEndImageContext();
     
-    CGContextDrawImage(context,CGRectMake(0, 0, width, height), sourceImage.CGImage);
-    CGImageRef contextRef = CGBitmapContextCreateImage(context);
-    UIImage *grayImage = [UIImage imageWithCGImage:contextRef];
-    CGContextRelease(context);
-    CGImageRelease(contextRef);
-    
-    return grayImage;
+    return newImage;
 }
-
 
 @end

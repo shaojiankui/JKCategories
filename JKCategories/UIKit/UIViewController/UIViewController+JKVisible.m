@@ -9,7 +9,9 @@
 #import "UIViewController+JKVisible.h"
 
 @implementation UIViewController (JKVisible)
+
 - (BOOL)jk_isVisible {
     return [self isViewLoaded] && self.view.window;
 }
+
 @end

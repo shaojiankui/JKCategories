@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Valerio Mazzeo. All rights reserved.
 //
 
-
 /**
  NSString (Emoji) extends the NSString class to provide custom functionality
  related to the Emoji emoticons.
@@ -17,6 +16,7 @@
  */
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+
 @interface NSString (JKEmoji)
 
 /**

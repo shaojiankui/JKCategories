@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 typedef NS_ENUM(NSInteger, JKScrollDirection) {
     JKScrollDirectionUp,
     JKScrollDirectionDown,
@@ -42,4 +43,5 @@ typedef NS_ENUM(NSInteger, JKScrollDirection) {
 
 - (void)jk_scrollToVerticalPageIndex:(NSUInteger)pageIndex animated:(BOOL)animated;
 - (void)jk_scrollToHorizontalPageIndex:(NSUInteger)pageIndex animated:(BOOL)animated;
+
 @end

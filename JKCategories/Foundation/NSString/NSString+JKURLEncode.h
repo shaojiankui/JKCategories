@@ -6,7 +6,6 @@
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
 //
 
-
 #import <Foundation/Foundation.h>
 
 @interface NSString (JKURLEncode)
@@ -40,7 +39,7 @@
 - (NSString *)jk_urlDecodeUsingEncoding:(NSStringEncoding)encoding;
 
 /**
- *  @brief  url query转成NSDictionary
+ *  @brief  url query 转成 NSDictionary
  *
  *  @return NSDictionary
  */

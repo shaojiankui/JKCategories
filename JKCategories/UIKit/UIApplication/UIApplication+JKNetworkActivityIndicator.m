@@ -7,7 +7,6 @@
 //
 
 #import "UIApplication+JKNetworkActivityIndicator.h"
-
 #import <libkern/OSAtomic.h>
 
 @implementation UIApplication (JKNetworkActivityIndicator)

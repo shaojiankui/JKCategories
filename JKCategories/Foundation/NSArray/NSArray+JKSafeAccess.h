@@ -6,79 +6,69 @@
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
+/**
+ Reference:<https://github.com/alibaba/LazyScrollView/TMUtils/NSArray+TMSafeUtils.h>
+ */
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 @interface NSArray (JKSafeAccess)
--(id)jk_objectWithIndex:(NSUInteger)index;
 
-- (NSString*)jk_stringWithIndex:(NSUInteger)index;
+- (id)jk_objectAtIndex:(NSUInteger)index;
+- (id)jk_objectAtIndex:(NSUInteger)index class:(Class)aClass;
 
-- (NSNumber*)jk_numberWithIndex:(NSUInteger)index;
+- (char)jk_charAtIndex:(NSUInteger)index;
+- (short)jk_shortAtIndex:(NSUInteger)index;
+- (int)jk_intAtIndex:(NSUInteger)index;
+- (long)jk_longAtIndex:(NSUInteger)index;
+- (float)jk_floatAtIndex:(NSUInteger)index;
+- (double)jk_doubleAtIndex:(NSUInteger)index;
+- (bool)jk_boolAtIndex:(NSUInteger)index;
 
-- (NSDecimalNumber *)jk_decimalNumberWithIndex:(NSUInteger)index;
+- (NSInteger)jk_integerAtIndex:(NSUInteger)index;
+- (NSUInteger)jk_unsignedIntegerAtIndex:(NSUInteger)index;
+- (NSString *)jk_stringAtIndex:(NSUInteger)index;
+- (NSNumber *)jk_numberAtIndex:(NSUInteger)index;
+- (NSDecimalNumber *)jk_decimalNumberAtIndex:(NSUInteger)index;
 
-- (NSArray*)jk_arrayWithIndex:(NSUInteger)index;
+- (NSArray*)jk_arrayAtIndex:(NSUInteger)index;
+- (NSDictionary*)jk_dictionaryAtIndex:(NSUInteger)index;
+- (NSMutableArray*)jk_mutableArrayAtIndex:(NSUInteger)index;
+- (NSMutableDictionary*)jk_mutableDictionaryAtIndex:(NSUInteger)index;
 
-- (NSDictionary*)jk_dictionaryWithIndex:(NSUInteger)index;
+- (NSData *)jk_dataAtIndex:(NSUInteger)index;
+- (NSDate *)jk_dateAtIndex:(NSUInteger)index dateFormat:(NSString *)dateFormat;
 
-- (NSInteger)jk_integerWithIndex:(NSUInteger)index;
+- (CGFloat)jk_CGFloatAtIndex:(NSUInteger)index;
+- (CGPoint)jk_pointAtIndex:(NSUInteger)index;
+- (CGSize)jk_sizeAtIndex:(NSUInteger)index;
+- (CGRect)jk_rectAtIndex:(NSUInteger)index;
 
-- (NSUInteger)jk_unsignedIntegerWithIndex:(NSUInteger)index;
-
-- (BOOL)jk_boolWithIndex:(NSUInteger)index;
-
-- (int16_t)jk_int16WithIndex:(NSUInteger)index;
-
-- (int32_t)jk_int32WithIndex:(NSUInteger)index;
-
-- (int64_t)jk_int64WithIndex:(NSUInteger)index;
-
-- (char)jk_charWithIndex:(NSUInteger)index;
-
-- (short)jk_shortWithIndex:(NSUInteger)index;
-
-- (float)jk_floatWithIndex:(NSUInteger)index;
-
-- (double)jk_doubleWithIndex:(NSUInteger)index;
-
-- (NSDate *)jk_dateWithIndex:(NSUInteger)index dateFormat:(NSString *)dateFormat;
-//CG
-- (CGFloat)jk_CGFloatWithIndex:(NSUInteger)index;
-
-- (CGPoint)jk_pointWithIndex:(NSUInteger)index;
-
-- (CGSize)jk_sizeWithIndex:(NSUInteger)index;
-
-- (CGRect)jk_rectWithIndex:(NSUInteger)index;
 @end
-
-
-#pragma --mark NSMutableArray setter
 
 @interface NSMutableArray(JKSafeAccess)
 
--(void)jk_addObj:(id)i;
+- (void)jk_addObject:(id)anObject;
 
--(void)jk_addString:(NSString*)i;
+- (void)jk_addChar:(char)aChar;
+- (void)jk_addInt:(int)aInt;
+- (void)jk_addFloat:(float)aFloat;
+- (void)jk_addBool:(BOOL)aBool;
 
--(void)jk_addBool:(BOOL)i;
+- (void)jk_addInteger:(NSInteger)aInteger;
+- (void)jk_addUnsignedInteger:(NSUInteger)aUInteger;
 
--(void)jk_addInt:(int)i;
+- (void)jk_addString:(NSString *)aString;
 
--(void)jk_addInteger:(NSInteger)i;
+- (void)jk_addCGFloat:(CGFloat)aCGFloat;
+- (void)jk_addPoint:(CGPoint)aCGPoint;
+- (void)jk_addSize:(CGSize)aCGSize;
+- (void)jk_addRect:(CGRect)aCGRect;
 
--(void)jk_addUnsignedInteger:(NSUInteger)i;
+- (void)jk_insertObject:(id)anObject atIndex:(NSUInteger)index;
+- (void)jk_replaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject;
 
--(void)jk_addCGFloat:(CGFloat)f;
+- (void)jk_removeObjectAtIndex:(NSUInteger)index;
+- (void)jk_removeObject:(id)anObject;
 
--(void)jk_addChar:(char)c;
-
--(void)jk_addFloat:(float)i;
-
--(void)jk_addPoint:(CGPoint)o;
-
--(void)jk_addSize:(CGSize)o;
-
--(void)jk_addRect:(CGRect)o;
 @end

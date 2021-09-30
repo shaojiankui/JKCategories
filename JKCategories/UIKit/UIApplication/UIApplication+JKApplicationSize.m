@@ -21,7 +21,6 @@
     return folderSizeStr;
 }
 
-
 - (NSString *)jk_documentPath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *basePath = [paths firstObject];
@@ -40,8 +39,6 @@
     return basePath;
 }
 
-
-
 -(unsigned long long)jk_sizeOfFolder:(NSString *)folderPath
 {
     NSArray *contents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:folderPath error:nil];
@@ -56,4 +53,5 @@
     }
     return folderSize;
 }
+
 @end

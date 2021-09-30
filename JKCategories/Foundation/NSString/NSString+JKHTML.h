@@ -4,23 +4,12 @@
 //
 //  Copyright 2006-2008 Google Inc.
 //
-//  Licensed under the Apache License, Version 2.0 (the "License"); you may not
-//  use this file except in compliance with the License.  You may obtain a copy
-//  of the License at
-// 
-//  http://www.apache.org/licenses/LICENSE-2.0
-// 
-//  Unless required by applicable law or agreed to in writing, software
-//  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-//  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-//  License for the specific language governing permissions and limitations under
-//  the License.
-//
 
 #import <Foundation/Foundation.h>
 
 /// Utilities for NSStrings containing HTML
 @interface NSString (JKHTML)
+
 /// 使用Unicode 编码所有HTML实体 Get a string where internal characters that need escaping for HTML are escaped
 //
 ///  For example, '&' become '&amp;'. This will only cover characters from table
@@ -36,6 +25,7 @@
 //
 
 - (NSString *)jk_stringByEscapingForHTML;
+
 /// 使用Ascii编码所有HTML实体  Get a string where internal characters that need escaping for HTML are escaped
 //
 ///  For example, '&' become '&amp;'
@@ -51,6 +41,7 @@
 //    Autoreleased NSString
 //
 - (NSString *)jk_stringByEscapingForAsciiHTML;
+
 /// 解码HTML实体 Get a string where internal characters that are escaped for HTML are unescaped
 //
 ///  For example, '&amp;' becomes '&'
@@ -81,4 +72,5 @@
 
 /// 将html转换为纯文本 Convert HTML To Plain Text
 - (NSString *)jk_stringByConvertingHTMLToPlainText;
+
 @end

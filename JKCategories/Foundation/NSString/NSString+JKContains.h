@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (JKContains)
+
 /**
  *  @brief  判断URL中是否包含中文
  *
  *  @return 是否包含中文
  */
 - (BOOL)jk_isContainChinese;
+
 /**
  *  @brief  是否包含空格
  *
@@ -30,6 +32,7 @@
 - (NSString *)jk_makeUnicodeToString;
 
 - (BOOL)jk_containsCharacterSet:(NSCharacterSet *)set;
+
 /**
  *  @brief 是否包含字符串
  *
@@ -38,6 +41,7 @@
  *  @return YES, 包含;
  */
 - (BOOL)jk_containsaString:(NSString *)string;
+
 /**
  *  @brief 获取字符数量
  */

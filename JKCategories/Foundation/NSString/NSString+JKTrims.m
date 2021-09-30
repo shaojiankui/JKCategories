@@ -9,19 +9,11 @@
 #import "NSString+JKTrims.h"
 
 @implementation NSString (JKTrims)
-/**
- *  @brief  清除html标签
- *
- *  @return 清除后的结果
- */
+
 - (NSString *)jk_stringByStrippingHTML {
     return [self stringByReplacingOccurrencesOfString:@"<[^>]+>" withString:@"" options:NSRegularExpressionSearch range:NSMakeRange(0, self.length)];
 }
-/**
- *  @brief  清除js脚本
- *
- *  @return 清楚js后的结果
- */
+
 - (NSString *)jk_stringByRemovingScriptsAndStrippingHTML {
     NSMutableString *mString = [self mutableCopy];
     NSError *error;
@@ -32,22 +24,15 @@
     }
     return [mString jk_stringByStrippingHTML];
 }
-/**
- *  @brief  去除空格
- *
- *  @return 去除空格后的字符串
- */
-- (NSString *)jk_trimmingWhitespace
-{
-    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+
+- (NSString *)jk_trimmingWhitespace {
+    NSCharacterSet *set = [NSCharacterSet whitespaceCharacterSet];
+    return [self stringByTrimmingCharactersInSet:set];
 }
-/**
- *  @brief  去除字符串与空行
- *
- *  @return 去除字符串与空行的字符串
- */
-- (NSString *)jk_trimmingWhitespaceAndNewlines
-{
-    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
+- (NSString *)jk_trimmingWhitespaceAndNewlines {
+    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    return [self stringByTrimmingCharactersInSet:set];
 }
+
 @end

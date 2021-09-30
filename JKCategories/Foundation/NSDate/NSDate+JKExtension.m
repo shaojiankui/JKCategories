@@ -4,7 +4,7 @@
 //
 //  Created by Jakey on 15/4/25.
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
-//  https://github.com/632840804/HYBNSDateExtension
+//
 
 #import "NSDate+JKExtension.h"
 
@@ -278,27 +278,6 @@
     }
     return @"";
 }
-
-- (BOOL)jk_isSameDay:(NSDate *)anotherDate {
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components1 = [calendar components:(NSCalendarUnitYear
-                                                          | NSCalendarUnitMonth
-                                                          | NSCalendarUnitDay)
-                                                fromDate:self];
-    NSDateComponents *components2 = [calendar components:(NSCalendarUnitYear
-                                                          | NSCalendarUnitMonth
-                                                          | NSCalendarUnitDay)
-                                                fromDate:anotherDate];
-    return ([components1 year] == [components2 year]
-            && [components1 month] == [components2 month]
-            && [components1 day] == [components2 day]);
-}
-
-- (BOOL)jk_isToday {
-    return [self jk_isSameDay:[NSDate date]];
-}
-
- 
 
 /**
  *  Get the month as a localized string from the given month number
@@ -610,4 +589,5 @@
                                       toDate:fromDate
                                      options:0];
 }
+
 @end

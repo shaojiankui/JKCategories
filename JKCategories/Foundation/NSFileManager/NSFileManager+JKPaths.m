@@ -10,6 +10,7 @@
 #include <sys/xattr.h>
 
 @implementation NSFileManager (JKPaths)
+
 + (NSURL *)jk_URLForDirectory:(NSSearchPathDirectory)directory
 {
     return [self.defaultManager URLsForDirectory:directory inDomains:NSUserDomainMask].lastObject;

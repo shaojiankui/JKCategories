@@ -5,13 +5,10 @@
 //  Created by Jonas Schnelli on 22.04.10.
 //  Copyright 2010 include7 AG. All rights reserved.
 //
-// check: http://github.com/jonasschnelli/CLLocation-CH1903
 
 #import "CLLocation+JKCH1903.h"
 
-
 @implementation CLLocation (JKCH1903)
-
 
 - (id) initWithCH1903x:(double)x y:(double)y
 {
@@ -22,7 +19,6 @@
     return self;
 }
 
-
 - (double)jk_CH1903Y {
     return [CLLocation jk_WGStoCHyWithLatitude:self.coordinate.latitude longitude:self.coordinate.longitude];
 }
@@ -30,7 +26,6 @@
 - (double)jk_CH1903X {
     return [CLLocation jk_WGStoCHxWithLatitude:self.coordinate.latitude longitude:self.coordinate.longitude];
 }
-
 
 + (double)jk_CHtoWGSlatWithX:(double)x y:(double)y {
     
@@ -51,7 +46,6 @@
     lat = lat * 100/36.0;
     
     return lat;
-    
 }
 
 // Convert CH y/x to WGS long
@@ -75,8 +69,6 @@
     return lng;
 }
 
-
-
 + (double)jk_WGStoCHyWithLatitude:(double)lat longitude:(double)lng {
     // Converts degrees dec to sex
     lat = [CLLocation jk_decToSex:lat];
@@ -94,7 +86,6 @@
     double y = 600072.37  + 211455.93 * lng_aux  -  10938.51 * lng_aux * lat_aux -      0.36 * lng_aux * pow(lat_aux,2) -     44.54 * pow(lng_aux,3);
     
     return y;
-    
 }
 
 + (double)jk_WGStoCHxWithLatitude:(double)lat longitude:(double)lng {
@@ -115,9 +106,6 @@
     
     return x;
 }
-
-
-
 
 // Convert DEC angle to SEX DMS
 + (double)jk_decToSex:(double)angle {
@@ -149,4 +137,5 @@
     // Result in degrees sex (dd.mmss)
     return deg + (sec/60.0 + min)/60.0;
 }
+
 @end

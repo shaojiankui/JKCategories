@@ -9,23 +9,19 @@
 #import "NSDictionary+JKJSONString.h"
 
 @implementation NSDictionary (JKJSONString)
-/**
- *  @brief NSDictionary转换成JSON字符串
- *
- *  @return  JSON字符串
- */
--(NSString *)jk_JSONString{
-    NSError *error = nil;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
-                                                       options:NSJSONWritingPrettyPrinted
-                                                         error:&error];
-    if (jsonData == nil) {
+
+// 原理：NSDictionary -> NSData -> NSString
+- (NSString *)jk_JSONString {
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:NSJSONWritingPrettyPrinted error:&error];
+    if (!jsonData) {
 #ifdef DEBUG
-        NSLog(@"fail to get JSON from dictionary: %@, error: %@", self, error);
+        NSLog(@"%@, NSDictionary 转换成 JSON 字符串错误，Error:%@", @(__PRETTY_FUNCTION__), error);
 #endif
         return nil;
     }
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     return jsonString;
 }
+
 @end

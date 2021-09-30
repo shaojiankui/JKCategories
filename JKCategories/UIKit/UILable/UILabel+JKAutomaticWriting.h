@@ -4,8 +4,11 @@
 //
 //  Created by alexruperez on 10/3/15.
 //  Copyright (c) 2015 alexruperez. All rights reserved.
-//  https://github.com/alexruperez/UILabel-AutomaticWriting
+//
 
+/**
+ Reference: <https://github.com/alexruperez/UILabel-AutomaticWriting>
+ */
 #import <UIKit/UIKit.h>
 
 //! Project version number for UILabel-AutomaticWriting.

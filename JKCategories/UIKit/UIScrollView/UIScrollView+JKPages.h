@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIScrollView (JKPages)
+
 - (NSInteger)jk_pages;
 - (NSInteger)jk_currentPage;
 - (CGFloat)jk_scrollPercent;
@@ -21,4 +22,5 @@
 - (void)jk_setPageX:(CGFloat)page;
 - (void)jk_setPageY:(CGFloat)page animated:(BOOL)animated;
 - (void)jk_setPageX:(CGFloat)page animated:(BOOL)animated;
+
 @end

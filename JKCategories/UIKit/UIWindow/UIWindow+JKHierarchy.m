@@ -9,8 +9,8 @@
 #import "UIWindow+JKHierarchy.h"
 
 @implementation UIWindow (JKHierarchy)
-- (UIViewController*)jk_topMostController
-{
+
+- (UIViewController*)jk_topMostController {
     UIViewController *topController = [self rootViewController];
     
     //  Getting topMost ViewController
@@ -20,8 +20,7 @@
     return topController;
 }
 
-- (UIViewController*)jk_currentViewController;
-{
+- (UIViewController*)jk_currentViewController; {
     UIViewController *currentViewController = [self jk_topMostController];
     
     while ([currentViewController isKindOfClass:[UINavigationController class]] && [(UINavigationController*)currentViewController topViewController])
@@ -29,4 +28,5 @@
     
     return currentViewController;
 }
+
 @end

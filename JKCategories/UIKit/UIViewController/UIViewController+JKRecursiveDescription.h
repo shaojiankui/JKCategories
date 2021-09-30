@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (JKRecursiveDescription)
+
 /**
  *  @brief  视图层级
  *
  *  @return 视图层级字符串
  */
--(NSString*)jk_recursiveDescription;
+- (NSString *)jk_recursiveDescription;
 
 @end

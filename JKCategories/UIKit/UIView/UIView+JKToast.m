@@ -108,7 +108,6 @@ NSString * const JKToastPositionBottom          = @"bottom";
     
 }
 
-
 - (void)jk_showToast:(UIView *)toast duration:(NSTimeInterval)duration position:(id)position
       tapCallback:(void(^)(void))tapCallback
 {

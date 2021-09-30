@@ -9,352 +9,270 @@
 #import "NSDictionary+JKSafeAccess.h"
 
 @implementation NSDictionary (JKSafeAccess)
-- (BOOL)jk_hasKey:(NSString *)key
-{
-    return [self objectForKey:key] != nil;
-}
 
-- (NSString*)jk_stringForKey:(id)key
-{
+- (id)jk_objectForKey:(id)key {
+    if (key == nil) { return nil; }
     id value = [self objectForKey:key];
-    if (value == nil || value == [NSNull null])
-    {
+    if (value == [NSNull null]) {
         return nil;
     }
-    if ([value isKindOfClass:[NSString class]]) {
-        return (NSString*)value;
+    return value;
+}
+
+- (id)jk_objectForKey:(id)key class:(Class)aClass {
+    id value = [self jk_objectForKey:key];
+    if (value && [value isKindOfClass:aClass]) {
+        return value;
     }
-    if ([value isKindOfClass:[NSNumber class]]) {
-       return [value stringValue];
-    }
-    
     return nil;
 }
 
-- (NSNumber*)jk_numberForKey:(id)key
-{
-    id value = [self objectForKey:key];
+- (char)jk_charForKey:(id)key {
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]]) {
+        return [value charValue];
+    }
+    return 0;
+}
+
+- (short)jk_shortForKey:(id)key {
+    id value = [self jk_objectForKey:key];
     if ([value isKindOfClass:[NSNumber class]]) {
-        return (NSNumber*)value;
+        return [value shortValue];
     }
     if ([value isKindOfClass:[NSString class]]) {
-        NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-        [f setNumberStyle:NSNumberFormatterDecimalStyle];
-        return [f numberFromString:(NSString*)value];
+        return [value intValue];
+    }
+    return 0;
+}
+
+- (int)jk_intForKey:(id)key {
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]]) {
+        return [value intValue];
+    }
+    return 0;
+}
+
+- (long)jk_longForKey:(id)key {
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]]) {
+        return [value longValue];
+    }
+    return 0;
+}
+
+- (float)jk_floatForKey:(id)key {
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]]) {
+        return [value floatValue];
+    }
+    return 0;
+}
+
+- (double)jk_doubleForKey:(id)key {
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]]) {
+        return [value doubleValue];
+    }
+    return 0;
+}
+
+- (BOOL)jk_boolForKey:(id)key {
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]]) {
+        return [value boolValue];
+    }
+    return NO;
+}
+
+- (NSInteger)jk_integerForKey:(id)key {
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]]) {
+        return [value integerValue];
+    }
+    return 0;
+}
+
+- (NSUInteger)jk_unsignedIntegerForKey:(id)key{
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]]) {
+        return [value unsignedIntegerValue];
+    }
+    return 0;
+}
+
+- (NSString*)jk_stringForKey:(id)key {
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSString class]]) {
+        return value;
+    }
+    if ([value respondsToSelector:@selector(stringValue)]) {
+        return [value stringValue];
+    }
+    return nil;
+}
+
+- (NSNumber*)jk_numberForKey:(id)key {
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSNumber class]]) {
+        return (NSNumber *)value;
+    }
+    if ([value respondsToSelector:@selector(stringValue)]) {
+        NSNumberFormatter *formatter = [NSNumberFormatter new];
+        formatter.numberStyle = NSNumberFormatterDecimalStyle;
+        return [formatter numberFromString:(NSString *)value];
     }
     return nil;
 }
 
 - (NSDecimalNumber *)jk_decimalNumberForKey:(id)key {
-    id value = [self objectForKey:key];
+    id value = [self jk_objectForKey:key];
     
     if ([value isKindOfClass:[NSDecimalNumber class]]) {
         return value;
     } else if ([value isKindOfClass:[NSNumber class]]) {
-        NSNumber * number = (NSNumber*)value;
+        NSNumber *number = (NSNumber *)value;
         return [NSDecimalNumber decimalNumberWithDecimal:[number decimalValue]];
     } else if ([value isKindOfClass:[NSString class]]) {
-        NSString * str = (NSString*)value;
-        return [str isEqualToString:@""] ? nil : [NSDecimalNumber decimalNumberWithString:str];
+        NSString *string = (NSString *)value;
+        return [string isEqualToString:@""] ? nil : [NSDecimalNumber decimalNumberWithString:string];
     }
     return nil;
 }
 
-
-- (NSArray*)jk_arrayForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    if (value == nil || value == [NSNull null])
-    {
-        return nil;
-    }
-    if ([value isKindOfClass:[NSArray class]])
-    {
-        return value;
-    }
-    return nil;
+- (NSArray *)jk_arrayForKey:(id)key {
+    return [self jk_objectForKey:key class:[NSArray class]];
 }
 
-- (NSDictionary*)jk_dictionaryForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    if (value == nil || value == [NSNull null])
-    {
-        return nil;
-    }
-    if ([value isKindOfClass:[NSDictionary class]])
-    {
-        return value;
-    }
-    return nil;
+- (NSDictionary *)jk_dictionaryForKey:(id)key {
+    return [self jk_objectForKey:key class:[NSDictionary class]];
 }
 
-- (NSInteger)jk_integerForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    if (value == nil || value == [NSNull null])
-    {
-        return 0;
-    }
-    if ([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]])
-    {
-        return [value integerValue];
-    }
-    return 0;
-}
-- (NSUInteger)jk_unsignedIntegerForKey:(id)key{
-    id value = [self objectForKey:key];
-    if (value == nil || value == [NSNull null])
-    {
-        return 0;
-    }
-    if ([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]])
-    {
-        return [value unsignedIntegerValue];
-    }
-    return 0;
-}
-- (BOOL)jk_boolForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    
-    if (value == nil || value == [NSNull null])
-    {
-        return NO;
-    }
-    if ([value isKindOfClass:[NSNumber class]])
-    {
-        return [value boolValue];
-    }
-    if ([value isKindOfClass:[NSString class]])
-    {
-        return [value boolValue];
-    }
-    return NO;
-}
-- (int16_t)jk_int16ForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    
-    if (value == nil || value == [NSNull null])
-    {
-        return 0;
-    }
-    if ([value isKindOfClass:[NSNumber class]])
-    {
-        return [value shortValue];
-    }
-    if ([value isKindOfClass:[NSString class]])
-    {
-        return [value intValue];
-    }
-    return 0;
-}
-- (int32_t)jk_int32ForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    
-    if (value == nil || value == [NSNull null])
-    {
-        return 0;
-    }
-    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]])
-    {
-        return [value intValue];
-    }
-    return 0;
-}
-- (int64_t)jk_int64ForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    
-    if (value == nil || value == [NSNull null])
-    {
-        return 0;
-    }
-    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]])
-    {
-        return [value longLongValue];
-    }
-    return 0;
-}
-- (char)jk_charForKey:(id)key{
-    id value = [self objectForKey:key];
-    
-    if (value == nil || value == [NSNull null])
-    {
-        return 0;
-    }
-    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]])
-    {
-        return [value charValue];
-    }
-    return 0;
-}
-- (short)jk_shortForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    
-    if (value == nil || value == [NSNull null])
-    {
-        return 0;
-    }
-    if ([value isKindOfClass:[NSNumber class]])
-    {
-        return [value shortValue];
-    }
-    if ([value isKindOfClass:[NSString class]])
-    {
-        return [value intValue];
-    }
-    return 0;
-}
-- (float)jk_floatForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    
-    if (value == nil || value == [NSNull null])
-    {
-        return 0;
-    }
-    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]])
-    {
-        return [value floatValue];
-    }
-    return 0;
-}
-- (double)jk_doubleForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    
-    if (value == nil || value == [NSNull null])
-    {
-        return 0;
-    }
-    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]])
-    {
-        return [value doubleValue];
-    }
-    return 0;
-}
-- (long long)jk_longLongForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    if ([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]]) {
-        return [value longLongValue];
-    }
-    return 0;
+- (NSMutableArray *)jk_mutableArrayForKey:(id)key {
+    return [self jk_objectForKey:key class:[NSMutableArray class]];
 }
 
-- (unsigned long long)jk_unsignedLongLongForKey:(id)key
-{
-    id value = [self objectForKey:key];
-    if ([value isKindOfClass:[NSString class]]) {
-        NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
-        value = [nf numberFromString:value];
-    }
-    if ([value isKindOfClass:[NSNumber class]]) {
-        return [value unsignedLongLongValue];
-    }
-    return 0;
+- (NSMutableDictionary *)jk_mutableDictionaryForKey:(id)key {
+    return [self jk_objectForKey:key class:[NSMutableDictionary class]];
+}
+
+- (NSData *)jk_dataForKey:(id)key {
+    return [self jk_objectForKey:key class:[NSData class]];
 }
 
 - (NSDate *)jk_dateForKey:(id)key dateFormat:(NSString *)dateFormat{
-    NSDateFormatter *formater = [[NSDateFormatter alloc]init];
-    formater.dateFormat = dateFormat;
-    id value = [self objectForKey:key];
-    
-    if (value == nil || value == [NSNull null])
-    {
+    if ([dateFormat isEqualToString:@""]) {
         return nil;
     }
     
-    if ([value isKindOfClass:[NSString class]] && ![value isEqualToString:@""] && dateFormat) {
+    id value = [self objectForKey:key];
+    if ([value isKindOfClass:[NSString class]] && ![value isEqualToString:@""]) {
+        NSDateFormatter *formater = [[NSDateFormatter alloc]init];
+        formater.dateFormat = dateFormat;
         return [formater dateFromString:value];
     }
     return nil;
 }
 
-
-//CG
-- (CGFloat)jk_CGFloatForKey:(id)key
-{
-    CGFloat f = [self[key] doubleValue];
-    return f;
+- (CGFloat)jk_CGFloatForKey:(id)key {
+    id value = [self jk_objectForKey:key];
+    if ([value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSString class]]) {
+        return [value floatValue];
+    }
+    return 0;
 }
 
-- (CGPoint)jk_pointForKey:(id)key
-{
-    CGPoint point = CGPointFromString(self[key]);
-    return point;
+- (CGPoint)jk_pointForKey:(id)key {
+    NSString *string = [self jk_stringForKey:key];
+    if (string && [string isEqualToString:@""]) {
+        return CGPointFromString(string);
+    }
+    return CGPointZero;
 }
-- (CGSize)jk_sizeForKey:(id)key
-{
-    CGSize size = CGSizeFromString(self[key]);
-    return size;
+
+- (CGSize)jk_sizeForKey:(id)key {
+    NSString *string = [self jk_stringForKey:key];
+    if (string && [string isEqualToString:@""]) {
+        return CGSizeFromString(string);
+    }
+    return CGSizeZero;
 }
-- (CGRect)jk_rectForKey:(id)key
-{
-    CGRect rect = CGRectFromString(self[key]);
-    return rect;
+
+- (CGRect)jk_rectForKey:(id)key {
+    NSString *string = [self jk_stringForKey:key];
+    if (string && [string isEqualToString:@""]) {
+        return CGRectFromString(string);
+    }
+    return CGRectZero;
 }
+
 @end
 
-#pragma --mark NSMutableDictionary setter
 @implementation NSMutableDictionary (JKSafeAccess)
--(void)jk_setObj:(id)i forKey:(NSString*)key{
-    if (i!=nil) {
-        self[key] = i;
+
+- (void)jk_setObject:(id)anObject forKey:(NSString *)key {
+    if (key && anObject) {
+        [self setObject:anObject forKey:key];
     }
 }
--(void)jk_setString:(NSString*)i forKey:(NSString*)key;
-{
-    [self setValue:i forKey:key];
+
+- (void)jk_removeObjectForKey:(NSString *)key {
+    if (key) {
+        [self removeObjectForKey:key];
+    }
 }
--(void)jk_setBool:(BOOL)i forKey:(NSString *)key
-{
-    self[key] = @(i);
+
+- (void)jk_setChar:(char)aChar forKey:(NSString *)key {
+    [self jk_setObject:@(aChar) forKey:key];
 }
--(void)jk_setInt:(int)i forKey:(NSString *)key
-{
-    self[key] = @(i);
+
+- (void)jk_setInt:(int)aInt forKey:(NSString *)key {
+    [self jk_setObject:@(aInt) forKey:key];
 }
--(void)jk_setInteger:(NSInteger)i forKey:(NSString *)key
-{
-    self[key] = @(i);
+
+- (void)jk_setFloat:(float)aFloat forKey:(NSString *)key {
+    [self jk_setObject:@(aFloat) forKey:key];
 }
--(void)jk_setUnsignedInteger:(NSUInteger)i forKey:(NSString *)key
-{
-    self[key] = @(i);
+
+- (void)jk_setDouble:(double)aDouble forKey:(NSString *)key {
+    [self jk_setObject:@(aDouble) forKey:key];
 }
--(void)jk_setCGFloat:(CGFloat)f forKey:(NSString *)key
-{
-    self[key] = @(f);
+
+- (void)jk_setLong:(long)aLong forKey:(NSString *)key {
+    [self jk_setObject:@(aLong) forKey:key];
 }
--(void)jk_setChar:(char)c forKey:(NSString *)key
-{
-    self[key] = @(c);
+
+- (void)jk_setBool:(BOOL)aBool forKey:(NSString *)key {
+    [self jk_setObject:@(aBool) forKey:key];
 }
--(void)jk_setFloat:(float)i forKey:(NSString *)key
-{
-    self[key] = @(i);
+
+- (void)jk_setInteger:(NSInteger)aInteger forKey:(NSString *)key {
+    [self jk_setObject:@(aInteger) forKey:key];
 }
--(void)jk_setDouble:(double)i forKey:(NSString*)key{
-    self[key] = @(i);
+
+- (void)jk_setUnsignedInteger:(NSUInteger)aUInteger forKey:(NSString *)key {
+    [self jk_setObject:@(aUInteger) forKey:key];
 }
--(void)jk_setLongLong:(long long)i forKey:(NSString*)key{
-    self[key] = @(i);
+
+- (void)jk_setString:(NSString*)aString forKey:(NSString*)key {
+    [self jk_setObject:aString forKey:key];
 }
--(void)jk_setPoint:(CGPoint)o forKey:(NSString *)key
-{
-    self[key] = NSStringFromCGPoint(o);
+
+- (void)jk_setCGFloat:(CGFloat)aFloat forKey:(NSString* )key {
+    [self jk_setObject:@(aFloat) forKey:key];
 }
--(void)jk_setSize:(CGSize)o forKey:(NSString *)key
-{
-    self[key] = NSStringFromCGSize(o);
+
+- (void)jk_setPoint:(CGPoint)aPoint forKey:(NSString *)key {
+    [self jk_setObject:NSStringFromCGPoint(aPoint) forKey:key];
 }
--(void)jk_setRect:(CGRect)o forKey:(NSString *)key
-{
-    self[key] = NSStringFromCGRect(o);
+
+- (void)jk_setSize:(CGSize)aSize forKey:(NSString *)key {
+    [self jk_setObject:NSStringFromCGSize(aSize) forKey:key];
 }
+
+- (void)jk_setRect:(CGRect)aRect forKey:(NSString *)key {
+    [self jk_setObject:NSStringFromCGRect(aRect) forKey:key];
+}
+
 @end

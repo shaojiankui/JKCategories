@@ -9,6 +9,7 @@
 #import "NSString+JKSize.h"
 
 @implementation NSString (JKSize)
+
 /**
  *  @brief 计算文字的高度
  *
@@ -17,7 +18,7 @@
  */
 - (CGFloat)jk_heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width
 {
-    UIFont *textFont = font ? font : [UIFont systemFontOfSize:[UIFont systemFontSize]];
+    UIFont *textFont = font ? : [UIFont systemFontOfSize:[UIFont systemFontSize]];
     
     CGSize textSize;
     
@@ -60,7 +61,7 @@
  */
 - (CGFloat)jk_widthWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height
 {
-    UIFont *textFont = font ? font : [UIFont systemFontOfSize:[UIFont systemFontSize]];
+    UIFont *textFont = font ? : [UIFont systemFontOfSize:[UIFont systemFontSize]];
     
     CGSize textSize;
     
@@ -96,6 +97,15 @@
 }
 
 /**
+ * @brief 计算文字的大小
+ *
+ * @param font  字体
+ */
+- (CGSize)jk_sizeWithFont:(UIFont *)font {
+    return [self sizeWithAttributes:@{NSFontAttributeName:font}];
+}
+
+/**
  *  @brief 计算文字的大小
  *
  *  @param font  字体(默认为系统字体)
@@ -103,7 +113,7 @@
  */
 - (CGSize)jk_sizeWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width
 {
-    UIFont *textFont = font ? font : [UIFont systemFontOfSize:[UIFont systemFontSize]];
+    UIFont *textFont = font ? : [UIFont systemFontOfSize:[UIFont systemFontSize]];
     
     CGSize textSize;
     
@@ -146,7 +156,7 @@
  */
 - (CGSize)jk_sizeWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height
 {
-    UIFont *textFont = font ? font : [UIFont systemFontOfSize:[UIFont systemFontSize]];
+    UIFont *textFont = font ? : [UIFont systemFontOfSize:[UIFont systemFontSize]];
     
     CGSize textSize;
     
@@ -181,16 +191,9 @@
     return CGSizeMake(ceil(textSize.width), ceil(textSize.height));
 }
 
-
-/**
- *  @brief  反转字符串
- *
- *  @param strSrc 被反转字符串
- *
- *  @return 反转后字符串
- */
-+ (NSString *)jk_reverseString:(NSString *)strSrc
-{
+/// 反转字符串
+/// @param strSrc 被反转字符串
++ (NSString *)jk_reverseString:(NSString *)strSrc {
     NSMutableString* reverseString = [[NSMutableString alloc] init];
     NSInteger charIndex = [strSrc length];
     while (charIndex > 0) {
@@ -200,4 +203,5 @@
     }
     return reverseString;
 }
+
 @end

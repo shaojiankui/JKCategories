@@ -4,10 +4,12 @@
 //
 //  Created by Andrea Mazzini on 08/02/14.
 //  Copyright (c) 2014 Fancy Pixel. All rights reserved.
+//
 
-//  https://github.com/andreamazz/UITextField-Shake
-//  UITextField category that adds shake animation
-
+/**
+ Reference: <https://github.com/andreamazz/UITextField-Shake>
+ UITextField category that adds shake animation
+ */
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, JKShakedDirection) {

@@ -7,6 +7,7 @@
 //
 
 #import "UIColor+JKHEX.h"
+
 CGFloat jk_colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length) {
     NSString *substring = [string substringWithRange:NSMakeRange(start, length)];
     NSString *fullHex = length == 2 ? substring : [NSString stringWithFormat: @"%@%@", substring, substring];
@@ -17,9 +18,11 @@ CGFloat jk_colorComponentFrom(NSString *string, NSUInteger start, NSUInteger len
 }
 
 @implementation UIColor (JKHEX)
+
 + (UIColor *)jk_colorWithHex:(UInt32)hex{
     return [UIColor jk_colorWithHex:hex andAlpha:1];
 }
+
 + (UIColor *)jk_colorWithHex:(UInt32)hex andAlpha:(CGFloat)alpha{
     return [UIColor colorWithRed:((hex >> 16) & 0xFF)/255.0
                            green:((hex >> 8) & 0xFF)/255.0
@@ -83,24 +86,4 @@ CGFloat jk_colorComponentFrom(NSString *string, NSUInteger start, NSUInteger len
             (int)((CGColorGetComponents(color.CGColor))[2]*255.0)];
 }
 
-+ (UIColor *)jk_colorWithWholeRed:(CGFloat)red
-                         green:(CGFloat)green
-                          blue:(CGFloat)blue
-                         alpha:(CGFloat)alpha
-{
-    return [UIColor colorWithRed:red/255.f
-                           green:green/255.f
-                            blue:blue/255.f
-                           alpha:alpha];
-}
-
-+ (UIColor *)jk_colorWithWholeRed:(CGFloat)red
-                         green:(CGFloat)green
-                          blue:(CGFloat)blue
-{
-    return [self jk_colorWithWholeRed:red
-                             green:green
-                              blue:blue
-                             alpha:1.0];
-}
 @end

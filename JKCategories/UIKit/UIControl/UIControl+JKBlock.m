@@ -9,7 +9,6 @@
 #import "UIControl+JKBlock.h"
 #import <objc/runtime.h>
 
-
 // UIControlEventTouchDown           = 1 <<  0,      // on all touch downs
 // UIControlEventTouchDownRepeat     = 1 <<  1,      // on multiple touchdowns
 // (tap count > 1)

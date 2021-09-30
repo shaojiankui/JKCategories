@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface NSException (JKTrace)
+
+/// 回溯?
 - (NSArray *)jk_backtrace;
+
 @end

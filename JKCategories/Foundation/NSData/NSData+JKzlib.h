@@ -1,5 +1,14 @@
+//
+//  NSData+JKzlib.h
+//  JKCategories (https://github.com/shaojiankui/JKCategories)
+//
+//  Created by Qilin Hu on 2020/4/30.
+//  Copyright © 2020 Qilin Hu. All rights reserved.
+//
 
-//https://github.com/bitbasenyc/nsdata-zlib
+/**
+ Reference Not Found: <https://github.com/bitbasenyc/nsdata-zlib>
+ */
 @interface NSData (JKzlib)
 
 /**
@@ -66,4 +75,5 @@ typedef NS_ENUM(NSUInteger, JKZlibErrorCode) {
  */
 - (BOOL)jk_writeInflatedToFile:(NSString *)path
                           error:(NSError *__autoreleasing *)error;
+
 @end

@@ -8,6 +8,7 @@
 
 #import "NSObject+JKAppInfo.h"
 #import <sys/utsname.h>
+
 @implementation NSObject (JKAppInfo)
 
 -(NSString *)jk_version{

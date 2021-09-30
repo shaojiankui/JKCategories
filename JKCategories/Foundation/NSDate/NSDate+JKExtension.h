@@ -6,10 +6,12 @@
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
+/**
+ Reference:<https://github.com/632840804/HYBNSDateExtension>
+ */
 #import <Foundation/Foundation.h>
 
 @interface NSDate (JKExtension)
-
 
 /**
  * 获取日、月、年、小时、分钟、秒
@@ -47,7 +49,7 @@
 + (NSUInteger)jk_weekOfYear:(NSDate *)date;
 
 /**
- * 获取格式化为YYYY-MM-dd格式的日期字符串
+ * 获取格式化为 YYYY-MM-dd 格式的日期字符串
  */
 - (NSString *)jk_formatYMD;
 + (NSString *)jk_formatYMD:(NSDate *)date;
@@ -143,23 +145,6 @@
 + (NSString *)jk_dayFromWeekday:(NSDate *)date;
 
 /**
- *  日期是否相等
- *
- *  @param anotherDate The another date to compare as NSDate
- *  @return Return YES if is same day, NO if not
- */
-- (BOOL)jk_isSameDay:(NSDate *)anotherDate;
-
-/**
- *  是否是今天
- *
- *  @return Return if self is today
- */
-- (BOOL)jk_isToday;
-
- 
-
-/**
  *  Get the month as a localized string from the given month number
  *
  *  @param month The month to be converted in string
@@ -207,14 +192,14 @@
 + (NSString *)jk_timeInfoWithDateString:(NSString *)dateString;
 
 /**
- * 分别获取yyyy-MM-dd/HH:mm:ss/yyyy-MM-dd HH:mm:ss格式的字符串
+ * 返回格式化字符串
  */
-- (NSString *)jk_ymdFormat;
-- (NSString *)jk_hmsFormat;
-- (NSString *)jk_ymdHmsFormat;
-+ (NSString *)jk_ymdFormat;
-+ (NSString *)jk_hmsFormat;
-+ (NSString *)jk_ymdHmsFormat;
+- (NSString *)jk_ymdFormat;    // yyyy-MM-dd
+- (NSString *)jk_hmsFormat;    // HH:mm:ss
+- (NSString *)jk_ymdHmsFormat; // yyyy-MM-dd HH:mm:ss
 
++ (NSString *)jk_ymdFormat;    // yyyy-MM-dd
++ (NSString *)jk_hmsFormat;    // HH:mm:ss
++ (NSString *)jk_ymdHmsFormat; // yyyy-MM-dd HH:mm:ss
 
 @end

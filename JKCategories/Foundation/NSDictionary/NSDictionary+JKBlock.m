@@ -10,8 +10,6 @@
 
 @implementation NSDictionary (JKBlock)
 
-
-#pragma mark - RX
 - (void)jk_each:(void (^)(id k, id v))block {
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         block(key, obj);
@@ -42,7 +40,6 @@
     
     return array;
 }
-
 
 - (NSDictionary *)jk_pick:(NSArray *)keys {
     NSMutableDictionary *picked = [[NSMutableDictionary alloc] initWithCapacity:keys.count];

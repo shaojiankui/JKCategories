@@ -1,3 +1,11 @@
+//
+//  UIBezierPath+JKLength.h
+//  JKCategories
+//
+//  Created by Qilin Hu on 2021/3/24.
+//  Copyright © 2020 Qilin Hu. All rights reserved.
+//
+
 #import "UIBezierPath+JKLength.h"
 
 typedef struct JKBezierSubpath {

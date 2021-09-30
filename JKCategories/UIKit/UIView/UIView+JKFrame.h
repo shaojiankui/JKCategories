@@ -10,22 +10,34 @@
 
 @interface UIView (JKFrame)
 
-// shortcuts for frame properties
-@property (nonatomic, assign) CGPoint jk_origin;
-@property (nonatomic, assign) CGSize jk_size;
-
-// shortcuts for positions
-@property (nonatomic) CGFloat jk_centerX;
-@property (nonatomic) CGFloat jk_centerY;
-
-// shortcuts for the coords
-@property (nonatomic) CGFloat jk_top;
-@property (nonatomic) CGFloat jk_bottom;
+/// frame.origin.x
 @property (nonatomic) CGFloat jk_left;
+
+/// frame.origin.x + frame.size.width
 @property (nonatomic) CGFloat jk_right;
 
-// shortcuts for the size
+/// frame.origin.y
+@property (nonatomic) CGFloat jk_top;
+
+/// frame.origin.y + frame.size.height
+@property (nonatomic) CGFloat jk_bottom;
+
+/// frame.size.width
 @property (nonatomic) CGFloat jk_width;
+
+/// frame.size.height
 @property (nonatomic) CGFloat jk_height;
+
+/// center.x
+@property (nonatomic) CGFloat jk_centerX;
+
+/// center.y
+@property (nonatomic) CGFloat jk_centerY;
+
+/// frame.origin
+@property (nonatomic, assign) CGPoint jk_origin;
+
+/// frame.size
+@property (nonatomic, assign) CGSize jk_size;
 
 @end

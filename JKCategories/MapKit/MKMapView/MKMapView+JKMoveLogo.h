@@ -15,6 +15,6 @@
 
 - (void)jk_moveLogoByOffset:(CGPoint)offset;
 - (void)jk_moveLogoToPoint:(CGPoint)point;
-- (UIView*)jk_logo;
+- (UIView *)jk_logo;
 
 @end

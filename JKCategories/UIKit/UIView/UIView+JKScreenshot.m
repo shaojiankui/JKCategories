@@ -8,12 +8,9 @@
 
 #import "UIView+JKScreenshot.h"
 #import <QuartzCore/QuartzCore.h>
+
 @implementation UIView (JKScreenshot)
-/**
- *  @brief  view截图
- *
- *  @return 截图
- */
+
 - (UIImage *)jk_screenshot {
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, [UIScreen mainScreen].scale);
     if( [self respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)])
@@ -29,15 +26,7 @@
     UIGraphicsEndImageContext();
     return screenshot;
 }
-/**
- *  @author Jakey
- *
- *  @brief  截图一个view中所有视图 包括旋转缩放效果
- *
- *  @param maxWidth 限制缩放的最大宽度 保持默认传0
- *
- *  @return 截图
- */
+
 - (UIImage *)jk_screenshot:(CGFloat)maxWidth{
     CGAffineTransform oldTransform = self.transform;
     CGAffineTransform scaleTransform = CGAffineTransformIdentity;
@@ -85,4 +74,5 @@
     
     return screenshot;
 }
+
 @end

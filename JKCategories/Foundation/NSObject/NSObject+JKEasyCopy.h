@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-// a copy category for NSObject 
+
 @interface NSObject (JKEasyCopy)
 
 /**

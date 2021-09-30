@@ -66,6 +66,7 @@
         return YES;
     }
 }
+
 /**
  *  @brief 是否包含字符串
  *
@@ -108,4 +109,5 @@
     }
     return l + (int)ceilf((float)(a + b) / 2.0);
 }
+
 @end

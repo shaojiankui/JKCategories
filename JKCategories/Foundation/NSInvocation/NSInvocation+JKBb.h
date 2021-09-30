@@ -10,7 +10,6 @@
 
 @interface NSInvocation (JKBb)
 
-
 + (id)jk_doInstanceMethodTarget:(id)target
                 selectorName:(NSString *)selectorName
                         args:(NSArray *)args;
@@ -20,6 +19,5 @@
                args:(NSArray *)args;
 
 - (void)jk_setArgumentWithObject:(id)object atIndex:(NSUInteger)index;
-
 
 @end

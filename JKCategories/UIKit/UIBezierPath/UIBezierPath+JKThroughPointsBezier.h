@@ -2,10 +2,13 @@
 //  UIBezierPath+LxThroughPointsBezier.h
 //  LxThroughPointsBezierDemo
 //
-// A funny iOS library. Draw a smooth bezier through several points you designated. The curve‘s bend level is adjustable.
 
-//https://github.com/DeveloperLx/LxThroughPointsBezier
-
+/**
+ Reference: <https://github.com/DeveloperLx/LxThroughPointsBezier>
+ 
+ A funny iOS library. Draw a smooth bezier through several points you designated.
+ The curve‘s bend level is adjustable.
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIBezierPath (JKThroughPointsBezier)

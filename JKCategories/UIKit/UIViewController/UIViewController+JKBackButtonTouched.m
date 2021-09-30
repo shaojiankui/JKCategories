@@ -8,19 +8,24 @@
 
 #import "UIViewController+JKBackButtonTouched.h"
 #import <objc/runtime.h>
+
 static const void *JKBackButtonHandlerKey = &JKBackButtonHandlerKey;
 
 @implementation UIViewController (JKBackButtonTouched)
+
 -(void)jk_backButtonTouched:(JKBackButtonHandler)backButtonHandler{
     objc_setAssociatedObject(self, JKBackButtonHandlerKey, backButtonHandler, OBJC_ASSOCIATION_COPY);
 }
+
 - (JKBackButtonHandler)jk_backButtonTouched
 {
     return objc_getAssociatedObject(self, JKBackButtonHandlerKey);
 }
+
 @end
 
 @implementation UINavigationController (ShouldPopItem)
+
 - (BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPopItem:(UINavigationItem *)item {
 
 	if([self.viewControllers count] < [navigationBar.items count]) {
@@ -42,7 +47,7 @@ static const void *JKBackButtonHandlerKey = &JKBackButtonHandlerKey;
         dispatch_async(dispatch_get_main_queue(), ^{
             handler(self);
         });
-    }else{
+    } else {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self popViewControllerAnimated:YES];
         });
@@ -50,4 +55,5 @@ static const void *JKBackButtonHandlerKey = &JKBackButtonHandlerKey;
 
 	return NO;
 }
+
 @end

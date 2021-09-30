@@ -5,6 +5,7 @@
 //  Created by Jakey on 16/5/29.
 //  Copyright © 2016年 www.skyfox.org. All rights reserved.
 //
+
 #if __has_include(<JKCategories/JKUIKit.h>)
 #import <JKCategories/UIApplication+JKApplicationSize.h>
 #import <JKCategories/UIApplication+JKKeyboardFrame.h>
@@ -29,6 +30,7 @@
 #import <JKCategories/UIColor+JKModify.h>
 #import <JKCategories/UIColor+JKRandom.h>
 #import <JKCategories/UIColor+JKWeb.h>
+#import <JKCategories/UIColor+UIColor+JKDarkMode.h>
 #import <JKCategories/UIControl+JKActionBlocks.h>
 #import <JKCategories/UIControl+JKBlock.h>
 #import <JKCategories/UIControl+JKSound.h>
@@ -47,11 +49,13 @@
 #import <JKCategories/UIImage+JKGIF.h>
 #import <JKCategories/UIImage+JKMerge.h>
 #import <JKCategories/UIImage+JKOrientation.h>
-#import <JKCategories/UIImage+JKRemoteSize.h>
 #import <JKCategories/UIImage+JKResize.h>
 #import <JKCategories/UIImage+JKRoundedCorner.h>
-#import <JKCategories/UIImage+JKSuperCompress.h>
+#import <JKCategories/UIImage+JKCompress.h>
 #import <JKCategories/UIImage+JKVector.h>
+#import <JKCategories/UIImage+JKWaterMark.h>
+#import <JKCategories/UIImage+JKDarkMode.h>
+#import <JKCategories/UIImage+JKGrayscale.h>
 #import <JKCategories/UIImageView+JKAddition.h>
 #import <JKCategories/UIImageView+JKBetterFace.h>
 #import <JKCategories/UIImageView+JKFaceAwareFill.h>
@@ -68,7 +72,6 @@
 #import <JKCategories/UINavigationController+JKTransitions.h>
 #import <JKCategories/UINavigationItem+JKLoading.h>
 #import <JKCategories/UINavigationItem+JKLock.h>
-#import <JKCategories/UIPopoverController+iPhone.h>
 #import <JKCategories/UIResponder+JKChain.h>
 #import <JKCategories/UIResponder+JKFirstResponder.h>
 #import <JKCategories/UIScreen+JKFrame.h>
@@ -131,6 +134,7 @@
 #import "UIColor+JKModify.h"
 #import "UIColor+JKRandom.h"
 #import "UIColor+JKWeb.h"
+#import "UIColor+JKDarkMode.h"
 #import "UIControl+JKActionBlocks.h"
 #import "UIControl+JKBlock.h"
 #import "UIControl+JKSound.h"
@@ -149,11 +153,13 @@
 #import "UIImage+JKGIF.h"
 #import "UIImage+JKMerge.h"
 #import "UIImage+JKOrientation.h"
-#import "UIImage+JKRemoteSize.h"
 #import "UIImage+JKResize.h"
 #import "UIImage+JKRoundedCorner.h"
-#import "UIImage+JKSuperCompress.h"
+#import "UIImage+JKCompress.h"
 #import "UIImage+JKVector.h"
+#import "UIImage+JKWaterMark.h"
+#import "UIImage+JKDarkMode.h"
+#import "UIImage+JKGrayscale.h"
 #import "UIImageView+JKAddition.h"
 #import "UIImageView+JKBetterFace.h"
 #import "UIImageView+JKFaceAwareFill.h"
@@ -170,7 +176,6 @@
 #import "UINavigationController+JKTransitions.h"
 #import "UINavigationItem+JKLoading.h"
 #import "UINavigationItem+JKLock.h"
-#import "UIPopoverController+iPhone.h"
 #import "UIResponder+JKChain.h"
 #import "UIResponder+JKFirstResponder.h"
 #import "UIScreen+JKFrame.h"

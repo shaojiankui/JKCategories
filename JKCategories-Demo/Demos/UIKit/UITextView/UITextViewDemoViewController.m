@@ -8,6 +8,7 @@
 
 #import "UITextViewDemoViewController.h"
 #import <JKCategories/UITextView+JKPlaceHolder.h>
+#import <JKCategories/UITextView+JKInputLimit.h>
 
 @interface UITextViewDemoViewController ()
 {
@@ -26,6 +27,7 @@
     textView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     textView.layer.borderWidth = 1.5f;
     [textView jk_addPlaceHolder:@"请输入您想要说的话..."];
+    textView.jk_maxLength = 10;
     [self.view addSubview:textView];
 }
 

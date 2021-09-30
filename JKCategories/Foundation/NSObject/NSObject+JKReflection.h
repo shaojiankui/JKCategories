@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (JKReflection)
+
 //类名
 - (NSString *)jk_className;
 + (NSString *)jk_className;
@@ -44,7 +45,6 @@
 //协议列表
 -(NSDictionary *)jk_protocolList;
 + (NSDictionary *)jk_protocolList;
-
 
 - (BOOL)jk_hasPropertyForKey:(NSString*)key;
 - (BOOL)jk_hasIvarForKey:(NSString*)key;

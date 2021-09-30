@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface UIView (JKNib)
+
 + (UINib *)jk_loadNib;
 + (UINib *)jk_loadNibNamed:(NSString*)nibName;
 + (UINib *)jk_loadNibNamed:(NSString*)nibName bundle:(NSBundle *)bundle;

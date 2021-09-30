@@ -6,20 +6,10 @@
 //  Copyright (c) 2013 David Keegan All rights reserved.
 //
 
-
 /**
- *  @Author(作者)         David Keegan
- *
- *  @URL(地址)            https://github.com/kgn/UIImage-Vector
- *
- *  @Version(版本)        20150620
- *
- *  @Requirements(运行要求)
- *
- *  @Description(描述)    UIImage category for dealing with vector formats like PDF and icon fonts.
- *  @Usage(使用) .. 
+ Reference: <https://github.com/kgn/UIImage-Vector>
+ UIImage 扩展，用于处理像 PDF 和 icon font 这样的矢量格式图片。
  */
-
 #import <UIKit/UIKit.h>
 
 @interface UIImage(JKVector)

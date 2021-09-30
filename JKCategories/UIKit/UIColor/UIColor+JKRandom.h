@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (JKRandom)
-/**
- *  @brief  随机颜色
- *
- *  @return UIColor
- */
+
+/// 随机颜色
 + (UIColor *)jk_randomColor;
+
 @end

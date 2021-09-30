@@ -9,6 +9,7 @@
 #import "NSArray+JKBlock.h"
 
 @implementation NSArray (JKBlock)
+
 - (void)jk_each:(void (^)(id object))block {
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         block(obj);

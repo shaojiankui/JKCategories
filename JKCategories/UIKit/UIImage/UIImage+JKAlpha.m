@@ -11,6 +11,7 @@
 @end
 
 @implementation UIImage (JKAlpha)
+
 /**
  *  @brief  是否有alpha通道
  *
@@ -23,6 +24,7 @@
             alpha == kCGImageAlphaPremultipliedFirst ||
             alpha == kCGImageAlphaPremultipliedLast);
 }
+
 /**
  *  @brief  如果没有alpha通道 增加alpha通道
  *
@@ -100,6 +102,7 @@
     
     return transparentBorderImage;
 }
+
 /**
  *  @brief  裁切含透明图片为最小大小
  *
@@ -195,6 +198,7 @@
     CFRelease(m_DataRef);
     return croppedImage;
 }
+
 #pragma mark -
 #pragma mark Private helper methods
 

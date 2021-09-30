@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (JKUUID)
+
 /**
  *  @brief  获取随机 UUID 例如 E621E1F8-C36C-495A-93FC-0C247A3E6E5F
  *
@@ -22,4 +23,5 @@
  *  @return 毫秒时间戳
  */
 + (NSString *)jk_UUIDTimestamp;
+
 @end

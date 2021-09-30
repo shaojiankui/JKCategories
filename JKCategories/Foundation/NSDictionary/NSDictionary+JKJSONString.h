@@ -9,10 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary (JKJSONString)
-/**
- *  @brief NSDictionary转换成JSON字符串
- *
- *  @return  JSON字符串
- */
--(NSString *)jk_JSONString;
+
+/// 将 NSDictionary 转换为 JSON String
+- (NSString *)jk_JSONString;
+
 @end

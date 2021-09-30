@@ -9,13 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (JKMerge)
-/**
- *  @brief  合并两个图片
- *
- *  @param firstImage  一个图片
- *  @param secondImage 二个图片
- *
- *  @return 合并后图片
- */
-+ (UIImage*)jk_mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage;
+
+/// 使用 CoreGraphics 框架合成图片。
+/// Tips: 具体使用还是需要根据场景自定义，需要根据需求定义图片绘制的尺寸和位置、图片翻转、图片混合模式等参数。
+/// 
+/// @param backImage 背景图片
+/// @param frontImage 前景图片
++ (UIImage *)jk_mergeImage:(UIImage *)backImage frontImage:(UIImage *)frontImage;
+
 @end

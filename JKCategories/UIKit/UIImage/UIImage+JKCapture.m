@@ -9,6 +9,7 @@
 #import "UIImage+JKCapture.h"
 #import <QuartzCore/QuartzCore.h>
 @implementation UIImage (JKCapture)
+
 /**
  *  @brief  截图指定view成图片
  *
@@ -102,4 +103,5 @@
     
     return screenshot;
 }
+
 @end

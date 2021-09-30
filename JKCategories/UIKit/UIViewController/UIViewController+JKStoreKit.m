@@ -7,26 +7,16 @@
 //
 
 #import "UIViewController+JKStoreKit.h"
-
 #import <objc/runtime.h>
-
 #import <StoreKit/StoreKit.h>
 
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Constants
-
-NSString* const jk_affiliateTokenKey = @"at";
-NSString* const jk_campaignTokenKey = @"ct";
-NSString* const jk_iTunesAppleString = @"itunes.apple.com";
-
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - Interface
+static NSString * const kAffiliateTokenKey = @"at";
+static NSString * const kCampaignTokenKey = @"ct";
+static NSString * const KiTunesAppleString = @"itunes.apple.com";
 
 @interface UIViewController (SKStoreProductViewControllerDelegate) <SKStoreProductViewControllerDelegate>
-
 @end
 
-////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Implementation
 
 @implementation UIViewController (JKStoreKit)
@@ -40,8 +30,8 @@ NSString* const jk_iTunesAppleString = @"itunes.apple.com";
 
     NSDictionary* parameters = @{
         SKStoreProductParameterITunesItemIdentifier : @(itemIdentifier),
-        jk_affiliateTokenKey : jk_affiliateTokenKey,
-        jk_campaignTokenKey : campaignToken,
+        kAffiliateTokenKey : kAffiliateTokenKey,
+        kCampaignTokenKey : campaignToken,
     };
 
     if (self.jk_loadingStoreKitItemBlock) {
@@ -78,19 +68,43 @@ NSString* const jk_iTunesAppleString = @"itunes.apple.com";
 
 + (void)jk_openAppReviewURLForIdentifier:(NSInteger)identifier
 {
-    NSString* reviewURLString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%li", (long)identifier];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:reviewURLString]];
+    NSString *reviewURLString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%li", (long)identifier];
+    
+    NSURL *reviewURL = [NSURL URLWithString:reviewURLString];
+    BOOL canOpenReviewURL = [[UIApplication sharedApplication] canOpenURL:reviewURL];
+    if (!canOpenReviewURL) { return; }
+    
+    if (@available(iOS 10.0, *)) {
+        [[UIApplication sharedApplication] openURL:reviewURL options:@{} completionHandler:nil];
+    } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            [[UIApplication sharedApplication] openURL:reviewURL];
+#pragma clang diagnostic pop
+    }
 }
 
 + (void)jk_openAppURLForIdentifier:(NSInteger)identifier
 {
-    NSString* appURLString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%li", (long)identifier];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appURLString]];
+    NSString *appURLString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%li", (long)identifier];
+    
+    NSURL *appURL = [NSURL URLWithString:appURLString];
+    BOOL canOpenAppURL = [[UIApplication sharedApplication] canOpenURL:appURL];
+    if (!canOpenAppURL) { return; }
+    
+    if (@available(iOS 10.0, *)) {
+        [[UIApplication sharedApplication] openURL:appURL options:@{} completionHandler:nil];
+    } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            [[UIApplication sharedApplication] openURL:appURL];
+#pragma clang diagnostic pop
+    }
 }
 
 + (BOOL)jk_containsITunesURLString:(NSString*)URLString
 {
-    return ([URLString rangeOfString:jk_iTunesAppleString].location != NSNotFound);
+    return ([URLString rangeOfString:KiTunesAppleString].location != NSNotFound);
 }
 
 + (NSInteger)jk_IDFromITunesURL:(NSString*)URLString
