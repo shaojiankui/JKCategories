@@ -30,7 +30,7 @@
 #import <JKCategories/UIColor+JKModify.h>
 #import <JKCategories/UIColor+JKRandom.h>
 #import <JKCategories/UIColor+JKWeb.h>
-#import <JKCategories/UIColor+UIColor+JKDarkMode.h>
+#import <JKCategories/UIColor+JKDarkMode.h>
 #import <JKCategories/UIControl+JKActionBlocks.h>
 #import <JKCategories/UIControl+JKBlock.h>
 #import <JKCategories/UIControl+JKSound.h>

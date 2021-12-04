@@ -25,15 +25,15 @@
 		2216E759260AECA700375CC4 /* NSString+HexConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2216E757260AECA700375CC4 /* NSString+HexConversion.m */; };
 		221A8EC0260DECA900515746 /* NSDictionary+RemoveNullValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 221A8EBE260DECA900515746 /* NSDictionary+RemoveNullValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221A8EC1260DECA900515746 /* NSDictionary+RemoveNullValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 221A8EBF260DECA900515746 /* NSDictionary+RemoveNullValue.m */; };
-		222C56B826E6256200A79D99 /* UIColor+JKDarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 222C56B626E6256200A79D99 /* UIColor+JKDarkMode.h */; };
+		222C56B826E6256200A79D99 /* UIColor+JKDarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 222C56B626E6256200A79D99 /* UIColor+JKDarkMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		222C56B926E6256200A79D99 /* UIColor+JKDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C56B726E6256200A79D99 /* UIColor+JKDarkMode.m */; };
-		222C56BC26E6291200A79D99 /* UIImage+JKDarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 222C56BA26E6291200A79D99 /* UIImage+JKDarkMode.h */; };
+		222C56BC26E6291200A79D99 /* UIImage+JKDarkMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 222C56BA26E6291200A79D99 /* UIImage+JKDarkMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		222C56BD26E6291200A79D99 /* UIImage+JKDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C56BB26E6291200A79D99 /* UIImage+JKDarkMode.m */; };
-		2273AA1326F5ABA9008331F1 /* UIImage+JKGrayscale.h in Headers */ = {isa = PBXBuildFile; fileRef = 2273AA1126F5ABA9008331F1 /* UIImage+JKGrayscale.h */; };
+		2273AA1326F5ABA9008331F1 /* UIImage+JKGrayscale.h in Headers */ = {isa = PBXBuildFile; fileRef = 2273AA1126F5ABA9008331F1 /* UIImage+JKGrayscale.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2273AA1426F5ABA9008331F1 /* UIImage+JKGrayscale.m in Sources */ = {isa = PBXBuildFile; fileRef = 2273AA1226F5ABA9008331F1 /* UIImage+JKGrayscale.m */; };
 		2279530E2680404D004C46A5 /* UIImage+JKWaterMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 2279530C2680404D004C46A5 /* UIImage+JKWaterMark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2282CBD026E097AD004C96CA /* UIImage+JKWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2279530D2680404D004C46A5 /* UIImage+JKWaterMark.m */; };
-		22B56BE726F45AD7000B2AF3 /* UIImage+JKCompress.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B56BE526F45AD7000B2AF3 /* UIImage+JKCompress.h */; };
+		22B56BE726F45AD7000B2AF3 /* UIImage+JKCompress.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B56BE526F45AD7000B2AF3 /* UIImage+JKCompress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22B56BE826F45AD7000B2AF3 /* UIImage+JKCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B56BE626F45AD7000B2AF3 /* UIImage+JKCompress.m */; };
 		A202D9801B0F7CD100EAB199 /* CLLocationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D97E1B0F7CD100EAB199 /* CLLocationDemoViewController.m */; };
 		A202D9811B0F7CD100EAB199 /* CLLocationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A202D97F1B0F7CD100EAB199 /* CLLocationDemoViewController.xib */; };
@@ -2910,6 +2910,7 @@
 				B81024B1206A0FD00099CDA8 /* NSDecimalNumber+JKExtensions.h in Headers */,
 				B8102565206A10BB0099CDA8 /* UIWindow+JKHierarchy.h in Headers */,
 				B810256B206A10BB0099CDA8 /* UIBezierPath+JKBasicShapes.h in Headers */,
+				22B56BE726F45AD7000B2AF3 /* UIImage+JKCompress.h in Headers */,
 				B81025EA206A11650099CDA8 /* UITableViewCell+JKNIB.h in Headers */,
 				B81024CF206A0FFE0099CDA8 /* NSDate+JKInternetDateTime.h in Headers */,
 				B8102509206A104F0099CDA8 /* NSString+JKSize.h in Headers */,
@@ -2935,12 +2936,10 @@
 				B81025A8206A110F0099CDA8 /* UIImageView+JKBetterFace.h in Headers */,
 				B8102591206A10E70099CDA8 /* UITextView+JKPinchZoom.h in Headers */,
 				B81025C2206A11350099CDA8 /* UIImage+JKAnimatedGIF.h in Headers */,
-				2273AA1326F5ABA9008331F1 /* UIImage+JKGrayscale.h in Headers */,
 				B8102644206A120C0099CDA8 /* NSObject+JKGCD.h in Headers */,
 				B81024A8206A0FD00099CDA8 /* NSInvocation+JKBlock.h in Headers */,
 				B81024B0206A0FD00099CDA8 /* NSDecimalNumber+JKCalculatingByString.h in Headers */,
 				B81024AF206A0FD00099CDA8 /* NSNotificationCenter+JKMainThread.h in Headers */,
-				22B56BE726F45AD7000B2AF3 /* UIImage+JKCompress.h in Headers */,
 				B8102590206A10E70099CDA8 /* UITextView+JKSelect.h in Headers */,
 				B81024D3206A10010099CDA8 /* NSUserDefaults+JKSafeAccess.h in Headers */,
 				B81024EE206A102C0099CDA8 /* NSData+JKzlib.h in Headers */,
@@ -3028,7 +3027,6 @@
 				B8102582206A10E70099CDA8 /* UIButton+JKMiddleAligning.h in Headers */,
 				B810263F206A120C0099CDA8 /* NSObject+JKEasyCopy.h in Headers */,
 				B8102648206A120C0099CDA8 /* NSObject+JKKVOBlocks.h in Headers */,
-				222C56B826E6256200A79D99 /* UIColor+JKDarkMode.h in Headers */,
 				B81024F6206A102C0099CDA8 /* NSDictionary+JKXML.h in Headers */,
 				B8102533206A108A0099CDA8 /* UIFont+JKDynamicFontControl.h in Headers */,
 				B8102493206A0F890099CDA8 /* CAAnimation+JKEasingEquations.h in Headers */,
@@ -3056,7 +3054,6 @@
 				B81024D2206A0FFE0099CDA8 /* NSDate+JKLunarCalendar.h in Headers */,
 				B81024E6206A102C0099CDA8 /* NSArray+JKBlock.h in Headers */,
 				B810256C206A10BB0099CDA8 /* UIBezierPath+JKSVGString.h in Headers */,
-				222C56BC26E6291200A79D99 /* UIImage+JKDarkMode.h in Headers */,
 				B81024A6206A0FD00099CDA8 /* NSURLSession+JKSynchronousTask.h in Headers */,
 				B81024F1206A102C0099CDA8 /* NSDictionary+JKSafeAccess.h in Headers */,
 				B810250C206A104F0099CDA8 /* NSString+JKEmoji.h in Headers */,
@@ -3070,6 +3067,7 @@
 				B810250A206A104F0099CDA8 /* NSString+JKRemoveEmoji.h in Headers */,
 				B81024B2206A0FD00099CDA8 /* NSNumber+JKRound.h in Headers */,
 				B8102512206A104F0099CDA8 /* NSString+JKEncrypt.h in Headers */,
+				222C56B826E6256200A79D99 /* UIColor+JKDarkMode.h in Headers */,
 				B8102515206A104F0099CDA8 /* NSString+JKMIME.h in Headers */,
 				B81025A5206A110F0099CDA8 /* UIImageView+JKReflect.h in Headers */,
 				B81025AE206A110F0099CDA8 /* UIColor+JKWeb.h in Headers */,
@@ -3091,6 +3089,8 @@
 				B81024E9206A102C0099CDA8 /* NSData+JKHash.h in Headers */,
 				B8102628206A119F0099CDA8 /* MKMapView+JKZoomLevel.h in Headers */,
 				B81024E8206A102C0099CDA8 /* NSBundle+JKAppIcon.h in Headers */,
+				2273AA1326F5ABA9008331F1 /* UIImage+JKGrayscale.h in Headers */,
+				222C56BC26E6291200A79D99 /* UIImage+JKDarkMode.h in Headers */,
 				B81025E8206A11650099CDA8 /* UINavigationController+JKStackManager.h in Headers */,
 				B81024F4206A102C0099CDA8 /* NSDictionary+JKBlock.h in Headers */,
 			);
@@ -3142,7 +3142,7 @@
 		A22725C61A3E72D50061605B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = "Qilin Hu";
 				TargetAttributes = {
 					A22725CD1A3E72D50061605B = {
@@ -3156,7 +3156,8 @@
 					};
 					B8102478206A0DE90099CDA8 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = A8F7U6DN75;
+						ProvisioningStyle = Automatic;
 					};
 					B81026C3206A313C0099CDA8 = {
 						CreatedOnToolsVersion = 9.2;
@@ -3725,11 +3726,12 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = A8F7U6DN75;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -3745,6 +3747,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.skyfox.JKCategories;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3762,12 +3765,13 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = A8F7U6DN75;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -3783,6 +3787,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.skyfox.JKCategories;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

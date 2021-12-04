@@ -23,37 +23,24 @@ static const void *JKTextFieldInputLimitMaxLength = &JKTextFieldInputLimitMaxLen
 }
 
 - (void)jk_textFieldTextDidChange {
+    // 0 不限制输入字数
     if (self.jk_maxLength <= 0) { return; }
     
-    NSString *toBeString = self.text;
+    // 判断是否存在高亮字符，如果有，则不进行字数统计和字符串截断
+    UITextRange *selectedRange = [self markedTextRange];
+    UITextPosition *position = [self positionFromPosition:selectedRange.start offset:0];
+    if (position) { return; }
     
-    // 键盘输入模式
-    NSString *primaryLanguage = self.textInputMode.primaryLanguage;
-    // zh-Hans 代表简体中文输入，包括简体拼音，健体五笔，简体手写
-    BOOL isChineseInputMode = [primaryLanguage isEqualToString:@"zh-Hans"] ||
-                                [primaryLanguage isEqualToString:@"zh-Hant"] ||
-                                    [primaryLanguage isEqualToString:@"zh-TW"];
-
-    if (isChineseInputMode) {
-        // 获取高亮部分
-        UITextRange *selectedRange = [self markedTextRange];
-        UITextPosition *position = [self positionFromPosition:selectedRange.start offset:0];
-        
-        // 如果没有高亮选择字符，则对已输入的文字进行字数统计和限制
-        if (!position ||!selectedRange) {
-            self.text = [self substringWith:toBeString index:self.jk_maxLength];
-        }
-    } else {
-        self.text = [self substringWith:toBeString index:self.jk_maxLength];
+    // 判断是否超过最大字数限制，如果超过就截断
+    if (self.text.length > self.jk_maxLength) {
+        self.text = [self substringWith:self.text maxLength:self.jk_maxLength];
     }
 }
 
-- (NSString *)substringWith:(NSString *)string index:(NSInteger)index {
-    if (index >= string.length) { return string; }
-    
-    // 获取指定索引处的字符范围
-    // 将 emoji 表情视为一个连续的字符串，如果 index 处于连续的字符串之间，就会返回这个字符串的 range
-    NSRange rangeIndex = [string rangeOfComposedCharacterSequenceAtIndex:index];
+// 获取指定索引处的字符范围
+// 将 emoji 表情视为一个连续的字符串，如果 index 处于连续的字符串之间，就会返回这个字符串的 range
+- (NSString *)substringWith:(NSString *)string maxLength:(NSInteger)maxLength {
+    NSRange rangeIndex = [string rangeOfComposedCharacterSequenceAtIndex:maxLength];
     return [string substringToIndex:rangeIndex.location];
 }
 
